@@ -1,0 +1,15 @@
+{% capture content %}
+<main class='main-content'>
+  <article class='article'>
+    <div class='article-copy'>
+      {{ body }}
+    </div>
+    <form class='subscribe-form form' action='http://cushionapp.createsend.com/t/d/s/ajdtd/' method='post'>
+      <input name='cm-ajdtd-ajdtd' class='text-input' type='email' placeholder='you@yourwebsite.com' required>
+      <button id='submit' class='button' type='submit'>Subscribe</button>
+    </form>
+  </article>
+</main>
+{% endcapture %}
+
+{% include 'layouts/default' %}

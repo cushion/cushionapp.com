@@ -1,0 +1,206 @@
+@import '_mixins'
+@import '_normalize'
+
+// variables
+
+$base-font: 400 100%/1.65 "pt-sans", "Helvetica Neue", Helvetica, sans-serif
+$header-font: 700 100%/1.25 "effra", "Helvetica Neue", Helvetica, sans-serif
+$button-font: 400 112.5%/1.65 "effra", "Helvetica Neue", Helvetica, sans-serif
+
+$white: #fff
+$black: #000
+$grey: #999
+$light-grey: #ccc
+
+$smaller: 12
+$small: 14
+$normal: 16
+$large: 18
+$larger: 20
+
+$tablet-portrait: em(481)
+
+// reset
+
+@media screen and (max-device-width: 480px)
+  html
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+
+*,
+*:before,
+*:after
+  +prefix-property(box-sizing, border-box)
+
+ul
+  padding: 0
+
+li
+  list-style-type: none
+
+// base
+
+body
+  font: $base-font
+  text-rendering: optimizeLegibility
+
+img
+  max-width: 100%
+
+a
+  img
+    vertical-align: top
+
+::-webkit-input-placeholder
+  color: $light-grey
+
+\:-moz-placeholder
+  color: $light-grey
+
+::-moz-placeholder
+  color: $light-grey
+
+\:-ms-input-placeholder
+  color: $light-grey
+
+::selection
+  background-color: $black
+  color: $white
+
+::-moz-selection
+  background-color: $black
+  color: $white
+
+// components
+
+.wrapper
+  padding: 0 em(10)
+
+.outer-container
+  display: table
+  width: 100%
+  height: 90vh
+
+.inner-container
+  display: table-cell
+  vertical-align: middle
+
+.text-input
+  padding: em(7, $large) 0 em(2, $large)
+
+  font: $button-font
+
+  outline: none
+  border: none
+  border-bottom: solid 3px $grey
+  color: $black
+
+  &:focus
+    border-bottom-color: $black
+
+.link
+  color: $grey
+  text-decoration: none
+
+  &:hover
+    color: $black
+
+.button
+  padding: em(6, $large) em(20, $large)
+
+  font: $button-font
+
+  +prefix-property(border-radius, em(5, $large))
+  outline: none
+  border: none
+  background-color: $grey
+  color: $white
+
+  &:hover
+    background-color: $black
+
+.center
+  text-align: center
+
+// header
+
+.main-header
+  margin: em(30) 0
+  text-align: center
+
+  +min-width($tablet-portrait)
+    margin-top: em(50)
+    margin-bottom: em(50)
+
+    font-size: 112.5%
+
+.logo
+  margin: 0
+
+  font: $header-font
+  font-size: em(48)
+
+.tagline
+  margin-top: 0
+
+  font: $base-font
+  color: $grey
+
+// article
+
+.article
+  a
+    border-bottom: solid 2px $grey
+    color: $black
+    text-decoration: none
+
+    &:hover
+      border-bottom-color: $black
+
+.article-copy
+  max-width: 38em
+  margin: 0 auto
+
+  font-size: em(16)
+
+  +min-width($tablet-portrait)
+    font-size: 112.5%
+
+// footer
+
+.main-footer
+  margin: em(50) 0 em(20)
+
+  color: $grey
+  text-align: center
+
+  +min-width($tablet-portrait)
+    margin-top: em(60)
+    font-size: 112.5%
+
+// form
+
+.form
+  margin: em(20) 0
+
+  text-align: center
+
+  .text-input
+    width: 100%
+
+  .button
+    margin-top: em(20)
+
+  +min-width($tablet-portrait)
+    margin-top: em(70)
+
+    .text-input
+      display: inline-block
+      width: em(280)
+      margin-right: em(10)
+      vertical-align: top
+
+    .button
+      margin-top: 0
+
+      vertical-align: top
