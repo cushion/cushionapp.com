@@ -37,25 +37,58 @@
     <script src='/assets/scripts/libs/husl.min.js'></script>
     <script>
       window.addEventListener('load', function(e) {
+        var isLoaded;
         var stylesheet = document.styleSheets[0];
-        var numRules = stylesheet.rules.length;
+        var rules = stylesheet.rules || stylesheet.cssRules;
+        var numRules = rules.length;
         var direction = 1;
         var minHue = 100;
         var maxHue = 250;
         var hue = minHue + Math.random() * (maxHue - minHue);
         var hex;
 
+        var addCSSRule = function(selector, rule) {
+          if (stylesheet.addRule) {
+            stylesheet.addRule(selector, rule);
+          } else if (stylesheet.insertRule) {
+            rule = selector.concat(" { ", rule, " }");
+            stylesheet.insertRule(rule, rules.length);
+          }
+        };
+
+        var addMozCSSRule = function(selector, rule) {
+          if (stylesheet.insertRule && !stylesheet.addRule) {
+            rule = selector.concat(" { ", rule, " }");
+            stylesheet.insertRule(rule, rules.length);
+          }
+        };
+
+        var addWebkitCSSRule = function(selector, rule) {
+          if (stylesheet.addRule) {
+            stylesheet.addRule(selector, rule);
+          }
+        };
+
+        var removeCSSRule = function(index) {
+          if (stylesheet.deleteRule) {
+            stylesheet.deleteRule(index);
+          } else if (stylesheet.removeRule) {
+            stylesheet.removeRule(index);
+          }
+        };
+
         setInterval(function () {
           hue += 0.5 * direction;
           hex = window.HUSL.toHex(hue, 70, 60)
           if (hue < minHue || hue > maxHue) direction *= -1;
 
-          while (stylesheet.rules.length > numRules) stylesheet.removeRule(stylesheet.rules.length - 1);
+          while (rules.length > numRules) removeCSSRule(rules.length - 1);
 
-          stylesheet.addRule('.link', "color: " + hex);
-          stylesheet.addRule('.button', "background-color: " + hex);
-          stylesheet.addRule('.article a', "border-bottom-color: " + hex);
-          stylesheet.addRule('::selection', "background-color: " + hex);
+          addCSSRule('.link', "color: " + hex);
+          addCSSRule('.button', "background-color: " + hex);
+          addCSSRule('.article a', "border-bottom-color: " + hex);
+          addWebkitCSSRule('::selection', "background-color: " + hex);
+          addMozCSSRule('::-moz-selection', "background-color: " + hex);
         }, 1000/5);
       },false);
     </script>
