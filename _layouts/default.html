@@ -37,58 +37,31 @@
     <script src='/assets/scripts/libs/husl.min.js'></script>
     <script>
       window.addEventListener('load', function(e) {
-        var isLoaded;
-        var stylesheet = document.styleSheets[0];
-        var rules = stylesheet.rules || stylesheet.cssRules;
-        var numRules = rules.length;
+        var articleLinks = document.querySelectorAll('.article-copy a');
+        var footerLinks = document.querySelectorAll('.link');
+        var buttons = document.querySelectorAll('.button');
+
         var direction = 1;
         var minHue = 100;
         var maxHue = 250;
         var hue = minHue + Math.random() * (maxHue - minHue);
         var hex;
 
-        var addCSSRule = function(selector, rule) {
-          if (stylesheet.addRule) {
-            stylesheet.addRule(selector, rule);
-          } else if (stylesheet.insertRule) {
-            rule = selector.concat(" { ", rule, " }");
-            stylesheet.insertRule(rule, rules.length);
-          }
-        };
-
-        var addMozCSSRule = function(selector, rule) {
-          if (stylesheet.insertRule && !stylesheet.addRule) {
-            rule = selector.concat(" { ", rule, " }");
-            stylesheet.insertRule(rule, rules.length);
-          }
-        };
-
-        var addWebkitCSSRule = function(selector, rule) {
-          if (stylesheet.addRule) {
-            stylesheet.addRule(selector, rule);
-          }
-        };
-
-        var removeCSSRule = function(index) {
-          if (stylesheet.deleteRule) {
-            stylesheet.deleteRule(index);
-          } else if (stylesheet.removeRule) {
-            stylesheet.removeRule(index);
-          }
+        var styleElements = function(elements, cssText) {
+          [].forEach.call(elements, function(element) {
+            element.style.cssText = cssText;
+          });
         };
 
         setInterval(function () {
           hue += 0.5 * direction;
-          hex = window.HUSL.toHex(hue, 70, 60)
+          hex = window.HUSL.toHex(hue, 70, 60);
+
           if (hue < minHue || hue > maxHue) direction *= -1;
 
-          while (rules.length > numRules) removeCSSRule(rules.length - 1);
-
-          addCSSRule('.link', "color: " + hex);
-          addCSSRule('.button', "background-color: " + hex);
-          addCSSRule('.article a', "border-bottom-color: " + hex);
-          addWebkitCSSRule('::selection', "background-color: " + hex);
-          addMozCSSRule('::-moz-selection', "background-color: " + hex);
+          styleElements(articleLinks, 'border-bottom-color: ' + hex);
+          styleElements(footerLinks, 'color: ' + hex);
+          styleElements(buttons, 'background-color: ' + hex);
         }, 1000/5);
       },false);
     </script>
