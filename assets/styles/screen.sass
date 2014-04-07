@@ -53,6 +53,12 @@ img
   max-width: 100%
 
 a
+  color: $black
+  text-decoration: none
+
+  &:hover
+    color: $grey
+
   img
     vertical-align: top
 
@@ -151,25 +157,54 @@ a
   font: $base-font
   color: $grey
 
+// nav
+
+.main-nav
+  margin-top: em(24)
+
+.nav-list
+  text-align: center
+
+  .nav-item
+    margin-left: em(12)
+
+    &:first-child
+      margin-left: 0
+
+.nav-item
+  display: inline-block
+
+.nav-link
+  font: $header-font
+  font-size: rem(18)
+  color: $black
+  text-decoration: none
+
+  &:hover
+    color: $grey
+
 // article
 
 .article
-  a
-    border-bottom: solid 2px $grey
-    color: $black
-    text-decoration: none
-
-    &:hover
-      border-bottom-color: $black !important
-
-.article-copy
   max-width: 38em
-  margin: 0 auto
-
-  font-size: em(16)
+  margin: 0 auto em(60)
 
   +min-width($tablet-portrait)
     font-size: 112.5%
+
+.article-title
+  font: $header-font
+  font-size: em(18)
+  text-align: center
+
+.article-copy
+  font-size: em(16)
+
+  a
+    border-bottom: solid 2px $grey
+
+    &:hover
+      border-bottom-color: $black !important
 
 // footer
 
@@ -209,3 +244,34 @@ a
       margin-top: 0
 
       vertical-align: bottom
+
+// table
+
+table
+  max-width: 38em
+  width: 100%
+  margin: 0 auto
+
+th
+  padding-bottom: em(4, 14)
+
+  font-size: em(14)
+  color: $grey
+  text-align: left
+  text-transform: lowercase
+
+tbody
+  td
+    padding-bottom: em(4)
+
+  tr:last-child td
+    padding-bottom: em(13)
+
+tfoot
+  border-top: solid 4px $light-grey
+
+  td
+    padding-top: em(10)
+
+.number-cell
+  text-align: right

@@ -1,0 +1,45 @@
+{% capture content %}
+<main class='main-content'>
+  <table>
+    <colgroup>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Service</th>
+        <th class='number-cell'>Cost</th>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr>
+        {% assign total = 0 %}
+        {% for post in posts %}
+          {% assign cost = post.meta.cost | plus: 0 %}
+
+          {% if post.meta.cost-frequency == 'month' %}
+            {% assign cost = cost | times: 12 %}
+          {% endif %}
+          {% assign total = total | plus: cost %}
+        {% endfor %}
+        <td class='number-cell' colspan='3'>${{ total }}/year</td>
+      </tr>
+    </tfoot>
+    <tbody>
+      {% for post in posts reversed %}
+      <tr>
+        <td>{{ post.title }}</td>
+        <td>
+          <a href='{{ post.meta.service-url }}'>{{ post.meta.service }}</a>
+        </td>
+        <td class='number-cell'>${{ post.meta.cost }}/{{ post.meta.cost-frequency }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</main>
+{% endcapture %}
+
+{% include 'layouts/default' %}

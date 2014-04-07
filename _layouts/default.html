@@ -22,8 +22,22 @@
     <div class='wrapper outer-container'>
       <div class='inner-container'>
         <header class='main-header'>
-          <h1 class='logo'>{{ site.title }}</h1>
+          <h1 class='logo'>
+            <a href='/'>{{ site.title }}</a>
+          </h1>
           <h2 class='tagline'>{{ site.meta.tagline }}</h2>
+
+          <nav class='main-nav'>
+            <ul class='nav-list'>
+            {% for page in site.pages %}
+              {% unless page.home? %}
+              <li class='nav-item'>
+                <a class='nav-link' href='{{ page.url }}'>{{ page.title }}</a>
+              </li>
+              {% endunless %}
+            {% endfor %}
+            </ul>
+          </nav>
         </header>
 
         {{ content }}
@@ -34,36 +48,6 @@
       </div>
     </div>
 
-    <script src='/assets/scripts/libs/husl.min.js'></script>
-    <script>
-      window.addEventListener('load', function(e) {
-        var articleLinks = document.querySelectorAll('.article-copy a');
-        var footerLinks = document.querySelectorAll('.link');
-        var buttons = document.querySelectorAll('.button');
-
-        var direction = 1;
-        var minHue = 100;
-        var maxHue = 250;
-        var hue = minHue + Math.random() * (maxHue - minHue);
-        var hex;
-
-        var styleElements = function(elements, cssText) {
-          [].forEach.call(elements, function(element) {
-            element.style.cssText = cssText;
-          });
-        };
-
-        setInterval(function () {
-          hue += 0.5 * direction;
-          hex = window.HUSL.toHex(hue, 70, 60);
-
-          if (hue < minHue || hue > maxHue) direction *= -1;
-
-          styleElements(articleLinks, 'border-bottom-color: ' + hex);
-          styleElements(footerLinks, 'color: ' + hex);
-          styleElements(buttons, 'background-color: ' + hex);
-        }, 1000/5);
-      },false);
-    </script>
+    {{ foot }}
   </body>
 </html>
