@@ -11,6 +11,7 @@ $white: #fff
 $black: #000
 $grey: #999
 $light-grey: #ccc
+$lighter-grey: #eee
 
 $smaller: 12
 $small: 14
@@ -210,6 +211,22 @@ a
 
     &:hover
       border-bottom-color: $black !important
+
+  h4
+    margin-bottom: 0
+
+    font: $header-font
+
+    & + p
+      margin-top: 0
+
+    a
+      border-bottom: none
+
+  code
+    font-size: em(14)
+
+    background-color: $lighter-grey
 
 // footer
 
