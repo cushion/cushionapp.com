@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Cushion</title>
+
+    <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/images/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/images/favicon.png'>
+
+    <link href='/assets/styles/screen.css' rel='stylesheet'>
+
+    <script>
+  (function() {
+  var config = {
+  kitId: 'jpp2iwq',
+  scriptTimeout: 3000
+  };
+  var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+
+    <script type="text/javascript">
+window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+window.analytics.load("lvwwqqgyp6");
+window.analytics.page();
+</script>
+
+  </head>
+
+  <body>
+    <div class='wrapper outer-container'>
+      <div class='inner-container'>
+        <header class='main-header'>
+          <h1 class='logo'>
+            <a href='/'>Cushion</a>
+          </h1>
+          <h2 class='tagline'>Peace of mind for freelancers</h2>
+
+          <nav class='main-nav'>
+            <ul class='nav-list'>
+            
+              
+            
+              
+              <li class='nav-item'>
+                <a class='nav-link' href='/journal'>Journal</a>
+              </li>
+              
+            
+              
+              <li class='nav-item'>
+                <a class='nav-link' href='/expenses'>Expenses</a>
+              </li>
+              
+            
+            </ul>
+          </nav>
+        </header>
+
+        
+<main class='main-content'>
+  <article class='article'>
+    <h3 class='article-title'>
+      <a href='/journal/2014-06-03'>2014-06-03</a>
+    </h3>
+    <div class='article-copy'>
+      <p>After living with the changes I made to the timeline, I tweaked it a bit more. When a project is selected and the other projects fade in opacity, I also fade their colors to make the selected project pop even more. I had a problem with not being able to distinguish the selected project from the others with certain colors, but now it couldn’t be clearer.</p>
+
+<p><img src="/assets/2014-06-03-timeline-fade.gif" alt="2014-06-03-timeline-fade"> </p>
+
+<p>I started creating views for project lists, so you can create additional buckets. I haven’t pinned down the default lists yet, but there will most likely be three for active projects, potential gigs, and completed ones. I will personally add at least two more for pending projects (confirmed, but haven’t started) and dormant projects (active, but waiting on the client).</p>
+
+<p><a href="/assets/2014-06-03-list.png"><img src="/assets/2014-06-03-list.png" alt="2014-06-03-list"></a> </p>
+
+<p>Since lists deal with the project model, but don’t belong as a top-level tab, it’s tough to decide where to link to them. Right now, you can click a list header and it will take you to that list view, but what if I want a view for repositioning them? I’m almost certain I don’t want a separate view for that since we already have the projects view that is grouped by list, but there’s a chance something might come up. 
+Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, or move-up/move-down arrows? I’m a fan of drag-and-drop since it’s the most intuitive and relates to the physical world, but on a scale like this, where lists could span the entire screen, it wouldn’t be a good fit. Arrows would most certainly feel redundant if you need to move a list from the bottom to the top, not to mention the duplicate API requests. A select menu is probably best for now, unless I end up with a table view for lists, which would make drag-and-drop easier to implement and use.</p>
+
+<p>I’ve been feeling really good about where I am with Cushion, so I took a minute to plug in my real data from this current year. It’s enlightening to see how everything looks when all the data is familiar. Surprisingly, I find the individual project views to be incredibly valuable. It allows me focus on the current project and easily see the status of its invoices—I was even able to spot one that was long overdue! On past projects, the individual view gives me a sense of its history and impact on the year. I can weigh a project’s required effort with its actual return to see which ones were worth the late nights and which ones weren’t.</p>
+
+<p>This is just the beginning of what I can do with this data. I have so many more ideas that I can’t wait to try out. If anything specific would be useful for you, <a href="http://twitter.com/cushionapp">let me know</a>.</p>
+
+    </div>
+  </article>
+</main>
+
+
+        <footer class='main-footer'>
+          Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
+        </footer>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+

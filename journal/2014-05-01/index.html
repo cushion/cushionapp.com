@@ -1,0 +1,104 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Cushion</title>
+
+    <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/images/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/images/favicon.png'>
+
+    <link href='/assets/styles/screen.css' rel='stylesheet'>
+
+    <script>
+  (function() {
+  var config = {
+  kitId: 'jpp2iwq',
+  scriptTimeout: 3000
+  };
+  var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+
+    <script type="text/javascript">
+window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+window.analytics.load("lvwwqqgyp6");
+window.analytics.page();
+</script>
+
+  </head>
+
+  <body>
+    <div class='wrapper outer-container'>
+      <div class='inner-container'>
+        <header class='main-header'>
+          <h1 class='logo'>
+            <a href='/'>Cushion</a>
+          </h1>
+          <h2 class='tagline'>Peace of mind for freelancers</h2>
+
+          <nav class='main-nav'>
+            <ul class='nav-list'>
+            
+              
+            
+              
+              <li class='nav-item'>
+                <a class='nav-link' href='/journal'>Journal</a>
+              </li>
+              
+            
+              
+              <li class='nav-item'>
+                <a class='nav-link' href='/expenses'>Expenses</a>
+              </li>
+              
+            
+            </ul>
+          </nav>
+        </header>
+
+        
+<main class='main-content'>
+  <article class='article'>
+    <h3 class='article-title'>
+      <a href='/journal/2014-05-01'>2014-05-01</a>
+    </h3>
+    <div class='article-copy'>
+      <p><a href="/assets/2014-05-01-new-project.png"><img src="/assets/2014-05-01-new-project.png" alt="2014-05-01-new-project"></a></p>
+
+<p>This week, I spent more time designing, specifically the form for new projects. I’m starting out very basic, with only the name, client, color, and status. I hate designing forms because the best forms don’t feel like forms and that’s difficult to achieve. Above are a few variations, but not I’m thrilled about any of them.</p>
+
+<p>The current state is much better than where I started. At first, I had color as its own field, but with four fields, the form already felt lengthy. Right now, color is combined with the name field to match the rest of the fields. I feel like color could play a huge role in the app, associating most pieces of data. I originally only assigned color to clients and projects, but it could also tie into statuses—green for on-track, yellow for on-hold, red for important or late.</p>
+
+<p>I also decided to go with a modal for now because I want the user to be able to create projects from anywhere. It could be nice to eventually have a more embedded option, like adding onto existing listes, etc., but one step at a time. I’m still not happy with this design, though. </p>
+
+<p>Regarding the dev side of the app, I originally planned to test everything from the start, but I’m quickly realizing how difficult that is when nothing is certain. Testing the backend is a given and easy in this regard, but testing the front-end before most decisions have been made will inevitably result in back-tracking. Because of this, I decided to write a draft version of the front-end, get the initial interaction solidified, then go back and rewrite it, tested. It also seems like a bunch of unnecessary work, but luckily, AngularJS has been great for quickly prototyping ideas.</p>
+
+<p><img src="/assets/2014-05-01-timeago.png" alt="2014-05-01-timeago"> </p>
+
+<p>The API is coming along wonderfully. I currently have models and endpoints for clients, projects, statuses, and invoices. I added invoices yesterday, researching a few existing services I plan to tie into, like <a href="http://www.getharvest.com/">Harvest</a>. For now, invoices have an issue date, due date, and amount. On the front-end, I use <a href="http://momentjs.com/">Moment.js</a> to translate the dates into relative dates, so they’re easier to digest. I can add a few little touches to this, like highlighting the date when the invoice is overdue.</p>
+
+<p>All in all, this has been a very productive week. Over the next few days, I plan to focus more on the workflow of creating each model on the front-end. Hopefully, I can get to a good spot.</p>
+
+    </div>
+  </article>
+</main>
+
+
+        <footer class='main-footer'>
+          Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
+        </footer>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+

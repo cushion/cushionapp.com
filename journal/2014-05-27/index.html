@@ -1,0 +1,98 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Cushion</title>
+
+    <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/images/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/images/favicon.png'>
+
+    <link href='/assets/styles/screen.css' rel='stylesheet'>
+
+    <script>
+  (function() {
+  var config = {
+  kitId: 'jpp2iwq',
+  scriptTimeout: 3000
+  };
+  var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+
+    <script type="text/javascript">
+window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+window.analytics.load("lvwwqqgyp6");
+window.analytics.page();
+</script>
+
+  </head>
+
+  <body>
+    <div class='wrapper outer-container'>
+      <div class='inner-container'>
+        <header class='main-header'>
+          <h1 class='logo'>
+            <a href='/'>Cushion</a>
+          </h1>
+          <h2 class='tagline'>Peace of mind for freelancers</h2>
+
+          <nav class='main-nav'>
+            <ul class='nav-list'>
+            
+              
+            
+              
+              <li class='nav-item'>
+                <a class='nav-link' href='/journal'>Journal</a>
+              </li>
+              
+            
+              
+              <li class='nav-item'>
+                <a class='nav-link' href='/expenses'>Expenses</a>
+              </li>
+              
+            
+            </ul>
+          </nav>
+        </header>
+
+        
+<main class='main-content'>
+  <article class='article'>
+    <h3 class='article-title'>
+      <a href='/journal/2014-05-27'>2014-05-27</a>
+    </h3>
+    <div class='article-copy'>
+      <p>I’m making so much progress. I almost can’t sit still. Each night, I go to bed thinking about Cushion and wake up thinking about it. Needless to say, everything is going well.</p>
+
+<p>I finished the refactor of changing the Status model to List, which immediately feels clearer. Now you can have a list, or bucket, of projects and it doesn’t need to represent a status. I’m certain people will use Cushion much differently than I would have expected, so I don’t want to force too many workflows on them. I typically separate my projects into “Active”, “Pending”, “Potential”, and “Done”, but there are so many other possibilities, I might adopt a few more, like “Dormant”. This would represent any project that is blocked for one reason or another, so you don’t need to worry about it until they get back to you.</p>
+
+<p><img src="/assets/2014-05-27-estimated-income.png" alt="2014-05-27-estimated-income"></p>
+
+<p>On the income side of things, I added another column. Prior, I had two columns—“Paid” and “Unpaid”. These values were pulled from a sum of the invoices for a given project, so you know how much has been made versus how much is pending. But what about when you start a project and have a general idea of how much it will bring in? That should be represented on the timeline as well, so I added “Estimated”. This is a ballpark figure represented by a single column in the database, so when you create a project, you just give it a number. At some point, it would be nice to be more granular with the estimate and comparing detailed estimates against actual outcomes, but this works for now.</p>
+
+<p>This weekend, I spoke to a few friends who would be prime users and over the next month, I’m going to continue doing more research along these lines. It’s incredibly fascinating hearing other freelancers or design studio owners talk about their needs—especially when most of them aren’t covered by the plethora of existing services. This makes me even more hopeful for Cushion. I know it fits the bill for me, but it’s reassuring when I hear from others that they need it, too.</p>
+
+    </div>
+  </article>
+</main>
+
+
+        <footer class='main-footer'>
+          Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
+        </footer>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+
