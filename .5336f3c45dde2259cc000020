@@ -1,5 +1,5 @@
 ---
-time: 1404674355
+time: 1405438247
 inventory:
   /newsletter/index.html:
     md5: 680c4324628a9913a96ad716e497ee8f
@@ -8,8 +8,11 @@ inventory:
     md5: 680c4324628a9913a96ad716e497ee8f
     time: 1404674333
   /journal/index.html:
-    md5: ff1433b4b07460c70cca5e3cde4b14d1
-    time: 1404674333
+    md5: f11d4cf7c3441f8ae335233aa835572f
+    time: 1405438244
+  /journal/2014-07-15/index.html:
+    md5: 969219fe1fb2641e7af277abf9ac8ca7
+    time: 1405438244
   /journal/2014-06-15/index.html:
     md5: d4de3d6f1324a8618af97d3320c7133b
     time: 1404674333
@@ -104,11 +107,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: efd7f5293d475d07681ab14573bd8f3a
-    time: 1404674335
+    md5: a7e9d37daadc8b23b5368dfdbc7995db
+    time: 1405438245
   /feed.xml:
-    md5: 40eb3c4036771503415f96cef5c35093
-    time: 1404674335
+    md5: 6c2a65a617d32d77448d4df3ee511cda
+    time: 1405438245
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -154,6 +157,9 @@ inventory:
   /assets/2014-06-15-schedule-timeline.png:
     md5: c1b5c6d4c997edd65b51d3a1335d2e3a
     time: 1404674338
+  /assets/2014-07-15-schedule-bar.png:
+    md5: 15da31597475efe2a0a3d7061de5134e
+    time: 1405438245
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -178,6 +184,9 @@ inventory:
   /assets/2014-06-15-schedule-tabs.png:
     md5: dacdafc541997d987265419362e78a30
     time: 1404674339
+  /assets/2014-07-15-schedule-timeline-design.png:
+    md5: 76b98a85c28cb6d507ddb8d0afef3a7a
+    time: 1405438246
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -193,6 +202,9 @@ inventory:
   /assets/2014-06-15-actual-schedule.png:
     md5: bdbb82cfbba52d6cd065565eca6fa743
     time: 1404674341
+  /assets/2014-07-15-old-schedule-timeline-design.png:
+    md5: 0a9c8e08dc268190d971d39e86827a60
+    time: 1405438246
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
