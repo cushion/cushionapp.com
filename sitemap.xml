@@ -3,165 +3,171 @@
 
   <url>
     <loc>http://cushionapp.com/</loc>
-    <lastmod>2014-04-07 00:43:02 +0000</lastmod>
+    <lastmod>2014-04-07T00:43:02+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
     <loc>http://cushionapp.com/journal</loc>
-    <lastmod>2014-04-07 00:42:53 +0000</lastmod>
+    <lastmod>2014-04-07T00:42:53+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
   <url>
+    <loc>http://cushionapp.com/journal/2014-07-21</loc>
+    <lastmod>2014-07-21T21:03:35+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://cushionapp.com/journal/2014-07-15</loc>
-    <lastmod>2014-07-15 15:27:25 +0000</lastmod>
+    <lastmod>2014-07-15T15:27:25+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-06-15</loc>
-    <lastmod>2014-06-16 19:15:50 +0000</lastmod>
+    <lastmod>2014-06-16T19:15:50+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-06-05</loc>
-    <lastmod>2014-06-06 19:53:53 +0000</lastmod>
+    <lastmod>2014-06-06T19:53:53+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-06-03</loc>
-    <lastmod>2014-06-04 14:38:25 +0000</lastmod>
+    <lastmod>2014-06-04T14:38:25+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-06-01</loc>
-    <lastmod>2014-06-02 19:52:14 +0000</lastmod>
+    <lastmod>2014-06-02T19:52:14+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-05-28</loc>
-    <lastmod>2014-05-29 17:26:47 +0000</lastmod>
+    <lastmod>2014-05-29T17:26:47+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-05-27</loc>
-    <lastmod>2014-05-28 13:46:28 +0000</lastmod>
+    <lastmod>2014-05-28T13:46:28+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-05-18</loc>
-    <lastmod>2014-05-19 15:59:55 +0000</lastmod>
+    <lastmod>2014-05-19T15:59:55+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-05-06</loc>
-    <lastmod>2014-05-07 15:40:02 +0000</lastmod>
+    <lastmod>2014-05-07T15:40:02+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-05-05</loc>
-    <lastmod>2014-05-06 15:46:05 +0000</lastmod>
+    <lastmod>2014-05-06T15:46:05+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-05-01</loc>
-    <lastmod>2014-05-02 17:21:55 +0000</lastmod>
+    <lastmod>2014-05-02T17:21:55+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-04-28</loc>
-    <lastmod>2014-04-29 18:52:13 +0000</lastmod>
+    <lastmod>2014-04-29T18:52:13+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-04-26</loc>
-    <lastmod>2014-04-27 16:28:07 +0000</lastmod>
+    <lastmod>2014-04-27T16:28:07+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-04-23</loc>
-    <lastmod>2014-04-24 15:17:41 +0000</lastmod>
+    <lastmod>2014-04-24T15:17:41+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-04-22</loc>
-    <lastmod>2014-04-23 13:46:52 +0000</lastmod>
+    <lastmod>2014-04-23T13:46:52+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-04-20</loc>
-    <lastmod>2014-04-21 20:25:41 +0000</lastmod>
+    <lastmod>2014-04-21T20:25:41+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-04-18</loc>
-    <lastmod>2014-04-19 15:49:53 +0000</lastmod>
+    <lastmod>2014-04-19T15:49:53+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-04-16</loc>
-    <lastmod>2014-04-17 18:30:42 +0000</lastmod>
+    <lastmod>2014-04-17T18:30:42+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-04-15</loc>
-    <lastmod>2014-04-16 12:55:29 +0000</lastmod>
+    <lastmod>2014-04-16T12:55:29+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/journal/2014-04-06</loc>
-    <lastmod>2014-04-07 04:18:57 +0000</lastmod>
+    <lastmod>2014-04-07T04:18:57+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
 
   <url>
     <loc>http://cushionapp.com/expenses</loc>
-    <lastmod>2014-04-07 02:18:33 +0000</lastmod>
+    <lastmod>2014-04-07T02:18:33+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/expenses/website-hosting</loc>
-    <lastmod>2014-04-07 03:55:30 +0000</lastmod>
+    <lastmod>2014-04-07T03:55:30+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/expenses/website-cms</loc>
-    <lastmod>2014-04-07 03:56:24 +0000</lastmod>
+    <lastmod>2014-04-07T03:56:24+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/expenses/email-hosting</loc>
-    <lastmod>2014-04-07 03:52:36 +0000</lastmod>
+    <lastmod>2014-04-07T03:52:36+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/expenses/domain-registration</loc>
-    <lastmod>2014-04-07 02:32:56 +0000</lastmod>
+    <lastmod>2014-04-07T02:32:56+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
