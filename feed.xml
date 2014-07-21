@@ -3,7 +3,34 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Mon, 21 Jul 2014 21:04:50 +0000</pubDate>
+    <pubDate>Mon, 21 Jul 2014 22:31:50 +0000</pubDate>
+    
+    <item>
+      <title>SSL Certificate &amp; Service</title>
+      <link>http://cushionapp.com/expenses/ssl-certificate-service</link>
+      <pubDate>Mon, 21 Jul 2014 18:11:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/ssl-certificate-service</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web App Database</title>
+      <link>http://cushionapp.com/expenses/web-app-database</link>
+      <pubDate>Mon, 21 Jul 2014 18:10:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/web-app-database</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web App Server</title>
+      <link>http://cushionapp.com/expenses/web-app</link>
+      <pubDate>Mon, 21 Jul 2014 18:08:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/web-app</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-07-21</title>
@@ -379,56 +406,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;I started building out the initial server-side groundwork using &lt;a href=&quot;http://expressjs.com&quot;&gt;Express&lt;/a&gt;—the Sinatra of Node.js. So far, I love it. The structure is very easy to grasp and everything makes sense. Right now, I have the server running the web app and API. Next up is the database and models.&lt;/p&gt;
 
 &lt;p&gt;For those who are interested in Node.js and Express, I’m starring all of the useful repos I come across &lt;a href=&quot;https://github.com/stars/destroytoday?direction=desc&amp;amp;filter=others&amp;amp;sort=created&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-04-18</title>
-      <link>http://cushionapp.com/journal/2014-04-18</link>
-      <pubDate>Sat, 19 Apr 2014 11:18:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-04-18</guid>
-      <description>&lt;p&gt;Since deciding to build Cushion, I’ve intentionally taken my time in choosing its stack. In the past, I used &lt;a href=&quot;http://spinejs.com/&quot;&gt;Spine&lt;/a&gt; on the front-end. I loved its clean syntax and small footprint, but, over time, I found it requiring a considerable amount of manual work for most tasks.&lt;/p&gt;
-
-&lt;p&gt;I started looking around and stumbled upon &lt;a href=&quot;https://github.com/yyx990803/vue&quot;&gt;Vue.js&lt;/a&gt;, which is an up-and-coming front-end framework. It takes a few cues from the other available frameworks and combines them into a tiny, simple package. I really enjoyed its syntax and actually had fun experimenting with it.&lt;/p&gt;
-
-&lt;p&gt;As I used Vue.js, however, a worriesome feeling grew inside me. To me, Cushion is a long-term app, and I want to work on it for years to come. With this being the case, it wouldn’t be wise to go with a new, edge framework. Instead, I should be considering more proven, battle-tested frameworks.&lt;/p&gt;
-
-&lt;p&gt;I scrapped my existing code and started looking into &lt;a href=&quot;https://angularjs.org/&quot;&gt;AngularJS&lt;/a&gt;. So far, I feel incredibly confident using it, as every question seems to have an answer. Also, testing is at the forefront with AngularJS—all of their guides include steps on how to test the code they teach. This pulls at my test-loving heart strings.&lt;/p&gt;
-
-&lt;p&gt;While it would be fun to experiment with something new, I feel the need to play it smart and go with a veteran framework with an established community.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-04-16</title>
-      <link>http://cushionapp.com/journal/2014-04-16</link>
-      <pubDate>Thu, 17 Apr 2014 09:25:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-04-16</guid>
-      <description>&lt;p&gt;&lt;img src=&quot;/assets/2014-04-16-name-sort.png&quot; alt=&quot;2014-04-16-name-sort&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Yesterday, I set up my test environment and started writing tests for a simple table component I’m building with &lt;a href=&quot;http://vuejs.org&quot;&gt;Vue.js&lt;/a&gt;. At first, I wrote it to rely on a provided template, so it wouldn’t be too restricting. The more I worked on it, however, the more I realized how much it could benefit from automation. I replaced all the hard-coded HTML with looping template code. Now, it can create its own headers based on a provided list of header names and types—color, text, and currency.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-04-16-color-sort.png&quot; alt=&quot;2014-04-16-table&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;The table can sort itself by clicking any one of the headers—once for ascending, twice for descending. For the color-typed column, it sorts by RGB, so the rows create a smooth gradation. I also added currency formatting using &lt;a href=&quot;http://josscrowcroft.github.io/accounting.js/&quot;&gt;Accounting.js&lt;/a&gt;, an incredibly simple and configurable library for formatting money of any kind. Vue.js made formatting too easy with the use of &lt;a href=&quot;http://vuejs.org/guide/filters.html&quot;&gt;custom filters&lt;/a&gt; on data.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-04-16-income-sort.png&quot; alt=&quot;2014-04-16-income-sort&quot;&gt; &lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-04-15</title>
-      <link>http://cushionapp.com/journal/2014-04-15</link>
-      <pubDate>Wed, 16 Apr 2014 08:38:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-04-15</guid>
-      <description>&lt;p&gt;I spent the majority of the day setting up the initial dev environment for Cushion. No matter how many times I’ve done this, it always takes longer than expected. Once everything was up and running, I started building the most basic view—the project table. This will list all of the projects, along with their color, client, and incomes—deposited, pending, and potential. Eventually, it will show other information, like flags, but I’m getting ahead of myself.&lt;/p&gt;
-
-&lt;p&gt;While writing the basic outline for the app’s models, I realized that I was straying from the core feature set of the app. Somewhere along the way, I dropped my guard and started including additional features that would be nice eventually, but not necessary for the first version. I widdled everything down and ended up with three core data models—clients, projects, and invoices.&lt;/p&gt;
-
-&lt;p&gt;A “client” is simply used to group together projects, with only a name and color besides the relation. A “project” represents any job or piece of work and will be the heaviest model of the entire app—almost everything will focus around the project. An “invoice” is used to make up the various incomes of a given project, based on its status of paid, pending, or potential. I have no plans to include invoicing as a feature of Cushion—I just need each invoice’s amount for calculating income for a project. I &lt;em&gt;do&lt;/em&gt;, however, plan to tie closely to other invoicing services, so the process of adding an invoice is not duplicated.&lt;/p&gt;
 </description>
     </item>
     

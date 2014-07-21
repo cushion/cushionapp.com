@@ -148,8 +148,26 @@
   </url>
   
   <url>
+    <loc>http://cushionapp.com/expenses/ssl-certificate-service</loc>
+    <lastmod>2014-07-21T22:30:38+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cushionapp.com/expenses/web-app-database</loc>
+    <lastmod>2014-07-21T22:10:43+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cushionapp.com/expenses/web-app</loc>
+    <lastmod>2014-07-21T22:12:38+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://cushionapp.com/expenses/website-hosting</loc>
-    <lastmod>2014-04-07T03:55:30+00:00</lastmod>
+    <lastmod>2014-07-21T22:07:58+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   

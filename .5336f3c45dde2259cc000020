@@ -1,5 +1,5 @@
 ---
-time: 1405976693
+time: 1405981911
 inventory:
   /newsletter/index.html:
     md5: 680c4324628a9913a96ad716e497ee8f
@@ -80,8 +80,17 @@ inventory:
     md5: 5d860248fec5b5190bfb42a68f559efe
     time: 1404674334
   /expenses/index.html:
-    md5: 7e47123e63df76501defc47813a35098
-    time: 1404674334
+    md5: 3511ee2edbeec585559b230bd4744283
+    time: 1405981910
+  /expenses/ssl-certificate-service/index.html:
+    md5: 88553b50956a79c4cf191da759e2a03e
+    time: 1405981910
+  /expenses/web-app-database/index.html:
+    md5: 69c16c0df2c844a76489b31b72e704f8
+    time: 1405981910
+  /expenses/web-app/index.html:
+    md5: 5c6f47e3b7372bdbee6296cf92ecbf67
+    time: 1405981910
   /expenses/website-hosting/index.html:
     md5: 6cb69b60b87d1f53541b9dbedc0cc0f0
     time: 1404674334
@@ -110,11 +119,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: d63e1ffa7f558eda855371ba29e9c513
-    time: 1405976690
+    md5: 83679265d7762325da3cc39d54a8e986
+    time: 1405981910
   /feed.xml:
-    md5: 1d45e2be9e0f93f256d91b3013018eef
-    time: 1405976690
+    md5: 0547142259b3da225e26c5a674ab856a
+    time: 1405981911
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
