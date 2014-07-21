@@ -24,6 +24,10 @@
           {% endif %}
           {% assign total = total | plus: cost %}
         {% endfor %}
+        {% assign spaces = total | split:'.' | last | size %}
+        {% if spaces == 1 %}
+          {% assign total = total | append:'0' %}
+        {% endif %}
         <td class='number-cell' colspan='3'>${{ total }}/year</td>
       </tr>
     </tfoot>
