@@ -3,7 +3,25 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Mon, 21 Jul 2014 22:31:50 +0000</pubDate>
+    <pubDate>Thu, 24 Jul 2014 13:23:19 +0000</pubDate>
+    
+    <item>
+      <title>2014-07-24</title>
+      <link>http://cushionapp.com/journal/2014-07-24</link>
+      <pubDate>Thu, 24 Jul 2014 08:37:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2014-07-24</guid>
+      <description>&lt;p&gt;I’ve been contemplating not mentioning this just yet because I don’t want it to seem like I’m ready to launch the beta, but… Cushion is now online. This past weekend, after great pressure from my wife (also a freelancer), I decided to set up everything needed to get Cushion working on a server. &lt;/p&gt;
+
+&lt;p&gt;I knew this would be a challenge, as it always is, but I wanted to get it out of the way early, so that everything I change from now on will need to work in production, avoiding any last-minute surprises. Also, it helps me establish a better process for updating the app, through the use of continuous integration and an asset pipeline that keeps compiled code outside of the dev branch.&lt;/p&gt;
+
+&lt;p&gt;Along with all the deployment setup, I’ve integrated a few helpful services for performance metrics, exception tracking, and user analytics. As I progress with Cushion, I’ll rely on these services to fine-tune the app along the way. Everything is also wired to my personal Slack room, so I’m alerted of any issues as they happen. I want to get this app right from the start and this extra preparation will go a long way.&lt;/p&gt;
+
+&lt;p&gt;Regarding the beta, I don’t have a definite date in mind, but it’s sooner than later. I have a short list of crucial items to tackle, then all of the payment and legal stuff. As a reminder, the beta is paid in order to support early development and encourage users to provide real feedback. I’ve been a part of far too many free betas that attract countless stagnant users because there’s no incentive or motivation to consistently test the app.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in taking part in the beta, &lt;a href=&quot;/&quot;&gt;sign up&lt;/a&gt; to be notified.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SSL Certificate &amp; Service</title>
@@ -390,22 +408,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;Another bright side of this decision is that I can return to what I know. Since I’ve written several Ruby apps in the past, I know what to expect. I won’t be wasting time on the learning curve, and I can make use of all that I’ve learned over the past few years of building Ruby apps.&lt;/p&gt;
 
 &lt;p&gt;Now that I got the new-tech craving out of my system, I’m excited to go full speed ahead with Cushion.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-04-20</title>
-      <link>http://cushionapp.com/journal/2014-04-20</link>
-      <pubDate>Mon, 21 Apr 2014 11:59:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-04-20</guid>
-      <description>&lt;p&gt;I started building out more of the UI, including the form for creating a new project.  I got antsy and felt the need to be able to change the data I’ve been working with. Leading up to developing Cushion, the plan has been to build local-first, so the app could be used offline from the get-go. This was a nice thought, but became less realistic the more I looked into offline storage and making that work with Angular. The browsers haven’t really decided which local database framework they want to go with, and the one with the most support, &lt;a href=&quot;http://www.w3.org/TR/webdatabase/&quot;&gt;Web SQL&lt;/a&gt;, has already been labelled as deprecated.&lt;/p&gt;
-
-&lt;p&gt;Instead of half-heartedly choosing one direction and regretting it later, I decided to stop spinning my wheels and just put aside the local-first idea. For now, I could at least build the app with offline capabilities in mind. Now, the question is which server-side stack to pick. For the past several years, I’ve been using Ruby and its lightweight, do-most-of-it-yourself framework, &lt;a href=&quot;http://sinatrarb.com&quot;&gt;Sinatra&lt;/a&gt;. I really enjoyed using Sinatra, but have been through the app set-up process so many times that I need something different. I haven’t given Node.js a thorough look since its debut, but now that it has several years under its belt, I decided to seriously consider it.&lt;/p&gt;
-
-&lt;p&gt;I started building out the initial server-side groundwork using &lt;a href=&quot;http://expressjs.com&quot;&gt;Express&lt;/a&gt;—the Sinatra of Node.js. So far, I love it. The structure is very easy to grasp and everything makes sense. Right now, I have the server running the web app and API. Next up is the database and models.&lt;/p&gt;
-
-&lt;p&gt;For those who are interested in Node.js and Express, I’m starring all of the useful repos I come across &lt;a href=&quot;https://github.com/stars/destroytoday?direction=desc&amp;amp;filter=others&amp;amp;sort=created&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
