@@ -1,5 +1,5 @@
 ---
-time: 1406646901
+time: 1406652959
 inventory:
   /newsletter/index.html:
     md5: 680c4324628a9913a96ad716e497ee8f
@@ -8,11 +8,11 @@ inventory:
     md5: 680c4324628a9913a96ad716e497ee8f
     time: 1404674333
   /journal/index.html:
-    md5: ace94427e0b0cfe7400cfa0e0666b133
-    time: 1406646895
+    md5: fd675b58a08fa4782a546759f3459e87
+    time: 1406652957
   /journal/2014-07-29/index.html:
-    md5: de27e96aba8c8e5055c5be50749b7ff1
-    time: 1406646896
+    md5: 1f68d6f41c11d9be72e97ed6a6d3d75b
+    time: 1406652957
   /journal/2014-07-24/index.html:
     md5: 5f22e9d6b2deddbf37e2fab1905585f4
     time: 1406208197
@@ -125,11 +125,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: d6e155edc8986d68f8aa9902f38b9377
-    time: 1406646897
+    md5: 0c800ec01e00ebb96b2c7cf9a7cc88b8
+    time: 1406652958
   /feed.xml:
-    md5: a819454b36b20273b041b174ad5f114b
-    time: 1406646897
+    md5: 52a249ccae04360461456954ffb68b05
+    time: 1406652958
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
