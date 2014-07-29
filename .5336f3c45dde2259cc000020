@@ -1,5 +1,5 @@
 ---
-time: 1406208200
+time: 1406646901
 inventory:
   /newsletter/index.html:
     md5: 680c4324628a9913a96ad716e497ee8f
@@ -8,8 +8,11 @@ inventory:
     md5: 680c4324628a9913a96ad716e497ee8f
     time: 1404674333
   /journal/index.html:
-    md5: c421ea768d1bbee8cac8b9e05e3a72d1
-    time: 1406208197
+    md5: ace94427e0b0cfe7400cfa0e0666b133
+    time: 1406646895
+  /journal/2014-07-29/index.html:
+    md5: de27e96aba8c8e5055c5be50749b7ff1
+    time: 1406646896
   /journal/2014-07-24/index.html:
     md5: 5f22e9d6b2deddbf37e2fab1905585f4
     time: 1406208197
@@ -122,11 +125,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 4213e1d2b7890370c603c9c23b87e18a
-    time: 1406208199
+    md5: d6e155edc8986d68f8aa9902f38b9377
+    time: 1406646897
   /feed.xml:
-    md5: 34bbbaed2332b28c51c005c317e4df6a
-    time: 1406208199
+    md5: a819454b36b20273b041b174ad5f114b
+    time: 1406646897
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -178,6 +181,9 @@ inventory:
   /assets/2014-07-21-late-invoice.png:
     md5: 30c11216c9b6441f6094d9c315c04f51
     time: 1405976691
+  /assets/2014-07-29-new-form-layout.png:
+    md5: 77733e3779ee9abd91131b09b601afd1
+    time: 1406646898
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -208,6 +214,9 @@ inventory:
   /assets/2014-07-21-into-invoice.png:
     md5: 74c99b9984a660de6877ac89f35f1d63
     time: 1405976691
+  /assets/2014-07-29-color-picker.png:
+    md5: 234654ae495af7e4c3bf6f9802614cf0
+    time: 1406646898
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -229,12 +238,21 @@ inventory:
   /assets/2014-07-21-early-invoice.png:
     md5: 17b3dd77b02ced4663178105ddef0823
     time: 1405976691
+  /assets/2014-07-29-date-picker.png:
+    md5: 73f927fc65ba3442284db447cb2488b1
+    time: 1406646898
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
   /assets/2014-07-21-future-invoice.png:
     md5: a3f0545c2620800679d45cfa893444e4
     time: 1405976691
+  /assets/2014-07-29-color-inheritance.png:
+    md5: fc65c5301aeaaddcf7b4dd1b7537ae4f
+    time: 1406646898
   /assets/2014-07-21-still-late-invoice.gif:
     md5: 8efef1b79e9a49055c81710076f6a797
     time: 1405976691
+  /assets/2014-07-29-inline-client-inheritance.png:
+    md5: 08afbdd802ee8c805f1f81454d4a7310
+    time: 1406646899

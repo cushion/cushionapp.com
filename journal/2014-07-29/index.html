@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Cushion</title>
+
+    <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/images/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/images/favicon.png'>
+
+    <link href='/assets/styles/screen.css' rel='stylesheet'>
+
+    <script>
+  (function() {
+  var config = {
+  kitId: 'jpp2iwq',
+  scriptTimeout: 3000
+  };
+  var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+
+    <script type="text/javascript">
+window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+window.analytics.load("lvwwqqgyp6");
+window.analytics.page();
+</script>
+
+  </head>
+
+  <body>
+    <div class='wrapper outer-container'>
+      <div class='inner-container'>
+        <header class='main-header'>
+          <h1 class='logo'>
+            <a href='/'>Cushion</a>
+          </h1>
+          <h2 class='tagline'>Peace of mind for freelancers</h2>
+
+          <nav class='main-nav'>
+            <ul class='nav-list'>
+            
+              
+            
+              
+              <li class='nav-item'>
+                <a class='nav-link' href='/journal'>Journal</a>
+              </li>
+              
+            
+              
+              <li class='nav-item'>
+                <a class='nav-link' href='/expenses'>Expenses</a>
+              </li>
+              
+            
+            </ul>
+          </nav>
+        </header>
+
+        
+<main class='main-content'>
+  <article class='article'>
+    <h3 class='article-title'>
+      <a href='/journal/2014-07-29'>2014-07-29</a>
+    </h3>
+    <div class='article-copy'>
+      <p>This past weekend, I focused on usability. My first stab on the layout of model forms was haphazard. While showing Cushion to a few people, I could see an obvious hesitation on where to start when creating a new project. All of a sudden, the user is presented with fields all over the place with no clear direction.</p>
+
+<p><a href="/assets/2014-07-29-new-form-layout.png"><img src="/assets/2014-07-29-new-form-layout.png" alt="2014-07-29-new-form-layout"></a></p>
+
+<p>Believe it or not, I had a dream about the new layout and it’s the one I’m going with. Instead of letting the sections rest aside each other and reflow when needed, I just stack them and separate with dividers. Now, the sections actually represent the different views of Cushion (schedule and budget) and there’s a clear flow from top to bottom. </p>
+
+<p>At first, I was worried there would be too much negative space in the smaller sections, like budget, but it doesn’t feel as bad—especially if I end up going with a budget range instead of a single value. Also, this layout allows me to potentially include mini visuals for each section that provides more context than just input fields. Imagine the budget section including the average budget for your projects or the average budget for the client of that project. All of a sudden, you have a better idea of where to start.</p>
+
+<p>Along with a revision of the layout, I’ve been working on improving the actual input fields. From the start, I chose HTML5’s native input types, thinking these would take care of a ton of extra work in the early stages. Unfortunately, some of the native input types, like <code>&lt;input type=&#39;date&#39;&gt;</code>, are cemented in ugly (can’t be styled) and don’t even work in common browsers like Safari.</p>
+
+<p><img src="/assets/2014-07-29-color-picker.png" alt="2014-07-29-color-picker"> </p>
+
+<p>The first input type I tackled was the color picker. I took a page from my buddies at Friends of the Web with their Dayswork app and provided a simple popover of suggested colors. I <em>hate</em> color pickers on the web that mimic those in design tools like Photoshop—they assume everyone is a designer. With suggested colors, any one of them will look good, and in most cases, you won’t need to use it because your client already has an established color. Considering this, the color picker is more of an easy way to get started.</p>
+
+<p><img src="/assets/2014-07-29-date-picker.png" alt="2014-07-29-date-picker"></p>
+
+<p>Next, I addressed the date picker. For this, I wanted a design that is both useful and obvious to navigate—it should also have a couple Cushion-specific features that support the reasoning behind going custom. For instance, if the date is part of a range, the dates within the range should highlight to indicate that. Also, for validation purposes, you shouldn’t be able to pick a finish date that comes before the range’s start date.</p>
+
+<p><img src="/assets/2014-07-29-color-inheritance.png" alt="2014-07-29-color-inheritance"> </p>
+
+<p>In filling out the forms, I also realized how tedious the process felt. Because of this, I added value inheritance. Let’s say you create a new project, but it doesn’t necessarily call for a color other than its client’s. Before, you would need to re-enter your client’s color. Now, it defaults to using the client’s color unless specified otherwise. </p>
+
+<p><img src="/assets/2014-07-29-inline-client-inheritance.png" alt="2014-07-29-inline-client-inheritance"> </p>
+
+<p>This also works reversely for the inline client creation. If you create a new project and set its color, the inline client will inherit that color by default.</p>
+
+<p>Lastly, client and project symbols are now auto-generated with the ability to override them. This means if you create a new client named “Vandelay Industries”, its symbol will be “VI” by default, but you could overwrite it to something like “VanInd” if you want.</p>
+
+<p>These recent updates have me incredibly excited to get Cushion in the hands of others as soon as possible. I know most of them are unnecessary for an initial beta release, but I want this app to be a joy to use from the start.</p>
+
+    </div>
+  </article>
+</main>
+
+
+        <footer class='main-footer'>
+          Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
+        </footer>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
+
