@@ -3,7 +3,45 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Tue, 29 Jul 2014 16:55:58 +0000</pubDate>
+    <pubDate>Mon, 11 Aug 2014 16:21:35 +0000</pubDate>
+    
+    <item>
+      <title>2014-08-11</title>
+      <link>http://cushionapp.com/journal/2014-08-11</link>
+      <pubDate>Mon, 11 Aug 2014 09:43:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2014-08-11</guid>
+      <description>&lt;p&gt;This last week, I focused primarily on the Cushion backend. In working locally on the app, I realized that it was becoming sluggish—especially on pages with a lot of content. I’ve been building this app with progress in mind, so I haven’t been as considerate as I should be. I query the database far too often and calculate the results in Ruby when it could all be done in the database. Because of this, performance issues are apparent.&lt;/p&gt;
+
+&lt;p&gt;For example, a single request to retrieve a list of projects uses a single query for the projects, but then three additional queries for each project to grab the sum of its invoices. With my current personal data, this resulted in nearly 150 queries just to pull down my projects! Not good.&lt;/p&gt;
+
+&lt;p&gt;I knew this would happen when I wrote the code because, at the time, I just needed it to work. I’m being a responsible dev and using test-driven development for the backend, so in order for the tests to pass, they just need the correct result. Now that I’m further along, however, I also need the code to perform well. Luckily, I can go back and fine-tune the code, knowing that my tests are in place to double-check that it still works.&lt;/p&gt;
+
+&lt;p&gt;After getting up to speed with PostgreSQL, I realized just how much I could do in the database rather than in Ruby—apparently, much more than I imagined. I started by focusing on those invoices sums—paid income, unpaid income, and relative estimated income. The first two are straightforward—just paid invoices and unpaid invoices—but the last one is trickier.&lt;/p&gt;
+
+&lt;p&gt;Every project has an estimated income, which is a ballpark amount that this project could potentially bring in. It’s not a guarantee that you’ll reach that amount, nor is it a guarantee that it will &lt;em&gt;only&lt;/em&gt; bring in that amount. It’s just a figure to give you an idea. With this figure, however, we can do some interesting things, like seeing how close or far off you were.&lt;/p&gt;
+
+&lt;p&gt;If we take the estimated income for a project and subtract the sum of its invoices, we can see the actual income relative to the estimated amount. As you’re working on the project, this can be useful for seeing how much is potentially remaining, if it’s capped-off at that amount. Or, if you’re working hourly without a cap, you  can see how much more you’ve made than originally anticipated. Hopefully, you fall in the latter end of this example.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-08-11-client-budget.png&quot; alt=&quot;2014-08-11-client-budget&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I wrapped up projects and moved up the chain to clients. For clients, I have these sums of income as well, but on a wider scale, combining the sums of each client’s projects. This is useful in seeing which clients bring in the most (in case you need to spread out your income streams) and which clients owe you the most (revealing a red flag going forward).&lt;/p&gt;
+
+&lt;p&gt;We also have a lot of data to play with in regards to scheduling. Since every project has both estimated and actual start dates and end dates, I’ve been able reveal projects that start late or drag on too long. This is useful enough on the project level, but if we take a step back and group the projects by client, we can learn a lot about client tendencies.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-08-11-client-schedule.png&quot; alt=&quot;2014-08-11-client-schedule&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Now, instead of sums, we can calculate averages. The three main columns represent the average duration, delay and drag of clients. With them, we can expose a lot. If a client consistently feeds you only small scope projects, you can know with confidence whether you can fit them in an open slot in your schedule. On the cautionary side, we can use average delay and drag to question whether you should still work with this client or just account for the delay and drag when planning the next gig with them.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-08-11-tooltips.png&quot; alt=&quot;2014-08-11-tooltips&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I also improved the schedule tooltip to provide written details of what you’re looking at rather than forcing you to do the math—you can now point to a specific segment of a bar and see what it represents. For clients and projects, these segments include the delay, drag, duration and estimated duration.&lt;/p&gt;
+
+&lt;p&gt;Under invoices, using the dates assigned to each (issued, due, and paid), the segments represent how early an invoice was paid, how late an invoice was paid (more realistic), how long an invoice took to get paid, and how long until an invoice is due.&lt;/p&gt;
+
+&lt;p&gt;With these new tooltips in place, I feel like I’m going in a really good direction—taking useful data and making it easily accessible. Being able to see the data in table form is easy, but I’d rather provide the ability to interact with data in context.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2014-07-29</title>
@@ -408,24 +446,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;In the past, I’ve been able to work well by getting the design to a certain point, then switching to dev and designing the rest through code. This has its ups and downs—it helps in seeing how the design will actually work, but it prevents any grand departures from the original design. Scrapping everything and starting from scratch is easy in design flats, but not in code. Straying that far would require a certain level of confidence that it’s not a waste of time.&lt;/p&gt;
 
 &lt;p&gt;Considering all of this, I will design more next week. There are several sections of Cushion that still need a thoughtful look and feel, so I will give each the time it needs.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-04-23</title>
-      <link>http://cushionapp.com/journal/2014-04-23</link>
-      <pubDate>Thu, 24 Apr 2014 10:55:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-04-23</guid>
-      <description>&lt;p&gt;I spent the majority of the day setting up the new environment, but this time with Ruby. It feels good to be back in a familiar space where every move doesn’t start with a question. Even though I have a lot of experience with Ruby, I took some time to look around and research. Are there any useful gems that I haven’t heard of yet? How far has Sinatra come since my last app?&lt;/p&gt;
-
-&lt;p&gt;In doing so, I stumbled upon one gem that I’m especially excited to use—&lt;a href=&quot;https://github.com/travisjeffery/timecop&quot;&gt;Timecop&lt;/a&gt;. Aside from the amazing name, I can’t tell you how much time and frustration this gem would’ve saved me in the past. The aspect of time won’t be as crucial in Cushion as it was in previous apps of mine, but still, it’s good to know that this gem is available.&lt;/p&gt;
-
-&lt;p&gt;I also found that Alex Maccaw &lt;a href=&quot;https://github.com/maccman/monocle&quot;&gt;open-sourced&lt;/a&gt; his news aggregator, &lt;a href=&quot;http://monocle.io&quot;&gt;Monocle&lt;/a&gt;. Since he’s an avid proponent of lightweight frameworks, like Sinatra, I spent a good amount of time perusing his code and learning a few new tricks. Going through someone else’s code almost feels like browsing their record collection—you’re bound to find something you haven’t seen before.&lt;/p&gt;
-
-&lt;p&gt;Near the end of the day, I decided to look into &lt;a href=&quot;http://www.vagrantup.com/&quot;&gt;Vagrant&lt;/a&gt;, a tool for creating dev environments. Up until now, I would typically work on an app in my local OS X environment and hope that it would work on the production server. Unless I’m running the app on a Mac Mini server, this doesn’t make much sense. With Vagrant, it didn’t take long for me to create a proper dev environment on an Ubuntu VM. I used &lt;a href=&quot;http://rove.io&quot;&gt;Rove&lt;/a&gt; to help generate a starter script and only needed to fine-tune a few other things before it all came together.&lt;/p&gt;
-
-&lt;p&gt;Now that the app and tests are up and running locally, I’m ready to go full speed ahead—seriously, this time.&lt;/p&gt;
 </description>
     </item>
     
