@@ -1,5 +1,5 @@
 ---
-time: 1408461375
+time: 1408461578
 inventory:
   /newsletter/index.html:
     md5: 680c4324628a9913a96ad716e497ee8f
@@ -8,11 +8,11 @@ inventory:
     md5: 680c4324628a9913a96ad716e497ee8f
     time: 1404674333
   /journal/index.html:
-    md5: 71faf378c1c9a016413af6742b3a478c
-    time: 1408461366
+    md5: 127340b9772f2c28ab8fb427c573d667
+    time: 1408461575
   /journal/2014-08-19/index.html:
-    md5: 341f74de85014f42fbf726e64c22b343
-    time: 1408461366
+    md5: 99e28be1e005c28953d89155402338ea
+    time: 1408461575
   /journal/2014-08-11/index.html:
     md5: 7b2e792a265a8a62aa257b11f5be3137
     time: 1407774093
@@ -131,11 +131,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 7c96616ef0686a4a08a0cd7b6de77104
-    time: 1408461368
+    md5: 6ff96cfc6304774162111f8da85e46c5
+    time: 1408461577
   /feed.xml:
-    md5: 909acc93c4429754337cbd388df9a818
-    time: 1408461368
+    md5: c8fa7044e3d067211b8b6af927a46adc
+    time: 1408461577
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -304,3 +304,6 @@ inventory:
   /assets/2014-08-19-active-date-tooltip.png:
     md5: 18687f512aff3a07522e43450122207a
     time: 1408461372
+  /assets/2014-08-19-new-timeline.png:
+    md5: ae034b954062a3b72710b0a4cbf23506
+    time: 1408461577
