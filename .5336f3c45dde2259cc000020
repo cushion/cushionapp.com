@@ -1,5 +1,5 @@
 ---
-time: 1408461578
+time: 1409152746
 inventory:
   /newsletter/index.html:
     md5: 680c4324628a9913a96ad716e497ee8f
@@ -8,8 +8,11 @@ inventory:
     md5: 680c4324628a9913a96ad716e497ee8f
     time: 1404674333
   /journal/index.html:
-    md5: 127340b9772f2c28ab8fb427c573d667
-    time: 1408461575
+    md5: e5bf4e4dac4301387e1d2c43429b7f0f
+    time: 1409152740
+  /journal/2014-08-27/index.html:
+    md5: 5fdc15727d7cded1c68e74ec2fb6293e
+    time: 1409152740
   /journal/2014-08-19/index.html:
     md5: 99e28be1e005c28953d89155402338ea
     time: 1408461575
@@ -131,11 +134,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 6ff96cfc6304774162111f8da85e46c5
-    time: 1408461577
+    md5: 4f4e1a97f58f80d2a21e8ef4b2582cd3
+    time: 1409152742
   /feed.xml:
-    md5: c8fa7044e3d067211b8b6af927a46adc
-    time: 1408461577
+    md5: 4059677f98877e25281dcc4e90379d7d
+    time: 1409152742
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -196,6 +199,9 @@ inventory:
   /assets/2014-08-19-old-timeline.png:
     md5: 4594089d1e58cb9ed0a817bb031e1986
     time: 1408461369
+  /assets/2014-08-27-income-input.gif:
+    md5: 21a41b38caa0892388c36ccd9df4dfcc
+    time: 1409152743
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -235,6 +241,9 @@ inventory:
   /assets/2014-08-19-estimated-actual.png:
     md5: 72c03080bbf8a7517fde2daee8831a1b
     time: 1408461369
+  /assets/2014-08-27-due-net.gif:
+    md5: 7d93adaafec0ecd9a5cb5121a63d73a9
+    time: 1409152743
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -265,6 +274,9 @@ inventory:
   /assets/2014-08-19-hide-estimated.png:
     md5: 943dc250949050a74c10468aac5f0df0
     time: 1408461369
+  /assets/2014-08-27-success.gif:
+    md5: f8b4b15dfa75c455babf928c69fff670
+    time: 1409152744
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
