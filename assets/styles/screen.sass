@@ -3,9 +3,10 @@
 
 // variables
 
-$base-font: 400 100%/1.65 "pt-sans", "Helvetica Neue", Helvetica, sans-serif
-$header-font: 700 100%/1.25 "effra", "Helvetica Neue", Helvetica, sans-serif
-$button-font: 400 112.5%/1.65 "effra", "Helvetica Neue", Helvetica, sans-serif
+$system-font: "Helvetica Neue", Helvetica, sans-serif
+$base-font: 400 100%/1.65 "pt-sans", $system-font
+$header-font: 700 100%/1.25 "effra", $system-font
+$button-font: 400 112.5%/1.65 "effra", $system-font
 
 $white: #fff
 $black: #000
@@ -274,26 +275,39 @@ table
   width: 100%
   margin: 0 auto
 
-th
-  padding-bottom: em(4, 14)
+  font-family: $system-font
 
-  font-size: em(14)
+th
+  padding-bottom: em(4, 12)
+
+  font-size: em(12)
+  font-weight: normal
   color: $grey
   text-align: left
   text-transform: lowercase
 
 tbody
   td
-    padding-bottom: em(4)
+    padding-bottom: em(6, 14)
+
+    font-size: em(14)
 
   tr:last-child td
-    padding-bottom: em(13)
+    padding-bottom: em(16, 14)
 
 tfoot
   border-top: solid 4px $light-grey
 
   td
-    padding-top: em(10)
+    padding-top: em(13)
+
+    font-weight: 500
 
 .number-cell
   text-align: right
+
+// expenses
+
+.expense-graph
+  display: block
+  margin: em(30) auto
