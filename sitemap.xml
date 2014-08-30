@@ -173,25 +173,37 @@
 
   <url>
     <loc>http://cushionapp.com/expenses</loc>
-    <lastmod>2014-04-07T02:18:33+00:00</lastmod>
+    <lastmod>2014-08-30T18:09:30+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/expenses/ssl-certificate-service</loc>
-    <lastmod>2014-07-21T22:30:38+00:00</lastmod>
+    <lastmod>2014-08-30T18:24:36+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cushionapp.com/expenses/ssl-certificate</loc>
+    <lastmod>2014-08-30T18:26:38+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/expenses/web-app-database</loc>
-    <lastmod>2014-07-21T22:10:43+00:00</lastmod>
+    <lastmod>2014-08-30T18:26:09+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/expenses/web-app</loc>
-    <lastmod>2014-07-21T22:12:38+00:00</lastmod>
+    <lastmod>2014-08-29T23:34:36+00:00</lastmod>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://cushionapp.com/expenses/private-scm</loc>
+    <lastmod>2014-08-30T18:29:54+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
@@ -203,19 +215,19 @@
   
   <url>
     <loc>http://cushionapp.com/expenses/website-cms</loc>
-    <lastmod>2014-04-07T03:56:24+00:00</lastmod>
+    <lastmod>2014-08-29T23:30:50+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/expenses/email-hosting</loc>
-    <lastmod>2014-04-07T03:52:36+00:00</lastmod>
+    <lastmod>2014-08-29T23:30:06+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://cushionapp.com/expenses/domain-registration</loc>
-    <lastmod>2014-04-07T02:32:56+00:00</lastmod>
+    <lastmod>2014-08-29T23:30:32+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   

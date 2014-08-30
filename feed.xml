@@ -3,7 +3,7 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Wed, 27 Aug 2014 15:19:02 +0000</pubDate>
+    <pubDate>Sat, 30 Aug 2014 18:36:42 +0000</pubDate>
     
     <item>
       <title>2014-08-27</title>
@@ -184,11 +184,20 @@
     </item>
     
     <item>
-      <title>SSL Certificate &amp; Service</title>
+      <title>SSL Service</title>
       <link>http://cushionapp.com/expenses/ssl-certificate-service</link>
       <pubDate>Mon, 21 Jul 2014 18:11:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/ssl-certificate-service</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSL Certificate</title>
+      <link>http://cushionapp.com/expenses/ssl-certificate</link>
+      <pubDate>Mon, 21 Jul 2014 18:10:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/ssl-certificate</guid>
       <description></description>
     </item>
     
@@ -476,30 +485,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;Originally, I created a boolean &lt;code&gt;paid&lt;/code&gt; attribute and used that as an indicator. After separating the invoices section into two tables, “paid” and “unpaid”, I noticed this boolean wouldn’t suffice—I needed more relevant data. For instance, in the paid table, I no longer need the “due” column—I’d much rather see when invoices were paid. Considering this, I changed the &lt;code&gt;paid&lt;/code&gt; attribute to a date, called &lt;code&gt;paid_on&lt;/code&gt;. This gives me the date on which the invoice was paid and an easy indicator of whether it was paid or not (true if the date is set).&lt;/p&gt;
 
 &lt;p&gt;I’m excited about the invoice portion of the app because every service provides so much useful data. For now, I plan to condense it into something easier to digest, but down the road, there is so much I can do with it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-05-01</title>
-      <link>http://cushionapp.com/journal/2014-05-01</link>
-      <pubDate>Fri, 02 May 2014 11:25:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-05-01</guid>
-      <description>&lt;p&gt;&lt;a href=&quot;/assets/2014-05-01-new-project.png&quot;&gt;&lt;img src=&quot;/assets/2014-05-01-new-project.png&quot; alt=&quot;2014-05-01-new-project&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;This week, I spent more time designing, specifically the form for new projects. I’m starting out very basic, with only the name, client, color, and status. I hate designing forms because the best forms don’t feel like forms and that’s difficult to achieve. Above are a few variations, but not I’m thrilled about any of them.&lt;/p&gt;
-
-&lt;p&gt;The current state is much better than where I started. At first, I had color as its own field, but with four fields, the form already felt lengthy. Right now, color is combined with the name field to match the rest of the fields. I feel like color could play a huge role in the app, associating most pieces of data. I originally only assigned color to clients and projects, but it could also tie into statuses—green for on-track, yellow for on-hold, red for important or late.&lt;/p&gt;
-
-&lt;p&gt;I also decided to go with a modal for now because I want the user to be able to create projects from anywhere. It could be nice to eventually have a more embedded option, like adding onto existing listes, etc., but one step at a time. I’m still not happy with this design, though. &lt;/p&gt;
-
-&lt;p&gt;Regarding the dev side of the app, I originally planned to test everything from the start, but I’m quickly realizing how difficult that is when nothing is certain. Testing the backend is a given and easy in this regard, but testing the front-end before most decisions have been made will inevitably result in back-tracking. Because of this, I decided to write a draft version of the front-end, get the initial interaction solidified, then go back and rewrite it, tested. It also seems like a bunch of unnecessary work, but luckily, AngularJS has been great for quickly prototyping ideas.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-05-01-timeago.png&quot; alt=&quot;2014-05-01-timeago&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The API is coming along wonderfully. I currently have models and endpoints for clients, projects, statuses, and invoices. I added invoices yesterday, researching a few existing services I plan to tie into, like &lt;a href=&quot;http://www.getharvest.com/&quot;&gt;Harvest&lt;/a&gt;. For now, invoices have an issue date, due date, and amount. On the front-end, I use &lt;a href=&quot;http://momentjs.com/&quot;&gt;Moment.js&lt;/a&gt; to translate the dates into relative dates, so they’re easier to digest. I can add a few little touches to this, like highlighting the date when the invoice is overdue.&lt;/p&gt;
-
-&lt;p&gt;All in all, this has been a very productive week. Over the next few days, I plan to focus more on the workflow of creating each model on the front-end. Hopefully, I can get to a good spot.&lt;/p&gt;
 </description>
     </item>
     
