@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Sat, 30 Aug 2014 18:36:42 +0000</pubDate>
+    <pubDate>Tue, 02 Sep 2014 13:30:14 +0000</pubDate>
+    
+    <item>
+      <title>Email marketing</title>
+      <link>http://cushionapp.com/expenses/email-marketing</link>
+      <pubDate>Sat, 30 Aug 2014 15:35:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/email-marketing</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-08-27</title>
@@ -455,36 +464,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;&lt;a href=&quot;/assets/2014-05-06-timeline-days.png&quot;&gt;&lt;img src=&quot;/assets/2014-05-06-timeline-days.png&quot; alt=&quot;2014-05-06-timeline-days&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The timeline section has so much potential because I can build so many different views into it. The early designs included everything from planning projects per days and visualizing overlap to grouped income by project type. I can’t wait to flesh it out some more and continue fine-tuning it based on real data. I’m determined to make the final result really solid and able to handle any use-case.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-05-05</title>
-      <link>http://cushionapp.com/journal/2014-05-05</link>
-      <pubDate>Tue, 06 May 2014 11:03:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-05-05</guid>
-      <description>&lt;p&gt;After creating the invoice model and provided it with its own table section, I started integrating it into the rest of the sections. The projects section now has a column for paid and unpaid invoice amounts as well as a footer under each table for the sums. For the paid/unpaid attribute, I researched a few of the services I plan to integrate with and looked at how they represent this in their invoice model. Each one has a status for invoices, with half a dozen options:&lt;/p&gt;
-
-&lt;h4&gt;&lt;a href=&quot;http://getharvest.com&quot;&gt;Harvest&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;open, partial, draft, paid, unpaid, past due&lt;/p&gt;
-
-&lt;h4&gt;&lt;a href=&quot;http://freshbooks.com&quot;&gt;Freshbooks&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;disputed, draft, sent, viewed, paid, auto-paid, retry, failed&lt;/p&gt;
-
-&lt;h4&gt;&lt;a href=&quot;http://dayswork.co&quot;&gt;Dayswork&lt;/a&gt;&lt;/h4&gt;
-
-&lt;p&gt;unresolved, paid, uncollectable&lt;/p&gt;
-
-&lt;p&gt;Again, like with the project statuses, no one can agree on a set of common statuses to use, so we have a long list of unique ones per service. Since these are all services where you can create invoices and track them on a granular level, they need the specific statuses, like draft, viewed, etc. I have absolutely no plans for invoice creation in Cushion, so I have it easier when it comes to statuses. What I really want to know is whether or not an invoice has been paid.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-05-05-invoices.png&quot; alt=&quot;2014-05-05-invoices&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Originally, I created a boolean &lt;code&gt;paid&lt;/code&gt; attribute and used that as an indicator. After separating the invoices section into two tables, “paid” and “unpaid”, I noticed this boolean wouldn’t suffice—I needed more relevant data. For instance, in the paid table, I no longer need the “due” column—I’d much rather see when invoices were paid. Considering this, I changed the &lt;code&gt;paid&lt;/code&gt; attribute to a date, called &lt;code&gt;paid_on&lt;/code&gt;. This gives me the date on which the invoice was paid and an easy indicator of whether it was paid or not (true if the date is set).&lt;/p&gt;
-
-&lt;p&gt;I’m excited about the invoice portion of the app because every service provides so much useful data. For now, I plan to condense it into something easier to digest, but down the road, there is so much I can do with it.&lt;/p&gt;
 </description>
     </item>
     

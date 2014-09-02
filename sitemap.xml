@@ -173,8 +173,14 @@
 
   <url>
     <loc>http://cushionapp.com/expenses</loc>
-    <lastmod>2014-08-30T18:09:30+00:00</lastmod>
+    <lastmod>2014-09-02T13:16:39+00:00</lastmod>
     <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://cushionapp.com/expenses/email-marketing</loc>
+    <lastmod>2014-08-30T19:37:12+00:00</lastmod>
+    <priority>0.5</priority>
   </url>
   
   <url>

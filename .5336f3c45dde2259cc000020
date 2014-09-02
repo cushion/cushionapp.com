@@ -1,5 +1,5 @@
 ---
-time: 1409423803
+time: 1409664618
 inventory:
   /newsletter/index.html:
     md5: 680c4324628a9913a96ad716e497ee8f
@@ -95,8 +95,11 @@ inventory:
     md5: 5d860248fec5b5190bfb42a68f559efe
     time: 1404674334
   /expenses/index.html:
-    md5: 65efaab2ef1eca5f348c47447bf3d768
-    time: 1409423802
+    md5: 66fa90106c8df0167ac8ca6e7e4a1a63
+    time: 1409664614
+  /expenses/email-marketing/index.html:
+    md5: a56d4b84bc199779a2291af890219e15
+    time: 1409664614
   /expenses/ssl-certificate-service/index.html:
     md5: 88553b50956a79c4cf191da759e2a03e
     time: 1405981910
@@ -140,11 +143,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: fc6938f307ea45ad2e86edc38a332a60
-    time: 1409423802
+    md5: fdad7661ae58169504c4d4a3019ef5b2
+    time: 1409664614
   /feed.xml:
-    md5: 79c5bfd840fe1d52f463338df619de79
-    time: 1409423802
+    md5: 13165387754b3aeb548a03fece9a3b9b
+    time: 1409664615
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -205,9 +208,12 @@ inventory:
   /assets/2014-08-27-income-input.gif:
     md5: 21a41b38caa0892388c36ccd9df4dfcc
     time: 1409152743
+  /assets/cumulative-running-expenses.png:
+    md5: 09585cc481910976d3e7d9d3b59639e8
+    time: 1409664615
   /assets/styles/screen.css:
-    md5: ebd89406a9a567a58e35fd488e0d5b22
-    time: 1409423803
+    md5: 0f4e710f871a979c1b3a4e8cacde9623
+    time: 1409664615
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -250,6 +256,9 @@ inventory:
   /assets/2014-08-27-due-net.gif:
     md5: 7d93adaafec0ecd9a5cb5121a63d73a9
     time: 1409152743
+  /assets/total-expenses.png:
+    md5: 783bfa1c46e5c51e39f68c637e457e2b
+    time: 1409664616
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
