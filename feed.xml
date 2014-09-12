@@ -3,7 +3,69 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Tue, 02 Sep 2014 13:30:14 +0000</pubDate>
+    <pubDate>Fri, 12 Sep 2014 14:40:18 +0000</pubDate>
+    
+    <item>
+      <title>2014-09-12</title>
+      <link>http://cushionapp.com/journal/2014-09-12</link>
+      <pubDate>Fri, 12 Sep 2014 08:49:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2014-09-12</guid>
+      <description>&lt;p&gt;These past couple weeks have been intense. Last weekend, I sent out the first batch of beta invites. I say “batch” for consistency moving forward, but it was only 10. I want to be deliberate with how I bring users into the app, considering Cushion is currently only me, so I’m intentionally starting small. For the first month, I’ll send out 10 invites a week. Then, based on how everything’s going, I’ll increase it to 20 or 30 a week.&lt;/p&gt;
+
+&lt;p&gt;The plan is to onboard people gradually, instead of opening the floodgates. Ever since adding the email subscribe form, I’ve been able to attract 1,042 people interested in Cushion—either for their own personal use or out of pure interest in following along. In the weeks leading up to the beta, I sent out the first email:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Howdy,&lt;/p&gt;
+
+&lt;p&gt;A few months ago, you signed up to hear more about Cushion (&lt;a href=&quot;http://cushionapp.com&quot;&gt;http://cushionapp.com&lt;/a&gt;), the app I&amp;rsquo;m working on to bring peace of mind to freelancers. It&amp;rsquo;s almost ready for beta testing, so I wanted to reach out and ask a favor. &lt;/p&gt;
+
+&lt;p&gt;I created a short questionnaire to learn more about the folks who would want to use it and get a show of hands for those interested in beta testing. It&amp;rsquo;ll be super helpful for me and only take you a minute to fill out—I promise.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cushionapp.typeform.com/to/mgayv7&quot;&gt;https://cushionapp.typeform.com/to/mgayv7&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;-Jonnie&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I want all of the communication with users and potential users to feel like I’m talking directly to them in person, which is why I try to write like I talk. Years of receiving insincere emails from product companies has left me with one of the fastest trigger fingers for deleting emails. I’ve also tried to learn from their mistakes and avoid what turned me off.&lt;/p&gt;
+
+&lt;p&gt;The first pet peeve is when companies collect an optional name along with the email address and fall back to an empty string. This results in “Hey there ,”. In most cases, it’s a dead giveaway that this is a mass email trying to feel personal with either the space before the comma or the person entering a lowercase name. There’s nothing wrong with a simple “Hi”, or even “Howdy”.&lt;/p&gt;
+
+&lt;p&gt;Secondly, product teams are often so engrossed in their app that when they finally send the initial email, they forget that the majority of people haven’t lived with the app for the past six months. Most of them probably saw it mentioned somewhere, signed up to hear more, then forgot about it—especially if it has a nonsensical name beginning with a “Z”. Make use of the first sentence to remind everyone what they signed up for.&lt;/p&gt;
+
+&lt;p&gt;Lastly, I know a survey is a big ask for anyone, so instead of just assuming they’ll fill it out like a form at the DMV, I emphasized its brevity along with its importance to me. Hopefully that would be enough to get a good turnout. So, how’d it do?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The email went out to &lt;strong&gt;1,007&lt;/strong&gt; people.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;999&lt;/strong&gt; of the emails were delivered &lt;em&gt;(99.21%)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;730&lt;/strong&gt; people clicked the link to the survey &lt;em&gt;(72.49%)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;498&lt;/strong&gt; people completed the survey &lt;em&gt;(49.45%)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;8&lt;/strong&gt; of the emails bounced &lt;em&gt;(0.79%)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;12&lt;/strong&gt; people unsubscribed &lt;em&gt;(1.2%)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I never send out mass emails, so I don’t know if this is good, but considering I delete most of the ones I get, I’m pretty happy with the results.&lt;/p&gt;
+
+&lt;p&gt;As for the &lt;a href=&quot;https://cushionapp.typeform.com/to/mgayv7&quot;&gt;survey&lt;/a&gt;, it consisted of 10 questions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Are you a solo freelancer?&lt;/li&gt;
+&lt;li&gt;If not, how many people are on your team?&lt;/li&gt;
+&lt;li&gt;What kind of work do you do?&lt;/li&gt;
+&lt;li&gt;What do you use for project management, time-tracking, and invoicing?&lt;/li&gt;
+&lt;li&gt;How many projects do you work on each year?&lt;/li&gt;
+&lt;li&gt;How many invoices do you send each year?&lt;/li&gt;
+&lt;li&gt;How do you bill?&lt;/li&gt;
+&lt;li&gt;Are you interested in the paid beta?&lt;/li&gt;
+&lt;li&gt;Are you okay with manually entering your data?&lt;/li&gt;
+&lt;li&gt;Seinfeld or Friends?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The results were overwhelming in the best way possible. Since there were a handful of options for each question, you can view the full results &lt;a href=&quot;https://cushionapp.typeform.com/report/mgayv7/aXGT&quot;&gt;here&lt;/a&gt;, but the gist is that the majority of potential users fit my exact description—solo freelancer, working on 6-15 projects a year, sending out 21-50 invoices a year. By designing Cushion to best fit my needs, I’ve been unknowingly targeting the demographic most-likely to use Cushion. This is huge for the initial plans of focusing on freelancers, but with a fair amount of small teams also showing interest, there’s an obvious direction of where to go next.&lt;/p&gt;
+
+&lt;p&gt;This weekend, I plan to send out 10 more beta invites. If you want one sooner than later, &lt;a href=&quot;mailto:jonnie@cushionapp.com&quot;&gt;email me&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Email marketing</title>
@@ -442,28 +504,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;For the Cushion beta, I want to start with a small group of users that I chat with often and rely on for the early decisions. I don’t want to feel like I’m bothering people with surveys or unwanted emails—this core group should expect it. I’ll send out a few questions each week and make myself available for discussions. It should be a fun experience that makes you feel like you’re really contributing.&lt;/p&gt;
 
 &lt;p&gt;Second, Cushion will be released incrementally, both for the beta and for the public app. It’s overwhelming to open the flood gates on day one—I’d rather grow in more manageable waves. The beta will start with a few dozen, then grow by a few dozen as it’s improved and when it demands more feedback. When Cushion is public, I’ll grow it in larger increments, but still cap the user count to an amount I can handle on my own. Only when I can grow a team will I grow the user count past what’s manageable.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-05-06</title>
-      <link>http://cushionapp.com/journal/2014-05-06</link>
-      <pubDate>Wed, 07 May 2014 11:01:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-05-06</guid>
-      <description>&lt;p&gt;I spent most of the day staring at the screen, thinking. I flipped back and forth between the prototype and the design flats, figuring out what to work on next. The timeline section at the top hadn’t received much love, so I focused my attention there.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-05-06-timeline.png&quot;&gt;&lt;img src=&quot;/assets/2014-05-06-timeline.png&quot; alt=&quot;2014-05-06-timeline&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The timeline is terrifying because it’s going to be a challenge to make it look good with real data. Based on my personal usage, it looks great, but only because I’ve been lucky—working on projects that make it look great. Once I added random data that scales between very low-budget projects to very high-paying projects, it turned into fright night.&lt;/p&gt;
-
-&lt;p&gt;The biggest problem is the width of each project and the logic that will go into showing or hiding the label. For freelancers who work on dozens of projects in a given month, like illustrators, projects will probably never be wide enough to show the inner label. Because of this, I’ll rely on the color of the bar and maybe show a tooltip label on hover. As an in-between measure, I could also add a “symbol” attribute. This way projects like Kramerica’s Oil Bladder would show “K” for the client and “OB” for the project.&lt;/p&gt;
-
-&lt;p&gt;I also plan on having multiple zoom views for the timeline, so projects won’t always feel so crunched. The initial view shows the entire year, but you’ll be able to focus in on a given month or quarter. This will spread out the projects and probably be the more common view for freelancers who work on shorter-term projects.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-05-06-timeline-days.png&quot;&gt;&lt;img src=&quot;/assets/2014-05-06-timeline-days.png&quot; alt=&quot;2014-05-06-timeline-days&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The timeline section has so much potential because I can build so many different views into it. The early designs included everything from planning projects per days and visualizing overlap to grouped income by project type. I can’t wait to flesh it out some more and continue fine-tuning it based on real data. I’m determined to make the final result really solid and able to handle any use-case.&lt;/p&gt;
 </description>
     </item>
     
