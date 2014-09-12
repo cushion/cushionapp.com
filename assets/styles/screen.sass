@@ -7,6 +7,7 @@ $system-font: "Helvetica Neue", Helvetica, sans-serif
 $base-font: 400 100%/1.65 "pt-sans", $system-font
 $header-font: 700 100%/1.25 "effra", $system-font
 $button-font: 400 112.5%/1.65 "effra", $system-font
+$number-font: 400 100%/1.65 "effra", $system-font
 
 $white: #fff
 $black: #000
@@ -202,6 +203,9 @@ a
 .article-copy
   font-size: em(16)
 
+  strong
+    font: $header-font
+
   img
     display: block
     margin-left: auto
@@ -224,10 +228,31 @@ a
     a
       border-bottom: none
 
+  blockquote,
   code
     font-size: em(14)
 
     background-color: $lighter-grey
+
+  blockquote
+    margin-left: 0
+    margin-right: 0
+    padding: 1em 2em
+
+  ul, ol
+    padding-left: 1.825em
+
+  li
+    line-height: 2em
+
+    em
+      font: $number-font
+
+  ul > li
+    list-style-type: disc
+
+  ol > li
+    list-style-type: decimal
 
 // footer
 
