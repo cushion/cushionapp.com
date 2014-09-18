@@ -72,31 +72,38 @@ window.analytics.page();
 
         
 <main class='main-content'>
+  
   <article class='article'>
-    <h3 class='article-title'>
-      <a href='/journal/2014-07-15'>2014-07-15</a>
-    </h3>
-    <div class='article-copy'>
-      <p>This past month, I’ve been traveling a whole lot, which explains the gap in journal posts. I did have a few pockets of time to work on Cushion, but not enough solid progress to justify a new post. Now that I’m back and settled, it’s time to go full speed ahead again.</p>
+  <h3 class='article-title'>
+    <a href='/changelog/2014-09-17'>2014-09-17</a>
+  </h3>
+  <div class='article-copy'>
+    <section class='changelog-section'>
+      <h4 class='new-changelog-title changelog-title'>New</h4>
+      <ul>
+<li>Added update notification</li>
+<li>Added number field to invoices</li>
+<li>Added password confirmation to account edit view</li>
+</ul>
 
-<p>The main focus as of late is the scheduling side of the app. I’m bummed that I spent the majority of this time focusing on budgeting when scheduling is the more day-to-day view. If I went with scheduling first, I probably would’ve been able to ship a beta prior to adding budgeting. Oh well.</p>
+    </section>
+    <section class='changelog-section'>
+      <h4 class='improvements-changelog-title changelog-title'>Improvements</h4>
+      <ul>
+<li>Removed “Issued on” column from paid invoices table</li>
+</ul>
 
-<p><img src="/assets/2014-07-15-old-schedule-timeline-design.png" alt="2014-07-15-old-schedule-timeline-design"> </p>
+    </section>
+    <section class='changelog-section'>
+      <h4 class='fixed-changelog-title changelog-title'>Fixed</h4>
+      <ul>
+<li>Fixed uncaught validation error on client and project symbols</li>
+</ul>
 
-<p>Leading up this post, the scheduling timeline consisted of thick bars labeled with the project name. With ideal data, this looked fine, but as soon as I plugged in my real freelancing data, I could tell this wouldn’t work. At one point I was working on five websites at once because of delayed start dates and delayed deadlines. As you could imagine, these thick bars stacked five-high took up half the screen and were difficult to read at a glance. With the real data, I went back to designing and came up with a thinner, more legible look.</p>
+    </section>
+  </div>
+</article>
 
-<p><img src="/assets/2014-07-15-schedule-timeline-design.png" alt="2014-07-15-schedule-timeline-design"></p>
-
-<p>Aside from the thickness change, I also had to completely rethink the indicator of delay (project starting late) and drag (project finishing late). In the first design, both were signified with the same look—a lighter fill of the project color. This looked fine if a project started late or dragged on too long, but if it did both, the bar became very confusing.</p>
-
-<p><img src="/assets/2014-07-15-schedule-bar.png" alt="2014-07-15-schedule-bar"> </p>
-
-<p>I decided to use hatching, instead of transparency, to fix the problem. Since a delay means you’re not working on a project yet, a lighter hatching would make the delayed piece of the bar feel slightly removed from the solid, but still a part of it. With drag meaning you’re actively working on the project past its deadline, a heavier hatching would made it feel closer to the solid—the time in which you’re actively working within the estimated dates.</p>
-
-<p>With this new design in place, the scheduling timeline is now legible at a glance, even using my real data. It’s been so helpful in preparation of my return to client work, telling me everything I need to know about the upcoming months and assuring me that I have a handle on future projects.</p>
-
-    </div>
-  </article>
 </main>
 
 

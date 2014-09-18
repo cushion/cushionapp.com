@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Fri, 12 Sep 2014 14:40:18 +0000</pubDate>
+    <pubDate>Thu, 18 Sep 2014 02:52:49 +0000</pubDate>
+    
+    <item>
+      <title>2014-09-17</title>
+      <link>http://cushionapp.com/changelog/2014-09-17</link>
+      <pubDate>Wed, 17 Sep 2014 21:47:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-09-17</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-09-12</title>
@@ -482,28 +491,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;On the income side of things, I added another column. Prior, I had two columns—“Paid” and “Unpaid”. These values were pulled from a sum of the invoices for a given project, so you know how much has been made versus how much is pending. But what about when you start a project and have a general idea of how much it will bring in? That should be represented on the timeline as well, so I added “Estimated”. This is a ballpark figure represented by a single column in the database, so when you create a project, you just give it a number. At some point, it would be nice to be more granular with the estimate and comparing detailed estimates against actual outcomes, but this works for now.&lt;/p&gt;
 
 &lt;p&gt;This weekend, I spoke to a few friends who would be prime users and over the next month, I’m going to continue doing more research along these lines. It’s incredibly fascinating hearing other freelancers or design studio owners talk about their needs—especially when most of them aren’t covered by the plethora of existing services. This makes me even more hopeful for Cushion. I know it fits the bill for me, but it’s reassuring when I hear from others that they need it, too.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-05-18</title>
-      <link>http://cushionapp.com/journal/2014-05-18</link>
-      <pubDate>Mon, 19 May 2014 10:00:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-05-18</guid>
-      <description>&lt;p&gt;I realize it has been over a week since my last entry and for good reason—frustration over the front-end framework. I’ve been hopping around, trying each one out, hoping to find a good fit. As soon as I think I found one, however, a deal breaker would surface and I would have to look elsewhere. I’m confident with the one I’ve been using over the last week, Backbone, as it fits my needs without any magic. I don’t want to waste any more time on this, so let’s move on to new thoughts.&lt;/p&gt;
-
-&lt;p&gt;This morning, I’ve considered changing the “Status” model to “List”. While using the prototype, I constantly finding myself wondering about the status—it feels so specific. If I were to simply rename it to “List”, it could take on new meanings and use-cases. It could then also be used for clients. A client status doesn’t really make sense if you have a project status, but with lists, you could group them however you like, and that could be reflected visually in the timeline.&lt;/p&gt;
-
-&lt;p&gt;I might be getting ahead of myself with this, so I’ll keep it in mind of the next few days, but stay the course, so I can make some real progress. I feel like I’ve been staring at the same view for the past few weeks. By the end of the month, I want to be able to use Cushion with real projects and get some use out of it. Then, I can tinker.&lt;/p&gt;
-
-&lt;p&gt;On a related note, my goal has been to reach beta by the end of June. I think it’s achievable now that I have the stack in order, but I have a few concerns based on previous betas I’ve held or been a part of.&lt;/p&gt;
-
-&lt;p&gt;First, it will be a paid beta. This helps in two ways—funding the app early, so I can continue working on it, and ensuring that the beta testers are serious and proactive. I’ve “beta tested” countless apps before and I put that in quotes for a reason. I beta tested in the sense that I signed up, tinkered for less than an hour, then didn’t use it again or provide feedback.&lt;/p&gt;
-
-&lt;p&gt;For the Cushion beta, I want to start with a small group of users that I chat with often and rely on for the early decisions. I don’t want to feel like I’m bothering people with surveys or unwanted emails—this core group should expect it. I’ll send out a few questions each week and make myself available for discussions. It should be a fun experience that makes you feel like you’re really contributing.&lt;/p&gt;
-
-&lt;p&gt;Second, Cushion will be released incrementally, both for the beta and for the public app. It’s overwhelming to open the flood gates on day one—I’d rather grow in more manageable waves. The beta will start with a few dozen, then grow by a few dozen as it’s improved and when it demands more feedback. When Cushion is public, I’ll grow it in larger increments, but still cap the user count to an amount I can handle on my own. Only when I can grow a team will I grow the user count past what’s manageable.&lt;/p&gt;
 </description>
     </item>
     
