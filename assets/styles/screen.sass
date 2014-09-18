@@ -14,10 +14,13 @@ $black: #000
 $grey: #999
 $light-grey: #ccc
 $lighter-grey: #eee
+$orange: #FEAA3A
+$blue: #3498DB
+$green: #6BBD2E
 
 $smaller: 12
 $small: 14
-$normal: 16
+$medium: 16
 $large: 18
 $larger: 20
 
@@ -253,6 +256,57 @@ a
 
   ol > li
     list-style-type: decimal
+
+// changelog
+
+.changelog-section
+  margin-bottom: em(30)
+
+  ul
+    padding-left: 0
+
+    > li
+      position: relative
+      padding-left: em(33)
+
+      font-size: em($medium, $large)
+      list-style-type: none
+
+      &:before
+        position: absolute
+        left: em(6)
+        top: 50%
+        margin-top: em(-3)
+
+        display: block
+        width: em(6)
+        height: em(6)
+
+        border-radius: em(3)
+        background-color: $black
+
+        content: ''
+
+.changelog-title
+  line-height: em(21, $large)
+
+  &:before
+    float: left
+    display: block
+    width: em(21, $large)
+    height: em(21, $large)
+    margin-right: em(12, $large)
+
+    content: ''
+
+.new-changelog-title:before
+  background-color: $green
+
+.improvements-changelog-title:before
+  background-color: $blue
+
+.fixed-changelog-title:before
+  background-color: $orange
 
 // footer
 
