@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Thu, 18 Sep 2014 02:52:49 +0000</pubDate>
+    <pubDate>Sat, 20 Sep 2014 23:49:07 +0000</pubDate>
+    
+    <item>
+      <title>2014-09-20</title>
+      <link>http://cushionapp.com/changelog/2014-09-20</link>
+      <pubDate>Sat, 20 Sep 2014 19:35:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-09-20</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-09-17</title>
@@ -473,24 +482,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;&lt;img src=&quot;/assets/2014-05-28-symbols.png&quot; alt=&quot;2014-05-28-symbols&quot;&gt; &lt;/p&gt;
 
 &lt;p&gt;In the timeline, I revisited the label view, adding a bit more logic to switch between showing a project’s symbol or its full name. If there’s not enough room for either, I hide both and rely on a hover if the user really needs to see the name. For the money, I’m considering reducing them from something like “$5,000” to “$5k” when narrower, but not entirely convinced—it could get messy.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-05-27</title>
-      <link>http://cushionapp.com/journal/2014-05-27</link>
-      <pubDate>Wed, 28 May 2014 09:21:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-05-27</guid>
-      <description>&lt;p&gt;I’m making so much progress. I almost can’t sit still. Each night, I go to bed thinking about Cushion and wake up thinking about it. Needless to say, everything is going well.&lt;/p&gt;
-
-&lt;p&gt;I finished the refactor of changing the Status model to List, which immediately feels clearer. Now you can have a list, or bucket, of projects and it doesn’t need to represent a status. I’m certain people will use Cushion much differently than I would have expected, so I don’t want to force too many workflows on them. I typically separate my projects into “Active”, “Pending”, “Potential”, and “Done”, but there are so many other possibilities, I might adopt a few more, like “Dormant”. This would represent any project that is blocked for one reason or another, so you don’t need to worry about it until they get back to you.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-05-27-estimated-income.png&quot; alt=&quot;2014-05-27-estimated-income&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;On the income side of things, I added another column. Prior, I had two columns—“Paid” and “Unpaid”. These values were pulled from a sum of the invoices for a given project, so you know how much has been made versus how much is pending. But what about when you start a project and have a general idea of how much it will bring in? That should be represented on the timeline as well, so I added “Estimated”. This is a ballpark figure represented by a single column in the database, so when you create a project, you just give it a number. At some point, it would be nice to be more granular with the estimate and comparing detailed estimates against actual outcomes, but this works for now.&lt;/p&gt;
-
-&lt;p&gt;This weekend, I spoke to a few friends who would be prime users and over the next month, I’m going to continue doing more research along these lines. It’s incredibly fascinating hearing other freelancers or design studio owners talk about their needs—especially when most of them aren’t covered by the plethora of existing services. This makes me even more hopeful for Cushion. I know it fits the bill for me, but it’s reassuring when I hear from others that they need it, too.&lt;/p&gt;
 </description>
     </item>
     
