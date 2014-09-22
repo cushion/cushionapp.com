@@ -3,17 +3,25 @@
     <a href='{{ post.url }}'>{{ post.title }}</a>
   </h3>
   <div class='article-copy'>
+    {% if post.meta.new %}
     <section class='changelog-section'>
       <h4 class='new-changelog-title changelog-title'>New</h4>
       {{ post.meta.new | md }}
     </section>
+    {% endif %}
+
+    {% if post.meta.improved %}
     <section class='changelog-section'>
-      <h4 class='improvements-changelog-title changelog-title'>Improvements</h4>
-      {{ post.meta.improvements | md }}
+      <h4 class='improved-changelog-title changelog-title'>Improved</h4>
+      {{ post.meta.improved | md }}
     </section>
+    {% endif %}
+
+    {% if post.meta.fixed %}
     <section class='changelog-section'>
       <h4 class='fixed-changelog-title changelog-title'>Fixed</h4>
       {{ post.meta.fixed | md }}
     </section>
+    {% endif %}
   </div>
 </article>

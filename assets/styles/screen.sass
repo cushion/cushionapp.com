@@ -268,15 +268,16 @@ a
     > li
       position: relative
       padding-left: em(33)
+      margin: em(10) 0
 
       font-size: em($medium, $large)
+      line-height: 1.5em
       list-style-type: none
 
       &:before
         position: absolute
         left: em(6)
-        top: 50%
-        margin-top: em(-3)
+        top: 0.625em
 
         display: block
         width: em(6)
@@ -302,7 +303,7 @@ a
 .new-changelog-title:before
   background-color: $green
 
-.improvements-changelog-title:before
+.improved-changelog-title:before
   background-color: $blue
 
 .fixed-changelog-title:before
