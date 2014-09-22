@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Sun, 21 Sep 2014 03:05:49 +0000</pubDate>
+    <pubDate>Mon, 22 Sep 2014 20:06:16 +0000</pubDate>
+    
+    <item>
+      <title>2014-09-22</title>
+      <link>http://cushionapp.com/changelog/2014-09-22</link>
+      <pubDate>Mon, 22 Sep 2014 15:52:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-09-22</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-09-20</title>
@@ -460,28 +469,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;Regarding transitions, the timeline now fades between views, so you can see how each view relates to the previous one. The current timeline views all share a similar structure, exposing more detail as you move from invoices to clients to projects. Then, when you click into a project, the unrelated projects will fade to make the selected one more prominent (hat tip to &lt;a href=&quot;http://twitter.com/tealtan&quot;&gt;Allen Tan&lt;/a&gt; for the suggestion).&lt;/p&gt;
 
 &lt;p&gt;From here, I’m going to build out all of the create, edit, and delete views for the other models and have a pretty usable version by the end of the week. Regarding the schedule, I’m way ahead of my goal of a beta by the end of the month. I’m certain there will be a ton of last-minute items to tackle before I can share Cushion, but I like where we are.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-05-28</title>
-      <link>http://cushionapp.com/journal/2014-05-28</link>
-      <pubDate>Thu, 29 May 2014 13:04:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-05-28</guid>
-      <description>&lt;p&gt;I spent the majority of the day working on the individual project page. At first, I was on the fence about whether to show a form for editing the project’s fields or just display its details with the option to edit. I went with the former because I hate extra steps. If a user clicks into a project, they probably don’t want to just see the same info they’ve seen elsewhere—they want to edit it.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-05-28-project.png&quot;&gt;&lt;img src=&quot;/assets/2014-05-28-project.png&quot; alt=&quot;2014-05-28-project&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Along with the form, I added two tables for that project’s paid and unpaid invoices. With this, the project page is essentially a filter of the other views. The user can focus on that one project without being distracted by all the other projects they might have going on. The timeline is also filtered to only show that project’s incomes and how they apply to the year.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-05-28-late-invoice.png&quot; alt=&quot;2014-05-28-late-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;I also took a break from this page to add a small detail to the invoice table—a red highlight for late invoices. This will be very useful for being aware of them without the need of a scary, jarring alert.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-05-28-symbols.png&quot; alt=&quot;2014-05-28-symbols&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;In the timeline, I revisited the label view, adding a bit more logic to switch between showing a project’s symbol or its full name. If there’s not enough room for either, I hide both and rely on a hover if the user really needs to see the name. For the money, I’m considering reducing them from something like “$5,000” to “$5k” when narrower, but not entirely convinced—it could get messy.&lt;/p&gt;
 </description>
     </item>
     

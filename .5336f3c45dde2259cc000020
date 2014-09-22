@@ -1,5 +1,5 @@
 ---
-time: 1411268750
+time: 1411416378
 inventory:
   /newsletter/index.html:
     md5: 5ca7a6c5cf19cfba07dda4c9a6df95a3
@@ -137,20 +137,23 @@ inventory:
     md5: 2011e69e534aa6c812fe8b7e58409e8d
     time: 1404674334
   /changelog/index.html:
-    md5: 4fbb2dc8bba7d2512efd6bb2f4db5be1
-    time: 1411268748
+    md5: 1e77026aa59dae2aa5e6ce81b16e2a4c
+    time: 1411416375
+  /changelog/2014-09-22/index.html:
+    md5: c551b9fbf093d5ebf2277287174a46de
+    time: 1411416376
   /changelog/2014-09-20/index.html:
-    md5: 0d2958570c02a40b32f79a1cbb354a12
-    time: 1411268748
+    md5: 0ed18f4183cccba9575f9d24d918bdbc
+    time: 1411416376
   /changelog/2014-09-17/index.html:
-    md5: b7a9465dc750e7626390476fcf47521d
-    time: 1411008769
+    md5: 919755f71092b734419c3976dc3d03a8
+    time: 1411416376
   /changelog/archive/index.html:
-    md5: dfc7eebbfd1099ce6d62ae468ec9ac53
-    time: 1411008769
+    md5: bc69b5acf6cfcd1931775bf4ac35651e
+    time: 1411416376
   /changelog/tags/index.html:
-    md5: 96c61da5d613963b953f0fc9886d3656
-    time: 1411008769
+    md5: 71e339f5868be94a7ecff6f79eb5b001
+    time: 1411416376
   /newsletter/subscribed/index.html:
     md5: 9d271ff36873b44dbd9fff21bf762ca0
     time: 1411008769
@@ -161,11 +164,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 8cefb51b9e5b97acdbccb0c6f9895178
-    time: 1411268749
+    md5: fa7338e3dc69b33003cd23957f0ba146
+    time: 1411416376
   /feed.xml:
-    md5: adc3ead8dc0565657a48fec9ec17c2b7
-    time: 1411268749
+    md5: 8273b8db5776db91ba53a33e0fa05cd1
+    time: 1411416376
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -230,8 +233,8 @@ inventory:
     md5: 09585cc481910976d3e7d9d3b59639e8
     time: 1409664615
   /assets/styles/screen.css:
-    md5: eb141d08a114c945894f445317e0e079
-    time: 1411008770
+    md5: d3ac440ee25373b467e7be5c24df0320
+    time: 1411416377
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
