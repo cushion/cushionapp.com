@@ -3,7 +3,47 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Fri, 26 Sep 2014 03:37:31 +0000</pubDate>
+    <pubDate>Fri, 26 Sep 2014 15:12:01 +0000</pubDate>
+    
+    <item>
+      <title>2014-09-26</title>
+      <link>http://cushionapp.com/journal/2014-09-26</link>
+      <pubDate>Fri, 26 Sep 2014 09:52:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2014-09-26</guid>
+      <description>&lt;p&gt;These past couple weeks, I’ve been focusing on making Cushion feel like a legit app. To me, this entails adding all the little parts that can be easily skipped early on, like the ability to change your password. For a public app, these are essential, but in my eyes, you can go without them for a week or so when holding a private beta.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/2014-09-26-preferences.png&quot;&gt;&lt;img src=&quot;/assets/2014-09-26-preferences.png&quot; alt=&quot;2014-09-26-preferences&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Alongside smoothing out the experience, I started building in convenience features, like preferences. Since getting Cushion in the hands of others, there has been an obvious need for certain defaults, so when a user fills out a form, they don’t find them setting the same value on the same field every single time. &lt;/p&gt;
+
+&lt;p&gt;The most apparent of these fields was the invoice’s relative due date, or net. Most freelancers use the same net for every project and they all vary in generosity, from “net 30” to “due upon receipt”. Now, I have a preference for this field, so whenever the user creates a new invoice, the net is that value by default.&lt;/p&gt;
+
+&lt;p&gt;With new additions, it’s good to hold back from implementing them until you have at least two examples to use. For example, I wouldn’t add a preferences section if I only had this one preference. That’s why I added two more—default tab and default view.&lt;/p&gt;
+
+&lt;p&gt;For me, the projects section with the schedule view is the page I use the most, but this isn’t the case for everyone. If you’re less about scheduling and more about accounting, you might live in the invoices tab with the budget view. With these new default tab and view preferences, any time you switch from the account/preferences section of Cushion back to the timeline section, it will take you to your default.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/2014-09-26-account.png&quot;&gt;&lt;img src=&quot;/assets/2014-09-26-account.png&quot; alt=&quot;2014-09-26-account&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Speaking of accounts and preference, I don’t think I ever mentioned this second side of Cushion. From the beginning, users have only had access to the timeline section, which consists of the client, project, and invoice tabs. Now that I’m adding all the necessary parts of a real app, I established a top level navigation for switching between the timeline section and the account/settings/whatever-you-want-to-call-it section. This navigation system works pretty well so far, allowing a new set of view level tabs for switching between account information and preferences. For now, these are the only two tabs, but eventually, we will have a few more for hooks and integrations—the fun stuff.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-update-notification.png&quot; alt=&quot;2014-09-26-update-notification&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Tacking onto the legitamcy of Cushion, I built a dead-simple update notification alert for users to know when I deployed a new version. It slides in from the top, just like success notifications, but it’s blue and refreshes the page upon clicking it. The downside of a web app is that a user only sees what they loaded last. This means, if they haven’t refreshed the browser in weeks, which has happened with past apps I’ve worked on, they will be using an older, potentially incompatible version.&lt;/p&gt;
+
+&lt;p&gt;I didn’t want to be wasteful and poll for changes. Instead, I decided to use a custom response header &lt;code&gt;X-App-Version&lt;/code&gt; with each API response. This value is an environment variable that I set after deploying a new version. Because the app checks the difference upon receiving a new response, like switching views, we won’t experience any of the issues we’d see from something like refreshing upon a date change—the alerts are spread out more.&lt;/p&gt;
+
+&lt;p&gt;I’ve been on a few betas that also use an update notification, but I noticed that they often forget to include what’s new. I get excited for updates, but then I need to spend a few minutes digging through the app, looking for changes. For Cushion, I created a new &lt;a href=&quot;/changelog&quot;&gt;changelog&lt;/a&gt; page, which the alert links to. The changelog runs on the same static system that this journal runs on, so if I spot a typo, I don’t have to prompt the user of an update by deploying the change.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-font-table.png&quot; alt=&quot;2014-09-26-font-table&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The last bit of progress I’ll cover in this post is the obvious font change. I’ve been keeping this in the back of my mind since the beginning, knowing I would need to eventually pick one other than Helvetica Neue. After literally hours of switching between several fonts and just staring at the screen, I decided to go with &lt;a href=&quot;http://justanotherfoundry.com/facit&quot;&gt;Facit&lt;/a&gt; by &lt;a href=&quot;http://justanotherfoundry.com/&quot;&gt;Just Another Foundry&lt;/a&gt;. The decision was tough, but in the end, I picked Facit for its personality, solidity, and beautiful italics.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-tooltip.png&quot; alt=&quot;2014-09-26-tooltip&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The typeface has a very wide range of weights, which work incredibly well in Cushion’s interface. I’ve been able to find areas in Cushion that benefit greatly from a variance in thickness, like the timeline tooltips. Overall, I think like Facit gets me closer to that solid, reliable feel that I want users to experience when using the app.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2014-09-25</title>
@@ -433,29 +473,6 @@
 &lt;p&gt;The third and final problem I’ll point out is the timeline’s inability to handle tiny items. For example, if your timline is set up with a goal of $100,000 and you have an unpaid invoice of $100 for a friend project, it &lt;em&gt;should&lt;/em&gt; show up as the tiniest of slivers. Unfortunately, a CSS border forces a minimum width of twice the border width, so a 4px border would make any item at least 8px wide. I got around this by using the CSS outline instead. It allows the same controls as border (except for sides), but doesn’t have a minimum width.&lt;/p&gt;
 
 &lt;p&gt;I hope to have more in-person demos in the coming weeks, so I can find even more of these issues. It’s an incredibly valuable learning experience for me.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-06-03</title>
-      <link>http://cushionapp.com/journal/2014-06-03</link>
-      <pubDate>Wed, 04 Jun 2014 09:59:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-06-03</guid>
-      <description>&lt;p&gt;After living with the changes I made to the timeline, I tweaked it a bit more. When a project is selected and the other projects fade in opacity, I also fade their colors to make the selected project pop even more. I had a problem with not being able to distinguish the selected project from the others with certain colors, but now it couldn’t be clearer.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-06-03-timeline-fade.gif&quot; alt=&quot;2014-06-03-timeline-fade&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;I started creating views for project lists, so you can create additional buckets. I haven’t pinned down the default lists yet, but there will most likely be three for active projects, potential gigs, and completed ones. I will personally add at least two more for pending projects (confirmed, but haven’t started) and dormant projects (active, but waiting on the client).&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-06-03-list.png&quot;&gt;&lt;img src=&quot;/assets/2014-06-03-list.png&quot; alt=&quot;2014-06-03-list&quot;&gt;&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;Since lists deal with the project model, but don’t belong as a top-level tab, it’s tough to decide where to link to them. Right now, you can click a list header and it will take you to that list view, but what if I want a view for repositioning them? I’m almost certain I don’t want a separate view for that since we already have the projects view that is grouped by list, but there’s a chance something might come up. 
-Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, or move-up/move-down arrows? I’m a fan of drag-and-drop since it’s the most intuitive and relates to the physical world, but on a scale like this, where lists could span the entire screen, it wouldn’t be a good fit. Arrows would most certainly feel redundant if you need to move a list from the bottom to the top, not to mention the duplicate API requests. A select menu is probably best for now, unless I end up with a table view for lists, which would make drag-and-drop easier to implement and use.&lt;/p&gt;
-
-&lt;p&gt;I’ve been feeling really good about where I am with Cushion, so I took a minute to plug in my real data from this current year. It’s enlightening to see how everything looks when all the data is familiar. Surprisingly, I find the individual project views to be incredibly valuable. It allows me focus on the current project and easily see the status of its invoices—I was even able to spot one that was long overdue! On past projects, the individual view gives me a sense of its history and impact on the year. I can weigh a project’s required effort with its actual return to see which ones were worth the late nights and which ones weren’t.&lt;/p&gt;
-
-&lt;p&gt;This is just the beginning of what I can do with this data. I have so many more ideas that I can’t wait to try out. If anything specific would be useful for you, &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
