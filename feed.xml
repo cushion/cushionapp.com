@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Mon, 22 Sep 2014 20:06:16 +0000</pubDate>
+    <pubDate>Fri, 26 Sep 2014 03:37:31 +0000</pubDate>
+    
+    <item>
+      <title>2014-09-25</title>
+      <link>http://cushionapp.com/changelog/2014-09-25</link>
+      <pubDate>Thu, 25 Sep 2014 23:25:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-09-25</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-09-22</title>
@@ -447,28 +456,6 @@ Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, 
 &lt;p&gt;I’ve been feeling really good about where I am with Cushion, so I took a minute to plug in my real data from this current year. It’s enlightening to see how everything looks when all the data is familiar. Surprisingly, I find the individual project views to be incredibly valuable. It allows me focus on the current project and easily see the status of its invoices—I was even able to spot one that was long overdue! On past projects, the individual view gives me a sense of its history and impact on the year. I can weigh a project’s required effort with its actual return to see which ones were worth the late nights and which ones weren’t.&lt;/p&gt;
 
 &lt;p&gt;This is just the beginning of what I can do with this data. I have so many more ideas that I can’t wait to try out. If anything specific would be useful for you, &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-06-01</title>
-      <link>http://cushionapp.com/journal/2014-06-01</link>
-      <pubDate>Mon, 02 Jun 2014 11:40:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-06-01</guid>
-      <description>&lt;p&gt;&lt;img src=&quot;/assets/2014-06-01-no-modals.png&quot; alt=&quot;2014-06-01-no-modals&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;I made a lot of progress this weekend regarding the overall feel of Cushion. The change I’m happiest with is the move away from modals. At first, I used modals for the project creation view. I did this because I didn’t have enough data, at the time, to warrant an entire page—bad design reasoning, I know. A benefit of the modal, however, is to keep the user in the projects view, so you can add a several projects and see them populate the tables. After using Cushion more, I realized this wouldn’t be a common interaction, unless a user adds all of their projects upfront.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-06-01-new-project.gif&quot; alt=&quot;2014-06-01-new-project&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;I moved the new project view to its own page and everything started coming together. The form is the same as the one in the edit view, so I can simply reuse that code. The beauty of the change, though, is that transition from creating a new project to its project page—it’s seamless. Since the layout is pretty much the same, the invoice tables simply appear below the form and we’re good to go. A next step would be to add a button for creating invoices. Eventually, I’d like to add the option to point your project to your invoicing service of choice, so it automatically pulls in invoices.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-06-01-timeline.gif&quot; alt=&quot;2014-06-01-timeline&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Regarding transitions, the timeline now fades between views, so you can see how each view relates to the previous one. The current timeline views all share a similar structure, exposing more detail as you move from invoices to clients to projects. Then, when you click into a project, the unrelated projects will fade to make the selected one more prominent (hat tip to &lt;a href=&quot;http://twitter.com/tealtan&quot;&gt;Allen Tan&lt;/a&gt; for the suggestion).&lt;/p&gt;
-
-&lt;p&gt;From here, I’m going to build out all of the create, edit, and delete views for the other models and have a pretty usable version by the end of the week. Regarding the schedule, I’m way ahead of my goal of a beta by the end of the month. I’m certain there will be a ton of last-minute items to tackle before I can share Cushion, but I like where we are.&lt;/p&gt;
 </description>
     </item>
     
