@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Tue, 30 Sep 2014 14:15:48 +0000</pubDate>
+    <pubDate>Wed, 01 Oct 2014 04:33:41 +0000</pubDate>
+    
+    <item>
+      <title>2014-10-01</title>
+      <link>http://cushionapp.com/changelog/2014-10-01</link>
+      <pubDate>Wed, 01 Oct 2014 00:32:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-10-01</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-09-29</title>
@@ -428,34 +437,6 @@
 &lt;p&gt;I decided to use hatching, instead of transparency, to fix the problem. Since a delay means you’re not working on a project yet, a lighter hatching would make the delayed piece of the bar feel slightly removed from the solid, but still a part of it. With drag meaning you’re actively working on the project past its deadline, a heavier hatching would made it feel closer to the solid—the time in which you’re actively working within the estimated dates.&lt;/p&gt;
 
 &lt;p&gt;With this new design in place, the scheduling timeline is now legible at a glance, even using my real data. It’s been so helpful in preparation of my return to client work, telling me everything I need to know about the upcoming months and assuring me that I have a handle on future projects.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-06-15</title>
-      <link>http://cushionapp.com/journal/2014-06-15</link>
-      <pubDate>Mon, 16 Jun 2014 14:31:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-06-15</guid>
-      <description>&lt;p&gt;After a ton of work on the budgeting side of Cushion, I decided to step back and focus on scheduling. I met with a few more fellow freelancers and the verdict seems to be that scheduling is a day-to-day activity, whereas budgeting is done less often—maybe week-to-week. If this is the case, I definitely want to have scheduling from day one, so everyone could get some frequent use out of Cushion. A weekly-used app won’t cut it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-06-15-schedule-tabs.png&quot; alt=&quot;2014-06-15-schedule-tabs&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The navigation for switching between the scheduling and budgeting views stumped me for a few days. With the model tabs as an established navigation on the app, I didn’t want to add anything that would compete too much. I decided to scrap the Cushion title in the top-left for now. With UI real estate becoming a premium in this app, that spot is much better suited for the view switcher—it also allows more views in the future.&lt;/p&gt;
-
-&lt;p&gt;Along with the positioning of the view tabs, I had difficulty deciding on a URL structure, since this completely flips the current one on its head. With these two views, essentially every page will have two pages—one for scheduling and one for budgeting. If you look at a project page, instead of &lt;code&gt;/projects/:id&lt;/code&gt;, it would be &lt;code&gt;/projects/:id/schedule&lt;/code&gt; or &lt;code&gt;/projects/:id/budget&lt;/code&gt;. This makes complete sense, but for some reason, it didn’t seem like the clear answer at first. I started thinking of what &lt;code&gt;/projects/new&lt;/code&gt; would be, since it currently shows the budgeting timeline. Would it now show both scheduling and budgeting, or neither?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-06-15-schedule-coded-vs-mockup.png&quot; alt=&quot;2014-06-15-schedule-coded-vs-mockup&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The scheduling timeline layout has been designed from the start of the app, but now that I needed to code it, a new challenge arose. Positioning a bunch of rectangles in a mockup is easy—the positioning logic is executed by the designer. With code, the simplest layout could come with a few hurdles of its own. For the scheduling timeline, all projects should rest on the baseline if they fit. If a project overlaps another project, it should rest above it.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-06-15-schedule-timeline.png&quot;&gt;&lt;img src=&quot;/assets/2014-06-15-schedule-timeline.png&quot; alt=&quot;2014-06-15-schedule-timeline&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, this can’t be done solely with CSS, like the budgeting timeline. After a few searches describing the layout I was after, I found a &lt;a href=&quot;http://bl.ocks.org/bunkat/1962173&quot;&gt;chart&lt;/a&gt; that depicted the basic idea. It’s called a “swim lane” and is often used in flow charts. Once I saw the code required, I realized that this layout is actually pretty simple. Since I have start and finish dates for each project, I can just check for overlaps with those dates—no need for hit-detection. If a project’s finish date comes after another project’s start date, but its start date comes before that project’s finish date, you have an overlap. Upon finding an overlap, simply use a new “lane” for that item.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-06-15-actual-schedule.png&quot; alt=&quot;2014-06-15-actual-schedule&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;At the moment, I have two dates for each project—&lt;code&gt;started_on&lt;/code&gt; and &lt;code&gt;finished_on&lt;/code&gt;. These represent the actual dates for when the project started and finished, not their planned dates, which is why I use the past-tense. The next step is to add two more dates for estimated start and finish dates. These will be set upon creating the project and represent the agreed upon dates with the client. When you start a project, you set its &lt;code&gt;started_on&lt;/code&gt; date and its &lt;code&gt;finished_on&lt;/code&gt; date upon completion, so we have something to diff against. These four dates will let you see which clients are late to start or which ones drag on too long. From there, I can then find trends in specific clients.&lt;/p&gt;
 </description>
     </item>
     
