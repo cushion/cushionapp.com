@@ -4,16 +4,17 @@
 // variables
 
 $system-font: "Helvetica Neue", Helvetica, sans-serif
-$base-font: 400 100%/1.65 "pt-sans", $system-font
+$base-font: 400 100%/1.65 "jaf-facitweb", $system-font
 $header-font: 700 100%/1.25 "effra", $system-font
-$button-font: 400 112.5%/1.65 "effra", $system-font
+$button-font: 400 100%/1.65 "jaf-facitweb", $system-font
 $number-font: 400 100%/1.65 "effra", $system-font
 
 $white: #fff
-$black: #000
+$black: #222
 $grey: #999
 $light-grey: #ccc
 $lighter-grey: #eee
+$lightest-grey: #f2f2f2
 $orange: #FEAA3A
 $blue: #3498DB
 $green: #6BBD2E
@@ -23,6 +24,7 @@ $small: 14
 $medium: 16
 $large: 18
 $larger: 20
+$largest: 24
 
 $tablet-portrait: em(481)
 
@@ -54,6 +56,7 @@ input[type='email']
 body
   font: $base-font
   text-rendering: optimizeLegibility
+  color: $black
 
 img
   max-width: 100%
@@ -69,16 +72,16 @@ a
     vertical-align: top
 
 ::-webkit-input-placeholder
-  color: $light-grey
+  color: $grey
 
 \:-moz-placeholder
-  color: $light-grey
+  color: $grey
 
 ::-moz-placeholder
-  color: $light-grey
+  color: $grey
 
 \:-ms-input-placeholder
-  color: $light-grey
+  color: $grey
 
 ::selection
   background-color: $black
@@ -103,17 +106,16 @@ a
   vertical-align: middle
 
 .text-input
-  padding: em(5, $large) 0
+  padding: em(4) em(8)
 
   font: $button-font
+  font-size: rem($medium)
+  line-height: em(22)
 
   outline: none
   border: none
-  border-bottom: solid 3px $grey
+  border: solid 1px $light-grey
   color: $black
-
-  &:focus
-    border-bottom-color: $black
 
 .link
   color: $grey
@@ -123,11 +125,12 @@ a
     color: $black !important
 
 .button
-  padding: em(6, $large) em(20, $large)
+  padding: em(4, $small) em(14, $small) em(5, $small)
 
   font: $button-font
+  font-size: rem($small)
 
-  +prefix-property(border-radius, em(5, $large))
+  +prefix-property(border-radius, em(5, $small))
   outline: none
   border: none
   background-color: $grey
@@ -138,6 +141,33 @@ a
 
 .center
   text-align: center
+
+// header image
+
+.header-image-list
+  position: relative
+
+  height: em(274)
+  margin: 0
+
+  background-color: $lightest-grey
+
+.header-image-item
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+  background-repeat: no-repeat
+  background-position: center
+  background-size: auto 100%
+
+  opacity: 0
+  transition: opacity 1s
+
+  &.is-selected
+    opacity: 1
 
 // header
 
@@ -161,6 +191,8 @@ a
   margin-top: 0
 
   font: $base-font
+  font-size: em($small)
+
   color: $grey
 
 // nav
@@ -192,16 +224,27 @@ a
 // article
 
 .article
-  max-width: 38em
-  margin: 0 auto em(60)
+  margin: 0 auto em(60, $small)
+
+  font-size: em($small)
 
   +min-width($tablet-portrait)
-    font-size: 112.5%
+    max-width: em(684, $medium)
+
+    font-size: em($medium)
+
++min-width($tablet-portrait)
+  .journal-article,
+  .changelog-article
+    margin-bottom: em(120, $medium)
 
 .article-title
   font: $header-font
-  font-size: em(18)
+  font-size: em($largest)
   text-align: center
+
+  +min-width($tablet-portrait)
+    margin-bottom: em(32, $largest)
 
 .article-copy
   font-size: em(16)
@@ -213,6 +256,9 @@ a
     display: block
     margin-left: auto
     margin-right: auto
+
+  p
+    word-wrap: break-word
 
   a
     border-bottom: solid 2px $grey
@@ -270,7 +316,6 @@ a
       padding-left: em(33)
       margin: em(10) 0
 
-      font-size: em($medium, $large)
       line-height: 1.5em
       list-style-type: none
 
@@ -288,7 +333,8 @@ a
 
         content: ''
 
-.changelog-title
+h4.changelog-title
+  font-size: rem($large)
   line-height: em(21, $large)
 
   &:before
@@ -312,14 +358,14 @@ a
 // footer
 
 .main-footer
-  margin: em(50) 0 em(20)
+  margin: em(50, $small) 0
 
+  font-size: em($small)
   color: $grey
   text-align: center
 
   +min-width($tablet-portrait)
-    margin-top: em(60)
-    font-size: 112.5%
+    margin-top: em(60, $small)
 
 // form
 
@@ -355,8 +401,6 @@ table
   width: 100%
   margin: 0 auto
 
-  font-family: $system-font
-
 th
   padding-bottom: em(4, 12)
 
@@ -386,8 +430,14 @@ tfoot
 .number-cell
   text-align: right
 
+.service-cell
+  display: none
+
+  +min-width($tablet-portrait)
+    display: block
+
 // expenses
 
 .graph-section
-  width: em(800)
+  max-width: em(800)
   margin: em(30) auto

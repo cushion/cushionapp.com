@@ -3,13 +3,13 @@
   <table>
     <colgroup>
       <col>
-      <col>
+      <col class='service-cell'>
       <col>
     </colgroup>
     <thead>
       <tr>
         <th>Name</th>
-        <th>Service</th>
+        <th class='service-cell'>Service</th>
         <th class='number-cell'>Cost</th>
       </tr>
     </thead>
@@ -35,7 +35,7 @@
       {% for post in posts reversed %}
       <tr>
         <td>{{ post.title }}</td>
-        <td>
+        <td class='service-cell'>
           <a href='{{ post.meta.service-url }}'>{{ post.meta.service }}</a>
         </td>
         <td class='number-cell'>${{ post.meta.cost }}/{{ post.meta.cost-frequency }}</td>
