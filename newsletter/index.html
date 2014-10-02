@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -37,6 +39,30 @@ window.analytics.page();
   </head>
 
   <body>
+    
+<ul class='header-image-list'>
+  <li class='is-selected header-image-item' style='background-image: url(/assets/header-0.png)'></li>
+  <li class='header-image-item' style='background-image: url(/assets/header-1.png)'></li>
+  <li class='header-image-item' style='background-image: url(/assets/header-2.png)'></li>
+</ul>
+<script>
+  var images = document.querySelectorAll('.header-image-item');
+  var index = 0;
+  setInterval(function () {
+    if (index < 2) {
+      index++;
+    } else {
+      index = 0;
+    }
+
+    var currentImage = document.querySelector('.is-selected');
+    currentImage.className = currentImage.className.replace('is-selected', '');
+
+    images[index].className += ' is-selected';
+  }, 8000);
+</script>
+
+
     <div class='wrapper outer-container'>
       <div class='inner-container'>
         <header class='main-header'>
@@ -85,7 +111,7 @@ window.analytics.page();
     </div>
     <form class='subscribe-form form' action='http://cushionapp.createsend.com/t/d/s/ajdtd/' method='post'>
       <input name='cm-ajdtd-ajdtd' class='text-input' type='email' placeholder='you@yourwebsite.com' required>
-      <button id='submit' class='button' type='submit'>Subscribe</button>
+      <button id='submit' class='button' type='submit'>subscribe</button>
     </form>
   </article>
 </main>
