@@ -5,9 +5,9 @@
 
 $system-font: "Helvetica Neue", Helvetica, sans-serif
 $base-font: 400 100%/1.65 "jaf-facitweb", $system-font
-$header-font: 700 100%/1.25 "effra", $system-font
-$button-font: 400 100%/1.65 "jaf-facitweb", $system-font
-$number-font: 400 100%/1.65 "effra", $system-font
+$header-font: 700 150%/1.25 "effra", $system-font
+$copy-font: 400 100%/1.65 "ff-tisa-web-pro", $system-font
+$button-font: 400 .875rem/1.65 "jaf-facitweb", $system-font
 
 $white: #fff
 $black: #222
@@ -40,6 +40,9 @@ $tablet-portrait: em(481)
 *:after
   +prefix-property(box-sizing, border-box)
 
+html.wf-loading *
+  color: transparent !important
+
 ul
   padding: 0
 
@@ -66,7 +69,7 @@ a
   text-decoration: none
 
   &:hover
-    color: $grey
+    color: $green
 
   img
     vertical-align: top
@@ -96,19 +99,9 @@ a
 .wrapper
   padding: 0 em(10)
 
-.outer-container
-  display: table
-  width: 100%
-  height: 90vh
-
-.inner-container
-  display: table-cell
-  vertical-align: middle
-
 .text-input
   padding: em(4) em(8)
 
-  font: $button-font
   font-size: rem($medium)
   line-height: em(22)
 
@@ -118,22 +111,21 @@ a
   color: $black
 
 .link
-  color: $grey
+  color: $black
   text-decoration: none
 
   &:hover
-    color: $black !important
+    color: $green
 
 .button
   padding: em(4, $small) em(14, $small) em(5, $small)
 
   font: $button-font
-  font-size: rem($small)
 
   +prefix-property(border-radius, em(5, $small))
   outline: none
   border: none
-  background-color: $grey
+  background-color: $green
   color: $white
 
   &:hover
@@ -214,24 +206,17 @@ a
 
 .nav-link
   font: $header-font
-  font-size: rem(18)
-  color: $black
+  font-size: rem($large)
   text-decoration: none
-
-  &:hover
-    color: $grey
 
 // article
 
 .article
-  margin: 0 auto em(60, $small)
-
-  font-size: em($small)
+  margin: 0 auto em(60)
+  max-width: 38em
 
   +min-width($tablet-portrait)
-    max-width: em(684, $medium)
-
-    font-size: em($medium)
+    font-size: 112.5%
 
 +min-width($tablet-portrait)
   .journal-article,
@@ -240,17 +225,13 @@ a
 
 .article-title
   font: $header-font
-  font-size: em($largest)
   text-align: center
 
   +min-width($tablet-portrait)
     margin-bottom: em(32, $largest)
 
 .article-copy
-  font-size: em(16)
-
-  strong
-    font: $header-font
+  font: $copy-font
 
   img
     display: block
@@ -261,7 +242,8 @@ a
     word-wrap: break-word
 
   a
-    border-bottom: solid 2px $grey
+    border-bottom: solid 2px $green
+    color: $black
 
     &:hover
       border-bottom-color: $black !important
@@ -293,9 +275,6 @@ a
 
   li
     line-height: 2em
-
-    em
-      font: $number-font
 
   ul > li
     list-style-type: disc
