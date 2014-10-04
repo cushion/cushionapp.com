@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Thu, 02 Oct 2014 15:21:33 +0000</pubDate>
+    <pubDate>Sat, 04 Oct 2014 22:51:19 +0000</pubDate>
+    
+    <item>
+      <title>2014-10-04</title>
+      <link>http://cushionapp.com/changelog/2014-10-04</link>
+      <pubDate>Thu, 02 Oct 2014 17:40:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-10-04</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Metrics</title>
@@ -389,36 +398,6 @@
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/web-app</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>2014-07-21</title>
-      <link>http://cushionapp.com/journal/2014-07-21</link>
-      <pubDate>Mon, 21 Jul 2014 15:06:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-07-21</guid>
-      <description>&lt;p&gt;After rethinking the project schedule timeline, I applied the same style to the invoice schedule timeline. With projects, we track the start and end dates to reveal if a project starts late or drags on too long. With invoices, we track when an invoice is paid compared to its due date.&lt;/p&gt;
-
-&lt;p&gt;Looking at scheduling, invoices differ from projects in that invoices can’t start late—its “start date” is when you issue it, and I hope you wouldn’t be late in sending an invoice! From the issue date, however, we can track how long it takes for the client to pay, revealing if they are early or late.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-future-invoice.png&quot; alt=&quot;2014-07-21-future-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-into-invoice.png&quot; alt=&quot;2014-07-21-into-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;When you create an invoice, the bar is lightly hatched to indicate that window of time. As you progress into that window, the bar starts to fill solid up until the current date.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-early-invoice.png&quot; alt=&quot;2014-07-21-early-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;If an invoice is paid early (ha!), the bar is solid from the issue date to the pay date, but uses a very light hatching from the pay date to the due date. This way, you can easily see how early an invoice has been paid. Hopefully, your timeline will be full of invoices paid early.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-late-invoice.png&quot; alt=&quot;2014-07-21-late-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-still-late-invoice.gif&quot; alt=&quot;2014-07-21-still-late-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;On the other hand, the more common scenario, a client is late to pay. In this situation, if the invoice has been paid, the bar uses a thick hatching, identical to the one used on a project that dragged on. If, however, the client still hasn’t paid, the thick hatching will animate to emphasis that it is both late &lt;em&gt;and&lt;/em&gt; unpaid.&lt;/p&gt;
-
-&lt;p&gt;Before wrapping up, I should note that none of these patterns are set in stone. Now that I’m starting to take on client work again, I’m trying to move faster with Cushion, so these patterns are a start. I definitely plan to add a key to reference and fine-tune them after using it for a while.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
