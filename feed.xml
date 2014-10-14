@@ -3,7 +3,42 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Mon, 13 Oct 2014 00:35:33 +0000</pubDate>
+    <pubDate>Tue, 14 Oct 2014 01:38:24 +0000</pubDate>
+    
+    <item>
+      <title>2014-10-13</title>
+      <link>http://cushionapp.com/journal/2014-10-13</link>
+      <pubDate>Mon, 13 Oct 2014 20:09:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2014-10-13</guid>
+      <description>&lt;p&gt;Since I started building apps back in 2007, I’ve been keeping a list. This is a list of technical pitfalls to avoid when building a new app. Here are a few:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;timezones&lt;/li&gt;
+&lt;li&gt;daylight saving time&lt;/li&gt;
+&lt;li&gt;shoe sizes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This list has grown over the years and I thought I was in the clear with Cushion until I discovered I needed multiple currencies. Currency! Normally, this wouldn’t be a problem, as it’s just a matter of formatting, but I quickly realized a much bigger problem—combining currencies.&lt;/p&gt;
+
+&lt;p&gt;Looking ahead to integration with other services, I noticed that Harvest allows varying currencies per client &lt;em&gt;and&lt;/em&gt; per invoice. Freshbooks only varies per client, but allows switching a client’s default currency for current and future invoices. With this in mind, along with Cushion’s interface, I’ll need to combine currencies both visually and in table form.&lt;/p&gt;
+
+&lt;p&gt;The table side of combining currencies is the easier of the two. Instead of trying to calculate a total based on the exchange rate of whenever you received a specific invoice, you can simply show multiple totals per currency. It won’t look as good as a single total, but it’s a much better route than driving down the road to insanity via exchange rates.&lt;/p&gt;
+
+&lt;p&gt;On the visual side, specifically the budget timeline, I’m in a bit of a pickle. These timelines are based on a financial goal the user sets in the beginning, which is of a single currency. This means that if I want to visualize a variety of currencies, I’ll need a goal per currency, which is not going to happen.&lt;/p&gt;
+
+&lt;p&gt;I have a few ideas of how to get around this, but I’m getting ahead of myself. As a first step, I just need the ability to change the default currency per user. This is an easy one, so I’m happy to say it’s already done. I found a Ruby gem, called &lt;a href=&quot;https://github.com/RubyMoney/money&quot;&gt;Money&lt;/a&gt;, that provides a thorough list of currencies, along with their symbols, symbol positions, thousand separator, and decimal separator. On the front-end, I can still use &lt;a href=&quot;https://github.com/openexchangerates/accounting.js&quot;&gt;Accounting.js&lt;/a&gt;—all I need to do is provide the currency settings from the backend.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2014-10-13</title>
+      <link>http://cushionapp.com/changelog/2014-10-13</link>
+      <pubDate>Mon, 13 Oct 2014 15:17:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-10-13</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-10-12</title>
@@ -379,24 +414,6 @@
       <pubDate>Mon, 21 Jul 2014 18:11:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/ssl-certificate-service</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SSL Certificate</title>
-      <link>http://cushionapp.com/expenses/ssl-certificate</link>
-      <pubDate>Mon, 21 Jul 2014 18:10:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/ssl-certificate</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web App Database</title>
-      <link>http://cushionapp.com/expenses/web-app-database</link>
-      <pubDate>Mon, 21 Jul 2014 18:10:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/web-app-database</guid>
       <description></description>
     </item>
     

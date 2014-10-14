@@ -1,0 +1,112 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Cushion</title>
+
+    <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/images/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/images/favicon.png'>
+
+    <link href='/assets/styles/screen.css' rel='stylesheet'>
+
+    <script>
+  (function() {
+  var config = {
+  kitId: 'jpp2iwq',
+  scriptTimeout: 3000
+  };
+  var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+
+    <script type="text/javascript">
+window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+window.analytics.load("lvwwqqgyp6");
+window.analytics.page();
+</script>
+
+  </head>
+
+  <body>
+    
+
+    <div class='wrapper'>
+      <header class='main-header'>
+        <h1 class='logo'>
+          <a class='link' href='/'>Cushion</a>
+        </h1>
+        <h2 class='tagline'>Peace of mind for freelancers</h2>
+
+        <nav class='main-nav'>
+          <ul class='nav-list'>
+          
+            
+          
+            
+            <li class='nav-item'>
+              <a class='nav-link' href='/journal'>Journal</a>
+            </li>
+            
+          
+            
+            <li class='nav-item'>
+              <a class='nav-link' href='/expenses'>Expenses</a>
+            </li>
+            
+          
+            
+            <li class='nav-item'>
+              <a class='nav-link' href='/changelog'>Changelog</a>
+            </li>
+            
+          
+          </ul>
+        </nav>
+      </header>
+
+      
+<main class='main-content'>
+  <article class='journal-article article'>
+    <h3 class='article-title'>
+      <a class='link' href='/journal/2014-10-13'>2014-10-13</a>
+    </h3>
+    <div class='article-copy'>
+      <p>Since I started building apps back in 2007, I’ve been keeping a list. This is a list of technical pitfalls to avoid when building a new app. Here are a few:</p>
+
+<ul>
+<li>timezones</li>
+<li>daylight saving time</li>
+<li>shoe sizes</li>
+</ul>
+
+<p>This list has grown over the years and I thought I was in the clear with Cushion until I discovered I needed multiple currencies. Currency! Normally, this wouldn’t be a problem, as it’s just a matter of formatting, but I quickly realized a much bigger problem—combining currencies.</p>
+
+<p>Looking ahead to integration with other services, I noticed that Harvest allows varying currencies per client <em>and</em> per invoice. Freshbooks only varies per client, but allows switching a client’s default currency for current and future invoices. With this in mind, along with Cushion’s interface, I’ll need to combine currencies both visually and in table form.</p>
+
+<p>The table side of combining currencies is the easier of the two. Instead of trying to calculate a total based on the exchange rate of whenever you received a specific invoice, you can simply show multiple totals per currency. It won’t look as good as a single total, but it’s a much better route than driving down the road to insanity via exchange rates.</p>
+
+<p>On the visual side, specifically the budget timeline, I’m in a bit of a pickle. These timelines are based on a financial goal the user sets in the beginning, which is of a single currency. This means that if I want to visualize a variety of currencies, I’ll need a goal per currency, which is not going to happen.</p>
+
+<p>I have a few ideas of how to get around this, but I’m getting ahead of myself. As a first step, I just need the ability to change the default currency per user. This is an easy one, so I’m happy to say it’s already done. I found a Ruby gem, called <a href="https://github.com/RubyMoney/money">Money</a>, that provides a thorough list of currencies, along with their symbols, symbol positions, thousand separator, and decimal separator. On the front-end, I can still use <a href="https://github.com/openexchangerates/accounting.js">Accounting.js</a>—all I need to do is provide the currency settings from the backend.</p>
+
+    </div>
+  </article>
+</main>
+
+
+      <footer class='main-footer'>
+        Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
+

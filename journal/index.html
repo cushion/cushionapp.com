@@ -76,6 +76,32 @@ window.analytics.page();
   
   <article class='article'>
     <h3 class='article-title'>
+      <a class='link' href='/journal/2014-10-13'>2014-10-13</a>
+    </h3>
+    <div class='article-copy'>
+      <p>Since I started building apps back in 2007, I’ve been keeping a list. This is a list of technical pitfalls to avoid when building a new app. Here are a few:</p>
+
+<ul>
+<li>timezones</li>
+<li>daylight saving time</li>
+<li>shoe sizes</li>
+</ul>
+
+<p>This list has grown over the years and I thought I was in the clear with Cushion until I discovered I needed multiple currencies. Currency! Normally, this wouldn’t be a problem, as it’s just a matter of formatting, but I quickly realized a much bigger problem—combining currencies.</p>
+
+<p>Looking ahead to integration with other services, I noticed that Harvest allows varying currencies per client <em>and</em> per invoice. Freshbooks only varies per client, but allows switching a client’s default currency for current and future invoices. With this in mind, along with Cushion’s interface, I’ll need to combine currencies both visually and in table form.</p>
+
+<p>The table side of combining currencies is the easier of the two. Instead of trying to calculate a total based on the exchange rate of whenever you received a specific invoice, you can simply show multiple totals per currency. It won’t look as good as a single total, but it’s a much better route than driving down the road to insanity via exchange rates.</p>
+
+<p>On the visual side, specifically the budget timeline, I’m in a bit of a pickle. These timelines are based on a financial goal the user sets in the beginning, which is of a single currency. This means that if I want to visualize a variety of currencies, I’ll need a goal per currency, which is not going to happen.</p>
+
+<p>I have a few ideas of how to get around this, but I’m getting ahead of myself. As a first step, I just need the ability to change the default currency per user. This is an easy one, so I’m happy to say it’s already done. I found a Ruby gem, called <a href="https://github.com/RubyMoney/money">Money</a>, that provides a thorough list of currencies, along with their symbols, symbol positions, thousand separator, and decimal separator. On the front-end, I can still use <a href="https://github.com/openexchangerates/accounting.js">Accounting.js</a>—all I need to do is provide the currency settings from the backend.</p>
+
+    </div>
+  </article>
+  
+  <article class='article'>
+    <h3 class='article-title'>
       <a class='link' href='/journal/2014-09-26'>2014-09-26</a>
     </h3>
     <div class='article-copy'>
