@@ -8,6 +8,8 @@ $base-font: 400 100%/1.65 "jaf-facitweb", $system-font
 $header-font: 700 150%/1.25 "effra", $system-font
 $copy-font: 400 100%/1.65 "ff-tisa-web-pro", $system-font
 $button-font: 400 .875rem/1.65 "jaf-facitweb", $system-font
+$code-font: 400 87.5%/1.65 "jaf-facitweb", $system-font
+$blockquote-font: 400 87.5%/1.65 "ff-tisa-web-pro", $system-font
 
 $white: #fff
 $black: #222
@@ -259,13 +261,17 @@ a
     a
       border-bottom: none
 
+  code
+    padding: 0.125em 0.5em
+    font: $code-font
+
   blockquote,
   code
-    font-size: em(14)
-
     background-color: $lighter-grey
 
   blockquote
+    font: $blockquote-font
+
     margin-left: 0
     margin-right: 0
     padding: 1em 2em
@@ -281,6 +287,17 @@ a
 
   ol > li
     list-style-type: decimal
+
+.video-inner
+  position: relative
+  padding-bottom: 56.25%
+
+  iframe, video
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
 
 // changelog
 
