@@ -3,7 +3,57 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Thu, 16 Oct 2014 01:52:51 +0000</pubDate>
+    <pubDate>Thu, 16 Oct 2014 15:18:51 +0000</pubDate>
+    
+    <item>
+      <title>2015-10-16</title>
+      <link>http://cushionapp.com/journal/2015-10-16</link>
+      <pubDate>Thu, 16 Oct 2014 08:36:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2015-10-16</guid>
+      <description>&lt;p&gt;In the early stages of building Cushion, everything was based upon a year-long timeline view. With one look, you could see a quick and easy-to-digest glimpse of your year. When are you next available? Where do you have pockets of time to fit another project? Wow—that project really took that long? After living with this scale for a while, I wondered what I could do with a more magnified view.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-16-timeline-data.png&quot; alt=&quot;2014-10-16-timeline-data&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;If we zoom in to a specific month on the timeline, we begin to give more meaning to the data. All of a sudden, a 4-day project that was just a blip on the year timeline expands to represent the true weight of those four full days. Zoomed out, it’s easy to see little difference between two lengths of time that are drastically different on the day-to-day scale, like 2 weeks versus 3 weeks, but in a month view, this is huge!&lt;/p&gt;
+
+&lt;p&gt;I started to think of ways to actually zoom into the timeline. Of course, the line segments would scale horizontally, but does it really need to scale proportionally on the vertical end as well?—I don’t think so. In my eyes, it looks much better this way &lt;em&gt;and&lt;/em&gt; maintains the same timeline height as the year view—allowing the same amount of information to be seen underneath without a jarring effect on the user.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-16-timeline-overflow.png&quot; alt=&quot;2014-10-16-timeline-overflow&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;When I first built the timeline view, I added a project that spanned two years and noticed a bug. With the way I coded the view, the knocked-out background of the timeline didn’t expand to account for the line segment. Instead, the line segment ran off the edge of the background, reaching the edge of the window. This wasn’t the intended behavior, but I immediately fell in love with it. The knocked-out background created a distinct boundary to the timeline, but didn’t hide any information beyond this boundary.&lt;/p&gt;
+
+&lt;p&gt;Returning to the zoom, this undocumented feature became the perfect tie of consistency between the two scales. When you switch between month and year views, the boundary doesn’t move a pixel.&lt;/p&gt;
+
+&lt;p&gt;The problem now was that the timeline labels for the year view, represented by months, needed to be replaced with days in order to be relevant to the new context. However, since I still wanted a dead-simple way to move from month to month, I didn’t want to get rid of the month labels. I went down a dark hole of bad designs, like a second row of labels that pushed the month labels down. It was a awful.&lt;/p&gt;
+
+&lt;p&gt;Then, I considered the top of the timeline. At first, I discounted this idea because I just assumed it would clutter the UI. I gave it a shot, though. Sometimes, it’s important to explore directions that you would typically disregard just to say that you tried them. Surprisingly, this direction had legs. It wasn’t perfect at first, but I knew something was there if I just chiseled deep enough.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/2014-10-16-timeline-month-view.png&quot;&gt;&lt;img src=&quot;/assets/2014-10-16-timeline-month-view.png&quot; alt=&quot;2014-10-16-timeline-month-view&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Instead of mimicking the same label design as the months, which represented spans of time, I centered the “tick” to point to the given day. And, because projects don’t factor time of day (yet), I centered the segment dots on each day block, rather than anchoring to an edge. Finally, to better separate each day, I added a slightly greyed background to the even days.&lt;/p&gt;
+
+&lt;p&gt;Now, all of this would look great on its own, but the transition of switching between the views should look even better. Luckily, each spot I wanted to animate was as easy as adding a CSS3 transition. The line segments scale based on the number of days in the timeline to the number of days in the selected month, the month labels fade in and pan up from behind the timeline, and the even day backgrounds simply fade in.&lt;/p&gt;
+
+&lt;div class='video-outer'&gt;
+    &lt;div class='video-inner' style='padding-bottom: 34%'&gt;
+        &lt;video width=&quot;100%&quot; poster=&quot;/assets/2014-10-16-timeline-zoom.png&quot; autoplay=&quot;autoplay&quot; loop=&quot;loop&quot; controls=&quot;controls&quot; tabindex=&quot;0&quot;&gt;
+            &lt;source src=&quot;/assets/2014-10-16-timeline-zoom.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+            &lt;source src=&quot;/assets/2014-10-16-timeline-zoom.ogv&quot; type=&quot;video/ogg&quot; /&gt;
+            Video tag not supported. Download the video &lt;a href=&quot;/assets/2014-10-16-timeline-zoom.mp4&quot;&gt;here&lt;/a&gt;.
+        &lt;/video&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Scaling the line segments was the trickiest part, not because of the resizing, but because of the origin point from where to resize. Everything in the timeline is positioned and scaled based on a percentage of its day in the timeline compared to the total days in the timeline. For example, February 1st on a year timeline is located at 8.767%. I chose this route because I wanted the timeline to be able to scale down properly, if Cushion were to be responsive. Fortunately, it made my life so much easier with timeline zooming, too. Instead of scaling each line segement individually, I just need to scale the entire timeline and pan.&lt;/p&gt;
+
+&lt;p&gt;The origin point is crucial because if you scale the timeline while panning it and not centering the origin point, the timeline &lt;em&gt;appears&lt;/em&gt; to pan before scaling. At first, I thought this was just a side effect of easing two attributes, but even when transitioned linearly, it didn’t look right. Luckily, centering the origin point was a non-issue, so everything came together in the end without needing to include JS for the animation.&lt;/p&gt;
+
+&lt;p&gt;I couldn’t be happier with my first stab at timeline zooming. Not only because it turned out well, but also because it opens up the possibility of a few other features I want to implement. The first is simply an in-between view for zooming in on a quarter of the year. The other feature, however, is &lt;em&gt;much&lt;/em&gt; more involved. I’ll save it for another post.&lt;/p&gt;
+
+&lt;p&gt;If you’re interested in participating in the paid beta, send me your email on &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;Twitter&lt;/a&gt; and I’ll send you an invite.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2014-10-15</title>
@@ -396,24 +446,6 @@
 &lt;p&gt;Lastly, client and project symbols are now auto-generated with the ability to override them. This means if you create a new client named “Vandelay Industries”, its symbol will be “VI” by default, but you could overwrite it to something like “VanInd” if you want.&lt;/p&gt;
 
 &lt;p&gt;These recent updates have me incredibly excited to get Cushion in the hands of others as soon as possible. I know most of them are unnecessary for an initial beta release, but I want this app to be a joy to use from the start.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-07-24</title>
-      <link>http://cushionapp.com/journal/2014-07-24</link>
-      <pubDate>Thu, 24 Jul 2014 08:37:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-07-24</guid>
-      <description>&lt;p&gt;I’ve been contemplating not mentioning this just yet because I don’t want it to seem like I’m ready to launch the beta, but… Cushion is now online. This past weekend, after great pressure from my wife (also a freelancer), I decided to set up everything needed to get Cushion working on a server. &lt;/p&gt;
-
-&lt;p&gt;I knew this would be a challenge, as it always is, but I wanted to get it out of the way early, so that everything I change from now on will need to work in production, avoiding any last-minute surprises. Also, it helps me establish a better process for updating the app, through the use of continuous integration and an asset pipeline that keeps compiled code outside of the dev branch.&lt;/p&gt;
-
-&lt;p&gt;Along with all the deployment setup, I’ve integrated a few helpful services for performance metrics, exception tracking, and user analytics. As I progress with Cushion, I’ll rely on these services to fine-tune the app along the way. Everything is also wired to my personal Slack room, so I’m alerted of any issues as they happen. I want to get this app right from the start and this extra preparation will go a long way.&lt;/p&gt;
-
-&lt;p&gt;Regarding the beta, I don’t have a definite date in mind, but it’s sooner than later. I have a short list of crucial items to tackle, then all of the payment and legal stuff. As a reminder, the beta is paid in order to support early development and encourage users to provide real feedback. I’ve been a part of far too many free betas that attract countless stagnant users because there’s no incentive or motivation to consistently test the app.&lt;/p&gt;
-
-&lt;p&gt;If you’re interested in taking part in the beta, &lt;a href=&quot;/&quot;&gt;sign up&lt;/a&gt; to be notified.&lt;/p&gt;
 </description>
     </item>
     

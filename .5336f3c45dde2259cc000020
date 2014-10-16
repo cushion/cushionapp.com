@@ -1,5 +1,5 @@
 ---
-time: 1413424372
+time: 1413472736
 inventory:
   /newsletter/index.html:
     md5: 0bccc23b63d198b3808ce7a0f2ae9220
@@ -8,8 +8,11 @@ inventory:
     md5: 0bccc23b63d198b3808ce7a0f2ae9220
     time: 1412263290
   /journal/index.html:
-    md5: 5947d850cab80e4c54b9ce6c876f3dfb
-    time: 1413250701
+    md5: 44a8afd2acf168d221992a5f57ee0f6f
+    time: 1413472729
+  /journal/2015-10-16/index.html:
+    md5: 240e01b68eb92501442f6ffab2a37610
+    time: 1413472729
   /journal/2014-10-13/index.html:
     md5: 63741e3a73861a67ae999b5e39a83acd
     time: 1413250701
@@ -194,11 +197,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: b4ab60f5d23f5c4b9c41e4ce48f2aa00
-    time: 1413424371
+    md5: 1f0f556e55413f482e39ce34cf6fc53d
+    time: 1413472731
   /feed.xml:
-    md5: 180cef347cb709ec0f665fc83ab1d41a
-    time: 1413424371
+    md5: ea3db0d31255fc6544dc2a19c817abc3
+    time: 1413472731
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -271,6 +274,9 @@ inventory:
   /assets/styles/screen.css:
     md5: 7e82600156e137c2c5c57880a927d922
     time: 1412263293
+  /assets/2014-10-16-timeline-zoom.png:
+    md5: 9c99db14788d54c77a67fdc715cd2a91
+    time: 1413472732
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -322,6 +328,9 @@ inventory:
   /assets/header-1.png:
     md5: e9ab50547b2fd4433f43f1ad08cc9ff4
     time: 1412214664
+  /assets/2014-10-16-timeline-zoom.mp4:
+    md5: 5e205406a78b4c487c1be18ee1d8a4f4
+    time: 1413472732
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -364,6 +373,9 @@ inventory:
   /assets/header-2.png:
     md5: 7ffdea0ba7f80c593ed9e061330b15a5
     time: 1412214664
+  /assets/2014-10-16-timeline-data.png:
+    md5: 2f7451863792aede1e94017b7647e4e3
+    time: 1413472732
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
@@ -379,6 +391,9 @@ inventory:
   /assets/2014-09-26-font.png:
     md5: 89ed1f393e1257803523e5db20a70b64
     time: 1411744322
+  /assets/2014-10-16-timeline-overflow.png:
+    md5: c35133cb9654b39912dcfab2603bea77
+    time: 1413472733
   /assets/2014-07-21-still-late-invoice.gif:
     md5: 8efef1b79e9a49055c81710076f6a797
     time: 1405976691
@@ -391,12 +406,18 @@ inventory:
   /assets/2014-09-26-tooltip.png:
     md5: 9079f3c0cb300ae0221a0f659e9b3d77
     time: 1411744322
+  /assets/2014-10-16-timeline-month-view.png:
+    md5: a38d5738c9787af2edfe30b45fb59c04
+    time: 1413472733
   /assets/2014-08-19-dragged-project.png:
     md5: 2e7d83aaadfec25b54744894991dd9e9
     time: 1408461370
   /assets/2014-09-26-font-table.png:
     md5: 69303f98eba13c4a406066946394de50
     time: 1411744323
+  /assets/2014-10-16-timeline-zoom.ogv:
+    md5: c0825fb2a8966d96af18f5d0c3fd7980
+    time: 1413472733
   /assets/2014-08-19-start-date-tooltip.png:
     md5: 3823666302cb62f5df55ae58cd5c3d46
     time: 1408461370

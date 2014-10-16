@@ -1,0 +1,136 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+    <title>Cushion</title>
+
+    <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <link rel='icon' type='image/png' href='/assets/images/favicon.png'>
+    <link rel='shortcut icon' type='image/png' href='/assets/images/favicon.png'>
+
+    <link href='/assets/styles/screen.css' rel='stylesheet'>
+
+    <script>
+  (function() {
+  var config = {
+  kitId: 'jpp2iwq',
+  scriptTimeout: 3000
+  };
+  var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+
+    <script type="text/javascript">
+window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+window.analytics.load("lvwwqqgyp6");
+window.analytics.page();
+</script>
+
+  </head>
+
+  <body>
+    
+
+    <div class='wrapper'>
+      <header class='main-header'>
+        <h1 class='logo'>
+          <a class='link' href='/'>Cushion</a>
+        </h1>
+        <h2 class='tagline'>Peace of mind for freelancers</h2>
+
+        <nav class='main-nav'>
+          <ul class='nav-list'>
+          
+            
+          
+            
+            <li class='nav-item'>
+              <a class='nav-link' href='/journal'>Journal</a>
+            </li>
+            
+          
+            
+            <li class='nav-item'>
+              <a class='nav-link' href='/expenses'>Expenses</a>
+            </li>
+            
+          
+            
+            <li class='nav-item'>
+              <a class='nav-link' href='/changelog'>Changelog</a>
+            </li>
+            
+          
+          </ul>
+        </nav>
+      </header>
+
+      
+<main class='main-content'>
+  <article class='journal-article article'>
+    <h3 class='article-title'>
+      <a class='link' href='/journal/2015-10-16'>2015-10-16</a>
+    </h3>
+    <div class='article-copy'>
+      <p>In the early stages of building Cushion, everything was based upon a year-long timeline view. With one look, you could see a quick and easy-to-digest glimpse of your year. When are you next available? Where do you have pockets of time to fit another project? Wow—that project really took that long? After living with this scale for a while, I wondered what I could do with a more magnified view.</p>
+
+<p><img src="/assets/2014-10-16-timeline-data.png" alt="2014-10-16-timeline-data"> </p>
+
+<p>If we zoom in to a specific month on the timeline, we begin to give more meaning to the data. All of a sudden, a 4-day project that was just a blip on the year timeline expands to represent the true weight of those four full days. Zoomed out, it’s easy to see little difference between two lengths of time that are drastically different on the day-to-day scale, like 2 weeks versus 3 weeks, but in a month view, this is huge!</p>
+
+<p>I started to think of ways to actually zoom into the timeline. Of course, the line segments would scale horizontally, but does it really need to scale proportionally on the vertical end as well?—I don’t think so. In my eyes, it looks much better this way <em>and</em> maintains the same timeline height as the year view—allowing the same amount of information to be seen underneath without a jarring effect on the user.</p>
+
+<p><img src="/assets/2014-10-16-timeline-overflow.png" alt="2014-10-16-timeline-overflow"> </p>
+
+<p>When I first built the timeline view, I added a project that spanned two years and noticed a bug. With the way I coded the view, the knocked-out background of the timeline didn’t expand to account for the line segment. Instead, the line segment ran off the edge of the background, reaching the edge of the window. This wasn’t the intended behavior, but I immediately fell in love with it. The knocked-out background created a distinct boundary to the timeline, but didn’t hide any information beyond this boundary.</p>
+
+<p>Returning to the zoom, this undocumented feature became the perfect tie of consistency between the two scales. When you switch between month and year views, the boundary doesn’t move a pixel.</p>
+
+<p>The problem now was that the timeline labels for the year view, represented by months, needed to be replaced with days in order to be relevant to the new context. However, since I still wanted a dead-simple way to move from month to month, I didn’t want to get rid of the month labels. I went down a dark hole of bad designs, like a second row of labels that pushed the month labels down. It was a awful.</p>
+
+<p>Then, I considered the top of the timeline. At first, I discounted this idea because I just assumed it would clutter the UI. I gave it a shot, though. Sometimes, it’s important to explore directions that you would typically disregard just to say that you tried them. Surprisingly, this direction had legs. It wasn’t perfect at first, but I knew something was there if I just chiseled deep enough.</p>
+
+<p><a href="/assets/2014-10-16-timeline-month-view.png"><img src="/assets/2014-10-16-timeline-month-view.png" alt="2014-10-16-timeline-month-view"></a></p>
+
+<p>Instead of mimicking the same label design as the months, which represented spans of time, I centered the “tick” to point to the given day. And, because projects don’t factor time of day (yet), I centered the segment dots on each day block, rather than anchoring to an edge. Finally, to better separate each day, I added a slightly greyed background to the even days.</p>
+
+<p>Now, all of this would look great on its own, but the transition of switching between the views should look even better. Luckily, each spot I wanted to animate was as easy as adding a CSS3 transition. The line segments scale based on the number of days in the timeline to the number of days in the selected month, the month labels fade in and pan up from behind the timeline, and the even day backgrounds simply fade in.</p>
+
+<div class='video-outer'>
+    <div class='video-inner' style='padding-bottom: 34%'>
+        <video width="100%" poster="/assets/2014-10-16-timeline-zoom.png" autoplay="autoplay" loop="loop" controls="controls" tabindex="0">
+            <source src="/assets/2014-10-16-timeline-zoom.mp4" type="video/mp4" />
+            <source src="/assets/2014-10-16-timeline-zoom.ogv" type="video/ogg" />
+            Video tag not supported. Download the video <a href="/assets/2014-10-16-timeline-zoom.mp4">here</a>.
+        </video>
+    </div>
+</div>
+
+<p>Scaling the line segments was the trickiest part, not because of the resizing, but because of the origin point from where to resize. Everything in the timeline is positioned and scaled based on a percentage of its day in the timeline compared to the total days in the timeline. For example, February 1st on a year timeline is located at 8.767%. I chose this route because I wanted the timeline to be able to scale down properly, if Cushion were to be responsive. Fortunately, it made my life so much easier with timeline zooming, too. Instead of scaling each line segement individually, I just need to scale the entire timeline and pan.</p>
+
+<p>The origin point is crucial because if you scale the timeline while panning it and not centering the origin point, the timeline <em>appears</em> to pan before scaling. At first, I thought this was just a side effect of easing two attributes, but even when transitioned linearly, it didn’t look right. Luckily, centering the origin point was a non-issue, so everything came together in the end without needing to include JS for the animation.</p>
+
+<p>I couldn’t be happier with my first stab at timeline zooming. Not only because it turned out well, but also because it opens up the possibility of a few other features I want to implement. The first is simply an in-between view for zooming in on a quarter of the year. The other feature, however, is <em>much</em> more involved. I’ll save it for another post.</p>
+
+<p>If you’re interested in participating in the paid beta, send me your email on <a href="http://twitter.com/cushionapp">Twitter</a> and I’ll send you an invite.</p>
+
+    </div>
+  </article>
+</main>
+
+
+      <footer class='main-footer'>
+        Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
+
