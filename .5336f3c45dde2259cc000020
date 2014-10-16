@@ -1,5 +1,5 @@
 ---
-time: 1413472749
+time: 1413472792
 inventory:
   /newsletter/index.html:
     md5: 0bccc23b63d198b3808ce7a0f2ae9220
@@ -271,12 +271,12 @@ inventory:
   /assets/header-0.png:
     md5: a73ae08370b9cee35ce45c0402379480
     time: 1412214663
-  /assets/styles/screen.css:
-    md5: 7e82600156e137c2c5c57880a927d922
-    time: 1412263293
   /assets/2014-10-16-timeline-zoom.png:
     md5: 9c99db14788d54c77a67fdc715cd2a91
     time: 1413472732
+  /assets/styles/screen.css:
+    md5: aa59c3d7bb7755872f0337a3220907a1
+    time: 1413472792
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
