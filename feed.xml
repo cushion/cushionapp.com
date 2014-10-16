@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Wed, 15 Oct 2014 00:55:25 +0000</pubDate>
+    <pubDate>Thu, 16 Oct 2014 01:52:51 +0000</pubDate>
+    
+    <item>
+      <title>2014-10-15</title>
+      <link>http://cushionapp.com/changelog/2014-10-15</link>
+      <pubDate>Wed, 15 Oct 2014 09:52:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-10-15</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-10-13</title>
@@ -406,15 +415,6 @@
 
 &lt;p&gt;If you’re interested in taking part in the beta, &lt;a href=&quot;/&quot;&gt;sign up&lt;/a&gt; to be notified.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>SSL Service</title>
-      <link>http://cushionapp.com/expenses/ssl-certificate-service</link>
-      <pubDate>Mon, 21 Jul 2014 18:11:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/ssl-certificate-service</guid>
-      <description></description>
     </item>
     
   </channel>
