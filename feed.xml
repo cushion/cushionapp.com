@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Thu, 16 Oct 2014 15:19:08 +0000</pubDate>
+    <pubDate>Fri, 17 Oct 2014 04:11:57 +0000</pubDate>
+    
+    <item>
+      <title>2014-10-16</title>
+      <link>http://cushionapp.com/changelog/2014-10-16</link>
+      <pubDate>Fri, 17 Oct 2014 00:10:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-10-16</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-10-16</title>
@@ -408,44 +417,6 @@
 &lt;p&gt;Under invoices, using the dates assigned to each (issued, due, and paid), the segments represent how early an invoice was paid, how late an invoice was paid (more realistic), how long an invoice took to get paid, and how long until an invoice is due.&lt;/p&gt;
 
 &lt;p&gt;With these new tooltips in place, I feel like I’m going in a really good direction—taking useful data and making it easily accessible. Being able to see the data in table form is easy, but I’d rather provide the ability to interact with data in context.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2014-07-29</title>
-      <link>http://cushionapp.com/journal/2014-07-29</link>
-      <pubDate>Tue, 29 Jul 2014 10:14:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-07-29</guid>
-      <description>&lt;p&gt;This past weekend, I focused on usability. My first stab on the layout of model forms was haphazard. While showing Cushion to a few people, I could see an obvious hesitation on where to start when creating a new project. All of a sudden, the user is presented with fields all over the place with no clear direction.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-07-29-new-form-layout.png&quot;&gt;&lt;img src=&quot;/assets/2014-07-29-new-form-layout.png&quot; alt=&quot;2014-07-29-new-form-layout&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Believe it or not, I had a dream about the new layout and it’s the one I’m going with. Instead of letting the sections rest aside each other and reflow when needed, I just stack them and separate with dividers. Now, the sections actually represent the different views of Cushion (schedule and budget) and there’s a clear flow from top to bottom. &lt;/p&gt;
-
-&lt;p&gt;At first, I was worried there would be too much negative space in the smaller sections, like budget, but it doesn’t feel as bad—especially if I end up going with a budget range instead of a single value. Also, this layout allows me to potentially include mini visuals for each section that provides more context than just input fields. Imagine the budget section including the average budget for your projects or the average budget for the client of that project. All of a sudden, you have a better idea of where to start.&lt;/p&gt;
-
-&lt;p&gt;Along with a revision of the layout, I’ve been working on improving the actual input fields. From the start, I chose HTML5’s native input types, thinking these would take care of a ton of extra work in the early stages. Unfortunately, some of the native input types, like &lt;code&gt;&amp;lt;input type=&amp;#39;date&amp;#39;&amp;gt;&lt;/code&gt;, are cemented in ugly (can’t be styled) and don’t even work in common browsers like Safari.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-29-color-picker.png&quot; alt=&quot;2014-07-29-color-picker&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The first input type I tackled was the color picker. I took a page from my buddies at &lt;a href=&quot;http://friendsoftheweb.com/&quot;&gt;Friends of the Web&lt;/a&gt; with their &lt;a href=&quot;http://dayswork.co&quot;&gt;Dayswork&lt;/a&gt; app and provided a simple popover of suggested colors. I &lt;em&gt;hate&lt;/em&gt; color pickers on the web that mimic those in design tools like Photoshop—they assume everyone is a designer. With suggested colors, any one of them will look good, and in most cases, you won’t need to use it because your client already has an established color. Considering this, the color picker is more of an easy way to get started.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-29-date-picker.png&quot; alt=&quot;2014-07-29-date-picker&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, I addressed the date picker. For this, I wanted a design that is both useful and obvious to navigate—it should also have a couple Cushion-specific features that support the reasoning behind going custom. For instance, if the date is part of a range, the dates within the range should highlight to indicate that. Also, for validation purposes, you shouldn’t be able to pick a finish date that comes before the range’s start date.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-29-color-inheritance.png&quot; alt=&quot;2014-07-29-color-inheritance&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;In filling out the forms, I also realized how tedious the process felt. Because of this, I added value inheritance. Let’s say you create a new project, but it doesn’t necessarily call for a color other than its client’s. Before, you would need to re-enter your client’s color. Now, it defaults to using the client’s color unless specified otherwise. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-29-inline-client-inheritance.png&quot; alt=&quot;2014-07-29-inline-client-inheritance&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;This also works reversely for the inline client creation. If you create a new project and set its color, the inline client will inherit that color by default.&lt;/p&gt;
-
-&lt;p&gt;Lastly, client and project symbols are now auto-generated with the ability to override them. This means if you create a new client named “Vandelay Industries”, its symbol will be “VI” by default, but you could overwrite it to something like “VanInd” if you want.&lt;/p&gt;
-
-&lt;p&gt;These recent updates have me incredibly excited to get Cushion in the hands of others as soon as possible. I know most of them are unnecessary for an initial beta release, but I want this app to be a joy to use from the start.&lt;/p&gt;
 </description>
     </item>
     
