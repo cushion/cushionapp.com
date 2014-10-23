@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Wed, 22 Oct 2014 02:15:04 +0000</pubDate>
+    <pubDate>Thu, 23 Oct 2014 21:41:31 +0000</pubDate>
+    
+    <item>
+      <title>2014-10-23</title>
+      <link>http://cushionapp.com/changelog/2014-10-23</link>
+      <pubDate>Thu, 23 Oct 2014 17:40:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/changelog/2014-10-23</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-10-21</title>
@@ -323,15 +332,6 @@
 
 &lt;p&gt;This weekend, I plan to send out 10 more beta invites. If you want one sooner than later, &lt;a href=&quot;mailto:jonnie@cushionapp.com&quot;&gt;email me&lt;/a&gt;.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Email marketing</title>
-      <link>http://cushionapp.com/expenses/email-marketing</link>
-      <pubDate>Sat, 30 Aug 2014 15:35:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/email-marketing</guid>
-      <description></description>
     </item>
     
   </channel>
