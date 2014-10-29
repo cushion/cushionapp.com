@@ -1,5 +1,5 @@
 ---
-time: 1414538957
+time: 1414606977
 inventory:
   /newsletter/index.html:
     md5: 0bccc23b63d198b3808ce7a0f2ae9220
@@ -8,8 +8,11 @@ inventory:
     md5: 0bccc23b63d198b3808ce7a0f2ae9220
     time: 1412263290
   /journal/index.html:
-    md5: 68ba099f019ec2f57eb2243420aa55a6
-    time: 1413944101
+    md5: c1ebb0d4f6492638b6d9c848aa3ba9af
+    time: 1414606971
+  /journal/2014-10-29/index.html:
+    md5: 9d0b36098d192a47691366310560e08f
+    time: 1414606971
   /journal/2014-10-21/index.html:
     md5: d387b30cd4eaaddba282b4effb44c2e9
     time: 1413944102
@@ -218,11 +221,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 4242672c7207380a37dd4661025b4242
-    time: 1414538956
+    md5: 748b9c0d72aba682f22e7065c36073e4
+    time: 1414606974
   /feed.xml:
-    md5: 87a0e8c5d81d9d9b087e56ea692c9153
-    time: 1414538957
+    md5: 0ac353268861200807c2b66c5bfcc8aa
+    time: 1414606975
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -301,6 +304,9 @@ inventory:
   /assets/2014-10-21-goals.png:
     md5: 2f05c25a5e2baf3fbbb6d35cd5641751
     time: 1413944105
+  /assets/2014-10-29-archive.png:
+    md5: 4dce9fb1a855de3bf3011e9687875c78
+    time: 1414606975
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -355,6 +361,9 @@ inventory:
   /assets/2014-10-16-timeline-zoom.mp4:
     md5: 5e205406a78b4c487c1be18ee1d8a4f4
     time: 1413472732
+  /assets/2014-10-29-archived-by-client.png:
+    md5: 282a7ad9d99585e1b6a36563c88d4b39
+    time: 1414606975
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -400,6 +409,9 @@ inventory:
   /assets/2014-10-16-timeline-data.png:
     md5: 2f7451863792aede1e94017b7647e4e3
     time: 1413472732
+  /assets/2014-10-29-gain-loss.png:
+    md5: 06bf5e1c67f2e6415cdb580e44869e97
+    time: 1414606975
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
@@ -418,6 +430,9 @@ inventory:
   /assets/2014-10-16-timeline-overflow.png:
     md5: c35133cb9654b39912dcfab2603bea77
     time: 1413472733
+  /assets/2014-10-29-archiving.gif:
+    md5: 4d71b8c4072fc03cfc736ae56eadd8e6
+    time: 1414606976
   /assets/2014-07-21-still-late-invoice.gif:
     md5: 8efef1b79e9a49055c81710076f6a797
     time: 1405976691
