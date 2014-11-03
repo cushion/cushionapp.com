@@ -209,8 +209,14 @@
 
   <url>
     <loc>http://cushionapp.com/expenses</loc>
-    <lastmod>2014-10-01T15:00:52+00:00</lastmod>
+    <lastmod>2014-11-03T02:57:44+00:00</lastmod>
     <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://cushionapp.com/expenses/support</loc>
+    <lastmod>2014-11-03T03:00:40+00:00</lastmod>
+    <priority>0.5</priority>
   </url>
   
   <url>

@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Wed, 29 Oct 2014 18:22:54 +0000</pubDate>
+    <pubDate>Mon, 03 Nov 2014 03:08:38 +0000</pubDate>
+    
+    <item>
+      <title>Support</title>
+      <link>http://cushionapp.com/expenses/support</link>
+      <pubDate>Sun, 02 Nov 2014 21:57:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/support</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>2014-10-29</title>
@@ -292,15 +301,6 @@
       <pubDate>Thu, 25 Sep 2014 23:25:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/changelog/2014-09-25</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2014-09-22</title>
-      <link>http://cushionapp.com/changelog/2014-09-22</link>
-      <pubDate>Mon, 22 Sep 2014 15:52:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/changelog/2014-09-22</guid>
       <description></description>
     </item>
     
