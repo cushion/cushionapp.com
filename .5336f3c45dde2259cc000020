@@ -1,5 +1,5 @@
 ---
-time: 1414984121
+time: 1414984461
 inventory:
   /newsletter/index.html:
     md5: 0bccc23b63d198b3808ce7a0f2ae9220
@@ -307,8 +307,8 @@ inventory:
   /assets/2014-10-29-archive.png:
     md5: 4dce9fb1a855de3bf3011e9687875c78
     time: 1414606975
-  /assets/cumulative-running-expenses.png:
-    md5: 5200f027533a03718681cde25994b718
+  /assets/monthly-expenses.png:
+    md5: d7490d5aba28447ce7c2c36615d76d0a
     time: 1414984119
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
@@ -364,8 +364,8 @@ inventory:
   /assets/2014-10-29-archived-by-client.png:
     md5: 282a7ad9d99585e1b6a36563c88d4b39
     time: 1414606975
-  /assets/monthly-expenses.png:
-    md5: d7490d5aba28447ce7c2c36615d76d0a
+  /assets/total-expenses.png:
+    md5: ec33332f8a16d7552893c56f9e23f32f
     time: 1414984119
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
@@ -412,9 +412,9 @@ inventory:
   /assets/2014-10-29-gain-loss.png:
     md5: 06bf5e1c67f2e6415cdb580e44869e97
     time: 1414606975
-  /assets/total-expenses.png:
-    md5: ec33332f8a16d7552893c56f9e23f32f
-    time: 1414984119
+  /assets/cumulative-running-expenses.png:
+    md5: 9b323cc0d596e3c7b51eefc0dc2c44eb
+    time: 1414984460
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
