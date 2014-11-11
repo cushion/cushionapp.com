@@ -1,5 +1,5 @@
 ---
-time: 1415637597
+time: 1415728785
 inventory:
   /newsletter/index.html:
     md5: 0bccc23b63d198b3808ce7a0f2ae9220
@@ -8,8 +8,11 @@ inventory:
     md5: 0bccc23b63d198b3808ce7a0f2ae9220
     time: 1412263290
   /journal/index.html:
-    md5: c1ebb0d4f6492638b6d9c848aa3ba9af
-    time: 1414606971
+    md5: b468133d0a529643682ea9ac5113dde1
+    time: 1415728775
+  /journal/2014-11-11/index.html:
+    md5: ae3055b8c2e188f683932e033bc157d9
+    time: 1415728775
   /journal/2014-10-29/index.html:
     md5: 9d0b36098d192a47691366310560e08f
     time: 1414606971
@@ -230,11 +233,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 3e329a63bdf62fe11ffc865471f1f467
-    time: 1415637596
+    md5: 86dd7a8ff493feb885fb7abf821b25a6
+    time: 1415728779
   /feed.xml:
-    md5: f484515bae96d3d8a476ea8602c00242
-    time: 1415637597
+    md5: 3c3bd0e576105434677d568f44693118
+    time: 1415728779
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -304,9 +307,6 @@ inventory:
   /assets/2014-10-16-timeline-zoom.png:
     md5: 9c99db14788d54c77a67fdc715cd2a91
     time: 1413472732
-  /assets/styles/screen.css:
-    md5: aa59c3d7bb7755872f0337a3220907a1
-    time: 1413472792
   /assets/2014-10-21-goals.png:
     md5: 2f05c25a5e2baf3fbbb6d35cd5641751
     time: 1413944105
@@ -316,6 +316,12 @@ inventory:
   /assets/monthly-expenses.png:
     md5: d7490d5aba28447ce7c2c36615d76d0a
     time: 1414984119
+  /assets/2014-11-11-project-span-all.png:
+    md5: 9267d58610fffe57e18610c9d5754feb
+    time: 1415728779
+  /assets/styles/screen.css:
+    md5: fdd90a570d473a934dfbe78a2217ccb5
+    time: 1415728780
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -373,6 +379,9 @@ inventory:
   /assets/total-expenses.png:
     md5: ec33332f8a16d7552893c56f9e23f32f
     time: 1414984119
+  /assets/2014-11-11-project-around.png:
+    md5: 7caeb944a8fdcfbce4ff3c228b310c7a
+    time: 1415728780
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -421,6 +430,9 @@ inventory:
   /assets/cumulative-running-expenses.png:
     md5: 9b323cc0d596e3c7b51eefc0dc2c44eb
     time: 1414984460
+  /assets/2014-11-11-project-no-end-in-sight.png:
+    md5: fc7e0a7b23ace7904dee7a18f9af2010
+    time: 1415728780
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
@@ -442,6 +454,9 @@ inventory:
   /assets/2014-10-29-archiving.gif:
     md5: 4d71b8c4072fc03cfc736ae56eadd8e6
     time: 1414606976
+  /assets/2014-11-11-project-ongoing-estimated-finish.png:
+    md5: 0a7dff2ce1f3c036a47771f3c38c9cb8
+    time: 1415728780
   /assets/2014-07-21-still-late-invoice.gif:
     md5: 8efef1b79e9a49055c81710076f6a797
     time: 1405976691
@@ -457,6 +472,9 @@ inventory:
   /assets/2014-10-16-timeline-month-view.png:
     md5: a38d5738c9787af2edfe30b45fb59c04
     time: 1413472733
+  /assets/2014-11-11-project-no-dates.png:
+    md5: 5aa16ef26a63ca37aafade43e22e629a
+    time: 1415728780
   /assets/2014-08-19-dragged-project.png:
     md5: 2e7d83aaadfec25b54744894991dd9e9
     time: 1408461370
@@ -466,21 +484,45 @@ inventory:
   /assets/2014-10-16-timeline-zoom.ogv:
     md5: c0825fb2a8966d96af18f5d0c3fd7980
     time: 1413472733
+  /assets/2014-11-11-project-with-invoice.png:
+    md5: 89bba00f23bec2a95e35c9fb394105a0
+    time: 1415728780
   /assets/2014-08-19-start-date-tooltip.png:
     md5: 3823666302cb62f5df55ae58cd5c3d46
     time: 1408461370
+  /assets/2014-11-11-invoice-issued-before-today.png:
+    md5: a6b5b7b19eb8fbc04408d06cf913850f
+    time: 1415728780
   /assets/2014-08-19-estimated-finish-tooltip.png:
     md5: 3360d3ac57388655aa757ea25f791f6d
     time: 1408461370
+  /assets/2014-11-11-invoice-issued-in-future.png:
+    md5: df5985881d52a05c3c9abf35f14640c2
+    time: 1415728781
   /assets/2014-08-19-active-duration-tooltip.png:
     md5: af48657453b04a4f7c9b3d6b5cce80e7
     time: 1408461371
+  /assets/2014-11-11-invoice-paid-before-today.png:
+    md5: b558f5ec8eb781200ba8752e864950a2
+    time: 1415728781
   /assets/2014-08-19-dragged-tooltip.png:
     md5: 04083df1e278eba6c0e5d444a9c3765a
     time: 1408461371
+  /assets/2014-11-11-estimate-ongoing-no-estimated-finish.png:
+    md5: 42d5b56d825c22611324f6228c505ef3
+    time: 1415728781
   /assets/2014-08-19-active-date-tooltip.png:
     md5: 18687f512aff3a07522e43450122207a
     time: 1408461372
+  /assets/2014-11-11-estimate-no-dates.png:
+    md5: 11e0e3481b69c1f5ec1a108da9e218b6
+    time: 1415728782
   /assets/2014-08-19-new-timeline.png:
     md5: ae034b954062a3b72710b0a4cbf23506
     time: 1408461577
+  /assets/2014-11-11-estimate-today-and-future.png:
+    md5: c707cd6d6ce847ae2fdf2569c5381c42
+    time: 1415728782
+  /assets/2014-11-11-timeline-switch.gif:
+    md5: df4e35b172f58d86796084c81fab7027
+    time: 1415728782

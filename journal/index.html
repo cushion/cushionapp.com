@@ -76,6 +76,114 @@ window.analytics.page();
   
   <article class='article'>
     <h3 class='article-title'>
+      <a class='link' href='/journal/2014-11-11'>2014-11-11</a>
+    </h3>
+    <div class='article-copy'>
+      <p>These past two weeks, I’ve been heads-down, working on an incredibly important feature for Cushion—support for multiple timelines. This feature was not only complex, but also time-sensitive, as beta users were already starting to plan for the next year. In building Cushion, I’ve been actively holding back on specific features that aren’t as prevalent as others. Sometimes these once-dormant features demand your attention much earlier than expected, resulting in a more stressful sprint to finish. This is why we have betas.</p>
+
+<p>Multiple timelines is one feature I’ve especially been pushing off because of its complexity as well as its never-ending knot of decisions. I knew it would be tough from the start, but I didn’t think it would be this bad. The high-level issues I needed to tackle consisted of establishing a way to navigate between timelines and filtering the data to the selected timeline. This sounds pretty simple until you realize a few scenarios that make it anything but simple, like projects spanning multiple timelines. The deeper I descended into the depths of the feature, the more troubling scenarios I discovered.</p>
+
+<p>Instead of just glossing over them with a summary, I’d like to highlight as many as I can remember, including both the scenario and my solution.</p>
+
+<p><img src="/assets/2014-11-11-project-span-all.png" alt="2014-11-11-project-span-all"></p>
+
+<p><strong>Scenario:</strong> A project spans multiple timelines.<br>
+<strong>Solution:</strong> Include project in all timelines it spans.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-project-around.png" alt="2014-11-11-project-around"> </p>
+
+<p><strong>Scenario:</strong> A project starts before and finishes after a specific timeline.<br>
+<strong>Solution:</strong> Include project in that timeline.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-project-ongoing-estimated-finish.png" alt="2014-11-11-project-ongoing-estimated-finish"> </p>
+
+<p><strong>Scenario:</strong> A project is ongoing with an estimated finish date.<br>
+<strong>Solution:</strong> Include project in all timelines it spans, using the maximum of the current date and its estimated finish date as the end.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-project-no-end-in-sight.png" alt="2014-11-11-project-no-end-in-sight"> </p>
+
+<p><strong>Scenario:</strong> A project is ongoing with no estimated finish date.<br>
+<strong>Solution:</strong> Include project in all timelines it spans as well as all timelines beyond the current date.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-project-no-dates.png" alt="2014-11-11-project-no-dates"> </p>
+
+<p><strong>Scenario:</strong> A project has no estimated or actual start or finish dates.<br>
+<strong>Solution:</strong> Include project in timeline containing the current date.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-project-with-invoice.png" alt="2014-11-11-project-with-invoice"> </p>
+
+<p><strong>Scenario:</strong> A project finished in one timeline, but has an invoice in another timeline.<br>
+<strong>Solution:</strong> Include project in both timelines.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-invoice-issued-before-today.png" alt="2014-11-11-invoice-issued-before-today"> </p>
+
+<p><strong>Scenario:</strong> An unpaid invoice issued before current date timeline.<br>
+<strong>Solution:</strong> Include invoice only in current date timeline.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-invoice-issued-in-future.png" alt="2014-11-11-invoice-issued-in-future"> </p>
+
+<p><strong>Scenario:</strong> An unpaid invoice issued after current date timeline.<br>
+<strong>Solution:</strong> Include invoice only in timeline containing issue date.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-invoice-paid-before-today.png" alt="2014-11-11-invoice-paid-before-today"> </p>
+
+<p><strong>Scenario:</strong> A paid invoice issued in a previous timeline.<br>
+<strong>Solution:</strong> Include invoice only in timeline containing paid date.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-estimate-ongoing-no-estimated-finish.png" alt="2014-11-11-estimate-ongoing-no-estimated-finish"> </p>
+
+<p><strong>Scenario:</strong> The estimate of an ongoing project with no estimated finish date.<br>
+<strong>Solution:</strong> Include estimate in timeline containing current date and all future timelines.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-estimate-today-and-future.png" alt="2014-11-11-estimate-today-and-future"> </p>
+
+<p><strong>Scenario:</strong> The estimate of a project spanning multiple timelines.<br>
+<strong>Solution:</strong> Include estimate in timeline containing current date and any future timeline containing project.</p>
+
+<hr>
+
+<p><img src="/assets/2014-11-11-estimate-no-dates.png" alt="2014-11-11-estimate-no-dates"> </p>
+
+<p><strong>Scenario:</strong> The estimate of a project with no dates.<br>
+<strong>Solution:</strong> Include estimate in timeline containing current date.</p>
+
+<hr>
+
+<p>Phew. Now that we got those out of the way, the remaining problem exists in navigating these timelines. I wanted it to be dead-simple to switch between them. You should be able to quickly glance several years in the past and return to the current timeline just as easily. For months, I thought of reusing the current timeline tab for more than just indicating the current timeline. I even had dreams of the interaction—I just wondered if it would actually work out as planned.</p>
+
+<p><img src="/assets/2014-11-11-timeline-switch.gif" alt="2014-11-11-timeline-switch"> </p>
+
+<p>Luckily, it did. When you’re not in the scheduling or budgeting view, the current timeline tab simply navigates to your default view. Then, if you hover it, a down arrow appears below it, prompting another click that expands the timeline menu. From there, you can select a different timeline and quickly navigate to it. To switch back, simply use the menu again to select the current timeline.</p>
+
+<p>Selecing a timeline appends a parameter to the URL, indicating the timeline ID, which then grabs both the date range for the scheduling view and the financial goals for the budgeting view. Without the parameter, Cushion uses the default timeline, which can be set in the Timelines page. Typically, this will be the timeline that contains the current date.</p>
+
+<p>As you could imagine, this was a whirlwind feature to finish, and after two weeks, I’m so relieved to be able to check it off the list. Now that it’s finished, I plan to send out even more invites for the paid beta. If you’re interested, <a href="http://twitter.com/cushionapp">tweet me</a> with your email address.</p>
+
+    </div>
+  </article>
+  
+  <article class='article'>
+    <h3 class='article-title'>
       <a class='link' href='/journal/2014-10-29'>2014-10-29</a>
     </h3>
     <div class='article-copy'>

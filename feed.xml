@@ -3,7 +3,115 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Mon, 10 Nov 2014 16:39:56 +0000</pubDate>
+    <pubDate>Tue, 11 Nov 2014 17:59:39 +0000</pubDate>
+    
+    <item>
+      <title>2014-11-11</title>
+      <link>http://cushionapp.com/journal/2014-11-11</link>
+      <pubDate>Tue, 11 Nov 2014 09:14:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2014-11-11</guid>
+      <description>&lt;p&gt;These past two weeks, I’ve been heads-down, working on an incredibly important feature for Cushion—support for multiple timelines. This feature was not only complex, but also time-sensitive, as beta users were already starting to plan for the next year. In building Cushion, I’ve been actively holding back on specific features that aren’t as prevalent as others. Sometimes these once-dormant features demand your attention much earlier than expected, resulting in a more stressful sprint to finish. This is why we have betas.&lt;/p&gt;
+
+&lt;p&gt;Multiple timelines is one feature I’ve especially been pushing off because of its complexity as well as its never-ending knot of decisions. I knew it would be tough from the start, but I didn’t think it would be this bad. The high-level issues I needed to tackle consisted of establishing a way to navigate between timelines and filtering the data to the selected timeline. This sounds pretty simple until you realize a few scenarios that make it anything but simple, like projects spanning multiple timelines. The deeper I descended into the depths of the feature, the more troubling scenarios I discovered.&lt;/p&gt;
+
+&lt;p&gt;Instead of just glossing over them with a summary, I’d like to highlight as many as I can remember, including both the scenario and my solution.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-span-all.png&quot; alt=&quot;2014-11-11-project-span-all&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project spans multiple timelines.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include project in all timelines it spans.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-around.png&quot; alt=&quot;2014-11-11-project-around&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project starts before and finishes after a specific timeline.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include project in that timeline.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-ongoing-estimated-finish.png&quot; alt=&quot;2014-11-11-project-ongoing-estimated-finish&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project is ongoing with an estimated finish date.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include project in all timelines it spans, using the maximum of the current date and its estimated finish date as the end.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-no-end-in-sight.png&quot; alt=&quot;2014-11-11-project-no-end-in-sight&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project is ongoing with no estimated finish date.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include project in all timelines it spans as well as all timelines beyond the current date.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-no-dates.png&quot; alt=&quot;2014-11-11-project-no-dates&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project has no estimated or actual start or finish dates.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include project in timeline containing the current date.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-with-invoice.png&quot; alt=&quot;2014-11-11-project-with-invoice&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project finished in one timeline, but has an invoice in another timeline.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include project in both timelines.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-invoice-issued-before-today.png&quot; alt=&quot;2014-11-11-invoice-issued-before-today&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; An unpaid invoice issued before current date timeline.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include invoice only in current date timeline.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-invoice-issued-in-future.png&quot; alt=&quot;2014-11-11-invoice-issued-in-future&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; An unpaid invoice issued after current date timeline.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include invoice only in timeline containing issue date.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-invoice-paid-before-today.png&quot; alt=&quot;2014-11-11-invoice-paid-before-today&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A paid invoice issued in a previous timeline.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include invoice only in timeline containing paid date.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-estimate-ongoing-no-estimated-finish.png&quot; alt=&quot;2014-11-11-estimate-ongoing-no-estimated-finish&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; The estimate of an ongoing project with no estimated finish date.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include estimate in timeline containing current date and all future timelines.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-estimate-today-and-future.png&quot; alt=&quot;2014-11-11-estimate-today-and-future&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; The estimate of a project spanning multiple timelines.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include estimate in timeline containing current date and any future timeline containing project.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-estimate-no-dates.png&quot; alt=&quot;2014-11-11-estimate-no-dates&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; The estimate of a project with no dates.&lt;br&gt;
+&lt;strong&gt;Solution:&lt;/strong&gt; Include estimate in timeline containing current date.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Phew. Now that we got those out of the way, the remaining problem exists in navigating these timelines. I wanted it to be dead-simple to switch between them. You should be able to quickly glance several years in the past and return to the current timeline just as easily. For months, I thought of reusing the current timeline tab for more than just indicating the current timeline. I even had dreams of the interaction—I just wondered if it would actually work out as planned.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-timeline-switch.gif&quot; alt=&quot;2014-11-11-timeline-switch&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Luckily, it did. When you’re not in the scheduling or budgeting view, the current timeline tab simply navigates to your default view. Then, if you hover it, a down arrow appears below it, prompting another click that expands the timeline menu. From there, you can select a different timeline and quickly navigate to it. To switch back, simply use the menu again to select the current timeline.&lt;/p&gt;
+
+&lt;p&gt;Selecing a timeline appends a parameter to the URL, indicating the timeline ID, which then grabs both the date range for the scheduling view and the financial goals for the budgeting view. Without the parameter, Cushion uses the default timeline, which can be set in the Timelines page. Typically, this will be the timeline that contains the current date.&lt;/p&gt;
+
+&lt;p&gt;As you could imagine, this was a whirlwind feature to finish, and after two weeks, I’m so relieved to be able to check it off the list. Now that it’s finished, I plan to send out even more invites for the paid beta. If you’re interested, &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;tweet me&lt;/a&gt; with your email address.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2014-11-10</title>
@@ -261,15 +369,6 @@
       <pubDate>Wed, 01 Oct 2014 00:32:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/changelog/2014-10-01</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>2014-09-29</title>
-      <link>http://cushionapp.com/changelog/2014-09-29</link>
-      <pubDate>Tue, 30 Sep 2014 10:11:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/changelog/2014-09-29</guid>
       <description></description>
     </item>
     
