@@ -3,14 +3,21 @@
 
   <url>
     <loc>http://cushionapp.com/</loc>
-    <lastmod>2014-04-07T00:43:02+00:00</lastmod>
+    <lastmod>2014-11-16T15:03:32+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+
+  <url>
+    <loc>http://cushionapp.com/beta</loc>
+    <lastmod>2014-11-16T16:53:16+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
     <loc>http://cushionapp.com/journal</loc>
-    <lastmod>2014-09-18T02:40:36+00:00</lastmod>
+    <lastmod>2014-11-16T15:21:46+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
@@ -215,7 +222,7 @@
 
   <url>
     <loc>http://cushionapp.com/expenses</loc>
-    <lastmod>2014-11-03T02:57:44+00:00</lastmod>
+    <lastmod>2014-11-16T15:21:46+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
@@ -288,139 +295,6 @@
   <url>
     <loc>http://cushionapp.com/expenses/domain-registration</loc>
     <lastmod>2014-08-29T23:30:32+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-
-  <url>
-    <loc>http://cushionapp.com/changelog</loc>
-    <lastmod>2014-09-18T01:37:04+00:00</lastmod>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-11-13</loc>
-    <lastmod>2014-11-14T01:18:54+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-11-12</loc>
-    <lastmod>2014-11-12T15:35:07+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-11-11</loc>
-    <lastmod>2014-11-11T19:05:51+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-11-10</loc>
-    <lastmod>2014-11-10T16:39:51+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-11-09</loc>
-    <lastmod>2014-11-09T15:08:56+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-28</loc>
-    <lastmod>2014-10-28T23:29:11+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-27</loc>
-    <lastmod>2014-10-28T00:29:30+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-23</loc>
-    <lastmod>2014-10-23T21:41:25+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-21</loc>
-    <lastmod>2014-10-21T15:05:26+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-20</loc>
-    <lastmod>2014-10-21T02:53:25+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-16</loc>
-    <lastmod>2014-10-17T04:11:46+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-15</loc>
-    <lastmod>2014-10-16T01:39:47+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-13</loc>
-    <lastmod>2014-10-13T19:17:47+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-12</loc>
-    <lastmod>2014-10-14T23:30:31+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-04</loc>
-    <lastmod>2014-10-04T22:51:14+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-10-01</loc>
-    <lastmod>2014-10-01T04:33:36+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-09-29</loc>
-    <lastmod>2014-09-30T14:15:40+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-09-25</loc>
-    <lastmod>2014-09-26T03:29:23+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-09-22</loc>
-    <lastmod>2014-09-22T19:57:15+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-09-20</loc>
-    <lastmod>2014-09-22T19:57:26+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/changelog/2014-09-17</loc>
-    <lastmod>2014-09-22T19:57:36+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   

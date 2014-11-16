@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -37,89 +33,164 @@ window.analytics.page();
   </head>
 
   <body>
-    
-<ul class='header-image-list'>
-  <li class='is-selected header-image-item' style='background-image: url(/assets/header-0.png)'></li>
-  <li class='header-image-item' style='background-image: url(/assets/header-1.png)'></li>
-  <li class='header-image-item' style='background-image: url(/assets/header-2.png)'></li>
-</ul>
-<script>
-  var images = document.querySelectorAll('.header-image-item');
-  var index = 0;
-  setInterval(function () {
-    if (index < 2) {
-      index++;
-    } else {
-      index = 0;
-    }
+    <ul class='header-image-list'>
+      <li class='is-selected header-image-item' style='background-image: url(/assets/header-0.png)'></li>
+      <li class='header-image-item' style='background-image: url(/assets/header-1.png)'></li>
+      <li class='header-image-item' style='background-image: url(/assets/header-2.png)'></li>
+    </ul>
+    <script>
+      var images = document.querySelectorAll('.header-image-item');
+      var index = 0;
+      setInterval(function () {
+        if (index < 2) {
+          index++;
+        } else {
+          index = 0;
+        }
 
-    var currentImage = document.querySelector('.is-selected');
-    currentImage.className = currentImage.className.replace('is-selected', '');
+        var currentImage = document.querySelector('.is-selected');
+        currentImage.className = currentImage.className.replace('is-selected', '');
 
-    images[index].className += ' is-selected';
-  }, 8000);
-</script>
+        images[index].className += ' is-selected';
+      }, 8000);
+    </script>
 
+    <header class='header'>
+      <h1 class='logo'>
+        <a class='link' href='/'>Cushion</a>
+      </h1>
+      <h2 class='tagline'>Peace of mind for freelancers</h2>
 
-    <div class='wrapper'>
-      <header class='main-header'>
-        <h1 class='logo'>
-          <a class='link' href='/'>Cushion</a>
-        </h1>
-        <h2 class='tagline'>Peace of mind for freelancers</h2>
-
-        <nav class='main-nav'>
-          <ul class='nav-list'>
+      <nav class='main-nav'>
+        <ul class='nav-list'>
+        
           
-            
+        
           
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/journal'>Journal</a>
-            </li>
-            
+          <li class='nav-item'>
+            <a class='nav-link' href='/beta'>Beta</a>
+          </li>
           
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/expenses'>Expenses</a>
-            </li>
-            
+        
           
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/changelog'>Changelog</a>
-            </li>
-            
+          <li class='nav-item'>
+            <a class='nav-link' href='/journal'>Journal</a>
+          </li>
           
-          </ul>
-        </nav>
-      </header>
+        
+          
+          <li class='nav-item'>
+            <a class='nav-link' href='/expenses'>Expenses</a>
+          </li>
+          
+        
+        </ul>
+      </nav>
+    </header>
 
+    <main class='main-content'>
+      <section class='copy-section section'>
+        <div class='copy'>
+          <p>Hi. My name is <a href="http://destroytoday.com">Jonnie</a> and I’ve spent the past year working on Cushion, an app for freelancers. I’m a freelance designer/dev myself and have always had trouble planning and managing the year. I constantly take on too much work and never think to take a break. It’s unhealthy.</p>
+
+<p>I don’t need a complex accounting app or another time-tracker—just a tool to provide better insight and bring a calm to the everyday rollercoaster ride that is freelancing. That’s why I built Cushion.</p>
+
+<p>Here are a few of my favorite features:</p>
+
+        </div>
+      </section>
+
+      <section class='odd feature-section section'>
+        <div class='subsection'>
+          <div class='subsection-image' style='height: 172px; background-image: url(/assets/feature1.png)'></div>
+        </div><div class='subsection'>
+          <div class='copy'>
+            <h3>Project &amp; Invoice Tracking</h3>
+
+<p>See which projects are in the pipeline and which invoices haven’t been paid yet.</p>
+
+          </div>
+        </div>
+      </section>
+
+      <section class='feature-section section'>
+        <div class='subsection'>
+          <div class='copy'>
+            <h3>Client Tendencies</h3>
+
+<p>Keep tabs on clients by tracking their average delay and drag times. Know their <em>real</em> net.</p>
+
+          </div>
+        </div><div class='subsection'>
+          <div class='subsection-image' style='height: 180px; background-image: url(/assets/feature2.png)'></div>
+        </div>
+      </section>
+
+      <section class='odd feature-section section'>
+        <div class='subsection'>
+          <div class='subsection-image' style='height: 166px; background-image: url(/assets/feature3.png)'></div>
+        </div><div class='subsection'>
+          <div class='copy'>
+            <h3>Financial Goals</h3>
+
+<p>Separate what you <em>need</em> to make from what you <em>want</em> to make.</p>
+
+          </div>
+        </div>
+      </section>
+
+      <section class='timeline-section section'>
+        <div class='copy'>
+          <p>Cushion is currently in the middle of a paid beta. To help support early development and server costs, beta users can pay upfront in exchange for early access, influence on the roadmap, and good karma. If you are interested in participating, you can learn more <a href="/beta">here</a>.</p>
+
+        </div>
+
+        <div class='timeline-image'></div>
+      </section>
+
+      <section class='odd journal-section section'>
+        <div class='subsection'>
+          <div class='subsection-image' style='height: 150px; background-image: url(/assets/journal.gif)'></div>
+        </div><div class='subsection'>
+          <div class='copy'>
+            <p>While building Cushion, I’ve also been keeping a <a href="/journal">process journal</a> to document my thoughts, struggles, and decisions. The most recent post is about <a href="/journal/2014-11-11">multiple timelines</a>.</p>
+
+          </div>
+        </div>
+      </section>
+
+      <section class='newsletter-section section'>
+        <div class='copy'>
+          <p>If you want to stay up-to-date with Cushion, sign up below to be notified of updates and follow <a href="http://twitter.com/cushionapp">@cushionapp</a> on Twitter.</p>
+
+<p>If you want to participate in the paid beta, learn more <a href="/beta">here</a>.</p>
+
+        </div>
+
+        <form class='subscribe-form form' action='http://cushionapp.createsend.com/t/d/s/ajdtd/' method='post'>
+          <input name='cm-ajdtd-ajdtd' class='text-input' type='email' placeholder='you@yourwebsite.com' required>
+          <button id='submit' class='button' type='submit'>subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class='footer'>
       
-<main class='main-content'>
-  <article class='article'>
-    <div class='article-copy'>
-      <p>My name is <a href="http://destroytoday.com">Jonnie</a> and I’m building an app for freelancers. I’m a freelance designer/dev myself and have always had trouble planning and managing the year. I constantly take on too much work and never think to take a break. It’s unhealthy.</p>
-
-<p>I don’t need a complex accounting app or another time-tracker—just a tool to provide better insight. It should warn me when I’m overbooking, so deadlines don’t align to form the perfect storm. It should give me a good idea of how long I can coast based on my monthly expenses. It should bring a calm to the everyday rollercoaster ride that is freelancing.</p>
-
-<p>I can’t wait to build this app and bring peace of mind to the freelancing world. If you are interested in following along, subscribe below:</p>
-
-    </div>
-    <form class='subscribe-form form' action='http://cushionapp.createsend.com/t/d/s/ajdtd/' method='post'>
-      <input name='cm-ajdtd-ajdtd' class='text-input' type='email' placeholder='you@yourwebsite.com' required>
-      <button id='submit' class='button' type='submit'>subscribe</button>
-    </form>
-  </article>
-</main>
-
-
-      <footer class='main-footer'>
-        Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
-      </footer>
-    </div>
-
-    
+        
+      
+        
+          <a class='footer-link' href='/beta'>Beta</a>
+        
+      
+        
+          <a class='footer-link' href='/journal'>Journal</a>
+        
+      
+        
+          <a class='footer-link' href='/expenses'>Expenses</a>
+        
+      
+      <a class='footer-link' href='https://beta.cushionapp.com/login'>Sign in</a>
+    </footer>
   </body>
 </html>
-

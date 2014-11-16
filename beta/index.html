@@ -1,5 +1,7 @@
 
 
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -36,6 +38,28 @@ window.analytics.page();
 
   <body>
     
+<ul class='header-image-list'>
+  <li class='is-selected header-image-item' style='background-image: url(/assets/header-0.png)'></li>
+  <li class='header-image-item' style='background-image: url(/assets/header-1.png)'></li>
+  <li class='header-image-item' style='background-image: url(/assets/header-2.png)'></li>
+</ul>
+<script>
+  var images = document.querySelectorAll('.header-image-item');
+  var index = 0;
+  setInterval(function () {
+    if (index < 2) {
+      index++;
+    } else {
+      index = 0;
+    }
+
+    var currentImage = document.querySelector('.is-selected');
+    currentImage.className = currentImage.className.replace('is-selected', '');
+
+    images[index].className += ' is-selected';
+  }, 8000);
+</script>
+
 
     <div class='wrapper'>
       <header class='main-header'>
@@ -73,44 +97,27 @@ window.analytics.page();
 
       
 <main class='main-content'>
-  
-  <article class='changelog-article article'>
-  <h3 class='article-title'>
-    <a href='/changelog/2014-10-28'>2014-10-28</a>
-  </h3>
-  <div class='article-copy'>
-    
-    <section class='changelog-section'>
-      <h4 class='new-changelog-title changelog-title'>New</h4>
-      <ul>
-<li>Added gain/loss column to budget tables</li>
+  <article class='beta-section article'>
+    <div class='article-copy'>
+      <p>Thanks for your interest in the Cushion beta! I would absolutely love to have you onboard. As a beta user, you&rsquo;ll receive:</p>
+
+<ul>
+<li>early access for 6 months</li>
+<li>influence on the roadmap</li>
+<li>good karma</li>
 </ul>
 
-    </section>
-    
+<p>In return, I ask that you pre-pay your beta membership ($8/mo for 6 months) to help support early development and server costs. I&rsquo;ve been working on Cushion completely out-of-pocket so far, with over 800 hours invested on nights and weekends between client gigs. Using it this entire time, Cushion has been an absolutely invaluable tool for managing my freelance life.</p>
 
-    
-    <section class='changelog-section'>
-      <h4 class='improved-changelog-title changelog-title'>Improved</h4>
-      <ul>
-<li>Estimated column is now full estimate</li>
-</ul>
+<p><a href="/assets/beta-screenshot-1.png"><img src="/assets/beta-screenshot-1-thumb.png" alt="screenshot-1-thumb"></a>
+<a href="/assets/beta-screenshot-2.png"><img src="/assets/beta-screenshot-2-thumb.png" alt="screenshots-2-thumb"></a> <a href="/assets/beta-screenshot-3.png"><img src="/assets/beta-screenshot-3-thumb.png" alt="screenshot-3-thumb"></a></p>
 
-    </section>
-    
+<p>Above are a few screenshots to give you a better idea of what Cushion looks like and there are plenty more images and animations in the <a href="/journal">process journal</a>. Because this is a beta, I don’t have a trial or demo yet—I’ve decided to focus all of my efforts on the app itself. But if you’re behind the idea and willing to give it a shot, I guarantee you will love it.</p>
 
-    
-    <section class='changelog-section'>
-      <h4 class='fixed-changelog-title changelog-title'>Fixed</h4>
-      <ul>
-<li>Fixed client/project dropdown in edit view</li>
-</ul>
+<p>Still interested? Fill out this super short <a href="https://cushionapp.typeform.com/to/H8iq49">questionnaire</a> and I’ll send your invite right away.</p>
 
-    </section>
-    
-  </div>
-</article>
-
+    </div>
+  </article>
 </main>
 
 
