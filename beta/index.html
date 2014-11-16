@@ -1,0 +1,35 @@
+{% capture header %}
+<ul class='header-image-list'>
+  <li class='is-selected header-image-item' style='background-image: url(/assets/header-0.png)'></li>
+  <li class='header-image-item' style='background-image: url(/assets/header-1.png)'></li>
+  <li class='header-image-item' style='background-image: url(/assets/header-2.png)'></li>
+</ul>
+<script>
+  var images = document.querySelectorAll('.header-image-item');
+  var index = 0;
+  setInterval(function () {
+    if (index < 2) {
+      index++;
+    } else {
+      index = 0;
+    }
+
+    var currentImage = document.querySelector('.is-selected');
+    currentImage.className = currentImage.className.replace('is-selected', '');
+
+    images[index].className += ' is-selected';
+  }, 8000);
+</script>
+{% endcapture %}
+
+{% capture content %}
+<main class='main-content'>
+  <article class='beta-section article'>
+    <div class='article-copy'>
+      {{ body }}
+    </div>
+  </article>
+</main>
+{% endcapture %}
+
+{% include 'layouts/default' %}

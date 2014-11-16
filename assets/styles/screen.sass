@@ -179,6 +179,16 @@ hr
 
     font-size: 112.5%
 
+.header
+  margin-top: em(80)
+  text-align: center
+
+  +min-width($tablet-portrait)
+    margin-top: em(50)
+    margin-bottom: em(50)
+
+    font-size: 112.5%
+
 .logo
   margin: 0
 
@@ -367,10 +377,23 @@ h4.changelog-title
   +min-width($tablet-portrait)
     margin-top: em(60, $small)
 
+.footer
+  margin-bottom: em(50, $small)
+
+  font-size: em($small)
+  text-align: center
+
+  +min-width($tablet-portrait)
+    margin-bottom: em(100, $small)
+
+.footer-link
+  margin: em(10, $small)
+  color: $grey
+
 // form
 
 .form
-  margin: em(20) 0
+  margin: em(20) em(10)
 
   text-align: center
 
@@ -441,3 +464,139 @@ tfoot
 .graph-section
   max-width: em(800)
   margin: em(30) auto
+
+// homepage
+
+.copy
+  margin: 0 em(10)
+
+  font: $copy-font
+
+  a
+    color: $green
+
+    &:hover
+      color: $black
+
+  +min-width($tablet-portrait)
+    margin-left: 0
+    margin-right: 0
+    font-size: 112.5%
+
+.section
+  padding-top: em(50)
+  padding-bottom: em(50)
+
+  &.odd
+    background-color: $lightest-grey
+
+  +min-width($tablet-portrait)
+    padding-top: em(100)
+    padding-bottom: em(100)
+
+.subsection
+  .copy
+    h3
+      margin: 0
+
+      font: $header-font
+      font-size: em(18)
+
+    p
+      margin: 0
+
+  +min-width($tablet-portrait)
+    display: inline-block
+    width: 50%
+
+    vertical-align: middle
+
+    .subsection-image
+      margin-bottom: 0
+      margin-left: em(20)
+
+    .copy
+      float: right
+      width: em(280, $large)
+      margin: 0 em(20, $large)
+
+    .odd &
+      .subsection-image
+        margin-left: 0
+        margin-right: em(20)
+
+      .copy
+        float: none
+
+.copy-section
+  max-width: 38em
+  margin: 0 auto
+
+  +min-width($tablet-portrait)
+    padding-top: 0
+    padding-bottom: em(50)
+
+.subsection-image
+  margin-top: em(30)
+
+  background-repeat: no-repeat
+  background-size: auto 100%
+
+  .odd &
+    margin-top: 0
+    margin-bottom: em(30)
+
+    background-position: right top
+
+  +min-width($tablet-portrait)
+    margin-top: 0
+
+    .odd &
+      margin-bottom: 0
+
+.timeline-section
+  .copy
+    margin: 0 em(10)
+
+    p
+      margin-top: 0
+      margin-bottom: em(50)
+
+    +min-width($tablet-portrait)
+      max-width: 38rem
+      margin-left: auto
+      margin-right: auto
+
+.timeline-image
+  width: 100%
+  height: 92px
+  background: url(/assets/timeline.png) no-repeat 55% 50%
+  background-size: auto 100%
+
+  +min-width($tablet-portrait)
+    background-position-x: 50%
+
+.newsletter-section
+  max-width: 38em
+  margin: 0 auto
+
+  .copy
+    text-align: center
+
+.beta-section
+  img
+    margin: 1em 0
+
+    +min-width($tablet-portrait)
+      display: inline-block
+      width: 32%
+      margin: 0.5em 0
+
+.featherlight
+  position: fixed
+  top: 0
+  left: 0
+
+  width: 100%
+  height: 100%
+  padding: em(50)
