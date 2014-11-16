@@ -145,10 +145,14 @@ hr
 .header-image-list
   position: relative
 
+  display: none
   height: em(274)
   margin: 0
 
   background-color: $lightest-grey
+
+  +min-width($tablet-portrait)
+    display: block
 
 .header-image-item
   position: absolute
@@ -591,12 +595,3 @@ tfoot
       display: inline-block
       width: 32%
       margin: 0.5em 0
-
-.featherlight
-  position: fixed
-  top: 0
-  left: 0
-
-  width: 100%
-  height: 100%
-  padding: em(50)
