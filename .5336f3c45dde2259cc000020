@@ -1,18 +1,21 @@
 ---
-time: 1416366402
+time: 1416501064
 inventory:
   /newsletter/index.html:
-    md5: 5aa60479d36768d70e1cc35ec3ff2c25
-    time: 1416275260
+    md5: 7f2642dad50620cfb12797736a3a0321
+    time: 1416501055
   /index.html:
-    md5: 5aa60479d36768d70e1cc35ec3ff2c25
-    time: 1416275260
+    md5: 7f2642dad50620cfb12797736a3a0321
+    time: 1416501055
   /beta/index.html:
     md5: 13ec080d495186b7a3d1cab5a6f32488
     time: 1416275260
   /journal/index.html:
-    md5: bd7ea01712320840cec9c477d3a61294
-    time: 1416157139
+    md5: 3e9636b53c89e548bbc298cb92f714e7
+    time: 1416501055
+  /journal/2014-11-20/index.html:
+    md5: 919bd8e53ac5e71b27773c9c9db98c12
+    time: 1416501055
   /journal/2014-11-11/index.html:
     md5: 9ee44c8c0e6e11bf5f261189c762af0c
     time: 1416157139
@@ -248,11 +251,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: ce591b3d186e34e94bc205e858f6285f
-    time: 1416275263
+    md5: 89612ee7207f337565853fbe79438fc2
+    time: 1416501058
   /feed.xml:
-    md5: a33c8fa246528a9f6afca7f6415aacb5
-    time: 1416366401
+    md5: d7f14a46300a94868020d244b151d819
+    time: 1416501058
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -337,9 +340,12 @@ inventory:
   /assets/beta-screenshot-1.png:
     md5: 3114dcaec0d587850ae6e0f79c248769
     time: 1416157145
+  /assets/2014-11-20-homepage.png:
+    md5: 0b7586ec7a803937f855d7041c0666c8
+    time: 1416501058
   /assets/styles/screen.css:
-    md5: e1606efbecbf2cddceb4be90ed18ebea
-    time: 1416157145
+    md5: 66261d706684ba35c6b4187c406036af
+    time: 1416501059
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -403,6 +409,9 @@ inventory:
   /assets/beta-screenshot-2.png:
     md5: c148a5cddaf2bf79fd5cce730cd72660
     time: 1416157145
+  /assets/2014-11-20-intro.png:
+    md5: e05d8478f1714d85d97f389621da8252
+    time: 1416501059
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -457,6 +466,9 @@ inventory:
   /assets/beta-screenshot-3.png:
     md5: bea96cf0a59b65fa30acc59c957a6ed0
     time: 1416157146
+  /assets/2014-11-20-tracking.png:
+    md5: c18e857d91922b6ad38e65aad329d533
+    time: 1416501059
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
@@ -487,6 +499,9 @@ inventory:
   /assets/feature1.png:
     md5: 40f0d75e1b4729c3105d42b131ac2285
     time: 1416157146
+  /assets/2014-11-20-client-tendencies.png:
+    md5: 43870accc5359cdb971b3e6e482eb09e
+    time: 1416501059
   /assets/2014-07-21-still-late-invoice.gif:
     md5: 8efef1b79e9a49055c81710076f6a797
     time: 1405976691
@@ -511,6 +526,9 @@ inventory:
   /assets/feature2.png:
     md5: a886bd00699ef2210da27e4ca635dd92
     time: 1416157147
+  /assets/2014-11-20-goals.png:
+    md5: 18fd1b7c15c1e7a33e8217f6ad70c991
+    time: 1416501059
   /assets/2014-08-19-dragged-project.png:
     md5: 2e7d83aaadfec25b54744894991dd9e9
     time: 1408461370
@@ -529,6 +547,9 @@ inventory:
   /assets/feature3.png:
     md5: 05eb9874a19e31aca68489f00d04ddd2
     time: 1416157147
+  /assets/2014-11-20-timeline.png:
+    md5: 665a4e2b3f9b8c20f7388bf2585f9094
+    time: 1416501060
   /assets/2014-08-19-start-date-tooltip.png:
     md5: 3823666302cb62f5df55ae58cd5c3d46
     time: 1408461370
@@ -538,6 +559,9 @@ inventory:
   /assets/timeline.png:
     md5: dabc53f712b2016fcb975290c01ad351
     time: 1416157147
+  /assets/2014-11-20-journal.png:
+    md5: 171c8aa49dc13b6e3926e45b7a0395b9
+    time: 1416501060
   /assets/2014-08-19-estimated-finish-tooltip.png:
     md5: 3360d3ac57388655aa757ea25f791f6d
     time: 1408461370
@@ -547,12 +571,18 @@ inventory:
   /assets/journal.gif:
     md5: 7915cc66c25d5b2428a66c66f4d8b2c2
     time: 1416157147
+  /assets/2014-11-20-newsletter.png:
+    md5: 36048a3083071e99695b2c7edecd6dec
+    time: 1416501060
   /assets/2014-08-19-active-duration-tooltip.png:
     md5: af48657453b04a4f7c9b3d6b5cce80e7
     time: 1408461371
   /assets/2014-11-11-invoice-paid-before-today.png:
     md5: b558f5ec8eb781200ba8752e864950a2
     time: 1415728781
+  /assets/journal.png:
+    md5: ae935a7c9cd049bbba7149ac2f8d3ed3
+    time: 1416501061
   /assets/2014-08-19-dragged-tooltip.png:
     md5: 04083df1e278eba6c0e5d444a9c3765a
     time: 1408461371

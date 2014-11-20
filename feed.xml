@@ -3,7 +3,57 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Wed, 19 Nov 2014 03:06:41 +0000</pubDate>
+    <pubDate>Thu, 20 Nov 2014 16:30:58 +0000</pubDate>
+    
+    <item>
+      <title>2014-11-20</title>
+      <link>http://cushionapp.com/journal/2014-11-20</link>
+      <pubDate>Thu, 20 Nov 2014 09:39:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2014-11-20</guid>
+      <description>&lt;p&gt;After about 7 months of working on Cushion, I realized I hadn’t updated the homepage since coming up with the idea for the app. It still included a sentence saying “I can’t wait to build this app.” This threw people off because they would see that without seeing any other progress and just assume that it hasn’t been built yet—in their eyes, I just launched that page. &lt;/p&gt;
+
+&lt;p&gt;This happens too often—I’m working non-stop on a project, living with it day after day, but completely unaware that maybe not everyone’s dialed in, looking over my shoulder. I assume they’ve seen every tweet and every blog post. This couldn’t be further from the truth. I still have close friends who don’t know I’m freelancing again, let alone working on Cushion.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-homepage.png&quot; alt=&quot;2014-11-20-homepage&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;So, it was time. Instead of focusing all of my attention on the app, I needed to dedicate some time to the outward-facing side of Cushion. Since I still have much to do in the app, I gave myself a limit of one day to spend redesigning the homepage. Now that the app is in working condition, I wanted to get the point across that it’s usable—no longer just an idea or a half-baked, bug-ridden prototype. But, I didn’t want to ditch everything. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-intro.png&quot; alt=&quot;2014-11-20-intro&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The paragraph describing my unhealthy lifestyle as a freelancer is strong. I’d much prefer someone to read that and relate to me on a personal level than replace it with some witty marketing lingo that makes Cushion just a product that appeared overnight. I pulled out a few of my favorite features and listed them underneath. After months of working on the app and speaking with others who use it, the features were obvious. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-tracking.png&quot; alt=&quot;2014-11-20-tracking&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The first, project and invoice tracking, is the easy one. This needs to be a feature to even consider using the app. I wanted people to see it and immediately compare it to what they currently use—on a level of both design and functionality. The timeline should look great to them &lt;em&gt;and&lt;/em&gt; introduce something that their current app doesn’t have, like an indication that a project has dragged on past its expected due date. This is a problem that all freelancers experience, but most apps don’t make a big deal of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-client-tendencies.png&quot; alt=&quot;2014-11-20-client-tendencies&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Next, I brought up a feature that is incredibly useful, but not exactly glamorous—client tendencies. You can learn so much about your freelance life with the simplest data. Take invoices as an example. All you need is the issue date and paid date of an invoice to reveal your client’s real net. Sure, a client says they are net 45, but in actuality, they are net 63—this is a client of mine. I never thought it would be that far off if it weren’t for Cushion calculating the exact numbers. In my head, I would just think, “Yeah, I remember them paying late, but it’s probably not too bad.” 18 days late is enough to prevent you from paying your rent that month.&lt;/p&gt;
+
+&lt;p&gt;Delay and drag are other client tendencies. When was the last time you had a project that started when it was supposed to or finished on the exact date as planned? The majority of my projects drag on at least a week. It’s not a problem because I get paid for my extra time, but when a projects drags &lt;em&gt;into&lt;/em&gt; another project—that’s a problem. All of a sudden, I’m juggling two projects, one of which is probably at its peak because I’m wrapping up all those last-minute details. &lt;/p&gt;
+
+&lt;p&gt;Every freelancer should know their clients’ tendencies, so they can be better prepared for unexpected scheduling conflicts and late paychecks. Maybe the data is strong enough that you wouldn’t take that project and find yourself in such a stressful situation.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-goals.png&quot; alt=&quot;2014-11-20-goals&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The last feature I focused on is financial goals. When you’re working full-time, you have your salary and that’s that. As a freelaner, however, that number isn’t so matter-of-fact. You have what you absolutely need to make to pay your expenses, but beyond that, you can aim high or just enough to get by. When presented with a bar to fill, there’s extra incentive to fill that bar. Personally, with a month and a half to go in the year, I’m just shy of my target goal and it’s driving me insane. Without this bar, my position is either numbers on a spreadsheet or a general idea in my head. Seeing it visually gives me an instant idea of where I am, if I’m okay, and how close I am to that next goal.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-timeline.png&quot; alt=&quot;2014-11-20-timeline&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Aside from features, two other areas of the app were really important for me to bring up this time—Cushion’s development timeline and this process journal. When your product is in beta, it’s easy to leave it at that with an open-ended schedule that’s just a blur. Some betas run a few months—others last more than a year. To avoid Cushion staying behind closed doors for too long, I wanted to show a timeline for others, but also for myself. Two months into this 6-month beta, I want it to be clear that we’re roughly halfway through. This tells both myself and others that Cushion will launch and that I have a specific plan for that—not just a seemingly never-ending beta.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-journal.png&quot; alt=&quot;2014-11-20-journal&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;With the process journal, I felt it needed to be more than just a link in the site’s navigation. It makes no sense that I would dedicate so much time to writing about the progress than making progress, then just hide it and hope that people find it. Speaking to the journal on the homepage also allows me to keep that section in rotation. Instead of the feature list, which is probably solidified for a few more months, I can update to show the latest post, like this one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-newsletter.png&quot; alt=&quot;2014-11-20-newsletter&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Lastly, I kept the newsletter sign up form, with an added link to the beta page. Shouting on Twitter is easy, but it’s much more effective to speak to those who actually signed up to hear more. I’ve been collecting emails of interested people for months now and after sending my first update email this past week, I realize just how valuable that list is. I love hearing from you and hope I’m doing an okay job of communicating.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A big thanks to &lt;a href=&quot;http://nicolefenton.com&quot;&gt;Nicole Fenton&lt;/a&gt; for editing the homepage and beta copy.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2014-11-11</title>
@@ -576,36 +626,6 @@
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/web-app</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>2014-07-21</title>
-      <link>http://cushionapp.com/journal/2014-07-21</link>
-      <pubDate>Mon, 21 Jul 2014 15:06:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-07-21</guid>
-      <description>&lt;p&gt;After rethinking the project schedule timeline, I applied the same style to the invoice schedule timeline. With projects, we track the start and end dates to reveal if a project starts late or drags on too long. With invoices, we track when an invoice is paid compared to its due date.&lt;/p&gt;
-
-&lt;p&gt;Looking at scheduling, invoices differ from projects in that invoices can’t start late—its “start date” is when you issue it, and I hope you wouldn’t be late in sending an invoice! From the issue date, however, we can track how long it takes for the client to pay, revealing if they are early or late.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-future-invoice.png&quot; alt=&quot;2014-07-21-future-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-into-invoice.png&quot; alt=&quot;2014-07-21-into-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;When you create an invoice, the bar is lightly hatched to indicate that window of time. As you progress into that window, the bar starts to fill solid up until the current date.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-early-invoice.png&quot; alt=&quot;2014-07-21-early-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;If an invoice is paid early (ha!), the bar is solid from the issue date to the pay date, but uses a very light hatching from the pay date to the due date. This way, you can easily see how early an invoice has been paid. Hopefully, your timeline will be full of invoices paid early.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-late-invoice.png&quot; alt=&quot;2014-07-21-late-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-21-still-late-invoice.gif&quot; alt=&quot;2014-07-21-still-late-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;On the other hand, the more common scenario, a client is late to pay. In this situation, if the invoice has been paid, the bar uses a thick hatching, identical to the one used on a project that dragged on. If, however, the client still hasn’t paid, the thick hatching will animate to emphasis that it is both late &lt;em&gt;and&lt;/em&gt; unpaid.&lt;/p&gt;
-
-&lt;p&gt;Before wrapping up, I should note that none of these patterns are set in stone. Now that I’m starting to take on client work again, I’m trying to move faster with Cushion, so these patterns are a start. I definitely plan to add a key to reference and fine-tune them after using it for a while.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
