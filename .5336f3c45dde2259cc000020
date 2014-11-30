@@ -1,5 +1,5 @@
 ---
-time: 1417363765
+time: 1417364592
 inventory:
   /newsletter/index.html:
     md5: 1b0e687499d2ca9780106dee9a722f12
@@ -8,8 +8,8 @@ inventory:
     md5: 1b0e687499d2ca9780106dee9a722f12
     time: 1416717293
   /beta/index.html:
-    md5: 668baa5b77adb5d29980002ad75fdbef
-    time: 1417362953
+    md5: 5a27dad984bf3a489ebeddf6018f195d
+    time: 1417364587
   /journal/index.html:
     md5: 73b058a3aa9e35d3062f3d50af4d2cea
     time: 1416717293
@@ -275,11 +275,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 3d18715c21949cdb7e683360e059500d
-    time: 1417362958
+    md5: 851927eb7504e01dfd3627f4b1ba255d
+    time: 1417364591
   /feed.xml:
-    md5: ad5bd5f5c0d80a55a16f57791848a6c2
-    time: 1417363764
+    md5: ecb286b60248f1fb5192e1691433359c
+    time: 1417364592
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -371,8 +371,8 @@ inventory:
     md5: 39745f3b0b67217120cd667c7f10e82a
     time: 1416717297
   /journal/feed.xml:
-    md5: 98388086aa709cff489be939b69047ea
-    time: 1417363764
+    md5: 61b829452bc320c93426b59122d61361
+    time: 1417364592
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
