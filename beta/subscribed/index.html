@@ -1,7 +1,5 @@
 
 
-
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -40,28 +38,6 @@ window.analytics.page();
 
   <body>
     
-<ul class='header-image-list'>
-  <li class='is-selected header-image-item' style='background-image: url(/assets/header-0.png)'></li>
-  <li class='header-image-item' style='background-image: url(/assets/header-1.png)'></li>
-  <li class='header-image-item' style='background-image: url(/assets/header-2.png)'></li>
-</ul>
-<script>
-  var images = document.querySelectorAll('.header-image-item');
-  var index = 0;
-  setInterval(function () {
-    if (index < 2) {
-      index++;
-    } else {
-      index = 0;
-    }
-
-    var currentImage = document.querySelector('.is-selected');
-    currentImage.className = currentImage.className.replace('is-selected', '');
-
-    images[index].className += ' is-selected';
-  }, 8000);
-</script>
-
 
     <div class='wrapper'>
       <header class='main-header'>
@@ -99,32 +75,10 @@ window.analytics.page();
 
       
 <main class='main-content'>
-  <article class='beta-section article'>
-    <div class='article-copy'>
-      <h3>Thanks for your interest in Cushion!</h3>
+  <article class='article'>
+    <div class='center article-copy'>
+      <p>Thanks for subscribing! A confirmation email is heading your way now.</p>
 
-<p>If you sign up for the beta, you’ll get:</p>
-
-<ul>
-<li>early access for 6 months</li>
-<li>influence on the feature roadmap</li>
-<li>good karma</li>
-</ul>
-
-<p>The beta is $8 a month for 6 months, or $48. I chose to make it a paid beta because I strongly believe in building sustainable apps. Cushion’s future is very important to me, which is why I’m opening up the beta slowly and bootstrapping it in the meantime. After using Cushion for the client work that got it this far, I can honestly say it’s been invaluable for my freelance life.</p>
-
-<p><a href="/assets/beta-screenshot-1.png"><img src="/assets/beta-screenshot-1-thumb.png" alt="screenshot-1-thumb"></a>
-<a href="/assets/beta-screenshot-2.png"><img src="/assets/beta-screenshot-2-thumb.png" alt="screenshots-2-thumb"></a> <a href="/assets/beta-screenshot-3.png"><img src="/assets/beta-screenshot-3-thumb.png" alt="screenshot-3-thumb"></a></p>
-
-<p>These screenshots should give you a better idea of what Cushion looks like and you can see more images and animations in the <a href="/journal">process journal</a>. Because this is a beta, I don’t have a trial or demo yet—I’ve decided to focus my efforts on the app itself. But if you’re behind the idea and willing to give it a shot, I guarantee you’ll love it.</p>
-
-
-      <form class='subscribe-form form' action="//cushionapp.us9.list-manage.com/subscribe/post?u=313d794b00e529c8199ff32e2&amp;id=3c81040202" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-        <input name='EMAIL' class='text-input' type='email' placeholder='you@yourwebsite.com' required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_313d794b00e529c8199ff32e2_3c81040202" tabindex="-1" value=""></div>
-        <button id='submit' class='button' type='submit'>request an invite</button>
-      </form>
     </div>
   </article>
 </main>
