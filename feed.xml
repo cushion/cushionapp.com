@@ -3,7 +3,27 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Sun, 30 Nov 2014 16:23:11 +0000</pubDate>
+    <pubDate>Tue, 02 Dec 2014 17:08:31 +0000</pubDate>
+    
+    <item>
+      <title>Project Blocks</title>
+      <link>http://cushionapp.com/journal/2012-12-02</link>
+      <pubDate>Tue, 02 Dec 2014 10:32:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2012-12-02</guid>
+      <description>&lt;p&gt;I realized I’ve been writing after-the-fact lately—reviewing past work instead of talking through upcoming features I need to tackle. Today, I’m going to focus on what’s next for Cushion. &lt;/p&gt;
+
+&lt;p&gt;Up until now, Cushion has been very much an overview of the project schedule. You specify estimated start and end dates along with actual start and end dates, then Cushion draws it on the timeline and tells you more about the edges—whether the project was delayed or if it dragged on too long. But, what about the in-between? &lt;/p&gt;
+
+&lt;p&gt;There are three things to look at. 1) What’s the intensity of the project?—is it 24/7 startup hours or only a few days a week? 2) Does the project have a consistent schedule or are there gaps where you’re waiting on the client? 3) Does the project go from start to finish or does it have phases? The problem with the current timeline lies in the latter half of these scenarios. The visuals lead you to believe that every project is full-time. &lt;/p&gt;
+
+&lt;p&gt;This innaccuracy kills me, and it goes against one of Cushion’s underlying principles—don’t rely on the user to calculate. Too many services display data and leave it up to the user to find the valuable conclusions. With Cushion, I want the user to take one look and instantly experience that ah-ha moment.&lt;/p&gt;
+
+&lt;p&gt;So, what’s my solution to all of this? I call them “Project Blocks”. Let’s say you create a new project. By default, this project starts with one block spanning the entire project. You can then add more blocks based on your situation. If you’re an illustrator, you can create several new blocks and label them “Sketches”, “Revisions”, and “Final”. If you’re a developer with gaps in the timeline between sprints, you can create blocks to indicate when you’re actually working.&lt;/p&gt;
+
+&lt;p&gt;This idea has been in the back of my head for a few months now, so I’m really excited to dive into it. I’ll start on initial designs today and transition into dev before the week is out. If you have any thoughts of your own, I’d love to &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;hear&lt;/a&gt; them. And, if you’re interested in trying out project blocks before anyone else, &lt;a href=&quot;/beta&quot;&gt;sign up&lt;/a&gt; for the beta.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Redesigning the Homepage</title>
@@ -616,15 +636,6 @@
       <pubDate>Mon, 21 Jul 2014 18:10:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/web-app-database</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web App Server</title>
-      <link>http://cushionapp.com/expenses/web-app</link>
-      <pubDate>Mon, 21 Jul 2014 18:08:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/web-app</guid>
       <description></description>
     </item>
     
