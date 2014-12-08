@@ -1,5 +1,5 @@
 ---
-time: 1417540113
+time: 1418009089
 inventory:
   /newsletter/index.html:
     md5: 77f9d47c3e0b746311ec457608fb92dd
@@ -170,8 +170,11 @@ inventory:
     md5: 2011e69e534aa6c812fe8b7e58409e8d
     time: 1404674334
   /changelog/index.html:
-    md5: 5792f0a0eeee731e33193127620d26b1
-    time: 1417105356
+    md5: dbaace6ff0f583847fa520015ccb992b
+    time: 1418009086
+  /changelog/2014-12-07/index.html:
+    md5: d33e3318412d612ae39c1d1be2febce0
+    time: 1418009086
   /changelog/2014-11-27/index.html:
     md5: c158baeb32c275e5eccb2f3ce9a7a247
     time: 1417105357
@@ -281,8 +284,8 @@ inventory:
     md5: dcbb08b24abf6da060afd77b31605af7
     time: 1417540111
   /feed.xml:
-    md5: 42d5ae5e15b897c0698ce8f70cdc9b3c
-    time: 1417540111
+    md5: 8c55087eda872aa2c09cfe2edacd5f7c
+    time: 1418009088
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -374,8 +377,8 @@ inventory:
     md5: 39745f3b0b67217120cd667c7f10e82a
     time: 1416717297
   /journal/feed.xml:
-    md5: 304e9c0298e5915c0a3cff08998d818c
-    time: 1417540111
+    md5: 02488b1240e01eb6dc5304b5a9309895
+    time: 1418009088
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
