@@ -1,18 +1,21 @@
 ---
-time: 1418009089
+time: 1418230852
 inventory:
   /newsletter/index.html:
-    md5: 77f9d47c3e0b746311ec457608fb92dd
-    time: 1417540106
+    md5: 0fef3edc43c0fff98d36ccfb382abee9
+    time: 1418230837
   /index.html:
-    md5: 77f9d47c3e0b746311ec457608fb92dd
-    time: 1417540106
+    md5: 0fef3edc43c0fff98d36ccfb382abee9
+    time: 1418230837
   /beta/index.html:
     md5: 5a27dad984bf3a489ebeddf6018f195d
     time: 1417364587
   /journal/index.html:
-    md5: c4f432ba84d0605d6605591751690bfb
-    time: 1417540106
+    md5: bb4425ba9a96d5b05bba3cd703e4f1c6
+    time: 1418230837
+  /journal/2014-12-10/index.html:
+    md5: 95eda38ca31cc6b8c8f8be13c77306a0
+    time: 1418230837
   /journal/2012-12-02/index.html:
     md5: c6473006a565ba39abbedff973763b72
     time: 1417540106
@@ -281,11 +284,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: dcbb08b24abf6da060afd77b31605af7
-    time: 1417540111
+    md5: fd2f0800822feda1413b7b7e8ebbdbf6
+    time: 1418230842
   /feed.xml:
-    md5: 8c55087eda872aa2c09cfe2edacd5f7c
-    time: 1418009088
+    md5: 6c7781bc15b0911bd4d29b09b263b07f
+    time: 1418230843
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -377,8 +380,11 @@ inventory:
     md5: 39745f3b0b67217120cd667c7f10e82a
     time: 1416717297
   /journal/feed.xml:
-    md5: 02488b1240e01eb6dc5304b5a9309895
-    time: 1418009088
+    md5: 66316af300220b9ba51710bbc0901bcf
+    time: 1418230843
+  /assets/2014-10-10-old-project-page.png:
+    md5: a1ca94b93dc4846a0a14bab4c931f598
+    time: 1418230843
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -445,6 +451,9 @@ inventory:
   /assets/2014-11-20-intro.png:
     md5: e05d8478f1714d85d97f389621da8252
     time: 1416501059
+  /assets/2014-10-10-edit-link.png:
+    md5: 41b14bc98aa3f14c47b4b14aa6486565
+    time: 1418230843
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -502,6 +511,9 @@ inventory:
   /assets/2014-11-20-tracking.png:
     md5: c18e857d91922b6ad38e65aad329d533
     time: 1416501059
+  /assets/2014-10-10-budget-data.png:
+    md5: a98a23e5012412fe9f6ad223d5b2c982
+    time: 1418230844
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
@@ -535,6 +547,9 @@ inventory:
   /assets/2014-11-20-client-tendencies.png:
     md5: 43870accc5359cdb971b3e6e482eb09e
     time: 1416501059
+  /assets/2014-10-10-budget-timeline.png:
+    md5: 46f6bc53d6c567bee7376d1dd6d5ae26
+    time: 1418230844
   /assets/2014-07-21-still-late-invoice.gif:
     md5: 8efef1b79e9a49055c81710076f6a797
     time: 1405976691
@@ -562,6 +577,9 @@ inventory:
   /assets/2014-11-20-goals.png:
     md5: 18fd1b7c15c1e7a33e8217f6ad70c991
     time: 1416501059
+  /assets/2014-10-10-schedule-data.png:
+    md5: 5db5c1b62cdf79c38fe80339ad1dac0e
+    time: 1418230844
   /assets/2014-08-19-dragged-project.png:
     md5: 2e7d83aaadfec25b54744894991dd9e9
     time: 1408461370
@@ -583,6 +601,9 @@ inventory:
   /assets/2014-11-20-timeline.png:
     md5: 665a4e2b3f9b8c20f7388bf2585f9094
     time: 1416501060
+  /assets/2014-10-10-estimated-start.png:
+    md5: cf123f08821c6aa2a0049880c181e7bf
+    time: 1418230844
   /assets/2014-08-19-start-date-tooltip.png:
     md5: 3823666302cb62f5df55ae58cd5c3d46
     time: 1408461370
@@ -595,6 +616,9 @@ inventory:
   /assets/2014-11-20-journal.png:
     md5: 171c8aa49dc13b6e3926e45b7a0395b9
     time: 1416501060
+  /assets/2014-10-10-estimated-finish.png:
+    md5: 652b39bff4a5ec10342c57beb790cd4e
+    time: 1418230844
   /assets/2014-08-19-estimated-finish-tooltip.png:
     md5: 3360d3ac57388655aa757ea25f791f6d
     time: 1408461370
@@ -607,6 +631,9 @@ inventory:
   /assets/2014-11-20-newsletter.png:
     md5: 36048a3083071e99695b2c7edecd6dec
     time: 1416501060
+  /assets/2014-10-10-schedule-timeline.png:
+    md5: d53c9c4b9ab43857ab5b4253c63401ab
+    time: 1418230844
   /assets/2014-08-19-active-duration-tooltip.png:
     md5: af48657453b04a4f7c9b3d6b5cce80e7
     time: 1408461371
@@ -616,12 +643,18 @@ inventory:
   /assets/journal.png:
     md5: ae935a7c9cd049bbba7149ac2f8d3ed3
     time: 1416501061
+  /assets/2014-10-10-blocks.png:
+    md5: 2c08dec09485b55a8f906966b8aa77b7
+    time: 1418230845
   /assets/2014-08-19-dragged-tooltip.png:
     md5: 04083df1e278eba6c0e5d444a9c3765a
     time: 1408461371
   /assets/2014-11-11-estimate-ongoing-no-estimated-finish.png:
     md5: 42d5b56d825c22611324f6228c505ef3
     time: 1415728781
+  /assets/2014-10-10-budget-view.png:
+    md5: 27970f93658093e44ecc4c197f05c0f1
+    time: 1418230845
   /assets/2014-08-19-active-date-tooltip.png:
     md5: 18687f512aff3a07522e43450122207a
     time: 1408461372

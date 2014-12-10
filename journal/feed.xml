@@ -4,7 +4,69 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Mon, 08 Dec 2014 03:24:48 +0000</pubDate>
+    <pubDate>Wed, 10 Dec 2014 17:00:43 +0000</pubDate>
+    
+    <item>
+      <title>Restructuring the Individual Project Page</title>
+      <link>http://cushionapp.com/journal/2014-12-10</link>
+      <pubDate>Wed, 10 Dec 2014 09:22:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2014-12-10</guid>
+      <description>&lt;p&gt;In the &lt;a href=&quot;/journal/2012-12-02/&quot;&gt;last post&lt;/a&gt;, I wrote about the plan to introduce project blocks—a way to divide projects into smaller segments that could represent phases or show the varying intensity throughout a project. This plan assumed that all the groundwork had been done and I could just implement the feature. Not so fast.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-old-project-page.png&quot; alt=&quot;2014-10-10-old-project-page&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;As soon as I finished writing the post and started working on project blocks, I realized that Cushion would need considerable restructuring—specifically, on the individual project page. At the time, clicking a project link would take you directly to the form to edit the project. The project’s invoices were below the form and this always bothered me because I knew that if I ever added one more piece, this page would be too overwhelming to keep as one.&lt;/p&gt;
+
+&lt;p&gt;The time had come. With project blocks, I had a new resource to consider, like invoices in the budget view. This association actually introduced a clear direction to take with restructuring. If the budgeting view has invoices, then the scheduling view could have blocks.&lt;/p&gt;
+
+&lt;p&gt;Early on, I knew it would be useful to carry the budget/schedule views into individual pages, but the question of how to handle the form always remained the issue. Now that I had more useful information to display, like delay, drag, and estimate difference, I could easily populate a couple more pages and extract the form as its own page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-edit-link.png&quot; alt=&quot;2014-10-10-edit-link&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The structure was crystal clear. Clicking a project link would take you to the project, but maintain the view you are in—schedule or budget. Then, within either of those pages, you could click an “edit project” link, which would take you to the project’s edit page. Even though this is an extra click to edit the project, it’s apparent that the majority of users don’t edit a project much beyond marking it as finished.&lt;/p&gt;
+
+&lt;p&gt;Now that I had the structure in place, what would I put in the scheduling and budgeting views? I had a good amount of data to choose from, but really needed to narrow it down. I didn’t want each page to become another overwhelming mess.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-budget-data.png&quot; alt=&quot;2014-10-10-budget-data&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The budget view was easier because I had less data points to work with and they were all currency-based. I could leave the income estimate as-is because it has enough value on its own. For the invoice amounts, I already had the paid total and invoiced total below each invoice table, so an obvious higher-level piece of data would simply be a total of all the invoices. If the user needs to dig deeper, they can just scroll down to the tables.&lt;/p&gt;
+
+&lt;p&gt;Lastly, I re-introduced the estimate difference. I previously had this on the projects page, but felt that it detracted from the summary feel—it was too detailed a value to show in a list of projects. With just one project to focus on, however, it’s perfect. This time, I wasn’t limited for room, so I maintained the currency format for the main estimate difference value and calculated its percentage as a less-emphasized value below it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-budget-timeline.png&quot; alt=&quot;2014-10-10-budget-timeline&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;As for the budget timeline, I realized I could take this opportunity to provide much more value to the user by forgeting the financial goals of the current timeline. Instead, I could use the project’s estimate as the goal and fill up the bar with its individual invoices. This would allow the user to see a more segmented view of the income and click into each invoice if a change were needed. For the timeline labels, I use the invoice number. If one doesn’t exist, I fall back to its date—either the issued date for unpaid invoices or the paid date for paid invoices.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-budget-view.png&quot; alt=&quot;2014-10-10-budget-view&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;To wrap it all together, above is the final budget view.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-schedule-data.png&quot; alt=&quot;2014-10-10-schedule-data&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The schedule view wasn’t nearly as easy to lay out, but I knew I had to at least show the delay, drag, and duration. That didn’t leave me with much room for more, so I took advantage of the scenarios when no data existed for these values. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-estimated-start.png&quot; alt=&quot;2014-10-10-estimated-start&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;If a project hasn’t started, its delay cannot be calculated, so I leave a dash in its place. Same goes for unfinished projects with drag and duration. Because a dash barely takes up any space, I know for sure I have enough room for an extra column.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-estimated-finish.png&quot; alt=&quot;2014-10-10-estimated-finish&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The benefit of this extra column makes absolute sense, too—it’s not just a space to shove more data. Considering the column will only appear for unstarted or unfinished projects, I can show the estimated start date for unstarted projects and the estimated finish date for unfinished projects. If I’m waiting on a project to start, I want to know when it might start and if I’m in the thick of things with an existing project, I want to know when it’s expected to wrap up.&lt;/p&gt;
+
+&lt;p&gt;With a small last touch, I took advantage of using a secondary value once again to show the date range of a finished project just below its duration. Now a user can look at one place on the screen and see when a project started, when it ended, and how long it took.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-schedule-timeline.png&quot; alt=&quot;2014-10-10-schedule-timeline&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;As for the schedule timeline, I wanted to show the entirety of the project, but knew the existing design would be humorously small on its own. Luckily, I’ve been working with EMs the whole time, so I was able to double the font size of the timeline and everything scaled perfectly. I also vertically aligned the project, since I knew I wouldn’t need to stack anything on top of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-blocks.png&quot; alt=&quot;2014-10-10-blocks&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Above is the final schedule view along with the upcoming project blocks. I’m not 100% finished, but far enough along that I’m excited to show it off.&lt;/p&gt;
+
+&lt;p&gt;If you’re still reading this and interested in participating in the Cushion beta, you can request an invite &lt;a href=&quot;/beta&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Project Blocks</title>
@@ -405,28 +467,6 @@
 &lt;p&gt;The results were overwhelming in the best way possible. Since there were a handful of options for each question, you can view the full results &lt;a href=&quot;https://cushionapp.typeform.com/report/mgayv7/aXGT&quot;&gt;here&lt;/a&gt;, but the gist is that the majority of potential users fit my exact description—solo freelancer, working on 6-15 projects a year, sending out 21-50 invoices a year. By designing Cushion to best fit my needs, I’ve been unknowingly targeting the demographic most-likely to use Cushion. This is huge for the initial plans of focusing on freelancers, but with a fair amount of small teams also showing interest, there’s an obvious direction of where to go next.&lt;/p&gt;
 
 &lt;p&gt;This weekend, I plan to send out 10 more beta invites. If you want one sooner than later, &lt;a href=&quot;mailto:jonnie@cushionapp.com&quot;&gt;email me&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Currency Inputs, Notifications, and Invoice Nets</title>
-      <link>http://cushionapp.com/journal/2014-08-27</link>
-      <pubDate>Wed, 27 Aug 2014 10:41:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-08-27</guid>
-      <description>&lt;p&gt;I’m so close. I spent this last week putting the finishing touches on Cushion. The majority of them surrounded small UX issues that would’ve definitely arisen out of the beta. I figured I’d rather tackle them now and have a more solid product going into the initial testing.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-27-income-input.gif&quot; alt=&quot;2014-08-27-income-input&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The most overlooked UX issue involved the income input fields. Up until now, it was a simple number-based input. It would balk at any character other than a number (even commas and dollar signs) and there was no currency formatting. With a history of using awful currency-based input fields and pulling my hair out when it’s not perfect for the server, I decided to go out of my way to make this easy. Upon exiting the input field, it’ll run a validation function that strips out any character that doesn’t belong and then reformats it, inserting a dollar sign and any commas if we’re in the thousands. Also, if the amount includes cents, it will format that as well or leave it out if it’s an even dollar amount.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-27-success.gif&quot; alt=&quot;2014-08-27-success&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Next, I realized I didn’t show any sort of success message to indicate that a project or invoice was created, updated, or deleted. I started to design a full-width banner that would appear in the form, but decided to take a step back. You should be able to see this message at all times. If you’re scrolled out of the view of the banner area, that doesn’t mean you should miss it. Also, upon creating a new project, you’re taken to the edit view, so this message should carry across views. Because of this, I opted to pin the message at the top. It slides in when needed, remains visible in all scroll positions, and slides out after a couple seconds.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-27-due-net.gif&quot; alt=&quot;2014-08-27-due-net&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Lastly, I tackled the longest overdue feature—a net option for invoices. I attempted to start on this feature a dozen times, but always gave up after a while to direct my attention elsewhere. The tricky part was positioning the form elements, so it felt like a natural flow from the issue date to due date to paid date. If I placed the custom due date input below the dropdown, it would look completely off, but if that custom input was hidden until selected, it wouldn’t look half-bad. I took a tally for common invoice nets to use, including “upon receipt”, and added the final option for a specific date. Eventually, this will default to your net preference, so you will only need to change it if the client has their own net.&lt;/p&gt;
 </description>
     </item>
     
