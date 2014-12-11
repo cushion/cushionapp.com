@@ -45,9 +45,26 @@
   </table>
 
   <section class='graph-section'>
-    {{ body }}
+    <div class='graph' id='monthly-expenses'></div>
+    <div class='graph' id='cumulative-expenses'></div>
+    <div class='graph' id='total-expenses'></div>
   </section>
 </main>
+{% endcapture %}
+
+{% capture foot %}
+  <script>
+    window.graphData = {
+      months: JSON.parse('{{ meta.months }}'),
+      monthly: JSON.parse('{{ meta.montly-data }}'),
+      cumulativeMonthly: JSON.parse('{{ meta.cumulative-monthly-data }}'),
+      total: JSON.parse('{{ meta.total-data }}')
+    }
+  </script>
+
+  <script src='/assets/scripts/libs/jquery.min.js'></script>
+  <script src='/assets/scripts/libs/highcharts.min.js'></script>
+  <script src='/assets/scripts/expenses.js'></script>
 {% endcapture %}
 
 {% include 'layouts/default' %}
