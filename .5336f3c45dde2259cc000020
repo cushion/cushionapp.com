@@ -1,5 +1,5 @@
 ---
-time: 1418230852
+time: 1418269139
 inventory:
   /newsletter/index.html:
     md5: 0fef3edc43c0fff98d36ccfb382abee9
@@ -128,8 +128,8 @@ inventory:
     md5: cad37712cff842521469608339f21d19
     time: 1416717295
   /expenses/index.html:
-    md5: d5e3d7c3fd497d5c29070ba205eba637
-    time: 1416717295
+    md5: 26942b25b2335d5b890d2aeb65033559
+    time: 1418269134
   /expenses/support/index.html:
     md5: 0e65747d60c2b657e68fdc75746cb2d5
     time: 1414984117
@@ -284,11 +284,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: fd2f0800822feda1413b7b7e8ebbdbf6
-    time: 1418230842
+    md5: 22de9d43a14a16767609610f250b1efd
+    time: 1418269137
   /feed.xml:
-    md5: 6c7781bc15b0911bd4d29b09b263b07f
-    time: 1418230843
+    md5: 8be8f23625bed71ca696e936fc3d7096
+    time: 1418269137
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -364,9 +364,6 @@ inventory:
   /assets/2014-10-29-archive.png:
     md5: 4dce9fb1a855de3bf3011e9687875c78
     time: 1414606975
-  /assets/monthly-expenses.png:
-    md5: d7490d5aba28447ce7c2c36615d76d0a
-    time: 1414984119
   /assets/2014-11-11-project-span-all.png:
     md5: 9267d58610fffe57e18610c9d5754feb
     time: 1415728779
@@ -376,15 +373,24 @@ inventory:
   /assets/2014-11-20-homepage.png:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
-  /assets/styles/screen.css:
-    md5: 39745f3b0b67217120cd667c7f10e82a
-    time: 1416717297
   /journal/feed.xml:
-    md5: 66316af300220b9ba51710bbc0901bcf
-    time: 1418230843
+    md5: dd27824bfa61c158849d8cd880d381d2
+    time: 1418269137
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
+  /assets/scripts/expenses.js:
+    md5: b4c00fbef17c661a1be803bbdce85687
+    time: 1418269137
+  /assets/scripts/libs/highcharts.min.js:
+    md5: bdd06f45e34c33dfaaac249f3eb50040
+    time: 1418269137
+  /assets/scripts/libs/jquery.min.js:
+    md5: e40ec2161fe7993196f23c8a07346306
+    time: 1418269138
+  /assets/styles/screen.css:
+    md5: 2ad82e168dabd8e466e1786d08e90af9
+    time: 1418269138
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -439,9 +445,6 @@ inventory:
   /assets/2014-10-29-archived-by-client.png:
     md5: 282a7ad9d99585e1b6a36563c88d4b39
     time: 1414606975
-  /assets/total-expenses.png:
-    md5: ec33332f8a16d7552893c56f9e23f32f
-    time: 1414984119
   /assets/2014-11-11-project-around.png:
     md5: 7caeb944a8fdcfbce4ff3c228b310c7a
     time: 1415728780
@@ -499,9 +502,6 @@ inventory:
   /assets/2014-10-29-gain-loss.png:
     md5: 06bf5e1c67f2e6415cdb580e44869e97
     time: 1414606975
-  /assets/cumulative-running-expenses.png:
-    md5: 9b323cc0d596e3c7b51eefc0dc2c44eb
-    time: 1414984460
   /assets/2014-11-11-project-no-end-in-sight.png:
     md5: fc7e0a7b23ace7904dee7a18f9af2010
     time: 1415728780
