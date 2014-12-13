@@ -1,12 +1,12 @@
 ---
-time: 1418269139
+time: 1418482743
 inventory:
   /newsletter/index.html:
-    md5: 0fef3edc43c0fff98d36ccfb382abee9
-    time: 1418230837
+    md5: 74bf57d0cdc49eb5f86cf3a4bbe40550
+    time: 1418482737
   /index.html:
-    md5: 0fef3edc43c0fff98d36ccfb382abee9
-    time: 1418230837
+    md5: 74bf57d0cdc49eb5f86cf3a4bbe40550
+    time: 1418482737
   /beta/index.html:
     md5: 5a27dad984bf3a489ebeddf6018f195d
     time: 1417364587
@@ -284,11 +284,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 22de9d43a14a16767609610f250b1efd
-    time: 1418269137
+    md5: aaadb44819bc38908eed60a5eb0510ab
+    time: 1418482742
   /feed.xml:
-    md5: 8be8f23625bed71ca696e936fc3d7096
-    time: 1418269137
+    md5: e2b33d7619c5f2d1165317ed8bb8cc79
+    time: 1418482742
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -374,8 +374,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: dd27824bfa61c158849d8cd880d381d2
-    time: 1418269137
+    md5: 3d9f9e4a123cbc92d8938bf0d85fa33a
+    time: 1418482742
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
@@ -655,6 +655,9 @@ inventory:
   /assets/2014-10-10-budget-view.png:
     md5: 27970f93658093e44ecc4c197f05c0f1
     time: 1418230845
+  /assets/restructuring-project-page.png:
+    md5: f872a7ee3dc660447abb424040390773
+    time: 1418482742
   /assets/2014-08-19-active-date-tooltip.png:
     md5: 18687f512aff3a07522e43450122207a
     time: 1408461372
