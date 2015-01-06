@@ -1,18 +1,21 @@
 ---
-time: 1420516777
+time: 1420557955
 inventory:
   /newsletter/index.html:
-    md5: 74bf57d0cdc49eb5f86cf3a4bbe40550
-    time: 1418482737
+    md5: 786c0966ebea3b57381ee27d23c34cc7
+    time: 1420557947
   /index.html:
-    md5: 74bf57d0cdc49eb5f86cf3a4bbe40550
-    time: 1418482737
+    md5: 786c0966ebea3b57381ee27d23c34cc7
+    time: 1420557947
   /beta/index.html:
     md5: 5a27dad984bf3a489ebeddf6018f195d
     time: 1417364587
   /journal/index.html:
-    md5: bb4425ba9a96d5b05bba3cd703e4f1c6
-    time: 1418230837
+    md5: ce0c3dbad83c8b0c8447e7622af94328
+    time: 1420557947
+  /journal/2015-01-06/index.html:
+    md5: cd582fb1e24161f5669e87cf28535ed5
+    time: 1420557948
   /journal/2014-12-10/index.html:
     md5: 95eda38ca31cc6b8c8f8be13c77306a0
     time: 1418230837
@@ -290,11 +293,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: aaadb44819bc38908eed60a5eb0510ab
-    time: 1418482742
+    md5: 2a0e236aeff904f0f8511dae32913cb8
+    time: 1420557953
   /feed.xml:
-    md5: c4564cbd529af8d3b0d595dd6404f7f7
-    time: 1420516776
+    md5: ced1fd789f9fa4e2ef36aac77c1f09ad
+    time: 1420557953
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -380,8 +383,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: 700ab65807057b18acdaab80ce3afeb9
-    time: 1420516776
+    md5: 20d63680549087e263a09496acdf2e22
+    time: 1420557953
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843

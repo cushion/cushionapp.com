@@ -4,7 +4,35 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Tue, 06 Jan 2015 03:59:36 +0000</pubDate>
+    <pubDate>Tue, 06 Jan 2015 15:25:53 +0000</pubDate>
+    
+    <item>
+      <title>Rewriting the Timeline</title>
+      <link>http://cushionapp.com/journal/2015-01-06</link>
+      <pubDate>Tue, 06 Jan 2015 09:25:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/2015-01-06</guid>
+      <description>&lt;p&gt;Back in December, I went down the long list of to-dos for Cushion and thought I’d tackle one I’ve wanted for a while now—&lt;a href=&quot;/journal/2012-12-02/&quot;&gt;project blocks&lt;/a&gt;. I wrote about this before and laughably estimated a few days to finish it. Any dev knows estimates are meaningless and any guess would require multiplying the original estimate several times. &lt;/p&gt;
+
+&lt;p&gt;So here we are. It’s January and Cushion doesn’t have project blocks yet. I’m about halfway there because a few days in, I realized if I wanted to do this right, I would need to rewrite the schedule timeline. I originally wrote it for the budget, then made it work for scheduling, redesigned it a few times, added a few more elements, and rigged it to somehow work with invoices. I was left with a monster that looked nice, but felt like a long-running Jenga game. &lt;/p&gt;
+
+&lt;p&gt;After hours of just staring at the screen, internally debating with myself, I knew rewriting the timeline was the only way. I started thinking about what the timeline even represented, now that I was months along with the beta. Does the name still make sense? Up until now, I considered anything in the top-half of Cushion to be “the timeline”—even the budget bar was a timeline to me, despite its lack of time.&lt;/p&gt;
+
+&lt;p&gt;This wasn’t right. I took a step back and pretended for a moment that I haven’t been working on Cushion for almost a year now. I looked at the scheduling timeline and pieced it apart. What were its components, if one were to separate it into reusable parts? It has “ticks”, or axes, at the top and bottom, but so does the budget bar. So, then the ticks shouldn’t be considered part of the timeline. I would need to step back even further.&lt;/p&gt;
+
+&lt;p&gt;Remove the ticks, remove the container, and you have the timeline on its own. And, the budget bar without the ticks and container is just the bar. Both of these are just visuals that could stand on their own, but are even more useful when adding the grounding and labeling of the container and ticks. It’s almost like a graph&amp;hellip; Wait, it is a graph! A graph has axes and visuals—so do the schedule timeline and budget bar. I can’t believe I didn’t see it this way at first, but once I did, everything came together.&lt;/p&gt;
+
+&lt;p&gt;Instead of giving meaning to everything in the timeline, like outlined dots for estimated dates and solid dots for actual dates, I would remove the context completely and treat it like a real graph. These dots are just dots with an x-position—nothing more. An outlined dot is a “weak” dot; a solid dot is a “strong” dot. The lines that were once named after their data, like duration, delay, drag, etc., are now just lines with an x-position and a length. The arrows that once represented the current date of an active project now have no idea they represent anything—they’re just arrows. &lt;/p&gt;
+
+&lt;p&gt;The more I abstracted the timeline, the easier it became to write both the logic and the styling. Previously, I had tons of CSS classes, like &lt;code&gt;.estimated-start-dot&lt;/code&gt; and &lt;code&gt;.remaining-duration-line&lt;/code&gt;—many of which shared the same qualities, like both delayed projects and early invoices being a light line. Now I didn’t need to be that descriptive. As a result, the style code was reduced to a fraction of what is was before.&lt;/p&gt;
+
+&lt;p&gt;Instead of bundling all the logic within the timeline, I pulled it all out and left the timeline with one job—draw. I would no longer feed it projects and invoices. I would just send it points. Then, outside the timeline, the real logic would live in factories and generate the points for the timeline. The timeline now has absolutely no concept of anything besides drawing shapes between two points and I can easily swap out the data I send it between clients, projects, and invoices. &lt;/p&gt;
+
+&lt;p&gt;I know abstraction is programming 101, but when you start a project and rapidly develop it as the idea grows, it’s hard to predict where the project is going. It’s even harder to take time to step back and reassess everything. I got to the point where the only way to proceed without a constant headache would be to rewrite the timeline. &lt;/p&gt;
+
+&lt;p&gt;Looking back, as soon as I decided I would need a second timeline for invoices, I should’ve stopped and realized I shouldn’t try to make the timeline do everything. It became too much and resulted in me unexpectedly losing a couple weeks of forward progress. On the bright side, I now have a solid system in place for future “graphs”. Schedule timelines and budget bars are just the beginning.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Restructuring the Individual Project Page</title>
@@ -407,66 +435,6 @@
 &lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-tooltip.png&quot; alt=&quot;2014-09-26-tooltip&quot;&gt; &lt;/p&gt;
 
 &lt;p&gt;The typeface has a very wide range of weights, which work incredibly well in Cushion’s interface. I’ve been able to find areas in Cushion that benefit greatly from a variance in thickness, like the timeline tooltips. Overall, I think like Facit gets me closer to that solid, reliable feel that I want users to experience when using the app.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sending Out the First Email</title>
-      <link>http://cushionapp.com/journal/2014-09-12</link>
-      <pubDate>Fri, 12 Sep 2014 08:49:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-09-12</guid>
-      <description>&lt;p&gt;These past couple weeks have been intense. Last weekend, I sent out the first batch of beta invites. I say “batch” for consistency moving forward, but it was only 10. I want to be deliberate with how I bring users into the app, considering Cushion is currently only me, so I’m intentionally starting small. For the first month, I’ll send out 10 invites a week. Then, based on how everything’s going, I’ll increase it to 20 or 30 a week.&lt;/p&gt;
-
-&lt;p&gt;The plan is to onboard people gradually, instead of opening the floodgates. Ever since adding the email subscribe form, I’ve been able to attract 1,042 people interested in Cushion—either for their own personal use or out of pure interest in following along. In the weeks leading up to the beta, I sent out the first email:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Howdy,&lt;/p&gt;
-
-&lt;p&gt;A few months ago, you signed up to hear more about Cushion (&lt;a href=&quot;http://cushionapp.com&quot;&gt;http://cushionapp.com&lt;/a&gt;), the app I&amp;rsquo;m working on to bring peace of mind to freelancers. It&amp;rsquo;s almost ready for beta testing, so I wanted to reach out and ask a favor. &lt;/p&gt;
-
-&lt;p&gt;I created a &lt;a href=&quot;https://cushionapp.typeform.com/to/mgayv7&quot;&gt;short questionnaire&lt;/a&gt; to learn more about the folks who would want to use it and get a show of hands for those interested in beta testing. It&amp;rsquo;ll be super helpful for me and only take you a minute to fill out—I promise.&lt;/p&gt;
-
-&lt;p&gt;-Jonnie&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I want all of the communication with users and potential users to feel like I’m talking directly to them in person, which is why I try to write like I talk. Years of receiving insincere emails from product companies has left me with one of the fastest trigger fingers for deleting emails. I’ve also tried to learn from their mistakes and avoid what turned me off.&lt;/p&gt;
-
-&lt;p&gt;The first pet peeve is when companies collect an optional name along with the email address and fall back to an empty string. This results in “Hey there ,”. In most cases, it’s a dead giveaway that this is a mass email trying to feel personal with either the space before the comma or the person entering a lowercase name. There’s nothing wrong with a simple “Hi”, or even “Howdy”.&lt;/p&gt;
-
-&lt;p&gt;Secondly, product teams are often so engrossed in their app that when they finally send the initial email, they forget that the majority of people haven’t lived with the app for the past six months. Most of them probably saw it mentioned somewhere, signed up to hear more, then forgot about it—especially if it has a nonsensical name beginning with a “Z”. Make use of the first sentence to remind everyone what they signed up for.&lt;/p&gt;
-
-&lt;p&gt;Lastly, I know a survey is a big ask for anyone, so instead of just assuming they’ll fill it out like a form at the DMV, I emphasized its brevity along with its importance to me. Hopefully that would be enough to get a good turnout. So, how’d it do?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The email went out to &lt;strong&gt;1,007&lt;/strong&gt; people.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;999&lt;/strong&gt; of the emails were delivered &lt;em&gt;(99.21%)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;730&lt;/strong&gt; people clicked the link to the survey &lt;em&gt;(72.49%)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;498&lt;/strong&gt; people completed the survey &lt;em&gt;(49.45%)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;8&lt;/strong&gt; of the emails bounced &lt;em&gt;(0.79%)&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;12&lt;/strong&gt; people unsubscribed &lt;em&gt;(1.2%)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I never send out mass emails, so I don’t know if this is good, but considering I delete most of the ones I get, I’m pretty happy with the results.&lt;/p&gt;
-
-&lt;p&gt;As for the &lt;a href=&quot;https://cushionapp.typeform.com/to/mgayv7&quot;&gt;survey&lt;/a&gt;, it consisted of 10 questions:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Are you a solo freelancer?&lt;/li&gt;
-&lt;li&gt;If not, how many people are on your team?&lt;/li&gt;
-&lt;li&gt;What kind of work do you do?&lt;/li&gt;
-&lt;li&gt;What do you use for project management, time-tracking, and invoicing?&lt;/li&gt;
-&lt;li&gt;How many projects do you work on each year?&lt;/li&gt;
-&lt;li&gt;How many invoices do you send each year?&lt;/li&gt;
-&lt;li&gt;How do you bill?&lt;/li&gt;
-&lt;li&gt;Are you interested in the paid beta?&lt;/li&gt;
-&lt;li&gt;Are you okay with manually entering your data?&lt;/li&gt;
-&lt;li&gt;Seinfeld or Friends?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The results were overwhelming in the best way possible. Since there were a handful of options for each question, you can view the full results &lt;a href=&quot;https://cushionapp.typeform.com/report/mgayv7/aXGT&quot;&gt;here&lt;/a&gt;, but the gist is that the majority of potential users fit my exact description—solo freelancer, working on 6-15 projects a year, sending out 21-50 invoices a year. By designing Cushion to best fit my needs, I’ve been unknowingly targeting the demographic most-likely to use Cushion. This is huge for the initial plans of focusing on freelancers, but with a fair amount of small teams also showing interest, there’s an obvious direction of where to go next.&lt;/p&gt;
-
-&lt;p&gt;This weekend, I plan to send out 10 more beta invites. If you want one sooner than later, &lt;a href=&quot;mailto:jonnie@cushionapp.com&quot;&gt;email me&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
