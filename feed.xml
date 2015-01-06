@@ -3,7 +3,7 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Tue, 06 Jan 2015 15:25:53 +0000</pubDate>
+    <pubDate>Tue, 06 Jan 2015 15:42:04 +0000</pubDate>
     
     <item>
       <title>Rewriting the Timeline</title>
@@ -17,9 +17,15 @@
 
 &lt;p&gt;After hours of just staring at the screen, internally debating with myself, I knew rewriting the timeline was the only way. I started thinking about what the timeline even represented, now that I was months along with the beta. Does the name still make sense? Up until now, I considered anything in the top-half of Cushion to be “the timeline”—even the budget bar was a timeline to me, despite its lack of time.&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;/assets/2015-01-06-graph.png&quot;&gt;&lt;img src=&quot;/assets/2015-01-06-graph.png&quot; alt=&quot;2015-01-06-graph&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;This wasn’t right. I took a step back and pretended for a moment that I haven’t been working on Cushion for almost a year now. I looked at the scheduling timeline and pieced it apart. What were its components, if one were to separate it into reusable parts? It has “ticks”, or axes, at the top and bottom, but so does the budget bar. So, then the ticks shouldn’t be considered part of the timeline. I would need to step back even further.&lt;/p&gt;
 
+&lt;p&gt;&lt;a href=&quot;/assets/2015-01-06-timeline.png&quot;&gt;&lt;img src=&quot;/assets/2015-01-06-timeline.png&quot; alt=&quot;2015-01-06-timeline&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;Remove the ticks, remove the container, and you have the timeline on its own. And, the budget bar without the ticks and container is just the bar. Both of these are just visuals that could stand on their own, but are even more useful when adding the grounding and labeling of the container and ticks. It’s almost like a graph&amp;hellip; Wait, it is a graph! A graph has axes and visuals—so do the schedule timeline and budget bar. I can’t believe I didn’t see it this way at first, but once I did, everything came together.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/2015-01-06-shapes.png&quot;&gt;&lt;img src=&quot;/assets/2015-01-06-shapes.png&quot; alt=&quot;2015-01-06-shapes&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Instead of giving meaning to everything in the timeline, like outlined dots for estimated dates and solid dots for actual dates, I would remove the context completely and treat it like a real graph. These dots are just dots with an x-position—nothing more. An outlined dot is a “weak” dot; a solid dot is a “strong” dot. The lines that were once named after their data, like duration, delay, drag, etc., are now just lines with an x-position and a length. The arrows that once represented the current date of an active project now have no idea they represent anything—they’re just arrows. &lt;/p&gt;
 
