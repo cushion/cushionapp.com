@@ -3,7 +3,16 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Sat, 10 Jan 2015 01:21:34 +0000</pubDate>
+    <pubDate>Sat, 17 Jan 2015 04:28:29 +0000</pubDate>
+    
+    <item>
+      <title>Code Review</title>
+      <link>http://cushionapp.com/expenses/code-review</link>
+      <pubDate>Tue, 13 Jan 2015 15:39:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/code-review</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Rewriting the Timeline</title>
@@ -706,15 +715,6 @@
 
 &lt;p&gt;If you’re interested in taking part in the beta, &lt;a href=&quot;/&quot;&gt;sign up&lt;/a&gt; to be notified.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>SSL Service</title>
-      <link>http://cushionapp.com/expenses/ssl-certificate-service</link>
-      <pubDate>Mon, 21 Jul 2014 18:11:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/ssl-certificate-service</guid>
-      <description></description>
     </item>
     
   </channel>
