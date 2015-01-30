@@ -1,21 +1,21 @@
 ---
-time: 1422646310
+time: 1422646348
 inventory:
   /newsletter/index.html:
-    md5: a44052e517d68336542c2ae56eba7502
-    time: 1422646293
+    md5: a77124ea11c8bc25676dfecdb8065cb7
+    time: 1422646341
   /index.html:
-    md5: a44052e517d68336542c2ae56eba7502
-    time: 1422646293
+    md5: a77124ea11c8bc25676dfecdb8065cb7
+    time: 1422646341
   /beta/index.html:
     md5: 5a27dad984bf3a489ebeddf6018f195d
     time: 1417364587
   /journal/index.html:
-    md5: 8c8fde4c37726aba43d07b318942dba1
-    time: 1422646294
-  /journal/designing-the-subscription-plans/index.html:
-    md5: efd4d391bdf5b3a4e00b4fd13fc9d807
-    time: 1422646294
+    md5: 183332b565a5e4b9e358e91f398020b0
+    time: 1422646341
+  /journal/designing-the-subscription-page/index.html:
+    md5: e5b3762366aa60ce96f4dff64e4aec43
+    time: 1422646341
   /journal/2015-01-06/index.html:
     md5: 219d10dd3ece81910785122da9462382
     time: 1420558919
@@ -317,11 +317,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: bd582a893f6139f77a0ab141a96a33a5
-    time: 1422646299
+    md5: 1cc9e4d9855f47d960694c3c0b95478c
+    time: 1422646347
   /feed.xml:
-    md5: 3964e464bdfab43e9a9f77a18b6e33a8
-    time: 1422646299
+    md5: d83bb9ebb7c32f9fb7d8e3be2f07e864
+    time: 1422646347
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -407,8 +407,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: db0f3b8a0df31aed6b112e9d08a7d053
-    time: 1422646299
+    md5: 5ac20bb2f4cb0111de247d56fd51a9c6
+    time: 1422646347
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843

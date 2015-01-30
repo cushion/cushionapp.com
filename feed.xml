@@ -3,14 +3,14 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Fri, 30 Jan 2015 19:31:39 +0000</pubDate>
+    <pubDate>Fri, 30 Jan 2015 19:32:27 +0000</pubDate>
     
     <item>
-      <title>Designing the Subscription Plans</title>
-      <link>http://cushionapp.com/journal/designing-the-subscription-plans</link>
+      <title>Designing the Subscription Page</title>
+      <link>http://cushionapp.com/journal/designing-the-subscription-page</link>
       <pubDate>Fri, 30 Jan 2015 09:26:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/designing-the-subscription-plans</guid>
+      <guid>http://cushionapp.com/journal/designing-the-subscription-page</guid>
       <description>&lt;p&gt;After months of thinking about “killer features”, I arrived at the realization that there were still a few launch prerequisites I hadn’t finished, or even started. Here I was, thinking up feature after feature, expecting to launch soon, but I still didn’t have a subscription system in place, a way of downloading your data, or the ability to delete your account. &lt;/p&gt;
 
 &lt;p&gt;The paid beta runs on Stripe Checkout, using a one-time charge per user, which buys me exactly six months starting from the first user. Based on my past experience, I knew that time would dwindle and the expiration date would creep up faster than I would anticipate. I had to drop everything and focus on subscriptions.&lt;/p&gt;
