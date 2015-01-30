@@ -4,7 +4,87 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Thu, 29 Jan 2015 16:12:28 +0000</pubDate>
+    <pubDate>Fri, 30 Jan 2015 19:31:39 +0000</pubDate>
+    
+    <item>
+      <title>Designing the Subscription Plans</title>
+      <link>http://cushionapp.com/journal/designing-the-subscription-plans</link>
+      <pubDate>Fri, 30 Jan 2015 09:26:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/designing-the-subscription-plans</guid>
+      <description>&lt;p&gt;After months of thinking about “killer features”, I arrived at the realization that there were still a few launch prerequisites I hadn’t finished, or even started. Here I was, thinking up feature after feature, expecting to launch soon, but I still didn’t have a subscription system in place, a way of downloading your data, or the ability to delete your account. &lt;/p&gt;
+
+&lt;p&gt;The paid beta runs on Stripe Checkout, using a one-time charge per user, which buys me exactly six months starting from the first user. Based on my past experience, I knew that time would dwindle and the expiration date would creep up faster than I would anticipate. I had to drop everything and focus on subscriptions.&lt;/p&gt;
+
+&lt;p&gt;Since early on, I had a good idea of the direction I wanted to take with subscriptions. Instead of your typical 3-tier “solo, team, company”, I wanted to focus on the individual. I know I’m nowhere near even thinking about teams and beyond, so why even include them from the start? I do have a few small teams using the beta, and that works out really well with a single account holder, as long as they don’t need to do things like assign people to projects. For now, I’ll keep it simple.&lt;/p&gt;
+
+&lt;p&gt;By starting with a single plan, I can break that into two options by providing a monthly option and then a discounted yearly option. You’d be surprised by how often a user would rather pay a little extra for the month-to-month flexibility, but then again, maybe it’s not surprising—think gym memberships. I’ve had one for close to a year, still paying more month-to-month, but that’s only because I didn’t know if I would continue to go for an entire year. Now that I continue to go on a consistent basis, I still prefer the flexibility of having a monthly plan.&lt;/p&gt;
+
+&lt;p&gt;When it comes to web services or software, I always go for the yearly option because I know if I’ll use it or not from the trial and that 20% discount is tough to pass up on—especially when the cost isn’t that high. It’s usually only the services that range from $5-$50/month that offer the discounted annual plan, too. 10-20% off on a $100/year plan isn’t a big deal, but $100/month (or $1200/year) starts to add up. Or maybe they just know their audience—at a certain scale, the monthly flexibility provides more value.&lt;/p&gt;
+
+&lt;p&gt;In any case, it was time to stop only thinking about the subscription page and start designing it. Like most things I design from scratch, I start with the whacky ideas, just to get them out of the way. I know I probably won’t go with most of them, but I know not to discredit anything without going through the motions—I’ve had too many good ideas spawn from horrible ideas. All you need is something to take you in a certain direction and you can end up nowhere near the original idea, but better off because of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-1.png&quot; alt=&quot;2015-01-30-design-1&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I tend to roll my eyes when companies get cutesy with their name, but I thought I’d at least try pursuing “Cushion” beyond the concept of a financial cushion and more towards a pile of comfortable pillows. It was bad. &lt;/p&gt;
+
+&lt;p&gt;The layout, the size of the type, and the icons—all bad. But that’s okay because this was my first shot with a blank canvas. It takes a bit to find a solid grounding. The goofiness of the icons made its way to the plan names, as well. Instead of saying “Monthly” and “Yearly”, I tried the playful angle, describing the user’s potential scenario.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-2.png&quot; alt=&quot;2015-01-30-design-2&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;From there, I moved to the expected 3-column layout with the middle one being emphasized. I also introduced a third plan for an idea I’ve had for a few years now—a service only available within a specific timeframe. The service was originally going to be for people who work on personal projects at night, but this seemed like an interesting option for full-time people who freelance at night.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-3.png&quot; alt=&quot;2015-01-30-design-3&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I tried a few other variations of this layout, like reversing the fills&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-4.png&quot; alt=&quot;2015-01-30-design-4&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;using outlines instead of solid fills&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-5.png&quot; alt=&quot;2015-01-30-design-5&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;and introducing color. None of these were right. For one, the plans were just confusing—you really needed to read into them to see that they were actually monthly versus yearly. The icons were also too playful for Cushion and just&amp;hellip;bad. I was too hung up on having a moon icon that I forced the other two. Also, it wasn’t clear that the middle icon is a “husband” cushion and the one on the right is a neck pillow. It’s like I’m trying to tell an inside joke to a group of strangers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-6.png&quot; alt=&quot;2015-01-30-design-6&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Next, I tried a two-column layout with the third “misfit” plan underneath. I also called the plans what they were, “Monthly” and “Yearly”, and removed the pillow icons. Immediately, it felt clearer, but still not right. The “Moonlighter” plan stood out too much for a plan that I didn’t want to emphasize. I was too hung up on how cool a “night” plan and that damn moon icon!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-7.png&quot; alt=&quot;2015-01-30-design-7&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I also tried a variation of this design using yearly amounts for yearly plans. I thought this would be more upfront about the real cost of each plan, but it just made them more confusing. $10 vs $96 made it seem like the monthly plan was the discounted one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-8.png&quot; alt=&quot;2015-01-30-design-8&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Because the two-column layout would be too narrow in the context of the app’s subscription page, I decided to move back to the 3-column design. I kept the moon icon to see if I could somehow make it work and added the yearly price to the one-liner of the yearly plan.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-9.png&quot; alt=&quot;2015-01-30-design-9&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The yellow of the moon on white didn’t work, so I tried the dark background again—still too much emphasis. It looks so cool, though!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-10.png&quot; alt=&quot;2015-01-30-design-10&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point, I took a step back and reminded myself that this first design is for within the app, under the subscription tab. I don’t need to be so heavy on the marketing side—it should just be an area to switch between subscriptions. Even though I think it’s a worthy concept, I decided to hold off on the “Moonlighter” plan for now. I need to work in increments rather than force all my ideas in at once. I swapped out the “Moonlighter” plan for the beta, since every user is a part of the beta. From there, they can upgrade or let the beta expire.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-11.png&quot; alt=&quot;2015-01-30-design-11&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I also decided to add “ribbons” to selected plans, indicating when a plan’s subscription begins, renews, or ends. Whenever you’re dealing with payment-related parts of an app, it’s best to inform the user as much as possible about their current state. I want to do as much as I can to keep users from contacting support for questions that could easily be answered with a helpful UI, especially as a solo developer.&lt;/p&gt;
+
+&lt;div class='video-outer'&gt;
+    &lt;div class='video-inner' style='padding-bottom: 34%'&gt;
+        &lt;video width=&quot;100%&quot; poster=&quot;/assets/2015-01-30-design.png&quot; autoplay=&quot;autoplay&quot; loop=&quot;loop&quot; controls=&quot;controls&quot; tabindex=&quot;0&quot;&gt;
+            &lt;source src=&quot;/assets/2015-01-30-design.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+            &lt;source src=&quot;/assets/2015-01-30-design.ogv&quot; type=&quot;video/ogg&quot; /&gt;
+            Video tag not supported. Download the video &lt;a href=&quot;/assets/2015-01-30-design.mp4&quot;&gt;here&lt;/a&gt;.
+        &lt;/video&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So, this is where I ended up. I’m really happy with the end result and glad I got the wackiness out of my head. The next step now, regarding subscriptions, is to design the public-facing plan page. This will need to be more than just a copy/paste job, as it has to include a list of features and FAQs, considering the potential user hasn’t used the app yet. That’s for another time, though.&lt;/p&gt;
+
+&lt;p&gt;On a side note, I still have a few more spots in the paid beta. If you’re interested in participating, &lt;a href=&quot;/beta&quot;&gt;request an invite&lt;/a&gt; and I’ll send one your way.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Rewriting the Timeline</title>
@@ -401,46 +481,6 @@
 &lt;p&gt;On the visual side, specifically the budget timeline, I’m in a bit of a pickle. These timelines are based on a financial goal the user sets in the beginning, which is of a single currency. This means that if I want to visualize a variety of currencies, I’ll need a goal per currency, which is not going to happen.&lt;/p&gt;
 
 &lt;p&gt;I have a few ideas of how to get around this, but I’m getting ahead of myself. As a first step, I just need the ability to change the default currency per user. This is an easy one, so I’m happy to say it’s already done. I found a Ruby gem, called &lt;a href=&quot;https://github.com/RubyMoney/money&quot;&gt;Money&lt;/a&gt;, that provides a thorough list of currencies, along with their symbols, symbol positions, thousand separator, and decimal separator. On the front-end, I can still use &lt;a href=&quot;https://github.com/openexchangerates/accounting.js&quot;&gt;Accounting.js&lt;/a&gt;—all I need to do is provide the currency settings from the backend.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Preferences, Accounts, and a Typeface Change</title>
-      <link>http://cushionapp.com/journal/2014-09-26</link>
-      <pubDate>Fri, 26 Sep 2014 09:52:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-09-26</guid>
-      <description>&lt;p&gt;These past couple weeks, I’ve been focusing on making Cushion feel like a legit app. To me, this entails adding all the little parts that can be easily skipped early on, like the ability to change your password. For a public app, these are essential, but in my eyes, you can go without them for a week or so when holding a private beta.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-09-26-preferences.png&quot;&gt;&lt;img src=&quot;/assets/2014-09-26-preferences.png&quot; alt=&quot;2014-09-26-preferences&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Alongside smoothing out the experience, I started building in convenience features, like preferences. Since getting Cushion in the hands of others, there has been an obvious need for certain defaults, so when a user fills out a form, they don’t find them setting the same value on the same field every single time. &lt;/p&gt;
-
-&lt;p&gt;The most apparent of these fields was the invoice’s relative due date, or net. Most freelancers use the same net for every project and they all vary in generosity, from “net 30” to “due upon receipt”. Now, I have a preference for this field, so whenever the user creates a new invoice, the net is that value by default.&lt;/p&gt;
-
-&lt;p&gt;With new additions, it’s good to hold back from implementing them until you have at least two examples to use. For example, I wouldn’t add a preferences section if I only had this one preference. That’s why I added two more—default tab and default view.&lt;/p&gt;
-
-&lt;p&gt;For me, the projects section with the schedule view is the page I use the most, but this isn’t the case for everyone. If you’re less about scheduling and more about accounting, you might live in the invoices tab with the budget view. With these new default tab and view preferences, any time you switch from the account/preferences section of Cushion back to the timeline section, it will take you to your default.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-09-26-account.png&quot;&gt;&lt;img src=&quot;/assets/2014-09-26-account.png&quot; alt=&quot;2014-09-26-account&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Speaking of accounts and preference, I don’t think I ever mentioned this second side of Cushion. From the beginning, users have only had access to the timeline section, which consists of the client, project, and invoice tabs. Now that I’m adding all the necessary parts of a real app, I established a top level navigation for switching between the timeline section and the account/settings/whatever-you-want-to-call-it section. This navigation system works pretty well so far, allowing a new set of view level tabs for switching between account information and preferences. For now, these are the only two tabs, but eventually, we will have a few more for hooks and integrations—the fun stuff.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-update-notification.png&quot; alt=&quot;2014-09-26-update-notification&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Tacking onto the legitamcy of Cushion, I built a dead-simple update notification alert for users to know when I deployed a new version. It slides in from the top, just like success notifications, but it’s blue and refreshes the page upon clicking it. The downside of a web app is that a user only sees what they loaded last. This means, if they haven’t refreshed the browser in weeks, which has happened with past apps I’ve worked on, they will be using an older, potentially incompatible version.&lt;/p&gt;
-
-&lt;p&gt;I didn’t want to be wasteful and poll for changes. Instead, I decided to use a custom response header &lt;code&gt;X-App-Version&lt;/code&gt; with each API response. This value is an environment variable that I set after deploying a new version. Because the app checks the difference upon receiving a new response, like switching views, we won’t experience any of the issues we’d see from something like refreshing upon a date change—the alerts are spread out more.&lt;/p&gt;
-
-&lt;p&gt;I’ve been on a few betas that also use an update notification, but I noticed that they often forget to include what’s new. I get excited for updates, but then I need to spend a few minutes digging through the app, looking for changes. For Cushion, I created a new &lt;a href=&quot;/changelog&quot;&gt;changelog&lt;/a&gt; page, which the alert links to. The changelog runs on the same static system that this journal runs on, so if I spot a typo, I don’t have to prompt the user of an update by deploying the change.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-font-table.png&quot; alt=&quot;2014-09-26-font-table&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The last bit of progress I’ll cover in this post is the obvious font change. I’ve been keeping this in the back of my mind since the beginning, knowing I would need to eventually pick one other than Helvetica Neue. After literally hours of switching between several fonts and just staring at the screen, I decided to go with &lt;a href=&quot;http://justanotherfoundry.com/facit&quot;&gt;Facit&lt;/a&gt; by &lt;a href=&quot;http://justanotherfoundry.com/&quot;&gt;Just Another Foundry&lt;/a&gt;. The decision was tough, but in the end, I picked Facit for its personality, solidity, and beautiful italics.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-tooltip.png&quot; alt=&quot;2014-09-26-tooltip&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The typeface has a very wide range of weights, which work incredibly well in Cushion’s interface. I’ve been able to find areas in Cushion that benefit greatly from a variance in thickness, like the timeline tooltips. Overall, I think like Facit gets me closer to that solid, reliable feel that I want users to experience when using the app.&lt;/p&gt;
 </description>
     </item>
     

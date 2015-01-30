@@ -3,7 +3,96 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Thu, 29 Jan 2015 16:12:28 +0000</pubDate>
+    <pubDate>Fri, 30 Jan 2015 19:31:39 +0000</pubDate>
+    
+    <item>
+      <title>Designing the Subscription Plans</title>
+      <link>http://cushionapp.com/journal/designing-the-subscription-plans</link>
+      <pubDate>Fri, 30 Jan 2015 09:26:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/designing-the-subscription-plans</guid>
+      <description>&lt;p&gt;After months of thinking about “killer features”, I arrived at the realization that there were still a few launch prerequisites I hadn’t finished, or even started. Here I was, thinking up feature after feature, expecting to launch soon, but I still didn’t have a subscription system in place, a way of downloading your data, or the ability to delete your account. &lt;/p&gt;
+
+&lt;p&gt;The paid beta runs on Stripe Checkout, using a one-time charge per user, which buys me exactly six months starting from the first user. Based on my past experience, I knew that time would dwindle and the expiration date would creep up faster than I would anticipate. I had to drop everything and focus on subscriptions.&lt;/p&gt;
+
+&lt;p&gt;Since early on, I had a good idea of the direction I wanted to take with subscriptions. Instead of your typical 3-tier “solo, team, company”, I wanted to focus on the individual. I know I’m nowhere near even thinking about teams and beyond, so why even include them from the start? I do have a few small teams using the beta, and that works out really well with a single account holder, as long as they don’t need to do things like assign people to projects. For now, I’ll keep it simple.&lt;/p&gt;
+
+&lt;p&gt;By starting with a single plan, I can break that into two options by providing a monthly option and then a discounted yearly option. You’d be surprised by how often a user would rather pay a little extra for the month-to-month flexibility, but then again, maybe it’s not surprising—think gym memberships. I’ve had one for close to a year, still paying more month-to-month, but that’s only because I didn’t know if I would continue to go for an entire year. Now that I continue to go on a consistent basis, I still prefer the flexibility of having a monthly plan.&lt;/p&gt;
+
+&lt;p&gt;When it comes to web services or software, I always go for the yearly option because I know if I’ll use it or not from the trial and that 20% discount is tough to pass up on—especially when the cost isn’t that high. It’s usually only the services that range from $5-$50/month that offer the discounted annual plan, too. 10-20% off on a $100/year plan isn’t a big deal, but $100/month (or $1200/year) starts to add up. Or maybe they just know their audience—at a certain scale, the monthly flexibility provides more value.&lt;/p&gt;
+
+&lt;p&gt;In any case, it was time to stop only thinking about the subscription page and start designing it. Like most things I design from scratch, I start with the whacky ideas, just to get them out of the way. I know I probably won’t go with most of them, but I know not to discredit anything without going through the motions—I’ve had too many good ideas spawn from horrible ideas. All you need is something to take you in a certain direction and you can end up nowhere near the original idea, but better off because of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-1.png&quot; alt=&quot;2015-01-30-design-1&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I tend to roll my eyes when companies get cutesy with their name, but I thought I’d at least try pursuing “Cushion” beyond the concept of a financial cushion and more towards a pile of comfortable pillows. It was bad. &lt;/p&gt;
+
+&lt;p&gt;The layout, the size of the type, and the icons—all bad. But that’s okay because this was my first shot with a blank canvas. It takes a bit to find a solid grounding. The goofiness of the icons made its way to the plan names, as well. Instead of saying “Monthly” and “Yearly”, I tried the playful angle, describing the user’s potential scenario.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-2.png&quot; alt=&quot;2015-01-30-design-2&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;From there, I moved to the expected 3-column layout with the middle one being emphasized. I also introduced a third plan for an idea I’ve had for a few years now—a service only available within a specific timeframe. The service was originally going to be for people who work on personal projects at night, but this seemed like an interesting option for full-time people who freelance at night.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-3.png&quot; alt=&quot;2015-01-30-design-3&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I tried a few other variations of this layout, like reversing the fills&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-4.png&quot; alt=&quot;2015-01-30-design-4&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;using outlines instead of solid fills&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-5.png&quot; alt=&quot;2015-01-30-design-5&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;and introducing color. None of these were right. For one, the plans were just confusing—you really needed to read into them to see that they were actually monthly versus yearly. The icons were also too playful for Cushion and just&amp;hellip;bad. I was too hung up on having a moon icon that I forced the other two. Also, it wasn’t clear that the middle icon is a “husband” cushion and the one on the right is a neck pillow. It’s like I’m trying to tell an inside joke to a group of strangers.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-6.png&quot; alt=&quot;2015-01-30-design-6&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Next, I tried a two-column layout with the third “misfit” plan underneath. I also called the plans what they were, “Monthly” and “Yearly”, and removed the pillow icons. Immediately, it felt clearer, but still not right. The “Moonlighter” plan stood out too much for a plan that I didn’t want to emphasize. I was too hung up on how cool a “night” plan and that damn moon icon!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-7.png&quot; alt=&quot;2015-01-30-design-7&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I also tried a variation of this design using yearly amounts for yearly plans. I thought this would be more upfront about the real cost of each plan, but it just made them more confusing. $10 vs $96 made it seem like the monthly plan was the discounted one.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-8.png&quot; alt=&quot;2015-01-30-design-8&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Because the two-column layout would be too narrow in the context of the app’s subscription page, I decided to move back to the 3-column design. I kept the moon icon to see if I could somehow make it work and added the yearly price to the one-liner of the yearly plan.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-9.png&quot; alt=&quot;2015-01-30-design-9&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The yellow of the moon on white didn’t work, so I tried the dark background again—still too much emphasis. It looks so cool, though!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-10.png&quot; alt=&quot;2015-01-30-design-10&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;At this point, I took a step back and reminded myself that this first design is for within the app, under the subscription tab. I don’t need to be so heavy on the marketing side—it should just be an area to switch between subscriptions. Even though I think it’s a worthy concept, I decided to hold off on the “Moonlighter” plan for now. I need to work in increments rather than force all my ideas in at once. I swapped out the “Moonlighter” plan for the beta, since every user is a part of the beta. From there, they can upgrade or let the beta expire.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-01-30-design-11.png&quot; alt=&quot;2015-01-30-design-11&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I also decided to add “ribbons” to selected plans, indicating when a plan’s subscription begins, renews, or ends. Whenever you’re dealing with payment-related parts of an app, it’s best to inform the user as much as possible about their current state. I want to do as much as I can to keep users from contacting support for questions that could easily be answered with a helpful UI, especially as a solo developer.&lt;/p&gt;
+
+&lt;div class='video-outer'&gt;
+    &lt;div class='video-inner' style='padding-bottom: 34%'&gt;
+        &lt;video width=&quot;100%&quot; poster=&quot;/assets/2015-01-30-design.png&quot; autoplay=&quot;autoplay&quot; loop=&quot;loop&quot; controls=&quot;controls&quot; tabindex=&quot;0&quot;&gt;
+            &lt;source src=&quot;/assets/2015-01-30-design.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+            &lt;source src=&quot;/assets/2015-01-30-design.ogv&quot; type=&quot;video/ogg&quot; /&gt;
+            Video tag not supported. Download the video &lt;a href=&quot;/assets/2015-01-30-design.mp4&quot;&gt;here&lt;/a&gt;.
+        &lt;/video&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;So, this is where I ended up. I’m really happy with the end result and glad I got the wackiness out of my head. The next step now, regarding subscriptions, is to design the public-facing plan page. This will need to be more than just a copy/paste job, as it has to include a list of features and FAQs, considering the potential user hasn’t used the app yet. That’s for another time, though.&lt;/p&gt;
+
+&lt;p&gt;On a side note, I still have a few more spots in the paid beta. If you’re interested in participating, &lt;a href=&quot;/beta&quot;&gt;request an invite&lt;/a&gt; and I’ll send one your way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Web Worker Server</title>
+      <link>http://cushionapp.com/expenses/web-worker-server</link>
+      <pubDate>Thu, 29 Jan 2015 11:17:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/web-worker-server</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Code Review</title>
@@ -658,62 +747,6 @@
 &lt;p&gt;Under invoices, using the dates assigned to each (issued, due, and paid), the segments represent how early an invoice was paid, how late an invoice was paid (more realistic), how long an invoice took to get paid, and how long until an invoice is due.&lt;/p&gt;
 
 &lt;p&gt;With these new tooltips in place, I feel like I’m going in a really good direction—taking useful data and making it easily accessible. Being able to see the data in table form is easy, but I’d rather provide the ability to interact with data in context.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Improved Form UX</title>
-      <link>http://cushionapp.com/journal/2014-07-29</link>
-      <pubDate>Tue, 29 Jul 2014 10:14:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-07-29</guid>
-      <description>&lt;p&gt;This past weekend, I focused on usability. My first stab on the layout of model forms was haphazard. While showing Cushion to a few people, I could see an obvious hesitation on where to start when creating a new project. All of a sudden, the user is presented with fields all over the place with no clear direction.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-07-29-new-form-layout.png&quot;&gt;&lt;img src=&quot;/assets/2014-07-29-new-form-layout.png&quot; alt=&quot;2014-07-29-new-form-layout&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Believe it or not, I had a dream about the new layout and it’s the one I’m going with. Instead of letting the sections rest aside each other and reflow when needed, I just stack them and separate with dividers. Now, the sections actually represent the different views of Cushion (schedule and budget) and there’s a clear flow from top to bottom. &lt;/p&gt;
-
-&lt;p&gt;At first, I was worried there would be too much negative space in the smaller sections, like budget, but it doesn’t feel as bad—especially if I end up going with a budget range instead of a single value. Also, this layout allows me to potentially include mini visuals for each section that provides more context than just input fields. Imagine the budget section including the average budget for your projects or the average budget for the client of that project. All of a sudden, you have a better idea of where to start.&lt;/p&gt;
-
-&lt;p&gt;Along with a revision of the layout, I’ve been working on improving the actual input fields. From the start, I chose HTML5’s native input types, thinking these would take care of a ton of extra work in the early stages. Unfortunately, some of the native input types, like &lt;code&gt;&amp;lt;input type=&amp;#39;date&amp;#39;&amp;gt;&lt;/code&gt;, are cemented in ugly (can’t be styled) and don’t even work in common browsers like Safari.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-29-color-picker.png&quot; alt=&quot;2014-07-29-color-picker&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The first input type I tackled was the color picker. I took a page from my buddies at &lt;a href=&quot;http://friendsoftheweb.com/&quot;&gt;Friends of the Web&lt;/a&gt; with their &lt;a href=&quot;http://dayswork.co&quot;&gt;Dayswork&lt;/a&gt; app and provided a simple popover of suggested colors. I &lt;em&gt;hate&lt;/em&gt; color pickers on the web that mimic those in design tools like Photoshop—they assume everyone is a designer. With suggested colors, any one of them will look good, and in most cases, you won’t need to use it because your client already has an established color. Considering this, the color picker is more of an easy way to get started.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-29-date-picker.png&quot; alt=&quot;2014-07-29-date-picker&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Next, I addressed the date picker. For this, I wanted a design that is both useful and obvious to navigate—it should also have a couple Cushion-specific features that support the reasoning behind going custom. For instance, if the date is part of a range, the dates within the range should highlight to indicate that. Also, for validation purposes, you shouldn’t be able to pick a finish date that comes before the range’s start date.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-29-color-inheritance.png&quot; alt=&quot;2014-07-29-color-inheritance&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;In filling out the forms, I also realized how tedious the process felt. Because of this, I added value inheritance. Let’s say you create a new project, but it doesn’t necessarily call for a color other than its client’s. Before, you would need to re-enter your client’s color. Now, it defaults to using the client’s color unless specified otherwise. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-07-29-inline-client-inheritance.png&quot; alt=&quot;2014-07-29-inline-client-inheritance&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;This also works reversely for the inline client creation. If you create a new project and set its color, the inline client will inherit that color by default.&lt;/p&gt;
-
-&lt;p&gt;Lastly, client and project symbols are now auto-generated with the ability to override them. This means if you create a new client named “Vandelay Industries”, its symbol will be “VI” by default, but you could overwrite it to something like “VanInd” if you want.&lt;/p&gt;
-
-&lt;p&gt;These recent updates have me incredibly excited to get Cushion in the hands of others as soon as possible. I know most of them are unnecessary for an initial beta release, but I want this app to be a joy to use from the start.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cushion is Online</title>
-      <link>http://cushionapp.com/journal/2014-07-24</link>
-      <pubDate>Thu, 24 Jul 2014 08:37:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-07-24</guid>
-      <description>&lt;p&gt;I’ve been contemplating not mentioning this just yet because I don’t want it to seem like I’m ready to launch the beta, but… Cushion is now online. This past weekend, after great pressure from my wife (also a freelancer), I decided to set up everything needed to get Cushion working on a server. &lt;/p&gt;
-
-&lt;p&gt;I knew this would be a challenge, as it always is, but I wanted to get it out of the way early, so that everything I change from now on will need to work in production, avoiding any last-minute surprises. Also, it helps me establish a better process for updating the app, through the use of continuous integration and an asset pipeline that keeps compiled code outside of the dev branch.&lt;/p&gt;
-
-&lt;p&gt;Along with all the deployment setup, I’ve integrated a few helpful services for performance metrics, exception tracking, and user analytics. As I progress with Cushion, I’ll rely on these services to fine-tune the app along the way. Everything is also wired to my personal Slack room, so I’m alerted of any issues as they happen. I want to get this app right from the start and this extra preparation will go a long way.&lt;/p&gt;
-
-&lt;p&gt;Regarding the beta, I don’t have a definite date in mind, but it’s sooner than later. I have a short list of crucial items to tackle, then all of the payment and legal stuff. As a reminder, the beta is paid in order to support early development and encourage users to provide real feedback. I’ve been a part of far too many free betas that attract countless stagnant users because there’s no incentive or motivation to consistently test the app.&lt;/p&gt;
-
-&lt;p&gt;If you’re interested in taking part in the beta, &lt;a href=&quot;/&quot;&gt;sign up&lt;/a&gt; to be notified.&lt;/p&gt;
 </description>
     </item>
     

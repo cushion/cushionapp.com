@@ -1,18 +1,21 @@
 ---
-time: 1422547949
+time: 1422646310
 inventory:
   /newsletter/index.html:
-    md5: 786c0966ebea3b57381ee27d23c34cc7
-    time: 1420557947
+    md5: a44052e517d68336542c2ae56eba7502
+    time: 1422646293
   /index.html:
-    md5: 786c0966ebea3b57381ee27d23c34cc7
-    time: 1420557947
+    md5: a44052e517d68336542c2ae56eba7502
+    time: 1422646293
   /beta/index.html:
     md5: 5a27dad984bf3a489ebeddf6018f195d
     time: 1417364587
   /journal/index.html:
-    md5: 420c1e4f8cd60d037879af7c9fda12e4
-    time: 1420558919
+    md5: 8c8fde4c37726aba43d07b318942dba1
+    time: 1422646294
+  /journal/designing-the-subscription-plans/index.html:
+    md5: efd4d391bdf5b3a4e00b4fd13fc9d807
+    time: 1422646294
   /journal/2015-01-06/index.html:
     md5: 219d10dd3ece81910785122da9462382
     time: 1420558919
@@ -131,8 +134,11 @@ inventory:
     md5: cad37712cff842521469608339f21d19
     time: 1416717295
   /expenses/index.html:
-    md5: 33b50b6197ebef4fb818737522d056c0
-    time: 1421468906
+    md5: a55befad54e3c2ba0f3be3104e982993
+    time: 1422646296
+  /expenses/web-worker-server/index.html:
+    md5: f0d37ae3876929d2832e9829f0b8ad8e
+    time: 1422646296
   /expenses/code-review/index.html:
     md5: 113cf27ae0b9995638f4826ba1d62d9c
     time: 1421468906
@@ -311,11 +317,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 0e3e2015dcb43a79da71668a84b55f46
-    time: 1421468909
+    md5: bd582a893f6139f77a0ab141a96a33a5
+    time: 1422646299
   /feed.xml:
-    md5: 1f0820e67ce474c512ab6dbce93d3e66
-    time: 1422547948
+    md5: 3964e464bdfab43e9a9f77a18b6e33a8
+    time: 1422646299
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -401,8 +407,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: dab37420ad6f6fc307b462baa2e0be31
-    time: 1422547948
+    md5: db0f3b8a0df31aed6b112e9d08a7d053
+    time: 1422646299
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
@@ -421,6 +427,9 @@ inventory:
   /assets/2015-01-06-graph.png:
     md5: 1282e60a79c5d6be8c52c4a651ccc4c1
     time: 1420558925
+  /assets/2015-01-30-design-1.png:
+    md5: 78ae8e0eb11176eee6066e872d72b0ca
+    time: 1422646300
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -490,6 +499,9 @@ inventory:
   /assets/2015-01-06-timeline.png:
     md5: cb1612f2eb4c39babce38db039cfac7e
     time: 1420558925
+  /assets/2015-01-30-design-2.png:
+    md5: 4b390ca7b5d73037174ce74cbfef939c
+    time: 1422646300
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -550,6 +562,9 @@ inventory:
   /assets/2015-01-06-shapes.png:
     md5: 47508e19f770a8013b79485d483118ed
     time: 1420558925
+  /assets/2015-01-30-design-3.png:
+    md5: 4d0dc0ff3393381d94664610941254b4
+    time: 1422646300
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
@@ -586,6 +601,9 @@ inventory:
   /assets/2014-10-10-budget-timeline.png:
     md5: 46f6bc53d6c567bee7376d1dd6d5ae26
     time: 1418230844
+  /assets/2015-01-30-design-4.png:
+    md5: 8c177043135d8b164f98b71f3eedc1e8
+    time: 1422646301
   /assets/2014-07-21-still-late-invoice.gif:
     md5: 8efef1b79e9a49055c81710076f6a797
     time: 1405976691
@@ -616,6 +634,9 @@ inventory:
   /assets/2014-10-10-schedule-data.png:
     md5: 5db5c1b62cdf79c38fe80339ad1dac0e
     time: 1418230844
+  /assets/2015-01-30-design-5.png:
+    md5: 19755b227c2f44d764deb5a5cc8a8cb8
+    time: 1422646301
   /assets/2014-08-19-dragged-project.png:
     md5: 2e7d83aaadfec25b54744894991dd9e9
     time: 1408461370
@@ -640,6 +661,9 @@ inventory:
   /assets/2014-10-10-estimated-start.png:
     md5: cf123f08821c6aa2a0049880c181e7bf
     time: 1418230844
+  /assets/2015-01-30-design-6.png:
+    md5: fc2b258fe19c53484f7935e57790928c
+    time: 1422646301
   /assets/2014-08-19-start-date-tooltip.png:
     md5: 3823666302cb62f5df55ae58cd5c3d46
     time: 1408461370
@@ -655,6 +679,9 @@ inventory:
   /assets/2014-10-10-estimated-finish.png:
     md5: 652b39bff4a5ec10342c57beb790cd4e
     time: 1418230844
+  /assets/2015-01-30-design-7.png:
+    md5: 673f4298a1c2273bfa1239441a83d32b
+    time: 1422646301
   /assets/2014-08-19-estimated-finish-tooltip.png:
     md5: 3360d3ac57388655aa757ea25f791f6d
     time: 1408461370
@@ -670,6 +697,9 @@ inventory:
   /assets/2014-10-10-schedule-timeline.png:
     md5: d53c9c4b9ab43857ab5b4253c63401ab
     time: 1418230844
+  /assets/2015-01-30-design-8.png:
+    md5: f84e9da286962c3386f2ab4c8785e13d
+    time: 1422646302
   /assets/2014-08-19-active-duration-tooltip.png:
     md5: af48657453b04a4f7c9b3d6b5cce80e7
     time: 1408461371
@@ -682,6 +712,9 @@ inventory:
   /assets/2014-10-10-blocks.png:
     md5: 2c08dec09485b55a8f906966b8aa77b7
     time: 1418230845
+  /assets/2015-01-30-design-9.png:
+    md5: 52ff437a724b211baf54f832e5b46c2c
+    time: 1422646302
   /assets/2014-08-19-dragged-tooltip.png:
     md5: 04083df1e278eba6c0e5d444a9c3765a
     time: 1408461371
@@ -694,18 +727,33 @@ inventory:
   /assets/restructuring-project-page.png:
     md5: f872a7ee3dc660447abb424040390773
     time: 1418482742
+  /assets/2015-01-30-design-10.png:
+    md5: 59702c18a5d1953c644f08e1215b559a
+    time: 1422646302
   /assets/2014-08-19-active-date-tooltip.png:
     md5: 18687f512aff3a07522e43450122207a
     time: 1408461372
   /assets/2014-11-11-estimate-no-dates.png:
     md5: 11e0e3481b69c1f5ec1a108da9e218b6
     time: 1415728782
+  /assets/2015-01-30-design-11.png:
+    md5: c9c49b8c8c12547ed9a1ce0680a1003e
+    time: 1422646302
   /assets/2014-08-19-new-timeline.png:
     md5: ae034b954062a3b72710b0a4cbf23506
     time: 1408461577
   /assets/2014-11-11-estimate-today-and-future.png:
     md5: c707cd6d6ce847ae2fdf2569c5381c42
     time: 1415728782
+  /assets/2015-01-30-design.mp4:
+    md5: 682acb02150a49bbf6ec2dc30d2e1489
+    time: 1422646303
   /assets/2014-11-11-timeline-switch.gif:
     md5: df4e35b172f58d86796084c81fab7027
     time: 1415728782
+  /assets/2015-01-30-design.ogv:
+    md5: fed2d351cdfd60e9dada8de4f92f7a90
+    time: 1422646304
+  /assets/2015-01-30-design-12.png:
+    md5: eaca794667ab44721c2de0fa5bb9aae3
+    time: 1422646304
