@@ -1,5 +1,5 @@
 ---
-time: 1422909846
+time: 1422934012
 inventory:
   /newsletter/index.html:
     md5: a77124ea11c8bc25676dfecdb8065cb7
@@ -134,8 +134,11 @@ inventory:
     md5: cad37712cff842521469608339f21d19
     time: 1416717295
   /expenses/index.html:
-    md5: 2093e591b656828d8dc005dd5691b82f
-    time: 1422909841
+    md5: 16954329d8c9b201b1f31ee3f4d4f4cf
+    time: 1422934008
+  /expenses/redis-database/index.html:
+    md5: 226770b047fc80721133cb93452aeb79
+    time: 1422934008
   /expenses/web-worker-server/index.html:
     md5: f0d37ae3876929d2832e9829f0b8ad8e
     time: 1422646296
@@ -185,8 +188,11 @@ inventory:
     md5: 2011e69e534aa6c812fe8b7e58409e8d
     time: 1404674334
   /changelog/index.html:
-    md5: 7f373e30ce0b5170c0b28fdef696bc67
-    time: 1422547945
+    md5: 3604e0a310aee46caac11e7b2f4b8c8d
+    time: 1422934008
+  /changelog/2015-02-02/index.html:
+    md5: e6116945bb7412aa6e76e9f2492b78f9
+    time: 1422934008
   /changelog/2015-01-28/index.html:
     md5: 2b2dd29cd2b4da8edfb9cfcc87278f1a
     time: 1422547945
@@ -317,11 +323,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 62f7116b615682d4963b2a69e2636973
-    time: 1422909845
+    md5: 495dae22c963024c62b744b82f9cacad
+    time: 1422934011
   /feed.xml:
-    md5: 6ffca7d5c7f4647abd97599dedc17a55
-    time: 1422909845
+    md5: 0c69205cbcb42be48b116a22cf9402fb
+    time: 1422934011
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -407,8 +413,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: 9fcd7f6728085e61578b185056495214
-    time: 1422909845
+    md5: 8d4e7d718054886e7c77c780226fcc94
+    time: 1422934011
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
