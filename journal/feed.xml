@@ -4,7 +4,7 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Sun, 15 Feb 2015 02:24:11 +0000</pubDate>
+    <pubDate>Sun, 15 Feb 2015 02:28:41 +0000</pubDate>
     
     <item>
       <title>Deleting your account</title>
@@ -22,7 +22,7 @@
 
 &lt;p&gt;In Cushion, I built the initial phase of a two-part plan for deleting your account. With the first beta accounts expiring soon, I needed the bare minimum in place, in case anyone wanted to call it quits. For beta users, this means simply deleting their data upon request. &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/2015-02-14-modal.png&quot; alt=&quot;2015-02-14-modal&quot;&gt; &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/2015-02-14-modal.gif&quot; alt=&quot;2015-02-14-modal&quot;&gt; &lt;/p&gt;
 
 &lt;p&gt;Within the app, the user would click a link to delete their account. This opens a modal with an explanation of what deletion entails, emphasizing the seriousness of the request—in case users simply want to cancel their subscription. The modal also suggests downloading a backup beforehand. &lt;/p&gt;
 
