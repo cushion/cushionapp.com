@@ -4,7 +4,7 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Sun, 15 Feb 2015 02:19:50 +0000</pubDate>
+    <pubDate>Sun, 15 Feb 2015 02:21:40 +0000</pubDate>
     
     <item>
       <title>Deleting your account</title>
@@ -20,7 +20,7 @@
 
 &lt;p&gt;The ability to delete your account is especially important to me because I’ve come across so many web services that simply don’t allow it—even ones with millions of users and thousands of employees. There’s absolutely no excuse not to build support for it. In my eyes, it should be a legal requirement for anyone putting an app into the world. We’re so quick to build apps, scale them, and strive to reach exponential growth that we act like it’s a complete waste of time to spend two or three days building these features.&lt;/p&gt;
 
-&lt;p&gt;In Cushion, I built the initial phase of a two-part plan for deleting your account. With the first beta accounts expiring soon, I needed the bare minimum in order for anyone wanting to call it quits. For beta users, this means simply deleting their data upon request and confirmation. &lt;/p&gt;
+&lt;p&gt;In Cushion, I built the initial phase of a two-part plan for deleting your account. With the first beta accounts expiring soon, I needed the bare minimum in place, in case anyone wanted to call it quits. For beta users, this means simply deleting their data upon request and confirmation. &lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/2015-02-14-modal.png&quot; alt=&quot;2015-02-14-modal&quot;&gt; &lt;/p&gt;
 
