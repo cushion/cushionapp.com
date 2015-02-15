@@ -1,5 +1,5 @@
 ---
-time: 1423966901
+time: 1423966915
 inventory:
   /newsletter/index.html:
     md5: 2cb0a61d1c264717641d54e4a26bcea2
@@ -11,11 +11,11 @@ inventory:
     md5: 5a27dad984bf3a489ebeddf6018f195d
     time: 1417364587
   /journal/index.html:
-    md5: 90dd205e09456f7f236155c049a3f9ee
-    time: 1423966894
+    md5: 3c9ca2ede89a89f0c64835a6d1f09088
+    time: 1423966909
   /journal/deleting-your-account/index.html:
-    md5: 01cea80defd3cf6406f064df48df476a
-    time: 1423966894
+    md5: fd2abf7908318866fd2d1bfae6cfeaa3
+    time: 1423966909
   /journal/designing-the-subscription-page/index.html:
     md5: e5b3762366aa60ce96f4dff64e4aec43
     time: 1422646341
@@ -332,11 +332,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 86eadab7ba349807e8944c34e0b8018f
-    time: 1423966899
+    md5: 24e527282708bfd886d593afc7a69d76
+    time: 1423966914
   /feed.xml:
-    md5: afb25b9d6f9c9aff990b1a0118505c2d
-    time: 1423966900
+    md5: 0a7deddc629fa8b8343eeb5e5e7bc750
+    time: 1423966914
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -422,8 +422,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: f6ae7bafb61658c9390855b37e8b7bfc
-    time: 1423966900
+    md5: 0d53a89607325e569bcd25302805d7bc
+    time: 1423966914
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
