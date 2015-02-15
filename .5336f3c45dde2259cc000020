@@ -1,18 +1,21 @@
 ---
-time: 1423934789
+time: 1423966793
 inventory:
   /newsletter/index.html:
-    md5: a77124ea11c8bc25676dfecdb8065cb7
-    time: 1422646341
+    md5: 2cb0a61d1c264717641d54e4a26bcea2
+    time: 1423966785
   /index.html:
-    md5: a77124ea11c8bc25676dfecdb8065cb7
-    time: 1422646341
+    md5: 2cb0a61d1c264717641d54e4a26bcea2
+    time: 1423966785
   /beta/index.html:
     md5: 5a27dad984bf3a489ebeddf6018f195d
     time: 1417364587
   /journal/index.html:
-    md5: 183332b565a5e4b9e358e91f398020b0
-    time: 1422646341
+    md5: 5572335e916ce61555b6f3eb46a595b0
+    time: 1423966785
+  /journal/deleting-your-account/index.html:
+    md5: 4f4b2cd1c450ef97d38790909c2e2ebb
+    time: 1423966785
   /journal/designing-the-subscription-page/index.html:
     md5: e5b3762366aa60ce96f4dff64e4aec43
     time: 1422646341
@@ -329,11 +332,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 495dae22c963024c62b744b82f9cacad
-    time: 1422934011
+    md5: 20012221777aeb197aa285beba6d5524
+    time: 1423966789
   /feed.xml:
-    md5: 86fcdd8dc7b01e2fafe62707a8d7ebda
-    time: 1423934788
+    md5: 2de469a9638b4bb84a2d94bf94d6eef3
+    time: 1423966790
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -419,8 +422,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: 7d11d80000431aad3641c398e26de9da
-    time: 1423934788
+    md5: 674b8263f68fc2497b24400c8a72d708
+    time: 1423966790
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
@@ -442,6 +445,9 @@ inventory:
   /assets/2015-01-30-design-1.png:
     md5: 78ae8e0eb11176eee6066e872d72b0ca
     time: 1422646300
+  /assets/2015-02-14-tweet.png:
+    md5: 753e50fc88b482a3a486eecc1f7e3eb6
+    time: 1423966790
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -514,6 +520,9 @@ inventory:
   /assets/2015-01-30-design-2.png:
     md5: 4b390ca7b5d73037174ce74cbfef939c
     time: 1422646300
+  /assets/2015-02-14-modal.png:
+    md5: a5de5004f9427ced6815852776318480
+    time: 1423966791
   /assets/2014-04-16-name-sort.png:
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -577,6 +586,9 @@ inventory:
   /assets/2015-01-30-design-3.png:
     md5: 4d0dc0ff3393381d94664610941254b4
     time: 1422646300
+  /assets/2015-02-14-github.png:
+    md5: 59f9cc50b58121634cc909cc4663bfcb
+    time: 1423966791
   /assets/2014-06-15-schedule-coded-vs-mockup.png:
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341

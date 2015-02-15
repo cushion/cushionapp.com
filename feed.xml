@@ -3,7 +3,41 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Sat, 14 Feb 2015 17:26:28 +0000</pubDate>
+    <pubDate>Sun, 15 Feb 2015 02:19:49 +0000</pubDate>
+    
+    <item>
+      <title>Deleting your account</title>
+      <link>http://cushionapp.com/journal/deleting-your-account</link>
+      <pubDate>Sat, 14 Feb 2015 19:47:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/deleting-your-account</guid>
+      <description>&lt;p&gt;This weekend, I wrapped up a “feature” that’s been at the top of my list for a while—deleting your account. It’s not an exciting feature, but certainly a necessity and one that’s very important to me. We owe it to the user to put them in complete control of their data. If they no longer want any of their data in your database, they should be able to easily delete it—not just abandon it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-02-14-tweet.png&quot; alt=&quot;2015-02-14-tweet&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I recently &lt;a href=&quot;https://twitter.com/destroytoday/status/563522803266502656&quot;&gt;tweeted&lt;/a&gt; about a few prerequisites I believe each app developer should build into their app before launching. I knew others felt the same, but I didn’t realize it would become my most favorited and most retweeted tweet. It’s a sign that people really care about these aspects of an app, even if they’re not the killer features one would spotlight on the product page. &lt;/p&gt;
+
+&lt;p&gt;The ability to delete your account is especially important to me because I’ve come across so many web services that simply don’t allow it—even ones with millions of users and thousands of employees. There’s absolutely no excuse not to build support for it. In my eyes, it should be a legal requirement for anyone putting an app into the world. We’re so quick to build apps, scale them, and strive to reach exponential growth that we act like it’s a complete waste of time to spend two or three days building these features.&lt;/p&gt;
+
+&lt;p&gt;In Cushion, I built the initial phase of a two-part plan for deleting your account. With the first beta accounts expiring soon, I needed the bare minimum in order for anyone wanting to call it quits. For beta users, this means simply deleting their data upon request and confirmation. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-02-14-modal.png&quot; alt=&quot;2015-02-14-modal&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Within the app, the user would click a link to delete their account. This opens a modal with an explanation of what deletion entails, emphasizing the seriousness of the request—in case users simply want to cancel their subscription. The modal also suggests downloading a backup beforehand. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-02-14-github.png&quot; alt=&quot;2015-02-14-github&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I followed Github’s model for confirmation by requiring users to type their email address to enable the delete button. With the past several apps I’ve built, I can’t tell you how many users “accidentally” deleted their account or deleted it assuming they could return a month later and just restore it. This also clarifies which account is being deleted, in case the user has more than one. I want the user to be fully aware that they are about to delete their account. &lt;/p&gt;
+
+&lt;p&gt;Upon clicking the delete button, the user’s subscription is cancelled, if one exists, and their data is deleted. That’s phase one.&lt;/p&gt;
+
+&lt;p&gt;The plan for phase two is to provide the most thorough experience for deleting an account, covering all angles of what may potentially happen next. In case the user forgets to download a backup, the user’s data will automatically be emailed to them upon deleting their account. If they ever attempt to log into their account again, they will find a list of downloadable receipts from Cushion charges. And, for the inevitable user wanting to restore their account shortly after deleting it, accounts will be put it in a queue to be deleted 30 days later after the request. Within those 30 days, a user can restore the account and be back to using it in no time.&lt;/p&gt;
+
+&lt;p&gt;So far, I’m happy with the first step, but look forward to building the full package. It does feel strange investing this much time in the experience of someone leaving, but I refuse to skimp on any aspect of Cushion.&lt;/p&gt;
+
+&lt;p&gt;The beta is still going strong, so if you’re interested in participating, even just to test out deleting your account, be sure to &lt;a href=&quot;/beta&quot;&gt;request an invite&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Redis database</title>
@@ -656,68 +690,6 @@
 &lt;p&gt;&lt;img src=&quot;/assets/2014-08-27-due-net.gif&quot; alt=&quot;2014-08-27-due-net&quot;&gt; &lt;/p&gt;
 
 &lt;p&gt;Lastly, I tackled the longest overdue feature—a net option for invoices. I attempted to start on this feature a dozen times, but always gave up after a while to direct my attention elsewhere. The tricky part was positioning the form elements, so it felt like a natural flow from the issue date to due date to paid date. If I placed the custom due date input below the dropdown, it would look completely off, but if that custom input was hidden until selected, it wouldn’t look half-bad. I took a tally for common invoice nets to use, including “upon receipt”, and added the final option for a specific date. Eventually, this will default to your net preference, so you will only need to change it if the client has their own net.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Dots and Lines</title>
-      <link>http://cushionapp.com/journal/2014-08-19</link>
-      <pubDate>Tue, 19 Aug 2014 09:09:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-08-19</guid>
-      <description>&lt;p&gt;Progress on Cushion has been amazing this past week. I feel like I’m past the point of shaping with play-doh and now using a fine-tooth chisel. I spent the majority of the time cleaning up the app, adding all of the parts that you forego when quickly prototyping, like error messaging and loading indicators. Even though these additions aren’t glamorous, they smooth out the experience. This is no longer a prototype—it’s a real app.&lt;/p&gt;
-
-&lt;p&gt;The second half of the week was more exciting. After speaking with a fellow studiomate about what’s important for the scheduling timeline, I realized the top priority should be clarity. And, up until this point, the scheduling timeline has been anything but clear. My mistake was trying to represent timeframes with bars.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-old-timeline.png&quot; alt=&quot;2014-08-19-old-timeline&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;First off, this makes no sense. With a bar, you &lt;em&gt;do&lt;/em&gt; have a start and an end, but they tell you nothing besides the start and end. What if I want to know if the project is ongoing? On top of that, there’s next to no information in between. Down the line, I’m certain we’ll need room for milestones and, potentially, other symbols.&lt;/p&gt;
-
-&lt;p&gt;All of a sudden, these bars started feeling like they represented a value other than time, especially when it came to invoices. An invoice that dragged on for months felt like a big-paying invoice. A project that spanned half the year but only required one day a week looked just like a full-time project. This lack of clarity became a real problem, to the point where I didn’t trust the visual. I had to spend a minute translating it before I could react and notice any valuable information.&lt;/p&gt;
-
-&lt;p&gt;Right when I was ready to leave for the day, I decided to quickly try out an idea. I scrapped the bars and started fresh. I tried to imagine a scheduling timeline without any history of what I have designed so far. Since it pertains dates and timespans, it should use dots and lines.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-estimated-actual.png&quot; alt=&quot;2014-08-19-estimated-actual&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The dots will represent the dates. For projects, this currently includes the estimated start/finish dates and actual start/finish dates. For invoices, the issue date, due date, and paid date. Estimated dates shouldn’t carry the same weight as the actual dates because they’re not confirmed, so any estimated dates will have a different style—an outlined circle. Then, any actual date will be a solid fill.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-hide-estimated.png&quot; alt=&quot;2014-08-19-hide-estimated&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;This felt like a lot of dots. Then I realized we could imply the existence of the estimated dates through the style of the line. If a project starts late, the line from the estimated start date to the actual start date should be a lighter version of the working line. That alone tells what we want to know, but then we can show the specific dates upon hovering the project. This way, we can establish an overall timeline UX of “hover to show more information”.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-future-project.png&quot; alt=&quot;2014-08-19-future-project&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Hiding the estimated dates outside of hover also helps us when it comes to future projects. With no actual dates, these future projects are represented by only a light line—clearly showing that a project spans that timeframe, but it hasn’t been anchored with the weight of actual dates. Now there’s an obvious difference between a past project and a future project. But, what about current projects?&lt;/p&gt;
-
-&lt;p&gt;With the previous bar design, we had no clear way of knowing which projects you were actively working on or which invoices were in the pipeline. I wanted to be able to look at the timeline and immediately know how many projects were active and which ones. With this new design, I introduced a new element—an arrow.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-active-project.png&quot; alt=&quot;2014-08-19-active-project&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;For any project or invoice that spans the current date, an arrow will appear on that line. If a project has started, the line up until that arrow will be solid to show that you’ve actively worked on it up until now. The line after the arrow will remain lighter to indicate that you haven’t worked through that time yet, but it can potentially span that far.&lt;/p&gt;
-
-&lt;p&gt;An arrow was the first thing that came to mind as a way of showing activity and it worked right off the bat. I can clearly distinguish these projects from the others and I don’t need a label because it pointing in the direction of time is all we need to get the point across.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-dragged-project.png&quot; alt=&quot;2014-08-19-dragged-project&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;For projects that drag on, I reclaimed the hash pattern from the previous design. I still think it works with this new look as long as it’s the only place where we use a hash pattern. Also, like before, the pattern animates if an invoice is currently late. The movement is subtle enough to instill a sense of urgency, but won’t send you into panic mode.&lt;/p&gt;
-
-&lt;p&gt;In the previous post, I touched on a new tooltip design for the scheduling timeline, showing more useful information than just a client/project label. With this new design, I decided to take it a step further and show even more. Since we’re now working with several new elements—dots, lines, and arrows—we could utilize all three of these to tell us more about projects and invoices.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-estimated-finish-tooltip.png&quot; alt=&quot;2014-08-19-estimated-finish-tooltip&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;For dots, show the date that it represents and reiterate whether it’s estimated or not. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-dragged-tooltip.png&quot; alt=&quot;2014-08-19-dragged-tooltip&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;For lines, indicate the duration of the line and what it represents—early, late, drag, active, etc. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-active-date-tooltip.png&quot; alt=&quot;2014-08-19-active-date-tooltip&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;And for arrows, simply show that a project or invoice is active as of the current date. These new details help in revealing the additional information you would want to know, but it also keeps us from needing an additional key to reference.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-19-new-timeline.png&quot; alt=&quot;2014-08-19-new-timeline&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;After using the new scheduling timeline design for the past few days, I feel so much more confident and on top of things. I honestly can’t believe I even considered the previous design in the first place, but at least I know I’m making progress.&lt;/p&gt;
 </description>
     </item>
     

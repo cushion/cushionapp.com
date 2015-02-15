@@ -78,6 +78,40 @@ window.analytics.page();
   
   <article class='article'>
     <h3 class='article-title'>
+      <a class='link' href='/journal/deleting-your-account'>Deleting your account</a>
+    </h3>
+    <div class='article-copy'>
+      <p>This weekend, I wrapped up a “feature” that’s been at the top of my list for a while—deleting your account. It’s not an exciting feature, but certainly a necessity and one that’s very important to me. We owe it to the user to put them in complete control of their data. If they no longer want any of their data in your database, they should be able to easily delete it—not just abandon it.</p>
+
+<p><img src="/assets/2015-02-14-tweet.png" alt="2015-02-14-tweet"> </p>
+
+<p>I recently <a href="https://twitter.com/destroytoday/status/563522803266502656">tweeted</a> about a few prerequisites I believe each app developer should build into their app before launching. I knew others felt the same, but I didn’t realize it would become my most favorited and most retweeted tweet. It’s a sign that people really care about these aspects of an app, even if they’re not the killer features one would spotlight on the product page. </p>
+
+<p>The ability to delete your account is especially important to me because I’ve come across so many web services that simply don’t allow it—even ones with millions of users and thousands of employees. There’s absolutely no excuse not to build support for it. In my eyes, it should be a legal requirement for anyone putting an app into the world. We’re so quick to build apps, scale them, and strive to reach exponential growth that we act like it’s a complete waste of time to spend two or three days building these features.</p>
+
+<p>In Cushion, I built the initial phase of a two-part plan for deleting your account. With the first beta accounts expiring soon, I needed the bare minimum in order for anyone wanting to call it quits. For beta users, this means simply deleting their data upon request and confirmation. </p>
+
+<p><img src="/assets/2015-02-14-modal.png" alt="2015-02-14-modal"> </p>
+
+<p>Within the app, the user would click a link to delete their account. This opens a modal with an explanation of what deletion entails, emphasizing the seriousness of the request—in case users simply want to cancel their subscription. The modal also suggests downloading a backup beforehand. </p>
+
+<p><img src="/assets/2015-02-14-github.png" alt="2015-02-14-github"> </p>
+
+<p>I followed Github’s model for confirmation by requiring users to type their email address to enable the delete button. With the past several apps I’ve built, I can’t tell you how many users “accidentally” deleted their account or deleted it assuming they could return a month later and just restore it. This also clarifies which account is being deleted, in case the user has more than one. I want the user to be fully aware that they are about to delete their account. </p>
+
+<p>Upon clicking the delete button, the user’s subscription is cancelled, if one exists, and their data is deleted. That’s phase one.</p>
+
+<p>The plan for phase two is to provide the most thorough experience for deleting an account, covering all angles of what may potentially happen next. In case the user forgets to download a backup, the user’s data will automatically be emailed to them upon deleting their account. If they ever attempt to log into their account again, they will find a list of downloadable receipts from Cushion charges. And, for the inevitable user wanting to restore their account shortly after deleting it, accounts will be put it in a queue to be deleted 30 days later after the request. Within those 30 days, a user can restore the account and be back to using it in no time.</p>
+
+<p>So far, I’m happy with the first step, but look forward to building the full package. It does feel strange investing this much time in the experience of someone leaving, but I refuse to skimp on any aspect of Cushion.</p>
+
+<p>The beta is still going strong, so if you’re interested in participating, even just to test out deleting your account, be sure to <a href="/beta">request an invite</a>.</p>
+
+    </div>
+  </article>
+  
+  <article class='article'>
+    <h3 class='article-title'>
       <a class='link' href='/journal/designing-the-subscription-page'>Designing the Subscription Page</a>
     </h3>
     <div class='article-copy'>
