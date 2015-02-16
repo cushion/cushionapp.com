@@ -4,7 +4,7 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Sun, 15 Feb 2015 02:34:16 +0000</pubDate>
+    <pubDate>Mon, 16 Feb 2015 04:05:42 +0000</pubDate>
     
     <item>
       <title>Deleting Your Account</title>
@@ -12,7 +12,7 @@
       <pubDate>Sat, 14 Feb 2015 19:47:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/journal/deleting-your-account</guid>
-      <description>&lt;p&gt;This weekend, I wrapped up a “feature” that’s been at the top of my list for a while—deleting your account. It’s not an exciting feature, but certainly a necessity and one that’s very important to me. We owe it to the user to put them in complete control of their data. If they no longer want any of their data in your database, they should be able to easily delete it—not just abandon it.&lt;/p&gt;
+      <description>&lt;p&gt;This weekend, I wrapped up a “feature” that’s been at the top of my list for a while—deleting your account. It’s not an exciting feature, but certainly a necessity and one that’s very important to me. We owe it to our users to put them in complete control of their data. If they no longer want any of their data in your database, they should be able to easily delete it—not just abandon it.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/2015-02-14-tweet.png&quot; alt=&quot;2015-02-14-tweet&quot;&gt; &lt;/p&gt;
 
