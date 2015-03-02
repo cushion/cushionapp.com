@@ -4,7 +4,41 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Sun, 01 Mar 2015 14:46:51 +0000</pubDate>
+    <pubDate>Mon, 02 Mar 2015 18:08:47 +0000</pubDate>
+    
+    <item>
+      <title>Everything in Increments</title>
+      <link>http://cushionapp.com/journal/everything-in-increments</link>
+      <pubDate>Mon, 02 Mar 2015 09:13:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/everything-in-increments</guid>
+      <description>&lt;p&gt;If you’ve built anything of scale before, you know that it’s best to build in increments. Even if you haven’t built anything, but rather attempted to accomplish an overwhelming task, you know how important it is to break larger problems into smaller, more manageable ones. This has been on the top of my mind lately because it’s how I’ve had to build Cushion, and every other app—releasing in small increments, but focused on the longterm goal.&lt;/p&gt;
+
+&lt;p&gt;Specifically, incremental building has played an essential role in how I release Cushion to more people. I’ve been especially slow and steady with this, simply because I’m in no rush. I like to react while I’m still able to breathe—it allows me to respond conscientiously rather than hastily plugging leaks. I’ve been a part of a few proper launches in the past and I want to avoid the panic and scramble of opening the flood gates all at once. Here’s how I’ve been able to do that.&lt;/p&gt;
+
+&lt;p&gt;After spending a couple months building out the basic concept of Cushion, with the ability to add projects and see something in return, I decided it was time to put other people behind the wheel. Since I’m in a co-working space with a dozen other freelancers, I have the convenience of walking up to one of them, setting them up with an account, and seeing what happens. These were my “Alpha” users.&lt;/p&gt;
+
+&lt;p&gt;As you can imagine, they immediately found all the painfully obvious issues with Cushion. When you work alone on something for an extended period of time, it’s easy to miss the problems that everyone else will hit on day one. Watching other people use Cushion for the first time was a test of my patience—sitting there, not interfering, just watching. We’d then discuss the problems, the possible solutions, and I’d return later that day with a new version to try out. This worked incredibly well.&lt;/p&gt;
+
+&lt;p&gt;After a couple more months, I felt ready to move to the next step. Instead of a dozen Americans on the east coast using the app, I wanted at least a hundred people from other timezones, with other currencies and date formats. This is when you realize your app needs to be more accommodating. &lt;/p&gt;
+
+&lt;p&gt;I needed to open the app up to others, but I knew from my own experience as a beta user that a lot of people just want to try the new thing. 5 minutes in, they can say they tried the new thing and the database becomes a graveyard of dormant accounts. I wanted users to be invested in the app and feel motivated to thoroughly use it and provide feedback. If every user paid upfront for the beta, they would be more inclined to keep with it. If it didn’t stick with them, Cushion still benefited from their financial support.&lt;/p&gt;
+
+&lt;p&gt;The paid beta served as an amazing resource in a variety of ways. Financially, it allowed me to only need enough client work to book 3 days a week. Every other day, I was able to focus 100% on Cushion—this was huge. &lt;/p&gt;
+
+&lt;p&gt;As anticipated, the beta users it attracted have been incredibly involved and active—over half of them use Cushion on a regular basis. Because of this, I consistently receive great feedback that I can act on.&lt;/p&gt;
+
+&lt;p&gt;And with paid users, the requested features aren’t the typical pie-in-the-sky kind I would get from free users—they are reasonable and inline with the direction Cushion is moving in. The roadmap has been shaped into a clear path by the people actually using the app. I’m not just thinking up features and hoping potential customers might like them—real customers are telling me exactly what they want and I work with them to find the best approach to take.&lt;/p&gt;
+
+&lt;p&gt;Now that the first beta memberships are starting to expire, I’m looking to take the next step. Thinking in increments, I found this to be a great opportunity to offer subscriptions to both expiring beta users and new users. Expiring beta users need a way to continue using Cushion regardless, so it needs to be implemented. With minimal additional effort, this can also serve a secondary purpose of subscribing new users, which will eventually be needed once Cushion is public.&lt;/p&gt;
+
+&lt;p&gt;The idea all along has been for beta users to carry a special status among users. Since they took a leap of faith to support such early development, I plan to reward them beyond the beta with exclusive benefits. This distinction between beta users and subscribers allows me to offer monthly and yearly subscriptions to new users alongside the beta, with these subscriptions simply offering early access.&lt;/p&gt;
+
+&lt;p&gt;As of this weekend, the monthly and yearly subscriptions are in place and ready for new users. Several weeks from now, once I’ve ironed out the subscription process, I’ll be able to take the next step and offer trial periods. Since there’s nothing holding anyone back from signing up at that point, I’ll still use an invite system to keep the traffic to a level I can manage. And from there, if I’m ready to open the flood gates, I will.&lt;/p&gt;
+
+&lt;p&gt;As always, if you’re interested in trying out Cushion, this time as a beta user or a monthly subscriber, &lt;a href=&quot;/beta&quot;&gt;request an invite&lt;/a&gt; and I’ll send one your way.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Deleting Your Account</title>
@@ -439,56 +473,6 @@
 &lt;p&gt;These goals are important in the freelance life because there’s really no cap on how much you can make. Since you have no salary, you can decide how much you want to make beyond covering your expenses, granted the work is available. If you want to overload your schedule for a month in order to take a month off, you can do that. If you want to work consistently and make a killing, that’s cool, too.&lt;/p&gt;
 
 &lt;p&gt;Personally, I don’t do a great job of aiming high. I tend to make enough to pay my minimum, then I invest the extra time in my personal projects. Recently, I’ve been investing any income over my minimum into buying more of my own time, as if I’m my own client. I’m betting on myself and my productivity. Maybe two weeks of full-time Cushion could amount to more than a two-week client gig. And maybe, with Cushion, I could reach my stretch goal all on my own.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Zooming in on the Timeline</title>
-      <link>http://cushionapp.com/journal/2014-10-16</link>
-      <pubDate>Thu, 16 Oct 2014 08:36:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-10-16</guid>
-      <description>&lt;p&gt;In the early stages of building Cushion, everything was based upon a year-long timeline view. With one look, you could see a quick and easy-to-digest glimpse of your year. When are you next available? Where do you have pockets of time to fit another project? Wow—that project really took that long? After living with this scale for a while, I wondered what I could do with a more magnified view.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-10-16-timeline-data.png&quot; alt=&quot;2014-10-16-timeline-data&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;If we zoom in to a specific month on the timeline, we begin to give more meaning to the data. All of a sudden, a 4-day project that was just a blip on the year timeline expands to represent the true weight of those four full days. Zoomed out, it’s easy to see little difference between two lengths of time that are drastically different on the day-to-day scale, like 2 weeks versus 3 weeks, but in a month view, this is huge!&lt;/p&gt;
-
-&lt;p&gt;I started to think of ways to actually zoom into the timeline. Of course, the line segments would scale horizontally, but does it really need to scale proportionally on the vertical end as well?—I don’t think so. In my eyes, it looks much better this way &lt;em&gt;and&lt;/em&gt; maintains the same timeline height as the year view—allowing the same amount of information to be seen underneath without a jarring effect on the user.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-10-16-timeline-overflow.png&quot; alt=&quot;2014-10-16-timeline-overflow&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;When I first built the timeline view, I added a project that spanned two years and noticed a bug. With the way I coded the view, the knocked-out background of the timeline didn’t expand to account for the line segment. Instead, the line segment ran off the edge of the background, reaching the edge of the window. This wasn’t the intended behavior, but I immediately fell in love with it. The knocked-out background created a distinct boundary to the timeline, but didn’t hide any information beyond this boundary.&lt;/p&gt;
-
-&lt;p&gt;Returning to the zoom, this undocumented feature became the perfect tie of consistency between the two scales. When you switch between month and year views, the boundary doesn’t move a pixel.&lt;/p&gt;
-
-&lt;p&gt;The problem now was that the timeline labels for the year view, represented by months, needed to be replaced with days in order to be relevant to the new context. However, since I still wanted a dead-simple way to move from month to month, I didn’t want to get rid of the month labels. I went down a dark hole of bad designs, like a second row of labels that pushed the month labels down. It was a awful.&lt;/p&gt;
-
-&lt;p&gt;Then, I considered the top of the timeline. At first, I discounted this idea because I just assumed it would clutter the UI. I gave it a shot, though. Sometimes, it’s important to explore directions that you would typically disregard just to say that you tried them. Surprisingly, this direction had legs. It wasn’t perfect at first, but I knew something was there if I just chiseled deep enough.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-10-16-timeline-month-view.png&quot;&gt;&lt;img src=&quot;/assets/2014-10-16-timeline-month-view.png&quot; alt=&quot;2014-10-16-timeline-month-view&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Instead of mimicking the same label design as the months, which represented spans of time, I centered the “tick” to point to the given day. And, because projects don’t factor time of day (yet), I centered the segment dots on each day block, rather than anchoring to an edge. Finally, to better separate each day, I added a slightly greyed background to the even days.&lt;/p&gt;
-
-&lt;p&gt;Now, all of this would look great on its own, but the transition of switching between the views should look even better. Luckily, each spot I wanted to animate was as easy as adding a CSS3 transition. The line segments scale based on the number of days in the timeline to the number of days in the selected month, the month labels fade in and pan up from behind the timeline, and the even day backgrounds simply fade in.&lt;/p&gt;
-
-&lt;div class='video-outer'&gt;
-    &lt;div class='video-inner' style='padding-bottom: 34%'&gt;
-        &lt;video width=&quot;100%&quot; poster=&quot;/assets/2014-10-16-timeline-zoom.png&quot; autoplay=&quot;autoplay&quot; loop=&quot;loop&quot; controls=&quot;controls&quot; tabindex=&quot;0&quot;&gt;
-            &lt;source src=&quot;/assets/2014-10-16-timeline-zoom.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-            &lt;source src=&quot;/assets/2014-10-16-timeline-zoom.ogv&quot; type=&quot;video/ogg&quot; /&gt;
-            Video tag not supported. Download the video &lt;a href=&quot;/assets/2014-10-16-timeline-zoom.mp4&quot;&gt;here&lt;/a&gt;.
-        &lt;/video&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Scaling the line segments was the trickiest part, not because of the resizing, but because of the origin point from where to resize. Everything in the timeline is positioned and scaled based on a percentage of its day in the timeline compared to the total days in the timeline. For example, February 1st on a year timeline is located at 8.767%. I chose this route because I wanted the timeline to be able to scale down properly, if Cushion were to be responsive. Fortunately, it made my life so much easier with timeline zooming, too. Instead of scaling each line segement individually, I just need to scale the entire timeline and pan.&lt;/p&gt;
-
-&lt;p&gt;The origin point is crucial because if you scale the timeline while panning it and not centering the origin point, the timeline &lt;em&gt;appears&lt;/em&gt; to pan before scaling. At first, I thought this was just a side effect of easing two attributes, but even when transitioned linearly, it didn’t look right. Luckily, centering the origin point was a non-issue, so everything came together in the end without needing to include JS for the animation.&lt;/p&gt;
-
-&lt;p&gt;I couldn’t be happier with my first stab at timeline zooming. Not only because it turned out well, but also because it opens up the possibility of a few other features I want to implement. The first is simply an in-between view for zooming in on a quarter of the year. The other feature, however, is &lt;em&gt;much&lt;/em&gt; more involved. I’ll save it for another post.&lt;/p&gt;
-
-&lt;p&gt;If you’re interested in participating in the paid beta, send me your email on &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;Twitter&lt;/a&gt; and I’ll send you an invite.&lt;/p&gt;
 </description>
     </item>
     

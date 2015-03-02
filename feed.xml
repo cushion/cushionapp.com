@@ -3,7 +3,41 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Sun, 01 Mar 2015 14:46:51 +0000</pubDate>
+    <pubDate>Mon, 02 Mar 2015 18:08:46 +0000</pubDate>
+    
+    <item>
+      <title>Everything in Increments</title>
+      <link>http://cushionapp.com/journal/everything-in-increments</link>
+      <pubDate>Mon, 02 Mar 2015 09:13:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/everything-in-increments</guid>
+      <description>&lt;p&gt;If you’ve built anything of scale before, you know that it’s best to build in increments. Even if you haven’t built anything, but rather attempted to accomplish an overwhelming task, you know how important it is to break larger problems into smaller, more manageable ones. This has been on the top of my mind lately because it’s how I’ve had to build Cushion, and every other app—releasing in small increments, but focused on the longterm goal.&lt;/p&gt;
+
+&lt;p&gt;Specifically, incremental building has played an essential role in how I release Cushion to more people. I’ve been especially slow and steady with this, simply because I’m in no rush. I like to react while I’m still able to breathe—it allows me to respond conscientiously rather than hastily plugging leaks. I’ve been a part of a few proper launches in the past and I want to avoid the panic and scramble of opening the flood gates all at once. Here’s how I’ve been able to do that.&lt;/p&gt;
+
+&lt;p&gt;After spending a couple months building out the basic concept of Cushion, with the ability to add projects and see something in return, I decided it was time to put other people behind the wheel. Since I’m in a co-working space with a dozen other freelancers, I have the convenience of walking up to one of them, setting them up with an account, and seeing what happens. These were my “Alpha” users.&lt;/p&gt;
+
+&lt;p&gt;As you can imagine, they immediately found all the painfully obvious issues with Cushion. When you work alone on something for an extended period of time, it’s easy to miss the problems that everyone else will hit on day one. Watching other people use Cushion for the first time was a test of my patience—sitting there, not interfering, just watching. We’d then discuss the problems, the possible solutions, and I’d return later that day with a new version to try out. This worked incredibly well.&lt;/p&gt;
+
+&lt;p&gt;After a couple more months, I felt ready to move to the next step. Instead of a dozen Americans on the east coast using the app, I wanted at least a hundred people from other timezones, with other currencies and date formats. This is when you realize your app needs to be more accommodating. &lt;/p&gt;
+
+&lt;p&gt;I needed to open the app up to others, but I knew from my own experience as a beta user that a lot of people just want to try the new thing. 5 minutes in, they can say they tried the new thing and the database becomes a graveyard of dormant accounts. I wanted users to be invested in the app and feel motivated to thoroughly use it and provide feedback. If every user paid upfront for the beta, they would be more inclined to keep with it. If it didn’t stick with them, Cushion still benefited from their financial support.&lt;/p&gt;
+
+&lt;p&gt;The paid beta served as an amazing resource in a variety of ways. Financially, it allowed me to only need enough client work to book 3 days a week. Every other day, I was able to focus 100% on Cushion—this was huge. &lt;/p&gt;
+
+&lt;p&gt;As anticipated, the beta users it attracted have been incredibly involved and active—over half of them use Cushion on a regular basis. Because of this, I consistently receive great feedback that I can act on.&lt;/p&gt;
+
+&lt;p&gt;And with paid users, the requested features aren’t the typical pie-in-the-sky kind I would get from free users—they are reasonable and inline with the direction Cushion is moving in. The roadmap has been shaped into a clear path by the people actually using the app. I’m not just thinking up features and hoping potential customers might like them—real customers are telling me exactly what they want and I work with them to find the best approach to take.&lt;/p&gt;
+
+&lt;p&gt;Now that the first beta memberships are starting to expire, I’m looking to take the next step. Thinking in increments, I found this to be a great opportunity to offer subscriptions to both expiring beta users and new users. Expiring beta users need a way to continue using Cushion regardless, so it needs to be implemented. With minimal additional effort, this can also serve a secondary purpose of subscribing new users, which will eventually be needed once Cushion is public.&lt;/p&gt;
+
+&lt;p&gt;The idea all along has been for beta users to carry a special status among users. Since they took a leap of faith to support such early development, I plan to reward them beyond the beta with exclusive benefits. This distinction between beta users and subscribers allows me to offer monthly and yearly subscriptions to new users alongside the beta, with these subscriptions simply offering early access.&lt;/p&gt;
+
+&lt;p&gt;As of this weekend, the monthly and yearly subscriptions are in place and ready for new users. Several weeks from now, once I’ve ironed out the subscription process, I’ll be able to take the next step and offer trial periods. Since there’s nothing holding anyone back from signing up at that point, I’ll still use an invite system to keep the traffic to a level I can manage. And from there, if I’m ready to open the flood gates, I will.&lt;/p&gt;
+
+&lt;p&gt;As always, if you’re interested in trying out Cushion, this time as a beta user or a monthly subscriber, &lt;a href=&quot;/beta&quot;&gt;request an invite&lt;/a&gt; and I’ll send one your way.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Deleting Your Account</title>
@@ -669,28 +703,6 @@
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/email-marketing</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Currency Inputs, Notifications, and Invoice Nets</title>
-      <link>http://cushionapp.com/journal/2014-08-27</link>
-      <pubDate>Wed, 27 Aug 2014 10:41:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-08-27</guid>
-      <description>&lt;p&gt;I’m so close. I spent this last week putting the finishing touches on Cushion. The majority of them surrounded small UX issues that would’ve definitely arisen out of the beta. I figured I’d rather tackle them now and have a more solid product going into the initial testing.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-27-income-input.gif&quot; alt=&quot;2014-08-27-income-input&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The most overlooked UX issue involved the income input fields. Up until now, it was a simple number-based input. It would balk at any character other than a number (even commas and dollar signs) and there was no currency formatting. With a history of using awful currency-based input fields and pulling my hair out when it’s not perfect for the server, I decided to go out of my way to make this easy. Upon exiting the input field, it’ll run a validation function that strips out any character that doesn’t belong and then reformats it, inserting a dollar sign and any commas if we’re in the thousands. Also, if the amount includes cents, it will format that as well or leave it out if it’s an even dollar amount.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-27-success.gif&quot; alt=&quot;2014-08-27-success&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Next, I realized I didn’t show any sort of success message to indicate that a project or invoice was created, updated, or deleted. I started to design a full-width banner that would appear in the form, but decided to take a step back. You should be able to see this message at all times. If you’re scrolled out of the view of the banner area, that doesn’t mean you should miss it. Also, upon creating a new project, you’re taken to the edit view, so this message should carry across views. Because of this, I opted to pin the message at the top. It slides in when needed, remains visible in all scroll positions, and slides out after a couple seconds.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-08-27-due-net.gif&quot; alt=&quot;2014-08-27-due-net&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Lastly, I tackled the longest overdue feature—a net option for invoices. I attempted to start on this feature a dozen times, but always gave up after a while to direct my attention elsewhere. The tricky part was positioning the form elements, so it felt like a natural flow from the issue date to due date to paid date. If I placed the custom due date input below the dropdown, it would look completely off, but if that custom input was hidden until selected, it wouldn’t look half-bad. I took a tally for common invoice nets to use, including “upon receipt”, and added the final option for a specific date. Eventually, this will default to your net preference, so you will only need to change it if the client has their own net.&lt;/p&gt;
-</description>
     </item>
     
   </channel>
