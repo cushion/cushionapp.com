@@ -1,12 +1,12 @@
 ---
-time: 1425677821
+time: 1426041145
 inventory:
   /newsletter/index.html:
-    md5: a235c371674d9534d113752d1754ae1e
-    time: 1425319720
+    md5: d605014378e779d7b04fb01257498e81
+    time: 1426041136
   /index.html:
-    md5: a235c371674d9534d113752d1754ae1e
-    time: 1425319720
+    md5: d605014378e779d7b04fb01257498e81
+    time: 1426041136
   /beta/index.html:
     md5: 5a27dad984bf3a489ebeddf6018f195d
     time: 1417364587
@@ -194,8 +194,11 @@ inventory:
     md5: 2011e69e534aa6c812fe8b7e58409e8d
     time: 1404674334
   /changelog/index.html:
-    md5: 6bcd2440a08f8d810294822505ccac5a
-    time: 1425677817
+    md5: 3341bd96903b69503bb6ac177635737c
+    time: 1426041138
+  /changelog/2015-03-10/index.html:
+    md5: 43d649dff9d031be1881f7b26780f96d
+    time: 1426041138
   /changelog/2015-03-06/index.html:
     md5: acff1b5e9abe1b9e647e8418d9248962
     time: 1425677817
@@ -359,8 +362,8 @@ inventory:
     md5: ed264db0337ceea396b4ffe2a4d694e3
     time: 1425406189
   /feed.xml:
-    md5: 67efe5a5c7f4d78dd1fa1bfc70582c5e
-    time: 1425677821
+    md5: 2bb8051b0fd88184c4098c8c29112b97
+    time: 1426041142
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -446,8 +449,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: 413d620748b5484203017634993868c6
-    time: 1425677821
+    md5: 6a50ececb00eb87b64aaaf1d32255ee0
+    time: 1426041142
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
@@ -790,6 +793,9 @@ inventory:
   /assets/2015-01-30-design-11.png:
     md5: c9c49b8c8c12547ed9a1ce0680a1003e
     time: 1422646302
+  /assets/testimonial-avatar-abnux.jpg:
+    md5: 532b76232e9b545c895769c5a4fffd1a
+    time: 1426041142
   /assets/2014-08-19-new-timeline.png:
     md5: ae034b954062a3b72710b0a4cbf23506
     time: 1408461577
@@ -799,12 +805,24 @@ inventory:
   /assets/2015-01-30-design.mp4:
     md5: 682acb02150a49bbf6ec2dc30d2e1489
     time: 1422646303
+  /assets/testimonial-avatar-crawfordifland.jpg:
+    md5: 2b83b48de209444a3a5101ae3e7d8fe7
+    time: 1426041143
   /assets/2014-11-11-timeline-switch.gif:
     md5: df4e35b172f58d86796084c81fab7027
     time: 1415728782
   /assets/2015-01-30-design.ogv:
     md5: fed2d351cdfd60e9dada8de4f92f7a90
     time: 1422646304
+  /assets/testimonial-avatar-ianpatrickhines.jpg:
+    md5: 8bfb6726dfea99bea3ecdf08eca677a6
+    time: 1426041143
   /assets/2015-01-30-design-12.png:
     md5: eaca794667ab44721c2de0fa5bb9aae3
     time: 1422646304
+  /assets/testimonial-avatar-talkanatalka.jpg:
+    md5: 6b497a9ead0886c7df9e15effdcd22d7
+    time: 1426041143
+  /assets/homepage-client-insights.png:
+    md5: 863f5d46416ac2021c5a5e10c538e76c
+    time: 1426041143
