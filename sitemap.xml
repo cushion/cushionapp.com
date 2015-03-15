@@ -3,21 +3,14 @@
 
   <url>
     <loc>http://cushionapp.com/</loc>
-    <lastmod>2014-12-13T14:58:37+00:00</lastmod>
-    <priority>1.0</priority>
-  </url>
-  
-
-  <url>
-    <loc>http://cushionapp.com/beta</loc>
-    <lastmod>2014-11-30T16:22:58+00:00</lastmod>
+    <lastmod>2015-03-14T15:50:24+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
 
   <url>
     <loc>http://cushionapp.com/journal</loc>
-    <lastmod>2014-11-16T15:21:46+00:00</lastmod>
+    <lastmod>2015-03-14T23:57:21+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
@@ -40,224 +33,224 @@
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2015-01-06</loc>
-    <lastmod>2015-01-06T15:40:17+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/rewriting-the-timeline</loc>
+    <lastmod>2015-03-15T20:13:05+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-12-10</loc>
-    <lastmod>2014-12-10T16:57:40+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/restructuring-the-individual-project-page</loc>
+    <lastmod>2015-03-15T20:13:00+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2012-12-02</loc>
-    <lastmod>2014-12-02T17:07:55+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/project-blocks</loc>
+    <lastmod>2015-03-15T20:12:52+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-11-20</loc>
-    <lastmod>2014-11-23T03:54:01+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/redesigning-the-homepage</loc>
+    <lastmod>2015-03-15T20:11:38+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-11-11</loc>
-    <lastmod>2014-11-23T03:53:56+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/multiple-timelines</loc>
+    <lastmod>2015-03-15T20:11:33+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-10-29</loc>
-    <lastmod>2014-11-23T03:53:51+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/archiving-and-estimate-differences</loc>
+    <lastmod>2015-03-15T20:11:28+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-10-21</loc>
-    <lastmod>2014-11-23T03:53:46+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/multiple-financial-goals</loc>
+    <lastmod>2015-03-15T20:11:05+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-10-16</loc>
-    <lastmod>2014-11-23T03:53:41+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/zooming-in-on-the-timeline</loc>
+    <lastmod>2015-03-15T20:11:00+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-10-13</loc>
-    <lastmod>2014-11-23T03:12:59+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/currency</loc>
+    <lastmod>2015-03-15T20:10:54+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-09-26</loc>
-    <lastmod>2014-11-23T03:53:36+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/preferences-accounts-and-atypefacechange</loc>
+    <lastmod>2015-03-15T20:10:47+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-09-12</loc>
-    <lastmod>2014-11-23T03:53:26+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/sending-out-the-first-email</loc>
+    <lastmod>2015-03-15T20:10:36+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-08-27</loc>
-    <lastmod>2014-11-23T03:53:18+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/currency-inputs-notifications-and-invoice-nets</loc>
+    <lastmod>2015-03-15T20:10:30+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-08-19</loc>
-    <lastmod>2014-11-23T03:52:46+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/dots-and-lines</loc>
+    <lastmod>2015-03-15T20:10:22+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-08-11</loc>
-    <lastmod>2014-11-23T03:52:42+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/calculating-in-the-database-and-revealing-tendencies</loc>
+    <lastmod>2015-03-15T20:10:16+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-07-29</loc>
-    <lastmod>2014-11-23T03:52:33+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/improved-form-ux</loc>
+    <lastmod>2015-03-15T20:10:10+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-07-24</loc>
-    <lastmod>2014-11-23T03:52:28+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/cushion-is-online</loc>
+    <lastmod>2015-03-15T20:10:04+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-07-21</loc>
-    <lastmod>2014-11-23T03:52:21+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/schedule-timeline-patterns</loc>
+    <lastmod>2015-03-15T20:09:59+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-07-15</loc>
-    <lastmod>2014-11-23T03:56:22+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/a-slimmer-schedule-timeline</loc>
+    <lastmod>2015-03-15T20:09:44+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-06-15</loc>
-    <lastmod>2014-11-23T03:52:10+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/the-schedule-timeline</loc>
+    <lastmod>2015-03-15T20:09:34+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-06-05</loc>
-    <lastmod>2014-11-23T03:52:05+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/plugging-in-real-data-for-the-first-time</loc>
+    <lastmod>2015-03-15T20:09:27+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-06-03</loc>
-    <lastmod>2014-11-23T03:51:51+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/transitions-and-project-lists</loc>
+    <lastmod>2015-03-15T20:09:22+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-06-01</loc>
-    <lastmod>2014-11-23T03:51:13+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/death-to-modals</loc>
+    <lastmod>2015-03-15T20:09:16+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-05-28</loc>
-    <lastmod>2014-11-23T03:51:24+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/the-individual-project-page</loc>
+    <lastmod>2015-03-15T20:09:10+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-05-27</loc>
-    <lastmod>2014-11-23T03:51:41+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/estimated-incomes-and-talks-with-other-freelancers</loc>
+    <lastmod>2015-03-15T20:09:03+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-05-18</loc>
-    <lastmod>2014-11-23T03:50:14+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/statuses-to-lists-and-the-paid-beta</loc>
+    <lastmod>2015-03-15T20:08:17+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-05-06</loc>
-    <lastmod>2014-11-23T03:16:03+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/the-timeline</loc>
+    <lastmod>2015-03-15T20:08:10+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-05-05</loc>
-    <lastmod>2014-11-23T03:49:59+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/invoice-terminology</loc>
+    <lastmod>2015-03-15T20:08:03+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-05-01</loc>
-    <lastmod>2014-11-23T03:49:55+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/modal-forms</loc>
+    <lastmod>2015-03-15T20:07:56+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-04-28</loc>
-    <lastmod>2014-11-23T03:54:33+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/wiring-the-backend-to-the-frontend</loc>
+    <lastmod>2015-03-15T20:07:49+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-04-26</loc>
-    <lastmod>2014-11-23T03:50:31+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/balancing-design-and-dev</loc>
+    <lastmod>2015-03-15T20:07:43+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-04-23</loc>
-    <lastmod>2014-11-23T02:07:26+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/timecop-monocle-and-vagrant</loc>
+    <lastmod>2015-03-15T20:07:37+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-04-22</loc>
-    <lastmod>2014-11-23T02:06:18+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/going-with-ruby-and-sinatra</loc>
+    <lastmod>2015-03-15T20:07:30+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-04-20</loc>
-    <lastmod>2014-11-23T01:54:05+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/ditching-local-first-and-trying-out-nodejs</loc>
+    <lastmod>2015-03-15T20:07:23+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-04-18</loc>
-    <lastmod>2014-11-23T01:51:32+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/switching-to-angularjs</loc>
+    <lastmod>2015-03-15T20:07:15+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-04-16</loc>
-    <lastmod>2014-11-23T03:54:53+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/building-the-table-with-vuejs</loc>
+    <lastmod>2015-03-15T20:07:05+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-04-15</loc>
-    <lastmod>2014-11-23T01:49:06+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/clients-projects-and-invoices</loc>
+    <lastmod>2015-03-15T20:06:58+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://cushionapp.com/journal/2014-04-06</loc>
-    <lastmod>2014-11-23T01:46:38+00:00</lastmod>
+    <loc>http://cushionapp.com/journal/introduction</loc>
+    <lastmod>2015-03-15T20:06:48+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   

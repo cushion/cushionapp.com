@@ -1,10 +1,12 @@
+
+
 <!DOCTYPE html>
 <html>
   <head>
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 
-  <title>Cushion</title>
+  <title>Cushion - Newsletter</title>
 
   <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -15,7 +17,11 @@
   <link href='/assets/styles/screen.css' rel='stylesheet'>
   <link rel='alternate' type='application/rss+xml' title='RSS' href='/journal/feed.xml'>
 
-  <script>
+  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+
+  <link href='//cdn.symbolset.com/e371e33079d457f2b85f25516d31c92a439778b8/symbolset.css' rel='stylesheet'>
+
+<script>
   (function() {
   var config = {
   kitId: 'jpp2iwq',
@@ -34,167 +40,87 @@ window.analytics.page();
 </head>
 
 
-  <body>
-    <ul class='header-image-list'>
-      <li class='is-selected header-image-item' style='background-image: url(/assets/header-0.png)'></li>
-      <li class='header-image-item' style='background-image: url(/assets/header-1.png)'></li>
-      <li class='header-image-item' style='background-image: url(/assets/header-2.png)'></li>
-    </ul>
-    <script>
-      var images = document.querySelectorAll('.header-image-item');
-      var index = 0;
-      setInterval(function () {
-        if (index < 2) {
-          index++;
-        } else {
-          index = 0;
-        }
+  <body class='page'>
+    <header class='grid-container--wide page__header'>
+  <h1 class='page__logo'>
+    <a href='/'>Cushion</a>
+  </h1>
 
-        var currentImage = document.querySelector('.is-selected');
-        currentImage.className = currentImage.className.replace('is-selected', '');
+  <nav class='page-nav'>
+  <ul class='page-nav__list'>
+    
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
+      
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
 
-        images[index].className += ' is-selected';
-      }, 8000);
-    </script>
+</header>
 
-    <header class='header'>
-      <h1 class='logo'>
-        <a class='link' href='/'>Cushion</a>
-      </h1>
-      <h2 class='tagline'>Peace of mind for freelancers</h2>
 
-      <nav class='main-nav'>
-        <ul class='nav-list'>
-        
-          
-        
-          
-          <li class='nav-item'>
-            <a class='nav-link' href='/beta'>Beta</a>
-          </li>
-          
-        
-          
-          <li class='nav-item'>
-            <a class='nav-link' href='/journal'>Journal</a>
-          </li>
-          
-        
-          
-          <li class='nav-item'>
-            <a class='nav-link' href='/expenses'>Expenses</a>
-          </li>
-          
-        
-        </ul>
-      </nav>
-    </header>
-
-    <main class='main-content'>
-      <section class='copy-section section'>
-        <div class='copy'>
-          <p>Hi. My name is <a href="http://destroytoday.com">Jonnie</a> and I’ve spent the past year working on Cushion, an app for freelancers. I’m a freelance designer/dev myself and have always had trouble planning and managing the year. I constantly take on too much work and never think to take a break. It’s unhealthy.</p>
+    
+<main class='grid-container--narrow vertical-layout__outer page__main'>
+    <article class='vertical-layout__inner post'>
+      <h4 class='post__title'>Newsletter</h4>
+      <div class='center post__body'>
+        <p>Hi. My name is <a href="http://destroytoday.com">Jonnie</a> and I’ve spent the past year working on Cushion, an app for freelancers. I’m a freelance designer/dev myself and have always had trouble planning and managing the year. I constantly take on too much work and never think to take a break. It’s unhealthy.</p>
 
 <p>I don’t need a complex accounting app or another time-tracker—just a tool to provide better insight and bring a calm to the everyday rollercoaster ride that is freelancing. That’s why I built Cushion.</p>
 
 <p>Here are a few of my favorite features:</p>
 
-        </div>
-      </section>
+      </div>
+    </article>
+</main>
 
-      <section class='odd feature-section section'>
-        <div class='subsection'>
-          <div class='subsection-image' style='height: 172px; background-image: url(/assets/feature1.png)'></div>
-        </div><div class='subsection'>
-          <div class='copy'>
-            <h3>Project &amp; Invoice Tracking</h3>
 
-<p>See which projects are in the pipeline and which invoices haven’t been paid yet.</p>
-
-          </div>
-        </div>
-      </section>
-
-      <section class='feature-section section'>
-        <div class='subsection'>
-          <div class='copy'>
-            <h3>Client Tendencies</h3>
-
-<p>Keep tabs on clients by tracking their average delay and drag times. Know their <em>real</em> net.</p>
-
-          </div>
-        </div><div class='subsection'>
-          <div class='subsection-image' style='height: 180px; background-image: url(/assets/feature2.png)'></div>
-        </div>
-      </section>
-
-      <section class='odd feature-section section'>
-        <div class='subsection'>
-          <div class='subsection-image' style='height: 166px; background-image: url(/assets/feature3.png)'></div>
-        </div><div class='subsection'>
-          <div class='copy'>
-            <h3>Financial Goals</h3>
-
-<p>Separate what you <em>need</em> to make from what you <em>want</em> to make.</p>
-
-          </div>
-        </div>
-      </section>
-
-      <section class='timeline-section section'>
-        <div class='copy'>
-          <p>Cushion is currently in the middle of a paid beta. Beta users can pay upfront for early access, influence on the feature roadmap, and good karma, which helps me out with early development and server costs. If you are interested in participating and supporting Cushion, you can learn more <a href="/beta">here</a>.</p>
-
-        </div>
-
-        <div class='timeline-image'></div>
-      </section>
-
-      <section class='odd journal-section section'>
-        <div class='subsection'>
-          <a class='subsection-image' href='/journal/everything-in-increments' style='height: 200px; background-image: url(/assets/restructuring-project-page.png)'></a>
-        </div><div class='subsection'>
-          <div class='copy'>
-            <p>While building Cushion, I’ve also been keeping a <a href="/journal">process journal</a> to document my thoughts, struggles, and decisions. The most recent post is about <a href="/journal/2014-12-10">restructuring the project page</a>.</p>
-
-          </div>
-        </div>
-      </section>
-
-      <section class='newsletter-section section'>
-        <div class='copy'>
-          <p>If you want to stay up-to-date with Cushion, sign up below to be notified of updates and follow <a href="http://twitter.com/cushionapp">@cushionapp</a> on Twitter.</p>
-
-<p>If you want to participate in the paid beta, you can learn more <a href="/beta">here</a>.</p>
-
-        </div>
-
-        <form class='subscribe-form form' action="//cushionapp.us9.list-manage.com/subscribe/post?u=313d794b00e529c8199ff32e2&amp;id=9f4ec10ac5" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-          <input name='EMAIL' class='text-input' type='email' placeholder='you@yourwebsite.com' required>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_313d794b00e529c8199ff32e2_9f4ec10ac5" tabindex="-1" value=""></div>
-          <button id='submit' class='button' type='submit'>subscribe</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class='footer'>
+    <footer class='grid-container--wide page__footer'>
+      <nav class='page-nav'>
+  <ul class='page-nav__list'>
+    
       
-        
+    
       
-        
-          <a class='footer-link' href='/beta'>Beta</a>
-        
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
       
-        
-          <a class='footer-link' href='/journal'>Journal</a>
-        
+    
       
-        
-          <a class='footer-link' href='/expenses'>Expenses</a>
-        
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
       
-      <a class='footer-link' href='https://beta.cushionapp.com/login'>Sign in</a>
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
+
     </footer>
+
+    
   </body>
 </html>
+

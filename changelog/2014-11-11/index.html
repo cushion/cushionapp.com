@@ -6,7 +6,7 @@
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 
-  <title>Cushion</title>
+  <title>Cushion - 2014-11-11</title>
 
   <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -17,7 +17,11 @@
   <link href='/assets/styles/screen.css' rel='stylesheet'>
   <link rel='alternate' type='application/rss+xml' title='RSS' href='/journal/feed.xml'>
 
-  <script>
+  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+
+  <link href='//cdn.symbolset.com/e371e33079d457f2b85f25516d31c92a439778b8/symbolset.css' rel='stylesheet'>
+
+<script>
   (function() {
   var config = {
   kitId: 'jpp2iwq',
@@ -36,63 +40,61 @@ window.analytics.page();
 </head>
 
 
-  <body>
+  <body class='page'>
+    <header class='grid-container--wide page__header'>
+  <h1 class='page__logo'>
+    <a href='/'>Cushion</a>
+  </h1>
+
+  <nav class='page-nav'>
+  <ul class='page-nav__list'>
     
-
-    <div class='wrapper'>
-      <header class='main-header'>
-        <h1 class='logo'>
-          <a class='link' href='/'>Cushion</a>
-        </h1>
-        <h2 class='tagline'>Peace of mind for freelancers</h2>
-
-        <nav class='main-nav'>
-          <ul class='nav-list'>
-          
-            
-          
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/beta'>Beta</a>
-            </li>
-            
-          
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/journal'>Journal</a>
-            </li>
-            
-          
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/expenses'>Expenses</a>
-            </li>
-            
-          
-          </ul>
-        </nav>
-      </header>
-
       
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
+      
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
+
+</header>
+
+
+    
 <main class='main-content'>
   
-  <article class='changelog-article article'>
-  <h3 class='article-title'>
-    <a href='/changelog/2014-11-11'>2014-11-11</a>
+  <article id='2014-11-11' class='changelog-post'>
+  <h3 class='changelog-post__date'>
+    <a href='/changelog/2014-11-11'>Nov 11, 2014</a>
   </h3>
-  <div class='article-copy'>
+  <div class='changelog-post__body'>
     
 
     
 
     
-    <section class='changelog-section'>
-      <h4 class='fixed-changelog-title changelog-title'>Fixed</h4>
+    <div class='changelog-post__list'>
+      <h4 class='changelog-post__subtitle--fixed changelog-post__subtitle'>Fixed</h4>
       <ul>
 <li>Fixed bug setting a timeline as default when updating other values</li>
 </ul>
 
-    </section>
+    </div>
     
   </div>
 </article>
@@ -100,10 +102,34 @@ window.analytics.page();
 </main>
 
 
-      <footer class='main-footer'>
-        Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
-      </footer>
-    </div>
+    <footer class='grid-container--wide page__footer'>
+      <nav class='page-nav'>
+  <ul class='page-nav__list'>
+    
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
+      
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
+
+    </footer>
 
     
   </body>

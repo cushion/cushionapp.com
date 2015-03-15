@@ -4,7 +4,7 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Wed, 11 Mar 2015 13:37:33 +0000</pubDate>
+    <pubDate>Sun, 15 Mar 2015 21:08:55 +0000</pubDate>
     
     <item>
       <title>Everything in Increments</title>
@@ -156,10 +156,10 @@
     
     <item>
       <title>Rewriting the Timeline</title>
-      <link>http://cushionapp.com/journal/2015-01-06</link>
+      <link>http://cushionapp.com/journal/rewriting-the-timeline</link>
       <pubDate>Tue, 06 Jan 2015 09:25:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2015-01-06</guid>
+      <guid>http://cushionapp.com/journal/rewriting-the-timeline</guid>
       <description>&lt;p&gt;Back in December, I went down the long list of to-dos for Cushion and thought I’d tackle one I’ve wanted for a while now—&lt;a href=&quot;/journal/2012-12-02/&quot;&gt;project blocks&lt;/a&gt;. I wrote about this before and laughably estimated a few days to finish it. Any dev knows estimates are meaningless and any guess would require multiplying the original estimate several times. &lt;/p&gt;
 
 &lt;p&gt;So here we are. It’s January and Cushion doesn’t have project blocks yet. I’m about halfway there because a few days in, I realized if I wanted to do this right, I would need to rewrite the schedule timeline. I originally wrote it for the budget, then made it work for scheduling, redesigned it a few times, added a few more elements, and rigged it to somehow work with invoices. I was left with a monster that looked nice, but felt like a long-running Jenga game. &lt;/p&gt;
@@ -190,10 +190,10 @@
     
     <item>
       <title>Restructuring the Individual Project Page</title>
-      <link>http://cushionapp.com/journal/2014-12-10</link>
+      <link>http://cushionapp.com/journal/restructuring-the-individual-project-page</link>
       <pubDate>Wed, 10 Dec 2014 09:22:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-12-10</guid>
+      <guid>http://cushionapp.com/journal/restructuring-the-individual-project-page</guid>
       <description>&lt;p&gt;In the &lt;a href=&quot;/journal/2012-12-02/&quot;&gt;last post&lt;/a&gt;, I wrote about the plan to introduce project blocks—a way to divide projects into smaller segments that could represent phases or show the varying intensity throughout a project. This plan assumed that all the groundwork had been done and I could just implement the feature. Not so fast.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/2014-10-10-old-project-page.png&quot; alt=&quot;2014-10-10-old-project-page&quot;&gt; &lt;/p&gt;
@@ -252,10 +252,10 @@
     
     <item>
       <title>Project Blocks</title>
-      <link>http://cushionapp.com/journal/2012-12-02</link>
+      <link>http://cushionapp.com/journal/project-blocks</link>
       <pubDate>Tue, 02 Dec 2014 10:32:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2012-12-02</guid>
+      <guid>http://cushionapp.com/journal/project-blocks</guid>
       <description>&lt;p&gt;I realized I’ve been writing after-the-fact lately—reviewing past work instead of talking through upcoming features I need to tackle. Today, I’m going to focus on what’s next for Cushion. &lt;/p&gt;
 
 &lt;p&gt;Up until now, Cushion has been very much an overview of the project schedule. You specify estimated start and end dates along with actual start and end dates, then Cushion draws it on the timeline and tells you more about the edges—whether the project was delayed or if it dragged on too long. But, what about the in-between? &lt;/p&gt;
@@ -272,10 +272,10 @@
     
     <item>
       <title>Redesigning the Homepage</title>
-      <link>http://cushionapp.com/journal/2014-11-20</link>
+      <link>http://cushionapp.com/journal/redesigning-the-homepage</link>
       <pubDate>Thu, 20 Nov 2014 09:39:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-11-20</guid>
+      <guid>http://cushionapp.com/journal/redesigning-the-homepage</guid>
       <description>&lt;p&gt;After about 7 months of working on Cushion, I realized I hadn’t updated the homepage since coming up with the idea for the app. It still included a sentence saying “I can’t wait to build this app.” This threw people off because they would see that without seeing any other progress and just assume that it hasn’t been built yet—in their eyes, I just launched that page. &lt;/p&gt;
 
 &lt;p&gt;This happens too often—I’m working non-stop on a project, living with it day after day, but completely unaware that maybe not everyone’s dialed in, looking over my shoulder. I assume they’ve seen every tweet and every blog post. This couldn’t be further from the truth. I still have close friends who don’t know I’m freelancing again, let alone working on Cushion.&lt;/p&gt;
@@ -322,10 +322,10 @@
     
     <item>
       <title>Multiple Timelines</title>
-      <link>http://cushionapp.com/journal/2014-11-11</link>
+      <link>http://cushionapp.com/journal/multiple-timelines</link>
       <pubDate>Tue, 11 Nov 2014 09:14:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-11-11</guid>
+      <guid>http://cushionapp.com/journal/multiple-timelines</guid>
       <description>&lt;p&gt;These past two weeks, I’ve been heads-down, working on an incredibly important feature for Cushion—support for multiple timelines. This feature was not only complex, but also time-sensitive, as beta users were already starting to plan for the next year. In building Cushion, I’ve been actively holding back on specific features that aren’t as prevalent as others. Sometimes these once-dormant features demand your attention much earlier than expected, resulting in a more stressful sprint to finish. This is why we have betas.&lt;/p&gt;
 
 &lt;p&gt;Multiple timelines is one feature I’ve especially been pushing off because of its complexity as well as its never-ending knot of decisions. I knew it would be tough from the start, but I didn’t think it would be this bad. The high-level issues I needed to tackle consisted of establishing a way to navigate between timelines and filtering the data to the selected timeline. This sounds pretty simple until you realize a few scenarios that make it anything but simple, like projects spanning multiple timelines. The deeper I descended into the depths of the feature, the more troubling scenarios I discovered.&lt;/p&gt;
@@ -430,10 +430,10 @@
     
     <item>
       <title>Archiving and Estimate Differences</title>
-      <link>http://cushionapp.com/journal/2014-10-29</link>
+      <link>http://cushionapp.com/journal/archiving-and-estimate-differences</link>
       <pubDate>Wed, 29 Oct 2014 11:40:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-10-29</guid>
+      <guid>http://cushionapp.com/journal/archiving-and-estimate-differences</guid>
       <description>&lt;p&gt;This past week, I added two big features. Not big in the sense of workload or scale, but big in terms of value. Both are incredibly useful and have personally made Cushion feel like a more serious contender.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/2014-10-29-archive.png&quot; alt=&quot;2014-10-29-archive&quot;&gt; &lt;/p&gt;
@@ -460,10 +460,10 @@
     
     <item>
       <title>Multiple Financial Goals</title>
-      <link>http://cushionapp.com/journal/2014-10-21</link>
+      <link>http://cushionapp.com/journal/multiple-financial-goals</link>
       <pubDate>Tue, 21 Oct 2014 21:38:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/2014-10-21</guid>
+      <guid>http://cushionapp.com/journal/multiple-financial-goals</guid>
       <description>&lt;p&gt;&lt;img src=&quot;/assets/2014-10-21-goals.png&quot; alt=&quot;2014-10-21-goals&quot;&gt; &lt;/p&gt;
 
 &lt;p&gt;A few weeks ago, a beta user suggested the idea of multiple financial goals for the budget timeline. At the time, there was only one goal in Cushion, which made it somewhat difficult to picture the year. Do I set the goal to what I need to make or what I want to make?—these are two very different goals. Because of this constant confusion, I replaced the single goal with three—minimum, target, and stretch.&lt;/p&gt;

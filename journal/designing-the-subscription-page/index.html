@@ -1,12 +1,14 @@
 
 
+
+
 <!DOCTYPE html>
 <html>
   <head>
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 
-  <title>Cushion</title>
+  <title>Cushion - Designing the Subscription Page</title>
 
   <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -17,7 +19,11 @@
   <link href='/assets/styles/screen.css' rel='stylesheet'>
   <link rel='alternate' type='application/rss+xml' title='RSS' href='/journal/feed.xml'>
 
-  <script>
+  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+
+  <link href='//cdn.symbolset.com/e371e33079d457f2b85f25516d31c92a439778b8/symbolset.css' rel='stylesheet'>
+
+<script>
   (function() {
   var config = {
   kitId: 'jpp2iwq',
@@ -36,50 +42,52 @@ window.analytics.page();
 </head>
 
 
-  <body>
+  <body class='page'>
+    <header class='grid-container--wide page__header'>
+  <h1 class='page__logo'>
+    <a href='/'>Cushion</a>
+  </h1>
+
+  <nav class='page-nav'>
+  <ul class='page-nav__list'>
     
-
-    <div class='wrapper'>
-      <header class='main-header'>
-        <h1 class='logo'>
-          <a class='link' href='/'>Cushion</a>
-        </h1>
-        <h2 class='tagline'>Peace of mind for freelancers</h2>
-
-        <nav class='main-nav'>
-          <ul class='nav-list'>
-          
-            
-          
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/beta'>Beta</a>
-            </li>
-            
-          
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/journal'>Journal</a>
-            </li>
-            
-          
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/expenses'>Expenses</a>
-            </li>
-            
-          
-          </ul>
-        </nav>
-      </header>
-
       
-<main class='main-content'>
-  <article class='journal-article article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/designing-the-subscription-page'>Designing the Subscription Page</a>
-    </h3>
-    <div class='article-copy'>
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
+      
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
+
+</header>
+
+
+    
+<main class='grid-container--narrow'>
+  <article class='post'>
+    <header class='post__header'>
+      <h3 class='post__title'>
+        <a href='/journal/designing-the-subscription-page'>Designing the Subscription Page</a>
+      </h3>
+      <time class='post__date' datetime='2015-01-30 09:26:00 -0500'>Jan 30, 2015</time>
+    </header>
+
+    <div class='post__body'>
       <p>After months of thinking about “killer features”, I arrived at the realization that there were still a few launch prerequisites I hadn’t finished, or even started. Here I was, thinking up feature after feature, expecting to launch soon, but I still didn’t have a subscription system in place, a way of downloading your data, or the ability to delete your account. </p>
 
 <p>The paid beta runs on Stripe Checkout, using a one-time charge per user, which buys me exactly six months starting from the first user. Based on my past experience, I knew that time would dwindle and the expiration date would creep up faster than I would anticipate. I had to drop everything and focus on subscriptions.</p>
@@ -153,16 +161,216 @@ window.analytics.page();
 <p>On a side note, I still have a few more spots in the paid beta. If you’re interested in participating, <a href="/beta">request an invite</a> and I’ll send one your way.</p>
 
     </div>
+
+    <div class='post__alert'>
+      <div class='alert'>
+        <p>For more updates, follow @<a href="https://twitter.com/cushionapp">cushionapp</a> on Twitter.</p>
+
+      </div>
+    </div>
   </article>
+
+  <section>
+    <h3 class='page__title'>Archive</h3>
+
+    <ul class='post-list'>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/everything-in-increments'>Everything in Increments</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/deleting-your-account'>Deleting Your Account</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class='link--strike link--hover-border' href='/journal/designing-the-subscription-page'>Designing the Subscription Page</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/rewriting-the-timeline'>Rewriting the Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/restructuring-the-individual-project-page'>Restructuring the Individual Project Page</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/project-blocks'>Project Blocks</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/redesigning-the-homepage'>Redesigning the Homepage</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/multiple-timelines'>Multiple Timelines</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/archiving-and-estimate-differences'>Archiving and Estimate Differences</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/multiple-financial-goals'>Multiple Financial Goals</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/zooming-in-on-the-timeline'>Zooming in on the Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/currency'>Currency</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/preferences-accounts-and-atypefacechange'>Preferences, Accounts, and a Typeface Change</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/sending-out-the-first-email'>Sending Out the First Email</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/currency-inputs-notifications-and-invoice-nets'>Currency Inputs, Notifications, and Invoice Nets</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/dots-and-lines'>Dots and Lines</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/calculating-in-the-database-and-revealing-tendencies'>Calculating in the Database and Revealing Tendencies</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/improved-form-ux'>Improved Form UX</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/cushion-is-online'>Cushion is Online</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/schedule-timeline-patterns'>Schedule Timeline Patterns</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/a-slimmer-schedule-timeline'>A Slimmer Schedule Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/the-schedule-timeline'>The Schedule Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/plugging-in-real-data-for-the-first-time'>Plugging in Real Data for the First Time</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/transitions-and-project-lists'>Transitions and Project Lists</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/death-to-modals'>Death to Modals</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/the-individual-project-page'>The Individual Project Page</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/estimated-incomes-and-talks-with-other-freelancers'>Estimated Incomes and Talks with Other Freelancers</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/statuses-to-lists-and-the-paid-beta'>Statuses to Lists and the Paid Beta</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/the-timeline'>The Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/invoice-terminology'>Invoice Terminology</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/modal-forms'>Modal Forms</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/wiring-the-backend-to-the-frontend'>Wiring the Backend to the Frontend</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/balancing-design-and-dev'>Balancing Design and Dev</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/timecop-monocle-and-vagrant'>Timecop, Monocle, and Vagrant</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/going-with-ruby-and-sinatra'>Going with Ruby and Sinatra</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/ditching-local-first-and-trying-out-nodejs'>Ditching local-first and trying out Node.js</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/switching-to-angularjs'>Switching to AngularJS</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/building-the-table-with-vuejs'>Building the Table with Vue.js</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/clients-projects-and-invoices'>Clients, Projects, and Invoices</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/introduction'>Introduction</a>
+      </li>
+      
+    </ul>
+  </section>
 </main>
 
 
-      <footer class='main-footer'>
-        Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
-      </footer>
-    </div>
+    <footer class='grid-container--wide page__footer'>
+      <nav class='page-nav'>
+  <ul class='page-nav__list'>
+    
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
+      
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
+
+    </footer>
 
     
   </body>
 </html>
+
 

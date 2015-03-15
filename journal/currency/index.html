@@ -1,0 +1,322 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+
+  <title>Cushion - Currency</title>
+
+  <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+  <link rel='icon' type='image/png' href='/assets/images/favicon.png'>
+  <link rel='shortcut icon' type='image/png' href='/assets/images/favicon.png'>
+
+  <link href='/assets/styles/screen.css' rel='stylesheet'>
+  <link rel='alternate' type='application/rss+xml' title='RSS' href='/journal/feed.xml'>
+
+  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+
+  <link href='//cdn.symbolset.com/e371e33079d457f2b85f25516d31c92a439778b8/symbolset.css' rel='stylesheet'>
+
+<script>
+  (function() {
+  var config = {
+  kitId: 'jpp2iwq',
+  scriptTimeout: 3000
+  };
+  var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+  })();
+</script>
+
+  <script type="text/javascript">
+window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+window.analytics.load("lvwwqqgyp6");
+window.analytics.page();
+</script>
+
+</head>
+
+
+  <body class='page'>
+    <header class='grid-container--wide page__header'>
+  <h1 class='page__logo'>
+    <a href='/'>Cushion</a>
+  </h1>
+
+  <nav class='page-nav'>
+  <ul class='page-nav__list'>
+    
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
+      
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
+
+</header>
+
+
+    
+<main class='grid-container--narrow'>
+  <article class='post'>
+    <header class='post__header'>
+      <h3 class='post__title'>
+        <a href='/journal/currency'>Currency</a>
+      </h3>
+      <time class='post__date' datetime='2014-10-13 20:09:00 -0400'>Oct 13, 2014</time>
+    </header>
+
+    <div class='post__body'>
+      <p>Since I started building apps back in 2007, I’ve been keeping a list. This is a list of technical pitfalls to avoid when building a new app. Here are a few:</p>
+
+<ul>
+<li>timezones</li>
+<li>daylight saving time</li>
+<li>shoe sizes</li>
+</ul>
+
+<p>This list has grown over the years and I thought I was in the clear with Cushion until I discovered I needed multiple currencies. Currency! Normally, this wouldn’t be a problem, as it’s just a matter of formatting, but I quickly realized a much bigger problem—combining currencies.</p>
+
+<p>Looking ahead to integration with other services, I noticed that Harvest allows varying currencies per client <em>and</em> per invoice. Freshbooks only varies per client, but allows switching a client’s default currency for current and future invoices. With this in mind, along with Cushion’s interface, I’ll need to combine currencies both visually and in table form.</p>
+
+<p>The table side of combining currencies is the easier of the two. Instead of trying to calculate a total based on the exchange rate of whenever you received a specific invoice, you can simply show multiple totals per currency. It won’t look as good as a single total, but it’s a much better route than driving down the road to insanity via exchange rates.</p>
+
+<p>On the visual side, specifically the budget timeline, I’m in a bit of a pickle. These timelines are based on a financial goal the user sets in the beginning, which is of a single currency. This means that if I want to visualize a variety of currencies, I’ll need a goal per currency, which is not going to happen.</p>
+
+<p>I have a few ideas of how to get around this, but I’m getting ahead of myself. As a first step, I just need the ability to change the default currency per user. This is an easy one, so I’m happy to say it’s already done. I found a Ruby gem, called <a href="https://github.com/RubyMoney/money">Money</a>, that provides a thorough list of currencies, along with their symbols, symbol positions, thousand separator, and decimal separator. On the front-end, I can still use <a href="https://github.com/openexchangerates/accounting.js">Accounting.js</a>—all I need to do is provide the currency settings from the backend.</p>
+
+    </div>
+
+    <div class='post__alert'>
+      <div class='alert'>
+        <p>For more updates, follow @<a href="https://twitter.com/cushionapp">cushionapp</a> on Twitter.</p>
+
+      </div>
+    </div>
+  </article>
+
+  <section>
+    <h3 class='page__title'>Archive</h3>
+
+    <ul class='post-list'>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/everything-in-increments'>Everything in Increments</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/deleting-your-account'>Deleting Your Account</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/designing-the-subscription-page'>Designing the Subscription Page</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/rewriting-the-timeline'>Rewriting the Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/restructuring-the-individual-project-page'>Restructuring the Individual Project Page</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/project-blocks'>Project Blocks</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/redesigning-the-homepage'>Redesigning the Homepage</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/multiple-timelines'>Multiple Timelines</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/archiving-and-estimate-differences'>Archiving and Estimate Differences</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/multiple-financial-goals'>Multiple Financial Goals</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/zooming-in-on-the-timeline'>Zooming in on the Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class='link--strike link--hover-border' href='/journal/currency'>Currency</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/preferences-accounts-and-atypefacechange'>Preferences, Accounts, and a Typeface Change</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/sending-out-the-first-email'>Sending Out the First Email</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/currency-inputs-notifications-and-invoice-nets'>Currency Inputs, Notifications, and Invoice Nets</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/dots-and-lines'>Dots and Lines</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/calculating-in-the-database-and-revealing-tendencies'>Calculating in the Database and Revealing Tendencies</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/improved-form-ux'>Improved Form UX</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/cushion-is-online'>Cushion is Online</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/schedule-timeline-patterns'>Schedule Timeline Patterns</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/a-slimmer-schedule-timeline'>A Slimmer Schedule Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/the-schedule-timeline'>The Schedule Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/plugging-in-real-data-for-the-first-time'>Plugging in Real Data for the First Time</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/transitions-and-project-lists'>Transitions and Project Lists</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/death-to-modals'>Death to Modals</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/the-individual-project-page'>The Individual Project Page</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/estimated-incomes-and-talks-with-other-freelancers'>Estimated Incomes and Talks with Other Freelancers</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/statuses-to-lists-and-the-paid-beta'>Statuses to Lists and the Paid Beta</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/the-timeline'>The Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/invoice-terminology'>Invoice Terminology</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/modal-forms'>Modal Forms</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/wiring-the-backend-to-the-frontend'>Wiring the Backend to the Frontend</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/balancing-design-and-dev'>Balancing Design and Dev</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/timecop-monocle-and-vagrant'>Timecop, Monocle, and Vagrant</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/going-with-ruby-and-sinatra'>Going with Ruby and Sinatra</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/ditching-local-first-and-trying-out-nodejs'>Ditching local-first and trying out Node.js</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/switching-to-angularjs'>Switching to AngularJS</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/building-the-table-with-vuejs'>Building the Table with Vue.js</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/clients-projects-and-invoices'>Clients, Projects, and Invoices</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/introduction'>Introduction</a>
+      </li>
+      
+    </ul>
+  </section>
+</main>
+
+
+    <footer class='grid-container--wide page__footer'>
+      <nav class='page-nav'>
+  <ul class='page-nav__list'>
+    
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
+      
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
+
+    </footer>
+
+    
+  </body>
+</html>
+
+

@@ -1,12 +1,14 @@
 
 
+
+
 <!DOCTYPE html>
 <html>
   <head>
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 
-  <title>Cushion</title>
+  <title>Cushion - Journal</title>
 
   <meta name='description' content='Cushion is an app to provide better insight into your freelance life.'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -17,7 +19,11 @@
   <link href='/assets/styles/screen.css' rel='stylesheet'>
   <link rel='alternate' type='application/rss+xml' title='RSS' href='/journal/feed.xml'>
 
-  <script>
+  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+
+  <link href='//cdn.symbolset.com/e371e33079d457f2b85f25516d31c92a439778b8/symbolset.css' rel='stylesheet'>
+
+<script>
   (function() {
   var config = {
   kitId: 'jpp2iwq',
@@ -36,51 +42,52 @@ window.analytics.page();
 </head>
 
 
-  <body>
+  <body class='page'>
+    <header class='grid-container--wide page__header'>
+  <h1 class='page__logo'>
+    <a href='/'>Cushion</a>
+  </h1>
+
+  <nav class='page-nav'>
+  <ul class='page-nav__list'>
     
-
-    <div class='wrapper'>
-      <header class='main-header'>
-        <h1 class='logo'>
-          <a class='link' href='/'>Cushion</a>
-        </h1>
-        <h2 class='tagline'>Peace of mind for freelancers</h2>
-
-        <nav class='main-nav'>
-          <ul class='nav-list'>
-          
-            
-          
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/beta'>Beta</a>
-            </li>
-            
-          
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/journal'>Journal</a>
-            </li>
-            
-          
-            
-            <li class='nav-item'>
-              <a class='nav-link' href='/expenses'>Expenses</a>
-            </li>
-            
-          
-          </ul>
-        </nav>
-      </header>
-
       
-<main class='main-content'>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/everything-in-increments'>Everything in Increments</a>
-    </h3>
-    <div class='article-copy'>
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
+      
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
+
+</header>
+
+
+    
+<main class='grid-container--narrow'>
+  <article class='post'>
+    <header class='post__header'>
+      <h3 class='post__title'>
+        <a href='/journal/everything-in-increments'>Everything in Increments</a>
+      </h3>
+      <time class='post__date' datetime='2015-03-02 09:13:00 -0500'>Mar 02, 2015</time>
+    </header>
+
+    <div class='post__body'>
       <p>If you’ve built anything of scale before, you know that it’s best to build in increments. Even if you haven’t built anything, but rather attempted to accomplish an overwhelming task, you know how important it is to break larger problems into smaller, more manageable ones. This has been on the top of my mind lately because it’s how I’ve had to build Cushion, and every other app—releasing in small increments, but focused on the longterm goal.</p>
 
 <p>Specifically, incremental building has played an essential role in how I release Cushion to more people. I’ve been especially slow and steady with this, simply because I’m in no rush. I like to react while I’m still able to breathe—it allows me to respond conscientiously rather than hastily plugging leaks. I’ve been a part of a few proper launches in the past and I want to avoid the panic and scramble of opening the flood gates all at once. Here’s how I’ve been able to do that.</p>
@@ -108,1246 +115,216 @@ window.analytics.page();
 <p>As always, if you’re interested in trying out Cushion, this time as a beta user or a monthly subscriber, <a href="/beta">request an invite</a> and I’ll send one your way.</p>
 
     </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/deleting-your-account'>Deleting Your Account</a>
-    </h3>
-    <div class='article-copy'>
-      <p>This weekend, I wrapped up a “feature” that’s been at the top of my list for a while—deleting your account. It’s not an exciting feature, but certainly a necessity and one that’s very important to me. We owe it to our users to put them in complete control of their data. If they no longer want any of their data in your database, they should be able to easily delete it—not just abandon it.</p>
 
-<p><img src="/assets/2015-02-14-tweet.png" alt="2015-02-14-tweet"> </p>
+    <div class='post__alert'>
+      <div class='alert'>
+        <p>For more updates, follow @<a href="https://twitter.com/cushionapp">cushionapp</a> on Twitter.</p>
 
-<p>I recently <a href="https://twitter.com/destroytoday/status/563522803266502656">tweeted</a> about a few prerequisites I believe each app developer should build into their app before launching. I knew others felt the same, but I didn’t realize it would become my most favorited and most retweeted tweet. It’s a sign that people really care about these aspects of an app, even if they’re not the killer features one would spotlight on the product page. </p>
-
-<p>The ability to delete your account is especially important to me because I’ve come across so many web services that simply don’t allow it—even ones with millions of users and thousands of employees. There’s absolutely no excuse not to build support for it. In my eyes, it should be a legal requirement for anyone putting an app into the world. We’re so quick to build apps, scale them, and strive to reach exponential growth that we act like it’s a complete waste of time to spend two or three days building these features.</p>
-
-<p>In Cushion, I built the initial phase of a two-part plan for deleting your account. With the first beta accounts expiring soon, I needed the bare minimum in place, in case anyone wanted to call it quits. For beta users, this means simply deleting their data upon request. </p>
-
-<p><img src="/assets/2015-02-14-modal.gif" alt="2015-02-14-modal"> </p>
-
-<p>Within the app, the user would click a link to delete their account. This opens a modal with an explanation of what deletion entails, emphasizing the seriousness of the request—in case users simply want to cancel their subscription. The modal also suggests downloading a backup beforehand. </p>
-
-<p><img src="/assets/2015-02-14-github.png" alt="2015-02-14-github"> </p>
-
-<p>I followed Github’s model for confirmation by requiring users to type their email address to enable the delete button. With the past several apps I’ve built, I can’t tell you how many users “accidentally” deleted their account or deleted it assuming they could return a month later and just restore it. This also clarifies which account is being deleted, in case the user has more than one. I want the user to be fully aware that they are about to delete their account. </p>
-
-<p>Upon clicking the delete button, the user’s subscription is cancelled, if one exists, and their data is deleted. That’s phase one.</p>
-
-<p>The plan for phase two is to provide the most thorough experience for deleting an account, covering all angles of what may potentially happen next. In case the user forgets to download a backup, the user’s data will automatically be emailed to them upon deleting their account. If they ever attempt to log into their account again, they will find a list of downloadable receipts from Cushion charges. And, for the inevitable user wanting to restore their account shortly after deleting it, accounts will be put it in a queue to be deleted 30 days later after the request. Within those 30 days, a user can restore the account and be back to using it in no time.</p>
-
-<p>So far, I’m happy with the first step, but look forward to building the full package. It does feel strange investing this much time in the experience of someone leaving, but I refuse to skimp on any aspect of Cushion.</p>
-
-<p>The beta is still going strong, so if you’re interested in participating, even just to test out deleting your account, be sure to <a href="/beta">request an invite</a>.</p>
-
+      </div>
     </div>
   </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/designing-the-subscription-page'>Designing the Subscription Page</a>
-    </h3>
-    <div class='article-copy'>
-      <p>After months of thinking about “killer features”, I arrived at the realization that there were still a few launch prerequisites I hadn’t finished, or even started. Here I was, thinking up feature after feature, expecting to launch soon, but I still didn’t have a subscription system in place, a way of downloading your data, or the ability to delete your account. </p>
 
-<p>The paid beta runs on Stripe Checkout, using a one-time charge per user, which buys me exactly six months starting from the first user. Based on my past experience, I knew that time would dwindle and the expiration date would creep up faster than I would anticipate. I had to drop everything and focus on subscriptions.</p>
-
-<p>Since early on, I had a good idea of the direction I wanted to take with subscriptions. Instead of your typical 3-tier “solo, team, company”, I wanted to focus on the individual. I know I’m nowhere near even thinking about teams and beyond, so why even include them from the start? I do have a few small teams using the beta, and that works out really well with a single account holder, as long as they don’t need to do things like assign people to projects. For now, I’ll keep it simple.</p>
-
-<p>By starting with a single plan, I can break that into two options by providing a monthly option and then a discounted yearly option. You’d be surprised by how often a user would rather pay a little extra for the month-to-month flexibility, but then again, maybe it’s not surprising—think gym memberships. I’ve had one for close to a year, still paying more month-to-month, but that’s only because I didn’t know if I would continue to go for an entire year. Now that I continue to go on a consistent basis, I still prefer the flexibility of having a monthly plan.</p>
-
-<p>When it comes to web services or software, I always go for the yearly option because I know if I’ll use it or not from the trial and that 20% discount is tough to pass up on—especially when the cost isn’t that high. It’s usually only the services that range from $5-$50/month that offer the discounted annual plan, too. 10-20% off on a $100/year plan isn’t a big deal, but $100/month (or $1200/year) starts to add up. Or maybe they just know their audience—at a certain scale, the monthly flexibility provides more value.</p>
-
-<p>In any case, it was time to stop only thinking about the subscription page and start designing it. Like most things I design from scratch, I start with the whacky ideas, just to get them out of the way. I know I probably won’t go with most of them, but I know not to discredit anything without going through the motions—I’ve had too many good ideas spawn from horrible ideas. All you need is something to take you in a certain direction and you can end up nowhere near the original idea, but better off because of it.</p>
-
-<p><img src="/assets/2015-01-30-design-1.png" alt="2015-01-30-design-1"> </p>
-
-<p>I tend to roll my eyes when companies get cutesy with their name, but I thought I’d at least try pursuing “Cushion” beyond the concept of a financial cushion and more towards a pile of comfortable pillows. It was bad. </p>
-
-<p>The layout, the size of the type, and the icons—all bad. But that’s okay because this was my first shot with a blank canvas. It takes a bit to find a solid grounding. The goofiness of the icons made its way to the plan names, as well. Instead of saying “Monthly” and “Yearly”, I tried the playful angle, describing the user’s potential scenario.</p>
-
-<p><img src="/assets/2015-01-30-design-2.png" alt="2015-01-30-design-2"> </p>
-
-<p>From there, I moved to the expected 3-column layout with the middle one being emphasized. I also introduced a third plan for an idea I’ve had for a few years now—a service only available within a specific timeframe. The service was originally going to be for people who work on personal projects at night, but this seemed like an interesting option for full-time people who freelance at night.</p>
-
-<p><img src="/assets/2015-01-30-design-3.png" alt="2015-01-30-design-3"> </p>
-
-<p>I tried a few other variations of this layout, like reversing the fills&hellip;</p>
-
-<p><img src="/assets/2015-01-30-design-4.png" alt="2015-01-30-design-4"> </p>
-
-<p>&hellip;using outlines instead of solid fills&hellip;</p>
-
-<p><img src="/assets/2015-01-30-design-5.png" alt="2015-01-30-design-5"> </p>
-
-<p>&hellip;and introducing color. None of these were right. For one, the plans were just confusing—you really needed to read into them to see that they were actually monthly versus yearly. The icons were also too playful for Cushion and just&hellip;bad. I was too hung up on having a moon icon that I forced the other two. Also, it wasn’t clear that the middle icon is a “husband” cushion and the one on the right is a neck pillow. It’s like I’m trying to tell an inside joke to a group of strangers.</p>
-
-<p><img src="/assets/2015-01-30-design-6.png" alt="2015-01-30-design-6"> </p>
-
-<p>Next, I tried a two-column layout with the third “misfit” plan underneath. I also called the plans what they were, “Monthly” and “Yearly”, and removed the pillow icons. Immediately, it felt clearer, but still not right. The “Moonlighter” plan stood out too much for a plan that I didn’t want to emphasize. I was too hung up on how cool a “night” plan and that damn moon icon!</p>
-
-<p><img src="/assets/2015-01-30-design-7.png" alt="2015-01-30-design-7"> </p>
-
-<p>I also tried a variation of this design using yearly amounts for yearly plans. I thought this would be more upfront about the real cost of each plan, but it just made them more confusing. $10 vs $96 made it seem like the monthly plan was the discounted one.</p>
-
-<p><img src="/assets/2015-01-30-design-8.png" alt="2015-01-30-design-8"> </p>
-
-<p>Because the two-column layout would be too narrow in the context of the app’s subscription page, I decided to move back to the 3-column design. I kept the moon icon to see if I could somehow make it work and added the yearly price to the one-liner of the yearly plan.</p>
-
-<p><img src="/assets/2015-01-30-design-9.png" alt="2015-01-30-design-9"> </p>
-
-<p>The yellow of the moon on white didn’t work, so I tried the dark background again—still too much emphasis. It looks so cool, though!</p>
-
-<p><img src="/assets/2015-01-30-design-10.png" alt="2015-01-30-design-10"></p>
-
-<p>At this point, I took a step back and reminded myself that this first design is for within the app, under the subscription tab. I don’t need to be so heavy on the marketing side—it should just be an area to switch between subscriptions. Even though I think it’s a worthy concept, I decided to hold off on the “Moonlighter” plan for now. I need to work in increments rather than force all my ideas in at once. I swapped out the “Moonlighter” plan for the beta, since every user is a part of the beta. From there, they can upgrade or let the beta expire.</p>
-
-<p><img src="/assets/2015-01-30-design-11.png" alt="2015-01-30-design-11"> </p>
-
-<p>I also decided to add “ribbons” to selected plans, indicating when a plan’s subscription begins, renews, or ends. Whenever you’re dealing with payment-related parts of an app, it’s best to inform the user as much as possible about their current state. I want to do as much as I can to keep users from contacting support for questions that could easily be answered with a helpful UI, especially as a solo developer.</p>
-
-<div class='video-outer'>
-    <div class='video-inner' style='padding-bottom: 34%'>
-        <video width="100%" poster="/assets/2015-01-30-design.png" autoplay="autoplay" loop="loop" controls="controls" tabindex="0">
-            <source src="/assets/2015-01-30-design.mp4" type="video/mp4" />
-            <source src="/assets/2015-01-30-design.ogv" type="video/ogg" />
-            Video tag not supported. Download the video <a href="/assets/2015-01-30-design.mp4">here</a>.
-        </video>
-    </div>
-</div>
-
-<p>So, this is where I ended up. I’m really happy with the end result and glad I got the wackiness out of my head. The next step now, regarding subscriptions, is to design the public-facing plan page. This will need to be more than just a copy/paste job, as it has to include a list of features and FAQs, considering the potential user hasn’t used the app yet. That’s for another time, though.</p>
-
-<p>On a side note, I still have a few more spots in the paid beta. If you’re interested in participating, <a href="/beta">request an invite</a> and I’ll send one your way.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2015-01-06'>Rewriting the Timeline</a>
-    </h3>
-    <div class='article-copy'>
-      <p>Back in December, I went down the long list of to-dos for Cushion and thought I’d tackle one I’ve wanted for a while now—<a href="/journal/2012-12-02/">project blocks</a>. I wrote about this before and laughably estimated a few days to finish it. Any dev knows estimates are meaningless and any guess would require multiplying the original estimate several times. </p>
-
-<p>So here we are. It’s January and Cushion doesn’t have project blocks yet. I’m about halfway there because a few days in, I realized if I wanted to do this right, I would need to rewrite the schedule timeline. I originally wrote it for the budget, then made it work for scheduling, redesigned it a few times, added a few more elements, and rigged it to somehow work with invoices. I was left with a monster that looked nice, but felt like a long-running Jenga game. </p>
-
-<p>After hours of just staring at the screen, internally debating with myself, I knew rewriting the timeline was the only way. I started thinking about what the timeline even represented, now that I was months along with the beta. Does the name still make sense? Up until now, I considered anything in the top-half of Cushion to be “the timeline”—even the budget bar was a timeline to me, despite its lack of time.</p>
-
-<p><a href="/assets/2015-01-06-graph.png"><img src="/assets/2015-01-06-graph.png" alt="2015-01-06-graph"></a></p>
-
-<p>This wasn’t right. I took a step back and pretended for a moment that I haven’t been working on Cushion for almost a year now. I looked at the scheduling timeline and pieced it apart. What were its components, if one were to separate it into reusable parts? It has “ticks”, or axes, at the top and bottom, but so does the budget bar. So, then the ticks shouldn’t be considered part of the timeline. I would need to step back even further.</p>
-
-<p><a href="/assets/2015-01-06-timeline.png"><img src="/assets/2015-01-06-timeline.png" alt="2015-01-06-timeline"></a></p>
-
-<p>Remove the ticks, remove the container, and you have the timeline on its own. And, the budget bar without the ticks and container is just the bar. Both of these are just visuals that could stand on their own, but are even more useful when adding the grounding and labeling of the container and ticks. It’s almost like a graph&hellip; Wait, it is a graph! A graph has axes and visuals—so do the schedule timeline and budget bar. I can’t believe I didn’t see it this way at first, but once I did, everything came together.</p>
-
-<p><a href="/assets/2015-01-06-shapes.png"><img src="/assets/2015-01-06-shapes.png" alt="2015-01-06-shapes"></a></p>
-
-<p>Instead of giving meaning to everything in the timeline, like outlined dots for estimated dates and solid dots for actual dates, I would remove the context completely and treat it like a real graph. These dots are just dots with an x-position—nothing more. An outlined dot is a “weak” dot; a solid dot is a “strong” dot. The lines that were once named after their data, like duration, delay, drag, etc., are now just lines with an x-position and a length. The arrows that once represented the current date of an active project now have no idea they represent anything—they’re just arrows. </p>
-
-<p>The more I abstracted the timeline, the easier it became to write both the logic and the styling. Previously, I had tons of CSS classes, like <code>.estimated-start-dot</code> and <code>.remaining-duration-line</code>—many of which shared the same qualities, like both delayed projects and early invoices being a light line. Now I didn’t need to be that descriptive. As a result, the style code was reduced to a fraction of what is was before.</p>
-
-<p>Instead of bundling all the logic within the timeline, I pulled it all out and left the timeline with one job—draw. I would no longer feed it projects and invoices. I would just send it points. Then, outside the timeline, the real logic would live in factories and generate the points for the timeline. The timeline now has absolutely no concept of anything besides drawing shapes between two points and I can easily swap out the data I send it between clients, projects, and invoices. </p>
-
-<p>I know abstraction is programming 101, but when you start a project and rapidly develop it as the idea grows, it’s hard to predict where the project is going. It’s even harder to take time to step back and reassess everything. I got to the point where the only way to proceed without a constant headache would be to rewrite the timeline. </p>
-
-<p>Looking back, as soon as I decided I would need a second timeline for invoices, I should’ve stopped and realized I shouldn’t try to make the timeline do everything. It became too much and resulted in me unexpectedly losing a couple weeks of forward progress. On the bright side, I now have a solid system in place for future “graphs”. Schedule timelines and budget bars are just the beginning.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-12-10'>Restructuring the Individual Project Page</a>
-    </h3>
-    <div class='article-copy'>
-      <p>In the <a href="/journal/2012-12-02/">last post</a>, I wrote about the plan to introduce project blocks—a way to divide projects into smaller segments that could represent phases or show the varying intensity throughout a project. This plan assumed that all the groundwork had been done and I could just implement the feature. Not so fast.</p>
-
-<p><img src="/assets/2014-10-10-old-project-page.png" alt="2014-10-10-old-project-page"> </p>
-
-<p>As soon as I finished writing the post and started working on project blocks, I realized that Cushion would need considerable restructuring—specifically, on the individual project page. At the time, clicking a project link would take you directly to the form to edit the project. The project’s invoices were below the form and this always bothered me because I knew that if I ever added one more piece, this page would be too overwhelming to keep as one.</p>
-
-<p>The time had come. With project blocks, I had a new resource to consider, like invoices in the budget view. This association actually introduced a clear direction to take with restructuring. If the budgeting view has invoices, then the scheduling view could have blocks.</p>
-
-<p>Early on, I knew it would be useful to carry the budget/schedule views into individual pages, but the question of how to handle the form always remained the issue. Now that I had more useful information to display, like delay, drag, and estimate difference, I could easily populate a couple more pages and extract the form as its own page.</p>
-
-<p><img src="/assets/2014-10-10-edit-link.png" alt="2014-10-10-edit-link"> </p>
-
-<p>The structure was crystal clear. Clicking a project link would take you to the project, but maintain the view you are in—schedule or budget. Then, within either of those pages, you could click an “edit project” link, which would take you to the project’s edit page. Even though this is an extra click to edit the project, it’s apparent that the majority of users don’t edit a project much beyond marking it as finished.</p>
-
-<p>Now that I had the structure in place, what would I put in the scheduling and budgeting views? I had a good amount of data to choose from, but really needed to narrow it down. I didn’t want each page to become another overwhelming mess.</p>
-
-<p><img src="/assets/2014-10-10-budget-data.png" alt="2014-10-10-budget-data"> </p>
-
-<p>The budget view was easier because I had less data points to work with and they were all currency-based. I could leave the income estimate as-is because it has enough value on its own. For the invoice amounts, I already had the paid total and invoiced total below each invoice table, so an obvious higher-level piece of data would simply be a total of all the invoices. If the user needs to dig deeper, they can just scroll down to the tables.</p>
-
-<p>Lastly, I re-introduced the estimate difference. I previously had this on the projects page, but felt that it detracted from the summary feel—it was too detailed a value to show in a list of projects. With just one project to focus on, however, it’s perfect. This time, I wasn’t limited for room, so I maintained the currency format for the main estimate difference value and calculated its percentage as a less-emphasized value below it.</p>
-
-<p><img src="/assets/2014-10-10-budget-timeline.png" alt="2014-10-10-budget-timeline"> </p>
-
-<p>As for the budget timeline, I realized I could take this opportunity to provide much more value to the user by forgeting the financial goals of the current timeline. Instead, I could use the project’s estimate as the goal and fill up the bar with its individual invoices. This would allow the user to see a more segmented view of the income and click into each invoice if a change were needed. For the timeline labels, I use the invoice number. If one doesn’t exist, I fall back to its date—either the issued date for unpaid invoices or the paid date for paid invoices.</p>
-
-<p><img src="/assets/2014-10-10-budget-view.png" alt="2014-10-10-budget-view"> </p>
-
-<p>To wrap it all together, above is the final budget view.</p>
-
-<p><img src="/assets/2014-10-10-schedule-data.png" alt="2014-10-10-schedule-data"> </p>
-
-<p>The schedule view wasn’t nearly as easy to lay out, but I knew I had to at least show the delay, drag, and duration. That didn’t leave me with much room for more, so I took advantage of the scenarios when no data existed for these values. </p>
-
-<p><img src="/assets/2014-10-10-estimated-start.png" alt="2014-10-10-estimated-start"> </p>
-
-<p>If a project hasn’t started, its delay cannot be calculated, so I leave a dash in its place. Same goes for unfinished projects with drag and duration. Because a dash barely takes up any space, I know for sure I have enough room for an extra column.</p>
-
-<p><img src="/assets/2014-10-10-estimated-finish.png" alt="2014-10-10-estimated-finish"> </p>
-
-<p>The benefit of this extra column makes absolute sense, too—it’s not just a space to shove more data. Considering the column will only appear for unstarted or unfinished projects, I can show the estimated start date for unstarted projects and the estimated finish date for unfinished projects. If I’m waiting on a project to start, I want to know when it might start and if I’m in the thick of things with an existing project, I want to know when it’s expected to wrap up.</p>
-
-<p>With a small last touch, I took advantage of using a secondary value once again to show the date range of a finished project just below its duration. Now a user can look at one place on the screen and see when a project started, when it ended, and how long it took.</p>
-
-<p><img src="/assets/2014-10-10-schedule-timeline.png" alt="2014-10-10-schedule-timeline"> </p>
-
-<p>As for the schedule timeline, I wanted to show the entirety of the project, but knew the existing design would be humorously small on its own. Luckily, I’ve been working with EMs the whole time, so I was able to double the font size of the timeline and everything scaled perfectly. I also vertically aligned the project, since I knew I wouldn’t need to stack anything on top of it.</p>
-
-<p><img src="/assets/2014-10-10-blocks.png" alt="2014-10-10-blocks"> </p>
-
-<p>Above is the final schedule view along with the upcoming project blocks. I’m not 100% finished, but far enough along that I’m excited to show it off.</p>
-
-<p>If you’re still reading this and interested in participating in the Cushion beta, you can request an invite <a href="/beta">here</a>.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2012-12-02'>Project Blocks</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I realized I’ve been writing after-the-fact lately—reviewing past work instead of talking through upcoming features I need to tackle. Today, I’m going to focus on what’s next for Cushion. </p>
-
-<p>Up until now, Cushion has been very much an overview of the project schedule. You specify estimated start and end dates along with actual start and end dates, then Cushion draws it on the timeline and tells you more about the edges—whether the project was delayed or if it dragged on too long. But, what about the in-between? </p>
-
-<p>There are three things to look at. 1) What’s the intensity of the project?—is it 24/7 startup hours or only a few days a week? 2) Does the project have a consistent schedule or are there gaps where you’re waiting on the client? 3) Does the project go from start to finish or does it have phases? The problem with the current timeline lies in the latter half of these scenarios. The visuals lead you to believe that every project is full-time. </p>
-
-<p>This innaccuracy kills me, and it goes against one of Cushion’s underlying principles—don’t rely on the user to calculate. Too many services display data and leave it up to the user to find the valuable conclusions. With Cushion, I want the user to take one look and instantly experience that ah-ha moment.</p>
-
-<p>So, what’s my solution to all of this? I call them “Project Blocks”. Let’s say you create a new project. By default, this project starts with one block spanning the entire project. You can then add more blocks based on your situation. If you’re an illustrator, you can create several new blocks and label them “Sketches”, “Revisions”, and “Final”. If you’re a developer with gaps in the timeline between sprints, you can create blocks to indicate when you’re actually working.</p>
-
-<p>This idea has been in the back of my head for a few months now, so I’m really excited to dive into it. I’ll start on initial designs today and transition into dev before the week is out. If you have any thoughts of your own, I’d love to <a href="http://twitter.com/cushionapp">hear</a> them. And, if you’re interested in trying out project blocks before anyone else, <a href="/beta">sign up</a> for the beta.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-11-20'>Redesigning the Homepage</a>
-    </h3>
-    <div class='article-copy'>
-      <p>After about 7 months of working on Cushion, I realized I hadn’t updated the homepage since coming up with the idea for the app. It still included a sentence saying “I can’t wait to build this app.” This threw people off because they would see that without seeing any other progress and just assume that it hasn’t been built yet—in their eyes, I just launched that page. </p>
-
-<p>This happens too often—I’m working non-stop on a project, living with it day after day, but completely unaware that maybe not everyone’s dialed in, looking over my shoulder. I assume they’ve seen every tweet and every blog post. This couldn’t be further from the truth. I still have close friends who don’t know I’m freelancing again, let alone working on Cushion.</p>
-
-<p><img src="/assets/2014-11-20-homepage.png" alt="2014-11-20-homepage"> </p>
-
-<p>So, it was time. Instead of focusing all of my attention on the app, I needed to dedicate some time to the outward-facing side of Cushion. Since I still have much to do in the app, I gave myself a limit of one day to spend redesigning the homepage. Now that the app is in working condition, I wanted to get the point across that it’s usable—no longer just an idea or a half-baked, bug-ridden prototype. But, I didn’t want to ditch everything. </p>
-
-<p><img src="/assets/2014-11-20-intro.png" alt="2014-11-20-intro"> </p>
-
-<p>The paragraph describing my unhealthy lifestyle as a freelancer is strong. I’d much prefer someone to read that and relate to me on a personal level than replace it with some witty marketing lingo that makes Cushion just a product that appeared overnight. I pulled out a few of my favorite features and listed them underneath. After months of working on the app and speaking with others who use it, the features were obvious. </p>
-
-<p><img src="/assets/2014-11-20-tracking.png" alt="2014-11-20-tracking"> </p>
-
-<p>The first, project and invoice tracking, is the easy one. This needs to be a feature to even consider using the app. I wanted people to see it and immediately compare it to what they currently use—on a level of both design and functionality. The timeline should look great to them <em>and</em> introduce something that their current app doesn’t have, like an indication that a project has dragged on past its expected due date. This is a problem that all freelancers experience, but most apps don’t make a big deal of it.</p>
-
-<p><img src="/assets/2014-11-20-client-tendencies.png" alt="2014-11-20-client-tendencies"> </p>
-
-<p>Next, I brought up a feature that is incredibly useful, but not exactly glamorous—client tendencies. You can learn so much about your freelance life with the simplest data. Take invoices as an example. All you need is the issue date and paid date of an invoice to reveal your client’s real net. Sure, a client says they are net 45, but in actuality, they are net 63—this is a client of mine. I never thought it would be that far off if it weren’t for Cushion calculating the exact numbers. In my head, I would just think, “Yeah, I remember them paying late, but it’s probably not too bad.” 18 days late is enough to prevent you from paying your rent that month.</p>
-
-<p>Delay and drag are other client tendencies. When was the last time you had a project that started when it was supposed to or finished on the exact date as planned? The majority of my projects drag on at least a week. It’s not a problem because I get paid for my extra time, but when a projects drags <em>into</em> another project—that’s a problem. All of a sudden, I’m juggling two projects, one of which is probably at its peak because I’m wrapping up all those last-minute details. </p>
-
-<p>Every freelancer should know their clients’ tendencies, so they can be better prepared for unexpected scheduling conflicts and late paychecks. Maybe the data is strong enough that you wouldn’t take that project and find yourself in such a stressful situation.</p>
-
-<p><img src="/assets/2014-11-20-goals.png" alt="2014-11-20-goals"> </p>
-
-<p>The last feature I focused on is financial goals. When you’re working full-time, you have your salary and that’s that. As a freelaner, however, that number isn’t so matter-of-fact. You have what you absolutely need to make to pay your expenses, but beyond that, you can aim high or just enough to get by. When presented with a bar to fill, there’s extra incentive to fill that bar. Personally, with a month and a half to go in the year, I’m just shy of my target goal and it’s driving me insane. Without this bar, my position is either numbers on a spreadsheet or a general idea in my head. Seeing it visually gives me an instant idea of where I am, if I’m okay, and how close I am to that next goal.</p>
-
-<p><img src="/assets/2014-11-20-timeline.png" alt="2014-11-20-timeline"> </p>
-
-<p>Aside from features, two other areas of the app were really important for me to bring up this time—Cushion’s development timeline and this process journal. When your product is in beta, it’s easy to leave it at that with an open-ended schedule that’s just a blur. Some betas run a few months—others last more than a year. To avoid Cushion staying behind closed doors for too long, I wanted to show a timeline for others, but also for myself. Two months into this 6-month beta, I want it to be clear that we’re roughly halfway through. This tells both myself and others that Cushion will launch and that I have a specific plan for that—not just a seemingly never-ending beta.</p>
-
-<p><img src="/assets/2014-11-20-journal.png" alt="2014-11-20-journal"> </p>
-
-<p>With the process journal, I felt it needed to be more than just a link in the site’s navigation. It makes no sense that I would dedicate so much time to writing about the progress than making progress, then just hide it and hope that people find it. Speaking to the journal on the homepage also allows me to keep that section in rotation. Instead of the feature list, which is probably solidified for a few more months, I can update to show the latest post, like this one.</p>
-
-<p><img src="/assets/2014-11-20-newsletter.png" alt="2014-11-20-newsletter"> </p>
-
-<p>Lastly, I kept the newsletter sign up form, with an added link to the beta page. Shouting on Twitter is easy, but it’s much more effective to speak to those who actually signed up to hear more. I’ve been collecting emails of interested people for months now and after sending my first update email this past week, I realize just how valuable that list is. I love hearing from you and hope I’m doing an okay job of communicating.</p>
-
-<p><em>A big thanks to <a href="http://nicolefenton.com">Nicole Fenton</a> for editing the homepage and beta copy.</em></p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-11-11'>Multiple Timelines</a>
-    </h3>
-    <div class='article-copy'>
-      <p>These past two weeks, I’ve been heads-down, working on an incredibly important feature for Cushion—support for multiple timelines. This feature was not only complex, but also time-sensitive, as beta users were already starting to plan for the next year. In building Cushion, I’ve been actively holding back on specific features that aren’t as prevalent as others. Sometimes these once-dormant features demand your attention much earlier than expected, resulting in a more stressful sprint to finish. This is why we have betas.</p>
-
-<p>Multiple timelines is one feature I’ve especially been pushing off because of its complexity as well as its never-ending knot of decisions. I knew it would be tough from the start, but I didn’t think it would be this bad. The high-level issues I needed to tackle consisted of establishing a way to navigate between timelines and filtering the data to the selected timeline. This sounds pretty simple until you realize a few scenarios that make it anything but simple, like projects spanning multiple timelines. The deeper I descended into the depths of the feature, the more troubling scenarios I discovered.</p>
-
-<p>Instead of just glossing over them with a summary, I’d like to highlight as many as I can remember, including both the scenario and my solution.</p>
-
-<p><img src="/assets/2014-11-11-project-span-all.png" alt="2014-11-11-project-span-all"></p>
-
-<p><strong>Scenario:</strong> A project spans multiple timelines.<br>
-<strong>Solution:</strong> Include project in all timelines it spans.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-project-around.png" alt="2014-11-11-project-around"> </p>
-
-<p><strong>Scenario:</strong> A project starts before and finishes after a specific timeline.<br>
-<strong>Solution:</strong> Include project in that timeline.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-project-ongoing-estimated-finish.png" alt="2014-11-11-project-ongoing-estimated-finish"> </p>
-
-<p><strong>Scenario:</strong> A project is ongoing with an estimated finish date.<br>
-<strong>Solution:</strong> Include project in all timelines it spans, using the maximum of the current date and its estimated finish date as the end.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-project-no-end-in-sight.png" alt="2014-11-11-project-no-end-in-sight"> </p>
-
-<p><strong>Scenario:</strong> A project is ongoing with no estimated finish date.<br>
-<strong>Solution:</strong> Include project in all timelines it spans as well as all timelines beyond the current date.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-project-no-dates.png" alt="2014-11-11-project-no-dates"> </p>
-
-<p><strong>Scenario:</strong> A project has no estimated or actual start or finish dates.<br>
-<strong>Solution:</strong> Include project in timeline containing the current date.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-project-with-invoice.png" alt="2014-11-11-project-with-invoice"> </p>
-
-<p><strong>Scenario:</strong> A project finished in one timeline, but has an invoice in another timeline.<br>
-<strong>Solution:</strong> Include project in both timelines.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-invoice-issued-before-today.png" alt="2014-11-11-invoice-issued-before-today"> </p>
-
-<p><strong>Scenario:</strong> An unpaid invoice issued before current date timeline.<br>
-<strong>Solution:</strong> Include invoice only in current date timeline.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-invoice-issued-in-future.png" alt="2014-11-11-invoice-issued-in-future"> </p>
-
-<p><strong>Scenario:</strong> An unpaid invoice issued after current date timeline.<br>
-<strong>Solution:</strong> Include invoice only in timeline containing issue date.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-invoice-paid-before-today.png" alt="2014-11-11-invoice-paid-before-today"> </p>
-
-<p><strong>Scenario:</strong> A paid invoice issued in a previous timeline.<br>
-<strong>Solution:</strong> Include invoice only in timeline containing paid date.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-estimate-ongoing-no-estimated-finish.png" alt="2014-11-11-estimate-ongoing-no-estimated-finish"> </p>
-
-<p><strong>Scenario:</strong> The estimate of an ongoing project with no estimated finish date.<br>
-<strong>Solution:</strong> Include estimate in timeline containing current date and all future timelines.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-estimate-today-and-future.png" alt="2014-11-11-estimate-today-and-future"> </p>
-
-<p><strong>Scenario:</strong> The estimate of a project spanning multiple timelines.<br>
-<strong>Solution:</strong> Include estimate in timeline containing current date and any future timeline containing project.</p>
-
-<hr>
-
-<p><img src="/assets/2014-11-11-estimate-no-dates.png" alt="2014-11-11-estimate-no-dates"> </p>
-
-<p><strong>Scenario:</strong> The estimate of a project with no dates.<br>
-<strong>Solution:</strong> Include estimate in timeline containing current date.</p>
-
-<hr>
-
-<p>Phew. Now that we got those out of the way, the remaining problem exists in navigating these timelines. I wanted it to be dead-simple to switch between them. You should be able to quickly glance several years in the past and return to the current timeline just as easily. For months, I thought of reusing the current timeline tab for more than just indicating the current timeline. I even had dreams of the interaction—I just wondered if it would actually work out as planned.</p>
-
-<p><img src="/assets/2014-11-11-timeline-switch.gif" alt="2014-11-11-timeline-switch"> </p>
-
-<p>Luckily, it did. When you’re not in the scheduling or budgeting view, the current timeline tab simply navigates to your default view. Then, if you hover it, a down arrow appears below it, prompting another click that expands the timeline menu. From there, you can select a different timeline and quickly navigate to it. To switch back, simply use the menu again to select the current timeline.</p>
-
-<p>Selecing a timeline appends a parameter to the URL, indicating the timeline ID, which then grabs both the date range for the scheduling view and the financial goals for the budgeting view. Without the parameter, Cushion uses the default timeline, which can be set in the Timelines page. Typically, this will be the timeline that contains the current date.</p>
-
-<p>As you could imagine, this was a whirlwind feature to finish, and after two weeks, I’m so relieved to be able to check it off the list. Now that it’s finished, I plan to send out even more invites for the paid beta. If you’re interested, <a href="http://twitter.com/cushionapp">tweet me</a> with your email address.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-10-29'>Archiving and Estimate Differences</a>
-    </h3>
-    <div class='article-copy'>
-      <p>This past week, I added two big features. Not big in the sense of workload or scale, but big in terms of value. Both are incredibly useful and have personally made Cushion feel like a more serious contender.</p>
-
-<p><img src="/assets/2014-10-29-archive.png" alt="2014-10-29-archive"> </p>
-
-<p>The first is archiving. Previously, every client, project, and invoice you created would always remain present, regardless of whether it were still active in your day-to-day. Nearing the end of the year, that 1-day project you worked on in January would still appear aside your current projects. Now, you have the ability to archive items.</p>
-
-<p><img src="/assets/2014-10-29-archiving.gif" alt="2014-10-29-archiving"> </p>
-
-<p>Archiving does two things. In the table view, archiving allows you to toggle the visibility of any archived item using a switch in the top left. In project forms and invoice forms, archived items are filtered from the dropdown menus. With this, you no longer need to sift through <em>every</em> project when creating a new invoice.</p>
-
-<p><img src="/assets/2014-10-29-archived-by-client.png" alt="2014-10-29-archived-by-client"> </p>
-
-<p>Archiving also cascades. This means that if you archive a project, all of its invoices will be marked as archived, too. And, if you archive a client, all of its projects <em>and</em> invoices will be marked as archived. This is not only useful for old projects, but also for potential projects that are either on hold or so far away that you don’t need to think about them yet.</p>
-
-<p><img src="/assets/2014-10-29-gain-loss.png" alt="2014-10-29-gain-loss"> </p>
-
-<p>The second super useful feature is a new column in the budget view, called “gain/loss”. This column takes your projects’ estimates and compares them to your actual income for the projects, presenting it in an easy-to-read percentage. The percentage is then colored green for positive values and red for negative values. Even without reading the numbers, you’ll have an idea of how well you’re estimating.</p>
-
-<p>Just like income columns, the “gain/loss” column has a “sum” in the table footers. It’s not just a simple sum of each row’s percentage, but rather a comparison of your total estimates to your total income. If it’s in the red, you know you either need to better estimate your projects or bump up your rate. This column also exists in the client budget view, so you can see per-client how close or far off you were.</p>
-
-<p>I’m really excited about these new features as they add even more value to an app that has become indispensable to my workflow. Starting in November, I’m doubling the number of invites I send out for the paid beta this month, so if you’re interested in using Cushion early, <a href="http://twitter.com/cushionapp">let me know</a>.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-10-21'>Multiple Financial Goals</a>
-    </h3>
-    <div class='article-copy'>
-      <p><img src="/assets/2014-10-21-goals.png" alt="2014-10-21-goals"> </p>
-
-<p>A few weeks ago, a beta user suggested the idea of multiple financial goals for the budget timeline. At the time, there was only one goal in Cushion, which made it somewhat difficult to picture the year. Do I set the goal to what I need to make or what I want to make?—these are two very different goals. Because of this constant confusion, I replaced the single goal with three—minimum, target, and stretch.</p>
-
-<p>When considering your finances, it’s good to think of what you absolutely need to make to stay alive and pay the bills—your bare minimum. From there, you can aim for a higher target that allows you to do more than just survive, like go out to eat more often or take a cab instead of the subway. And, if you reach that target, you can then try for more, which might be enough to add a vacation to your year.</p>
-
-<p>These goals are important in the freelance life because there’s really no cap on how much you can make. Since you have no salary, you can decide how much you want to make beyond covering your expenses, granted the work is available. If you want to overload your schedule for a month in order to take a month off, you can do that. If you want to work consistently and make a killing, that’s cool, too.</p>
-
-<p>Personally, I don’t do a great job of aiming high. I tend to make enough to pay my minimum, then I invest the extra time in my personal projects. Recently, I’ve been investing any income over my minimum into buying more of my own time, as if I’m my own client. I’m betting on myself and my productivity. Maybe two weeks of full-time Cushion could amount to more than a two-week client gig. And maybe, with Cushion, I could reach my stretch goal all on my own.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-10-16'>Zooming in on the Timeline</a>
-    </h3>
-    <div class='article-copy'>
-      <p>In the early stages of building Cushion, everything was based upon a year-long timeline view. With one look, you could see a quick and easy-to-digest glimpse of your year. When are you next available? Where do you have pockets of time to fit another project? Wow—that project really took that long? After living with this scale for a while, I wondered what I could do with a more magnified view.</p>
-
-<p><img src="/assets/2014-10-16-timeline-data.png" alt="2014-10-16-timeline-data"> </p>
-
-<p>If we zoom in to a specific month on the timeline, we begin to give more meaning to the data. All of a sudden, a 4-day project that was just a blip on the year timeline expands to represent the true weight of those four full days. Zoomed out, it’s easy to see little difference between two lengths of time that are drastically different on the day-to-day scale, like 2 weeks versus 3 weeks, but in a month view, this is huge!</p>
-
-<p>I started to think of ways to actually zoom into the timeline. Of course, the line segments would scale horizontally, but does it really need to scale proportionally on the vertical end as well?—I don’t think so. In my eyes, it looks much better this way <em>and</em> maintains the same timeline height as the year view—allowing the same amount of information to be seen underneath without a jarring effect on the user.</p>
-
-<p><img src="/assets/2014-10-16-timeline-overflow.png" alt="2014-10-16-timeline-overflow"> </p>
-
-<p>When I first built the timeline view, I added a project that spanned two years and noticed a bug. With the way I coded the view, the knocked-out background of the timeline didn’t expand to account for the line segment. Instead, the line segment ran off the edge of the background, reaching the edge of the window. This wasn’t the intended behavior, but I immediately fell in love with it. The knocked-out background created a distinct boundary to the timeline, but didn’t hide any information beyond this boundary.</p>
-
-<p>Returning to the zoom, this undocumented feature became the perfect tie of consistency between the two scales. When you switch between month and year views, the boundary doesn’t move a pixel.</p>
-
-<p>The problem now was that the timeline labels for the year view, represented by months, needed to be replaced with days in order to be relevant to the new context. However, since I still wanted a dead-simple way to move from month to month, I didn’t want to get rid of the month labels. I went down a dark hole of bad designs, like a second row of labels that pushed the month labels down. It was a awful.</p>
-
-<p>Then, I considered the top of the timeline. At first, I discounted this idea because I just assumed it would clutter the UI. I gave it a shot, though. Sometimes, it’s important to explore directions that you would typically disregard just to say that you tried them. Surprisingly, this direction had legs. It wasn’t perfect at first, but I knew something was there if I just chiseled deep enough.</p>
-
-<p><a href="/assets/2014-10-16-timeline-month-view.png"><img src="/assets/2014-10-16-timeline-month-view.png" alt="2014-10-16-timeline-month-view"></a></p>
-
-<p>Instead of mimicking the same label design as the months, which represented spans of time, I centered the “tick” to point to the given day. And, because projects don’t factor time of day (yet), I centered the segment dots on each day block, rather than anchoring to an edge. Finally, to better separate each day, I added a slightly greyed background to the even days.</p>
-
-<p>Now, all of this would look great on its own, but the transition of switching between the views should look even better. Luckily, each spot I wanted to animate was as easy as adding a CSS3 transition. The line segments scale based on the number of days in the timeline to the number of days in the selected month, the month labels fade in and pan up from behind the timeline, and the even day backgrounds simply fade in.</p>
-
-<div class='video-outer'>
-    <div class='video-inner' style='padding-bottom: 34%'>
-        <video width="100%" poster="/assets/2014-10-16-timeline-zoom.png" autoplay="autoplay" loop="loop" controls="controls" tabindex="0">
-            <source src="/assets/2014-10-16-timeline-zoom.mp4" type="video/mp4" />
-            <source src="/assets/2014-10-16-timeline-zoom.ogv" type="video/ogg" />
-            Video tag not supported. Download the video <a href="/assets/2014-10-16-timeline-zoom.mp4">here</a>.
-        </video>
-    </div>
-</div>
-
-<p>Scaling the line segments was the trickiest part, not because of the resizing, but because of the origin point from where to resize. Everything in the timeline is positioned and scaled based on a percentage of its day in the timeline compared to the total days in the timeline. For example, February 1st on a year timeline is located at 8.767%. I chose this route because I wanted the timeline to be able to scale down properly, if Cushion were to be responsive. Fortunately, it made my life so much easier with timeline zooming, too. Instead of scaling each line segement individually, I just need to scale the entire timeline and pan.</p>
-
-<p>The origin point is crucial because if you scale the timeline while panning it and not centering the origin point, the timeline <em>appears</em> to pan before scaling. At first, I thought this was just a side effect of easing two attributes, but even when transitioned linearly, it didn’t look right. Luckily, centering the origin point was a non-issue, so everything came together in the end without needing to include JS for the animation.</p>
-
-<p>I couldn’t be happier with my first stab at timeline zooming. Not only because it turned out well, but also because it opens up the possibility of a few other features I want to implement. The first is simply an in-between view for zooming in on a quarter of the year. The other feature, however, is <em>much</em> more involved. I’ll save it for another post.</p>
-
-<p>If you’re interested in participating in the paid beta, send me your email on <a href="http://twitter.com/cushionapp">Twitter</a> and I’ll send you an invite.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-10-13'>Currency</a>
-    </h3>
-    <div class='article-copy'>
-      <p>Since I started building apps back in 2007, I’ve been keeping a list. This is a list of technical pitfalls to avoid when building a new app. Here are a few:</p>
-
-<ul>
-<li>timezones</li>
-<li>daylight saving time</li>
-<li>shoe sizes</li>
-</ul>
-
-<p>This list has grown over the years and I thought I was in the clear with Cushion until I discovered I needed multiple currencies. Currency! Normally, this wouldn’t be a problem, as it’s just a matter of formatting, but I quickly realized a much bigger problem—combining currencies.</p>
-
-<p>Looking ahead to integration with other services, I noticed that Harvest allows varying currencies per client <em>and</em> per invoice. Freshbooks only varies per client, but allows switching a client’s default currency for current and future invoices. With this in mind, along with Cushion’s interface, I’ll need to combine currencies both visually and in table form.</p>
-
-<p>The table side of combining currencies is the easier of the two. Instead of trying to calculate a total based on the exchange rate of whenever you received a specific invoice, you can simply show multiple totals per currency. It won’t look as good as a single total, but it’s a much better route than driving down the road to insanity via exchange rates.</p>
-
-<p>On the visual side, specifically the budget timeline, I’m in a bit of a pickle. These timelines are based on a financial goal the user sets in the beginning, which is of a single currency. This means that if I want to visualize a variety of currencies, I’ll need a goal per currency, which is not going to happen.</p>
-
-<p>I have a few ideas of how to get around this, but I’m getting ahead of myself. As a first step, I just need the ability to change the default currency per user. This is an easy one, so I’m happy to say it’s already done. I found a Ruby gem, called <a href="https://github.com/RubyMoney/money">Money</a>, that provides a thorough list of currencies, along with their symbols, symbol positions, thousand separator, and decimal separator. On the front-end, I can still use <a href="https://github.com/openexchangerates/accounting.js">Accounting.js</a>—all I need to do is provide the currency settings from the backend.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-09-26'>Preferences, Accounts, and a Typeface Change</a>
-    </h3>
-    <div class='article-copy'>
-      <p>These past couple weeks, I’ve been focusing on making Cushion feel like a legit app. To me, this entails adding all the little parts that can be easily skipped early on, like the ability to change your password. For a public app, these are essential, but in my eyes, you can go without them for a week or so when holding a private beta.</p>
-
-<p><a href="/assets/2014-09-26-preferences.png"><img src="/assets/2014-09-26-preferences.png" alt="2014-09-26-preferences"></a></p>
-
-<p>Alongside smoothing out the experience, I started building in convenience features, like preferences. Since getting Cushion in the hands of others, there has been an obvious need for certain defaults, so when a user fills out a form, they don’t find them setting the same value on the same field every single time. </p>
-
-<p>The most apparent of these fields was the invoice’s relative due date, or net. Most freelancers use the same net for every project and they all vary in generosity, from “net 30” to “due upon receipt”. Now, I have a preference for this field, so whenever the user creates a new invoice, the net is that value by default.</p>
-
-<p>With new additions, it’s good to hold back from implementing them until you have at least two examples to use. For example, I wouldn’t add a preferences section if I only had this one preference. That’s why I added two more—default tab and default view.</p>
-
-<p>For me, the projects section with the schedule view is the page I use the most, but this isn’t the case for everyone. If you’re less about scheduling and more about accounting, you might live in the invoices tab with the budget view. With these new default tab and view preferences, any time you switch from the account/preferences section of Cushion back to the timeline section, it will take you to your default.</p>
-
-<p><a href="/assets/2014-09-26-account.png"><img src="/assets/2014-09-26-account.png" alt="2014-09-26-account"></a></p>
-
-<p>Speaking of accounts and preference, I don’t think I ever mentioned this second side of Cushion. From the beginning, users have only had access to the timeline section, which consists of the client, project, and invoice tabs. Now that I’m adding all the necessary parts of a real app, I established a top level navigation for switching between the timeline section and the account/settings/whatever-you-want-to-call-it section. This navigation system works pretty well so far, allowing a new set of view level tabs for switching between account information and preferences. For now, these are the only two tabs, but eventually, we will have a few more for hooks and integrations—the fun stuff.</p>
-
-<p><img src="/assets/2014-09-26-update-notification.png" alt="2014-09-26-update-notification"> </p>
-
-<p>Tacking onto the legitamcy of Cushion, I built a dead-simple update notification alert for users to know when I deployed a new version. It slides in from the top, just like success notifications, but it’s blue and refreshes the page upon clicking it. The downside of a web app is that a user only sees what they loaded last. This means, if they haven’t refreshed the browser in weeks, which has happened with past apps I’ve worked on, they will be using an older, potentially incompatible version.</p>
-
-<p>I didn’t want to be wasteful and poll for changes. Instead, I decided to use a custom response header <code>X-App-Version</code> with each API response. This value is an environment variable that I set after deploying a new version. Because the app checks the difference upon receiving a new response, like switching views, we won’t experience any of the issues we’d see from something like refreshing upon a date change—the alerts are spread out more.</p>
-
-<p>I’ve been on a few betas that also use an update notification, but I noticed that they often forget to include what’s new. I get excited for updates, but then I need to spend a few minutes digging through the app, looking for changes. For Cushion, I created a new <a href="/changelog">changelog</a> page, which the alert links to. The changelog runs on the same static system that this journal runs on, so if I spot a typo, I don’t have to prompt the user of an update by deploying the change.</p>
-
-<p><img src="/assets/2014-09-26-font-table.png" alt="2014-09-26-font-table"> </p>
-
-<p>The last bit of progress I’ll cover in this post is the obvious font change. I’ve been keeping this in the back of my mind since the beginning, knowing I would need to eventually pick one other than Helvetica Neue. After literally hours of switching between several fonts and just staring at the screen, I decided to go with <a href="http://justanotherfoundry.com/facit">Facit</a> by <a href="http://justanotherfoundry.com/">Just Another Foundry</a>. The decision was tough, but in the end, I picked Facit for its personality, solidity, and beautiful italics.</p>
-
-<p><img src="/assets/2014-09-26-tooltip.png" alt="2014-09-26-tooltip"> </p>
-
-<p>The typeface has a very wide range of weights, which work incredibly well in Cushion’s interface. I’ve been able to find areas in Cushion that benefit greatly from a variance in thickness, like the timeline tooltips. Overall, I think like Facit gets me closer to that solid, reliable feel that I want users to experience when using the app.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-09-12'>Sending Out the First Email</a>
-    </h3>
-    <div class='article-copy'>
-      <p>These past couple weeks have been intense. Last weekend, I sent out the first batch of beta invites. I say “batch” for consistency moving forward, but it was only 10. I want to be deliberate with how I bring users into the app, considering Cushion is currently only me, so I’m intentionally starting small. For the first month, I’ll send out 10 invites a week. Then, based on how everything’s going, I’ll increase it to 20 or 30 a week.</p>
-
-<p>The plan is to onboard people gradually, instead of opening the floodgates. Ever since adding the email subscribe form, I’ve been able to attract 1,042 people interested in Cushion—either for their own personal use or out of pure interest in following along. In the weeks leading up to the beta, I sent out the first email:</p>
-
-<blockquote>
-<p>Howdy,</p>
-
-<p>A few months ago, you signed up to hear more about Cushion (<a href="http://cushionapp.com">http://cushionapp.com</a>), the app I&rsquo;m working on to bring peace of mind to freelancers. It&rsquo;s almost ready for beta testing, so I wanted to reach out and ask a favor. </p>
-
-<p>I created a <a href="https://cushionapp.typeform.com/to/mgayv7">short questionnaire</a> to learn more about the folks who would want to use it and get a show of hands for those interested in beta testing. It&rsquo;ll be super helpful for me and only take you a minute to fill out—I promise.</p>
-
-<p>-Jonnie</p>
-</blockquote>
-
-<p>I want all of the communication with users and potential users to feel like I’m talking directly to them in person, which is why I try to write like I talk. Years of receiving insincere emails from product companies has left me with one of the fastest trigger fingers for deleting emails. I’ve also tried to learn from their mistakes and avoid what turned me off.</p>
-
-<p>The first pet peeve is when companies collect an optional name along with the email address and fall back to an empty string. This results in “Hey there ,”. In most cases, it’s a dead giveaway that this is a mass email trying to feel personal with either the space before the comma or the person entering a lowercase name. There’s nothing wrong with a simple “Hi”, or even “Howdy”.</p>
-
-<p>Secondly, product teams are often so engrossed in their app that when they finally send the initial email, they forget that the majority of people haven’t lived with the app for the past six months. Most of them probably saw it mentioned somewhere, signed up to hear more, then forgot about it—especially if it has a nonsensical name beginning with a “Z”. Make use of the first sentence to remind everyone what they signed up for.</p>
-
-<p>Lastly, I know a survey is a big ask for anyone, so instead of just assuming they’ll fill it out like a form at the DMV, I emphasized its brevity along with its importance to me. Hopefully that would be enough to get a good turnout. So, how’d it do?</p>
-
-<ul>
-<li>The email went out to <strong>1,007</strong> people.</li>
-<li><strong>999</strong> of the emails were delivered <em>(99.21%)</em></li>
-<li><strong>730</strong> people clicked the link to the survey <em>(72.49%)</em></li>
-<li><strong>498</strong> people completed the survey <em>(49.45%)</em></li>
-<li><strong>8</strong> of the emails bounced <em>(0.79%)</em></li>
-<li><strong>12</strong> people unsubscribed <em>(1.2%)</em></li>
-</ul>
-
-<p>I never send out mass emails, so I don’t know if this is good, but considering I delete most of the ones I get, I’m pretty happy with the results.</p>
-
-<p>As for the <a href="https://cushionapp.typeform.com/to/mgayv7">survey</a>, it consisted of 10 questions:</p>
-
-<ul>
-<li>Are you a solo freelancer?</li>
-<li>If not, how many people are on your team?</li>
-<li>What kind of work do you do?</li>
-<li>What do you use for project management, time-tracking, and invoicing?</li>
-<li>How many projects do you work on each year?</li>
-<li>How many invoices do you send each year?</li>
-<li>How do you bill?</li>
-<li>Are you interested in the paid beta?</li>
-<li>Are you okay with manually entering your data?</li>
-<li>Seinfeld or Friends?</li>
-</ul>
-
-<p>The results were overwhelming in the best way possible. Since there were a handful of options for each question, you can view the full results <a href="https://cushionapp.typeform.com/report/mgayv7/aXGT">here</a>, but the gist is that the majority of potential users fit my exact description—solo freelancer, working on 6-15 projects a year, sending out 21-50 invoices a year. By designing Cushion to best fit my needs, I’ve been unknowingly targeting the demographic most-likely to use Cushion. This is huge for the initial plans of focusing on freelancers, but with a fair amount of small teams also showing interest, there’s an obvious direction of where to go next.</p>
-
-<p>This weekend, I plan to send out 10 more beta invites. If you want one sooner than later, <a href="mailto:jonnie@cushionapp.com">email me</a>.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-08-27'>Currency Inputs, Notifications, and Invoice Nets</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I’m so close. I spent this last week putting the finishing touches on Cushion. The majority of them surrounded small UX issues that would’ve definitely arisen out of the beta. I figured I’d rather tackle them now and have a more solid product going into the initial testing.</p>
-
-<p><img src="/assets/2014-08-27-income-input.gif" alt="2014-08-27-income-input"> </p>
-
-<p>The most overlooked UX issue involved the income input fields. Up until now, it was a simple number-based input. It would balk at any character other than a number (even commas and dollar signs) and there was no currency formatting. With a history of using awful currency-based input fields and pulling my hair out when it’s not perfect for the server, I decided to go out of my way to make this easy. Upon exiting the input field, it’ll run a validation function that strips out any character that doesn’t belong and then reformats it, inserting a dollar sign and any commas if we’re in the thousands. Also, if the amount includes cents, it will format that as well or leave it out if it’s an even dollar amount.</p>
-
-<p><img src="/assets/2014-08-27-success.gif" alt="2014-08-27-success"> </p>
-
-<p>Next, I realized I didn’t show any sort of success message to indicate that a project or invoice was created, updated, or deleted. I started to design a full-width banner that would appear in the form, but decided to take a step back. You should be able to see this message at all times. If you’re scrolled out of the view of the banner area, that doesn’t mean you should miss it. Also, upon creating a new project, you’re taken to the edit view, so this message should carry across views. Because of this, I opted to pin the message at the top. It slides in when needed, remains visible in all scroll positions, and slides out after a couple seconds.</p>
-
-<p><img src="/assets/2014-08-27-due-net.gif" alt="2014-08-27-due-net"> </p>
-
-<p>Lastly, I tackled the longest overdue feature—a net option for invoices. I attempted to start on this feature a dozen times, but always gave up after a while to direct my attention elsewhere. The tricky part was positioning the form elements, so it felt like a natural flow from the issue date to due date to paid date. If I placed the custom due date input below the dropdown, it would look completely off, but if that custom input was hidden until selected, it wouldn’t look half-bad. I took a tally for common invoice nets to use, including “upon receipt”, and added the final option for a specific date. Eventually, this will default to your net preference, so you will only need to change it if the client has their own net.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-08-19'>Dots and Lines</a>
-    </h3>
-    <div class='article-copy'>
-      <p>Progress on Cushion has been amazing this past week. I feel like I’m past the point of shaping with play-doh and now using a fine-tooth chisel. I spent the majority of the time cleaning up the app, adding all of the parts that you forego when quickly prototyping, like error messaging and loading indicators. Even though these additions aren’t glamorous, they smooth out the experience. This is no longer a prototype—it’s a real app.</p>
-
-<p>The second half of the week was more exciting. After speaking with a fellow studiomate about what’s important for the scheduling timeline, I realized the top priority should be clarity. And, up until this point, the scheduling timeline has been anything but clear. My mistake was trying to represent timeframes with bars.</p>
-
-<p><img src="/assets/2014-08-19-old-timeline.png" alt="2014-08-19-old-timeline"> </p>
-
-<p>First off, this makes no sense. With a bar, you <em>do</em> have a start and an end, but they tell you nothing besides the start and end. What if I want to know if the project is ongoing? On top of that, there’s next to no information in between. Down the line, I’m certain we’ll need room for milestones and, potentially, other symbols.</p>
-
-<p>All of a sudden, these bars started feeling like they represented a value other than time, especially when it came to invoices. An invoice that dragged on for months felt like a big-paying invoice. A project that spanned half the year but only required one day a week looked just like a full-time project. This lack of clarity became a real problem, to the point where I didn’t trust the visual. I had to spend a minute translating it before I could react and notice any valuable information.</p>
-
-<p>Right when I was ready to leave for the day, I decided to quickly try out an idea. I scrapped the bars and started fresh. I tried to imagine a scheduling timeline without any history of what I have designed so far. Since it pertains dates and timespans, it should use dots and lines.</p>
-
-<p><img src="/assets/2014-08-19-estimated-actual.png" alt="2014-08-19-estimated-actual"> </p>
-
-<p>The dots will represent the dates. For projects, this currently includes the estimated start/finish dates and actual start/finish dates. For invoices, the issue date, due date, and paid date. Estimated dates shouldn’t carry the same weight as the actual dates because they’re not confirmed, so any estimated dates will have a different style—an outlined circle. Then, any actual date will be a solid fill.</p>
-
-<p><img src="/assets/2014-08-19-hide-estimated.png" alt="2014-08-19-hide-estimated"> </p>
-
-<p>This felt like a lot of dots. Then I realized we could imply the existence of the estimated dates through the style of the line. If a project starts late, the line from the estimated start date to the actual start date should be a lighter version of the working line. That alone tells what we want to know, but then we can show the specific dates upon hovering the project. This way, we can establish an overall timeline UX of “hover to show more information”.</p>
-
-<p><img src="/assets/2014-08-19-future-project.png" alt="2014-08-19-future-project"> </p>
-
-<p>Hiding the estimated dates outside of hover also helps us when it comes to future projects. With no actual dates, these future projects are represented by only a light line—clearly showing that a project spans that timeframe, but it hasn’t been anchored with the weight of actual dates. Now there’s an obvious difference between a past project and a future project. But, what about current projects?</p>
-
-<p>With the previous bar design, we had no clear way of knowing which projects you were actively working on or which invoices were in the pipeline. I wanted to be able to look at the timeline and immediately know how many projects were active and which ones. With this new design, I introduced a new element—an arrow.</p>
-
-<p><img src="/assets/2014-08-19-active-project.png" alt="2014-08-19-active-project"> </p>
-
-<p>For any project or invoice that spans the current date, an arrow will appear on that line. If a project has started, the line up until that arrow will be solid to show that you’ve actively worked on it up until now. The line after the arrow will remain lighter to indicate that you haven’t worked through that time yet, but it can potentially span that far.</p>
-
-<p>An arrow was the first thing that came to mind as a way of showing activity and it worked right off the bat. I can clearly distinguish these projects from the others and I don’t need a label because it pointing in the direction of time is all we need to get the point across.</p>
-
-<p><img src="/assets/2014-08-19-dragged-project.png" alt="2014-08-19-dragged-project"> </p>
-
-<p>For projects that drag on, I reclaimed the hash pattern from the previous design. I still think it works with this new look as long as it’s the only place where we use a hash pattern. Also, like before, the pattern animates if an invoice is currently late. The movement is subtle enough to instill a sense of urgency, but won’t send you into panic mode.</p>
-
-<p>In the previous post, I touched on a new tooltip design for the scheduling timeline, showing more useful information than just a client/project label. With this new design, I decided to take it a step further and show even more. Since we’re now working with several new elements—dots, lines, and arrows—we could utilize all three of these to tell us more about projects and invoices.</p>
-
-<p><img src="/assets/2014-08-19-estimated-finish-tooltip.png" alt="2014-08-19-estimated-finish-tooltip"> </p>
-
-<p>For dots, show the date that it represents and reiterate whether it’s estimated or not. </p>
-
-<p><img src="/assets/2014-08-19-dragged-tooltip.png" alt="2014-08-19-dragged-tooltip"> </p>
-
-<p>For lines, indicate the duration of the line and what it represents—early, late, drag, active, etc. </p>
-
-<p><img src="/assets/2014-08-19-active-date-tooltip.png" alt="2014-08-19-active-date-tooltip"> </p>
-
-<p>And for arrows, simply show that a project or invoice is active as of the current date. These new details help in revealing the additional information you would want to know, but it also keeps us from needing an additional key to reference.</p>
-
-<p><img src="/assets/2014-08-19-new-timeline.png" alt="2014-08-19-new-timeline"> </p>
-
-<p>After using the new scheduling timeline design for the past few days, I feel so much more confident and on top of things. I honestly can’t believe I even considered the previous design in the first place, but at least I know I’m making progress.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-08-11'>Calculating in the Database and Revealing Tendencies</a>
-    </h3>
-    <div class='article-copy'>
-      <p>This last week, I focused primarily on the Cushion backend. In working locally on the app, I realized that it was becoming sluggish—especially on pages with a lot of content. I’ve been building this app with progress in mind, so I haven’t been as considerate as I should be. I query the database far too often and calculate the results in Ruby when it could all be done in the database. Because of this, performance issues are apparent.</p>
-
-<p>For example, a single request to retrieve a list of projects uses a single query for the projects, but then three additional queries for each project to grab the sum of its invoices. With my current personal data, this resulted in nearly 150 queries just to pull down my projects! Not good.</p>
-
-<p>I knew this would happen when I wrote the code because, at the time, I just needed it to work. I’m being a responsible dev and using test-driven development for the backend, so in order for the tests to pass, they just need the correct result. Now that I’m further along, however, I also need the code to perform well. Luckily, I can go back and fine-tune the code, knowing that my tests are in place to double-check that it still works.</p>
-
-<p>After getting up to speed with PostgreSQL, I realized just how much I could do in the database rather than in Ruby—apparently, much more than I imagined. I started by focusing on those invoices sums—paid income, unpaid income, and relative estimated income. The first two are straightforward—just paid invoices and unpaid invoices—but the last one is trickier.</p>
-
-<p>Every project has an estimated income, which is a ballpark amount that this project could potentially bring in. It’s not a guarantee that you’ll reach that amount, nor is it a guarantee that it will <em>only</em> bring in that amount. It’s just a figure to give you an idea. With this figure, however, we can do some interesting things, like seeing how close or far off you were.</p>
-
-<p>If we take the estimated income for a project and subtract the sum of its invoices, we can see the actual income relative to the estimated amount. As you’re working on the project, this can be useful for seeing how much is potentially remaining, if it’s capped-off at that amount. Or, if you’re working hourly without a cap, you  can see how much more you’ve made than originally anticipated. Hopefully, you fall in the latter end of this example.</p>
-
-<p><img src="/assets/2014-08-11-client-budget.png" alt="2014-08-11-client-budget"> </p>
-
-<p>I wrapped up projects and moved up the chain to clients. For clients, I have these sums of income as well, but on a wider scale, combining the sums of each client’s projects. This is useful in seeing which clients bring in the most (in case you need to spread out your income streams) and which clients owe you the most (revealing a red flag going forward).</p>
-
-<p>We also have a lot of data to play with in regards to scheduling. Since every project has both estimated and actual start dates and end dates, I’ve been able reveal projects that start late or drag on too long. This is useful enough on the project level, but if we take a step back and group the projects by client, we can learn a lot about client tendencies.</p>
-
-<p><img src="/assets/2014-08-11-client-schedule.png" alt="2014-08-11-client-schedule"> </p>
-
-<p>Now, instead of sums, we can calculate averages. The three main columns represent the average duration, delay and drag of clients. With them, we can expose a lot. If a client consistently feeds you only small scope projects, you can know with confidence whether you can fit them in an open slot in your schedule. On the cautionary side, we can use average delay and drag to question whether you should still work with this client or just account for the delay and drag when planning the next gig with them.</p>
-
-<p><img src="/assets/2014-08-11-tooltips.png" alt="2014-08-11-tooltips"> </p>
-
-<p>I also improved the schedule tooltip to provide written details of what you’re looking at rather than forcing you to do the math—you can now point to a specific segment of a bar and see what it represents. For clients and projects, these segments include the delay, drag, duration and estimated duration.</p>
-
-<p>Under invoices, using the dates assigned to each (issued, due, and paid), the segments represent how early an invoice was paid, how late an invoice was paid (more realistic), how long an invoice took to get paid, and how long until an invoice is due.</p>
-
-<p>With these new tooltips in place, I feel like I’m going in a really good direction—taking useful data and making it easily accessible. Being able to see the data in table form is easy, but I’d rather provide the ability to interact with data in context.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-07-29'>Improved Form UX</a>
-    </h3>
-    <div class='article-copy'>
-      <p>This past weekend, I focused on usability. My first stab on the layout of model forms was haphazard. While showing Cushion to a few people, I could see an obvious hesitation on where to start when creating a new project. All of a sudden, the user is presented with fields all over the place with no clear direction.</p>
-
-<p><a href="/assets/2014-07-29-new-form-layout.png"><img src="/assets/2014-07-29-new-form-layout.png" alt="2014-07-29-new-form-layout"></a></p>
-
-<p>Believe it or not, I had a dream about the new layout and it’s the one I’m going with. Instead of letting the sections rest aside each other and reflow when needed, I just stack them and separate with dividers. Now, the sections actually represent the different views of Cushion (schedule and budget) and there’s a clear flow from top to bottom. </p>
-
-<p>At first, I was worried there would be too much negative space in the smaller sections, like budget, but it doesn’t feel as bad—especially if I end up going with a budget range instead of a single value. Also, this layout allows me to potentially include mini visuals for each section that provides more context than just input fields. Imagine the budget section including the average budget for your projects or the average budget for the client of that project. All of a sudden, you have a better idea of where to start.</p>
-
-<p>Along with a revision of the layout, I’ve been working on improving the actual input fields. From the start, I chose HTML5’s native input types, thinking these would take care of a ton of extra work in the early stages. Unfortunately, some of the native input types, like <code>&lt;input type=&#39;date&#39;&gt;</code>, are cemented in ugly (can’t be styled) and don’t even work in common browsers like Safari.</p>
-
-<p><img src="/assets/2014-07-29-color-picker.png" alt="2014-07-29-color-picker"> </p>
-
-<p>The first input type I tackled was the color picker. I took a page from my buddies at <a href="http://friendsoftheweb.com/">Friends of the Web</a> with their <a href="http://dayswork.co">Dayswork</a> app and provided a simple popover of suggested colors. I <em>hate</em> color pickers on the web that mimic those in design tools like Photoshop—they assume everyone is a designer. With suggested colors, any one of them will look good, and in most cases, you won’t need to use it because your client already has an established color. Considering this, the color picker is more of an easy way to get started.</p>
-
-<p><img src="/assets/2014-07-29-date-picker.png" alt="2014-07-29-date-picker"></p>
-
-<p>Next, I addressed the date picker. For this, I wanted a design that is both useful and obvious to navigate—it should also have a couple Cushion-specific features that support the reasoning behind going custom. For instance, if the date is part of a range, the dates within the range should highlight to indicate that. Also, for validation purposes, you shouldn’t be able to pick a finish date that comes before the range’s start date.</p>
-
-<p><img src="/assets/2014-07-29-color-inheritance.png" alt="2014-07-29-color-inheritance"> </p>
-
-<p>In filling out the forms, I also realized how tedious the process felt. Because of this, I added value inheritance. Let’s say you create a new project, but it doesn’t necessarily call for a color other than its client’s. Before, you would need to re-enter your client’s color. Now, it defaults to using the client’s color unless specified otherwise. </p>
-
-<p><img src="/assets/2014-07-29-inline-client-inheritance.png" alt="2014-07-29-inline-client-inheritance"> </p>
-
-<p>This also works reversely for the inline client creation. If you create a new project and set its color, the inline client will inherit that color by default.</p>
-
-<p>Lastly, client and project symbols are now auto-generated with the ability to override them. This means if you create a new client named “Vandelay Industries”, its symbol will be “VI” by default, but you could overwrite it to something like “VanInd” if you want.</p>
-
-<p>These recent updates have me incredibly excited to get Cushion in the hands of others as soon as possible. I know most of them are unnecessary for an initial beta release, but I want this app to be a joy to use from the start.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-07-24'>Cushion is Online</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I’ve been contemplating not mentioning this just yet because I don’t want it to seem like I’m ready to launch the beta, but… Cushion is now online. This past weekend, after great pressure from my wife (also a freelancer), I decided to set up everything needed to get Cushion working on a server. </p>
-
-<p>I knew this would be a challenge, as it always is, but I wanted to get it out of the way early, so that everything I change from now on will need to work in production, avoiding any last-minute surprises. Also, it helps me establish a better process for updating the app, through the use of continuous integration and an asset pipeline that keeps compiled code outside of the dev branch.</p>
-
-<p>Along with all the deployment setup, I’ve integrated a few helpful services for performance metrics, exception tracking, and user analytics. As I progress with Cushion, I’ll rely on these services to fine-tune the app along the way. Everything is also wired to my personal Slack room, so I’m alerted of any issues as they happen. I want to get this app right from the start and this extra preparation will go a long way.</p>
-
-<p>Regarding the beta, I don’t have a definite date in mind, but it’s sooner than later. I have a short list of crucial items to tackle, then all of the payment and legal stuff. As a reminder, the beta is paid in order to support early development and encourage users to provide real feedback. I’ve been a part of far too many free betas that attract countless stagnant users because there’s no incentive or motivation to consistently test the app.</p>
-
-<p>If you’re interested in taking part in the beta, <a href="/">sign up</a> to be notified.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-07-21'>Schedule Timeline Patterns</a>
-    </h3>
-    <div class='article-copy'>
-      <p>After rethinking the project schedule timeline, I applied the same style to the invoice schedule timeline. With projects, we track the start and end dates to reveal if a project starts late or drags on too long. With invoices, we track when an invoice is paid compared to its due date.</p>
-
-<p>Looking at scheduling, invoices differ from projects in that invoices can’t start late—its “start date” is when you issue it, and I hope you wouldn’t be late in sending an invoice! From the issue date, however, we can track how long it takes for the client to pay, revealing if they are early or late.</p>
-
-<p><img src="/assets/2014-07-21-future-invoice.png" alt="2014-07-21-future-invoice"> </p>
-
-<p><img src="/assets/2014-07-21-into-invoice.png" alt="2014-07-21-into-invoice"> </p>
-
-<p>When you create an invoice, the bar is lightly hatched to indicate that window of time. As you progress into that window, the bar starts to fill solid up until the current date.</p>
-
-<p><img src="/assets/2014-07-21-early-invoice.png" alt="2014-07-21-early-invoice"> </p>
-
-<p>If an invoice is paid early (ha!), the bar is solid from the issue date to the pay date, but uses a very light hatching from the pay date to the due date. This way, you can easily see how early an invoice has been paid. Hopefully, your timeline will be full of invoices paid early.</p>
-
-<p><img src="/assets/2014-07-21-late-invoice.png" alt="2014-07-21-late-invoice"> </p>
-
-<p><img src="/assets/2014-07-21-still-late-invoice.gif" alt="2014-07-21-still-late-invoice"> </p>
-
-<p>On the other hand, the more common scenario, a client is late to pay. In this situation, if the invoice has been paid, the bar uses a thick hatching, identical to the one used on a project that dragged on. If, however, the client still hasn’t paid, the thick hatching will animate to emphasis that it is both late <em>and</em> unpaid.</p>
-
-<p>Before wrapping up, I should note that none of these patterns are set in stone. Now that I’m starting to take on client work again, I’m trying to move faster with Cushion, so these patterns are a start. I definitely plan to add a key to reference and fine-tune them after using it for a while.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-07-15'>A Slimmer Schedule Timeline</a>
-    </h3>
-    <div class='article-copy'>
-      <p>This past month, I’ve been traveling a whole lot, which explains the gap in journal posts. I did have a few pockets of time to work on Cushion, but not enough solid progress to justify a new post. Now that I’m back and settled, it’s time to go full speed ahead again.</p>
-
-<p>The main focus as of late is the scheduling side of the app. I’m bummed that I spent the majority of this time focusing on budgeting when scheduling is the more day-to-day view. If I went with scheduling first, I probably would’ve been able to ship a beta prior to adding budgeting. Oh well.</p>
-
-<p><img src="/assets/2014-07-15-old-schedule-timeline-design.png" alt="2014-07-15-old-schedule-timeline-design"> </p>
-
-<p>Leading up this post, the scheduling timeline consisted of thick bars labeled with the project name. With ideal data, this looked fine, but as soon as I plugged in my real freelancing data, I could tell this wouldn’t work. At one point I was working on five websites at once because of delayed start dates and delayed deadlines. As you could imagine, these thick bars stacked five-high took up half the screen and were difficult to read at a glance. With the real data, I went back to designing and came up with a thinner, more legible look.</p>
-
-<p><img src="/assets/2014-07-15-schedule-timeline-design.png" alt="2014-07-15-schedule-timeline-design"></p>
-
-<p>Aside from the thickness change, I also had to completely rethink the indicator of delay (project starting late) and drag (project finishing late). In the first design, both were signified with the same look—a lighter fill of the project color. This looked fine if a project started late or dragged on too long, but if it did both, the bar became very confusing.</p>
-
-<p><img src="/assets/2014-07-15-schedule-bar.png" alt="2014-07-15-schedule-bar"> </p>
-
-<p>I decided to use hatching, instead of transparency, to fix the problem. Since a delay means you’re not working on a project yet, a lighter hatching would make the delayed piece of the bar feel slightly removed from the solid, but still a part of it. With drag meaning you’re actively working on the project past its deadline, a heavier hatching would made it feel closer to the solid—the time in which you’re actively working within the estimated dates.</p>
-
-<p>With this new design in place, the scheduling timeline is now legible at a glance, even using my real data. It’s been so helpful in preparation of my return to client work, telling me everything I need to know about the upcoming months and assuring me that I have a handle on future projects.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-06-15'>The Schedule Timeline</a>
-    </h3>
-    <div class='article-copy'>
-      <p>After a ton of work on the budgeting side of Cushion, I decided to step back and focus on scheduling. I met with a few more fellow freelancers and the verdict seems to be that scheduling is a day-to-day activity, whereas budgeting is done less often—maybe week-to-week. If this is the case, I definitely want to have scheduling from day one, so everyone could get some frequent use out of Cushion. A weekly-used app won’t cut it.</p>
-
-<p><img src="/assets/2014-06-15-schedule-tabs.png" alt="2014-06-15-schedule-tabs"> </p>
-
-<p>The navigation for switching between the scheduling and budgeting views stumped me for a few days. With the model tabs as an established navigation on the app, I didn’t want to add anything that would compete too much. I decided to scrap the Cushion title in the top-left for now. With UI real estate becoming a premium in this app, that spot is much better suited for the view switcher—it also allows more views in the future.</p>
-
-<p>Along with the positioning of the view tabs, I had difficulty deciding on a URL structure, since this completely flips the current one on its head. With these two views, essentially every page will have two pages—one for scheduling and one for budgeting. If you look at a project page, instead of <code>/projects/:id</code>, it would be <code>/projects/:id/schedule</code> or <code>/projects/:id/budget</code>. This makes complete sense, but for some reason, it didn’t seem like the clear answer at first. I started thinking of what <code>/projects/new</code> would be, since it currently shows the budgeting timeline. Would it now show both scheduling and budgeting, or neither?</p>
-
-<p><img src="/assets/2014-06-15-schedule-coded-vs-mockup.png" alt="2014-06-15-schedule-coded-vs-mockup"> </p>
-
-<p>The scheduling timeline layout has been designed from the start of the app, but now that I needed to code it, a new challenge arose. Positioning a bunch of rectangles in a mockup is easy—the positioning logic is executed by the designer. With code, the simplest layout could come with a few hurdles of its own. For the scheduling timeline, all projects should rest on the baseline if they fit. If a project overlaps another project, it should rest above it.</p>
-
-<p><a href="/assets/2014-06-15-schedule-timeline.png"><img src="/assets/2014-06-15-schedule-timeline.png" alt="2014-06-15-schedule-timeline"></a></p>
-
-<p>Unfortunately, this can’t be done solely with CSS, like the budgeting timeline. After a few searches describing the layout I was after, I found a <a href="http://bl.ocks.org/bunkat/1962173">chart</a> that depicted the basic idea. It’s called a “swim lane” and is often used in flow charts. Once I saw the code required, I realized that this layout is actually pretty simple. Since I have start and finish dates for each project, I can just check for overlaps with those dates—no need for hit-detection. If a project’s finish date comes after another project’s start date, but its start date comes before that project’s finish date, you have an overlap. Upon finding an overlap, simply use a new “lane” for that item.</p>
-
-<p><img src="/assets/2014-06-15-actual-schedule.png" alt="2014-06-15-actual-schedule"> </p>
-
-<p>At the moment, I have two dates for each project—<code>started_on</code> and <code>finished_on</code>. These represent the actual dates for when the project started and finished, not their planned dates, which is why I use the past-tense. The next step is to add two more dates for estimated start and finish dates. These will be set upon creating the project and represent the agreed upon dates with the client. When you start a project, you set its <code>started_on</code> date and its <code>finished_on</code> date upon completion, so we have something to diff against. These four dates will let you see which clients are late to start or which ones drag on too long. From there, I can then find trends in specific clients.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-06-05'>Plugging in Real Data for the First Time</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I recently sat down with a friend who has shown interest in Cushion since I first mentioned it. I gave her a demo, but we also set up an account for her and plugged in all of her data—clients, projects, and invoices. I was both amazed and thrilled that she would let me input her real data even after suggesting we use dummy data for privacy. I’m glad we used the real data because her data instantly revealed a dozen issues with the current version.</p>
-
-<p><img src="/assets/2014-06-05-new-project-client.gif" alt="2014-06-05-new-project-client"> </p>
-
-<p>For one, she doesn’t have a single client with more than one project. This became a huge issue as we constantly needed to jump back and forth, creating a client, then creating a project. It felt uncomfortably redundant. Because of this, I added a &ldquo;New client&rdquo; option to the client dropdown in the project form. Selecting it adds a few extra fields to the form, so you can also create a client there with a single click. The input fields also use the project fields as default values, so you don’t need to set the same color twice if it’s the same as the project.</p>
-
-<p><img src="/assets/2014-06-05-timeline-divider.png" alt="2014-06-05-timeline-divider"> </p>
-
-<p>The second major issue I discovered was sequential timeline items that shared the same color. It was difficult to see the edge between them, but also, smaller projects would easily be lost without a label. To fight this, I added a very thin, transparent line to the edge of each item. It’s dark enough to show a separation without too much contrast. Even though I’m a sucker for full fills of color, I actually love the look these lines provide. The timeline feels much more solid.</p>
-
-<p><img src="/assets/2014-06-05-timeline-hover.png" alt="2014-06-05-timeline-hover"> </p>
-
-<p>Along with the divider, I finalized the hover state of the timeline items for when a label collapses to its abbreviation. Prior, I would show a tooltip-like element above the item and call it a day, but after adding the divider line, I decided to dim the item behind the tooltip. With the smaller projects, this really makes it clear as to which project you are hovering.</p>
-
-<p>The third and final problem I’ll point out is the timeline’s inability to handle tiny items. For example, if your timline is set up with a goal of $100,000 and you have an unpaid invoice of $100 for a friend project, it <em>should</em> show up as the tiniest of slivers. Unfortunately, a CSS border forces a minimum width of twice the border width, so a 4px border would make any item at least 8px wide. I got around this by using the CSS outline instead. It allows the same controls as border (except for sides), but doesn’t have a minimum width.</p>
-
-<p>I hope to have more in-person demos in the coming weeks, so I can find even more of these issues. It’s an incredibly valuable learning experience for me.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-06-03'>Transitions and Project Lists</a>
-    </h3>
-    <div class='article-copy'>
-      <p>After living with the changes I made to the timeline, I tweaked it a bit more. When a project is selected and the other projects fade in opacity, I also fade their colors to make the selected project pop even more. I had a problem with not being able to distinguish the selected project from the others with certain colors, but now it couldn’t be clearer.</p>
-
-<p><img src="/assets/2014-06-03-timeline-fade.gif" alt="2014-06-03-timeline-fade"> </p>
-
-<p>I started creating views for project lists, so you can create additional buckets. I haven’t pinned down the default lists yet, but there will most likely be three for active projects, potential gigs, and completed ones. I will personally add at least two more for pending projects (confirmed, but haven’t started) and dormant projects (active, but waiting on the client).</p>
-
-<p><a href="/assets/2014-06-03-list.png"><img src="/assets/2014-06-03-list.png" alt="2014-06-03-list"></a> </p>
-
-<p>Since lists deal with the project model, but don’t belong as a top-level tab, it’s tough to decide where to link to them. Right now, you can click a list header and it will take you to that list view, but what if I want a view for repositioning them? I’m almost certain I don’t want a separate view for that since we already have the projects view that is grouped by list, but there’s a chance something might come up. 
-Also, regarding the repositioning of lists, is it drag-and-drop, a select menu, or move-up/move-down arrows? I’m a fan of drag-and-drop since it’s the most intuitive and relates to the physical world, but on a scale like this, where lists could span the entire screen, it wouldn’t be a good fit. Arrows would most certainly feel redundant if you need to move a list from the bottom to the top, not to mention the duplicate API requests. A select menu is probably best for now, unless I end up with a table view for lists, which would make drag-and-drop easier to implement and use.</p>
-
-<p>I’ve been feeling really good about where I am with Cushion, so I took a minute to plug in my real data from this current year. It’s enlightening to see how everything looks when all the data is familiar. Surprisingly, I find the individual project views to be incredibly valuable. It allows me focus on the current project and easily see the status of its invoices—I was even able to spot one that was long overdue! On past projects, the individual view gives me a sense of its history and impact on the year. I can weigh a project’s required effort with its actual return to see which ones were worth the late nights and which ones weren’t.</p>
-
-<p>This is just the beginning of what I can do with this data. I have so many more ideas that I can’t wait to try out. If anything specific would be useful for you, <a href="http://twitter.com/cushionapp">let me know</a>.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-06-01'>Death to Modals</a>
-    </h3>
-    <div class='article-copy'>
-      <p><img src="/assets/2014-06-01-no-modals.png" alt="2014-06-01-no-modals"> </p>
-
-<p>I made a lot of progress this weekend regarding the overall feel of Cushion. The change I’m happiest with is the move away from modals. At first, I used modals for the project creation view. I did this because I didn’t have enough data, at the time, to warrant an entire page—bad design reasoning, I know. A benefit of the modal, however, is to keep the user in the projects view, so you can add a several projects and see them populate the tables. After using Cushion more, I realized this wouldn’t be a common interaction, unless a user adds all of their projects upfront.</p>
-
-<p><img src="/assets/2014-06-01-new-project.gif" alt="2014-06-01-new-project"> </p>
-
-<p>I moved the new project view to its own page and everything started coming together. The form is the same as the one in the edit view, so I can simply reuse that code. The beauty of the change, though, is that transition from creating a new project to its project page—it’s seamless. Since the layout is pretty much the same, the invoice tables simply appear below the form and we’re good to go. A next step would be to add a button for creating invoices. Eventually, I’d like to add the option to point your project to your invoicing service of choice, so it automatically pulls in invoices.</p>
-
-<p><img src="/assets/2014-06-01-timeline.gif" alt="2014-06-01-timeline"> </p>
-
-<p>Regarding transitions, the timeline now fades between views, so you can see how each view relates to the previous one. The current timeline views all share a similar structure, exposing more detail as you move from invoices to clients to projects. Then, when you click into a project, the unrelated projects will fade to make the selected one more prominent (hat tip to <a href="http://twitter.com/tealtan">Allen Tan</a> for the suggestion).</p>
-
-<p>From here, I’m going to build out all of the create, edit, and delete views for the other models and have a pretty usable version by the end of the week. Regarding the schedule, I’m way ahead of my goal of a beta by the end of the month. I’m certain there will be a ton of last-minute items to tackle before I can share Cushion, but I like where we are.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-05-28'>The Individual Project Page</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I spent the majority of the day working on the individual project page. At first, I was on the fence about whether to show a form for editing the project’s fields or just display its details with the option to edit. I went with the former because I hate extra steps. If a user clicks into a project, they probably don’t want to just see the same info they’ve seen elsewhere—they want to edit it.</p>
-
-<p><a href="/assets/2014-05-28-project.png"><img src="/assets/2014-05-28-project.png" alt="2014-05-28-project"></a></p>
-
-<p>Along with the form, I added two tables for that project’s paid and unpaid invoices. With this, the project page is essentially a filter of the other views. The user can focus on that one project without being distracted by all the other projects they might have going on. The timeline is also filtered to only show that project’s incomes and how they apply to the year.</p>
-
-<p><img src="/assets/2014-05-28-late-invoice.png" alt="2014-05-28-late-invoice"> </p>
-
-<p>I also took a break from this page to add a small detail to the invoice table—a red highlight for late invoices. This will be very useful for being aware of them without the need of a scary, jarring alert.</p>
-
-<p><img src="/assets/2014-05-28-symbols.png" alt="2014-05-28-symbols"> </p>
-
-<p>In the timeline, I revisited the label view, adding a bit more logic to switch between showing a project’s symbol or its full name. If there’s not enough room for either, I hide both and rely on a hover if the user really needs to see the name. For the money, I’m considering reducing them from something like “$5,000” to “$5k” when narrower, but not entirely convinced—it could get messy.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-05-27'>Estimated Incomes and Talks with Other Freelancers</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I’m making so much progress. I almost can’t sit still. Each night, I go to bed thinking about Cushion and wake up thinking about it. Needless to say, everything is going well.</p>
-
-<p>I finished the refactor of changing the Status model to List, which immediately feels clearer. Now you can have a list, or bucket, of projects and it doesn’t need to represent a status. I’m certain people will use Cushion much differently than I would have expected, so I don’t want to force too many workflows on them. I typically separate my projects into “Active”, “Pending”, “Potential”, and “Done”, but there are so many other possibilities, I might adopt a few more, like “Dormant”. This would represent any project that is blocked for one reason or another, so you don’t need to worry about it until they get back to you.</p>
-
-<p><img src="/assets/2014-05-27-estimated-income.png" alt="2014-05-27-estimated-income"></p>
-
-<p>On the income side of things, I added another column. Prior, I had two columns—“Paid” and “Unpaid”. These values were pulled from a sum of the invoices for a given project, so you know how much has been made versus how much is pending. But what about when you start a project and have a general idea of how much it will bring in? That should be represented on the timeline as well, so I added “Estimated”. This is a ballpark figure represented by a single column in the database, so when you create a project, you just give it a number. At some point, it would be nice to be more granular with the estimate and comparing detailed estimates against actual outcomes, but this works for now.</p>
-
-<p>This weekend, I spoke to a few friends who would be prime users and over the next month, I’m going to continue doing more research along these lines. It’s incredibly fascinating hearing other freelancers or design studio owners talk about their needs—especially when most of them aren’t covered by the plethora of existing services. This makes me even more hopeful for Cushion. I know it fits the bill for me, but it’s reassuring when I hear from others that they need it, too.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-05-18'>Statuses to Lists and the Paid Beta</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I realize it has been over a week since my last entry and for good reason—frustration over the front-end framework. I’ve been hopping around, trying each one out, hoping to find a good fit. As soon as I think I found one, however, a deal breaker would surface and I would have to look elsewhere. I’m confident with the one I’ve been using over the last week, Backbone, as it fits my needs without any magic. I don’t want to waste any more time on this, so let’s move on to new thoughts.</p>
-
-<p>This morning, I’ve considered changing the “Status” model to “List”. While using the prototype, I constantly finding myself wondering about the status—it feels so specific. If I were to simply rename it to “List”, it could take on new meanings and use-cases. It could then also be used for clients. A client status doesn’t really make sense if you have a project status, but with lists, you could group them however you like, and that could be reflected visually in the timeline.</p>
-
-<p>I might be getting ahead of myself with this, so I’ll keep it in mind of the next few days, but stay the course, so I can make some real progress. I feel like I’ve been staring at the same view for the past few weeks. By the end of the month, I want to be able to use Cushion with real projects and get some use out of it. Then, I can tinker.</p>
-
-<p>On a related note, my goal has been to reach beta by the end of June. I think it’s achievable now that I have the stack in order, but I have a few concerns based on previous betas I’ve held or been a part of.</p>
-
-<p>First, it will be a paid beta. This helps in two ways—funding the app early, so I can continue working on it, and ensuring that the beta testers are serious and proactive. I’ve “beta tested” countless apps before and I put that in quotes for a reason. I beta tested in the sense that I signed up, tinkered for less than an hour, then didn’t use it again or provide feedback.</p>
-
-<p>For the Cushion beta, I want to start with a small group of users that I chat with often and rely on for the early decisions. I don’t want to feel like I’m bothering people with surveys or unwanted emails—this core group should expect it. I’ll send out a few questions each week and make myself available for discussions. It should be a fun experience that makes you feel like you’re really contributing.</p>
-
-<p>Second, Cushion will be released incrementally, both for the beta and for the public app. It’s overwhelming to open the flood gates on day one—I’d rather grow in more manageable waves. The beta will start with a few dozen, then grow by a few dozen as it’s improved and when it demands more feedback. When Cushion is public, I’ll grow it in larger increments, but still cap the user count to an amount I can handle on my own. Only when I can grow a team will I grow the user count past what’s manageable.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-05-06'>The Timeline</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I spent most of the day staring at the screen, thinking. I flipped back and forth between the prototype and the design flats, figuring out what to work on next. The timeline section at the top hadn’t received much love, so I focused my attention there.</p>
-
-<p><a href="/assets/2014-05-06-timeline.png"><img src="/assets/2014-05-06-timeline.png" alt="2014-05-06-timeline"></a></p>
-
-<p>The timeline is terrifying because it’s going to be a challenge to make it look good with real data. Based on my personal usage, it looks great, but only because I’ve been lucky—working on projects that make it look great. Once I added random data that scales between very low-budget projects to very high-paying projects, it turned into fright night.</p>
-
-<p>The biggest problem is the width of each project and the logic that will go into showing or hiding the label. For freelancers who work on dozens of projects in a given month, like illustrators, projects will probably never be wide enough to show the inner label. Because of this, I’ll rely on the color of the bar and maybe show a tooltip label on hover. As an in-between measure, I could also add a “symbol” attribute. This way projects like Kramerica’s Oil Bladder would show “K” for the client and “OB” for the project.</p>
-
-<p>I also plan on having multiple zoom views for the timeline, so projects won’t always feel so crunched. The initial view shows the entire year, but you’ll be able to focus in on a given month or quarter. This will spread out the projects and probably be the more common view for freelancers who work on shorter-term projects.</p>
-
-<p><a href="/assets/2014-05-06-timeline-days.png"><img src="/assets/2014-05-06-timeline-days.png" alt="2014-05-06-timeline-days"></a></p>
-
-<p>The timeline section has so much potential because I can build so many different views into it. The early designs included everything from planning projects per days and visualizing overlap to grouped income by project type. I can’t wait to flesh it out some more and continue fine-tuning it based on real data. I’m determined to make the final result really solid and able to handle any use-case.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-05-05'>Invoice Terminology</a>
-    </h3>
-    <div class='article-copy'>
-      <p>After creating the invoice model and provided it with its own table section, I started integrating it into the rest of the sections. The projects section now has a column for paid and unpaid invoice amounts as well as a footer under each table for the sums. For the paid/unpaid attribute, I researched a few of the services I plan to integrate with and looked at how they represent this in their invoice model. Each one has a status for invoices, with half a dozen options:</p>
-
-<h4><a href="http://getharvest.com">Harvest</a></h4>
-
-<p>open, partial, draft, paid, unpaid, past due</p>
-
-<h4><a href="http://freshbooks.com">Freshbooks</a></h4>
-
-<p>disputed, draft, sent, viewed, paid, auto-paid, retry, failed</p>
-
-<h4><a href="http://dayswork.co">Dayswork</a></h4>
-
-<p>unresolved, paid, uncollectable</p>
-
-<p>Again, like with the project statuses, no one can agree on a set of common statuses to use, so we have a long list of unique ones per service. Since these are all services where you can create invoices and track them on a granular level, they need the specific statuses, like draft, viewed, etc. I have absolutely no plans for invoice creation in Cushion, so I have it easier when it comes to statuses. What I really want to know is whether or not an invoice has been paid.</p>
-
-<p><img src="/assets/2014-05-05-invoices.png" alt="2014-05-05-invoices"> </p>
-
-<p>Originally, I created a boolean <code>paid</code> attribute and used that as an indicator. After separating the invoices section into two tables, “paid” and “unpaid”, I noticed this boolean wouldn’t suffice—I needed more relevant data. For instance, in the paid table, I no longer need the “due” column—I’d much rather see when invoices were paid. Considering this, I changed the <code>paid</code> attribute to a date, called <code>paid_on</code>. This gives me the date on which the invoice was paid and an easy indicator of whether it was paid or not (true if the date is set).</p>
-
-<p>I’m excited about the invoice portion of the app because every service provides so much useful data. For now, I plan to condense it into something easier to digest, but down the road, there is so much I can do with it.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-05-01'>Modal Forms</a>
-    </h3>
-    <div class='article-copy'>
-      <p><a href="/assets/2014-05-01-new-project.png"><img src="/assets/2014-05-01-new-project.png" alt="2014-05-01-new-project"></a></p>
-
-<p>This week, I spent more time designing, specifically the form for new projects. I’m starting out very basic, with only the name, client, color, and status. I hate designing forms because the best forms don’t feel like forms and that’s difficult to achieve. Above are a few variations, but not I’m thrilled about any of them.</p>
-
-<p>The current state is much better than where I started. At first, I had color as its own field, but with four fields, the form already felt lengthy. Right now, color is combined with the name field to match the rest of the fields. I feel like color could play a huge role in the app, associating most pieces of data. I originally only assigned color to clients and projects, but it could also tie into statuses—green for on-track, yellow for on-hold, red for important or late.</p>
-
-<p>I also decided to go with a modal for now because I want the user to be able to create projects from anywhere. It could be nice to eventually have a more embedded option, like adding onto existing lists, etc., but one step at a time. I’m still not happy with this design, though. </p>
-
-<p>Regarding the dev side of the app, I originally planned to test everything from the start, but I’m quickly realizing how difficult that is when nothing is certain. Testing the backend is a given and easy in this regard, but testing the front-end before most decisions have been made will inevitably result in back-tracking. Because of this, I decided to write a draft version of the front-end, get the initial interaction solidified, then go back and rewrite it, tested. It also seems like a bunch of unnecessary work, but luckily, AngularJS has been great for quickly prototyping ideas.</p>
-
-<p><img src="/assets/2014-05-01-timeago.png" alt="2014-05-01-timeago"> </p>
-
-<p>The API is coming along wonderfully. I currently have models and endpoints for clients, projects, statuses, and invoices. I added invoices yesterday, researching a few existing services I plan to tie into, like <a href="http://www.getharvest.com/">Harvest</a>. For now, invoices have an issue date, due date, and amount. On the front-end, I use <a href="http://momentjs.com/">Moment.js</a> to translate the dates into relative dates, so they’re easier to digest. I can add a few little touches to this, like highlighting the date when the invoice is overdue.</p>
-
-<p>All in all, this has been a very productive week. Over the next few days, I plan to focus more on the workflow of creating each model on the front-end. Hopefully, I can get to a good spot.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-04-28'>Wiring the Backend to the Frontend</a>
-    </h3>
-    <div class='article-copy'>
-      <p><img src="/assets/2014-04-28-project-table.png" alt="2014-04-28-project-table"> </p>
-
-<p>Cushion is starting to come together. I switched to the front-end and wired up several of the tab views. The projects table is currently loading in some very basic data from the API and begging for more. It’s difficult to built out the front-end little by little because I really want to add everything all at once. I know it won’t be that easy and it’s not the smartest move, considering the interface hasn’t been used by anyone yet.</p>
-
-<p>The current plan is to add statuses to projects, like “Active”, “Pending”, “Potential”, etc. This way, we’ll have several tables grouped by their statuses rather than a giant table that’s difficult to read. After <a href="https://twitter.com/destroytoday/status/460899894774226944">asking Twitter</a> what statuses they typically assign to projects, I realized what I have been worrying about—nobody uses the same terminology. Almost every single person responded with unique wording. Because of this, I think it would be best to start every user with a set of default statuses, but let them configure the names to their liking. I’m cautious about adding settings or preferences whenever a tough decision arises, but I know this one is a must.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-04-26'>Balancing Design and Dev</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I feel great with the recent progress. I have a very basic version of the Client and Project API finished and the frontend successfully sending requests. Technically, this is gratifying, but it’s a departure from my work on Cushion over the past few months, when I was only focusing on design. I can definitely sense my concerns shifting from the actual usability of the app to its technical challenges—when narrowing in on one of them, I lose sight of the other.</p>
-
-<p>This is just how it goes when tackling both design and dev. I think I just need to plan my time better and designate specific days or moments throughout the day to revisit design. With every technical achievement, I should stop and assess its effect on design. Does this help or hinder me? Now that this code is done, should I give equal time to design?</p>
-
-<p>In the past, I’ve been able to work well by getting the design to a certain point, then switching to dev and designing the rest through code. This has its ups and downs—it helps in seeing how the design will actually work, but it prevents any grand departures from the original design. Scrapping everything and starting from scratch is easy in design flats, but not in code. Straying that far would require a certain level of confidence that it’s not a waste of time.</p>
-
-<p>Considering all of this, I will design more next week. There are several sections of Cushion that still need a thoughtful look and feel, so I will give each the time it needs.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-04-23'>Timecop, Monocle, and Vagrant</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I spent the majority of the day setting up the new environment, but this time with Ruby. It feels good to be back in a familiar space where every move doesn’t start with a question. Even though I have a lot of experience with Ruby, I took some time to look around and research. Are there any useful gems that I haven’t heard of yet? How far has Sinatra come since my last app?</p>
-
-<p>In doing so, I stumbled upon one gem that I’m especially excited to use—<a href="https://github.com/travisjeffery/timecop">Timecop</a>. Aside from the amazing name, I can’t tell you how much time and frustration this gem would’ve saved me in the past. The aspect of time won’t be as crucial in Cushion as it was in previous apps of mine, but still, it’s good to know that this gem is available.</p>
-
-<p>I also found that Alex Maccaw <a href="https://github.com/maccman/monocle">open-sourced</a> his news aggregator, <a href="http://monocle.io">Monocle</a>. Since he’s an avid proponent of lightweight frameworks, like Sinatra, I spent a good amount of time perusing his code and learning a few new tricks. Going through someone else’s code almost feels like browsing their record collection—you’re bound to find something you haven’t seen before.</p>
-
-<p>Near the end of the day, I decided to look into <a href="http://www.vagrantup.com/">Vagrant</a>, a tool for creating dev environments. Up until now, I would typically work on an app in my local OS X environment and hope that it would work on the production server. Unless I’m running the app on a Mac Mini server, this doesn’t make much sense. With Vagrant, it didn’t take long for me to create a proper dev environment on an Ubuntu VM. I used <a href="http://rove.io">Rove</a> to help generate a starter script and only needed to fine-tune a few other things before it all came together.</p>
-
-<p>Now that the app and tests are up and running locally, I’m ready to go full speed ahead—seriously, this time.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-04-22'>Going with Ruby and Sinatra</a>
-    </h3>
-    <div class='article-copy'>
-      <p>These past couple days, I’ve been getting deep into the thick of things with Node.js and Express. I really enjoy it, but now that I’m dealing with more than the initial setup, I’m starting to realize that maintaining this kind of codebase might wear on me.</p>
-
-<p>I’ve been warned by several others about the callbacks in Node.js and I finally understood why. It doesn’t help that I come from Ruby, where everything is synchronous—I could make a call to a remote server on one line and handle the response on the next. In Node.js, the second line would be called immediately after, unless we put it inside a callback function.</p>
-
-<p>In use-cases that rely on asynchronous code, this is a great benefit of Node.js, but with Cushion, it becomes a distraction. Since Cushion will be very frontend-heavy, I don’t really need much fanciness on the backend—mostly serving pages and data. Because of this, I think it’s best to return to Ruby and build Cushion on Sinatra.</p>
-
-<p>I realize I’ve been flip-flopping lately with stack decisions, but I think it’s good to get this out of my system now rather than later. I would hate to be halfway done with Cushion before realizing the mistake, then begrudgingly building out the rest of the app, knowing it is destined for a rewrite.</p>
-
-<p>Another bright side of this decision is that I can return to what I know. Since I’ve written several Ruby apps in the past, I know what to expect. I won’t be wasting time on the learning curve, and I can make use of all that I’ve learned over the past few years of building Ruby apps.</p>
-
-<p>Now that I got the new-tech craving out of my system, I’m excited to go full speed ahead with Cushion.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-04-20'>Ditching local-first and trying out Node.js</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I started building out more of the UI, including the form for creating a new project.  I got antsy and felt the need to be able to change the data I’ve been working with. Leading up to developing Cushion, the plan has been to build local-first, so the app could be used offline from the get-go. This was a nice thought, but became less realistic the more I looked into offline storage and making that work with Angular. The browsers haven’t really decided which local database framework they want to go with, and the one with the most support, <a href="http://www.w3.org/TR/webdatabase/">Web SQL</a>, has already been labelled as deprecated.</p>
-
-<p>Instead of half-heartedly choosing one direction and regretting it later, I decided to stop spinning my wheels and just put aside the local-first idea. For now, I could at least build the app with offline capabilities in mind. Now, the question is which server-side stack to pick. For the past several years, I’ve been using Ruby and its lightweight, do-most-of-it-yourself framework, <a href="http://sinatrarb.com">Sinatra</a>. I really enjoyed using Sinatra, but have been through the app set-up process so many times that I need something different. I haven’t given Node.js a thorough look since its debut, but now that it has several years under its belt, I decided to seriously consider it.</p>
-
-<p>I started building out the initial server-side groundwork using <a href="http://expressjs.com">Express</a>—the Sinatra of Node.js. So far, I love it. The structure is very easy to grasp and everything makes sense. Right now, I have the server running the web app and API. Next up is the database and models.</p>
-
-<p>For those who are interested in Node.js and Express, I’m starring all of the useful repos I come across <a href="https://github.com/stars/destroytoday?direction=desc&amp;filter=others&amp;sort=created">here</a>.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-04-18'>Switching to AngularJS</a>
-    </h3>
-    <div class='article-copy'>
-      <p>Since deciding to build Cushion, I’ve intentionally taken my time in choosing its stack. In the past, I used <a href="http://spinejs.com/">Spine</a> on the front-end. I loved its clean syntax and small footprint, but, over time, I found it requiring a considerable amount of manual work for most tasks.</p>
-
-<p>I started looking around and stumbled upon <a href="https://github.com/yyx990803/vue">Vue.js</a>, which is an up-and-coming front-end framework. It takes a few cues from the other available frameworks and combines them into a tiny, simple package. I really enjoyed its syntax and actually had fun experimenting with it.</p>
-
-<p>As I used Vue.js, however, a worriesome feeling grew inside me. To me, Cushion is a long-term app, and I want to work on it for years to come. With this being the case, it wouldn’t be wise to go with a new, edge framework. Instead, I should be considering more proven, battle-tested frameworks.</p>
-
-<p>I scrapped my existing code and started looking into <a href="https://angularjs.org/">AngularJS</a>. So far, I feel incredibly confident using it, as every question seems to have an answer. Also, testing is at the forefront with AngularJS—all of their guides include steps on how to test the code they teach. This pulls at my test-loving heart strings.</p>
-
-<p>While it would be fun to experiment with something new, I feel the need to play it smart and go with a veteran framework with an established community.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-04-16'>Building the Table with Vue.js</a>
-    </h3>
-    <div class='article-copy'>
-      <p><img src="/assets/2014-04-16-name-sort.png" alt="2014-04-16-name-sort"> </p>
-
-<p>Yesterday, I set up my test environment and started writing tests for a simple table component I’m building with <a href="http://vuejs.org">Vue.js</a>. At first, I wrote it to rely on a provided template, so it wouldn’t be too restricting. The more I worked on it, however, the more I realized how much it could benefit from automation. I replaced all the hard-coded HTML with looping template code. Now, it can create its own headers based on a provided list of header names and types—color, text, and currency.</p>
-
-<p><img src="/assets/2014-04-16-color-sort.png" alt="2014-04-16-table"></p>
-
-<p>The table can sort itself by clicking any one of the headers—once for ascending, twice for descending. For the color-typed column, it sorts by RGB, so the rows create a smooth gradation. I also added currency formatting using <a href="http://josscrowcroft.github.io/accounting.js/">Accounting.js</a>, an incredibly simple and configurable library for formatting money of any kind. Vue.js made formatting too easy with the use of <a href="http://vuejs.org/guide/filters.html">custom filters</a> on data.</p>
-
-<p><img src="/assets/2014-04-16-income-sort.png" alt="2014-04-16-income-sort"> </p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-04-15'>Clients, Projects, and Invoices</a>
-    </h3>
-    <div class='article-copy'>
-      <p>I spent the majority of the day setting up the initial dev environment for Cushion. No matter how many times I’ve done this, it always takes longer than expected. Once everything was up and running, I started building the most basic view—the project table. This will list all of the projects, along with their color, client, and incomes—deposited, pending, and potential. Eventually, it will show other information, like flags, but I’m getting ahead of myself.</p>
-
-<p>While writing the basic outline for the app’s models, I realized that I was straying from the core feature set of the app. Somewhere along the way, I dropped my guard and started including additional features that would be nice eventually, but not necessary for the first version. I widdled everything down and ended up with three core data models—clients, projects, and invoices.</p>
-
-<p>A “client” is simply used to group together projects, with only a name and color besides the relation. A “project” represents any job or piece of work and will be the heaviest model of the entire app—almost everything will focus around the project. An “invoice” is used to make up the various incomes of a given project, based on its status of paid, pending, or potential. I have no plans to include invoicing as a feature of Cushion—I just need each invoice’s amount for calculating income for a project. I <em>do</em>, however, plan to tie closely to other invoicing services, so the process of adding an invoice is not duplicated.</p>
-
-    </div>
-  </article>
-  
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='/journal/2014-04-06'>Introduction</a>
-    </h3>
-    <div class='article-copy'>
-      <p>Tonight, I set up this journal to document my thought process throughout planning, designing, and developing this app. I want to be as transparent as possible, with the hope that it provides useful insight to anyone else interested in building apps. I’ll also benefit from this documentation as a way to record everything I consider, with the ability to go back and reference my stream of thoughts. This way, I can see what led me to the current state—maintaining a constant “post-mortem”.</p>
-
-<p>Along with the journal, I also created a page for <a href="/expenses">Expenses</a>. Ever since reading <a href="https://blog.pinboard.in/2011/09/the_costs_of_bookmarking/">Maciej Cegłowski’s post</a> on server costs, I’ve been really curious about the expenses behind an app. Hosting is the most obvious expense, but what about the small, in-between expenses that we tend not to think about, like 3rd-party email and customer support services. I can certainly imagine them adding up quickly, so this will also be useful for me to see where my money is going.</p>
-
-    </div>
-  </article>
-  
+  <section>
+    <h3 class='page__title'>Archive</h3>
+
+    <ul class='post-list'>
+      
+      <li class='post-list__item'>
+        <a class='link--strike link--hover-border' href='/journal/everything-in-increments'>Everything in Increments</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/deleting-your-account'>Deleting Your Account</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/designing-the-subscription-page'>Designing the Subscription Page</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/rewriting-the-timeline'>Rewriting the Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/restructuring-the-individual-project-page'>Restructuring the Individual Project Page</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/project-blocks'>Project Blocks</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/redesigning-the-homepage'>Redesigning the Homepage</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/multiple-timelines'>Multiple Timelines</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/archiving-and-estimate-differences'>Archiving and Estimate Differences</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/multiple-financial-goals'>Multiple Financial Goals</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/zooming-in-on-the-timeline'>Zooming in on the Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/currency'>Currency</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/preferences-accounts-and-atypefacechange'>Preferences, Accounts, and a Typeface Change</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/sending-out-the-first-email'>Sending Out the First Email</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/currency-inputs-notifications-and-invoice-nets'>Currency Inputs, Notifications, and Invoice Nets</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/dots-and-lines'>Dots and Lines</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/calculating-in-the-database-and-revealing-tendencies'>Calculating in the Database and Revealing Tendencies</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/improved-form-ux'>Improved Form UX</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/cushion-is-online'>Cushion is Online</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/schedule-timeline-patterns'>Schedule Timeline Patterns</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/a-slimmer-schedule-timeline'>A Slimmer Schedule Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/the-schedule-timeline'>The Schedule Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/plugging-in-real-data-for-the-first-time'>Plugging in Real Data for the First Time</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/transitions-and-project-lists'>Transitions and Project Lists</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/death-to-modals'>Death to Modals</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/the-individual-project-page'>The Individual Project Page</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/estimated-incomes-and-talks-with-other-freelancers'>Estimated Incomes and Talks with Other Freelancers</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/statuses-to-lists-and-the-paid-beta'>Statuses to Lists and the Paid Beta</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/the-timeline'>The Timeline</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/invoice-terminology'>Invoice Terminology</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/modal-forms'>Modal Forms</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/wiring-the-backend-to-the-frontend'>Wiring the Backend to the Frontend</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/balancing-design-and-dev'>Balancing Design and Dev</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/timecop-monocle-and-vagrant'>Timecop, Monocle, and Vagrant</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/going-with-ruby-and-sinatra'>Going with Ruby and Sinatra</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/ditching-local-first-and-trying-out-nodejs'>Ditching local-first and trying out Node.js</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/switching-to-angularjs'>Switching to AngularJS</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/building-the-table-with-vuejs'>Building the Table with Vue.js</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/clients-projects-and-invoices'>Clients, Projects, and Invoices</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/introduction'>Introduction</a>
+      </li>
+      
+    </ul>
+  </section>
 </main>
 
 
-      <footer class='main-footer'>
-        Follow <a class='link' href='http://twitter.com/cushionapp'>@cushionapp</a> on Twitter
-      </footer>
-    </div>
+    <footer class='grid-container--wide page__footer'>
+      <nav class='page-nav'>
+  <ul class='page-nav__list'>
+    
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/journal'>Journal</a>
+      </li>
+      
+    
+      
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='/expenses'>Expenses</a>
+      </li>
+      
+    
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>
+
+    </footer>
 
     
   </body>
 </html>
+
 
