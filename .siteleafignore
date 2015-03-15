@@ -6,4 +6,5 @@ README.md
 assets/styles/*.sass
 assets/styles/*.scss
 assets/scripts/*.coffee
-node_modules/
+node_modules/**/*
+gulpfile.js
