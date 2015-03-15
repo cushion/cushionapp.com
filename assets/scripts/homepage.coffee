@@ -49,7 +49,6 @@ $ ->
     $input.prop('disabled', true)
     $button.prop('disabled', true)
 
-
   #
   # Mobile check
   #
@@ -177,3 +176,20 @@ $ ->
   $window.scroll(scrolled)
   $window.resize(scrolled)
   scrolled()
+
+
+  #
+  # nudge
+  #
+
+  $('.js-hero__nudge').click (e) ->
+    e.preventDefault()
+
+    $('html,body').animate(scrollTop: $budget.offset().top - $budget.height(), 1000)
+
+  nudged = (e) ->
+    $html.addClass('is-scrolled')
+
+    $window.unbind('scroll', nudged)
+
+  $window.bind('scroll', nudged)

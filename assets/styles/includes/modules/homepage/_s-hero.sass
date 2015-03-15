@@ -39,3 +39,18 @@
   .newsletter
     +min-width($tablet)
       font-size: 112.5%
+
+
+//
+// nudge
+//
+
+.hero__nudge
+  color: $purple--light
+  transition: 1s opacity
+
+  &:hover
+    color: $black
+
+  .is-scrolled &
+    opacity: 0
