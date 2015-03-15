@@ -8,3 +8,4 @@ assets/styles/*.scss
 assets/scripts/*.coffee
 node_modules/**/*
 gulpfile.js
+package.json
