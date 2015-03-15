@@ -1,12 +1,12 @@
 ---
-time: 1426461637
+time: 1426463138
 inventory:
   /home/index.html:
-    md5: 7bc47583e8cf9fda17215ce5bd3a8552
-    time: 1426461601
+    md5: 3f9cbabad9bcc17cf0b80b5b58c17aa3
+    time: 1426463122
   /index.html:
-    md5: 7bc47583e8cf9fda17215ce5bd3a8552
-    time: 1426461601
+    md5: 3f9cbabad9bcc17cf0b80b5b58c17aa3
+    time: 1426463122
   /newsletter/index.html:
     md5: fef46748f878d754d9bd76aa7c3c19e3
     time: 1426461601
@@ -428,8 +428,8 @@ inventory:
     md5: 6b65ad2f11b158303904f461452c54b5
     time: 1426461615
   /feed.xml:
-    md5: 1058a3bdc7aa77474191aaaf1f43fd5f
-    time: 1426461615
+    md5: 2f96670dad3ebae0fe856c0070491503
+    time: 1426463137
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -515,8 +515,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: cfa9ffe8e1b23c2ae68c51957544bef2
-    time: 1426461615
+    md5: f79648ae9c00b7c33b85e110d2511069
+    time: 1426463137
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
@@ -556,15 +556,15 @@ inventory:
   /assets/homepage-insights-positive.png:
     md5: 9e06394ae2b6ccd42a09b7090766de58
     time: 1426453736
-  /assets/scripts/homepage.js:
-    md5: 130feeed23eadf9e56657519745936f4
-    time: 1426453736
   /package.json:
     md5: 2b39649b790f493bbd20d633dfd58278
     time: 1426453736
+  /assets/scripts/homepage.js:
+    md5: f7292555dd10bf54a6af3046c2a17502
+    time: 1426463137
   /assets/styles/screen.css:
-    md5: 6259ba1946f54278fce5486bbc76c184
-    time: 1426461616
+    md5: 3dd46391686fc5809a160aa2702414da
+    time: 1426463137
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
