@@ -1,0 +1,17 @@
+{% capture content %}
+<main class='grid-container--narrow main'>
+  <article class='post'>
+    <header class='post__header'>
+      <h3 class='post__title'>
+        <a href='{{ url }}'>{{ title }}</a>
+      </h3>
+    </header>
+
+    <div class='post__body'>
+      {{ body }}
+    </div>
+  </article>
+</main>
+{% endcapture %}
+
+{% include 'layouts/default' %}

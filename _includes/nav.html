@@ -2,9 +2,11 @@
   <ul class='page-nav__list'>
     {% for page in site.pages %}
       {% unless page.home? %}
-      <li class='page-nav__item'>
-        <a class='page-nav__link' href='{{ page.url }}'>{{ page.title }}</a>
-      </li>
+        {% unless page.meta.nav and page.meta.nav != nav %}
+        <li class='page-nav__item'>
+          <a class='page-nav__link' href='{{ page.url }}'>{{ page.title }}</a>
+        </li>
+        {% endunless %}
       {% endunless %}
     {% endfor %}
     <li class='no-mobile page-nav__item'>
