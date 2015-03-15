@@ -56,15 +56,27 @@ window.analytics.page();
       
     
       
-      <li class='page-nav__item'>
-        <a class='page-nav__link' href='/journal'>Journal</a>
-      </li>
+        
+        <li class='page-nav__item'>
+          <a class='page-nav__link' href='/journal'>Journal</a>
+        </li>
+        
       
     
       
-      <li class='page-nav__item'>
-        <a class='page-nav__link' href='/expenses'>Expenses</a>
-      </li>
+        
+        <li class='page-nav__item'>
+          <a class='page-nav__link' href='/expenses'>Expenses</a>
+        </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
       
     
     <li class='no-mobile page-nav__item'>
@@ -92,17 +104,14 @@ window.analytics.page();
     <div class='post__body'>
       <p>After creating the invoice model and provided it with its own table section, I started integrating it into the rest of the sections. The projects section now has a column for paid and unpaid invoice amounts as well as a footer under each table for the sums. For the paid/unpaid attribute, I researched a few of the services I plan to integrate with and looked at how they represent this in their invoice model. Each one has a status for invoices, with half a dozen options:</p>
 
-<h4><a href="http://getharvest.com">Harvest</a></h4>
+<p><strong><a href="http://getharvest.com">Harvest</a></strong><br>
+<code>open</code>, <code>partial</code>, <code>draft</code>, <code>paid</code>, <code>unpaid</code>, <code>past due</code></p>
 
-<p>open, partial, draft, paid, unpaid, past due</p>
+<p><strong><a href="http://freshbooks.com">Freshbooks</a></strong><br>
+<code>disputed</code>, <code>draft</code>, <code>sent</code>, <code>viewed</code>, <code>paid</code>, <code>auto-paid</code>, <code>retry</code>, <code>failed</code></p>
 
-<h4><a href="http://freshbooks.com">Freshbooks</a></h4>
-
-<p>disputed, draft, sent, viewed, paid, auto-paid, retry, failed</p>
-
-<h4><a href="http://dayswork.co">Dayswork</a></h4>
-
-<p>unresolved, paid, uncollectable</p>
+<p><strong><a href="http://dayswork.co">Dayswork</a></strong><br>
+<code>unresolved</code>, <code>paid</code>, <code>uncollectable</code></p>
 
 <p>Again, like with the project statuses, no one can agree on a set of common statuses to use, so we have a long list of unique ones per service. Since these are all services where you can create invoices and track them on a granular level, they need the specific statuses, like draft, viewed, etc. I have absolutely no plans for invoice creation in Cushion, so I have it easier when it comes to statuses. What I really want to know is whether or not an invoice has been paid.</p>
 
@@ -122,7 +131,7 @@ window.analytics.page();
     </div>
   </article>
 
-  <section>
+  <section id='archive'>
     <h3 class='page__title'>Archive</h3>
 
     <ul class='post-list'>
@@ -293,21 +302,42 @@ window.analytics.page();
 
 
     <footer class='grid-container--wide page__footer'>
+      
       <nav class='page-nav'>
   <ul class='page-nav__list'>
     
       
     
       
-      <li class='page-nav__item'>
-        <a class='page-nav__link' href='/journal'>Journal</a>
-      </li>
+        
+        <li class='page-nav__item'>
+          <a class='page-nav__link' href='/journal'>Journal</a>
+        </li>
+        
       
     
       
-      <li class='page-nav__item'>
-        <a class='page-nav__link' href='/expenses'>Expenses</a>
-      </li>
+        
+        <li class='page-nav__item'>
+          <a class='page-nav__link' href='/expenses'>Expenses</a>
+        </li>
+        
+      
+    
+      
+        
+        <li class='page-nav__item'>
+          <a class='page-nav__link' href='/privacy'>Privacy Policy</a>
+        </li>
+        
+      
+    
+      
+        
+        <li class='page-nav__item'>
+          <a class='page-nav__link' href='/terms'>Terms &amp; Conditions</a>
+        </li>
+        
       
     
     <li class='no-mobile page-nav__item'>

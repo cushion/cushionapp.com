@@ -190,7 +190,7 @@
   
   <url>
     <loc>http://cushionapp.com/journal/invoice-terminology</loc>
-    <lastmod>2015-03-15T20:08:03+00:00</lastmod>
+    <lastmod>2015-03-15T23:16:03+00:00</lastmod>
     <priority>0.5</priority>
   </url>
   
@@ -349,6 +349,20 @@
     <loc>http://cushionapp.com/expenses/domain-registration</loc>
     <lastmod>2014-08-29T23:30:32+00:00</lastmod>
     <priority>0.5</priority>
+  </url>
+  
+
+  <url>
+    <loc>http://cushionapp.com/privacy</loc>
+    <lastmod>2015-03-15T22:57:52+00:00</lastmod>
+    <priority>1.0</priority>
+  </url>
+  
+
+  <url>
+    <loc>http://cushionapp.com/terms</loc>
+    <lastmod>2015-03-15T23:13:13+00:00</lastmod>
+    <priority>1.0</priority>
   </url>
   
 
