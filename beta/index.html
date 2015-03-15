@@ -1,42 +1,6 @@
-{% capture header %}
-<ul class='header-image-list'>
-  <li class='is-selected header-image-item' style='background-image: url(/assets/header-0.png)'></li>
-  <li class='header-image-item' style='background-image: url(/assets/header-1.png)'></li>
-  <li class='header-image-item' style='background-image: url(/assets/header-2.png)'></li>
-</ul>
-<script>
-  var images = document.querySelectorAll('.header-image-item');
-  var index = 0;
-  setInterval(function () {
-    if (index < 2) {
-      index++;
-    } else {
-      index = 0;
-    }
-
-    var currentImage = document.querySelector('.is-selected');
-    currentImage.className = currentImage.className.replace('is-selected', '');
-
-    images[index].className += ' is-selected';
-  }, 8000);
-</script>
-{% endcapture %}
-
-{% capture content %}
-<main class='main-content'>
-  <article class='beta-section article'>
-    <div class='article-copy'>
-      {{ body }}
-
-      <form class='subscribe-form form' action="//cushionapp.us9.list-manage.com/subscribe/post?u=313d794b00e529c8199ff32e2&amp;id=3c81040202" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-        <input name='EMAIL' class='text-input' type='email' placeholder='you@yourwebsite.com' required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;"><input type="text" name="b_313d794b00e529c8199ff32e2_3c81040202" tabindex="-1" value=""></div>
-        <button id='submit' class='button' type='submit'>request an invite</button>
-      </form>
-    </div>
-  </article>
-</main>
+{% capture head %}
+  <meta http-equiv="refresh" content="0; url=http://cushionapp.com" />
+  <link rel="canonical" href="http://cushionapp.com"/>
 {% endcapture %}
 
 {% include 'layouts/default' %}
