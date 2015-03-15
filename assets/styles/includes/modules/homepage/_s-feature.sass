@@ -1,0 +1,43 @@
+//
+// column
+//
+
+.homepage__feature-column
+  +min-width($tablet)
+    font-size: 112.5%
+
+
+//
+// title
+//
+
+.homepage__feature-column h4
+  font-size: em(18)
+  line-height: 2em
+  font-weight: 700
+
+
+//
+// body
+//
+
+.homepage__feature-column
+  p
+    font-size: em(16)
+
+    a
+      @extend .link--border
+
+
+//
+// image
+//
+
+.homepage__feature-image
+  border-radius: 4px
+  background-repeat: no-repeat
+  background-size: auto 100%
+  transition: 0.5s opacity
+
+  &.is-hidden
+    opacity: 0

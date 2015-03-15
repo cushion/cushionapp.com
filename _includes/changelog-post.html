@@ -1,27 +1,27 @@
-<article class='changelog-article article'>
-  <h3 class='article-title'>
-    <a href='{{ post.url }}'>{{ post.title }}</a>
+<article id='{{ post.title }}' class='changelog-post'>
+  <h3 class='changelog-post__date'>
+    <a href='{{ post.url }}'>{{ post.title | date: "%b %d, %Y" }}</a>
   </h3>
-  <div class='article-copy'>
+  <div class='changelog-post__body'>
     {% if post.meta.new %}
-    <section class='changelog-section'>
-      <h4 class='new-changelog-title changelog-title'>New</h4>
+    <div class='changelog-post__list'>
+      <h4 class='changelog-post__subtitle--new changelog-post__subtitle'>New</h4>
       {{ post.meta.new | md }}
-    </section>
+    </div>
     {% endif %}
 
     {% if post.meta.improved %}
-    <section class='changelog-section'>
-      <h4 class='improved-changelog-title changelog-title'>Improved</h4>
+    <div class='changelog-post__list'>
+      <h4 class='changelog-post__subtitle--improved changelog-post__subtitle'>Improved</h4>
       {{ post.meta.improved | md }}
-    </section>
+    </div>
     {% endif %}
 
     {% if post.meta.fixed %}
-    <section class='changelog-section'>
-      <h4 class='fixed-changelog-title changelog-title'>Fixed</h4>
+    <div class='changelog-post__list'>
+      <h4 class='changelog-post__subtitle--fixed changelog-post__subtitle'>Fixed</h4>
       {{ post.meta.fixed | md }}
-    </section>
+    </div>
     {% endif %}
   </div>
 </article>

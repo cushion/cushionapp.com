@@ -1,10 +1,11 @@
 {% capture content %}
-<main class='main-content'>
-  <article class='article'>
-    <div class='center article-copy'>
-      {{ body }}
-    </div>
-  </article>
+<main class='grid-container--narrow vertical-layout__outer page__main'>
+    <article class='vertical-layout__inner post'>
+      <h4 class='post__title'>{{ title }}</h4>
+      <div class='center post__body'>
+        {{ body }}
+      </div>
+    </article>
 </main>
 {% endcapture %}
 

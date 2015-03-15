@@ -1,6 +1,6 @@
 {% capture content %}
 <main class='main-content'>
-  <table>
+  <!-- <table>
     <colgroup>
       <col>
       <col class='service-cell'>
@@ -42,12 +42,12 @@
       </tr>
       {% endfor %}
     </tbody>
-  </table>
+  </table> -->
 
-  <section class='graph-section'>
-    <div class='graph' id='monthly-expenses'></div>
-    <div class='graph' id='cumulative-expenses'></div>
-    <div class='graph' id='total-expenses'></div>
+  <section class='grid-container--wide graph-section'>
+    <div class='expenses-graph' id='monthly-expenses'></div>
+    <div class='expenses-graph' id='cumulative-expenses'></div>
+    <div class='expenses-graph' id='total-expenses'></div>
   </section>
 </main>
 {% endcapture %}

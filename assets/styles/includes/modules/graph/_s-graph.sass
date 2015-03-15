@@ -1,0 +1,115 @@
+//
+// graph
+//
+
+.graph
+  user-select: none
+
+
+//
+// graph boundary
+//
+
+.graph__boundary
+  background-color: $white
+
+
+//
+// graph columns
+//
+
+.graph__columns
+  transition: 0.5s opacity
+
+
+//
+// graph column
+//
+
+.graph__columns > .graph__column
+  &:nth-child(even)
+    background-color: #f9f9f9
+
+
+//
+// ticks
+//
+
+.graph__ticks
+  transition: 0.5s transform, 0.5s opacity
+
+  &.is-hidden
+    opacity: 0
+
+
+//
+// tick
+//
+
+.graph__tick
+  background-color: $lightest-grey
+  color: $light-grey
+
+  user-select: none
+
+  transition: 0.5s left
+
+  &:before // line
+    background-color: $lighter-grey
+
+  &.is-strong
+    font-size: 1.166666667em
+    font-weight: 600
+    color: $grey
+
+    &:before
+      background-color: $light-grey
+
+  &.is-selected
+    font-weight: 700
+
+    background-color: $white
+    color: $darkest-grey
+
+
+//
+// tick label
+//
+
+.graph-tick__label
+  font-size: em(14)
+  line-height: em(18, 14)
+  white-space: nowrap
+
+  background-color: inherit
+
+
+.graph__ticks--top
+  .graph-tick__label
+    font-size: em(12)
+
+
+//
+// tick (range)
+//
+
+.graph__tick--range
+  cursor: zoom-in
+
+  &.is-selected
+    cursor: zoom-out
+
+
+//
+// graph marker
+//
+
+.graph__marker
+  color: $grey
+
+  transition: 0.5s opacity
+  pointer-events: none
+
+.graph__ticks.has-selection
+  .graph__marker
+    opacity: 0

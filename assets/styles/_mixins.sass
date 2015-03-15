@@ -13,15 +13,12 @@
   &:after
     clear: both
 
-=prefix-property($property, $value)
-  -webkit-#{$property}: $value
-  -moz-#{$property}: $value
-  -ms-#{$property}: $value
-  -o-#{$property}: $value
-  #{$property}: $value
-
 =min-width($media)
   @media only screen and (min-width: $media)
+    @content
+
+=min-height($media)
+  @media only screen and (min-height: $media)
     @content
 
 //============================================================

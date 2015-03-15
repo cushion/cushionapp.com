@@ -1,0 +1,36 @@
+{% capture content %}
+<main class='grid-container--narrow'>
+  <article class='post'>
+    <header class='post__header'>
+      <h3 class='post__title'>
+        <a href='{{ post.url }}'>{{ post.title }}</a>
+      </h3>
+      <time class='post__date' datetime='{{ post.date }}'>{{ post.date | date:'%b %d, %Y' }}</time>
+    </header>
+
+    <div class='post__body'>
+      {{ post.body }}
+    </div>
+
+    <div class='post__alert'>
+      <div class='alert'>
+        {{ site.pages.journal.meta.alert | md }}
+      </div>
+    </div>
+  </article>
+
+  <section>
+    <h3 class='page__title'>Archive</h3>
+
+    <ul class='post-list'>
+      {% for _post in site.pages.journal.posts %}
+      <li class='post-list__item'>
+        <a class='{% if _post.url == post.url %}link--strike{% endif %} link--hover-border' href='{{ _post.url }}'>{{ _post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>
+{% endcapture %}
+
+{% include 'layouts/default' %}

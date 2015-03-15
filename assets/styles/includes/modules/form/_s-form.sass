@@ -1,0 +1,132 @@
+//
+// loader animation
+//
+
+@keyframes loader
+  0%
+    transform: scale(0.75)
+    background-color: #80DDBE
+    animation-timing-function: ease-in
+
+  10%
+    transform: scale(1)
+    background-color: #CFC291
+    animation-timing-function: ease-out
+
+  20%
+    transform: scale(0.75)
+    background-color: #CFC291
+    animation-timing-function: ease-in
+
+  30%
+    transform: scale(1)
+    background-color: #8ACCE8
+    animation-timing-function: ease-out
+
+  40%
+    transform: scale(0.75)
+    background-color: #8ACCE8
+    animation-timing-function: ease-in
+
+  50%
+    transform: scale(1)
+    background-color: #FEAA3A
+    animation-timing-function: ease-out
+
+  60%
+    transform: scale(0.75)
+    background-color: #FEAA3A
+    animation-timing-function: ease-in
+
+  70%
+    transform: scale(1)
+    background-color: #FF8D8D
+    animation-timing-function: ease-out
+
+  80%
+    transform: scale(0.75)
+    background-color: #FF8D8D
+    animation-timing-function: ease-in
+
+  90%
+    transform: scale(1)
+    background-color: #80DDBE
+    animation-timing-function: ease-out
+
+  100%
+    transform: scale(0.75)
+    background-color: #80DDBE
+
+
+//
+// button
+//
+
+.button
+  font-family: "jaf-facitweb", $system-font
+
+  border-radius: em(4)
+  border: solid 1px $blue
+  outline: none
+  background-color: $blue
+  color: $white
+
+  &:hover
+    background-color: $black
+    border-color: $black
+
+  &:before
+    border-radius: 50%
+    transition: 0.35s opacity
+    opacity: 0
+    content: ''
+
+  .is-loading &
+    background-color: $white
+    border-color: $light-grey
+    color: $white
+
+    &:before
+      opacity: 1
+      animation-duration: 3s
+      animation-name: loader
+      animation-iteration-count: infinite
+
+
+//
+// input
+//
+
+.input
+  outline: none
+  border: none
+  border: solid 1px $light-grey
+  background-color: $white
+  color: $black
+
+  &--text
+    font-size: em($medium)
+
+
+//
+// alert
+//
+
+.alert
+  font-size: 14px
+  background-color: $blue--light
+
+  p
+    font-family: "jaf-facitweb", $system-font
+
+  a
+    @extend .link--underline
+
+  &--positive
+    background-color: $green--light
+
+  &--negative
+    background-color: $purple--light
+
+  +min-width($tablet)
+    font-size: 16px

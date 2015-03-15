@@ -1,0 +1,182 @@
+//
+// graph
+//
+
+.graph
+  min-width: 940px
+  max-width: 1100px
+  min-height: 100px
+
+
+//
+// graph boundary
+//
+
+.graph__boundary
+  position: relative
+  z-index: 1 // above month ticks
+
+  min-height: 100px
+
+
+//
+// graph columns
+//
+
+.graph__columns
+  display: block
+  overflow: hidden
+
+  &.is-hidden
+    opacity: 0
+
+
+.graph__boundary
+  position: relative
+
+  .graph__columns
+    position: absolute
+    top: 0
+    left: 0
+
+    width: 100%
+    height: 100%
+
+
+//
+// graph column
+//
+
+.graph__column
+  display: block
+
+.graph__columns
+  position: relative
+
+  > .graph__column
+    position: absolute
+    top: 0
+    height: 100%
+
+
+//
+// ticks
+//
+
+.graph__ticks
+  display: block
+
+
+//
+// tick
+//
+
+.graph__tick
+  display: block
+  padding-top: 4px
+
+  &:before // line
+    position: absolute
+    top: 0
+
+    display: block
+    width: 2px
+
+    content: ''
+
+  &.is-selected
+    height: 36px
+
+    &:before,
+    + .graph__tick:before // line & next line
+      visibility: hidden
+
+
+.graph__ticks
+  position: relative
+
+  .graph__tick
+    position: absolute
+    top: 0
+
+
+.graph__ticks--top
+  .graph__tick
+    top: auto
+    bottom: 0
+
+    &:before // line
+      top: auto
+      bottom: 0
+
+
+//
+// tick (point)
+//
+
+.graph__tick--point
+  &:before // line
+    left: -1px
+    height: 10px
+
+  .graph-tick__label
+    position: absolute
+    top: 11px
+    left: 0
+    transform: translateX(-50%)
+
+
+.graph__ticks--top
+  .graph__tick--point
+    &:before // line
+      height: 7px
+
+  .graph-tick__label
+    top: auto
+    bottom: 7px
+
+
+//
+// tick (range)
+//
+
+.graph__tick--range
+  height: 29px
+
+  &:before // line
+    left: -1px
+    height: 100%
+
+  .graph-tick__label
+    position: absolute
+    top: 9px
+    left: 50%
+    z-index: 1
+    transform: translateX(-50%)
+
+
+.graph__ticks
+  .graph__tick--range:first-child:before // hide first line
+    visibility: hidden
+
+
+//
+// marker
+//
+
+.graph__marker
+  display: block
+
+
+.graph__ticks
+  position: relative
+
+  .graph__marker
+    position: absolute
+    transform: translateX(-50%)
+    z-index: 1
+
+
+.graph__ticks--bottom
+  .graph__marker
+    top: -11px

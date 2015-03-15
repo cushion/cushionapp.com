@@ -1,0 +1,84 @@
+//
+// mobile
+//
+
+.no-mobile
+  display: none
+
+  +min-width($mini-tablet)
+    display: initial
+
+
+//
+// border
+//
+
+.border
+  &--blue
+    border-color: $blue
+
+  &--green
+    border-color: $green
+
+  &--purple
+    border-color: $purple
+
+  &--yellow
+    border-color: $yellow
+
+
+//
+// link
+//
+
+.link--underline
+  text-decoration: underline
+
+  &:hover
+    text-decoration: none
+    color: initial
+
+
+.link--border
+  text-decoration: none
+  border-bottom: solid 2px $green
+
+  &:hover
+    text-decoration: none
+    border-bottom-color: $darkest-grey
+
+
+.link--hover-border
+  text-decoration: none
+
+  &:hover
+    text-decoration: none
+    border-bottom: solid 2px $darkest-grey
+
+
+.link--strike
+  text-decoration: line-through
+
+
+//
+// background
+//
+
+.background
+  &--light
+    background-color: $lightest-grey
+
+
+//
+// layout
+//
+
+.vertical-layout
+  &__outer
+    display: table
+    width: 100%
+
+  &__inner
+    display: table-cell
+    vertical-align: middle
+

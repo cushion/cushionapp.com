@@ -1,0 +1,17 @@
+<nav class='page-nav'>
+  <ul class='page-nav__list'>
+    {% for page in site.pages %}
+      {% unless page.home? %}
+      <li class='page-nav__item'>
+        <a class='page-nav__link' href='{{ page.url }}'>{{ page.title }}</a>
+      </li>
+      {% endunless %}
+    {% endfor %}
+    <li class='no-mobile page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+    </li>
+    <li class='page-nav__item'>
+      <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+    </li>
+  </ul>
+</nav>

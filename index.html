@@ -1,125 +1,207 @@
-<!DOCTYPE html>
-<html>
-  {% include 'includes/head' %}
+{% capture alert %}
+  {% if meta.alert %}
+    <div class='alert'>{{ meta.alert | md }}</div>
+  {% endif %}
+{% endcapture %}
 
-  <body>
-    <ul class='header-image-list'>
-      <li class='is-selected header-image-item' style='background-image: url({{ assets[0].url }})'></li>
-      <li class='header-image-item' style='background-image: url({{ assets[1].url }})'></li>
-      <li class='header-image-item' style='background-image: url({{ assets[2].url }})'></li>
-    </ul>
-    <script>
-      var images = document.querySelectorAll('.header-image-item');
-      var index = 0;
-      setInterval(function () {
-        if (index < 2) {
-          index++;
-        } else {
-          index = 0;
-        }
+{% capture content %}
+  <section class='grid-container--wide hero'>
+    {% assign section = pages.hero %}
 
-        var currentImage = document.querySelector('.is-selected');
-        currentImage.className = currentImage.className.replace('is-selected', '');
+    <div class='hero__title'>
+      {{ section.body }}
+    </div>
 
-        images[index].className += ' is-selected';
-      }, 8000);
-    </script>
+    {% include 'includes/newsletter' %}
 
-    <header class='header'>
-      <h1 class='logo'>
-        <a class='link' href='/'>{{ site.title }}</a>
-      </h1>
-      <h2 class='tagline'>{{ site.meta.tagline }}</h2>
+    {{ alert }}
+  </section>
 
-      <nav class='main-nav'>
-        <ul class='nav-list'>
-        {% for page in site.pages %}
-          {% unless page.home? %}
-          <li class='nav-item'>
-            <a class='nav-link' href='{{ page.url }}'>{{ page.title }}</a>
-          </li>
-          {% endunless %}
+  <section id='budget' class='background--light homepage__section'>
+    <div class='js-budget__graph'>
+      <div class='feature-column__graph-container'>
+        <div class='feature-column__graph graph'>
+          <div class='graph__ticks--top graph__ticks'>
+            <div class='graph__tick--point graph__tick' style='left: 70%'>
+              <span class='graph-tick__label'>minimum</span>
+            </div>
+
+            <div class='graph__tick--point graph__tick' style='left: 85%'>
+              <span class='graph-tick__label'>target</span>
+            </div>
+
+            <div class='graph__tick--point graph__tick' style='left: 100%'>
+              <span class='graph-tick__label'>stretch</span>
+            </div>
+          </div>
+
+          <div class='graph__boundary'>
+            <div class='js-budget__bar bar'>
+              <div class='bar__item--solid bar__item' style='width: 30%; background-color: #16547E'>
+                <div class='bar-item__label' style='color: #fff'>
+                  <span class='bar-item__label-line--strong bar-item__label-line'>Kramerica</span>
+                  <span class='bar-item__label-line'>$15,000</span>
+                </div>
+              </div><div class='bar__item--solid bar__item' style='width: 25%; background-color: #EB5E28'>
+                <div class='bar-item__label' style='color: #fff'>
+                  <span class='bar-item__label-line--strong bar-item__label-line'>Vandelay Industries</span>
+                  <span class='bar-item__label-line'>$10,000</span>
+                </div>
+              </div><div class='bar__item--outlined bar__item' style='width: 15%; outline-color: #89CBE9'>
+                <div class='bar-item__label'>
+                  <span class='bar-item__label-line--strong bar-item__label-line'>J. Peterman</span>
+                  <span class='bar-item__label-line'>$7,500</span>
+                </div>
+              </div><div class='bar__item--outlined bar__item' style='width: 10%; outline-color: #EB5E28'>
+                <div class='bar-item__label'>
+                  <span class='bar-item__label-line--strong bar-item__label-line'>Vandelay</span>
+                  <span class='bar-item__label-line'>$5,000</span>
+                </div>
+              </div><div class='bar__item--dashed bar__item' style='width: 10%; outline-color: #16547E'>
+                <div class='bar-item__label'>
+                  <span class='bar-item__label-line--strong bar-item__label-line'>Kramerica</span>
+                  <span class='bar-item__label-line'>$5,000</span>
+                </div>
+              </div><div class='bar__item--dashed bar__item' style='width: 5%; outline-color: #89CBE9'>
+                <div class='bar-item__label'>
+                  <span class='bar-item__label-line--strong bar-item__label-line'>JP</span>
+                  <span class='bar-item__label-line'>$2,500</span>
+                </div>
+              </div>
+            </div>
+
+            <div class='js-budget__bar bar'>
+              <div class='bar__item--solid bar__item' style='width: 55%; background-color: #6BBD2E'>
+                <div class='bar-item__label' style='color: #fff'>
+                  <span class='bar-item__label-line--strong bar-item__label-line'>Paid</span>
+                  <span class='bar-item__label-line'>$25,000</span>
+                </div>
+              </div><div class='bar__item--outlined bar__item' style='width: 25%; outline-color: #6BBD2E'>
+                <div class='bar-item__label'>
+                  <span class='bar-item__label-line--strong bar-item__label-line'>Invoiced</span>
+                  <span class='bar-item__label-line'>$15,000</span>
+                </div>
+              </div><div class='bar__item--dashed bar__item' style='width: 15%; outline-color: #6BBD2E'>
+                <div class='bar-item__label'>
+                  <span class='bar-item__label-line--strong bar-item__label-line'>Estimated</span>
+                  <span class='bar-item__label-line'>+$7,500</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='graph__ticks--bottom graph__ticks'>
+            <div class='graph__tick--point graph__tick' style='left: 0'>
+              <span class='graph-tick__label'>$0</span>
+            </div>
+
+            <div class='graph__tick--point graph__tick' style='left: 20%'>
+              <span class='graph-tick__label'>$10k</span>
+            </div>
+
+            <div class='graph__tick--point graph__tick' style='left: 40%'>
+              <span class='graph-tick__label'>$20k</span>
+            </div>
+
+            <div class='graph__tick--point graph__tick' style='left: 60%'>
+              <span class='graph-tick__label'>$30k</span>
+            </div>
+
+            <div class='graph__tick--point graph__tick' style='left: 80%'>
+              <span class='graph-tick__label'>$40k</span>
+            </div>
+
+            <div class='graph__tick--point graph__tick' style='left: 100%'>
+              <span class='graph-tick__label'>$50k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class='homepage__feature-row'>
+        {% for feature in pages.budget.pages %}
+        <article class='js-budget__feature homepage__feature-column'>
+          {{ feature.body }}
+        </article>
         {% endfor %}
-        </ul>
-      </nav>
-    </header>
+      </div>
+    </div>
+  </section>
 
-    <main class='main-content'>
-      <section class='copy-section section'>
-        <div class='copy'>
-          {{ body }}
-        </div>
-      </section>
-
-      <section class='odd feature-section section'>
-        <div class='subsection'>
-          <div class='subsection-image' style='height: 172px; background-image: url(/assets/feature1.png)'></div>
-        </div><div class='subsection'>
-          <div class='copy'>
-            {{ meta.feature1 | md }}
+  <section id='schedule' class='homepage__section'>
+    <div class='js-schedule__graph homepage__feature-row'>
+      {% for feature in pages.schedule.pages %}
+      <article class='js-schedule__feature homepage__feature-column--schedule homepage__feature-column'>
+        <div class='timeline'>
+          <div class='timeline__rows'>
+            {{ feature.meta.timeline }}
           </div>
-        </div>
-      </section>
 
-      <section class='feature-section section'>
-        <div class='subsection'>
-          <div class='copy'>
-            {{ meta.feature2 | md }}
-          </div>
-        </div><div class='subsection'>
-          <div class='subsection-image' style='height: 180px; background-image: url(/assets/feature2.png)'></div>
-        </div>
-      </section>
-
-      <section class='odd feature-section section'>
-        <div class='subsection'>
-          <div class='subsection-image' style='height: 166px; background-image: url(/assets/feature3.png)'></div>
-        </div><div class='subsection'>
-          <div class='copy'>
-            {{ meta.feature3 | md }}
-          </div>
-        </div>
-      </section>
-
-      <section class='timeline-section section'>
-        <div class='copy'>
-          {{ meta.timeline | md }}
+          {{ feature.meta.tooltip }}
         </div>
 
-        <div class='timeline-image'></div>
-      </section>
-
-      <section class='odd journal-section section'>
-        <div class='subsection'>
-          <a class='subsection-image' href='{{ site.pages.journal.posts.first.url }}' style='height: {{ assets.last.meta.height }}px; background-image: url({{ assets.last.url }})'></a>
-        </div><div class='subsection'>
-          <div class='copy'>
-            {{ meta.journal | md }}
-          </div>
-        </div>
-      </section>
-
-      <section class='newsletter-section section'>
-        <div class='copy'>
-          {{ meta.newsletter | md }}
-        </div>
-
-        <form class='subscribe-form form' action="//cushionapp.us9.list-manage.com/subscribe/post?u=313d794b00e529c8199ff32e2&amp;id=9f4ec10ac5" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-          <input name='EMAIL' class='text-input' type='email' placeholder='you@yourwebsite.com' required>
-          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_313d794b00e529c8199ff32e2_9f4ec10ac5" tabindex="-1" value=""></div>
-          <button id='submit' class='button' type='submit'>subscribe</button>
-        </form>
-      </section>
-    </main>
-
-    <footer class='footer'>
-      {% for subpage in site.pages %}
-        {% unless subpage.home? %}
-          <a class='footer-link' href='{{ subpage.url }}'>{{ subpage.title }}</a>
-        {% endunless %}
+        {{ feature.body }}
+      </article>
       {% endfor %}
-      <a class='footer-link' href='https://beta.cushionapp.com/login'>Sign in</a>
-    </footer>
-  </body>
-</html>
+    </div>
+  </section>
+
+  <section id='insights' class='background--light homepage__section'>
+    <div class='homepage__feature-row'>
+      <div class='homepage__feature-column--image homepage__feature-column'>
+        {% for asset in pages.insights.assets %}
+        <div class='js-insight__image homepage__feature-image' style='background-image: url({{ asset.url }});'></div>
+        {% endfor %}
+      </div>
+
+      <article class='homepage__feature-column'>
+        {{ pages.insights.body }}
+      </article>
+    </div>
+  </section>
+
+  <section class='homepage__section'>
+    <div class='grid-container--wide testimonials__list'>
+      {% for testimonial in pages.testimonials.pages %}
+      <article class='testimonial'>
+        <div class='border--{{ testimonial.meta.color }} testimonial__avatar'>
+          <div class='testimonial__avatar-image' style='background-image: url({{ testimonial.assets.first }})'></div>
+        </div>
+
+        <div class='testimonial__quote'>
+          {{ testimonial.body }}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class='background--light homepage__section'>
+    <div class='homepage__feature-row'>
+      <article class='homepage__feature-column--process homepage__feature-column'>
+        {{ pages.process.body }}
+      </article>
+
+      <div class='homepage__feature-column--image homepage__feature-column'>
+        {% for asset in pages.process.assets %}
+        <a class='homepage__feature-image' href='{{ site.pages.journal.url }}' style='background-image: url({{ asset.url }});'></a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class='homepage__section'>
+    {% assign section = pages.outro %}
+    <div class='grid-container--wide homepage__outro'>
+      <div class='homepage__message'>{{ section.body }}</div>
+
+      {% include 'includes/newsletter' %}
+
+      {{ alert }}
+    </div>
+  </section>
+
+  <script src='/assets/scripts/homepage.js'></script>
+{% endcapture %}
+
+{% include 'layouts/default' %}

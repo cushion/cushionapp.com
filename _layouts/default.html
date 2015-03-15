@@ -2,35 +2,14 @@
 <html>
   {% include 'includes/head' %}
 
-  <body>
-    {{ header }}
+  <body class='page'>
+    {% include 'includes/header' %}
 
-    <div class='wrapper'>
-      <header class='main-header'>
-        <h1 class='logo'>
-          <a class='link' href='/'>{{ site.title }}</a>
-        </h1>
-        <h2 class='tagline'>{{ site.meta.tagline }}</h2>
+    {{ content }}
 
-        <nav class='main-nav'>
-          <ul class='nav-list'>
-          {% for page in site.pages %}
-            {% unless page.home? %}
-            <li class='nav-item'>
-              <a class='nav-link' href='{{ page.url }}'>{{ page.title }}</a>
-            </li>
-            {% endunless %}
-          {% endfor %}
-          </ul>
-        </nav>
-      </header>
-
-      {{ content }}
-
-      <footer class='main-footer'>
-        Follow <a class='link' href='http://twitter.com/{{ site.meta.twitter }}'>@{{ site.meta.twitter }}</a> on Twitter
-      </footer>
-    </div>
+    <footer class='grid-container--wide page__footer'>
+      {% include 'includes/nav' %}
+    </footer>
 
     {{ foot }}
   </body>

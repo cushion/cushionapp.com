@@ -1,0 +1,227 @@
+//
+// animations
+//
+
+@keyframes timeline-item__animated-line
+  from
+    transform: translateX(0)
+
+  to
+    transform: translateX(5px)
+
+
+//
+// timeline outer
+//
+
+.timeline__outer
+  transition: 0.5s left, 0.5s width
+
+
+//
+// timeline item
+//
+
+.timeline__item
+  background-clip: content-box
+  color: $green
+
+  &.is-clickable
+    cursor: pointer
+
+
+//
+// dot
+//
+
+.timeline-item__dot
+  transition: 0.25s transform
+  color: inherit
+  border: solid em(3) currentColor
+
+  &.is-weak
+    background-color: $white
+
+  &.is-strong
+    background-color: currentColor
+
+
+//
+// arrow
+//
+
+.timeline-item__arrow
+  border-top: em(6) solid transparent
+  border-bottom: em(6) solid transparent
+  border-left: em(8) solid
+  border-left-color: currentColor
+  color: inherit
+
+  transition: 0.25s transform
+
+
+//
+// line
+//
+
+.timeline-item__line
+  position: relative
+
+  outline: 1px solid transparent
+  background-color: currentColor
+  background-clip: content-box
+
+  transition: 0.35s opacity
+
+  &.is-weak
+    opacity: 0.2
+
+    &:hover
+      opacity: 0.4
+
+  &.is-highlighted,
+  &.is-animated
+    &:before
+      background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOC4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCA2IDYiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgNiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8ZyBpZD0iTGF5ZXJfNiI+DQo8L2c+DQo8ZyBpZD0iTGF5ZXJfMSIgZGlzcGxheT0ibm9uZSI+DQoJPHJlY3QgeD0iMCIgZmlsbD0iIzk3MkRDOSIgd2lkdGg9IjE1IiBoZWlnaHQ9IjEyIi8+DQoJPHBvbHlnb24gZGlzcGxheT0iaW5saW5lIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjAsNSA1LDAgMiwwIDAsMiAJIi8+DQoJPHBvbHlnb24gZGlzcGxheT0iaW5saW5lIiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjUsMiAwLDcgMCwxMCA1LDUgCSIvPg0KCTxwb2x5Z29uIGRpc3BsYXk9ImlubGluZSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIzLDEyIDUsMTAgNSw3IDAsMTIgCSIvPg0KPC9nPg0KPGcgaWQ9IkxheWVyXzMiIGRpc3BsYXk9Im5vbmUiPg0KCTxwb2x5Z29uIGRpc3BsYXk9ImlubGluZSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIwLDUgNSwwIDIsMCAwLDIgCSIvPg0KCTxwb2x5Z29uIGRpc3BsYXk9ImlubGluZSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI1LDIgMCw3IDAsMTAgNSw1IAkiLz4NCgk8cG9seWdvbiBkaXNwbGF5PSJpbmxpbmUiIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMywxMiA1LDEwIDUsNyAwLDEyIAkiLz4NCjwvZz4NCjxnIGlkPSJMYXllcl8xX2NvcHkiIGRpc3BsYXk9Im5vbmUiPg0KCTxnIGRpc3BsYXk9ImlubGluZSI+DQoJCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMSwwIDAsMCAwLDEgCQkiLz4NCgkJPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSIxLDEyIDEzLDAgMTIsMCAwLDEyIAkJIi8+DQoJCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMCw3IDcsMCA2LDAgMCw2IAkJIi8+DQoJPC9nPg0KPC9nPg0KPGcgaWQ9IkxheWVyXzQiIGRpc3BsYXk9Im5vbmUiPg0KCTxwb2x5Z29uIGRpc3BsYXk9ImlubGluZSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI3LDIgNSwwIDAsMCA3LDcgCSIvPg0KCTxwb2x5Z29uIGRpc3BsYXk9ImlubGluZSIgZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI1LDcgMCwyIDAsNyAJIi8+DQo8L2c+DQo8ZyBpZD0iTGF5ZXJfNF9jb3B5Ij4NCgk8cG9seWdvbiBmaWxsPSIjRkZGRkZGIiBwb2ludHM9IjAsNCA0LDAgNiwwIDAsNiAJIi8+DQoJPHBvbHlnb24gZmlsbD0iI0ZGRkZGRiIgcG9pbnRzPSI0LDYgNiw0IDYsNiA0LDYgCSIvPg0KPC9nPg0KPC9zdmc+DQo=)
+      background-size: 5px
+
+    &.is-animated,
+    &:hover
+      &:before
+        animation-duration: .35s
+        animation-name: timeline-item__animated-line
+        animation-iteration-count: infinite
+        animation-timing-function: linear
+
+
+//
+// block groups
+//
+
+.timeline-item__block-group
+  transition: 0.35s opacity
+
+  &.is-weak
+    opacity: 0.2
+
+    .timeline-item__block
+      opacity: 1
+
+    &:hover
+      opacity: 0.4
+
+
+//
+// blocks
+//
+
+.timeline-item__block
+  background-color: currentColor
+
+  transition: 0.35s left, 0.35s width
+
+  .is-dragging &
+    transition: none
+
+
+//
+// block fill
+//
+
+.timeline-item__block-fill
+  background-color: inherit
+
+  transition: 0.35s opacity, 0.35s height
+
+  .is-editable &
+    cursor: move
+
+  .is-weak &
+    opacity: 0.2
+
+    &:hover
+      opacity: 0.4
+
+  .is-strong &
+    opacity: 0.6
+
+    &:hover
+      opacity: 0.8
+
+
+//
+// block anchors
+//
+
+.timeline-item__block-anchor
+  background-color: inherit
+
+  transition: 0.35s opacity, 0.35s height
+  opacity: 0.5
+
+  &:hover,
+  .is-dragging &
+    cursor: ew-resize
+    opacity: 1
+
+
+//
+// blobs
+//
+
+.timeline-item__blob
+  color: inherit
+  background-color: currentColor
+  opacity: 0.2
+
+  transition: 0.35s opacity
+
+  &:before
+    background-color: inherit
+    content: ''
+
+  &:hover
+    opacity: 0.4
+
+
+//
+// tooltip
+//
+
+.timeline__tooltip
+  background-color: $green
+  color: $white
+
+  transition: 0.35s opacity
+
+  &:before // point
+    background-color: inherit
+
+  &.is-hidden
+    opacity: 0
+
+
+.timeline
+  .timeline__tooltip
+    pointer-events: none
+
+
+//
+// tooltip line
+//
+
+.timeline-tooltip__line
+  font-size: 12px
+  line-height: 1.75em
+  text-align: center
+  white-space: nowrap
+  color: $white
+
+  &.is-strong
+    font-size: 16px
+    font-weight: 600
+
+
+.timeline__tooltip
+  .timeline-tooltip__line
+    color: inherit

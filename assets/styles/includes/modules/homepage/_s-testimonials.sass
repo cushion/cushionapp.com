@@ -1,0 +1,39 @@
+//
+// testimonial
+//
+
+.testimonial
+  font: $copy-font
+  font-size: em(16)
+
+  +min-width($tablet)
+    font-size: 112.5%
+
+
+//
+// avatar
+//
+
+.testimonial__avatar
+  border-radius: 50%
+  border: solid 3px
+
+
+//
+// avatar image
+//
+
+.testimonial__avatar-image
+  border-radius: 50%
+  background-repeat: no-repeat
+  background-size: contain
+
+
+//
+// quote
+//
+
+.testimonial__quote
+  a
+    @extend .link--hover-border
+    font-style: italic

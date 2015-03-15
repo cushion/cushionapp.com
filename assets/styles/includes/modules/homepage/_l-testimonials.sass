@@ -1,0 +1,75 @@
+//
+// testimonial
+//
+
+.testimonial
+
+
+.testimonials__list
+  margin-top: 20px
+  margin-bottom: -20px
+
+  .testimonial
+    margin-bottom: 40px
+
+  +min-width($tablet)
+    margin-top: 0
+    margin-bottom: -40px
+
+    .testimonial
+      +span-columns(6 of 12)
+
+      &:nth-child(2n)
+        +omega
+
+
+//
+// avatar
+//
+
+.testimonial__avatar
+  width: 72px
+  height: 72px
+  overflow: hidden
+
+
+.testimonial
+  position: relative
+
+  .testimonial__avatar
+    margin: 0 auto em(15)
+
+  +min-width($mini-tablet)
+    padding-left: 72px + 16px
+
+    .testimonial__avatar
+      position: absolute
+      top: 0
+      left: 0
+
+      margin: 0
+
+
+//
+// avatar image
+//
+
+.testimonial__avatar
+  position: relative
+
+  .testimonial__avatar-image
+    position: absolute
+    left: 0
+    top: 0
+
+    width: 100%
+    height: 100%
+
+
+//
+// quote
+//
+
+.testimonial__quote
+  p:last-child
+    margin-top: em(4)

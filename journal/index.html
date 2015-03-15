@@ -1,16 +1,3 @@
-{% capture content %}
-<main class='main-content'>
-  {% for post in posts %}
-  <article class='article'>
-    <h3 class='article-title'>
-      <a class='link' href='{{ post.url }}'>{{ post.title }}</a>
-    </h3>
-    <div class='article-copy'>
-      {{ post.body }}
-    </div>
-  </article>
-  {% endfor %}
-</main>
-{% endcapture %}
+{% assign post = posts.first %}
 
-{% include 'layouts/default' %}
+{% include 'layouts/post' %}

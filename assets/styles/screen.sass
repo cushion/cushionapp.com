@@ -1,34 +1,9 @@
-@import '_mixins'
-@import '_normalize'
-
-// variables
-
-$system-font: "Helvetica Neue", Helvetica, sans-serif
-$base-font: 400 100%/1.65 "jaf-facitweb", $system-font
-$header-font: 700 150%/1.25 "effra", $system-font
-$copy-font: 400 100%/1.65 "ff-tisa-web-pro", $system-font
-$button-font: 400 .875rem/1.65 "jaf-facitweb", $system-font
-$code-font: 400 87.5%/1.65 "jaf-facitweb", $system-font
-$blockquote-font: 400 87.5%/1.65 "ff-tisa-web-pro", $system-font
-
-$white: #fff
-$black: #222
-$grey: #999
-$light-grey: #ccc
-$lighter-grey: #eee
-$lightest-grey: #f2f2f2
-$orange: #FEAA3A
-$blue: #3498DB
-$green: #6BBD2E
-
-$smaller: 12
-$small: 14
-$medium: 16
-$large: 18
-$larger: 20
-$largest: 24
-
-$tablet-portrait: em(481)
+@import 'mixins'
+@import 'normalize'
+@import 'libs/bourbon/bourbon'
+@import 'variables'
+@import 'libs/neat/neat'
+@import 'utilities/grid'
 
 // reset
 
@@ -40,10 +15,20 @@ $tablet-portrait: em(481)
 *,
 *:before,
 *:after
-  +prefix-property(box-sizing, border-box)
+  box-sizing: border-box
 
 html.wf-loading *
   color: transparent !important
+
+h1, h2, h3, h4, h5, p, ul
+  margin: 0
+  font-weight: normal
+
+h1, h2, h3, h4, h5
+  font-family: "effra", $system-font
+
+p
+  font-family: "ff-tisa-web-pro", $system-font
 
 ul
   padding: 0
@@ -53,7 +38,7 @@ li
 
 input[type='text'],
 input[type='email']
-  +prefix-property(border-radius, 0)
+  border-radius: 0
   -webkit-appearance: none
 
 // base
@@ -71,11 +56,11 @@ a
   color: $black
   text-decoration: none
 
-  &:hover
-    color: $green
-
   img
     vertical-align: top
+
+blockquote
+  margin: 0
 
 hr
   border: none
@@ -93,29 +78,10 @@ hr
 \:-ms-input-placeholder
   color: $grey
 
-::selection
-  background-color: $black
-  color: $white
-
-::-moz-selection
-  background-color: $black
-  color: $white
-
 // components
 
 .wrapper
   padding: 0 em(10)
-
-.text-input
-  padding: em(4) em(8)
-
-  font-size: rem($medium)
-  line-height: em(22)
-
-  outline: none
-  border: none
-  border: solid 1px $light-grey
-  color: $black
 
 .link
   color: $black
@@ -123,20 +89,6 @@ hr
 
   &:hover
     color: $green
-
-.button
-  padding: em(4, $small) em(14, $small) em(5, $small)
-
-  font: $button-font
-
-  +prefix-property(border-radius, em(5, $small))
-  outline: none
-  border: none
-  background-color: $green
-  color: $white
-
-  &:hover
-    background-color: $black !important
 
 .center
   text-align: center
@@ -230,145 +182,6 @@ hr
   font-size: rem($large)
   text-decoration: none
 
-// article
-
-.article
-  margin: 0 auto em(60)
-  max-width: 38em
-
-  +min-width($tablet-portrait)
-    font-size: 112.5%
-
-+min-width($tablet-portrait)
-  .journal-article,
-  .changelog-article
-    margin-bottom: em(120, $medium)
-
-.article-title
-  font: $header-font
-  text-align: center
-
-  +min-width($tablet-portrait)
-    margin-bottom: em(32, $largest)
-
-.article-copy
-  font: $copy-font
-
-  img
-    display: block
-    margin-left: auto
-    margin-right: auto
-
-  p
-    word-wrap: break-word
-
-  a
-    border-bottom: solid 2px $green
-    color: $black
-
-    &:hover
-      border-bottom-color: $black !important
-
-  h4
-    margin-bottom: 0
-
-    font: $header-font
-
-    & + p
-      margin-top: 0
-
-    a
-      border-bottom: none
-
-  code
-    padding: 0.125em 0.5em
-    font: $code-font
-
-  blockquote,
-  code
-    background-color: $lighter-grey
-
-  blockquote
-    font: $blockquote-font
-
-    margin-left: 0
-    margin-right: 0
-    padding: 1em 2em
-
-  ul, ol
-    padding-left: 1.825em
-
-  li
-    line-height: 2em
-
-  ul > li
-    list-style-type: disc
-
-  ol > li
-    list-style-type: decimal
-
-.video-inner
-  position: relative
-  padding-bottom: 56.25%
-
-  iframe, video
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-
-// changelog
-
-.changelog-section
-  margin-bottom: em(30)
-
-  ul
-    padding-left: 0
-
-    > li
-      position: relative
-      padding-left: em(33)
-      margin: em(10) 0
-
-      line-height: 1.5em
-      list-style-type: none
-
-      &:before
-        position: absolute
-        left: em(6)
-        top: 0.625em
-
-        display: block
-        width: em(6)
-        height: em(6)
-
-        border-radius: em(3)
-        background-color: $black
-
-        content: ''
-
-h4.changelog-title
-  font-size: rem($large)
-  line-height: em(21, $large)
-
-  &:before
-    float: left
-    display: block
-    width: em(21, $large)
-    height: em(21, $large)
-    margin-right: em(12, $large)
-
-    content: ''
-
-.new-changelog-title:before
-  background-color: $green
-
-.improved-changelog-title:before
-  background-color: $blue
-
-.fixed-changelog-title:before
-  background-color: $orange
 
 // footer
 
@@ -394,33 +207,6 @@ h4.changelog-title
 .footer-link
   margin: em(10, $small)
   color: $grey
-
-// form
-
-.form
-  margin: em(20) em(10)
-
-  text-align: center
-
-  .text-input
-    width: 100%
-
-  .button
-    margin-top: em(20)
-
-  +min-width($tablet-portrait)
-    margin-top: em(70)
-
-    .text-input
-      display: inline-block
-      width: em(280)
-      margin-right: em(10)
-      vertical-align: bottom
-
-    .button
-      margin-top: 0
-
-      vertical-align: bottom
 
 // table
 
@@ -466,11 +252,7 @@ tfoot
 
 // expenses
 
-.graph-section
-  max-width: em(1200)
-  margin: em(30) auto
-
-.graph
+.expenses-graph
   margin: em(60) 0
 
 // homepage
@@ -600,3 +382,31 @@ tfoot
       display: inline-block
       width: 32%
       margin: 0.5em 0
+
+@import 'modules/form/l-form'
+@import 'modules/form/s-form'
+@import 'modules/page/l-page'
+@import 'modules/page/s-page'
+@import 'modules/page/l-page-nav'
+@import 'modules/page/s-page-nav'
+@import 'modules/homepage/l-homepage'
+@import 'modules/homepage/s-homepage'
+@import 'modules/homepage/l-hero'
+@import 'modules/homepage/s-hero'
+@import 'modules/homepage/l-newsletter'
+@import 'modules/homepage/s-newsletter'
+@import 'modules/homepage/l-feature'
+@import 'modules/homepage/s-feature'
+@import 'modules/homepage/l-testimonials'
+@import 'modules/homepage/s-testimonials'
+@import 'modules/graph/l-graph'
+@import 'modules/graph/s-graph'
+@import 'modules/graph/l-timeline'
+@import 'modules/graph/s-timeline'
+@import 'modules/graph/l-bar'
+@import 'modules/graph/s-bar'
+@import 'modules/post/l-post'
+@import 'modules/post/s-post'
+@import 'modules/changelog/l-changelog'
+@import 'modules/changelog/s-changelog'
+@import 'shared'

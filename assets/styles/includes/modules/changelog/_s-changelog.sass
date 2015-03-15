@@ -1,0 +1,34 @@
+//
+// date
+//
+
+.changelog-post__date
+  font-size: em(18)
+  font-weight: 700
+
+
+//
+// subtitle
+//
+
+.changelog-post__subtitle
+  @extend .alert
+  font: $base-font
+  font-size: em(14)
+  font-weight: 600
+
+  &--new
+    @extend .alert--positive
+
+  &--fixed
+    @extend .alert--negative
+
+
+//
+// list
+//
+
+.changelog-post__list
+  li
+    margin-left: 2em
+    list-style-type: disc

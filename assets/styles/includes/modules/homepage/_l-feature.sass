@@ -1,0 +1,87 @@
+//
+// row
+//
+
+.homepage__feature-row
+  +outer-container($wide-container-width)
+
+
+//
+// column
+//
+
+.homepage__feature-column
+  &--image
+    position: relative
+    height: 180px
+
+
+.homepage__feature-row
+  .homepage__feature-column
+    margin-top: em(15)
+
+    &--schedule
+      margin-top: em(90)
+
+    &--process
+      margin-top: 0
+
+    +min-width($tablet)
+      margin-top: 0
+      +span-columns(4 of 12)
+
+      &--image
+        +span-columns(8 of 12)
+
+//
+// graph container
+//
+
+.feature-column__graph-container
+  +clearfix
+  position: relative
+  height: 100px
+  margin: 30px 0 60px
+
+
+//
+// graph
+//
+
+.feature-column__graph-container
+  .feature-column__graph
+    position: absolute
+    top: 0
+    right: 30px
+
+    +min-width($laptop)
+      position: relative
+      right: auto
+
+      margin-left: auto
+      margin-right: auto
+
+
+
+//
+// timeline
+//
+
+.homepage__feature-column
+  .timeline
+    font-size: 1rem
+
+    +min-width($tablet)
+      margin-bottom: em(20)
+
+//
+// image
+//
+
+.homepage__feature-column--image
+  .homepage__feature-image
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%

@@ -2,3 +2,4 @@
 .sass-cache
 config.ru
 .bundle
+node_modules/

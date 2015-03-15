@@ -1,0 +1,293 @@
+//
+// timeline
+//
+
+.timeline
+  position: relative
+
+  display: table
+  width: 100%
+  min-height: 100px
+  height: 100px
+  padding: 16px 0 8px
+
+  &.is-large
+    font-size: 2em
+    padding: 0
+
+
+//
+// timeline outer
+//
+
+.timeline__outer
+  position: relative
+
+
+//
+// timeline rows
+//
+
+
+.timeline
+  .timeline__rows
+    display: table-cell
+    width: 100%
+    vertical-align: bottom
+
+.timeline--middle
+  .timeline__rows
+    vertical-align: middle
+
+
+//
+// timeline row
+//
+
+.timeline__row
+  display: block
+  height: em(28)
+
+
+//
+// timeline item
+//
+
+.timeline__item
+  position: relative
+
+  display: block
+  height: em(20)
+
+  padding: em(8) 0
+  margin: em(4) 0
+
+
+.timeline__row
+  position: relative
+
+  .timeline__item
+    position: absolute
+
+
+//
+// dot
+//
+
+.timeline-item__dot
+  $size: 10
+  display: block
+  width: em($size)
+  height: em($size)
+  border-radius: em($size / 2)
+
+  &.is-weak
+    font-size: 120%
+
+
+.timeline.is-large
+  .timeline-item__dot.is-weak
+    font-size: 100%
+
+
+.timeline__item
+  .timeline-item__dot
+    position: absolute
+    top: 50%
+    z-index: 2
+
+    transform: translate(-50%, -50%) scale(1) translateZ(0)
+
+    &.is-collapsed
+      transform: translate(-50%, -50%) scale(0) translateZ(0)
+
+  &.is-strong
+    .timeline-item__dot
+      font-size: 100%
+
+  &:hover
+    .timeline-item__dot
+      transform: translate(-50%, -50%) scale(1) translateZ(0)
+
+      &:hover
+        transform: translate(-50%, -50%) scale(1.5) translateZ(0)
+
+
+//
+// arrow
+//
+
+.timeline-item__arrow
+  display: block
+
+.timeline__item
+  .timeline-item__arrow
+    position: absolute
+    top: 50%
+    transform: translate(-25%, -50%)
+
+    &:hover
+      transform: translate(-25%, -50%) scale(1.5)
+
+
+//
+// line
+//
+
+.timeline-item__line
+  display: block
+  height: em(8)
+  padding: 0 0 em(4)
+
+  overflow: hidden
+
+  &:before // pattern
+    position: absolute
+    top: 0
+    left: -5px
+    right: 0
+
+    height: em(4)
+
+    content: ''
+
+.timeline__item
+  .timeline-item__line
+    position: absolute
+    top: em(8)
+
+    width: 100%
+
+
+//
+// blocks
+//
+
+.timeline-item__block
+  position: relative
+
+  display: block
+  height: 0
+
+
+.timeline-item__block-group
+  position: relative
+  top: em(4)
+
+  .timeline-item__block
+    position: absolute
+
+    &.is-editable
+      z-index: 1
+
+
+//
+// block fill
+//
+
+.timeline-item__block-fill
+  height: em(5)
+  border-radius: 4px 4px 0 0
+
+
+.timeline-item__block
+  position: relative
+
+  .timeline-item__block-fill
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+
+
+//
+// block anchors
+//
+
+.timeline-item__block-anchor
+  display: block
+  width: 6px
+  height: em(5)
+
+
+.timeline-item__block
+  position: relative
+
+  .timeline-item__block-anchor
+    position: absolute
+    bottom: 0
+
+    &--left
+      left: 0
+      border-top-left-radius: 4px
+
+    &--right
+      right: 0
+      border-top-right-radius: 4px
+
+
+//
+// blobs
+//
+
+.timeline-item__blob
+  position: relative
+
+  display: block
+  height: 0
+
+  &:before
+    position: absolute
+    top: em(-5)
+    left: em(-5)
+    bottom: em(-5)
+    right: em(-5)
+
+    transform: translateZ(0) // fixes twitch on hover
+    border-radius: em(5)
+
+
+.timeline__item
+  .timeline-item__blob
+    position: absolute
+    top: 50%
+
+
+//
+// tooltip
+//
+
+.timeline__tooltip
+  position: relative
+
+  display: inline-block
+  min-width: 150px
+  padding: 10px 18px 11px
+
+  &:before // point
+    position: absolute
+    left: 50%
+    top: 100%
+    transform: translateX(-50%)
+
+    width: 12px
+    height: 12px
+    transform: translate(-50%, -50%) rotate(45deg)
+
+    content: ''
+
+
+.timeline
+  .timeline__tooltip
+    position: absolute
+    z-index: 2
+
+    transform: translate(-50%, -110%)
+
+
+//
+// tooltip line
+//
+
+.timeline-tooltip__line
+  display: block

@@ -1,0 +1,46 @@
+//
+// bar
+//
+
+.bar
+  background-color: $white
+  transition: 0.5s opacity
+
+  &.is-hidden
+    opacity: 0
+
+
+//
+// item
+//
+
+.bar__item
+  outline: solid 4px
+  outline-offset: -4px
+  background-color: $white
+
+  &--solid
+    outline: none
+
+  &--dashed
+    outline-style: dashed
+
+
+//
+// item label
+//
+
+.bar-item__label
+  text-align: center
+
+
+//
+// item label line
+//
+
+.bar-item__label-line
+  font-size: 12px
+
+  &--strong
+    font-size: 14px
+    font-weight: 600

@@ -1,14 +1,3 @@
-{% capture content %}
-<main class='main-content'>
-  <article class='journal-article article'>
-    <h3 class='article-title'>
-      <a class='link' href='{{ url }}'>{{ title }}</a>
-    </h3>
-    <div class='article-copy'>
-      {{ body }}
-    </div>
-  </article>
-</main>
-{% endcapture %}
+{% assign post = current %}
 
-{% include 'layouts/default' %}
+{% include 'layouts/post' %}
