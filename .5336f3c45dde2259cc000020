@@ -1,429 +1,429 @@
 ---
-time: 1426947025
+time: 1426953331
 inventory:
   /home/index.html:
-    md5: 7311fd0e68b923d28e78b9cf5e9d54a5
-    time: 1426903567
+    md5: 8db4da47e56c4ec709828ccd01221343
+    time: 1426953296
   /index.html:
-    md5: 7311fd0e68b923d28e78b9cf5e9d54a5
-    time: 1426903567
+    md5: 8db4da47e56c4ec709828ccd01221343
+    time: 1426953296
   /newsletter/index.html:
-    md5: 88127892a3b8a3bf79b3eac05c891770
-    time: 1426903568
+    md5: 73aa7debaae6bbabad3604ab7e67602e
+    time: 1426953296
   /beta/index.html:
-    md5: 0a9d2befd43072e84b74634e79803cd2
-    time: 1426903568
+    md5: ae9913211e07133642348fb061fd8f6f
+    time: 1426953296
   /journal/index.html:
-    md5: 61ce346e7c9f547b0c57559accf6acb3
-    time: 1426903568
+    md5: 69ec84a9d33d50ffefa0ee40ae8f3d98
+    time: 1426953296
   /journal/everything-in-increments/index.html:
-    md5: d48a3b5bf0276ed1974cccabb7270e06
-    time: 1426903568
+    md5: 8badc9e5211a69ac0447262d724cae4e
+    time: 1426953296
   /journal/deleting-your-account/index.html:
-    md5: 358432330f86dcbfd8bb4e26c70d403d
-    time: 1426903568
+    md5: e51ad3ab7a40458b40fba9c330455a6c
+    time: 1426953296
   /journal/designing-the-subscription-page/index.html:
-    md5: 330dff047e7fecf9b20b7828d8e4e186
-    time: 1426903568
+    md5: d7a8a093d3e53e388b2d09ee8e604d38
+    time: 1426953296
   /journal/rewriting-the-timeline/index.html:
-    md5: 4acbb779330403e86a467fdd4bc46469
-    time: 1426903568
+    md5: d8ab4ec9b7beb856b34357d56d0633b9
+    time: 1426953296
   /journal/restructuring-the-individual-project-page/index.html:
-    md5: 210cfbbeecda5a3e142d40147ec2019d
-    time: 1426903568
+    md5: 03b2399352fa60153a33cd8a2d7913f0
+    time: 1426953296
   /journal/project-blocks/index.html:
-    md5: e949457372c4d350d80c995e2b1255fd
-    time: 1426903569
+    md5: cf458e194c4c55773a4855543ded7bb0
+    time: 1426953297
   /journal/redesigning-the-homepage/index.html:
-    md5: 6dd1b313248eda612e33230ea80df105
-    time: 1426903569
+    md5: a13dbb1818c56598711b191fed9e2cbb
+    time: 1426953297
   /journal/multiple-timelines/index.html:
-    md5: 9b0ffd1eae65f726496f57da5bbd7eb7
-    time: 1426903569
+    md5: d35d936ead120c78446fb6f5c0476577
+    time: 1426953297
   /journal/archiving-and-estimate-differences/index.html:
-    md5: 179ed02b20ce48e880cc783b9b5c2b15
-    time: 1426903569
+    md5: a97acd8638115ecff6cdf3ca1c718a03
+    time: 1426953297
   /journal/multiple-financial-goals/index.html:
-    md5: e0385739b9603cd34ae6dd54241afa1e
-    time: 1426903569
+    md5: 61bdd05a1e22b655b8e5b9850a753cbd
+    time: 1426953297
   /journal/zooming-in-on-the-timeline/index.html:
-    md5: 189f3f5dbb21cc8ae0f9aca5e9031298
-    time: 1426903569
+    md5: 2749ed63aac6fd5a320347652d805751
+    time: 1426953297
   /journal/currency/index.html:
-    md5: 2cc3ac314cff55c854fe7effd0ee4b0d
-    time: 1426903569
+    md5: a00ed805180072eb01773490a261d1fe
+    time: 1426953297
   /journal/preferences-accounts-and-atypefacechange/index.html:
-    md5: 185742b966cb5904e8d05388ff83fe4d
-    time: 1426903569
+    md5: da6b90a62d647040013948d8cfd433d7
+    time: 1426953297
   /journal/sending-out-the-first-email/index.html:
-    md5: 6d560f55ef38fd515d6c3097d136290a
-    time: 1426903569
+    md5: 33e571227100c76b9830cd5bf74bc71b
+    time: 1426953297
   /journal/currency-inputs-notifications-and-invoice-nets/index.html:
-    md5: cd86a71f2e27d9764c81cc65bd9cc3c4
-    time: 1426903570
+    md5: 23fd7d28c6e1e8cd74d3312a871fad47
+    time: 1426953297
   /journal/dots-and-lines/index.html:
-    md5: ce22ae1b3837bdd2c3a62efc4e416677
-    time: 1426903570
+    md5: 2d19ef6de1594ca49b23cf5ae9b5da09
+    time: 1426953298
   /journal/calculating-in-the-database-and-revealing-tendencies/index.html:
-    md5: fc7d3161945cd978da9239517ad039b8
-    time: 1426903570
+    md5: 99e2547561a671695a8794b69da72cd4
+    time: 1426953298
   /journal/improved-form-ux/index.html:
-    md5: 8828a2c6424020d4dc9c83086356ded5
-    time: 1426903570
+    md5: e20553b6425d05dafa72e56cef9d7aa2
+    time: 1426953298
   /journal/cushion-is-online/index.html:
-    md5: 9de9517d6ca03018c4616b5a17ccc69f
-    time: 1426903570
+    md5: 70522a3b12b1ececef92b7d14a981ff6
+    time: 1426953298
   /journal/schedule-timeline-patterns/index.html:
-    md5: 900437b1e4f30d23001c3df5067fb156
-    time: 1426903570
+    md5: 69da1208eef0e982f8ef14497a3a4bf5
+    time: 1426953298
   /journal/a-slimmer-schedule-timeline/index.html:
-    md5: eb099ae0435461d0013edeec921d2ad1
-    time: 1426903570
+    md5: ac1514396944266fa422b6aefbe71ed5
+    time: 1426953298
   /journal/the-schedule-timeline/index.html:
-    md5: ef087e2e907e3a3943c30a11905b09e4
-    time: 1426903570
+    md5: dd9941257c53a390a4137eeebf796348
+    time: 1426953298
   /journal/plugging-in-real-data-for-the-first-time/index.html:
-    md5: 6311b03f1b02dbc3d2055854985720b3
-    time: 1426903570
+    md5: ca67efe2a48d27dd1305e8cfd5ea8fcf
+    time: 1426953298
   /journal/transitions-and-project-lists/index.html:
-    md5: 1ef003bb368f2997585dc01159022e5d
-    time: 1426903571
+    md5: b5c2a2021e5134aca4280ddb5b9faca9
+    time: 1426953298
   /journal/death-to-modals/index.html:
-    md5: 338baa7e3db9f859b0162b2159c4c527
-    time: 1426903571
+    md5: 43d8b8ab25203cd329ab38e8a7723469
+    time: 1426953298
   /journal/the-individual-project-page/index.html:
-    md5: 9b2176fed533b74527b3bb6bf3d205ee
-    time: 1426903571
+    md5: 15dc4e6b57a393537a8e2ba2a3763e1c
+    time: 1426953299
   /journal/estimated-incomes-and-talks-with-other-freelancers/index.html:
-    md5: 507b2cc307c6cd4f6166b6fdbbc54a11
-    time: 1426903571
+    md5: 092089bab59810b8f98db987cff9cd06
+    time: 1426953299
   /journal/statuses-to-lists-and-the-paid-beta/index.html:
-    md5: 02217b1c7c7cc90f877e24d6ced7ce12
-    time: 1426903571
+    md5: a059f1b3b36c4038ed0d93fde50ab91f
+    time: 1426953299
   /journal/the-timeline/index.html:
-    md5: 89a9017d0f9f4821a2c76230a849947c
-    time: 1426903571
+    md5: 70ecc115878dd534bbf17f1a76188997
+    time: 1426953299
   /journal/invoice-terminology/index.html:
-    md5: 59f260b02d10f2dd8a7139bc9343fa8e
-    time: 1426903571
+    md5: 910de41c074cc222bdd000892f2dd4af
+    time: 1426953299
   /journal/modal-forms/index.html:
-    md5: 03e93b8a981e869c56b66024b22d5181
-    time: 1426903571
+    md5: 24bc4fcd25648aa723bc766bb0b5bd42
+    time: 1426953299
   /journal/wiring-the-backend-to-the-frontend/index.html:
-    md5: e4296a6812b924caa681f860ed814b5f
-    time: 1426903571
+    md5: 56f27bd5fa326ceafb9021efd2885348
+    time: 1426953299
   /journal/balancing-design-and-dev/index.html:
-    md5: ef617e6376e18f4c67cbb2bb0244a079
-    time: 1426903572
+    md5: 9fcae7474682594ed57dfbd9b304b261
+    time: 1426953299
   /journal/timecop-monocle-and-vagrant/index.html:
-    md5: a115713fc75879a9f88d8f59cea39705
-    time: 1426903572
+    md5: dda8ec13c6e846b3566da14982b571a1
+    time: 1426953299
   /journal/going-with-ruby-and-sinatra/index.html:
-    md5: 7eb9a44a91f2178f6b3dbd0db77457cc
-    time: 1426903572
+    md5: ccc9c8e1e87a646cb07e78aa573dfc86
+    time: 1426953299
   /journal/ditching-local-first-and-trying-out-nodejs/index.html:
-    md5: 92b0a4eb431dc94b95dae128c23030ef
-    time: 1426903572
+    md5: abbf5ed0c11638ad09a46dbbd0616853
+    time: 1426953299
   /journal/switching-to-angularjs/index.html:
-    md5: d68b565b72ab3b5e3c5225054695a271
-    time: 1426903572
+    md5: 8a89e2d5b0281a6071486ba496c93a07
+    time: 1426953300
   /journal/building-the-table-with-vuejs/index.html:
-    md5: 9e1f4dacd7109b00a8ab172e1da17547
-    time: 1426903572
+    md5: 6590d7710f6ac751eac4a013428321b9
+    time: 1426953300
   /journal/clients-projects-and-invoices/index.html:
-    md5: f45d32dcf4d8b966a5287601b26bc60e
-    time: 1426903572
+    md5: faafb6395f4ee41f201548dff8be2e29
+    time: 1426953300
   /journal/introduction/index.html:
-    md5: 021aada62c80922e908151b0f8dc4798
-    time: 1426903572
+    md5: 2d21772e4ec57523728513b8c7a6a288
+    time: 1426953300
   /journal/archive/index.html:
-    md5: fc5e2dc417d24182d7ceb893e6271ed7
-    time: 1426903573
+    md5: 3ca416304c14a604ac29445325710c52
+    time: 1426953300
   /journal/tags/index.html:
-    md5: cb4e8145665ca47b4f574664852677e8
-    time: 1426903573
+    md5: d879fe75b2912ca6e226227a5249075a
+    time: 1426953300
   /expenses/index.html:
-    md5: 690d539e21cc0250ac5d7849d5b1537b
-    time: 1426903573
+    md5: 3431a34699ec15c83f9df507ba4d7c54
+    time: 1426953300
   /expenses/redis-database/index.html:
-    md5: 898ab380c203882f58bd10e2de918616
-    time: 1426903573
+    md5: 859f1022d3ce1c3da60aeb3d9ee17f08
+    time: 1426953301
   /expenses/web-worker-server/index.html:
-    md5: ae7a9680b5be6c6d10b287c1d00c9c65
-    time: 1426903573
+    md5: 3defd8df3cabb2536c0a51658b4de9f1
+    time: 1426953301
   /expenses/code-review/index.html:
-    md5: d0d510023fff64362db4a9fda1854fd5
-    time: 1426903573
+    md5: 6a841777abb72d71a7c4b6710c7aba61
+    time: 1426953301
   /expenses/support/index.html:
-    md5: 95b13dd9b52d471743d52eae1ef05d9d
-    time: 1426903573
+    md5: dd013527b8757a17cf83ef041e80b320
+    time: 1426953301
   /expenses/metrics/index.html:
-    md5: 4511b86324b45b4d6fccf5f4a6362caf
-    time: 1426903573
+    md5: 19c20e3fbf04a5d2781655a15f67bb16
+    time: 1426953301
   /expenses/email-marketing/index.html:
-    md5: 4e69dffdd22ab198658df014d6efb17a
-    time: 1426903573
+    md5: 2d595be6b908c6714fe6909920f34fd5
+    time: 1426953301
   /expenses/ssl-certificate-service/index.html:
-    md5: e679dcfbc9f9c60dc08118e51d50f966
-    time: 1426903573
+    md5: c318205294fee1b9d1975ecb715e44e4
+    time: 1426953301
   /expenses/ssl-certificate/index.html:
-    md5: fee34140dd42695876d60e2d9e8aeb22
-    time: 1426903574
+    md5: 862dfd2a86615da05f62d36cd926268f
+    time: 1426953301
   /expenses/web-app-database/index.html:
-    md5: b9c8c4b574e1505b476c17c79f66099c
-    time: 1426903574
+    md5: 896765d07415d2e750313948f06a0242
+    time: 1426953301
   /expenses/web-app/index.html:
-    md5: a47cd050811699735b4520535802fb87
-    time: 1426903574
+    md5: c3e7943a0b93e44f101349bf4bd449a9
+    time: 1426953301
   /expenses/private-scm/index.html:
-    md5: c16efc730108fece5c3978045fdf4714
-    time: 1426903574
+    md5: 242f98628784ee0210f4f438b93049c6
+    time: 1426953301
   /expenses/website-hosting/index.html:
-    md5: 725e2afd324d7cdcf0c43384c875773e
-    time: 1426903574
+    md5: f907e1efbcdf2f56d970cd3a2aa520a2
+    time: 1426953301
   /expenses/website-cms/index.html:
-    md5: e40d166c5fd9095267fc43359d731ba3
-    time: 1426903574
+    md5: 665cfd4274a70bbe69980ef6ea0b517e
+    time: 1426953301
   /expenses/email-hosting/index.html:
-    md5: 1708cf84688554a03560844840b683c4
-    time: 1426903574
+    md5: af436470a5e26e88731e71ccdae1bc59
+    time: 1426953301
   /expenses/domain-registration/index.html:
-    md5: b6677db320bb48abb4d18f89fa33207c
-    time: 1426903574
+    md5: aba8f8c0f5f0538e4b650094c02da1b4
+    time: 1426953302
   /expenses/archive/index.html:
-    md5: 5f978496e761806166e8e89843cc68a2
-    time: 1426903574
+    md5: ac8464f3e7cb3093aec3ae9799b612fb
+    time: 1426953302
   /expenses/tags/index.html:
-    md5: f438441482ef904e2863a968f4ed6dde
-    time: 1426903574
+    md5: a499e7e975cdc13b6e735f9937ee38a5
+    time: 1426953302
   /changelog/index.html:
-    md5: a45fa4af19d0028b501a445a7230942a
-    time: 1426903575
+    md5: 9c58e693c57cabb610eeca01dba11abd
+    time: 1426953302
   /changelog/2015-03-15/index.html:
-    md5: f2cfe7e790c90431e7a9b91475fa654c
-    time: 1426903575
+    md5: 0a92b233b61d2bb99117cde139a2273c
+    time: 1426953302
   /changelog/2015-03-11/index.html:
-    md5: 5338706a59776f5b4294494b47710c10
-    time: 1426903575
+    md5: bcacdcf2ad8ed7ba6d1d757c0d314244
+    time: 1426953302
   /changelog/2015-03-10/index.html:
-    md5: 059f5a4a8dee48317560535b8937df52
-    time: 1426903575
+    md5: 97d0cfdf1fcf1e4f39f989a0e6a8127a
+    time: 1426953302
   /changelog/2015-03-06/index.html:
-    md5: 862d475c15dcf5785b45de3829f800bd
-    time: 1426903575
+    md5: b2284bf7c7cbd3ba33db757da1a6a7c6
+    time: 1426953302
   /changelog/2015-03-05/index.html:
-    md5: 612b6448363d80a10d42ad1f4362f3aa
-    time: 1426903575
+    md5: ce2116bbec7cad5ed8aee76a7ae3eed6
+    time: 1426953303
   /changelog/2015-03-03/index.html:
-    md5: 6f95d83f9463a66f4c62442c53ee372b
-    time: 1426903575
+    md5: 2feb5522e8da96e71cfd33ce93e69115
+    time: 1426953303
   /changelog/2015-03-01/index.html:
-    md5: 251e8d591554eaf58a9e183aa68ad659
-    time: 1426903575
+    md5: ec82e88b327e745e0d67feb83e544d47
+    time: 1426953303
   /changelog/2015-02-25/index.html:
-    md5: 296821fda13f39f6d929e2db8180faa8
-    time: 1426903575
+    md5: b2631805e54c751b404b94d5c6fdc749
+    time: 1426953303
   /changelog/2015-02-16/index.html:
-    md5: 2d0fbd93fe1357ef78d8b1454d9232e8
-    time: 1426903576
+    md5: cdff1d7cff9ad3bab21684987b2842d1
+    time: 1426953303
   /changelog/2015-02-15/index.html:
-    md5: 49b9065eac0dd1486db927f6eedec880
-    time: 1426903576
+    md5: 83cae7886b3812399833050045a67522
+    time: 1426953303
   /changelog/2015-02-14/index.html:
-    md5: db702555fa18e0ee6d087fb2a6f25b8d
-    time: 1426903576
+    md5: 7119a8720f2b03f9895a189ae814b870
+    time: 1426953303
   /changelog/2015-02-10/index.html:
-    md5: b1f10e0e8ecb7167b5bbb82d4c084643
-    time: 1426903576
+    md5: 72453ab63fb44f639db646826c8a7e90
+    time: 1426953303
   /changelog/2015-02-02/index.html:
-    md5: 7999f77b16b2e15c5ddcf94d3866c7aa
-    time: 1426903576
+    md5: aa4cb8e2598d229fef754dbae6da5b25
+    time: 1426953303
   /changelog/2015-01-28/index.html:
-    md5: 906a311b1cc1a0dbce0498fda16a26cc
-    time: 1426903576
+    md5: 844fe3360060a31c545445a35fdff1bc
+    time: 1426953303
   /changelog/2015-01-24/index.html:
-    md5: 44e90d138e6f0af57aecb1d1e69cb0e2
-    time: 1426903576
+    md5: c086aa6368de4d25e039f8c907c461be
+    time: 1426953303
   /changelog/2015-01-22/index.html:
-    md5: 6d931dfa8f79b686eec8fd3350e0be68
-    time: 1426903576
+    md5: 791a8c648f843afa405fcb4ff3296a67
+    time: 1426953303
   /changelog/2015-01-16/index.html:
-    md5: 524c4d810ba737089b03b1f34b8dee6d
-    time: 1426903576
+    md5: 26ab8d153cfa2f2d9e58f1417758d3e4
+    time: 1426953304
   /changelog/2015-01-09/index.html:
-    md5: 1a0b357d1c4debeb74e8f2b0c90bf01e
-    time: 1426903576
+    md5: e40aba2d21c52bf6b0b7153eb4dd9f70
+    time: 1426953304
   /changelog/2015-01-05/index.html:
-    md5: 1045228c7144ac2ee88fd53835ab6f82
-    time: 1426903576
+    md5: c3f6700221c6e1657b6e4ddbd99bd4ba
+    time: 1426953304
   /changelog/2015-01-03/index.html:
-    md5: 87f8448f016cfa1c6d20c8ff10b91705
-    time: 1426903577
+    md5: 0fdab94f45b5dc4199a4f0501a7520e6
+    time: 1426953304
   /changelog/2014-12-07/index.html:
-    md5: 4b66953b51d3cd029a3f5bc1d8af017d
-    time: 1426903577
+    md5: 3f75acdc95f59091b85c352cd0f76a61
+    time: 1426953304
   /changelog/2014-11-27/index.html:
-    md5: f8e52b27619ef6dbdd727e0e8487f105
-    time: 1426903577
+    md5: 1561f3705ca79e3af08fc04c24a13afe
+    time: 1426953304
   /changelog/2014-11-26/index.html:
-    md5: bd70fd4a23733d6a236549cce04e511b
-    time: 1426903577
+    md5: 08e664b323b390ee6f2643df3832e906
+    time: 1426953304
   /changelog/2014-11-25/index.html:
-    md5: 330429037657ab72ce0c16fd803fb6c0
-    time: 1426903577
+    md5: 0195332c8444279b68d797df7f02a634
+    time: 1426953304
   /changelog/2014-11-22/index.html:
-    md5: 39466390b77c5335c3a28bddf62970d0
-    time: 1426903577
+    md5: 41f6d5a8a555de481def793a2294b26b
+    time: 1426953304
   /changelog/2014-11-18/index.html:
-    md5: 08f17b1b29ae7ee171c52eef50b4ff07
-    time: 1426903577
+    md5: 2aedb878003f1882d446e092ea854a6f
+    time: 1426953304
   /changelog/2014-11-13/index.html:
-    md5: 93b5f5c174f35b5305170963b8e552f3
-    time: 1426903577
+    md5: 520a87851e2bab55c7d6f8249b43798e
+    time: 1426953305
   /changelog/2014-11-12/index.html:
-    md5: 5ca6eaacfc3f85502c203e37db1878cb
-    time: 1426903577
+    md5: 9069c42bbee86bec223e30e2d796e525
+    time: 1426953305
   /changelog/2014-11-11/index.html:
-    md5: 3781002df3910e0017341492688fa9cb
-    time: 1426903578
+    md5: 811c9da86bfd855f9f662515b0240020
+    time: 1426953305
   /changelog/2014-11-10/index.html:
-    md5: bdbd440333b0daf000148e12ae3f7199
-    time: 1426903578
+    md5: b6ef22a29624172da0bc1b30788f9611
+    time: 1426953305
   /changelog/2014-11-09/index.html:
-    md5: d144bdb9666316e7c3230b0b15ba1029
-    time: 1426903578
+    md5: 2ba13b9c08b51722267cb1f68b92bdc1
+    time: 1426953305
   /changelog/2014-10-28/index.html:
-    md5: 1ad49a2e56bafa881bd182510869adde
-    time: 1426903578
+    md5: 5bd67567fdfa4169d1a5feb8d59b584a
+    time: 1426953305
   /changelog/2014-10-27/index.html:
-    md5: c7a534a7e6285896d46f8d4f2c0a9c1f
-    time: 1426903578
+    md5: 654f880c2c58299842b9486104cb0591
+    time: 1426953305
   /changelog/2014-10-23/index.html:
-    md5: 13d253f2163c747c4fd7f87e6a44920d
-    time: 1426903578
+    md5: 51a472ab5c41670178d17186d9b545eb
+    time: 1426953305
   /changelog/2014-10-21/index.html:
-    md5: c20cfc47bd1b8f664d69101330e1a8ea
-    time: 1426903578
+    md5: e4247f78b586b65e66e8693fe346df6f
+    time: 1426953305
   /changelog/2014-10-20/index.html:
-    md5: e193ad3535b62c521170af8cef40fe08
-    time: 1426903578
+    md5: 080b1950943479b1df27e4328b47a36a
+    time: 1426953305
   /changelog/2014-10-16/index.html:
-    md5: a31792567684d9ad3759d511996b92e9
-    time: 1426903578
+    md5: 269eeed51716c4e2ca7f0bcc48665086
+    time: 1426953306
   /changelog/2014-10-15/index.html:
-    md5: d8066f7b0e6b82f2ca5d200966cfa6c8
-    time: 1426903578
+    md5: ce68ca0cff59734b8f5db46260a270fd
+    time: 1426953306
   /changelog/2014-10-13/index.html:
-    md5: ca21a9588d394942c542af4f01f66d16
-    time: 1426903579
+    md5: 204a713a9d63f7ff2d50789bcedc5836
+    time: 1426953306
   /changelog/2014-10-12/index.html:
-    md5: 3bbadf9d49b8f84712c578169a01002f
-    time: 1426903579
+    md5: 533affb0852ef93f54e08679865ffb7f
+    time: 1426953306
   /changelog/2014-10-04/index.html:
-    md5: 703b48e200d93bb965a24e064e82fc02
-    time: 1426903579
+    md5: 19031870f44e91b7deb5badfd6b76c1a
+    time: 1426953306
   /changelog/2014-10-01/index.html:
-    md5: 073541dca5f0c2beeb9e8b0c6c47446f
-    time: 1426903579
+    md5: ef234c802a44a746a69bab7d53ad5b18
+    time: 1426953306
   /changelog/2014-09-29/index.html:
-    md5: 54aa928c13c7b966a32bbb8689e08e5e
-    time: 1426903579
+    md5: 6828cc6bd4cbfcda757a6a8925da7470
+    time: 1426953306
   /changelog/2014-09-25/index.html:
-    md5: 03281c6a69ba5646dddb609b4c3b59c9
-    time: 1426903579
+    md5: a2e370ecffecdf5c66617cbd8c5d2969
+    time: 1426953306
   /changelog/2014-09-22/index.html:
-    md5: 79d4b7f9027dba96fc733ea745b74357
-    time: 1426903579
+    md5: 54014e4e00b4239ea6abe5bedb09d3ac
+    time: 1426953306
   /changelog/2014-09-20/index.html:
-    md5: f4e26ed5554f040bf9479309dd3a32d3
-    time: 1426903579
+    md5: 634ce557e6a71764ab291570e73615e9
+    time: 1426953306
   /changelog/2014-09-17/index.html:
-    md5: 5b91beb5d33e6a436579b4dd7b414686
-    time: 1426903579
+    md5: dc8027a6cbce4df32adb979db1b060fd
+    time: 1426953306
   /changelog/archive/index.html:
-    md5: ab307df535eae38ba9777b42f575d4d2
-    time: 1426903579
+    md5: fd5269561c63df33d85bf15b3dc29a75
+    time: 1426953307
   /changelog/tags/index.html:
-    md5: 3ae4073906c98f0ca4295c1f052e743d
-    time: 1426903580
+    md5: 8e4bd29f4167fa06a29dc8ac3932171f
+    time: 1426953307
   /privacy/index.html:
-    md5: 5dca24376618fcb4a5f4ac684087a02c
-    time: 1426903580
+    md5: 3ccb14147db46cfc571a8bfac829fa8f
+    time: 1426953307
   /terms/index.html:
-    md5: df0e8d31a8eced15665c4ce1196f7500
-    time: 1426903580
+    md5: cacd46c7568276a0cd5a20733ef2aa3d
+    time: 1426953307
   /sitemap/index.html:
-    md5: 043e4dd13311f065918851c0a944af7c
-    time: 1426947022
+    md5: 5f15219575bec7438bf79d91ced9a6f6
+    time: 1426953307
   /newsletter/subscribed/index.html:
-    md5: b0f60e51cb5e84e3f08eff598ee21b5b
-    time: 1426903580
+    md5: 5231de8812445f03f64d02ebee9e9094
+    time: 1426953307
   /newsletter/confirmed/index.html:
-    md5: 1b79a7104f1e4a57edd79bb868bbbb9b
-    time: 1426903580
+    md5: 0aa959e7c07140c1b6d9d36308ecd87d
+    time: 1426953307
   /newsletter/unsubscribed/index.html:
-    md5: 29deb435cde2c25ebd40b7bd2e3a9011
-    time: 1426903580
+    md5: f5f5c85e4eff22200cdfe9e581111966
+    time: 1426953307
   /beta/subscribed/index.html:
-    md5: 8548c174aca73ac14c94c5c305ddac9a
-    time: 1426903580
+    md5: 8796199cfbaa9b65a9470645d3e8e955
+    time: 1426953308
   /beta/confirmed/index.html:
-    md5: ff12aa32d455639cebda38dbbd20f583
-    time: 1426903580
+    md5: 9c7ddfc5a4ef736fe364038684f84aaa
+    time: 1426953308
   /beta/unsubscribed/index.html:
-    md5: 653b79dc443403ecee4662d078681c8e
-    time: 1426903580
+    md5: 8462b57f50d6175e67820c4a6c993d40
+    time: 1426953308
   /home/hero/index.html:
-    md5: c2d2b875339caa3079bfd31648ac60f4
-    time: 1426903581
+    md5: 640955645f99d603403d531883d3783e
+    time: 1426953308
   /home/budget/index.html:
-    md5: c6da6b502e1024f182eda3f2f78ae74b
-    time: 1426903581
+    md5: efe4f18f98c32ea3f396a8fa422bcef0
+    time: 1426953308
   /home/schedule/index.html:
-    md5: f80171d20377871440e18a716007ce62
-    time: 1426903581
+    md5: 9b33c5a56b0623af78d77fefb9ae99ff
+    time: 1426953308
   /home/insights/index.html:
-    md5: b96c0994a0a70302d7bf747f98cbcc67
-    time: 1426903581
+    md5: 2cecec4ec258df4c330ecb0d6910c415
+    time: 1426953308
   /home/testimonials/index.html:
-    md5: 587121d9dd68e0b7b3f7cb111e9db0da
-    time: 1426903581
+    md5: 23ab67d792a2012b130af9a22683ca50
+    time: 1426953308
   /home/process/index.html:
-    md5: 5bf97e4f50a09ccdeee0047db7d25225
-    time: 1426903581
+    md5: e0d649c3fd0e22f86d2b4d05850bcebd
+    time: 1426953308
   /home/outro/index.html:
-    md5: 5e6fe172f34f77c7e4f903afb9929906
-    time: 1426903581
+    md5: ab6f2e550ef997130a34fa908a9a01b9
+    time: 1426953308
   /home/budget/overview/index.html:
-    md5: 55d5b7a8cb593664e5fa631bbc837e05
-    time: 1426903581
+    md5: 7b8c222ef5485665639c2901fe9fe439
+    time: 1426953309
   /home/budget/segment/index.html:
-    md5: 94966f804cf67ea29269b27121a6fbee
-    time: 1426903581
+    md5: 4dafae401028ec411ca63e3253db2e38
+    time: 1426953309
   /home/budget/goals/index.html:
-    md5: ddf57fe4695c5a1a112da2aff7ecddeb
-    time: 1426903582
+    md5: 3cb45dac468843ac968511b210bfa7e6
+    time: 1426953309
   /home/schedule/forecasting/index.html:
-    md5: 731817e28e7d0586a5515539ad03afd6
-    time: 1426903582
+    md5: 6796348a7e207e733b81740f34744ca8
+    time: 1426953309
   /home/schedule/tracking/index.html:
-    md5: e099664ee5628186b68a2b9efd7cbf15
-    time: 1426903582
+    md5: 4dbc414da962d50d90a4898626c65ad9
+    time: 1426953309
   /home/schedule/blocks/index.html:
-    md5: ea836e2006e7ac0682f057fbf246dab9
-    time: 1426903582
+    md5: 039cddf20cd04f7cfe16e876901fab0f
+    time: 1426953309
   /home/testimonials/crawford-ifland/index.html:
-    md5: 4b93e507668eaaea1aa56bdaf998fb4b
-    time: 1426903582
+    md5: 322f052301e71869b8708ca673b1a96f
+    time: 1426953309
   /home/testimonials/natalie-semczuk/index.html:
-    md5: 99f7aa3f25039cf5b793f32a43802aab
-    time: 1426903582
+    md5: b2f15f559d187221c74fe5b8b04f346a
+    time: 1426953310
   /home/testimonials/ian-patrick-hines/index.html:
-    md5: 146e1fd60400acd70b475001ac8b68a1
-    time: 1426903582
+    md5: 2ed588f592c8e29c95ab09e5b3e3a357
+    time: 1426953310
   /home/testimonials/abhinav-chhikara/index.html:
-    md5: 93e66b081459a7c7b504b81e7eb359c7
-    time: 1426903582
+    md5: 5687ac30350f07546e13eadcd284e686
+    time: 1426953310
   /CNAME:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
@@ -431,8 +431,8 @@ inventory:
     md5: 73f1218e9fac37b7703915f48a87f96d
     time: 1426947024
   /feed.xml:
-    md5: 8a69e3e58e386819e344a41960801cc7
-    time: 1426947024
+    md5: c429dbcd1d20d1d7ebaa309e60db9cda
+    time: 1426953310
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -518,8 +518,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: 63e0e2a7048bb62fd26ad66251b18cc9
-    time: 1426947024
+    md5: 51324a1ae48dab62758249ba457a9954
+    time: 1426953310
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
