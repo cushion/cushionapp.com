@@ -1,369 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
-    <loc>http://cushionapp.com/</loc>
-    <lastmod>2015-03-20T23:09:58+00:00</lastmod>
+    <loc>http://cushionapp.com</loc>
+    <lastmod>2015-03-20T23:15:41+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
-
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <url>
     <loc>http://cushionapp.com/journal</loc>
-    <lastmod>2015-03-14T23:57:21+00:00</lastmod>
+    <lastmod>2015-03-21T13:56:12+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
-  <url>
-    <loc>http://cushionapp.com/journal/everything-in-increments</loc>
-    <lastmod>2015-03-02T18:08:30+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/journal/deleting-your-account</loc>
-    <lastmod>2015-02-15T02:36:29+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/journal/designing-the-subscription-page</loc>
-    <lastmod>2015-01-30T19:32:19+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/journal/rewriting-the-timeline</loc>
-    <lastmod>2015-03-15T20:13:05+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/restructuring-the-individual-project-page</loc>
-    <lastmod>2015-03-15T20:13:00+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/project-blocks</loc>
-    <lastmod>2015-03-15T20:12:52+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/redesigning-the-homepage</loc>
-    <lastmod>2015-03-15T20:11:38+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/multiple-timelines</loc>
-    <lastmod>2015-03-15T20:11:33+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/archiving-and-estimate-differences</loc>
-    <lastmod>2015-03-15T20:11:28+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/multiple-financial-goals</loc>
-    <lastmod>2015-03-15T20:11:05+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/zooming-in-on-the-timeline</loc>
-    <lastmod>2015-03-15T20:11:00+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/currency</loc>
-    <lastmod>2015-03-15T20:10:54+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/preferences-accounts-and-atypefacechange</loc>
-    <lastmod>2015-03-15T20:10:47+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/sending-out-the-first-email</loc>
-    <lastmod>2015-03-15T20:10:36+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/currency-inputs-notifications-and-invoice-nets</loc>
-    <lastmod>2015-03-15T20:10:30+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/dots-and-lines</loc>
-    <lastmod>2015-03-15T20:10:22+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/calculating-in-the-database-and-revealing-tendencies</loc>
-    <lastmod>2015-03-15T20:10:16+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/improved-form-ux</loc>
-    <lastmod>2015-03-15T20:10:10+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/cushion-is-online</loc>
-    <lastmod>2015-03-15T20:10:04+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/schedule-timeline-patterns</loc>
-    <lastmod>2015-03-15T20:09:59+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/a-slimmer-schedule-timeline</loc>
-    <lastmod>2015-03-15T20:09:44+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/the-schedule-timeline</loc>
-    <lastmod>2015-03-15T20:09:34+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/plugging-in-real-data-for-the-first-time</loc>
-    <lastmod>2015-03-15T20:09:27+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/transitions-and-project-lists</loc>
-    <lastmod>2015-03-15T20:09:22+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/death-to-modals</loc>
-    <lastmod>2015-03-15T20:09:16+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/the-individual-project-page</loc>
-    <lastmod>2015-03-15T20:09:10+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/estimated-incomes-and-talks-with-other-freelancers</loc>
-    <lastmod>2015-03-15T20:09:03+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/statuses-to-lists-and-the-paid-beta</loc>
-    <lastmod>2015-03-15T20:08:17+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/the-timeline</loc>
-    <lastmod>2015-03-15T20:08:10+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/invoice-terminology</loc>
-    <lastmod>2015-03-15T23:16:03+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/modal-forms</loc>
-    <lastmod>2015-03-15T20:07:56+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/wiring-the-backend-to-the-frontend</loc>
-    <lastmod>2015-03-15T20:07:49+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/balancing-design-and-dev</loc>
-    <lastmod>2015-03-15T20:07:43+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/timecop-monocle-and-vagrant</loc>
-    <lastmod>2015-03-15T20:07:37+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/going-with-ruby-and-sinatra</loc>
-    <lastmod>2015-03-15T20:07:30+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/ditching-local-first-and-trying-out-nodejs</loc>
-    <lastmod>2015-03-15T20:07:23+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/switching-to-angularjs</loc>
-    <lastmod>2015-03-15T20:07:15+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/building-the-table-with-vuejs</loc>
-    <lastmod>2015-03-15T20:07:05+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/clients-projects-and-invoices</loc>
-    <lastmod>2015-03-15T20:06:58+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/journal/introduction</loc>
-    <lastmod>2015-03-15T20:06:48+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-
   <url>
     <loc>http://cushionapp.com/expenses</loc>
-    <lastmod>2015-03-03T18:09:05+00:00</lastmod>
+    <lastmod>2015-03-21T13:56:24+00:00</lastmod>
     <priority>1.0</priority>
   </url>
   
-  <url>
-    <loc>http://cushionapp.com/expenses/redis-database</loc>
-    <lastmod>2015-02-02T20:50:59+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/expenses/web-worker-server</loc>
-    <lastmod>2015-01-29T16:18:12+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/expenses/code-review</loc>
-    <lastmod>2015-01-13T20:43:56+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/expenses/support</loc>
-    <lastmod>2014-11-03T03:00:40+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/expenses/metrics</loc>
-    <lastmod>2014-10-01T14:49:27+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/expenses/email-marketing</loc>
-    <lastmod>2014-08-30T19:37:12+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/expenses/ssl-certificate-service</loc>
-    <lastmod>2014-08-30T18:24:36+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/expenses/ssl-certificate</loc>
-    <lastmod>2014-08-30T18:26:38+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
   
-  <url>
-    <loc>http://cushionapp.com/expenses/web-app-database</loc>
-    <lastmod>2014-08-30T18:26:09+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/expenses/web-app</loc>
-    <lastmod>2014-08-29T23:34:36+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/expenses/private-scm</loc>
-    <lastmod>2014-08-30T18:29:54+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/expenses/website-hosting</loc>
-    <lastmod>2014-07-21T22:07:58+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/expenses/website-cms</loc>
-    <lastmod>2014-08-29T23:30:50+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/expenses/email-hosting</loc>
-    <lastmod>2014-08-29T23:30:06+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://cushionapp.com/expenses/domain-registration</loc>
-    <lastmod>2014-08-29T23:30:32+00:00</lastmod>
-    <priority>0.5</priority>
-  </url>
-  
-
-  <url>
-    <loc>http://cushionapp.com/privacy</loc>
-    <lastmod>2015-03-15T22:57:52+00:00</lastmod>
-    <priority>1.0</priority>
-  </url>
-  
-
-  <url>
-    <loc>http://cushionapp.com/terms</loc>
-    <lastmod>2015-03-15T23:13:13+00:00</lastmod>
-    <priority>1.0</priority>
-  </url>
-  
-
 </urlset>
