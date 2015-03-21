@@ -13,5 +13,14 @@
     <priority>1.0</priority>
   </url>
   {% endif %}
+  {% for subpage in page.pages %}
+  {% if subpage.meta.sitemap? %}
+  <url>
+    <loc>{{ subpage.permalink }}</loc>
+    <lastmod>{{ subpage.updated_at | date:"%FT%T%:z" }}</lastmod>
+    <priority>0.5</priority>
+  </url>
+  {% endif %}
+  {% endfor %}
   {% endfor %}
 </urlset>
