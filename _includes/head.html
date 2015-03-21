@@ -6,14 +6,15 @@
 
   <meta name='description' content='{{ site.meta.description }}'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+  {% assign og = site.pages.home.assets.first %}
   <meta property='og:title' content='{{ site.title }} - {{ site.meta.tagline }}'>
   <meta property='og:type' content='website'>
   <meta property='og:description' content='{{ site.meta.description }}'>
   <meta property='og:url' content='{{ site.permalink }}'>
-  <meta property='og:image' content='{{ site.pages.home.assets.first.permalink }}'>
+  <meta property='og:image' content='{{ og.permalink }}'>
   <meta property='og:image:type' content='image/png'>
-  <meta property='og:image:width' content='400'>
-  <meta property='og:image:height' content='300'>
+  <meta property='og:image:width' content='{{ og.meta.width }}'>
+  <meta property='og:image:height' content='{{ og.meta.height }}'>
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@{{ site.meta.twitter }}" />
 
