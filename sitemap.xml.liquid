@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>{{ site.permalink }}</loc>
-    <lastmod>{{ site.updated_at }}</lastmod>
+    <lastmod>{{ site.updated_at | date:"%FT%T%:z" }}</lastmod>
     <priority>1.0</priority>
   </url>
   {% for page in site.pages %}
   {% if page.meta.sitemap? %}
   <url>
     <loc>{{ page.permalink }}</loc>
-    <lastmod>{{ page.updated_at }}</lastmod>
+    <lastmod>{{ page.updated_at | date:"%FT%T%:z" }}</lastmod>
     <priority>1.0</priority>
   </url>
   {% endif %}
