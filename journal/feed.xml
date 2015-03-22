@@ -4,7 +4,67 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Sat, 21 Mar 2015 16:13:28 +0000</pubDate>
+    <pubDate>Sun, 22 Mar 2015 22:38:14 +0000</pubDate>
+    
+    <item>
+      <title>Designing Project Blocks</title>
+      <link>http://cushionapp.com/journal/designing-project-blocks</link>
+      <pubDate>Sun, 22 Mar 2015 13:28:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/designing-project-blocks</guid>
+      <description>&lt;p&gt;Back in December, I &lt;a href=&quot;/journal/project-blocks&quot;&gt;wrote&lt;/a&gt; about the initial concept of “project blocks”. To summarize, this feature would be a first step towards a more detailed view in Cushion. At the time, projects only had a start and finish date, but with blocks, you’d be able to know what’s happening throughout a project. When is it most intense? When is it at a standstill? When is it focused on sketches or revisions? These are the questions I wanted to answer with project blocks.&lt;/p&gt;
+
+&lt;p&gt;With an established design for the schedule timeline in place, I started to think about how to best integrate project blocks while staying consistent with the other visual elements. I wanted to emphasize a project’s workload when it was heavy and de-emphasize it when it barely affected my week. This lead me to pursue scale as a method for differentiating these two kinds of scenarios and everything in-between.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/2015-03-22-timeline.png&quot;&gt;&lt;img src=&quot;/assets/2015-03-22-timeline.png&quot; alt=&quot;2015-03-22-timeline&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Looking at the timeline, I had a lot of negative space. I had room between rows where I could utilize blocks. When a specific region of the timeline was piled high with intense projects, I wanted this area to feel congested. It should look overwhelming, so you feel more inclined to try to avoid those situations. I use this same approach with late invoices—animating the line with distracting movement to encourage users to seek closure.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/2015-03-22-project-blobs.png&quot;&gt;&lt;img src=&quot;/assets/2015-03-22-project-blobs.png&quot; alt=&quot;2015-03-22-project-blobs&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Since project blocks are still an approximation, using start/end dates instead of hours, the visual shouldn’t be as exact as a hard edge. I intially worked with transparent “blobs” around projects. These gave a really good sense of intensity for a project and certainly overwhelmed me when seeing it applied to the month that caused me to start working on Cushion. This felt really good for a few days until I realized it just wasn’t right.&lt;/p&gt;
+
+&lt;p&gt;The first clue emerged from thinking about how users would resize project blocks in the timeline. At first, I thought I’d be able to reuse the same date input fields from the project form. I thought wrong. Instantly, I felt the burden of adjusting a block. Since these are elements you’d want to tweak occasionally based on estimated date ranges, specifying exact dates made no sense. The user should be able to easily resize them by eye, through a more “hands-on” interaction, like drag and drop. This made me second-guess using blobs because&amp;hellip;where do you drag? How do you know to drag? This blob shape made more sense as a static highlight—not an interactive element.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-03-22-blob-circle.png&quot; alt=&quot;2015-03-22-blob-circle&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The second, and more important, clue detering me from using blobs was that they were too encroaching on the horizontal space. On longterm projects, blobs looked great, but shorter projects were deceiving. For a one-day project, the blob would be a full circle, which appears to span a week on a year-long timeline. That initial decision to avoid a hard edge resulted in a bigger problem—innaccuracy. I’d much rather have an accurate visual than a better-looking lie.&lt;/p&gt;
+
+&lt;p&gt;Since the first beta accounts were coming to an end soon, I decided to shelve project blocks for a few weeks while I worked on subscriptions. When I returned, I had a much clearer idea for approaching project blocks—using a rectangular “block” shape. It was a “duh” moment for sure, but a block shape fixed all of the existing issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/2015-03-22-project-blocks.png&quot;&gt;&lt;img src=&quot;/assets/2015-03-22-project-blocks.png&quot; alt=&quot;2015-03-22-project-blocks&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;With a hard edge, the blocks now represent an accurate date range. And, I was able to avoid an overly rigid look by rounding the corners a tad. &lt;/p&gt;
+
+&lt;p&gt;Along with the horizontal issues, the blob shapes spanned both directions on the vertical axis, so similar block intensities were more difficult to distinguish from each other. Since these new blocks rested on the lines of the projects and grew in a single direction, they were much easier to compare.&lt;/p&gt;
+
+&lt;p&gt;Moving from visuals to interaction, I worried about the drag and drop. Before actually working on the drag and drop, I was unsure how to approach it. I knew I wanted to be able to resize the edges and drag the entire block, but I also knew there’d be a slew of hurdles along the way. As soon as I started implementing it, however, the hurdles shrunk in scale. One after another, the problems I anticipated ended up much less significant than I intially imagined.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-03-22-resizing.gif&quot; alt=&quot;2015-03-22-resizing&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;The issue of indicating to the user that they can resize a block was as easy as darkening the edges. This suggested that the edges of the block were different from the rest of it. Upon hovering the edge, the cursor changes to the horizontal resize icon, revealing to the user that they can interact with the block. Then, as they drag an edge, a small tooltip appears, marking the date that the edge represents.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-03-22-repositioning.gif&quot; alt=&quot;2015-03-22-repositioning&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Repositioning a block follows the same flow. Hovering the draggable area of the block switches the cursor to the drag icon, and upon dragging, a tooltip appears, marking the range of the block. For an extra touch, I added an ease to the edge positions, so whenever you release the block from resizing or repositioning, it will smoothly snap into place.&lt;/p&gt;
+
+&lt;p&gt;Up until this point, I’ve been focusing mostly on the horizontal aspect of the blocks, but the vertical intensity is just as important. Luckily, this was much more straightforward. I figured draggable resizing of the height would be overkill because the height ranges only ~40px. Because of this, I decided to rely on the form for vertically resizing a block. &lt;/p&gt;
+
+&lt;p&gt;Since the height of a block is directly tied to its intensity, it makes sense to use units that most freelancers are familiar with—hours and days per week. For the hourly freelancers, you can choose from 1, 4, 8, 16, 24, 32, and 40+. And for the freelancers who work on a day-rate, like myself, you can choose from 1 hour, half day, 1 day, 2 days, 3 days, 4 days, and 5+ days. I also offer a preference to use both, in case you switch based on the type of project.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-03-22-dropdown.gif&quot; alt=&quot;2015-03-22-dropdown&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;While adding the dropdown, I realized I would need to reflect a change in the timeline upon selecting a different value, so I wired the timeline to the form and animated the height of the block when updating the intensity.&lt;/p&gt;
+
+&lt;p&gt;One piece still remained—phases. If I were to stop now, project blocks could work pretty well for most freelancers. The ability to indicate the intensity of a project goes a long way, but there’s another type of freelancer who works in terms of phases. They might start with sketches, then move onto designs, and lastly work on revisions until arriving at the final deliverable. With blocks, this is as easy as adding a label.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-03-22-phases.png&quot; alt=&quot;2015-03-22-phases&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;In the form, I added an optional input field to label the block. Upon hovering the block in the schedule view, a tooltip appears, displaying the name of the block along with its intensity. &lt;/p&gt;
+
+&lt;p&gt;With project blocks, Cushion adds another level of detail to your schedule—break projects into phases, differentiate a heavy project from a light one, or account for that few-month lull in the middle of that longterm project. Thinking ahead, I have a few more ideas for blocks. I won’t go into them now, but if project blocks are for visualizing estimated intensities of a project, imagine integrating them with time-trackers to measure the actual intensity. Interesting, indeed!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Everything in Increments</title>
@@ -455,24 +515,6 @@
 &lt;p&gt;Just like income columns, the “gain/loss” column has a “sum” in the table footers. It’s not just a simple sum of each row’s percentage, but rather a comparison of your total estimates to your total income. If it’s in the red, you know you either need to better estimate your projects or bump up your rate. This column also exists in the client budget view, so you can see per-client how close or far off you were.&lt;/p&gt;
 
 &lt;p&gt;I’m really excited about these new features as they add even more value to an app that has become indispensable to my workflow. Starting in November, I’m doubling the number of invites I send out for the paid beta this month, so if you’re interested in using Cushion early, &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Multiple Financial Goals</title>
-      <link>http://cushionapp.com/journal/multiple-financial-goals</link>
-      <pubDate>Tue, 21 Oct 2014 21:38:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/multiple-financial-goals</guid>
-      <description>&lt;p&gt;&lt;img src=&quot;/assets/2014-10-21-goals.png&quot; alt=&quot;2014-10-21-goals&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;A few weeks ago, a beta user suggested the idea of multiple financial goals for the budget timeline. At the time, there was only one goal in Cushion, which made it somewhat difficult to picture the year. Do I set the goal to what I need to make or what I want to make?—these are two very different goals. Because of this constant confusion, I replaced the single goal with three—minimum, target, and stretch.&lt;/p&gt;
-
-&lt;p&gt;When considering your finances, it’s good to think of what you absolutely need to make to stay alive and pay the bills—your bare minimum. From there, you can aim for a higher target that allows you to do more than just survive, like go out to eat more often or take a cab instead of the subway. And, if you reach that target, you can then try for more, which might be enough to add a vacation to your year.&lt;/p&gt;
-
-&lt;p&gt;These goals are important in the freelance life because there’s really no cap on how much you can make. Since you have no salary, you can decide how much you want to make beyond covering your expenses, granted the work is available. If you want to overload your schedule for a month in order to take a month off, you can do that. If you want to work consistently and make a killing, that’s cool, too.&lt;/p&gt;
-
-&lt;p&gt;Personally, I don’t do a great job of aiming high. I tend to make enough to pay my minimum, then I invest the extra time in my personal projects. Recently, I’ve been investing any income over my minimum into buying more of my own time, as if I’m my own client. I’m betting on myself and my productivity. Maybe two weeks of full-time Cushion could amount to more than a two-week client gig. And maybe, with Cushion, I could reach my stretch goal all on my own.&lt;/p&gt;
 </description>
     </item>
     
