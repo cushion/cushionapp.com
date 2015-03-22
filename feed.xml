@@ -3,7 +3,7 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Sun, 22 Mar 2015 22:38:14 +0000</pubDate>
+    <pubDate>Sun, 22 Mar 2015 22:41:27 +0000</pubDate>
     
     <item>
       <title>Designing Project Blocks</title>
@@ -34,6 +34,8 @@
 &lt;p&gt;&lt;a href=&quot;/assets/2015-03-22-project-blocks.png&quot;&gt;&lt;img src=&quot;/assets/2015-03-22-project-blocks.png&quot; alt=&quot;2015-03-22-project-blocks&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;With a hard edge, the blocks now represent an accurate date range. And, I was able to avoid an overly rigid look by rounding the corners a tad. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2015-03-22-heights.png&quot; alt=&quot;2015-03-22-heights&quot;&gt; &lt;/p&gt;
 
 &lt;p&gt;Along with the horizontal issues, the blob shapes spanned both directions on the vertical axis, so similar block intensities were more difficult to distinguish from each other. Since these new blocks rested on the lines of the projects and grew in a single direction, they were much easier to compare.&lt;/p&gt;
 

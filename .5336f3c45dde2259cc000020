@@ -1,5 +1,5 @@
 ---
-time: 1427063904
+time: 1427064088
 inventory:
   /home/index.html:
     md5: c0619032fa60dae515136c136b9363ef
@@ -14,11 +14,11 @@ inventory:
     md5: 5f65880ea746cf8e0152de2f371c5fc3
     time: 1426954393
   /journal/index.html:
-    md5: 9fcb000fba1af70f2b428de1224bc03c
-    time: 1427063881
+    md5: 3b0a6eb17e9452f80f7dfeb70a1c9d59
+    time: 1427064072
   /journal/designing-project-blocks/index.html:
-    md5: a928250e32069edfd5272f79e70c9518
-    time: 1427063881
+    md5: 408d6590ff92b4263ef2cc7bfc2937d8
+    time: 1427064073
   /journal/everything-in-increments/index.html:
     md5: 3371b2f4ce6977dd17474ad185ce9e64
     time: 1427063881
@@ -434,8 +434,8 @@ inventory:
     md5: 6883b91c9b06ae7ca8aff67d6d155953
     time: 1426954408
   /feed.xml:
-    md5: 0bc66e10a5648efb38ebcbbb0bd2d329
-    time: 1427063894
+    md5: 6c5095246387358517b40ac887fa854d
+    time: 1427064087
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -521,8 +521,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: f7b2349462b55a002102e632ad39a121
-    time: 1427063894
+    md5: dac4d038d092cd045084098fee8173a1
+    time: 1427064087
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
@@ -898,6 +898,9 @@ inventory:
   /assets/2015-01-30-design-9.png:
     md5: 52ff437a724b211baf54f832e5b46c2c
     time: 1422646302
+  /assets/2015-03-22-heights.png:
+    md5: 6c743a090eb8bd01b3df101b77d7f0b0
+    time: 1427064087
   /assets/2014-08-19-dragged-tooltip.png:
     md5: 04083df1e278eba6c0e5d444a9c3765a
     time: 1408461371
