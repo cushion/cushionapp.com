@@ -1,5 +1,5 @@
 ---
-time: 1428075480
+time: 1429147341
 inventory:
   /home/index.html:
     md5: ad42c67e84e3bb28d183703f9a3df509
@@ -200,8 +200,11 @@ inventory:
     md5: 22f51f481f4624ac277fe4923a7c6ad1
     time: 1426954400
   /changelog/index.html:
-    md5: 0dc485b9918172859ab3908c0cdbdc87
-    time: 1427600564
+    md5: 620fd0145e1d88a7baeb03db37dc0067
+    time: 1429147331
+  /changelog/2015-04-15/index.html:
+    md5: da27ad02f840a72517785497f5310d96
+    time: 1429147332
   /changelog/2015-03-28/index.html:
     md5: f6ee88b213285174bcb2c0ed55d86cad
     time: 1427600564
@@ -440,8 +443,8 @@ inventory:
     md5: 09cfd2e75f102066d0e9186bd0e808d8
     time: 1428075479
   /feed.xml:
-    md5: 5598f6e3f971fbb52864407e06c79555
-    time: 1428075479
+    md5: 405152c76b88c46c475136174f07d0b1
+    time: 1429147340
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -527,8 +530,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: a69f6033ca6e261c9f6d731b1acce407
-    time: 1428075479
+    md5: ffe62785d98abe0ca83b82184198a453
+    time: 1429147340
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
