@@ -17,6 +17,8 @@
         {{ site.pages.journal.meta.alert | md }}
       </div>
     </div>
+
+    {% include 'includes/newsletter' %}
   </article>
 
   <section id='archive'>
@@ -31,6 +33,7 @@
     </ul>
   </section>
 </main>
+<script src='/assets/scripts/newsletter.js'></script>
 {% endcapture %}
 
 {% include 'layouts/default' %}
