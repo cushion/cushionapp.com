@@ -1,12 +1,12 @@
 ---
-time: 1429147341
+time: 1429379893
 inventory:
   /home/index.html:
-    md5: ad42c67e84e3bb28d183703f9a3df509
-    time: 1427600556
+    md5: 129e2452ef3f5a78e0a37fba7965a083
+    time: 1429379869
   /index.html:
-    md5: ad42c67e84e3bb28d183703f9a3df509
-    time: 1427600556
+    md5: 129e2452ef3f5a78e0a37fba7965a083
+    time: 1429379869
   /newsletter/index.html:
     md5: 16f283d1bfbe9d1af80dfb2b95e65591
     time: 1426954393
@@ -14,137 +14,140 @@ inventory:
     md5: 5f65880ea746cf8e0152de2f371c5fc3
     time: 1426954393
   /journal/index.html:
-    md5: 3b0a6eb17e9452f80f7dfeb70a1c9d59
-    time: 1427064072
+    md5: 0e6e66a51a666a3c22cacc4ea06ada92
+    time: 1429379869
+  /journal/the-emotional-rollercoaster/index.html:
+    md5: 7b7258694b768b962d898d10f0b6eaf5
+    time: 1429379869
   /journal/designing-project-blocks/index.html:
-    md5: 408d6590ff92b4263ef2cc7bfc2937d8
-    time: 1427064073
+    md5: 0d2440b0dedeaed2856bc2534d4ef248
+    time: 1429379869
   /journal/everything-in-increments/index.html:
-    md5: 3371b2f4ce6977dd17474ad185ce9e64
-    time: 1427063881
+    md5: 1297244b76f3b29b56e6bc851f33afb4
+    time: 1429379870
   /journal/deleting-your-account/index.html:
-    md5: 763f3070f02025721b00e2ad9f70aa81
-    time: 1427063881
+    md5: 80ea8c67f0b215024240c48f302cfc30
+    time: 1429379870
   /journal/designing-the-subscription-page/index.html:
-    md5: 36407e6767190cb8530d68fd6d4cbd41
-    time: 1427063881
+    md5: 542a0b38a09630a6508849919c16fd80
+    time: 1429379870
   /journal/rewriting-the-timeline/index.html:
-    md5: e35889cf4ab725e7093e1f66bddd0dd2
-    time: 1427063881
+    md5: 638a9757f6b2d3af44982e4a8e1eb243
+    time: 1429379870
   /journal/restructuring-the-individual-project-page/index.html:
-    md5: fc2531f6a0b6f3cfc07c44ad8d113545
-    time: 1427063881
+    md5: 3c4e280d8633cd95b6ec5b443681e3df
+    time: 1429379870
   /journal/project-blocks/index.html:
-    md5: a8f78e7046be19ef2ef6beb4d826212e
-    time: 1427063881
+    md5: 19f6c5308ba3a6a960427e9297bf93a7
+    time: 1429379870
   /journal/redesigning-the-homepage/index.html:
-    md5: b5ec0ca5ad47dbdd58ddca88ba0a007e
-    time: 1427063881
+    md5: 86d5c9301c181fae58c5b4fce1be2882
+    time: 1429379870
   /journal/multiple-timelines/index.html:
-    md5: a84b07153e6c7e6873b0075bee4170c1
-    time: 1427063881
+    md5: 9e2cb53022f58dcee60b1ac10e0276e9
+    time: 1429379870
   /journal/archiving-and-estimate-differences/index.html:
-    md5: e78f24418e79a062337fa0144c67a2e4
-    time: 1427063882
+    md5: 2d12b35a457ec0a969196d898044d05e
+    time: 1429379871
   /journal/multiple-financial-goals/index.html:
-    md5: 455542cf96347bf8cd8d854f5d2841f3
-    time: 1427063882
+    md5: 5df79908ad20bb1462fc8c75a7aafd8a
+    time: 1429379871
   /journal/zooming-in-on-the-timeline/index.html:
-    md5: 5fd639e1b4ea475e7753f7c169b6f767
-    time: 1427063882
+    md5: d09c7abd3354fa03aecf7741b2fe82c1
+    time: 1429379871
   /journal/currency/index.html:
-    md5: 6114595833eee02f8b6e5a4c93d1c55e
-    time: 1427063882
+    md5: 61fd3f9e6a9e112a5cfa1a21a5ba85b6
+    time: 1429379871
   /journal/preferences-accounts-and-atypefacechange/index.html:
-    md5: a18119b151faa00e35a5141291914422
-    time: 1427063882
+    md5: 4a832826b0128da7c86ad49288cfb243
+    time: 1429379871
   /journal/sending-out-the-first-email/index.html:
-    md5: 37f0ebf985e78ca7bce2dd243b7546bb
-    time: 1427063882
+    md5: fcb32ff050286bf058100f5e6d032f7a
+    time: 1429379871
   /journal/currency-inputs-notifications-and-invoice-nets/index.html:
-    md5: 14788d1be3213815e97dcfdb265557eb
-    time: 1427063882
+    md5: 2d4e2c7f4275bbdb1e96811f126a3187
+    time: 1429379871
   /journal/dots-and-lines/index.html:
-    md5: 04fe88e7461f48df866fa4263b998ac0
-    time: 1427063882
+    md5: d8050a14641f126e66d6496a5760894e
+    time: 1429379871
   /journal/calculating-in-the-database-and-revealing-tendencies/index.html:
-    md5: c37351d6ca53e4727072ba8eaf21b1b8
-    time: 1427063882
+    md5: 67cc6172c8d5b92d035830fa899ea8a3
+    time: 1429379871
   /journal/improved-form-ux/index.html:
-    md5: 5edc1fe916b64ca1399fee125a8849fc
-    time: 1427063882
+    md5: fd3d66989ada5b36dcb997565e2dea70
+    time: 1429379872
   /journal/cushion-is-online/index.html:
-    md5: 0f665c9594193c0e5a8d31d71b8404cb
-    time: 1427063882
+    md5: 670325510a967bf5d976e03d955c226a
+    time: 1429379872
   /journal/schedule-timeline-patterns/index.html:
-    md5: e8789afa49774843f17caa840eef7da8
-    time: 1427063883
+    md5: c99eecba78cef233e58a1e562098b03f
+    time: 1429379872
   /journal/a-slimmer-schedule-timeline/index.html:
-    md5: becc8942bbb80fa09c410c392f146fd4
-    time: 1427063883
+    md5: 905cfb48c24ba9e4f8cf53a561c36f91
+    time: 1429379872
   /journal/the-schedule-timeline/index.html:
-    md5: c4fc8880c075e09151b142a3765b3215
-    time: 1427063883
+    md5: b77317e99dac4db73e3bc674c9921d79
+    time: 1429379872
   /journal/plugging-in-real-data-for-the-first-time/index.html:
-    md5: 5a590b9fb86da59269715b788b43e380
-    time: 1427063883
+    md5: a1d9bb3d66ab4c15557d1ba4227f8dbd
+    time: 1429379872
   /journal/transitions-and-project-lists/index.html:
-    md5: 60b113b2e3fd0d7c67494e0aadc63f48
-    time: 1427063883
+    md5: 1a40b4d35e089f668c3d1ab44c0deb28
+    time: 1429379872
   /journal/death-to-modals/index.html:
-    md5: fd1294b5fdc083df82b298761b2f7cab
-    time: 1427063883
+    md5: aa6327d39502127e3c78fb578e518f44
+    time: 1429379872
   /journal/the-individual-project-page/index.html:
-    md5: 59152e6328773cbd861a02539ddf0291
-    time: 1427063883
+    md5: 487e392abd72e35a2faf658f20df9eaa
+    time: 1429379873
   /journal/estimated-incomes-and-talks-with-other-freelancers/index.html:
-    md5: e6724b7109c5fc5ceca77b8d71347714
-    time: 1427063883
+    md5: ceb4083fcffccc81fe7620b954504cf5
+    time: 1429379873
   /journal/statuses-to-lists-and-the-paid-beta/index.html:
-    md5: 67c52e757944406825cbce57dbbef0c9
-    time: 1427063883
+    md5: 0ebe86f1e518fe131d009ee368f5523e
+    time: 1429379873
   /journal/the-timeline/index.html:
-    md5: 8ba122c05a825c4fec0204c4b8912789
-    time: 1427063884
+    md5: 606d36fd319e6307ff2d0413301bbb72
+    time: 1429379873
   /journal/invoice-terminology/index.html:
-    md5: fe6d6d05c7c063c0f022b14c2f5da8c9
-    time: 1427063884
+    md5: 411fc17118d9b2a42e47cca44b566a6b
+    time: 1429379873
   /journal/modal-forms/index.html:
-    md5: 9670fbdacab5a6d0cada8c344ebf5adc
-    time: 1427063884
+    md5: e990b0e7d52166604c827dec3ce5b36e
+    time: 1429379873
   /journal/wiring-the-backend-to-the-frontend/index.html:
-    md5: 273ed3f8aa184ae8aa43412014a46fa9
-    time: 1427063884
+    md5: 124e9b4bcc7556668a9440b8fc9cd1c4
+    time: 1429379873
   /journal/balancing-design-and-dev/index.html:
-    md5: 60aef90f0832503a2a8fd46657eaf44a
-    time: 1427063884
+    md5: c5e9a36f866b5d19a4bd2747003bbef6
+    time: 1429379873
   /journal/timecop-monocle-and-vagrant/index.html:
-    md5: 4d51c26a8ca59f428f99b79307a53960
-    time: 1427063884
+    md5: 017cdb4dd87aad76e835445f9e432429
+    time: 1429379874
   /journal/going-with-ruby-and-sinatra/index.html:
-    md5: 50dd4ee3ffc335a4d0f45ef5fed5f85c
-    time: 1427063884
+    md5: 584b11967502bf29a14c90f65b3ea765
+    time: 1429379874
   /journal/ditching-local-first-and-trying-out-nodejs/index.html:
-    md5: 0255436235cb65f4e0936277a5ddd878
-    time: 1427063884
+    md5: ad626340197bf8b48b5e2fa4488b8158
+    time: 1429379874
   /journal/switching-to-angularjs/index.html:
-    md5: 666883c761ec51fca06904724a9d0b0e
-    time: 1427063884
+    md5: 2c5c095a6c81e6c1013ded9522d9e501
+    time: 1429379874
   /journal/building-the-table-with-vuejs/index.html:
-    md5: 9389b5f84af28fd026fb8eecf29a03a7
-    time: 1427063884
+    md5: a669013dee5623e67ee513bd7570a378
+    time: 1429379874
   /journal/clients-projects-and-invoices/index.html:
-    md5: 3ff204ea478a01d09b861ed4d316c7cf
-    time: 1427063884
+    md5: 3cfdd6296b4c2bb6bc00f50f4d90b932
+    time: 1429379874
   /journal/introduction/index.html:
-    md5: 3cc2e5301e250117270c8a0fef9284db
-    time: 1427063885
+    md5: 66e445536de572a8bf20ca47bbb8b9e7
+    time: 1429379874
   /journal/archive/index.html:
-    md5: a373d140bb8bde9be84bec25e56dc413
-    time: 1427063885
+    md5: f3d860c1f77fe10f91c522eb19669a75
+    time: 1429379875
   /journal/tags/index.html:
-    md5: 487539425fd66b3e0630a9cc7782c746
-    time: 1427063885
+    md5: 123b9d30e760cfae031a50f8a35d0325
+    time: 1429379875
   /expenses/index.html:
     md5: 9f72984d8da08de4e5718f4227ee9fe6
     time: 1428075468
@@ -440,11 +443,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: 09cfd2e75f102066d0e9186bd0e808d8
-    time: 1428075479
+    md5: c4cf4894e3c36a327f6a18ef948bb2aa
+    time: 1429379885
   /feed.xml:
-    md5: 405152c76b88c46c475136174f07d0b1
-    time: 1429147340
+    md5: 5a6f0cfa23b3c00ebcef59302c88c00c
+    time: 1429379885
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -530,8 +533,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: ffe62785d98abe0ca83b82184198a453
-    time: 1429147340
+    md5: 45909ded9c2eec01efd813636fc6ebfd
+    time: 1429379885
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
@@ -574,18 +577,21 @@ inventory:
   /package.json:
     md5: 2b39649b790f493bbd20d633dfd58278
     time: 1426453736
-  /assets/scripts/homepage.js:
-    md5: f7292555dd10bf54a6af3046c2a17502
-    time: 1426463137
-  /assets/styles/screen.css:
-    md5: 3dd46391686fc5809a160aa2702414da
-    time: 1426463137
   /assets/og.png:
     md5: a1529891d4012cc71f435c5a623feaf5
     time: 1426954010
   /assets/2015-03-22-project-blobs.png:
     md5: 9b4a6b39a1060c3ecbcbb92e002118bb
     time: 1427063894
+  /assets/scripts/homepage.js:
+    md5: b09775720642a2db4ae348d198f91b61
+    time: 1429379885
+  /assets/scripts/newsletter.js:
+    md5: 6c6712c5691b0420f2256f2e0c63f4b3
+    time: 1429379885
+  /assets/styles/screen.css:
+    md5: 9875e4eedbc04205c4476732ae4033dc
+    time: 1429379885
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
