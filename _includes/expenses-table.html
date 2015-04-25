@@ -1,0 +1,41 @@
+{% assign table_posts = table_posts | reverse %}
+<h3 class='page__title'>{{ table_title }}</h3>
+<table>
+  <colgroup>
+    <col>
+    <col>
+    <col class='vendor-cell'>
+    <col>
+    <col>
+    <col>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Color</th>
+      <th class='service-cell'>Name</th>
+      <th class='vendor-cell'>Service</th>
+      <th class='purpose-cell'>Purpose</th>
+      <th class='cost-cell number-cell'>Cost</th>
+      <th class='number-cell'>Total Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for post in table_posts %}
+    <tr>
+      <td class='color-cell'><div class='color' style='background-color: {{ post.meta.service-color }}'></div></td>
+      <td class='service-cell'>{{ post.title }}</td>
+      <td class='vendor-cell'>
+        <a href='{{ post.meta.service-url }}'>{{ post.meta.service }}</a>
+      </td>
+      <td class='purpose-cell text-cell'>{{ post.body_raw }}</td>
+      <td class='cost-cell number-cell'>{{ post.meta.cost }}</td>
+      <td class='total-cell number-cell'>{{ post.meta.cost-total }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+  <tfoot>
+    <tr>
+      <td class='total-cell number-cell' colspan='6'>{{ meta.cost-total }}</td>
+    </tr>
+  </tfoot>
+</table>

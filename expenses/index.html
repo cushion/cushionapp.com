@@ -1,70 +1,9 @@
 {% capture content %}
-<main class='main-content'>
-  <!-- <table>
-    <colgroup>
-      <col>
-      <col class='service-cell'>
-      <col>
-    </colgroup>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th class='service-cell'>Service</th>
-        <th class='number-cell'>Cost</th>
-      </tr>
-    </thead>
-    <tfoot>
-      <tr>
-        {% assign total = 0 %}
-        {% for post in posts %}
-          {% assign cost = post.meta.cost | plus: 0 %}
-
-          {% if post.meta.cost-frequency == 'month' %}
-            {% assign cost = cost | times: 12 %}
-          {% endif %}
-          {% assign total = total | plus: cost %}
-        {% endfor %}
-        {% assign spaces = total | split:'.' | last | size %}
-        {% if spaces == 1 %}
-          {% assign total = total | append:'0' %}
-        {% endif %}
-        <td class='number-cell' colspan='3'>${{ total }}/year</td>
-      </tr>
-    </tfoot>
-    <tbody>
-      {% for post in posts reversed %}
-      <tr>
-        <td>{{ post.title }}</td>
-        <td class='service-cell'>
-          <a href='{{ post.meta.service-url }}'>{{ post.meta.service }}</a>
-        </td>
-        <td class='number-cell'>${{ post.meta.cost }}/{{ post.meta.cost-frequency }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table> -->
-
-  <section class='grid-container--wide graph-section'>
-    <div class='expenses-graph' id='monthly-expenses'></div>
-    <div class='expenses-graph' id='cumulative-expenses'></div>
-    <div class='expenses-graph' id='total-expenses'></div>
-  </section>
+<main class='grid-container--wide'>
+  {% assign table_title = "Expenses" %}
+  {% assign table_posts = posts | where:"meta.active","" %}
+  {% include 'includes/expenses-table' %}
 </main>
-{% endcapture %}
-
-{% capture foot %}
-  <script>
-    window.graphData = {
-      months: JSON.parse('{{ meta.months }}'),
-      monthly: JSON.parse('{{ meta.montly-data }}'),
-      cumulativeMonthly: JSON.parse('{{ meta.cumulative-monthly-data }}'),
-      total: JSON.parse('{{ meta.total-data }}')
-    }
-  </script>
-
-  <script src='/assets/scripts/libs/jquery.min.js'></script>
-  <script src='/assets/scripts/libs/highcharts.min.js'></script>
-  <script src='/assets/scripts/expenses.js'></script>
 {% endcapture %}
 
 {% include 'layouts/default' %}
