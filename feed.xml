@@ -3,7 +3,17 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Thu, 23 Apr 2015 23:12:47 +0000</pubDate>
+    <pubDate>Sat, 25 Apr 2015 03:01:17 +0000</pubDate>
+    
+    <item>
+      <title>Revenue Analytics</title>
+      <link>http://cushionapp.com/expenses/revenue-analytics</link>
+      <pubDate>Fri, 24 Apr 2015 18:59:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/revenue-analytics</guid>
+      <description>&lt;p&gt;Baremetrics integrates with Stripe to analyze revenue and monitor payment activity.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>The Emotional Rollercoaster</title>
@@ -160,12 +170,13 @@
     </item>
     
     <item>
-      <title>Redis database</title>
+      <title>Redis Database</title>
       <link>http://cushionapp.com/expenses/redis-database</link>
       <pubDate>Mon, 02 Feb 2015 15:49:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/redis-database</guid>
-      <description></description>
+      <description>&lt;p&gt;The Redis database is used to queue and manage background jobs. Redis Cloud is a one-click Heroku add-on, but very expensive.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -254,7 +265,8 @@
       <pubDate>Thu, 29 Jan 2015 11:17:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/web-worker-server</guid>
-      <description></description>
+      <description>&lt;p&gt;The web workers run background jobs, like generating downloadable backups and requesting 3rd party services.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -263,7 +275,8 @@
       <pubDate>Tue, 13 Jan 2015 15:39:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/code-review</guid>
-      <description></description>
+      <description>&lt;p&gt;Code Climate reviews the app code, grades it, and highlights areas that could be improved. This isn’t a necessary service, but useful for a clean codebase.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -546,7 +559,8 @@
       <pubDate>Sun, 02 Nov 2014 21:57:00 -0500</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/support</guid>
-      <description></description>
+      <description>&lt;p&gt;Intercom is essential to communicating with Cushion users, providing customer support, user analytics, and in-app messaging.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -679,46 +693,7 @@
       <pubDate>Wed, 01 Oct 2014 10:48:00 -0400</pubDate>
       <author>Jonnie Hallman</author>
       <guid>http://cushionapp.com/expenses/metrics</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Preferences, Accounts, and a Typeface Change</title>
-      <link>http://cushionapp.com/journal/preferences-accounts-and-atypefacechange</link>
-      <pubDate>Fri, 26 Sep 2014 09:52:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/preferences-accounts-and-atypefacechange</guid>
-      <description>&lt;p&gt;These past couple weeks, I’ve been focusing on making Cushion feel like a legit app. To me, this entails adding all the little parts that can be easily skipped early on, like the ability to change your password. For a public app, these are essential, but in my eyes, you can go without them for a week or so when holding a private beta.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-09-26-preferences.png&quot;&gt;&lt;img src=&quot;/assets/2014-09-26-preferences.png&quot; alt=&quot;2014-09-26-preferences&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Alongside smoothing out the experience, I started building in convenience features, like preferences. Since getting Cushion in the hands of others, there has been an obvious need for certain defaults, so when a user fills out a form, they don’t find them setting the same value on the same field every single time. &lt;/p&gt;
-
-&lt;p&gt;The most apparent of these fields was the invoice’s relative due date, or net. Most freelancers use the same net for every project and they all vary in generosity, from “net 30” to “due upon receipt”. Now, I have a preference for this field, so whenever the user creates a new invoice, the net is that value by default.&lt;/p&gt;
-
-&lt;p&gt;With new additions, it’s good to hold back from implementing them until you have at least two examples to use. For example, I wouldn’t add a preferences section if I only had this one preference. That’s why I added two more—default tab and default view.&lt;/p&gt;
-
-&lt;p&gt;For me, the projects section with the schedule view is the page I use the most, but this isn’t the case for everyone. If you’re less about scheduling and more about accounting, you might live in the invoices tab with the budget view. With these new default tab and view preferences, any time you switch from the account/preferences section of Cushion back to the timeline section, it will take you to your default.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-09-26-account.png&quot;&gt;&lt;img src=&quot;/assets/2014-09-26-account.png&quot; alt=&quot;2014-09-26-account&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Speaking of accounts and preference, I don’t think I ever mentioned this second side of Cushion. From the beginning, users have only had access to the timeline section, which consists of the client, project, and invoice tabs. Now that I’m adding all the necessary parts of a real app, I established a top level navigation for switching between the timeline section and the account/settings/whatever-you-want-to-call-it section. This navigation system works pretty well so far, allowing a new set of view level tabs for switching between account information and preferences. For now, these are the only two tabs, but eventually, we will have a few more for hooks and integrations—the fun stuff.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-update-notification.png&quot; alt=&quot;2014-09-26-update-notification&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Tacking onto the legitamcy of Cushion, I built a dead-simple update notification alert for users to know when I deployed a new version. It slides in from the top, just like success notifications, but it’s blue and refreshes the page upon clicking it. The downside of a web app is that a user only sees what they loaded last. This means, if they haven’t refreshed the browser in weeks, which has happened with past apps I’ve worked on, they will be using an older, potentially incompatible version.&lt;/p&gt;
-
-&lt;p&gt;I didn’t want to be wasteful and poll for changes. Instead, I decided to use a custom response header &lt;code&gt;X-App-Version&lt;/code&gt; with each API response. This value is an environment variable that I set after deploying a new version. Because the app checks the difference upon receiving a new response, like switching views, we won’t experience any of the issues we’d see from something like refreshing upon a date change—the alerts are spread out more.&lt;/p&gt;
-
-&lt;p&gt;I’ve been on a few betas that also use an update notification, but I noticed that they often forget to include what’s new. I get excited for updates, but then I need to spend a few minutes digging through the app, looking for changes. For Cushion, I created a new &lt;a href=&quot;/changelog&quot;&gt;changelog&lt;/a&gt; page, which the alert links to. The changelog runs on the same static system that this journal runs on, so if I spot a typo, I don’t have to prompt the user of an update by deploying the change.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-font-table.png&quot; alt=&quot;2014-09-26-font-table&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The last bit of progress I’ll cover in this post is the obvious font change. I’ve been keeping this in the back of my mind since the beginning, knowing I would need to eventually pick one other than Helvetica Neue. After literally hours of switching between several fonts and just staring at the screen, I decided to go with &lt;a href=&quot;http://justanotherfoundry.com/facit&quot;&gt;Facit&lt;/a&gt; by &lt;a href=&quot;http://justanotherfoundry.com/&quot;&gt;Just Another Foundry&lt;/a&gt;. The decision was tough, but in the end, I picked Facit for its personality, solidity, and beautiful italics.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-09-26-tooltip.png&quot; alt=&quot;2014-09-26-tooltip&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The typeface has a very wide range of weights, which work incredibly well in Cushion’s interface. I’ve been able to find areas in Cushion that benefit greatly from a variance in thickness, like the timeline tooltips. Overall, I think like Facit gets me closer to that solid, reliable feel that I want users to experience when using the app.&lt;/p&gt;
+      <description>&lt;p&gt;Librato serves the dashboard for server metrics and user activity, pulling in data from logs and StatsD.&lt;/p&gt;
 </description>
     </item>
     

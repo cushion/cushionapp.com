@@ -1,5 +1,5 @@
 ---
-time: 1429830768
+time: 1429930881
 inventory:
   /home/index.html:
     md5: 129e2452ef3f5a78e0a37fba7965a083
@@ -149,53 +149,59 @@ inventory:
     md5: 123b9d30e760cfae031a50f8a35d0325
     time: 1429379875
   /expenses/index.html:
-    md5: 9f72984d8da08de4e5718f4227ee9fe6
-    time: 1428075468
+    md5: edefd915ac1282a572c750cf1a1a992a
+    time: 1429930867
+  /expenses/revenue-analytics/index.html:
+    md5: 97ab6dc8bf52cccaa7085eed8fec8c30
+    time: 1429930867
   /expenses/redis-database/index.html:
-    md5: 95d7d313032c3e9212d44fa892a6554d
-    time: 1426954398
+    md5: 754dc14bbdb794aef706860018487629
+    time: 1429930868
   /expenses/web-worker-server/index.html:
-    md5: e3e60f76fb8c6e4a564177559abf1a85
-    time: 1426954398
+    md5: 7c25e22dc4622f0d98465b4ad22bb248
+    time: 1429930868
   /expenses/code-review/index.html:
-    md5: d586fd267902be2d7fc62daf534897db
-    time: 1426954398
+    md5: d5ff40317504e784d3857008b22d32f6
+    time: 1429930868
   /expenses/support/index.html:
-    md5: d38e347656c57a81da33b0d7f836fb56
-    time: 1426954399
+    md5: 0d9dbe722a0ddb4664ddf68735493a32
+    time: 1429930868
   /expenses/metrics/index.html:
-    md5: 3a7c4d644cd9b5d081016d8ab93690b8
-    time: 1426954399
+    md5: 91187b71737dfe233553ba84d5cd3108
+    time: 1429930868
+  /expenses/payment-processer/index.html:
+    md5: d93cf9237c52ee54de02c9d351c9c2f7
+    time: 1429930868
   /expenses/email-marketing/index.html:
-    md5: 72ccfb6afa6674b56f0f05f872102c34
-    time: 1426954399
-  /expenses/ssl-certificate-service/index.html:
-    md5: cb7c923b0bdc59d2ea4a3a2097c4616a
-    time: 1426954399
+    md5: 63f286709411e70f85f9170d385341eb
+    time: 1429930868
+  /expenses/ssl-management/index.html:
+    md5: 41b408fd540c13f79de85b0a7bf1148e
+    time: 1429930868
   /expenses/ssl-certificate/index.html:
-    md5: 93e1e3594e8f90eb75683ac80f5f951b
-    time: 1426954399
+    md5: c21ae8a5ddde8b3634d7495038f4d75f
+    time: 1429930868
   /expenses/web-app-database/index.html:
-    md5: 3ecaf30491b807737f4578c598af393b
-    time: 1426954399
+    md5: 5f7478130c28e915e322053a32102138
+    time: 1429930868
   /expenses/web-app/index.html:
-    md5: 177cc1ab77b678399b87beb0fa6087a3
-    time: 1426954399
+    md5: 244e3cb5bbc51dadf4f01b184fab4d02
+    time: 1429930869
   /expenses/private-scm/index.html:
-    md5: 011c5f5f66405a33c131f3f50be356ec
-    time: 1426954399
+    md5: 1cb2db751f191ab933917a2ef85f02f1
+    time: 1429930869
   /expenses/website-hosting/index.html:
-    md5: ae9d5b5f6538efad74439f45c7b61793
-    time: 1426954399
+    md5: c5f15d61db10dbb26d7ebb207cf42bbb
+    time: 1429930869
   /expenses/website-cms/index.html:
-    md5: 5ef2b95a0345eb64916b0c57ec933916
-    time: 1426954399
+    md5: 7d9e84bf37702d7d1a15afb4673d4fc7
+    time: 1429930869
   /expenses/email-hosting/index.html:
-    md5: 9c434f7006a7df9c8fa6409ce712221b
-    time: 1426954399
+    md5: 226ef159a75d83f20ae8a87a72925d43
+    time: 1429930869
   /expenses/domain-registration/index.html:
-    md5: 3b3116d3e0d8f254700b07928a11290f
-    time: 1426954400
+    md5: c08393f3aa03387deed57cc7edc6d77e
+    time: 1429930869
   /expenses/archive/index.html:
     md5: c7bf414b69673946ea2bf03be9614b59
     time: 1426954400
@@ -452,11 +458,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   /sitemap.xml:
-    md5: c4cf4894e3c36a327f6a18ef948bb2aa
-    time: 1429379885
+    md5: 9ca61344489fdd0bb748a94d1de94ab5
+    time: 1429930877
   /feed.xml:
-    md5: 41d0454f816b3a69e6ada484a9d72f27
-    time: 1429830767
+    md5: eb65543e249e8f041d4aeccbb45a3a32
+    time: 1429930877
   /404.html:
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -542,8 +548,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   /journal/feed.xml:
-    md5: a1a0de1620053f85932b0f4e01b869b0
-    time: 1429830767
+    md5: 24aecbf324d14ea0879c1498affba6e8
+    time: 1429930877
   /assets/2014-10-10-old-project-page.png:
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
@@ -599,8 +605,8 @@ inventory:
     md5: 6c6712c5691b0420f2256f2e0c63f4b3
     time: 1429379885
   /assets/styles/screen.css:
-    md5: 9875e4eedbc04205c4476732ae4033dc
-    time: 1429379885
+    md5: 53a1fdb6b7ede0c23cbd491d09b2e919
+    time: 1429930878
   /assets/2014-04-16-income-sort.png:
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
