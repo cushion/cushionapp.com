@@ -107,210 +107,239 @@
   
   
 <h3 class='page__title'>Expenses</h3>
-<table>
-  <colgroup>
-    <col>
-    <col>
-    <col class='vendor-cell'>
-    <col>
-    <col>
-    <col>
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Color</th>
-      <th class='service-cell'>Name</th>
-      <th class='vendor-cell'>Service</th>
-      <th class='purpose-cell'>Purpose</th>
-      <th class='cost-cell number-cell'>Cost</th>
-      <th class='number-cell'>Total Cost</th>
-    </tr>
-  </thead>
-  <tbody>
+<div class='table'>
+  <div class='table__head'>
+    <div class='table__row'>
+      <h4 class='table__head-cell table__cell'>Color</h4>
+      <h4 class='table__head-cell table__cell'>Name</h4>
+      <h4 class='table__head-cell table__cell--service table__cell'>Service</h4>
+      <h4 class='table__head-cell table__cell'>Purpose</h4>
+      <h4 class='table__head-cell table__cell--cost table__cell'>Cost</h4>
+      <h4 class='table__head-cell table__cell--cost table__cell'>Total Cost</h4>
+    </div>
+  </div>
+  <div class='table__body'>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #1ba581'></div></td>
-      <td class='service-cell'>Domain Registration</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #1ba581'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Domain Registration</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://hover.com/JpRBuaWr'>Hover</a>
-      </td>
-      <td class='purpose-cell text-cell'>Hover handles domain registration for cushionapp.com.</td>
-      <td class='cost-cell number-cell'>$15/year</td>
-      <td class='total-cell number-cell'>$30.00</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>Hover handles domain registration for cushionapp.com.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$15/year</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$30.00</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #009225'></div></td>
-      <td class='service-cell'>Email Hosting</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #009225'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Email Hosting</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='http://www.google.com/enterprise/apps/business/'>Google Apps</a>
-      </td>
-      <td class='purpose-cell text-cell'>Google Apps hosts email for the team as well as spreadsheets for research and expense tracking.</td>
-      <td class='cost-cell number-cell'>$50/year</td>
-      <td class='total-cell number-cell'>$75.07</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>Google Apps hosts email for the team as well as spreadsheets for research and expense tracking.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$50/year</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$75.07</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #83c832'></div></td>
-      <td class='service-cell'>Website CMS</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #83c832'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Website CMS</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='http://siteleaf.com'>Siteleaf</a>
-      </td>
-      <td class='purpose-cell text-cell'>Siteleaf makes it possible to easily update the marketing website without needing to deploy the app.</td>
-      <td class='cost-cell number-cell'>$5/month</td>
-      <td class='total-cell number-cell'>$60.00</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>Siteleaf makes it possible to easily update the marketing website without needing to deploy the app.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$5/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$60.00</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #000000'></div></td>
-      <td class='service-cell'>Website Hosting</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #000000'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Website Hosting</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://pages.github.com/'>Github</a>
-      </td>
-      <td class='purpose-cell text-cell'>The marketing website is hosted on GitHub Pages, which is free, static, and version-controlled.</td>
-      <td class='cost-cell number-cell'>free</td>
-      <td class='total-cell number-cell'>$0.00</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>The marketing website is hosted on GitHub Pages, which is free, static, and version-controlled.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>free</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$0.00</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #000000'></div></td>
-      <td class='service-cell'>Private SCM</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #000000'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Private SCM</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://github.com'>Github</a>
-      </td>
-      <td class='purpose-cell text-cell'>GitHub hosts the source code of the app and GitHub Issues is used to track bugs, features, and milestones.</td>
-      <td class='cost-cell number-cell'>$7/month</td>
-      <td class='total-cell number-cell'>$84.00</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>GitHub hosts the source code of the app and GitHub Issues is used to track bugs, features, and milestones.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$7/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$84.00</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #6e5baa'></div></td>
-      <td class='service-cell'>Web App Server</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #6e5baa'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Web App Server</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://heroku.com'>Heroku</a>
-      </td>
-      <td class='purpose-cell text-cell'>The web app currently runs on Heroku, which is very easy to set up and maintain, but very expensive.</td>
-      <td class='cost-cell number-cell'>$34.50/month</td>
-      <td class='total-cell number-cell'>$309.47</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>The web app currently runs on Heroku, which is very easy to set up and maintain, but very expensive.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$34.50/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$309.47</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #6e5baa'></div></td>
-      <td class='service-cell'>Web App Database</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #6e5baa'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Web App Database</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://addons.heroku.com/heroku-postgresql'>Heroku</a>
-      </td>
-      <td class='purpose-cell text-cell'>The web app uses a PostgreSQL database running on Heroku, which includes automatic backups, but is very expensive for what it is.</td>
-      <td class='cost-cell number-cell'>$50/month</td>
-      <td class='total-cell number-cell'>$416.26</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>The web app uses a PostgreSQL database running on Heroku, which includes automatic backups, but is very expensive for what it is.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$50/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$416.26</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #6e5baa'></div></td>
-      <td class='service-cell'>SSL Certificate</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #6e5baa'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>SSL Certificate</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://addons.heroku.com/SSL'>Heroku</a>
-      </td>
-      <td class='purpose-cell text-cell'>The SSL certificate encrypts requests between the app and the API. Heroku is easy, but very expensive.</td>
-      <td class='cost-cell number-cell'>$20/month</td>
-      <td class='total-cell number-cell'>$167.13</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>The SSL certificate encrypts requests between the app and the API. Heroku is easy, but very expensive.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$20/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$167.13</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #6e5baa'></div></td>
-      <td class='service-cell'>SSL Management</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #6e5baa'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>SSL Management</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://addons.heroku.com/ExpeditedSSL'>ExpeditedSSL</a>
-      </td>
-      <td class='purpose-cell text-cell'>ExpeditedSSL installed the SSL certificate and automatically renews it each year. The service is a set-it-and-forget-it and well worth the extra cost.</td>
-      <td class='cost-cell number-cell'>$10/month</td>
-      <td class='total-cell number-cell'>$83.57</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>ExpeditedSSL installed the SSL certificate and automatically renews it each year. The service is a set-it-and-forget-it and well worth the extra cost.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$10/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$83.57</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #0096d3'></div></td>
-      <td class='service-cell'>Payment Processer</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #0096d3'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Payment Processer</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://stripe.com'>Stripe</a>
-      </td>
-      <td class='purpose-cell text-cell'>Stripe handles payment processing and subscriptions.</td>
-      <td class='cost-cell number-cell'>2.9%/charge</td>
-      <td class='total-cell number-cell'>$495.09</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>Stripe handles payment processing and subscriptions.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>2.9%/charge</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$495.09</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #0f80aa'></div></td>
-      <td class='service-cell'>Metrics</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #0f80aa'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Metrics</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://metrics.librato.com/'>Librato</a>
-      </td>
-      <td class='purpose-cell text-cell'>Librato serves the dashboard for server metrics and user activity, pulling in data from logs and StatsD.</td>
-      <td class='cost-cell number-cell'>$19/month</td>
-      <td class='total-cell number-cell'>$118.66</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>Librato serves the dashboard for server metrics and user activity, pulling in data from logs and StatsD.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$19/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$118.66</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #0073b0'></div></td>
-      <td class='service-cell'>Support</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #0073b0'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Support</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://www.intercom.io'>Intercom</a>
-      </td>
-      <td class='purpose-cell text-cell'>Intercom is essential to communicating with Cushion users, providing customer support, user analytics, and in-app messaging.</td>
-      <td class='cost-cell number-cell'>$79/month</td>
-      <td class='total-cell number-cell'>$523.00</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>Intercom is essential to communicating with Cushion users, providing customer support, user analytics, and in-app messaging.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$79/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$523.00</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #323543'></div></td>
-      <td class='service-cell'>Code Review</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #323543'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Code Review</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://codeclimate.com/'>Code Climate</a>
-      </td>
-      <td class='purpose-cell text-cell'>Code Climate reviews the app code, grades it, and highlights areas that could be improved. This isn’t a necessary service, but useful for a clean codebase.</td>
-      <td class='cost-cell number-cell'>$49/month</td>
-      <td class='total-cell number-cell'>$147.00</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>Code Climate reviews the app code, grades it, and highlights areas that could be improved. This isn’t a necessary service, but useful for a clean codebase.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$49/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$147.00</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #6e5baa'></div></td>
-      <td class='service-cell'>Web Worker Server</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #6e5baa'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Web Worker Server</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://heroku.com'>Heroku</a>
-      </td>
-      <td class='purpose-cell text-cell'>The web workers run background jobs, like generating downloadable backups and requesting 3rd party services.</td>
-      <td class='cost-cell number-cell'>$36/month</td>
-      <td class='total-cell number-cell'>$74.16</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>The web workers run background jobs, like generating downloadable backups and requesting 3rd party services.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$36/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$74.16</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #cc0000'></div></td>
-      <td class='service-cell'>Redis Database</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #cc0000'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Redis Database</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://redislabs.com/'>Redis Cloud</a>
-      </td>
-      <td class='purpose-cell text-cell'>The Redis database is used to queue and manage background jobs. Redis Cloud is a one-click Heroku add-on, but very expensive.</td>
-      <td class='cost-cell number-cell'>$10/month</td>
-      <td class='total-cell number-cell'>$20.60</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>The Redis database is used to queue and manage background jobs. Redis Cloud is a one-click Heroku add-on, but very expensive.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$10/month</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$20.60</div>
+    </div>
     
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: #2593D5'></div></td>
-      <td class='service-cell'>Revenue Analytics</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: #2593D5'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>Revenue Analytics</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='https://baremetrics.com'>Baremetrics</a>
-      </td>
-      <td class='purpose-cell text-cell'>Baremetrics integrates with Stripe to analyze revenue and monitor payment activity.</td>
-      <td class='cost-cell number-cell'>$290/year</td>
-      <td class='total-cell number-cell'>$290</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>Baremetrics integrates with Stripe to analyze revenue and monitor payment activity.</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>$290/year</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>$290</div>
+    </div>
     
-  </tbody>
-  <tfoot>
-    <tr>
-      <td class='total-cell number-cell' colspan='6'>$2,148.67</td>
-    </tr>
-  </tfoot>
-</table>
+  </div>
+  <div class='table__foot'>
+    <div class='table__foot-row table__row'>
+      <div class='table__foot-cell table__cell'></div>
+      <div class='table__foot-cell table__cell'></div>
+      <div class='table__foot-cell table__cell--service table__cell'></div>
+      <div class='table__foot-cell table__cell'></div>
+      <div class='table__foot-cell--cost table__foot-cell table__cell--cost table__cell'>$2,000/year</div>
+      <div class='table__foot-cell--cost-total table__foot-cell table__cell--cost table__cell'>$2,148.67</div>
+    </div>
+  </div>
+</div>
 
 </main>
 
