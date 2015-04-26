@@ -246,6 +246,10 @@ hr
       padding-bottom: 10px
       border-bottom: solid 1px $lighter-grey
 
+    .table__body-row:last-child
+      .table__body-cell
+        border-bottom: 0
+
     .table__body-cell--name
       font-weight: normal
 
@@ -296,6 +300,10 @@ hr
 .table__body-row
   padding-bottom: 20px
   border-bottom: solid 1px $lighter-grey
+
+  &:last-child
+    padding-bottom: 0
+    border-bottom: none
 
 .table__body-cell
   font-size: 14px
