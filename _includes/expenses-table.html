@@ -1,41 +1,40 @@
 {% assign table_posts = table_posts | reverse %}
 <h3 class='page__title'>{{ table_title }}</h3>
-<table>
-  <colgroup>
-    <col>
-    <col>
-    <col class='vendor-cell'>
-    <col>
-    <col>
-    <col>
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Color</th>
-      <th class='service-cell'>Name</th>
-      <th class='vendor-cell'>Service</th>
-      <th class='purpose-cell'>Purpose</th>
-      <th class='cost-cell number-cell'>Cost</th>
-      <th class='number-cell'>Total Cost</th>
-    </tr>
-  </thead>
-  <tbody>
+<div class='table'>
+  <div class='table__head'>
+    <div class='table__row'>
+      <h4 class='table__head-cell table__cell'>Color</h4>
+      <h4 class='table__head-cell table__cell'>Name</h4>
+      <h4 class='table__head-cell table__cell--service table__cell'>Service</h4>
+      <h4 class='table__head-cell table__cell'>Purpose</h4>
+      <h4 class='table__head-cell table__cell--cost table__cell'>Cost</h4>
+      <h4 class='table__head-cell table__cell--cost table__cell'>Total Cost</h4>
+    </div>
+  </div>
+  <div class='table__body'>
     {% for post in table_posts %}
-    <tr>
-      <td class='color-cell'><div class='color' style='background-color: {{ post.meta.service-color }}'></div></td>
-      <td class='service-cell'>{{ post.title }}</td>
-      <td class='vendor-cell'>
+    <div class='table__body-row table__row'>
+      <div class='table__body-cell--color table__body-cell table__cell'>
+        <div class='color' style='background-color: {{ post.meta.service-color }}'></div>
+      </div>
+      <div class='table__body-cell--name table__body-cell table__cell'>{{ post.title }}</div>
+      <div class='table__body-cell--service table__body-cell table__cell--service table__cell'>
         <a href='{{ post.meta.service-url }}'>{{ post.meta.service }}</a>
-      </td>
-      <td class='purpose-cell text-cell'>{{ post.body_raw }}</td>
-      <td class='cost-cell number-cell'>{{ post.meta.cost }}</td>
-      <td class='total-cell number-cell'>{{ post.meta.cost-total }}</td>
-    </tr>
+      </div>
+      <div class='table__body-cell--purpose table__body-cell table__cell'>{{ post.body_raw }}</div>
+      <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>{{ post.meta.cost }}</div>
+      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>{{ post.meta.cost-total }}</div>
+    </div>
     {% endfor %}
-  </tbody>
-  <tfoot>
-    <tr>
-      <td class='total-cell number-cell' colspan='6'>{{ meta.cost-total }}</td>
-    </tr>
-  </tfoot>
-</table>
+  </div>
+  <div class='table__foot'>
+    <div class='table__foot-row table__row'>
+      <div class='table__foot-cell table__cell'></div>
+      <div class='table__foot-cell table__cell'></div>
+      <div class='table__foot-cell table__cell--service table__cell'></div>
+      <div class='table__foot-cell table__cell'></div>
+      <div class='table__foot-cell--cost table__foot-cell table__cell--cost table__cell'>{{ meta.cost }}</div>
+      <div class='table__foot-cell--cost-total table__foot-cell table__cell--cost table__cell'>{{ meta.cost-total }}</div>
+    </div>
+  </div>
+</div>

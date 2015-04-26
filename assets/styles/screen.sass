@@ -213,89 +213,161 @@ hr
 
 // table
 
-table
-  width: 100%
-  margin: 0 auto
+.table
+  +min-width($tablet)
+    display: table
 
-th
-  padding-left: em(30, 12)
-  padding-bottom: em(8, 12)
+    .table__head
+      display: table-header-group
 
+    .table__head-cell
+      padding-bottom: 8px
+
+    .table__row
+      display: table-row
+      vertical-align: middle
+
+    .table__cell
+      display: table-cell
+      padding-right: 30px
+      white-space: nowrap
+
+      &:last-child
+        padding-right: 0
+
+    .table__cell--service
+      display: none
+
+    .table__body-cell
+      padding-top: 10px
+      padding-bottom: 10px
+      border-bottom: solid 1px #e6e6e6
+
+    .table__body-cell--name
+      font-weight: normal
+
+    .table__body-cell--purpose
+      font-size: 12px
+      white-space: normal
+
+    .table__body-cell--cost,
+    .table__body-cell--cost-total
+      font-size: 14px
+
+    .table__cell--cost,
+    .table__cell--cost-total
+      text-align: right
+
+      &:after
+        content: ''
+
+    .table__body
+      display: table-row-group
+
+    .table__foot
+      display: table-footer-group
+
+    .table__foot-row
+      border-top: none
+
+    .table__foot-cell
+      padding-top: 14px
+      border-top: solid 4px $light-grey
+
+  +min-width($laptop)
+    .table__cell--service
+      display: table-cell
+
+.table__head
+  display: none
+
+.table__head-cell
+  color: $grey
+
+  font: $base-font
   font-size: em(12)
   font-weight: normal
-  color: $grey
   text-align: left
   text-transform: lowercase
 
-  &:first-child
-    padding-left: 0
-
-tr
+.table__body-cell
+  font-size: 14px
   vertical-align: middle
 
-tbody
-  tr
-    border-bottom: solid 1px #e6e6e6
-
-  td
-    padding-left: em(30, 14)
-    padding-top: em(10, 14)
-    padding-bottom: em(10, 14)
-
-    font-size: em(14)
-
-    &:first-child
-      padding-left: 0
-
-  tr:last-child td
-    padding-bottom: em(16, 14)
-
-tfoot
-  border-top: solid 4px $light-grey
-
-  td
-    padding-top: em(13)
-    padding-left: em(30)
-
-    font-weight: 500
+.table__body-cell--color
+  display: inline-block
 
 .color
   width: 21px
   height: 21px
 
-.service-cell
-  white-space: nowrap
-
-.number-cell
-  text-align: right
-  white-space: nowrap
-
-.text-cell
-  font-size: em(12)
-
-.vendor-cell
-  display: none
-
-  a:hover
-    text-decoration: underline
-
-  +min-width($tablet-portrait)
-    display: table-cell
-
-.purpose-cell
-  display: none
-
-  +min-width($laptop)
-    display: table-cell
-
-.cost-cell
-  display: none
-
-  +min-width($tablet)
-    display: table-cell
-
-.total-cell
+.table__body-cell--name
+  display: inline-block
   font-weight: 600
+
+.table__body-cell--service
+  display: inline-block
+
+.table__body-cell--cost
+  font-size: 13px
+
+.table__body-cell--cost-total
+  display: inline-block
+  font-size: 13px
+  font-weight: 600
+
+  &:after
+    content: ' total'
+
+.table__foot-row
+  border-top: solid 4px $light-grey
+  font-weight: 600
+  text-align: right
+
+.table__foot-cell
+  display: inline-block
+
+.table__foot-cell--cost-total
+  &:after
+    content: ' total'
+
+
+//
+// table layout
+//
+
+.table__body
+  .table__body-cell--name,
+  .table__body-cell--service
+    margin-left: 6px
+
+  .table__body-cell--purpose
+    margin-top: 6px
+
+  .table__body-cell--cost
+    margin-top: 8px
+
+  .table__body-cell--purpose,
+  .table__body-cell--cost,
+  .table__body-cell--cost-total
+    margin-left: 32px
+
+  .table__row
+    margin-top: 20px
+
+    &:first-child
+      margin-top: 0
+
+.table__foot
+  .table__foot-row
+    margin-top: 20px
+
+  .table__foot-cell
+    margin-top: 12px
+
+  .table__foot-cell--cost
+    margin-right: 10px
+
 
 
 // expenses
