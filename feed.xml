@@ -3,7 +3,7 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Sun, 26 Apr 2015 01:45:04 +0000</pubDate>
+    <pubDate>Sun, 26 Apr 2015 23:45:48 -0400</pubDate>
     
     <item>
       <title>Revenue Analytics</title>
@@ -243,8 +243,8 @@
 
 &lt;p&gt;I also decided to add “ribbons” to selected plans, indicating when a plan’s subscription begins, renews, or ends. Whenever you’re dealing with payment-related parts of an app, it’s best to inform the user as much as possible about their current state. I want to do as much as I can to keep users from contacting support for questions that could easily be answered with a helpful UI, especially as a solo developer.&lt;/p&gt;
 
-&lt;div class='video-outer'&gt;
-    &lt;div class='video-inner' style='padding-bottom: 34%'&gt;
+&lt;div class=&#39;video-outer&#39;&gt;
+    &lt;div class=&#39;video-inner&#39; style=&#39;padding-bottom: 34%&#39;&gt;
         &lt;video width=&quot;100%&quot; poster=&quot;/assets/2015-01-30-design.png&quot; autoplay=&quot;autoplay&quot; loop=&quot;loop&quot; controls=&quot;controls&quot; tabindex=&quot;0&quot;&gt;
             &lt;source src=&quot;/assets/2015-01-30-design.mp4&quot; type=&quot;video/mp4&quot; /&gt;
             &lt;source src=&quot;/assets/2015-01-30-design.ogv&quot; type=&quot;video/ogg&quot; /&gt;
@@ -641,8 +641,8 @@
 
 &lt;p&gt;Now, all of this would look great on its own, but the transition of switching between the views should look even better. Luckily, each spot I wanted to animate was as easy as adding a CSS3 transition. The line segments scale based on the number of days in the timeline to the number of days in the selected month, the month labels fade in and pan up from behind the timeline, and the even day backgrounds simply fade in.&lt;/p&gt;
 
-&lt;div class='video-outer'&gt;
-    &lt;div class='video-inner' style='padding-bottom: 34%'&gt;
+&lt;div class=&#39;video-outer&#39;&gt;
+    &lt;div class=&#39;video-inner&#39; style=&#39;padding-bottom: 34%&#39;&gt;
         &lt;video width=&quot;100%&quot; poster=&quot;/assets/2014-10-16-timeline-zoom.png&quot; autoplay=&quot;autoplay&quot; loop=&quot;loop&quot; controls=&quot;controls&quot; tabindex=&quot;0&quot;&gt;
             &lt;source src=&quot;/assets/2014-10-16-timeline-zoom.mp4&quot; type=&quot;video/mp4&quot; /&gt;
             &lt;source src=&quot;/assets/2014-10-16-timeline-zoom.ogv&quot; type=&quot;video/ogg&quot; /&gt;
