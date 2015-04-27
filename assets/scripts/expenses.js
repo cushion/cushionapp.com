@@ -34,8 +34,12 @@ $(function () {
       };
   });
 
+  var colors = $.map(window.graphData.monthly, function (row) {
+    return window.graphData.colors[row[0]]
+  });
+
   var baseConfig = {
-    colors: window.graphData.colors,
+    colors: colors,
     legend: {
       enabled: false
     },
