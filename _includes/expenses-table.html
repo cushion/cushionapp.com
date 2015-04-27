@@ -1,4 +1,3 @@
-{% assign table_posts = table_posts | reverse %}
 <h3 class='page__title'>{{ table_title }}</h3>
 <div class='table'>
   <div class='table__head'>
@@ -12,7 +11,7 @@
     </div>
   </div>
   <div class='table__body'>
-    {% for post in table_posts %}
+    {% for post in posts %}
     <div class='table__body-row table__row'>
       <div class='table__body-cell--color table__body-cell table__cell'>
         <div class='color' style='background-color: {{ post.meta.service-color }}'></div>

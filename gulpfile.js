@@ -68,7 +68,7 @@ gulp.task('scripts', function() {
 gulp.task('watch', function() {
   livereload.listen();
 
-  gulp.watch('./assets/scripts/**/*.coffee', ['scripts']);
+  gulp.watch('./assets/scripts/**/*.{js,coffee}', ['scripts']);
   gulp.watch('./assets/styles/**/*.{scss,sass}', ['styles']);
   gulp.watch('./**/*.html', function(e) {
     livereload.changed(e.path);

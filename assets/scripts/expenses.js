@@ -1,27 +1,4 @@
 $(function () {
-  var colors = [
-    '#FF3D4C',
-    '#A6A497',
-    '#00968F',
-    '#FEAA3A',
-    '#CF2257',
-    '#80DDBE',
-    '#FBE100',
-    '#FF8D8D',
-    '#3498DB',
-    '#01718D',
-    '#8ACCE8',
-    '#FF5600',
-    '#CFC291',
-    '#716C71',
-    '#068A5F',
-    '#404040',
-    '#6BBD2E',
-    '#cccccc',
-    '#AFE2D3',
-    '#834A7D'
-  ]
-
   function currencyToFloat(column) {
     return parseFloat(column.replace('$', ''));
   }
@@ -42,15 +19,25 @@ $(function () {
     return $.map(data, function(row) { return [[row[0], currencyToFloat(row[1])]] });
   }
 
+  var plotLines = $.map(window.graphData.markers, function (line) {
+    return {
+        label: {
+          x: 10,
+          y: 20,
+          rotation: 0,
+          text: line[0]
+        },
+        color: '#4099FF',
+        width: 2,
+        zIndex: 1,
+        value: window.graphData.months.indexOf(line[1])
+      };
+  });
+
   var baseConfig = {
-    colors: colors,
+    colors: window.graphData.colors,
     legend: {
-      layout: 'horizontal',
-      align: 'center',
-      verticalAlign: 'bottom',
-      itemStyle: {
-        padding: '8px'
-      }
+      enabled: false
     },
     tooltip: {
       valuePrefix: '$',
@@ -59,6 +46,9 @@ $(function () {
       shadow: false,
       style: {
         padding: '8px'
+      },
+      formatter: function () {
+        return '<strong>' + this.series.name + '</strong><br>' + this.x + '<br>$' + this.y.toFixed(2);
       }
     },
     credits: {
@@ -66,41 +56,39 @@ $(function () {
     }
   };
 
-  var pieConfig = $.extend({}, baseConfig, {
-    chart: {
-      type: 'pie'
-    },
-    plotOptions: {
-      pie: {
-        animation: false
-      }
-    }
-  });
-
   var areaConfig = $.extend({}, baseConfig, {
     chart: {
       type: 'areaspline',
-      zoomType: 'xy',
+      spacing: [10, 0, 0, 0],
       animation: {
         duration: 250,
         easing: 'swing'
       }
     },
     xAxis: {
-      categories: window.graphData.months
+      categories: window.graphData.months,
+      tickmarkPlacement: 'on',
+      staggerLines: 1,
+      plotLines: plotLines
     },
     yAxis: {
-      floor: 0,
+      gridLineColor: '#eeeeee',
       labels: {
+        x: -2,
         formatter: function () {
           return '$' + this.value;
         }
+      },
+      title: {
+        enabled: false
       }
     },
     plotOptions: {
       areaspline: {
         animation: false,
         stacking: 'normal',
+        lineWidth: 0,
+        showEmpty: false,
         states: {
           hover: {
             lineWidthPlus: 4
@@ -122,24 +110,8 @@ $(function () {
 
   $('#monthly-expenses').highcharts($.extend({}, areaConfig, {
     title: {
-      text: 'Monthly Expenses'
+      text: ''
     },
     series: formatAreaData(window.graphData.monthly)
-  }));
-
-  $('#cumulative-expenses').highcharts($.extend({}, areaConfig, {
-    title: {
-      text: 'Cumulative Monthly Expenses'
-    },
-    series: formatAreaData(window.graphData.cumulativeMonthly)
-  }));
-
-  $('#total-expenses').highcharts($.extend({}, pieConfig, {
-    title: {
-      text: 'Total Expenses'
-    },
-    series: [{
-      data: formatPieData(window.graphData.total)
-    }]
   }));
 });

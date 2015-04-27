@@ -1,9 +1,28 @@
 {% capture content %}
 <main class='grid-container--wide'>
+  <section class='graph-section'>
+    <div class='expenses-graph' id='monthly-expenses'></div>
+  </section>
+
   {% assign table_title = "Expenses" %}
-  {% assign table_posts = posts | where:"meta.active","" %}
+  {% assign posts = posts | where:"meta.active","" | reverse %}
   {% include 'includes/expenses-table' %}
 </main>
+{% endcapture %}
+
+{% capture foot %}
+  <script>
+    window.graphData = {
+      colors: JSON.parse('[{% for post in posts %}"{{ post.meta.service-color }}"{% unless forloop.last %},{% endunless %}{% endfor %}]'),
+      markers: JSON.parse('{{ meta.markers }}'),
+      months: JSON.parse('{{ meta.months }}'),
+      monthly: JSON.parse('{{ meta.montly-data }}')
+    }
+  </script>
+
+  <script src='/assets/scripts/libs/jquery.min.js'></script>
+  <script src='/assets/scripts/libs/highcharts.min.js'></script>
+  <script src='/assets/scripts/expenses.js'></script>
 {% endcapture %}
 
 {% include 'layouts/default' %}
