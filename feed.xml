@@ -3,7 +3,7 @@
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Thu, 30 Apr 2015 16:48:45 -0400</pubDate>
+    <pubDate>Sun, 03 May 2015 11:59:55 -0400</pubDate>
     
     <item>
       <title>Revenue Analytics</title>
@@ -132,6 +132,16 @@
 &lt;p&gt;As of this weekend, the monthly and yearly subscriptions are in place and ready for new users. Several weeks from now, once I’ve ironed out the subscription process, I’ll be able to take the next step and offer trial periods. Since there’s nothing holding anyone back from signing up at that point, I’ll still use an invite system to keep the traffic to a level I can manage. And from there, if I’m ready to open the flood gates, I will.&lt;/p&gt;
 
 &lt;p&gt;As always, if you’re interested in trying out Cushion, this time as a beta user or a monthly subscriber, &lt;a href=&quot;/beta&quot;&gt;request an invite&lt;/a&gt; and I’ll send one your way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Webhooks</title>
+      <link>http://cushionapp.com/expenses/webhooks</link>
+      <pubDate>Sun, 01 Mar 2015 11:51:00 -0500</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/expenses/webhooks</guid>
+      <description>&lt;p&gt;Zapier automates several workflows on the marketing side of Cushion.&lt;/p&gt;
 </description>
     </item>
     
@@ -684,16 +694,6 @@
 &lt;p&gt;On the visual side, specifically the budget timeline, I’m in a bit of a pickle. These timelines are based on a financial goal the user sets in the beginning, which is of a single currency. This means that if I want to visualize a variety of currencies, I’ll need a goal per currency, which is not going to happen.&lt;/p&gt;
 
 &lt;p&gt;I have a few ideas of how to get around this, but I’m getting ahead of myself. As a first step, I just need the ability to change the default currency per user. This is an easy one, so I’m happy to say it’s already done. I found a Ruby gem, called &lt;a href=&quot;https://github.com/RubyMoney/money&quot;&gt;Money&lt;/a&gt;, that provides a thorough list of currencies, along with their symbols, symbol positions, thousand separator, and decimal separator. On the front-end, I can still use &lt;a href=&quot;https://github.com/openexchangerates/accounting.js&quot;&gt;Accounting.js&lt;/a&gt;—all I need to do is provide the currency settings from the backend.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Metrics</title>
-      <link>http://cushionapp.com/expenses/metrics</link>
-      <pubDate>Wed, 01 Oct 2014 10:48:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/metrics</guid>
-      <description>&lt;p&gt;Librato serves the dashboard for server metrics and user activity, pulling in data from logs and StatsD.&lt;/p&gt;
 </description>
     </item>
     

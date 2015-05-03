@@ -1,22 +1,27 @@
 $(function () {
-  function currencyToFloat(column) {
-    return parseFloat(column.replace('$', ''));
+  function unformatCurrency(num) {
+    return parseFloat(num.replace('$', ''));
+  }
+
+  function numberWithCommas(num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  function formatCurrency(num) {
+    return '$' + numberWithCommas(num.toFixed(2));
   }
 
   function formatAreaData(data) {
     return $.map(data, function(row, i) {
       var service = row[0];
       var provider = row[1];
+      var color = row[2];
 
       return {
         name: service,
-        data: $.map(row.slice(2), function(column) { return currencyToFloat(column) })
+        data: $.map(row.slice(3), function(column) { return unformatCurrency(column) })
       }
     });
-  }
-
-  function formatPieData(data) {
-    return $.map(data, function(row) { return [[row[0], currencyToFloat(row[1])]] });
   }
 
   var plotLines = $.map(window.graphData.markers, function (line) {
@@ -34,12 +39,10 @@ $(function () {
       };
   });
 
-  var colors = $.map(window.graphData.monthly, function (row) {
-    return window.graphData.colors[row[0]]
-  });
-
   var baseConfig = {
-    colors: colors,
+    colors: $.map(window.graphData.monthly_cost, function (row) {
+      return row[2];
+    }),
     legend: {
       enabled: false
     },
@@ -112,10 +115,20 @@ $(function () {
     }
   });
 
+  expenses_sum = 0;
+  $('.js-expense__total-cost').each(function (n) {
+    var cost = unformatCurrency(window.graphData.total_cost[n][1]);
+
+    $(this).text(formatCurrency(cost));
+    expenses_sum += cost;
+  });
+
+  $('.js-expenses__total-cost').text(formatCurrency(expenses_sum));
+
   $('#monthly-expenses').highcharts($.extend({}, areaConfig, {
     title: {
       text: ''
     },
-    series: formatAreaData(window.graphData.monthly)
+    series: formatAreaData(window.graphData.monthly_cost)
   }));
 });
