@@ -16,7 +16,8 @@
       colors: JSON.parse('{% raw %}{{% endraw %}{% for post in posts %}"{{ post.title }}":"{{ post.meta.service-color }}"{% unless forloop.last %},{% endunless %}{% endfor %}{% raw %}}{% endraw %}'),
       markers: JSON.parse('{{ meta.markers }}'),
       months: JSON.parse('{{ meta.months }}'),
-      monthly: JSON.parse('{{ meta.montly-data }}')
+      monthly_cost: JSON.parse('{{ meta.montly-cost-data }}'),
+      total_cost: JSON.parse('{{ meta.total-cost-data }}')
     }
   </script>
 

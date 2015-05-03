@@ -22,7 +22,7 @@
       </div>
       <div class='table__body-cell--purpose table__body-cell table__cell'>{{ post.body_raw }}</div>
       <div class='table__body-cell--cost table__body-cell table__cell--cost table__cell'>{{ post.meta.cost }}</div>
-      <div class='table__body-cell--cost-total table__body-cell table__cell--cost table__cell'>{{ post.meta.cost-total }}</div>
+      <div class='js-expense__total-cost table__body-cell--cost-total table__body-cell table__cell--cost table__cell'></div>
     </div>
     {% endfor %}
   </div>
@@ -33,7 +33,7 @@
       <div class='table__foot-cell table__cell--service table__cell'></div>
       <div class='table__foot-cell table__cell'></div>
       <div class='table__foot-cell--cost table__foot-cell table__cell--cost table__cell'>{{ meta.cost }}</div>
-      <div class='table__foot-cell--cost-total table__foot-cell table__cell--cost table__cell'>{{ meta.cost-total }}</div>
+      <div class='js-expenses__total-cost table__foot-cell--cost-total table__foot-cell table__cell--cost table__cell'></div>
     </div>
   </div>
 </div>
