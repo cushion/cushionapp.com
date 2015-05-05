@@ -1,5 +1,5 @@
 ---
-time: 1430669106
+time: 1430835334
 inventory:
   "/home/index.html":
     md5: cc088c48b019b3f76ff0fae4ba0682ab
@@ -149,8 +149,8 @@ inventory:
     md5: ac105e66f32cf67b166e444835ce0ea6
     time: 1430426889
   "/expenses/index.html":
-    md5: c4b423bf30d1eb9a7ea2f0a406c14e87
-    time: 1430669057
+    md5: 918db3294d4a2f64f562904b7b0a6328
+    time: 1430835297
   "/expenses/revenue-analytics/index.html":
     md5: cb1e34a16b063a4911ca51dcc5187790
     time: 1430426890
@@ -178,12 +178,27 @@ inventory:
   "/expenses/email-marketing/index.html":
     md5: ef7f7e40e5314d40f59809d893ef5f0b
     time: 1430426892
+  "/expenses/email-delivery/index.html":
+    md5: 517c7c8baa3289b462c02bc0a7eeed29
+    time: 1430835300
+  "/expenses/email-marketing-1/index.html":
+    md5: 00ca23cfaf39cf421b9f2559e5aa338a
+    time: 1430835301
   "/expenses/asset-cdn/index.html":
     md5: aeaad6ec020991072435f63179468bff
     time: 1430668790
   "/expenses/asset-storage/index.html":
     md5: c306c40b17f08b97db93adbf30d69ff2
     time: 1430668790
+  "/expenses/continuous-delivery/index.html":
+    md5: 8b77cff1dab7382087bacee66167a6cf
+    time: 1430835301
+  "/expenses/exception-tracking/index.html":
+    md5: 9eb2cb80797899cbd0963f200b08afa6
+    time: 1430835302
+  "/expenses/log-management/index.html":
+    md5: a20dfd662f5ff61c66028bbd59240455
+    time: 1430835302
   "/expenses/ssl-management/index.html":
     md5: 0d0e7a35c03c9504f3681e6227f4a9da
     time: 1430426892
@@ -467,11 +482,11 @@ inventory:
     md5: 90316b8ee868417e0dee063d6645b384
     time: 1404674334
   "/sitemap.xml":
-    md5: d25ee3efe9756eb76a9f250ecb834057
-    time: 1430669106
+    md5: fcdeef7260d9e1e3bb68fc59e1224ac4
+    time: 1430835333
   "/feed.xml":
-    md5: 59fa061ce4c284937e061d5b566d304c
-    time: 1430669106
+    md5: f6f8874bb93c066ef61a9307d609fb58
+    time: 1430835333
   "/404.html":
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -557,8 +572,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   "/journal/feed.xml":
-    md5: ae3408475e777a493d0d877ceaf3edcd
-    time: 1430669106
+    md5: 76df30923f4fcbe490f6fa542b852c50
+    time: 1430835334
   "/assets/2014-10-10-old-project-page.png":
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
