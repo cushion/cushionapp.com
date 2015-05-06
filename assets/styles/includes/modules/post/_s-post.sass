@@ -2,6 +2,17 @@
 // title
 //
 
+.post__pretitle
+  font: $header-font
+  font-size: em(14)
+  line-height: 2em
+  text-align: center
+
+
+//
+// title
+//
+
 .post__title
   font: $header-font
   font-size: em(24)
@@ -35,5 +46,18 @@
 //
 
 .post-list__item
+  font: $copy-font
   margin-left: 1em
   list-style-type: disc
+
+  +min-width($tablet)
+    font-size: em(18)
+
+
+//
+// service icon
+//
+
+.post__service-icon
+  background-repeat: no-repeat
+  background-size: contain

@@ -1,0 +1,37 @@
+{% capture content %}
+<main class='grid-container--narrow main'>
+  <article class='post'>
+    <header class='post__header'>
+      {% if parent.parent.slug == 'integrations' %}
+        <div class='post__service-icon' style='background-image: url(/assets/services-{{ parent.slug }}.png)'></div>
+        <h4 class='post__pretitle'>{{ parent.title }}</h4>
+      {% else %}
+        <div class='post__service-icon' style='background-image: url(/assets/services-{{ parent.parent.slug }}.png)'></div>
+      {% endif %}
+      <h3 class='post__title'>
+        <a href='{{ url }}'>{{ title }}</a>
+      </h3>
+    </header>
+
+    <div class='post__body'>
+      {{ body }}
+    </div>
+  </article>
+
+  {% if parent.parent.slug == 'integrations' %}
+  <section>
+    <h3 class='page__title'>Common Problems</h3>
+
+    <ul class='post-list'>
+      {% for _post in pages %}
+      <li class='post-list__item'>
+        <a class='{% if _post.url == post.url %}link--strike{% endif %} link--hover-border' href='{{ _post.url }}'>{{ _post.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+</main>
+{% endcapture %}
+
+{% include 'layouts/default' %}
