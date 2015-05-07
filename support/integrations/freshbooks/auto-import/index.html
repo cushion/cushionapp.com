@@ -117,9 +117,33 @@
     </header>
 
     <div class='post__body'>
-      <h4>Description</h4>
+      <h4>How It Works</h4>
 
-<p>The FreshBooks Auto-Import integration will automatically create clients, projects, and invoices in Cushion shortly after you create them in FreshBooks.</p>
+<p>The FreshBooks Auto-Import integration will:</p>
+
+<ul>
+<li>create clients, projects, and invoices in Cushion as you create them in FreshBooks</li>
+<li>mark Cushion invoices as paid when payments are received in FreshBooks</li>
+</ul>
+
+<h4>Things to Know</h4>
+
+<ul>
+<li>The Auto-Import integration <em>does not</em> continue to update clients, projects, or invoices in Cushion once imported from FreshBooks.</li>
+<li>If an imported FreshBooks project is flat-rate, its rate will be used as the estimated income in Cushion.</li>
+</ul>
+
+<p><img src="/assets/freshbooks-auto-import-no-project.png" alt="freshbooks-auto-import-no-project"> </p>
+
+<ul>
+<li>FreshBooks doesn’t link invoices to individual projects, so when a FreshBooks invoice is imported into Cushion, it will show <code>(no project)</code> under the project column. You must manually set the invoice’s project to maintain accuracy of the budget graph.</li>
+</ul>
+
+<p><img src="/assets/freshbooks-auto-import-no-client.png" alt="freshbooks-auto-import-no-client"> </p>
+
+<ul>
+<li>If a project or invoice is imported from FreshBooks and its client doesn’t exists in Cushion or hasn’t been linked to FreshBooks, the item will show <code>(no client)</code> under the client column. You will need to manually set the project or invoice’s client. That client will then be linked to FreshBooks, so any new projects or invoices imported from FreshBooks will automatically be linked to it.</li>
+</ul>
 
     </div>
   </article>
