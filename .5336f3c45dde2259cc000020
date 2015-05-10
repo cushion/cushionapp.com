@@ -1,5 +1,5 @@
 ---
-time: 1431044242
+time: 1431221432
 inventory:
   "/home/index.html":
     md5: cc088c48b019b3f76ff0fae4ba0682ab
@@ -142,6 +142,9 @@ inventory:
   "/journal/introduction/index.html":
     md5: 712b2cd17a6503df04b1912569672e0c
     time: 1430426888
+  "/journal/inspiration-vs-imitation/index.html":
+    md5: e28a5041c4a246b144da0896f0abc618
+    time: 1431221423
   "/journal/archive/index.html":
     md5: 3370afb0499e8e0e612f41a242b3b4ee
     time: 1430426889
@@ -503,8 +506,8 @@ inventory:
     md5: fcdeef7260d9e1e3bb68fc59e1224ac4
     time: 1430835333
   "/feed.xml":
-    md5: 31c0bf2891403e15b1f6072a4bd6241d
-    time: 1431044241
+    md5: 3ced056c9cb266f343b716d58d2eba68
+    time: 1431221431
   "/404.html":
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -590,8 +593,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   "/journal/feed.xml":
-    md5: 313dde8bcc89801507a682a6e3819b8c
-    time: 1431044241
+    md5: d73f8d02494b2340561ac607bba52c10
+    time: 1431221431
   "/assets/2014-10-10-old-project-page.png":
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
@@ -658,6 +661,9 @@ inventory:
   "/assets/freshbooks-auto-import-no-project.png":
     md5: fd993ce886637a16c62beb0686077e89
     time: 1431032798
+  "/assets/imitation-table.png":
+    md5: 920cb545945a506577d2320aad67b824
+    time: 1431221431
   "/assets/2014-04-16-income-sort.png":
     md5: 2b2abad827a0e973a6a8a24efc4eea7e
     time: 1404674338
@@ -745,6 +751,9 @@ inventory:
   "/assets/freshbooks-auto-import-no-client.png":
     md5: 47b88739a8d79176c3a6e6ced4a0ea4b
     time: 1431032798
+  "/assets/imitation-notification.png":
+    md5: ad1eeb7f90f669e72cc114354479b1f9
+    time: 1431221431
   "/assets/2014-04-16-name-sort.png":
     md5: ae40740f39672462c8361a5d6029a543
     time: 1404674340
@@ -820,6 +829,9 @@ inventory:
   "/assets/freshbooks-auto-import-unverified.png":
     md5: d3051c8b54692f1d651a68e06a58f3cb
     time: 1430945244
+  "/assets/imitation-datepicker.png":
+    md5: e736d942b36c694d03768d971860f231
+    time: 1431221431
   "/assets/2014-06-15-schedule-coded-vs-mockup.png":
     md5: 6325af0a7b113d846d54847b56b59b80
     time: 1404674341
@@ -868,6 +880,9 @@ inventory:
   "/assets/freshbooks-auto-import-verified.png":
     md5: 449e4444d096559c1074e69082a6f7cb
     time: 1430945244
+  "/assets/imitation-colorpicker.png":
+    md5: 514a0cf35dff3d7d5a82ffa2188c1be2
+    time: 1431221431
   "/assets/2014-07-21-still-late-invoice.gif":
     md5: 8efef1b79e9a49055c81710076f6a797
     time: 1405976691
