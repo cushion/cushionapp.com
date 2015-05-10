@@ -1,5 +1,5 @@
 ---
-time: 1431221432
+time: 1431264359
 inventory:
   "/home/index.html":
     md5: cc088c48b019b3f76ff0fae4ba0682ab
@@ -143,8 +143,8 @@ inventory:
     md5: 712b2cd17a6503df04b1912569672e0c
     time: 1430426888
   "/journal/inspiration-vs-imitation/index.html":
-    md5: e28a5041c4a246b144da0896f0abc618
-    time: 1431221423
+    md5: c72b61a2ea588b15ea5aceed1e2ad485
+    time: 1431264318
   "/journal/archive/index.html":
     md5: 3370afb0499e8e0e612f41a242b3b4ee
     time: 1430426889
@@ -506,8 +506,8 @@ inventory:
     md5: fcdeef7260d9e1e3bb68fc59e1224ac4
     time: 1430835333
   "/feed.xml":
-    md5: 3ced056c9cb266f343b716d58d2eba68
-    time: 1431221431
+    md5: f7ff57c417d69fc34bd221f1a41c14c9
+    time: 1431264359
   "/404.html":
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -593,8 +593,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   "/journal/feed.xml":
-    md5: d73f8d02494b2340561ac607bba52c10
-    time: 1431221431
+    md5: 2ff52071e88b717a84c26d188e4ccfb1
+    time: 1431264359
   "/assets/2014-10-10-old-project-page.png":
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
