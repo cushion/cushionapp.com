@@ -4,7 +4,63 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Sun, 10 May 2015 09:25:59 -0400</pubDate>
+    <pubDate>Mon, 11 May 2015 12:05:04 -0400</pubDate>
+    
+    <item>
+      <title>Inspiration vs Imitation</title>
+      <link>http://cushionapp.com/journal/inspiration-vs-imitation</link>
+      <pubDate>Fri, 08 May 2015 09:16:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/inspiration-vs-imitation</guid>
+      <description>&lt;p&gt;This week, a friend pointed me to a website. He didn’t say anything about the website—he just left me with the link. After visiting the website, I realized why. He didn’t need to say anything because he knew how much it would hurt to see.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;I started coding at the age of 10. I built websites for my favorite video games, writing walkthroughs and listing cheat codes—assuming everyone visited my website as soon as it went live. The websites didn’t look great—they included the same “under construction” gifs and rotating 3D text that every other website had at the time. I looked at these other websites for inspiration, pulling from them what drew me in. “View source” was my textbook—a free behind-the-scenes for every website on the internet. I copy/pasted every bit of code I hadn’t seen before and tweaked it to see what else it could do. Programming was new to me and I was excited.&lt;/p&gt;
+
+&lt;p&gt;A couple years went by and I continued to learn about programming. My mom would drive me to the book store so I could bury myself in the “Computers” section. I read as much as I could in the hour we were there, fascinated by every “Introduction to” this language and all the “Bibles” for that language. When it was time to go, I would beg and plead for the book I just &lt;em&gt;had&lt;/em&gt; to have. The book was rarely relevant to what I was coding at the time—I just didn’t understand it and that’s why I &lt;em&gt;had&lt;/em&gt; to have it. I wanted to learn.&lt;/p&gt;
+
+&lt;p&gt;After a few trips with mom, I discovered a series of books that showcased the “masters” of my programming world. Each book included a CD with the actual work of the masters and the book would reveal the thought process and decision-making behind each piece, often including an example tutorial. These masters became my idols and I tried my best to create work as impactful as theirs was to me. I completed the tutorials and raced to show my parents—never mentioning the book, or the masters.&lt;/p&gt;
+
+&lt;p&gt;A few more years went by and I continued to follow their work. When they launched something new, I would learn from it and try to recreate it—just to see if I could. I redesigned my website every month to include a fancy new loading screen or an animated mouse trail—similar to the ones they had, but different enough to call it my own.&lt;/p&gt;
+
+&lt;p&gt;While many of my idols dropped off the radar over time, I continued programming. Several more years went by and I now had an entire decade under my belt. I no longer felt the need to rely on others for inspiration—I had ideas of my own. I filled my school notebooks with these new ideas, then raced home to see if they were even possible. Every night, I went back to the drawing board, hoping to come up with something that would give others the same spark that I felt in the book store.&lt;/p&gt;
+
+&lt;p&gt;I started to receive emails from young developers, asking for advice on where to begin. I directed them to my favorite books and websites, and we stayed in contact as they learned the same way I did. From time to time, I would recognize my own style in their work—just little things, like my favorite hex color or my go-to font combination. This didn’t bother me much because I also learned by trying what others have tried. &lt;/p&gt;
+
+&lt;p&gt;Occasionally, I would see someone go too far. I always hoped it was an honest mistake, but sometimes it wasn’t. They either thought no one would notice, or even worse, they didn’t care. Most of them didn’t realize just how small this community is or how much this action would hurt the original person. I’d try my best to warn them of the fine line between inspiration and imitation. I could only hope that they heard me.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;The link I received was to another project management service. With my recent work on integrations, I thought it might be another app worth integrating with, but as soon as the website finished loading, I knew something was wrong. My heart sunk and a tidal wave of thoughts and questions hit me. I had trouble processing what I was seeing.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imitation-datepicker.png&quot; alt=&quot;imitation-datepicker&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I saw Cushion—not the name or the idea, but an undeniable resemblance to what I’ve spent the past year designing. I couldn’t sign up for it because it’s in private beta, too, but the video revealed enough to justify a conversation. I visited the Twitter page to reach the people behind it when my heart sunk even deeper—I recognized them. &lt;/p&gt;
+
+&lt;p&gt;They were Cushion beta users. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imitation-colorpicker.png&quot; alt=&quot;imitation-colorpicker&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Aside from feeling sick, I felt betrayed. Not only because they were Cushion users, but because I remembered answering numerous questions they had about how I built parts of the app. I was naive to assume they were just curious developers, but this community is built on sharing what we know. And, there’s an unspoken trust that goes along with it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imitation-table.png&quot; alt=&quot;imitation-table&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I reached out, expecting acknowledgment and an apology, but I was met with a strong defensive stance—claims that the look is “standard design” and that Twitter Bootstrap scaled down would look the same; that the design existed before Cushion because they bought the domain name years ago; that I had no reason to be upset. &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imitation-notification.png&quot; alt=&quot;imitation-notification&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I was upset. The similarities were too blatant to ignore, but they weren’t seeing it. They offered to change the notification after admitting it looked similar, but how could they not see everything else? In a last-ditch effort to get through to them, I asked that they at least change the parts that look identical. They said they didn’t have time to, but joked that they could hire me to do it.&lt;/p&gt;
+
+&lt;p&gt;I was very upset. Almost an hour had gone by and nothing would change their mind. We ended the conversation. &lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;Cushion has become my life, and I’m putting &lt;em&gt;everything&lt;/em&gt; I have into making it my career. I’ve worked tirelessly for the past 15 months to turn this idea into something real, and it’s heartbreaking to see someone claim my work as their own. &lt;/p&gt;
+
+&lt;p&gt;Although this has been a truly emotional distraction, I’m going to continue making work that I can be proud of—because this is what I’m meant to do. I’m here for the long haul, and nothing is going to get in the way of making Cushion my own.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>The Emotional Rollercoaster</title>
@@ -403,114 +459,6 @@
 &lt;p&gt;Lastly, I kept the newsletter sign up form, with an added link to the beta page. Shouting on Twitter is easy, but it’s much more effective to speak to those who actually signed up to hear more. I’ve been collecting emails of interested people for months now and after sending my first update email this past week, I realize just how valuable that list is. I love hearing from you and hope I’m doing an okay job of communicating.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;A big thanks to &lt;a href=&quot;http://nicolefenton.com&quot;&gt;Nicole Fenton&lt;/a&gt; for editing the homepage and beta copy.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Multiple Timelines</title>
-      <link>http://cushionapp.com/journal/multiple-timelines</link>
-      <pubDate>Tue, 11 Nov 2014 09:14:00 -0500</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/multiple-timelines</guid>
-      <description>&lt;p&gt;These past two weeks, I’ve been heads-down, working on an incredibly important feature for Cushion—support for multiple timelines. This feature was not only complex, but also time-sensitive, as beta users were already starting to plan for the next year. In building Cushion, I’ve been actively holding back on specific features that aren’t as prevalent as others. Sometimes these once-dormant features demand your attention much earlier than expected, resulting in a more stressful sprint to finish. This is why we have betas.&lt;/p&gt;
-
-&lt;p&gt;Multiple timelines is one feature I’ve especially been pushing off because of its complexity as well as its never-ending knot of decisions. I knew it would be tough from the start, but I didn’t think it would be this bad. The high-level issues I needed to tackle consisted of establishing a way to navigate between timelines and filtering the data to the selected timeline. This sounds pretty simple until you realize a few scenarios that make it anything but simple, like projects spanning multiple timelines. The deeper I descended into the depths of the feature, the more troubling scenarios I discovered.&lt;/p&gt;
-
-&lt;p&gt;Instead of just glossing over them with a summary, I’d like to highlight as many as I can remember, including both the scenario and my solution.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-span-all.png&quot; alt=&quot;2014-11-11-project-span-all&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project spans multiple timelines.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in all timelines it spans.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-around.png&quot; alt=&quot;2014-11-11-project-around&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project starts before and finishes after a specific timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in that timeline.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-ongoing-estimated-finish.png&quot; alt=&quot;2014-11-11-project-ongoing-estimated-finish&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project is ongoing with an estimated finish date.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in all timelines it spans, using the maximum of the current date and its estimated finish date as the end.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-no-end-in-sight.png&quot; alt=&quot;2014-11-11-project-no-end-in-sight&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project is ongoing with no estimated finish date.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in all timelines it spans as well as all timelines beyond the current date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-no-dates.png&quot; alt=&quot;2014-11-11-project-no-dates&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project has no estimated or actual start or finish dates.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in timeline containing the current date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-with-invoice.png&quot; alt=&quot;2014-11-11-project-with-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project finished in one timeline, but has an invoice in another timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in both timelines.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-invoice-issued-before-today.png&quot; alt=&quot;2014-11-11-invoice-issued-before-today&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; An unpaid invoice issued before current date timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include invoice only in current date timeline.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-invoice-issued-in-future.png&quot; alt=&quot;2014-11-11-invoice-issued-in-future&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; An unpaid invoice issued after current date timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include invoice only in timeline containing issue date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-invoice-paid-before-today.png&quot; alt=&quot;2014-11-11-invoice-paid-before-today&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A paid invoice issued in a previous timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include invoice only in timeline containing paid date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-estimate-ongoing-no-estimated-finish.png&quot; alt=&quot;2014-11-11-estimate-ongoing-no-estimated-finish&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; The estimate of an ongoing project with no estimated finish date.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include estimate in timeline containing current date and all future timelines.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-estimate-today-and-future.png&quot; alt=&quot;2014-11-11-estimate-today-and-future&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; The estimate of a project spanning multiple timelines.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include estimate in timeline containing current date and any future timeline containing project.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-estimate-no-dates.png&quot; alt=&quot;2014-11-11-estimate-no-dates&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; The estimate of a project with no dates.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include estimate in timeline containing current date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Phew. Now that we got those out of the way, the remaining problem exists in navigating these timelines. I wanted it to be dead-simple to switch between them. You should be able to quickly glance several years in the past and return to the current timeline just as easily. For months, I thought of reusing the current timeline tab for more than just indicating the current timeline. I even had dreams of the interaction—I just wondered if it would actually work out as planned.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-timeline-switch.gif&quot; alt=&quot;2014-11-11-timeline-switch&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Luckily, it did. When you’re not in the scheduling or budgeting view, the current timeline tab simply navigates to your default view. Then, if you hover it, a down arrow appears below it, prompting another click that expands the timeline menu. From there, you can select a different timeline and quickly navigate to it. To switch back, simply use the menu again to select the current timeline.&lt;/p&gt;
-
-&lt;p&gt;Selecing a timeline appends a parameter to the URL, indicating the timeline ID, which then grabs both the date range for the scheduling view and the financial goals for the budgeting view. Without the parameter, Cushion uses the default timeline, which can be set in the Timelines page. Typically, this will be the timeline that contains the current date.&lt;/p&gt;
-
-&lt;p&gt;As you could imagine, this was a whirlwind feature to finish, and after two weeks, I’m so relieved to be able to check it off the list. Now that it’s finished, I plan to send out even more invites for the paid beta. If you’re interested, &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;tweet me&lt;/a&gt; with your email address.&lt;/p&gt;
 </description>
     </item>
     

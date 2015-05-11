@@ -1,5 +1,5 @@
 ---
-time: 1431264359
+time: 1431360307
 inventory:
   "/home/index.html":
     md5: cc088c48b019b3f76ff0fae4ba0682ab
@@ -14,143 +14,143 @@ inventory:
     md5: 2df473daebbd9bf9ce1d9ff0d6e77b18
     time: 1430426874
   "/journal/index.html":
-    md5: af7e2708d7003cd845e764390e9bf2bb
-    time: 1430426875
-  "/journal/the-emotional-rollercoaster/index.html":
-    md5: f605a2fe628f10c666326a17fb428b1b
-    time: 1430426875
-  "/journal/designing-project-blocks/index.html":
-    md5: 6ecbe90800bf3f16dbbb7fb0b76f9c2a
-    time: 1430426876
-  "/journal/everything-in-increments/index.html":
-    md5: 2786f386a1975db5b932e6660db6aa7c
-    time: 1430426876
-  "/journal/deleting-your-account/index.html":
-    md5: f322c99d01bf4d546bd134ac29d248a5
-    time: 1430426876
-  "/journal/designing-the-subscription-page/index.html":
-    md5: cfe84c193449d78ac36b616fdc554de9
-    time: 1430426876
-  "/journal/rewriting-the-timeline/index.html":
-    md5: 608d722881bedd068bbc86ac4f6c4158
-    time: 1430426877
-  "/journal/restructuring-the-individual-project-page/index.html":
-    md5: 3b361decf533c6f0574f615452859e62
-    time: 1430426877
-  "/journal/project-blocks/index.html":
-    md5: 751ea67d2f3ef3820539a84ee4f6dca7
-    time: 1430426877
-  "/journal/redesigning-the-homepage/index.html":
-    md5: b2db55adfcbfcc8ee15ee1e21530e737
-    time: 1430426878
-  "/journal/multiple-timelines/index.html":
-    md5: d0b96e311da7034d0183ac12e6873f70
-    time: 1430426878
-  "/journal/archiving-and-estimate-differences/index.html":
-    md5: 636f6b1976dcaaaf6cc83627e5a7543d
-    time: 1430426878
-  "/journal/multiple-financial-goals/index.html":
-    md5: b29baeb2e463371735bbfa6744386362
-    time: 1430426879
-  "/journal/zooming-in-on-the-timeline/index.html":
-    md5: 20f738f041e9a91779637072114d4584
-    time: 1430426879
-  "/journal/currency/index.html":
-    md5: 9aa5529557931537d92be58d92dffdf5
-    time: 1430426879
-  "/journal/preferences-accounts-and-atypefacechange/index.html":
-    md5: c4244cdc15bb773fe34be20cf591a820
-    time: 1430426880
-  "/journal/sending-out-the-first-email/index.html":
-    md5: 9e1719ab26975228b17b4453f6688463
-    time: 1430426880
-  "/journal/currency-inputs-notifications-and-invoice-nets/index.html":
-    md5: 5cf81a2757e06f066eb64df21d79d238
-    time: 1430426880
-  "/journal/dots-and-lines/index.html":
-    md5: 1456b4a61faae11b2ee769e496bc77a4
-    time: 1430426881
-  "/journal/calculating-in-the-database-and-revealing-tendencies/index.html":
-    md5: bc31209eb6fcc3584c6be4c8834048bb
-    time: 1430426881
-  "/journal/improved-form-ux/index.html":
-    md5: 3e8fd3f16b01fb377665fe2a8af1effc
-    time: 1430426881
-  "/journal/cushion-is-online/index.html":
-    md5: 4a5e871b677140da7ee4fe9a49ec8f1f
-    time: 1430426882
-  "/journal/schedule-timeline-patterns/index.html":
-    md5: e30bc4e0cf512040cf6958a4154b6289
-    time: 1430426882
-  "/journal/a-slimmer-schedule-timeline/index.html":
-    md5: 510b82d95af06d7b67d7c9fa26daab77
-    time: 1430426882
-  "/journal/the-schedule-timeline/index.html":
-    md5: e5b330a1b5135730b0133597a3228958
-    time: 1430426883
-  "/journal/plugging-in-real-data-for-the-first-time/index.html":
-    md5: 8a878d7750c57f8fc02b2b03fc997bfa
-    time: 1430426883
-  "/journal/transitions-and-project-lists/index.html":
-    md5: 7c2c171a41a4a939d42b05a97988a25d
-    time: 1430426883
-  "/journal/death-to-modals/index.html":
-    md5: 5a31bf323d7f595d51e0b9352ee41303
-    time: 1430426884
-  "/journal/the-individual-project-page/index.html":
-    md5: 7c34875e731a6f3d4d9992b2ca42467a
-    time: 1430426884
-  "/journal/estimated-incomes-and-talks-with-other-freelancers/index.html":
-    md5: 0123b1f0ca13b81d3c0b15eba6cd569e
-    time: 1430426884
-  "/journal/statuses-to-lists-and-the-paid-beta/index.html":
-    md5: 129c665a887ebb6528fa14d3ca90233d
-    time: 1430426884
-  "/journal/the-timeline/index.html":
-    md5: 390714453e574dd80f8825232d662a75
-    time: 1430426885
-  "/journal/invoice-terminology/index.html":
-    md5: c9515108f51ad1bdd1db3021a0f4dd2b
-    time: 1430426885
-  "/journal/modal-forms/index.html":
-    md5: fe150eba0f33f9dcdb241e6deb91538d
-    time: 1430426885
-  "/journal/wiring-the-backend-to-the-frontend/index.html":
-    md5: b6e8b29a3b776c51fcf41c25090bc203
-    time: 1430426886
-  "/journal/balancing-design-and-dev/index.html":
-    md5: 0cf4f0497fdd314ee32455334cd46df0
-    time: 1430426886
-  "/journal/timecop-monocle-and-vagrant/index.html":
-    md5: 3d62bfb72206040c121ce693f7a26606
-    time: 1430426886
-  "/journal/going-with-ruby-and-sinatra/index.html":
-    md5: f7b9f5005eb8c15941b75292038b947b
-    time: 1430426887
-  "/journal/ditching-local-first-and-trying-out-nodejs/index.html":
-    md5: b5f65c366baa8366ee275879564e16db
-    time: 1430426887
-  "/journal/switching-to-angularjs/index.html":
-    md5: 0b635a6f0ee4a2e79ef81a24e332e266
-    time: 1430426887
-  "/journal/building-the-table-with-vuejs/index.html":
-    md5: ed1e98522397d2923c9e15e39b2c3b34
-    time: 1430426888
-  "/journal/clients-projects-and-invoices/index.html":
-    md5: 4a59819224ae47950869d968adaec4e8
-    time: 1430426888
-  "/journal/introduction/index.html":
-    md5: 712b2cd17a6503df04b1912569672e0c
-    time: 1430426888
+    md5: 01745a1ee9ecbd605ea6fd07195985bd
+    time: 1431360247
   "/journal/inspiration-vs-imitation/index.html":
-    md5: c72b61a2ea588b15ea5aceed1e2ad485
-    time: 1431264318
+    md5: 5720eac0a38c1fa2b5d68909a7a2c1b3
+    time: 1431360248
+  "/journal/the-emotional-rollercoaster/index.html":
+    md5: cf72d1640b66b7eb06567a5cf09ef23d
+    time: 1431360248
+  "/journal/designing-project-blocks/index.html":
+    md5: 5c322e491ee9a9325068aa4e82fae5f1
+    time: 1431360248
+  "/journal/everything-in-increments/index.html":
+    md5: 92730a34ed8d4e1610dfd8bc629a3efd
+    time: 1431360249
+  "/journal/deleting-your-account/index.html":
+    md5: 405d695f8d0699da8d80bb1ae6463001
+    time: 1431360249
+  "/journal/designing-the-subscription-page/index.html":
+    md5: 7ed263bb74a2a323413716989bccda67
+    time: 1431360249
+  "/journal/rewriting-the-timeline/index.html":
+    md5: 7b0f217af9af536b71d2af96684fce76
+    time: 1431360250
+  "/journal/restructuring-the-individual-project-page/index.html":
+    md5: c84f10f6d67ef9da8a5d7e511e06db94
+    time: 1431360250
+  "/journal/project-blocks/index.html":
+    md5: 7e248991566e4740815ae41a6bb2c4eb
+    time: 1431360250
+  "/journal/redesigning-the-homepage/index.html":
+    md5: 7d401c442bfc590dcddaee0ef6de909b
+    time: 1431360251
+  "/journal/multiple-timelines/index.html":
+    md5: cbfc2a30f7a0b3eec8546b994351bfa7
+    time: 1431360251
+  "/journal/archiving-and-estimate-differences/index.html":
+    md5: ed0ec855b85f5c9826ae6bd6a4939b01
+    time: 1431360251
+  "/journal/multiple-financial-goals/index.html":
+    md5: 93511e3b9511a6f9ffe68df2229b9df1
+    time: 1431360252
+  "/journal/zooming-in-on-the-timeline/index.html":
+    md5: b1b48b80136be0880c4b55aa57b6873c
+    time: 1431360252
+  "/journal/currency/index.html":
+    md5: 6556f0e1595abd1959b07e62d2eda603
+    time: 1431360252
+  "/journal/preferences-accounts-and-atypefacechange/index.html":
+    md5: afc376a1cbfb56b72a6c5f2a7e80a2da
+    time: 1431360253
+  "/journal/sending-out-the-first-email/index.html":
+    md5: 4a1de00fb5142f2118b2ea8aea9eea27
+    time: 1431360253
+  "/journal/currency-inputs-notifications-and-invoice-nets/index.html":
+    md5: 425c099ab100ad66b1857aacdf9e6113
+    time: 1431360253
+  "/journal/dots-and-lines/index.html":
+    md5: 0afdbd28b471e58b9016442d851baaef
+    time: 1431360254
+  "/journal/calculating-in-the-database-and-revealing-tendencies/index.html":
+    md5: 836b612b1729ba91477f38862aed2c64
+    time: 1431360254
+  "/journal/improved-form-ux/index.html":
+    md5: 1cb51917a33a5d6ff2b5d7a6eaf97c8f
+    time: 1431360254
+  "/journal/cushion-is-online/index.html":
+    md5: f055f99a6beaa9b0f3785a852cdab935
+    time: 1431360255
+  "/journal/schedule-timeline-patterns/index.html":
+    md5: 33699b4e1fb4d9c328dc6a9f807c6342
+    time: 1431360255
+  "/journal/a-slimmer-schedule-timeline/index.html":
+    md5: 5bdff4551f9f377fc70cc1ca5ba1a2dd
+    time: 1431360255
+  "/journal/the-schedule-timeline/index.html":
+    md5: b02d614a81a3a95f0716258ac097f6a2
+    time: 1431360255
+  "/journal/plugging-in-real-data-for-the-first-time/index.html":
+    md5: f47e64c30ef73715c840a52e05b72be4
+    time: 1431360256
+  "/journal/transitions-and-project-lists/index.html":
+    md5: 5e4d43225dde42950f663959e910ccdf
+    time: 1431360256
+  "/journal/death-to-modals/index.html":
+    md5: b4e998919446af88c55e2d79df35c8a6
+    time: 1431360256
+  "/journal/the-individual-project-page/index.html":
+    md5: 9eafee854a78ce0f287fff641aae7efb
+    time: 1431360257
+  "/journal/estimated-incomes-and-talks-with-other-freelancers/index.html":
+    md5: 14f90c5184e6f4fc518c13ae9f21ac8a
+    time: 1431360257
+  "/journal/statuses-to-lists-and-the-paid-beta/index.html":
+    md5: 6abcb7fa21ef0b11b1597ae63f95a005
+    time: 1431360258
+  "/journal/the-timeline/index.html":
+    md5: 15b66ff7284578486e4255e239215ba5
+    time: 1431360258
+  "/journal/invoice-terminology/index.html":
+    md5: 14e09125a4a4a7e9151fe989a1632135
+    time: 1431360258
+  "/journal/modal-forms/index.html":
+    md5: 37484a615d317a95dd5836232a356612
+    time: 1431360258
+  "/journal/wiring-the-backend-to-the-frontend/index.html":
+    md5: 68b7358a4c04301caed5f7c922c28bdd
+    time: 1431360259
+  "/journal/balancing-design-and-dev/index.html":
+    md5: 1152b9eb1d6c88e6138d89c1fd99b6d4
+    time: 1431360259
+  "/journal/timecop-monocle-and-vagrant/index.html":
+    md5: 64cbf816a3b7aab5ff17010a1a90f2e4
+    time: 1431360259
+  "/journal/going-with-ruby-and-sinatra/index.html":
+    md5: 01514e4ec8b159cce2fee296171473c6
+    time: 1431360260
+  "/journal/ditching-local-first-and-trying-out-nodejs/index.html":
+    md5: 1ab4034525c768057e658b493af85c6b
+    time: 1431360260
+  "/journal/switching-to-angularjs/index.html":
+    md5: 51f11270c2c86a27652c4d58d575facb
+    time: 1431360260
+  "/journal/building-the-table-with-vuejs/index.html":
+    md5: 2875716a6a7e2d20ae3009ae9d4aedc2
+    time: 1431360261
+  "/journal/clients-projects-and-invoices/index.html":
+    md5: 5a6c8efe0105ef6c22890514d143b35f
+    time: 1431360261
+  "/journal/introduction/index.html":
+    md5: fc08f6cd6af8e07bf1fba91f018393a0
+    time: 1431360261
   "/journal/archive/index.html":
-    md5: 3370afb0499e8e0e612f41a242b3b4ee
-    time: 1430426889
+    md5: b7f7b8e6bc0380702f67f967d775ea31
+    time: 1431360262
   "/journal/tags/index.html":
-    md5: ac105e66f32cf67b166e444835ce0ea6
-    time: 1430426889
+    md5: 3c3d17e233e6c77ced254cfe67a76011
+    time: 1431360262
   "/expenses/index.html":
     md5: 918db3294d4a2f64f562904b7b0a6328
     time: 1430835297
@@ -506,8 +506,8 @@ inventory:
     md5: fcdeef7260d9e1e3bb68fc59e1224ac4
     time: 1430835333
   "/feed.xml":
-    md5: f7ff57c417d69fc34bd221f1a41c14c9
-    time: 1431264359
+    md5: 0ea8a34ce8075fbd6041c6612c6f40e9
+    time: 1431360304
   "/404.html":
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -593,8 +593,8 @@ inventory:
     md5: 0b7586ec7a803937f855d7041c0666c8
     time: 1416501058
   "/journal/feed.xml":
-    md5: 2ff52071e88b717a84c26d188e4ccfb1
-    time: 1431264359
+    md5: 56232942b8c89a1fbd716985397a25d0
+    time: 1431360304
   "/assets/2014-10-10-old-project-page.png":
     md5: a1ca94b93dc4846a0a14bab4c931f598
     time: 1418230843
