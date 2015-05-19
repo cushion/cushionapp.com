@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xml:base="http://cushionapp.com">
   <channel>
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
-    <pubDate>Mon, 18 May 2015 18:35:31 -0400</pubDate>
+    <description></description>
+    <pubDate>Tue, 19 May 2015 18:43:06 -0400</pubDate>
     
     <item>
       <title>Inspiration vs Imitation</title>
@@ -58,16 +59,6 @@
 &lt;p&gt;Cushion has become my life, and I’m putting &lt;em&gt;everything&lt;/em&gt; I have into making it my career. I’ve worked tirelessly for the past 15 months to turn this idea into something real, and it’s heartbreaking to see someone claim my work as their own. &lt;/p&gt;
 
 &lt;p&gt;Although this has been a truly emotional distraction, I’m going to continue making work that I can be proud of—because this is what I’m meant to do. I’m here for the long haul, and nothing is going to get in the way of making Cushion my own.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Revenue Analytics</title>
-      <link>http://cushionapp.com/expenses/revenue-analytics</link>
-      <pubDate>Fri, 24 Apr 2015 18:59:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/revenue-analytics</guid>
-      <description>&lt;p&gt;Baremetrics integrates with Stripe to analyze revenue and monitor payment activity.&lt;/p&gt;
 </description>
     </item>
     
@@ -192,16 +183,6 @@
     </item>
     
     <item>
-      <title>Webhooks</title>
-      <link>http://cushionapp.com/expenses/webhooks</link>
-      <pubDate>Sun, 01 Mar 2015 11:51:00 -0500</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/webhooks</guid>
-      <description>&lt;p&gt;Zapier automates several workflows on the marketing side of Cushion.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Deleting Your Account</title>
       <link>http://cushionapp.com/journal/deleting-your-account</link>
       <pubDate>Sat, 14 Feb 2015 19:47:00 -0500</pubDate>
@@ -232,16 +213,6 @@
 &lt;p&gt;So far, I’m happy with the first step, but look forward to building the full package. It does feel strange investing this much time in the experience of someone leaving, but I refuse to skimp on any aspect of Cushion.&lt;/p&gt;
 
 &lt;p&gt;The beta is still going strong, so if you’re interested in participating, even just to test out deleting your account, be sure to &lt;a href=&quot;/beta&quot;&gt;request an invite&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Redis Database</title>
-      <link>http://cushionapp.com/expenses/redis-database</link>
-      <pubDate>Mon, 02 Feb 2015 15:49:00 -0500</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/redis-database</guid>
-      <description>&lt;p&gt;The Redis database is used to queue and manage background jobs. Redis Cloud is a one-click Heroku add-on, but very expensive.&lt;/p&gt;
 </description>
     </item>
     
@@ -322,26 +293,6 @@
 &lt;p&gt;So, this is where I ended up. I’m really happy with the end result and glad I got the wackiness out of my head. The next step now, regarding subscriptions, is to design the public-facing plan page. This will need to be more than just a copy/paste job, as it has to include a list of features and FAQs, considering the potential user hasn’t used the app yet. That’s for another time, though.&lt;/p&gt;
 
 &lt;p&gt;On a side note, I still have a few more spots in the paid beta. If you’re interested in participating, &lt;a href=&quot;/beta&quot;&gt;request an invite&lt;/a&gt; and I’ll send one your way.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Web Worker Server</title>
-      <link>http://cushionapp.com/expenses/web-worker-server</link>
-      <pubDate>Thu, 29 Jan 2015 11:17:00 -0500</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/web-worker-server</guid>
-      <description>&lt;p&gt;The web workers run background jobs, like generating downloadable backups and requesting 3rd party services.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Code Review</title>
-      <link>http://cushionapp.com/expenses/code-review</link>
-      <pubDate>Tue, 13 Jan 2015 15:39:00 -0500</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/code-review</guid>
-      <description>&lt;p&gt;Code Climate reviews the app code, grades it, and highlights areas that could be improved. This isn’t a necessary service, but useful for a clean codebase.&lt;/p&gt;
 </description>
     </item>
     
@@ -511,221 +462,6 @@
 </description>
     </item>
     
-    <item>
-      <title>Multiple Timelines</title>
-      <link>http://cushionapp.com/journal/multiple-timelines</link>
-      <pubDate>Tue, 11 Nov 2014 09:14:00 -0500</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/multiple-timelines</guid>
-      <description>&lt;p&gt;These past two weeks, I’ve been heads-down, working on an incredibly important feature for Cushion—support for multiple timelines. This feature was not only complex, but also time-sensitive, as beta users were already starting to plan for the next year. In building Cushion, I’ve been actively holding back on specific features that aren’t as prevalent as others. Sometimes these once-dormant features demand your attention much earlier than expected, resulting in a more stressful sprint to finish. This is why we have betas.&lt;/p&gt;
-
-&lt;p&gt;Multiple timelines is one feature I’ve especially been pushing off because of its complexity as well as its never-ending knot of decisions. I knew it would be tough from the start, but I didn’t think it would be this bad. The high-level issues I needed to tackle consisted of establishing a way to navigate between timelines and filtering the data to the selected timeline. This sounds pretty simple until you realize a few scenarios that make it anything but simple, like projects spanning multiple timelines. The deeper I descended into the depths of the feature, the more troubling scenarios I discovered.&lt;/p&gt;
-
-&lt;p&gt;Instead of just glossing over them with a summary, I’d like to highlight as many as I can remember, including both the scenario and my solution.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-span-all.png&quot; alt=&quot;2014-11-11-project-span-all&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project spans multiple timelines.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in all timelines it spans.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-around.png&quot; alt=&quot;2014-11-11-project-around&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project starts before and finishes after a specific timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in that timeline.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-ongoing-estimated-finish.png&quot; alt=&quot;2014-11-11-project-ongoing-estimated-finish&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project is ongoing with an estimated finish date.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in all timelines it spans, using the maximum of the current date and its estimated finish date as the end.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-no-end-in-sight.png&quot; alt=&quot;2014-11-11-project-no-end-in-sight&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project is ongoing with no estimated finish date.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in all timelines it spans as well as all timelines beyond the current date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-no-dates.png&quot; alt=&quot;2014-11-11-project-no-dates&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project has no estimated or actual start or finish dates.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in timeline containing the current date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-project-with-invoice.png&quot; alt=&quot;2014-11-11-project-with-invoice&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A project finished in one timeline, but has an invoice in another timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include project in both timelines.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-invoice-issued-before-today.png&quot; alt=&quot;2014-11-11-invoice-issued-before-today&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; An unpaid invoice issued before current date timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include invoice only in current date timeline.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-invoice-issued-in-future.png&quot; alt=&quot;2014-11-11-invoice-issued-in-future&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; An unpaid invoice issued after current date timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include invoice only in timeline containing issue date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-invoice-paid-before-today.png&quot; alt=&quot;2014-11-11-invoice-paid-before-today&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; A paid invoice issued in a previous timeline.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include invoice only in timeline containing paid date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-estimate-ongoing-no-estimated-finish.png&quot; alt=&quot;2014-11-11-estimate-ongoing-no-estimated-finish&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; The estimate of an ongoing project with no estimated finish date.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include estimate in timeline containing current date and all future timelines.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-estimate-today-and-future.png&quot; alt=&quot;2014-11-11-estimate-today-and-future&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; The estimate of a project spanning multiple timelines.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include estimate in timeline containing current date and any future timeline containing project.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-estimate-no-dates.png&quot; alt=&quot;2014-11-11-estimate-no-dates&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Scenario:&lt;/strong&gt; The estimate of a project with no dates.&lt;br&gt;
-&lt;strong&gt;Solution:&lt;/strong&gt; Include estimate in timeline containing current date.&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;Phew. Now that we got those out of the way, the remaining problem exists in navigating these timelines. I wanted it to be dead-simple to switch between them. You should be able to quickly glance several years in the past and return to the current timeline just as easily. For months, I thought of reusing the current timeline tab for more than just indicating the current timeline. I even had dreams of the interaction—I just wondered if it would actually work out as planned.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-11-timeline-switch.gif&quot; alt=&quot;2014-11-11-timeline-switch&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Luckily, it did. When you’re not in the scheduling or budgeting view, the current timeline tab simply navigates to your default view. Then, if you hover it, a down arrow appears below it, prompting another click that expands the timeline menu. From there, you can select a different timeline and quickly navigate to it. To switch back, simply use the menu again to select the current timeline.&lt;/p&gt;
-
-&lt;p&gt;Selecing a timeline appends a parameter to the URL, indicating the timeline ID, which then grabs both the date range for the scheduling view and the financial goals for the budgeting view. Without the parameter, Cushion uses the default timeline, which can be set in the Timelines page. Typically, this will be the timeline that contains the current date.&lt;/p&gt;
-
-&lt;p&gt;As you could imagine, this was a whirlwind feature to finish, and after two weeks, I’m so relieved to be able to check it off the list. Now that it’s finished, I plan to send out even more invites for the paid beta. If you’re interested, &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;tweet me&lt;/a&gt; with your email address.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Support</title>
-      <link>http://cushionapp.com/expenses/support</link>
-      <pubDate>Sun, 02 Nov 2014 21:57:00 -0500</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/expenses/support</guid>
-      <description>&lt;p&gt;Intercom is essential to communicating with Cushion users, providing customer support, user analytics, and in-app messaging.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Archiving and Estimate Differences</title>
-      <link>http://cushionapp.com/journal/archiving-and-estimate-differences</link>
-      <pubDate>Wed, 29 Oct 2014 11:40:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/archiving-and-estimate-differences</guid>
-      <description>&lt;p&gt;This past week, I added two big features. Not big in the sense of workload or scale, but big in terms of value. Both are incredibly useful and have personally made Cushion feel like a more serious contender.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-10-29-archive.png&quot; alt=&quot;2014-10-29-archive&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The first is archiving. Previously, every client, project, and invoice you created would always remain present, regardless of whether it were still active in your day-to-day. Nearing the end of the year, that 1-day project you worked on in January would still appear aside your current projects. Now, you have the ability to archive items.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-10-29-archiving.gif&quot; alt=&quot;2014-10-29-archiving&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Archiving does two things. In the table view, archiving allows you to toggle the visibility of any archived item using a switch in the top left. In project forms and invoice forms, archived items are filtered from the dropdown menus. With this, you no longer need to sift through &lt;em&gt;every&lt;/em&gt; project when creating a new invoice.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-10-29-archived-by-client.png&quot; alt=&quot;2014-10-29-archived-by-client&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Archiving also cascades. This means that if you archive a project, all of its invoices will be marked as archived, too. And, if you archive a client, all of its projects &lt;em&gt;and&lt;/em&gt; invoices will be marked as archived. This is not only useful for old projects, but also for potential projects that are either on hold or so far away that you don’t need to think about them yet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-10-29-gain-loss.png&quot; alt=&quot;2014-10-29-gain-loss&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The second super useful feature is a new column in the budget view, called “gain/loss”. This column takes your projects’ estimates and compares them to your actual income for the projects, presenting it in an easy-to-read percentage. The percentage is then colored green for positive values and red for negative values. Even without reading the numbers, you’ll have an idea of how well you’re estimating.&lt;/p&gt;
-
-&lt;p&gt;Just like income columns, the “gain/loss” column has a “sum” in the table footers. It’s not just a simple sum of each row’s percentage, but rather a comparison of your total estimates to your total income. If it’s in the red, you know you either need to better estimate your projects or bump up your rate. This column also exists in the client budget view, so you can see per-client how close or far off you were.&lt;/p&gt;
-
-&lt;p&gt;I’m really excited about these new features as they add even more value to an app that has become indispensable to my workflow. Starting in November, I’m doubling the number of invites I send out for the paid beta this month, so if you’re interested in using Cushion early, &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Multiple Financial Goals</title>
-      <link>http://cushionapp.com/journal/multiple-financial-goals</link>
-      <pubDate>Tue, 21 Oct 2014 21:38:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/multiple-financial-goals</guid>
-      <description>&lt;p&gt;&lt;img src=&quot;/assets/2014-10-21-goals.png&quot; alt=&quot;2014-10-21-goals&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;A few weeks ago, a beta user suggested the idea of multiple financial goals for the budget timeline. At the time, there was only one goal in Cushion, which made it somewhat difficult to picture the year. Do I set the goal to what I need to make or what I want to make?—these are two very different goals. Because of this constant confusion, I replaced the single goal with three—minimum, target, and stretch.&lt;/p&gt;
-
-&lt;p&gt;When considering your finances, it’s good to think of what you absolutely need to make to stay alive and pay the bills—your bare minimum. From there, you can aim for a higher target that allows you to do more than just survive, like go out to eat more often or take a cab instead of the subway. And, if you reach that target, you can then try for more, which might be enough to add a vacation to your year.&lt;/p&gt;
-
-&lt;p&gt;These goals are important in the freelance life because there’s really no cap on how much you can make. Since you have no salary, you can decide how much you want to make beyond covering your expenses, granted the work is available. If you want to overload your schedule for a month in order to take a month off, you can do that. If you want to work consistently and make a killing, that’s cool, too.&lt;/p&gt;
-
-&lt;p&gt;Personally, I don’t do a great job of aiming high. I tend to make enough to pay my minimum, then I invest the extra time in my personal projects. Recently, I’ve been investing any income over my minimum into buying more of my own time, as if I’m my own client. I’m betting on myself and my productivity. Maybe two weeks of full-time Cushion could amount to more than a two-week client gig. And maybe, with Cushion, I could reach my stretch goal all on my own.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Zooming in on the Timeline</title>
-      <link>http://cushionapp.com/journal/zooming-in-on-the-timeline</link>
-      <pubDate>Thu, 16 Oct 2014 08:36:00 -0400</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/zooming-in-on-the-timeline</guid>
-      <description>&lt;p&gt;In the early stages of building Cushion, everything was based upon a year-long timeline view. With one look, you could see a quick and easy-to-digest glimpse of your year. When are you next available? Where do you have pockets of time to fit another project? Wow—that project really took that long? After living with this scale for a while, I wondered what I could do with a more magnified view.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-10-16-timeline-data.png&quot; alt=&quot;2014-10-16-timeline-data&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;If we zoom in to a specific month on the timeline, we begin to give more meaning to the data. All of a sudden, a 4-day project that was just a blip on the year timeline expands to represent the true weight of those four full days. Zoomed out, it’s easy to see little difference between two lengths of time that are drastically different on the day-to-day scale, like 2 weeks versus 3 weeks, but in a month view, this is huge!&lt;/p&gt;
-
-&lt;p&gt;I started to think of ways to actually zoom into the timeline. Of course, the line segments would scale horizontally, but does it really need to scale proportionally on the vertical end as well?—I don’t think so. In my eyes, it looks much better this way &lt;em&gt;and&lt;/em&gt; maintains the same timeline height as the year view—allowing the same amount of information to be seen underneath without a jarring effect on the user.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-10-16-timeline-overflow.png&quot; alt=&quot;2014-10-16-timeline-overflow&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;When I first built the timeline view, I added a project that spanned two years and noticed a bug. With the way I coded the view, the knocked-out background of the timeline didn’t expand to account for the line segment. Instead, the line segment ran off the edge of the background, reaching the edge of the window. This wasn’t the intended behavior, but I immediately fell in love with it. The knocked-out background created a distinct boundary to the timeline, but didn’t hide any information beyond this boundary.&lt;/p&gt;
-
-&lt;p&gt;Returning to the zoom, this undocumented feature became the perfect tie of consistency between the two scales. When you switch between month and year views, the boundary doesn’t move a pixel.&lt;/p&gt;
-
-&lt;p&gt;The problem now was that the timeline labels for the year view, represented by months, needed to be replaced with days in order to be relevant to the new context. However, since I still wanted a dead-simple way to move from month to month, I didn’t want to get rid of the month labels. I went down a dark hole of bad designs, like a second row of labels that pushed the month labels down. It was a awful.&lt;/p&gt;
-
-&lt;p&gt;Then, I considered the top of the timeline. At first, I discounted this idea because I just assumed it would clutter the UI. I gave it a shot, though. Sometimes, it’s important to explore directions that you would typically disregard just to say that you tried them. Surprisingly, this direction had legs. It wasn’t perfect at first, but I knew something was there if I just chiseled deep enough.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/assets/2014-10-16-timeline-month-view.png&quot;&gt;&lt;img src=&quot;/assets/2014-10-16-timeline-month-view.png&quot; alt=&quot;2014-10-16-timeline-month-view&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Instead of mimicking the same label design as the months, which represented spans of time, I centered the “tick” to point to the given day. And, because projects don’t factor time of day (yet), I centered the segment dots on each day block, rather than anchoring to an edge. Finally, to better separate each day, I added a slightly greyed background to the even days.&lt;/p&gt;
-
-&lt;p&gt;Now, all of this would look great on its own, but the transition of switching between the views should look even better. Luckily, each spot I wanted to animate was as easy as adding a CSS3 transition. The line segments scale based on the number of days in the timeline to the number of days in the selected month, the month labels fade in and pan up from behind the timeline, and the even day backgrounds simply fade in.&lt;/p&gt;
-
-&lt;div class=&#39;video-outer&#39;&gt;
-    &lt;div class=&#39;video-inner&#39; style=&#39;padding-bottom: 34%&#39;&gt;
-        &lt;video width=&quot;100%&quot; poster=&quot;/assets/2014-10-16-timeline-zoom.png&quot; autoplay=&quot;autoplay&quot; loop=&quot;loop&quot; controls=&quot;controls&quot; tabindex=&quot;0&quot;&gt;
-            &lt;source src=&quot;/assets/2014-10-16-timeline-zoom.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-            &lt;source src=&quot;/assets/2014-10-16-timeline-zoom.ogv&quot; type=&quot;video/ogg&quot; /&gt;
-            Video tag not supported. Download the video &lt;a href=&quot;/assets/2014-10-16-timeline-zoom.mp4&quot;&gt;here&lt;/a&gt;.
-        &lt;/video&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Scaling the line segments was the trickiest part, not because of the resizing, but because of the origin point from where to resize. Everything in the timeline is positioned and scaled based on a percentage of its day in the timeline compared to the total days in the timeline. For example, February 1st on a year timeline is located at 8.767%. I chose this route because I wanted the timeline to be able to scale down properly, if Cushion were to be responsive. Fortunately, it made my life so much easier with timeline zooming, too. Instead of scaling each line segement individually, I just need to scale the entire timeline and pan.&lt;/p&gt;
-
-&lt;p&gt;The origin point is crucial because if you scale the timeline while panning it and not centering the origin point, the timeline &lt;em&gt;appears&lt;/em&gt; to pan before scaling. At first, I thought this was just a side effect of easing two attributes, but even when transitioned linearly, it didn’t look right. Luckily, centering the origin point was a non-issue, so everything came together in the end without needing to include JS for the animation.&lt;/p&gt;
-
-&lt;p&gt;I couldn’t be happier with my first stab at timeline zooming. Not only because it turned out well, but also because it opens up the possibility of a few other features I want to implement. The first is simply an in-between view for zooming in on a quarter of the year. The other feature, however, is &lt;em&gt;much&lt;/em&gt; more involved. I’ll save it for another post.&lt;/p&gt;
-
-&lt;p&gt;If you’re interested in participating in the paid beta, send me your email on &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;Twitter&lt;/a&gt; and I’ll send you an invite.&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>
+
