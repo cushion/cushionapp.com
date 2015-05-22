@@ -108,41 +108,42 @@
   <article class='post'>
     <header class='post__header'>
       
-        <div class='post__service-icon' style='background-image: url(/assets/services-freshbooks.png)'></div>
-        <h4 class='post__pretitle'>FreshBooks</h4>
+        <div class='post__service-icon' style='background-image: url(/assets/services-harvest.png)'></div>
+        <h4 class='post__pretitle'>Harvest</h4>
       
       <h3 class='post__title'>
-        <a href='/support/integrations/freshbooks/auto-import'>Auto-Import</a>
+        <a href='/support/integrations/harvest/auto-import'>Auto-Import</a>
       </h3>
     </header>
 
     <div class='post__body'>
       <h4>About this Integration</h4>
 
-<p>The FreshBooks Auto-Import integration will:</p>
+<p>The Harvest Auto-Import integration will:</p>
 
 <ul>
-<li>import clients, projects, and invoices shortly after you create them in FreshBooks</li>
-<li>mark Cushion invoices as paid when payments are created in FreshBooks</li>
+<li>import clients, projects, and invoices shortly after you create them in Harvest</li>
+<li>mark Cushion invoices as paid when payments are created in Harvest</li>
 </ul>
 
 <h4>Things to Know</h4>
 
 <ul>
-<li>This integration <em>does not</em> continue to update clients, projects, or invoices in Cushion once imported from FreshBooks.</li>
-<li>If an imported FreshBooks project is flat-rate, its rate will be used as the estimated income in Cushion.</li>
+<li>This integration runs once every 10 minutes, so if your items from Harvest don’t appear right away, they should eventually.</li>
+<li>This integration <em>does not</em> continue to update clients, projects, or invoices in Cushion once imported from Harvest.</li>
+<li>If an imported Harvest project has a budget, it will be used as the estimated income in Cushion.</li>
 </ul>
 
-<p><img src="/assets/freshbooks-auto-import-no-project.png" alt="freshbooks-auto-import-no-project"> </p>
+<p><img src="/assets/freshbooks-auto-import-no-project.png" alt="harvest-auto-import-no-project"> </p>
 
 <ul>
-<li>FreshBooks doesn’t link invoices to individual projects, so when a FreshBooks invoice is imported into Cushion, it will show <code>(no project)</code> under the project column. You must manually set the invoice’s project to maintain accuracy of the budget graph.</li>
+<li>Harvest doesn’t link invoices to individual projects, so when a Harvest invoice is imported into Cushion, it will show <code>(no project)</code> under the project column. You must manually set the invoice’s project to maintain accuracy of the budget graph.</li>
 </ul>
 
-<p><img src="/assets/freshbooks-auto-import-no-client.png" alt="freshbooks-auto-import-no-client"> </p>
+<p><img src="/assets/freshbooks-auto-import-no-client.png" alt="harvest-auto-import-no-client"> </p>
 
 <ul>
-<li>If a project or invoice is imported from FreshBooks and its client doesn’t exists in Cushion or hasn’t been linked to FreshBooks, the item will show <code>(no client)</code> under the client column. You will need to manually set the project or invoice’s client. That client will then be linked to FreshBooks, so any new projects or invoices imported from FreshBooks will automatically be linked to it.</li>
+<li>If a project or invoice is imported from Harvest and its client doesn’t exists in Cushion or hasn’t been linked to Harvest, the item will show <code>(no client)</code> under the client column. You will need to manually set the project or invoice’s client. That client will then be linked to Harvest, so any new projects or invoices imported from Harvest will automatically be linked to it.</li>
 </ul>
 
     </div>
@@ -155,7 +156,7 @@
     <ul class='post-list'>
       
       <li class='post-list__item'>
-        <a class=' link--hover-border' href='/support/integrations/freshbooks/auto-import/items-not-appearing'>When I create a client, project, or invoice in FreshBooks, it doesn’t appear in Cushion.</a>
+        <a class=' link--hover-border' href='/support/integrations/harvest/auto-import/items-not-appearing'>When I create a client, project, or invoice in Harvest, it doesn’t appear in Cushion.</a>
       </li>
       
     </ul>
