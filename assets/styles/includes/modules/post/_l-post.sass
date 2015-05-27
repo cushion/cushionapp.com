@@ -30,6 +30,8 @@
     display: block
     margin-left: auto
     margin-right: auto
+    margin-top: 2em
+    margin-bottom: 2em
 
   p
     margin: 1em 0
@@ -97,6 +99,9 @@
 .post
   .post__alert
     margin: em(30) 0
+
+    +min-width($tablet-portrait)
+      margin-top: em(60, $medium)
 
 
 //
