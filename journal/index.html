@@ -110,59 +110,90 @@
   <article class='post'>
     <header class='post__header'>
       <h3 class='post__title'>
-        <a href='/journal/inspiration-vs-imitation'>Inspiration vs Imitation</a>
+        <a href='/journal/intro-to-integrations'>Intro to Integrations</a>
       </h3>
-      <time class='post__date' datetime='2015-05-08 09:16:00 -0400'>May 08, 2015</time>
+      <time class='post__date' datetime='2015-05-24 10:50:00 -0400'>May 24, 2015</time>
     </header>
 
     <div class='post__body'>
-      <p>This week, a friend pointed me to a website. He didn’t say anything about the website—he just left me with the link. After visiting the website, I realized why. He didn’t need to say anything because he knew how much it would hurt to see.</p>
+      <p>Several weeks into building Cushion, I started thinking about integrations. Obviously, I was ahead of myself, but I knew integrations would play a vital role in the success of Cushion. Having been a freelancer for a few years at that point, I was aware of the “usual suspects” of freelancing services, and I knew that most freelancers were tethered to these services after years of use. I also knew that many of these freelancers weren’t head-over-heals for them, but the services were so engrained in their day-to-day that convincing these freelancers to jump ship entirely would be an exhausting, uphill battle. Fortunately, this was never the plan.</p>
+
+<p>From the beginning, I wanted Cushion to be more than another equal alternative, feature-matching against every other service. I’ve always seen it as a valuable addition. Instead of trying to make Cushion into an all-in-one Swiss army knife, I could let other services focus on what they do best while Cushion provides a new angle on the same data. Rather than interrupting a freelancer’s workflow, Cushion could be an extension of it—a sidekick to the other services.</p>
+
+<p>A few months went by and I became impatient. I kept thinking about how I’d need to build integrations eventually, so why not get a head-start? “Too soon”—the words of a wise developer in my studio space. He was right, but I was too impatient. To give you an idea of how laughably early this was in development, users couldn’t even change their password yet. I was blind to what Cushion needed at that moment and too focused on what Cushion could do without for now—this is why project managers exist. I spent a few days on integrations before thinking to myself, “Too soon.”</p>
+
+<p>Several more months passed and I got the itch again. This time, instead of trying to build an entirely custom system for integrations, I decided to take a half-step by integrating with <a href="http://zpr.io/ZnSS">Zapier</a>, a service for communicating between APIs. Since Zapier would be doing most of the heavy lifting, I could achieve the functionality I was after by writing a few workflows, like “create an invoice in Cushion when an invoice is created in [another service]”. </p>
+
+<p>At first, this seemed like a step in the right direction, but as I spent more time with Zapier, I knew it wasn’t right for Cushion—I recognized the burden I would be placing on the users. In order for them to integrate Cushion with their existing services, they would need to first create an account in Zapier. Then, they would need to navigate through Zapier, learn how Zapier works, and complete several steps to set up the integration. I would need to write thorough documentation and answer support emails for using Zapier. This wasn’t ideal for anyone.</p>
+
+<p>Simplicity is one of Cushion’s guiding principles, and sending users through hoops on another service is anything but simple. That route is simple for me, the developer, but not for the user. There’s a reason people pay for services—they want to lighten their workload. If this weren’t the case, we’d all be satisfied using spreadsheets. Instead of sending users somewhere else for integrations, I should assume the burden and build a system where the burden is non-existent to the user. Enabling an integration should be as easy as a single click.</p>
+
+<p>I scrapped all the work with Zapier and took a break from integrations for another month. When I returned, I knew exactly how to approach them. Under the hood, I would break the system into four specific parts—services, recipes, authorizations, and integrations.</p>
+
+<ul>
+<li>A “Service” is a 3rd party service that Cushion can integrate with (i.e., Harvest). It has a name and an icon.</li>
+<li>A “Recipe” is a type of integration (i.e., Auto-Import). It has a name and a description. A service can have many recipes, which represent the service’s available integrations.</li>
+<li>An “Authorization” is a user’s connection to a service. It has an access token and a refresh token. A user can have many authorizations with various services. Authorizations are the key to communicating with the services.</li>
+<li>An “Integration” is a user’s authorized recipe for a service. The other models define every aspect of the integration, so it only needs their associations in order to exist.</li>
+</ul>
+
+<p>After establishing the internal structure of integrations, I started to design the exterior. I began mapping out the pages I would need:</p>
+
+<ul>
+<li>all services</li>
+<li>an individual service</li>
+<li>all authorizations</li>
+<li>an individual authorization</li>
+<li>all integrations</li>
+<li>an individual integration</li>
+</ul>
+
+<p>It didn’t take long for me to realize that I was thinking too much like a developer. Just because I have four models for integrations doesn’t mean each model needs its own index and instance page. I took a step back and started thinking in terms of what I would expect. For integrations, I should be able to view:</p>
+
+<ul>
+<li>services to authorize</li>
+<li>my existing authorizations</li>
+<li>recipes to enable</li>
+<li>my existing integrations</li>
+</ul>
+
+<p>Next, I considered how to structure these lists. I definitely don’t think each one needs its own page, so I thought about how I could combine them. Since integrations are first and foremost about the services, I could use the services to organize everything into two pages—an index page for services and an individual service page. These pages would include more than just the services, but I’d use the services as a top-level category.</p>
+
+<p><img src="/assets/intro-to-integrations-services.png" alt="intro-to-integrations-services"> </p>
+
+<p>When arriving at the main integrations page, I should see a list of services to authorize. If I haven’t authorized a service, its button should say “authorize” and clicking it should take me through the authorization flow for that service. If I have already authorized a service, it should say “view” and clicking it should take me to that service’s page.</p>
+
+<p><img src="/assets/intro-to-integrations-service.png" alt="intro-to-integrations-service"> </p>
+
+<p>After authorizing a service, I should be redirected to its page, which should include my existing authorizations, integrations, and available recipes for this service. On this page, I should be able to enable/disable integrations and de-authorize the service.</p>
+
+<p><img src="/assets/intro-to-integrations-integrations.png" alt="intro-to-integrations-integrations"> </p>
+
+<p>Then, after enabling an integration, the main integrations page should include all of my existing integrations across all services as well as the still-available services. </p>
+
+<p>This layout feels right to me and I couldn’t be happier with how it turned out. Let it be known that I went through a dozen layouts before arriving on this one, so it wasn’t as clear cut as it appears. While figuring out the layout, I also narrowed in on an overall design that matches the rest of Cushion.</p>
+
+<p><img src="/assets/integrations-subscriptions.png" alt="integrations-subscriptions"> </p>
+
+<p>Thinking about how to display the grid of services, I decided to revisit the subscription page design. With services only needing a single action button for authorizing, I found that the block design I used for subscription plans would work perfectly.</p>
+
+<p><img src="/assets/intro-to-integrations-service-blocks.png" alt="intro-to-integrations-service-blocks"> </p>
+
+<p>I swapped out the plan prices with the service icons and replaced the plan names with the service names. Below each name, I included a two-word description for each service to balance everything out. If a particular service is ever down or having issues, I could re-use the ribbon alert to indicate activity if I need to.</p>
+
+<p><img src="/assets/intro-to-integrations-secondary-service-block.png" alt="intro-to-integrations-secondary-service-block"> </p>
+
+<p>I also designed how services will look as I build more integrations for Cushion. For less-common services, I condensed the block, so that two services can fit aside each other in a single row.</p>
+
+<p><img src="/assets/intro-to-integrations-secondary-services.png" alt="intro-to-integrations-secondary-services"> </p>
+
+<p>I’m not a fan of integrations pages that are treated like a dumping ground, with the most useful integrations buried beneath obscure services used only by one user. I’d like to establish a better hierarchy, so the primary integrations will sit at the top as square blocks. The less-common services will then rest below them in rows of two. This way, all of the integrations are available for browsing, but the more frequently-used ones will be more prominent.</p>
 
 <hr>
 
-<p>I started coding at the age of 10. I built websites for my favorite video games, writing walkthroughs and listing cheat codes—assuming everyone visited my website as soon as it went live. The websites didn’t look great—they included the same “under construction” gifs and rotating 3D text that every other website had at the time. I looked at these other websites for inspiration, pulling from them what drew me in. “View source” was my textbook—a free behind-the-scenes for every website on the internet. I copy/pasted every bit of code I hadn’t seen before and tweaked it to see what else it could do. Programming was new to me and I was excited.</p>
+<p>I couldn’t be more excited about integrations in Cushion. I feel like every integration brings Cushion one step closer to being a household name in the freelance world. By automating the data input process with auto-import integrations, users will be able to visualize their schedule and budget with a single click. I have trouble sitting still in my seat just thinking about this!</p>
 
-<p>A couple years went by and I continued to learn about programming. My mom would drive me to the book store so I could bury myself in the “Computers” section. I read as much as I could in the hour we were there, fascinated by every “Introduction to” this language and all the “Bibles” for that language. When it was time to go, I would beg and plead for the book I just <em>had</em> to have. The book was rarely relevant to what I was coding at the time—I just didn’t understand it and that’s why I <em>had</em> to have it. I wanted to learn.</p>
-
-<p>After a few trips with mom, I discovered a series of books that showcased the “masters” of my programming world. Each book included a CD with the actual work of the masters and the book would reveal the thought process and decision-making behind each piece, often including an example tutorial. These masters became my idols and I tried my best to create work as impactful as theirs was to me. I completed the tutorials and raced to show my parents—never mentioning the book, or the masters.</p>
-
-<p>A few more years went by and I continued to follow their work. When they launched something new, I would learn from it and try to recreate it—just to see if I could. I redesigned my website every month to include a fancy new loading screen or an animated mouse trail—similar to the ones they had, but different enough to call it my own.</p>
-
-<p>While many of my idols dropped off the radar over time, I continued programming. Several more years went by and I now had an entire decade under my belt. I no longer felt the need to rely on others for inspiration—I had ideas of my own. I filled my school notebooks with these new ideas, then raced home to see if they were even possible. Every night, I went back to the drawing board, hoping to come up with something that would give others the same spark that I felt in the book store.</p>
-
-<p>I started to receive emails from young developers, asking for advice on where to begin. I directed them to my favorite books and websites, and we stayed in contact as they learned the same way I did. From time to time, I would recognize my own style in their work—just little things, like my favorite hex color or my go-to font combination. This didn’t bother me much because I also learned by trying what others have tried. </p>
-
-<p>Occasionally, I would see someone go too far. I always hoped it was an honest mistake, but sometimes it wasn’t. They either thought no one would notice, or even worse, they didn’t care. Most of them didn’t realize just how small this community is or how much this action would hurt the original person. I’d try my best to warn them of the fine line between inspiration and imitation. I could only hope that they heard me.</p>
-
-<hr>
-
-<p>The link I received was to another project management service. With my recent work on integrations, I thought it might be another app worth integrating with, but as soon as the website finished loading, I knew something was wrong. My heart sunk and a tidal wave of thoughts and questions hit me. I had trouble processing what I was seeing.</p>
-
-<p><img src="/assets/imitation-datepicker.png" alt="imitation-datepicker"> </p>
-
-<p>I saw Cushion—not the name or the idea, but an undeniable resemblance to what I’ve spent the past year designing. I couldn’t sign up for it because it’s in private beta, too, but the video revealed enough to justify a conversation. I visited the Twitter page to reach the people behind it when my heart sunk even deeper—I recognized them. </p>
-
-<p>They were Cushion beta users. </p>
-
-<p><img src="/assets/imitation-colorpicker.png" alt="imitation-colorpicker"> </p>
-
-<p>Aside from feeling sick, I felt betrayed. Not only because they were Cushion users, but because I remembered answering numerous questions they had about how I built parts of the app. I was naive to assume they were just curious developers, but this community is built on sharing what we know. And, there’s an unspoken trust that goes along with it.</p>
-
-<p><img src="/assets/imitation-table.png" alt="imitation-table"> </p>
-
-<p>I reached out, expecting acknowledgment and an apology, but I was met with a strong defensive stance—claims that the look is “standard design” and that Twitter Bootstrap scaled down would look the same; that the design existed before Cushion because they bought the domain name years ago; that I had no reason to be upset. </p>
-
-<p><img src="/assets/imitation-notification.png" alt="imitation-notification"> </p>
-
-<p>I was upset. The similarities were too blatant to ignore, but they weren’t seeing it. They offered to change the notification after admitting it looked similar, but how could they not see everything else? In a last-ditch effort to get through to them, I asked that they at least change the parts that look identical. They said they didn’t have time to, but joked that they could hire me to do it.</p>
-
-<p>I was very upset. Almost an hour had gone by and nothing would change their mind. We ended the conversation. </p>
-
-<hr>
-
-<p>Cushion has become my life, and I’m putting <em>everything</em> I have into making it my career. I’ve worked tirelessly for the past 15 months to turn this idea into something real, and it’s heartbreaking to see someone claim my work as their own. </p>
-
-<p>Although this has been a truly emotional distraction, I’m going to continue making work that I can be proud of—because this is what I’m meant to do. I’m here for the long haul, and nothing is going to get in the way of making Cushion my own.</p>
+<p>Expect to see more posts about integrations in the near future. This one originally included the authorization process and the differences between integrating with FreshBooks versus Harvest, but as you can imagine, it was a bit long-winded. Until next time.</p>
 
     </div>
 
@@ -191,7 +222,11 @@
     <ul class='post-list'>
       
       <li class='post-list__item'>
-        <a class='link--strike link--hover-border' href='/journal/inspiration-vs-imitation'>Inspiration vs Imitation</a>
+        <a class='link--strike link--hover-border' href='/journal/intro-to-integrations'>Intro to Integrations</a>
+      </li>
+      
+      <li class='post-list__item'>
+        <a class=' link--hover-border' href='/journal/inspiration-vs-imitation'>Inspiration vs Imitation</a>
       </li>
       
       <li class='post-list__item'>

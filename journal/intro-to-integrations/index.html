@@ -8,7 +8,7 @@
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 
-  <title>Cushion - The Schedule Timeline</title>
+  <title>Cushion - Intro to Integrations</title>
 
   <meta name='description' content='Simple project scheduling, budgeting, and invoice tracking'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
@@ -110,31 +110,90 @@
   <article class='post'>
     <header class='post__header'>
       <h3 class='post__title'>
-        <a href='/journal/the-schedule-timeline'>The Schedule Timeline</a>
+        <a href='/journal/intro-to-integrations'>Intro to Integrations</a>
       </h3>
-      <time class='post__date' datetime='2014-06-16 14:31:00 -0400'>Jun 16, 2014</time>
+      <time class='post__date' datetime='2015-05-24 10:50:00 -0400'>May 24, 2015</time>
     </header>
 
     <div class='post__body'>
-      <p>After a ton of work on the budgeting side of Cushion, I decided to step back and focus on scheduling. I met with a few more fellow freelancers and the verdict seems to be that scheduling is a day-to-day activity, whereas budgeting is done less often—maybe week-to-week. If this is the case, I definitely want to have scheduling from day one, so everyone could get some frequent use out of Cushion. A weekly-used app won’t cut it.</p>
+      <p>Several weeks into building Cushion, I started thinking about integrations. Obviously, I was ahead of myself, but I knew integrations would play a vital role in the success of Cushion. Having been a freelancer for a few years at that point, I was aware of the “usual suspects” of freelancing services, and I knew that most freelancers were tethered to these services after years of use. I also knew that many of these freelancers weren’t head-over-heals for them, but the services were so engrained in their day-to-day that convincing these freelancers to jump ship entirely would be an exhausting, uphill battle. Fortunately, this was never the plan.</p>
 
-<p><img src="/assets/2014-06-15-schedule-tabs.png" alt="2014-06-15-schedule-tabs"> </p>
+<p>From the beginning, I wanted Cushion to be more than another equal alternative, feature-matching against every other service. I’ve always seen it as a valuable addition. Instead of trying to make Cushion into an all-in-one Swiss army knife, I could let other services focus on what they do best while Cushion provides a new angle on the same data. Rather than interrupting a freelancer’s workflow, Cushion could be an extension of it—a sidekick to the other services.</p>
 
-<p>The navigation for switching between the scheduling and budgeting views stumped me for a few days. With the model tabs as an established navigation on the app, I didn’t want to add anything that would compete too much. I decided to scrap the Cushion title in the top-left for now. With UI real estate becoming a premium in this app, that spot is much better suited for the view switcher—it also allows more views in the future.</p>
+<p>A few months went by and I became impatient. I kept thinking about how I’d need to build integrations eventually, so why not get a head-start? “Too soon”—the words of a wise developer in my studio space. He was right, but I was too impatient. To give you an idea of how laughably early this was in development, users couldn’t even change their password yet. I was blind to what Cushion needed at that moment and too focused on what Cushion could do without for now—this is why project managers exist. I spent a few days on integrations before thinking to myself, “Too soon.”</p>
 
-<p>Along with the positioning of the view tabs, I had difficulty deciding on a URL structure, since this completely flips the current one on its head. With these two views, essentially every page will have two pages—one for scheduling and one for budgeting. If you look at a project page, instead of <code>/projects/:id</code>, it would be <code>/projects/:id/schedule</code> or <code>/projects/:id/budget</code>. This makes complete sense, but for some reason, it didn’t seem like the clear answer at first. I started thinking of what <code>/projects/new</code> would be, since it currently shows the budgeting timeline. Would it now show both scheduling and budgeting, or neither?</p>
+<p>Several more months passed and I got the itch again. This time, instead of trying to build an entirely custom system for integrations, I decided to take a half-step by integrating with <a href="http://zpr.io/ZnSS">Zapier</a>, a service for communicating between APIs. Since Zapier would be doing most of the heavy lifting, I could achieve the functionality I was after by writing a few workflows, like “create an invoice in Cushion when an invoice is created in [another service]”. </p>
 
-<p><img src="/assets/2014-06-15-schedule-coded-vs-mockup.png" alt="2014-06-15-schedule-coded-vs-mockup"> </p>
+<p>At first, this seemed like a step in the right direction, but as I spent more time with Zapier, I knew it wasn’t right for Cushion—I recognized the burden I would be placing on the users. In order for them to integrate Cushion with their existing services, they would need to first create an account in Zapier. Then, they would need to navigate through Zapier, learn how Zapier works, and complete several steps to set up the integration. I would need to write thorough documentation and answer support emails for using Zapier. This wasn’t ideal for anyone.</p>
 
-<p>The scheduling timeline layout has been designed from the start of the app, but now that I needed to code it, a new challenge arose. Positioning a bunch of rectangles in a mockup is easy—the positioning logic is executed by the designer. With code, the simplest layout could come with a few hurdles of its own. For the scheduling timeline, all projects should rest on the baseline if they fit. If a project overlaps another project, it should rest above it.</p>
+<p>Simplicity is one of Cushion’s guiding principles, and sending users through hoops on another service is anything but simple. That route is simple for me, the developer, but not for the user. There’s a reason people pay for services—they want to lighten their workload. If this weren’t the case, we’d all be satisfied using spreadsheets. Instead of sending users somewhere else for integrations, I should assume the burden and build a system where the burden is non-existent to the user. Enabling an integration should be as easy as a single click.</p>
 
-<p><a href="/assets/2014-06-15-schedule-timeline.png"><img src="/assets/2014-06-15-schedule-timeline.png" alt="2014-06-15-schedule-timeline"></a></p>
+<p>I scrapped all the work with Zapier and took a break from integrations for another month. When I returned, I knew exactly how to approach them. Under the hood, I would break the system into four specific parts—services, recipes, authorizations, and integrations.</p>
 
-<p>Unfortunately, this can’t be done solely with CSS, like the budgeting timeline. After a few searches describing the layout I was after, I found a <a href="http://bl.ocks.org/bunkat/1962173">chart</a> that depicted the basic idea. It’s called a “swim lane” and is often used in flow charts. Once I saw the code required, I realized that this layout is actually pretty simple. Since I have start and finish dates for each project, I can just check for overlaps with those dates—no need for hit-detection. If a project’s finish date comes after another project’s start date, but its start date comes before that project’s finish date, you have an overlap. Upon finding an overlap, simply use a new “lane” for that item.</p>
+<ul>
+<li>A “Service” is a 3rd party service that Cushion can integrate with (i.e., Harvest). It has a name and an icon.</li>
+<li>A “Recipe” is a type of integration (i.e., Auto-Import). It has a name and a description. A service can have many recipes, which represent the service’s available integrations.</li>
+<li>An “Authorization” is a user’s connection to a service. It has an access token and a refresh token. A user can have many authorizations with various services. Authorizations are the key to communicating with the services.</li>
+<li>An “Integration” is a user’s authorized recipe for a service. The other models define every aspect of the integration, so it only needs their associations in order to exist.</li>
+</ul>
 
-<p><img src="/assets/2014-06-15-actual-schedule.png" alt="2014-06-15-actual-schedule"> </p>
+<p>After establishing the internal structure of integrations, I started to design the exterior. I began mapping out the pages I would need:</p>
 
-<p>At the moment, I have two dates for each project—<code>started_on</code> and <code>finished_on</code>. These represent the actual dates for when the project started and finished, not their planned dates, which is why I use the past-tense. The next step is to add two more dates for estimated start and finish dates. These will be set upon creating the project and represent the agreed upon dates with the client. When you start a project, you set its <code>started_on</code> date and its <code>finished_on</code> date upon completion, so we have something to diff against. These four dates will let you see which clients are late to start or which ones drag on too long. From there, I can then find trends in specific clients.</p>
+<ul>
+<li>all services</li>
+<li>an individual service</li>
+<li>all authorizations</li>
+<li>an individual authorization</li>
+<li>all integrations</li>
+<li>an individual integration</li>
+</ul>
+
+<p>It didn’t take long for me to realize that I was thinking too much like a developer. Just because I have four models for integrations doesn’t mean each model needs its own index and instance page. I took a step back and started thinking in terms of what I would expect. For integrations, I should be able to view:</p>
+
+<ul>
+<li>services to authorize</li>
+<li>my existing authorizations</li>
+<li>recipes to enable</li>
+<li>my existing integrations</li>
+</ul>
+
+<p>Next, I considered how to structure these lists. I definitely don’t think each one needs its own page, so I thought about how I could combine them. Since integrations are first and foremost about the services, I could use the services to organize everything into two pages—an index page for services and an individual service page. These pages would include more than just the services, but I’d use the services as a top-level category.</p>
+
+<p><img src="/assets/intro-to-integrations-services.png" alt="intro-to-integrations-services"> </p>
+
+<p>When arriving at the main integrations page, I should see a list of services to authorize. If I haven’t authorized a service, its button should say “authorize” and clicking it should take me through the authorization flow for that service. If I have already authorized a service, it should say “view” and clicking it should take me to that service’s page.</p>
+
+<p><img src="/assets/intro-to-integrations-service.png" alt="intro-to-integrations-service"> </p>
+
+<p>After authorizing a service, I should be redirected to its page, which should include my existing authorizations, integrations, and available recipes for this service. On this page, I should be able to enable/disable integrations and de-authorize the service.</p>
+
+<p><img src="/assets/intro-to-integrations-integrations.png" alt="intro-to-integrations-integrations"> </p>
+
+<p>Then, after enabling an integration, the main integrations page should include all of my existing integrations across all services as well as the still-available services. </p>
+
+<p>This layout feels right to me and I couldn’t be happier with how it turned out. Let it be known that I went through a dozen layouts before arriving on this one, so it wasn’t as clear cut as it appears. While figuring out the layout, I also narrowed in on an overall design that matches the rest of Cushion.</p>
+
+<p><img src="/assets/integrations-subscriptions.png" alt="integrations-subscriptions"> </p>
+
+<p>Thinking about how to display the grid of services, I decided to revisit the subscription page design. With services only needing a single action button for authorizing, I found that the block design I used for subscription plans would work perfectly.</p>
+
+<p><img src="/assets/intro-to-integrations-service-blocks.png" alt="intro-to-integrations-service-blocks"> </p>
+
+<p>I swapped out the plan prices with the service icons and replaced the plan names with the service names. Below each name, I included a two-word description for each service to balance everything out. If a particular service is ever down or having issues, I could re-use the ribbon alert to indicate activity if I need to.</p>
+
+<p><img src="/assets/intro-to-integrations-secondary-service-block.png" alt="intro-to-integrations-secondary-service-block"> </p>
+
+<p>I also designed how services will look as I build more integrations for Cushion. For less-common services, I condensed the block, so that two services can fit aside each other in a single row.</p>
+
+<p><img src="/assets/intro-to-integrations-secondary-services.png" alt="intro-to-integrations-secondary-services"> </p>
+
+<p>I’m not a fan of integrations pages that are treated like a dumping ground, with the most useful integrations buried beneath obscure services used only by one user. I’d like to establish a better hierarchy, so the primary integrations will sit at the top as square blocks. The less-common services will then rest below them in rows of two. This way, all of the integrations are available for browsing, but the more frequently-used ones will be more prominent.</p>
+
+<hr>
+
+<p>I couldn’t be more excited about integrations in Cushion. I feel like every integration brings Cushion one step closer to being a household name in the freelance world. By automating the data input process with auto-import integrations, users will be able to visualize their schedule and budget with a single click. I have trouble sitting still in my seat just thinking about this!</p>
+
+<p>Expect to see more posts about integrations in the near future. This one originally included the authorization process and the differences between integrating with FreshBooks versus Harvest, but as you can imagine, it was a bit long-winded. Until next time.</p>
 
     </div>
 
@@ -163,7 +222,7 @@
     <ul class='post-list'>
       
       <li class='post-list__item'>
-        <a class=' link--hover-border' href='/journal/intro-to-integrations'>Intro to Integrations</a>
+        <a class='link--strike link--hover-border' href='/journal/intro-to-integrations'>Intro to Integrations</a>
       </li>
       
       <li class='post-list__item'>
@@ -263,7 +322,7 @@
       </li>
       
       <li class='post-list__item'>
-        <a class='link--strike link--hover-border' href='/journal/the-schedule-timeline'>The Schedule Timeline</a>
+        <a class=' link--hover-border' href='/journal/the-schedule-timeline'>The Schedule Timeline</a>
       </li>
       
       <li class='post-list__item'>

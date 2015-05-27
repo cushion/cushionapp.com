@@ -4,7 +4,94 @@
     <title>Cushion</title>
     <link>http://cushionapp.com</link>
     <description></description>
-    <pubDate>Mon, 25 May 2015 09:35:32 -0400</pubDate>
+    <pubDate>Wed, 27 May 2015 18:13:11 -0400</pubDate>
+    
+    <item>
+      <title>Intro to Integrations</title>
+      <link>http://cushionapp.com/journal/intro-to-integrations</link>
+      <pubDate>Sun, 24 May 2015 10:50:00 -0400</pubDate>
+      <author>Jonnie Hallman</author>
+      <guid>http://cushionapp.com/journal/intro-to-integrations</guid>
+      <description>&lt;p&gt;Several weeks into building Cushion, I started thinking about integrations. Obviously, I was ahead of myself, but I knew integrations would play a vital role in the success of Cushion. Having been a freelancer for a few years at that point, I was aware of the “usual suspects” of freelancing services, and I knew that most freelancers were tethered to these services after years of use. I also knew that many of these freelancers weren’t head-over-heals for them, but the services were so engrained in their day-to-day that convincing these freelancers to jump ship entirely would be an exhausting, uphill battle. Fortunately, this was never the plan.&lt;/p&gt;
+
+&lt;p&gt;From the beginning, I wanted Cushion to be more than another equal alternative, feature-matching against every other service. I’ve always seen it as a valuable addition. Instead of trying to make Cushion into an all-in-one Swiss army knife, I could let other services focus on what they do best while Cushion provides a new angle on the same data. Rather than interrupting a freelancer’s workflow, Cushion could be an extension of it—a sidekick to the other services.&lt;/p&gt;
+
+&lt;p&gt;A few months went by and I became impatient. I kept thinking about how I’d need to build integrations eventually, so why not get a head-start? “Too soon”—the words of a wise developer in my studio space. He was right, but I was too impatient. To give you an idea of how laughably early this was in development, users couldn’t even change their password yet. I was blind to what Cushion needed at that moment and too focused on what Cushion could do without for now—this is why project managers exist. I spent a few days on integrations before thinking to myself, “Too soon.”&lt;/p&gt;
+
+&lt;p&gt;Several more months passed and I got the itch again. This time, instead of trying to build an entirely custom system for integrations, I decided to take a half-step by integrating with &lt;a href=&quot;http://zpr.io/ZnSS&quot;&gt;Zapier&lt;/a&gt;, a service for communicating between APIs. Since Zapier would be doing most of the heavy lifting, I could achieve the functionality I was after by writing a few workflows, like “create an invoice in Cushion when an invoice is created in [another service]”. &lt;/p&gt;
+
+&lt;p&gt;At first, this seemed like a step in the right direction, but as I spent more time with Zapier, I knew it wasn’t right for Cushion—I recognized the burden I would be placing on the users. In order for them to integrate Cushion with their existing services, they would need to first create an account in Zapier. Then, they would need to navigate through Zapier, learn how Zapier works, and complete several steps to set up the integration. I would need to write thorough documentation and answer support emails for using Zapier. This wasn’t ideal for anyone.&lt;/p&gt;
+
+&lt;p&gt;Simplicity is one of Cushion’s guiding principles, and sending users through hoops on another service is anything but simple. That route is simple for me, the developer, but not for the user. There’s a reason people pay for services—they want to lighten their workload. If this weren’t the case, we’d all be satisfied using spreadsheets. Instead of sending users somewhere else for integrations, I should assume the burden and build a system where the burden is non-existent to the user. Enabling an integration should be as easy as a single click.&lt;/p&gt;
+
+&lt;p&gt;I scrapped all the work with Zapier and took a break from integrations for another month. When I returned, I knew exactly how to approach them. Under the hood, I would break the system into four specific parts—services, recipes, authorizations, and integrations.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A “Service” is a 3rd party service that Cushion can integrate with (i.e., Harvest). It has a name and an icon.&lt;/li&gt;
+&lt;li&gt;A “Recipe” is a type of integration (i.e., Auto-Import). It has a name and a description. A service can have many recipes, which represent the service’s available integrations.&lt;/li&gt;
+&lt;li&gt;An “Authorization” is a user’s connection to a service. It has an access token and a refresh token. A user can have many authorizations with various services. Authorizations are the key to communicating with the services.&lt;/li&gt;
+&lt;li&gt;An “Integration” is a user’s authorized recipe for a service. The other models define every aspect of the integration, so it only needs their associations in order to exist.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After establishing the internal structure of integrations, I started to design the exterior. I began mapping out the pages I would need:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;all services&lt;/li&gt;
+&lt;li&gt;an individual service&lt;/li&gt;
+&lt;li&gt;all authorizations&lt;/li&gt;
+&lt;li&gt;an individual authorization&lt;/li&gt;
+&lt;li&gt;all integrations&lt;/li&gt;
+&lt;li&gt;an individual integration&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It didn’t take long for me to realize that I was thinking too much like a developer. Just because I have four models for integrations doesn’t mean each model needs its own index and instance page. I took a step back and started thinking in terms of what I would expect. For integrations, I should be able to view:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;services to authorize&lt;/li&gt;
+&lt;li&gt;my existing authorizations&lt;/li&gt;
+&lt;li&gt;recipes to enable&lt;/li&gt;
+&lt;li&gt;my existing integrations&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Next, I considered how to structure these lists. I definitely don’t think each one needs its own page, so I thought about how I could combine them. Since integrations are first and foremost about the services, I could use the services to organize everything into two pages—an index page for services and an individual service page. These pages would include more than just the services, but I’d use the services as a top-level category.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/intro-to-integrations-services.png&quot; alt=&quot;intro-to-integrations-services&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;When arriving at the main integrations page, I should see a list of services to authorize. If I haven’t authorized a service, its button should say “authorize” and clicking it should take me through the authorization flow for that service. If I have already authorized a service, it should say “view” and clicking it should take me to that service’s page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/intro-to-integrations-service.png&quot; alt=&quot;intro-to-integrations-service&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;After authorizing a service, I should be redirected to its page, which should include my existing authorizations, integrations, and available recipes for this service. On this page, I should be able to enable/disable integrations and de-authorize the service.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/intro-to-integrations-integrations.png&quot; alt=&quot;intro-to-integrations-integrations&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Then, after enabling an integration, the main integrations page should include all of my existing integrations across all services as well as the still-available services. &lt;/p&gt;
+
+&lt;p&gt;This layout feels right to me and I couldn’t be happier with how it turned out. Let it be known that I went through a dozen layouts before arriving on this one, so it wasn’t as clear cut as it appears. While figuring out the layout, I also narrowed in on an overall design that matches the rest of Cushion.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/integrations-subscriptions.png&quot; alt=&quot;integrations-subscriptions&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;Thinking about how to display the grid of services, I decided to revisit the subscription page design. With services only needing a single action button for authorizing, I found that the block design I used for subscription plans would work perfectly.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/intro-to-integrations-service-blocks.png&quot; alt=&quot;intro-to-integrations-service-blocks&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I swapped out the plan prices with the service icons and replaced the plan names with the service names. Below each name, I included a two-word description for each service to balance everything out. If a particular service is ever down or having issues, I could re-use the ribbon alert to indicate activity if I need to.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/intro-to-integrations-secondary-service-block.png&quot; alt=&quot;intro-to-integrations-secondary-service-block&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I also designed how services will look as I build more integrations for Cushion. For less-common services, I condensed the block, so that two services can fit aside each other in a single row.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/intro-to-integrations-secondary-services.png&quot; alt=&quot;intro-to-integrations-secondary-services&quot;&gt; &lt;/p&gt;
+
+&lt;p&gt;I’m not a fan of integrations pages that are treated like a dumping ground, with the most useful integrations buried beneath obscure services used only by one user. I’d like to establish a better hierarchy, so the primary integrations will sit at the top as square blocks. The less-common services will then rest below them in rows of two. This way, all of the integrations are available for browsing, but the more frequently-used ones will be more prominent.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;I couldn’t be more excited about integrations in Cushion. I feel like every integration brings Cushion one step closer to being a household name in the freelance world. By automating the data input process with auto-import integrations, users will be able to visualize their schedule and budget with a single click. I have trouble sitting still in my seat just thinking about this!&lt;/p&gt;
+
+&lt;p&gt;Expect to see more posts about integrations in the near future. This one originally included the authorization process and the differences between integrating with FreshBooks versus Harvest, but as you can imagine, it was a bit long-winded. Until next time.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Inspiration vs Imitation</title>
@@ -409,56 +496,6 @@
 &lt;p&gt;So, what’s my solution to all of this? I call them “Project Blocks”. Let’s say you create a new project. By default, this project starts with one block spanning the entire project. You can then add more blocks based on your situation. If you’re an illustrator, you can create several new blocks and label them “Sketches”, “Revisions”, and “Final”. If you’re a developer with gaps in the timeline between sprints, you can create blocks to indicate when you’re actually working.&lt;/p&gt;
 
 &lt;p&gt;This idea has been in the back of my head for a few months now, so I’m really excited to dive into it. I’ll start on initial designs today and transition into dev before the week is out. If you have any thoughts of your own, I’d love to &lt;a href=&quot;http://twitter.com/cushionapp&quot;&gt;hear&lt;/a&gt; them. And, if you’re interested in trying out project blocks before anyone else, &lt;a href=&quot;/beta&quot;&gt;sign up&lt;/a&gt; for the beta.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Redesigning the Homepage</title>
-      <link>http://cushionapp.com/journal/redesigning-the-homepage</link>
-      <pubDate>Thu, 20 Nov 2014 09:39:00 -0500</pubDate>
-      <author>Jonnie Hallman</author>
-      <guid>http://cushionapp.com/journal/redesigning-the-homepage</guid>
-      <description>&lt;p&gt;After about 7 months of working on Cushion, I realized I hadn’t updated the homepage since coming up with the idea for the app. It still included a sentence saying “I can’t wait to build this app.” This threw people off because they would see that without seeing any other progress and just assume that it hasn’t been built yet—in their eyes, I just launched that page. &lt;/p&gt;
-
-&lt;p&gt;This happens too often—I’m working non-stop on a project, living with it day after day, but completely unaware that maybe not everyone’s dialed in, looking over my shoulder. I assume they’ve seen every tweet and every blog post. This couldn’t be further from the truth. I still have close friends who don’t know I’m freelancing again, let alone working on Cushion.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-homepage.png&quot; alt=&quot;2014-11-20-homepage&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;So, it was time. Instead of focusing all of my attention on the app, I needed to dedicate some time to the outward-facing side of Cushion. Since I still have much to do in the app, I gave myself a limit of one day to spend redesigning the homepage. Now that the app is in working condition, I wanted to get the point across that it’s usable—no longer just an idea or a half-baked, bug-ridden prototype. But, I didn’t want to ditch everything. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-intro.png&quot; alt=&quot;2014-11-20-intro&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The paragraph describing my unhealthy lifestyle as a freelancer is strong. I’d much prefer someone to read that and relate to me on a personal level than replace it with some witty marketing lingo that makes Cushion just a product that appeared overnight. I pulled out a few of my favorite features and listed them underneath. After months of working on the app and speaking with others who use it, the features were obvious. &lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-tracking.png&quot; alt=&quot;2014-11-20-tracking&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The first, project and invoice tracking, is the easy one. This needs to be a feature to even consider using the app. I wanted people to see it and immediately compare it to what they currently use—on a level of both design and functionality. The timeline should look great to them &lt;em&gt;and&lt;/em&gt; introduce something that their current app doesn’t have, like an indication that a project has dragged on past its expected due date. This is a problem that all freelancers experience, but most apps don’t make a big deal of it.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-client-tendencies.png&quot; alt=&quot;2014-11-20-client-tendencies&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Next, I brought up a feature that is incredibly useful, but not exactly glamorous—client tendencies. You can learn so much about your freelance life with the simplest data. Take invoices as an example. All you need is the issue date and paid date of an invoice to reveal your client’s real net. Sure, a client says they are net 45, but in actuality, they are net 63—this is a client of mine. I never thought it would be that far off if it weren’t for Cushion calculating the exact numbers. In my head, I would just think, “Yeah, I remember them paying late, but it’s probably not too bad.” 18 days late is enough to prevent you from paying your rent that month.&lt;/p&gt;
-
-&lt;p&gt;Delay and drag are other client tendencies. When was the last time you had a project that started when it was supposed to or finished on the exact date as planned? The majority of my projects drag on at least a week. It’s not a problem because I get paid for my extra time, but when a projects drags &lt;em&gt;into&lt;/em&gt; another project—that’s a problem. All of a sudden, I’m juggling two projects, one of which is probably at its peak because I’m wrapping up all those last-minute details. &lt;/p&gt;
-
-&lt;p&gt;Every freelancer should know their clients’ tendencies, so they can be better prepared for unexpected scheduling conflicts and late paychecks. Maybe the data is strong enough that you wouldn’t take that project and find yourself in such a stressful situation.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-goals.png&quot; alt=&quot;2014-11-20-goals&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;The last feature I focused on is financial goals. When you’re working full-time, you have your salary and that’s that. As a freelaner, however, that number isn’t so matter-of-fact. You have what you absolutely need to make to pay your expenses, but beyond that, you can aim high or just enough to get by. When presented with a bar to fill, there’s extra incentive to fill that bar. Personally, with a month and a half to go in the year, I’m just shy of my target goal and it’s driving me insane. Without this bar, my position is either numbers on a spreadsheet or a general idea in my head. Seeing it visually gives me an instant idea of where I am, if I’m okay, and how close I am to that next goal.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-timeline.png&quot; alt=&quot;2014-11-20-timeline&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Aside from features, two other areas of the app were really important for me to bring up this time—Cushion’s development timeline and this process journal. When your product is in beta, it’s easy to leave it at that with an open-ended schedule that’s just a blur. Some betas run a few months—others last more than a year. To avoid Cushion staying behind closed doors for too long, I wanted to show a timeline for others, but also for myself. Two months into this 6-month beta, I want it to be clear that we’re roughly halfway through. This tells both myself and others that Cushion will launch and that I have a specific plan for that—not just a seemingly never-ending beta.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-journal.png&quot; alt=&quot;2014-11-20-journal&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;With the process journal, I felt it needed to be more than just a link in the site’s navigation. It makes no sense that I would dedicate so much time to writing about the progress than making progress, then just hide it and hope that people find it. Speaking to the journal on the homepage also allows me to keep that section in rotation. Instead of the feature list, which is probably solidified for a few more months, I can update to show the latest post, like this one.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/2014-11-20-newsletter.png&quot; alt=&quot;2014-11-20-newsletter&quot;&gt; &lt;/p&gt;
-
-&lt;p&gt;Lastly, I kept the newsletter sign up form, with an added link to the beta page. Shouting on Twitter is easy, but it’s much more effective to speak to those who actually signed up to hear more. I’ve been collecting emails of interested people for months now and after sending my first update email this past week, I realize just how valuable that list is. I love hearing from you and hope I’m doing an okay job of communicating.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;A big thanks to &lt;a href=&quot;http://nicolefenton.com&quot;&gt;Nicole Fenton&lt;/a&gt; for editing the homepage and beta copy.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
