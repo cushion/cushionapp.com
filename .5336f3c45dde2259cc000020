@@ -1,5 +1,5 @@
 ---
-time: 1432764806
+time: 1432775846
 inventory:
   "/home/index.html":
     md5: cc088c48b019b3f76ff0fae4ba0682ab
@@ -14,11 +14,11 @@ inventory:
     md5: 2df473daebbd9bf9ce1d9ff0d6e77b18
     time: 1430426874
   "/journal/index.html":
-    md5: 3160e632557ad5f0e4ff88d3a83be303
-    time: 1432764779
+    md5: 5259299ff4a8b88f4283be26d1db1cf0
+    time: 1432775835
   "/journal/intro-to-integrations/index.html":
-    md5: 372373907c0c3e86535f308bbb167a59
-    time: 1432764779
+    md5: 96cb1bf92637136b6339a5e88bfe8062
+    time: 1432775835
   "/journal/inspiration-vs-imitation/index.html":
     md5: 30ffd882d6561e62e477f326fd451535
     time: 1432764779
@@ -536,8 +536,8 @@ inventory:
     md5: fcdeef7260d9e1e3bb68fc59e1224ac4
     time: 1430835333
   "/feed.xml":
-    md5: 6b4fe00d20c874fcbe63e0a551c28d95
-    time: 1432764791
+    md5: ff96297fff16fdc5e05f54d2fa272aa1
+    time: 1432775845
   "/404.html":
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -689,8 +689,8 @@ inventory:
     md5: 920cb545945a506577d2320aad67b824
     time: 1431221431
   "/journal/feed.xml":
-    md5: 6b4fe00d20c874fcbe63e0a551c28d95
-    time: 1432764791
+    md5: ff96297fff16fdc5e05f54d2fa272aa1
+    time: 1432775845
   "/assets/services-harvest.png":
     md5: 31956a6f1b8c4fe41ea12c1427e5d250
     time: 1432333944
