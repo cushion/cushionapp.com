@@ -19,6 +19,7 @@
   </article>
 
   {% if parent.parent.slug == 'integrations' %}
+  {% if pages.size > 0 %}
   <section>
     <h3 class='page__title'>Troubleshooting</h3>
 
@@ -30,6 +31,7 @@
       {% endfor %}
     </ul>
   </section>
+  {% endif %}
   {% endif %}
 </main>
 {% endcapture %}
