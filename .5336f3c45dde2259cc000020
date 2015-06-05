@@ -1,5 +1,5 @@
 ---
-time: 1433254711
+time: 1433472074
 inventory:
   "/home/index.html":
     md5: 2d38db773634fb137cb02436ec69d722
@@ -242,8 +242,11 @@ inventory:
     md5: a89fff55cb3ffe3b8052d203de6bee7d
     time: 1433254603
   "/changelog/index.html":
-    md5: cee885c99aec75ff61db16ce467ee537
-    time: 1433254604
+    md5: 337c6599c87152c361cd844ad437c9a7
+    time: 1433472066
+  "/changelog/2015-06-04/index.html":
+    md5: 13f4a89b67788a234cdc34731b30eda2
+    time: 1433472066
   "/changelog/2015-05-25/index.html":
     md5: 5515a516f6fce15e7f598be61b74c8ea
     time: 1433254604
@@ -521,14 +524,17 @@ inventory:
     md5: c284dc4d3c6d2db82b2ced59dcc8f159
     time: 1433254638
   "/support/integrations/freshbooks/auto-import/index.html":
-    md5: 91f318aa18e2dc18611e7b81dcccb7ab
-    time: 1433254638
+    md5: 5656cdcbc551be9e0b47bc0f07a9aa76
+    time: 1433472072
   "/support/integrations/freshbooks/auto-import/items-not-appearing/index.html":
     md5: 9bd983ef8317ac56f26dccf36258a2d4
     time: 1433254639
   "/support/integrations/harvest/auto-import/index.html":
-    md5: b15c1d92c918b43f50e315f53ee36b4e
-    time: 1433254639
+    md5: d99c388147810ae1889df7a0e8833cab
+    time: 1433472072
+  "/support/integrations/harvest/import/index.html":
+    md5: 5160b38001349d690e8573cb06c5ef13
+    time: 1433472072
   "/support/integrations/harvest/auto-import/items-not-appearing/index.html":
     md5: dfbe6f5bd02e34e5b12edf83c84d58c6
     time: 1433254640
@@ -539,8 +545,8 @@ inventory:
     md5: 847d16e16efff488f86e8fce89ca06ac
     time: 1433254200
   "/feed.xml":
-    md5: 4597049235877572d00636dd20c68233
-    time: 1433254640
+    md5: dc86b0fa536ed58c539799fa6e28c6db
+    time: 1433472072
   "/404.html":
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -692,8 +698,8 @@ inventory:
     md5: 920cb545945a506577d2320aad67b824
     time: 1431221431
   "/journal/feed.xml":
-    md5: 4597049235877572d00636dd20c68233
-    time: 1433254640
+    md5: dc86b0fa536ed58c539799fa6e28c6db
+    time: 1433472072
   "/assets/services-harvest.png":
     md5: 31956a6f1b8c4fe41ea12c1427e5d250
     time: 1432333944
