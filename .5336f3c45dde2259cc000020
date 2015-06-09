@@ -1,5 +1,5 @@
 ---
-time: 1433646566
+time: 1433820473
 inventory:
   "/home/index.html":
     md5: 2d38db773634fb137cb02436ec69d722
@@ -89,8 +89,8 @@ inventory:
     md5: 28fa881877c19d80716dbe3890cdfdb1
     time: 1433254587
   "/journal/a-slimmer-schedule-timeline/index.html":
-    md5: efe9c683cee1783a1634146a1caa55b0
-    time: 1433254587
+    md5: 05b720a503911880fb0f1d133bd3bde6
+    time: 1433820461
   "/journal/the-schedule-timeline/index.html":
     md5: e33912321a1458815f56eb0872d23f59
     time: 1433254588
@@ -242,8 +242,11 @@ inventory:
     md5: a89fff55cb3ffe3b8052d203de6bee7d
     time: 1433254603
   "/changelog/index.html":
-    md5: 96f18e10474a2b0812ac4349c500c232
-    time: 1433646559
+    md5: d023ce88165e0f4446ef6a17d1e9942a
+    time: 1433820465
+  "/changelog/2015-06-08/index.html":
+    md5: b9a735027661909e5916409e337dbea5
+    time: 1433820465
   "/changelog/2015-06-06/index.html":
     md5: 452a5e0b66a27f01dc6b460736809572
     time: 1433646559
@@ -548,8 +551,8 @@ inventory:
     md5: 847d16e16efff488f86e8fce89ca06ac
     time: 1433254200
   "/feed.xml":
-    md5: 988128d3c1a8bc7e374225e89d9518dc
-    time: 1433646565
+    md5: 6feb7e1c5b11c25ffe94f23397cea91c
+    time: 1433820471
   "/404.html":
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -701,8 +704,8 @@ inventory:
     md5: 920cb545945a506577d2320aad67b824
     time: 1431221431
   "/journal/feed.xml":
-    md5: 988128d3c1a8bc7e374225e89d9518dc
-    time: 1433646565
+    md5: 6feb7e1c5b11c25ffe94f23397cea91c
+    time: 1433820471
   "/assets/services-harvest.png":
     md5: 31956a6f1b8c4fe41ea12c1427e5d250
     time: 1432333944
