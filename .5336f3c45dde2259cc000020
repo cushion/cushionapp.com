@@ -1,5 +1,5 @@
 ---
-time: 1434071603
+time: 1434212753
 inventory:
   "/home/index.html":
     md5: 2d38db773634fb137cb02436ec69d722
@@ -535,6 +535,9 @@ inventory:
   "/support/integrations/freshbooks/auto-import/index.html":
     md5: 5656cdcbc551be9e0b47bc0f07a9aa76
     time: 1433472072
+  "/support/integrations/freshbooks/import/index.html":
+    md5: a51bfec4055572505579d26afd669f27
+    time: 1434212751
   "/support/integrations/freshbooks/auto-import/items-not-appearing/index.html":
     md5: 9bd983ef8317ac56f26dccf36258a2d4
     time: 1433254639
@@ -554,8 +557,8 @@ inventory:
     md5: 847d16e16efff488f86e8fce89ca06ac
     time: 1433254200
   "/feed.xml":
-    md5: 41bf1e8a6e4024e443cc6a0f673d6acc
-    time: 1434071601
+    md5: 9c2d13b777fb222792f02eb654c88ebb
+    time: 1434212751
   "/404.html":
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -707,8 +710,8 @@ inventory:
     md5: 920cb545945a506577d2320aad67b824
     time: 1431221431
   "/journal/feed.xml":
-    md5: 41bf1e8a6e4024e443cc6a0f673d6acc
-    time: 1434071601
+    md5: 3fc426b1daf1df771c78e2bb9d55ed4b
+    time: 1434212752
   "/assets/services-harvest.png":
     md5: 31956a6f1b8c4fe41ea12c1427e5d250
     time: 1432333944
