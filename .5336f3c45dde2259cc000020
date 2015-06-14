@@ -1,5 +1,5 @@
 ---
-time: 1434212753
+time: 1434308662
 inventory:
   "/home/index.html":
     md5: 2d38db773634fb137cb02436ec69d722
@@ -242,8 +242,11 @@ inventory:
     md5: a89fff55cb3ffe3b8052d203de6bee7d
     time: 1433254603
   "/changelog/index.html":
-    md5: 37a6725ff3c8200b85441bddb6744dcb
-    time: 1434071595
+    md5: a3d2d02563724d8db2c378beb1fdd9a6
+    time: 1434308654
+  "/changelog/2015-06-14/index.html":
+    md5: 99cc727abf9e996778beb518aa71c453
+    time: 1434308654
   "/changelog/2015-06-11/index.html":
     md5: 5551bf276d42b1a1d1f8a80bbf372e64
     time: 1434071595
@@ -557,8 +560,8 @@ inventory:
     md5: 847d16e16efff488f86e8fce89ca06ac
     time: 1433254200
   "/feed.xml":
-    md5: 9c2d13b777fb222792f02eb654c88ebb
-    time: 1434212751
+    md5: d6462d63e6cb39ffa87603ae5f2f32e3
+    time: 1434308661
   "/404.html":
     md5: 14e13b81b3ce5b129d1f206b3e514885
     time: 1404674335
@@ -710,8 +713,8 @@ inventory:
     md5: 920cb545945a506577d2320aad67b824
     time: 1431221431
   "/journal/feed.xml":
-    md5: 3fc426b1daf1df771c78e2bb9d55ed4b
-    time: 1434212752
+    md5: d6462d63e6cb39ffa87603ae5f2f32e3
+    time: 1434308661
   "/assets/services-harvest.png":
     md5: 31956a6f1b8c4fe41ea12c1427e5d250
     time: 1432333944
