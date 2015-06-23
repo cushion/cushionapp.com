@@ -1,0 +1,96 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3046217, 2015-06-21T14:23:27-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Effra-Bold by Dalton Maag
+ * URL: http://www.myfonts.com/fonts/daltonmaag/effra/bold/
+ * Copyright: Copyright 2013 Dalton Maag Ltd. Modification of this file requires prior written permission from Dalton Maag Ltd.
+ * Licensed pageviews: 10,000
+ *
+ * Webfont: FF Tisa Web Pro Italic by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/tisa-pro/pro-ita/
+ * Copyright: 2009 Mitja Miklavcic published by FSI FontShop International GmbH
+ * Licensed pageviews: 50,000
+ *
+ * Webfont: FF Tisa Web Pro Bold by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/tisa-pro/pro-bold/
+ * Copyright: 2009 Mitja Miklavcic published by FSI FontShop International GmbH
+ * Licensed pageviews: 50,000
+ *
+ * Webfont: FF Tisa Web Pro by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/tisa-pro/pro/
+ * Copyright: 2009 Mitja Miklavcic published by FSI FontShop International GmbH
+ * Licensed pageviews: 50,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3046217
+ *
+ * © 2015 MyFonts Inc
+*/
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/2e7b49");
+
+@font-face {
+  font-family: 'Effra';
+  font-weight: bold;
+  src: url('../webfonts/effra-bold.eot');
+  src: url('../webfonts/effra-bold.eot?#iefix') format('embedded-opentype'),url('../webfonts/effra-bold.woff2') format('woff2'),url('../webfonts/effra-bold.woff') format('woff'),url('../webfonts/effra-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FF Tisa Web Pro';
+  font-style: italic;
+  src: url('../webfonts/ff-tisa-web-pro-italic.eot');
+  src: url('../webfonts/ff-tisa-web-pro-italic.eot?#iefix') format('embedded-opentype'),url('../webfonts/ff-tisa-web-pro-italic.woff2') format('woff2'),url('../webfonts/ff-tisa-web-pro-italic.woff') format('woff'),url('../webfonts/ff-tisa-web-pro-italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FF Tisa Web Pro';
+  font-weight: bold;
+  src: url('../webfonts/ff-tisa-web-pro-bold.eot');
+  src: url('../webfonts/ff-tisa-web-pro-bold.eot?#iefix') format('embedded-opentype'),url('../webfonts/ff-tisa-web-pro-bold.woff2') format('woff2'),url('../webfonts/ff-tisa-web-pro-bold.woff') format('woff'),url('../webfonts/ff-tisa-web-pro-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FF Tisa Web Pro';
+  src: url('../webfonts/ff-tisa-web-pro.eot');
+  src: url('../webfonts/ff-tisa-web-pro.eot?#iefix') format('embedded-opentype'),url('../webfonts/ff-tisa-web-pro.woff2') format('woff2'),url('../webfonts/ff-tisa-web-pro.woff') format('woff'),url('../webfonts/ff-tisa-web-pro.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Facit';
+  src: url('../webfonts/facit-regular.eot');
+  src: url('../webfonts/facit-regular?#iefix') format('embedded-opentype'),
+    url('../webfonts/facit-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Facit';
+  font-style: italic;
+  src: url('../webfonts/facit-regular-italic.eot');
+  src: url('../webfonts/facit-regular-italic?#iefix') format('embedded-opentype'),
+    url('../webfonts/facit-regular-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Facit';
+  font-weight: 600;
+  src: url('../webfonts/facit-semibold.eot');
+  src: url('../webfonts/facit-semibold?#iefix') format('embedded-opentype'),
+    url('../webfonts/facit-semibold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Facit';
+  font-weight: 700;
+  src: url('../webfonts/facit-bold.eot');
+  src: url('../webfonts/facit-bold?#iefix') format('embedded-opentype'),
+    url('../webfonts/facit-bold.woff') format('woff');
+}

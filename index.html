@@ -21,100 +21,102 @@
 
   <section id='budget' class='background--light homepage__section'>
     <div class='js-budget__graph'>
-      <div class='feature-column__graph-container'>
-        <div class='feature-column__graph graph'>
-          <div class='graph__ticks--top graph__ticks'>
-            <div class='graph__tick--point graph__tick' style='left: 70%'>
-              <span class='graph-tick__label'>minimum</span>
+      <div class='budget-graph-container'>
+        <div class='feature-column__graph-container'>
+          <div class='feature-column__graph graph'>
+            <div class='graph__ticks--top graph__ticks'>
+              <div class='graph__tick--point graph__tick' style='left: 70%'>
+                <span class='graph-tick__label'>minimum</span>
+              </div>
+
+              <div class='graph__tick--point graph__tick' style='left: 85%'>
+                <span class='graph-tick__label'>target</span>
+              </div>
+
+              <div class='graph__tick--point graph__tick' style='left: 100%'>
+                <span class='graph-tick__label'>stretch</span>
+              </div>
             </div>
 
-            <div class='graph__tick--point graph__tick' style='left: 85%'>
-              <span class='graph-tick__label'>target</span>
-            </div>
+            <div class='graph__boundary'>
+              <div class='js-budget__bar bar'>
+                <div class='bar__item--solid bar__item' style='width: 30%; background-color: #16547E'>
+                  <div class='bar-item__label' style='color: #fff'>
+                    <span class='bar-item__label-line--strong bar-item__label-line'>Kramerica</span>
+                    <span class='bar-item__label-line'>$15,000</span>
+                  </div>
+                </div><div class='bar__item--solid bar__item' style='width: 25%; background-color: #EB5E28'>
+                  <div class='bar-item__label' style='color: #fff'>
+                    <span class='bar-item__label-line--strong bar-item__label-line'>Vandelay Industries</span>
+                    <span class='bar-item__label-line'>$10,000</span>
+                  </div>
+                </div><div class='bar__item--outlined bar__item' style='width: 15%; outline-color: #89CBE9'>
+                  <div class='bar-item__label'>
+                    <span class='bar-item__label-line--strong bar-item__label-line'>J. Peterman</span>
+                    <span class='bar-item__label-line'>$7,500</span>
+                  </div>
+                </div><div class='bar__item--outlined bar__item' style='width: 10%; outline-color: #EB5E28'>
+                  <div class='bar-item__label'>
+                    <span class='bar-item__label-line--strong bar-item__label-line'>Vandelay</span>
+                    <span class='bar-item__label-line'>$5,000</span>
+                  </div>
+                </div><div class='bar__item--dashed bar__item' style='width: 10%; outline-color: #16547E'>
+                  <div class='bar-item__label'>
+                    <span class='bar-item__label-line--strong bar-item__label-line'>Kramerica</span>
+                    <span class='bar-item__label-line'>$5,000</span>
+                  </div>
+                </div><div class='bar__item--dashed bar__item' style='width: 5%; outline-color: #89CBE9'>
+                  <div class='bar-item__label'>
+                    <span class='bar-item__label-line--strong bar-item__label-line'>JP</span>
+                    <span class='bar-item__label-line'>$2,500</span>
+                  </div>
+                </div>
+              </div>
 
-            <div class='graph__tick--point graph__tick' style='left: 100%'>
-              <span class='graph-tick__label'>stretch</span>
-            </div>
-          </div>
-
-          <div class='graph__boundary'>
-            <div class='js-budget__bar bar'>
-              <div class='bar__item--solid bar__item' style='width: 30%; background-color: #16547E'>
-                <div class='bar-item__label' style='color: #fff'>
-                  <span class='bar-item__label-line--strong bar-item__label-line'>Kramerica</span>
-                  <span class='bar-item__label-line'>$15,000</span>
-                </div>
-              </div><div class='bar__item--solid bar__item' style='width: 25%; background-color: #EB5E28'>
-                <div class='bar-item__label' style='color: #fff'>
-                  <span class='bar-item__label-line--strong bar-item__label-line'>Vandelay Industries</span>
-                  <span class='bar-item__label-line'>$10,000</span>
-                </div>
-              </div><div class='bar__item--outlined bar__item' style='width: 15%; outline-color: #89CBE9'>
-                <div class='bar-item__label'>
-                  <span class='bar-item__label-line--strong bar-item__label-line'>J. Peterman</span>
-                  <span class='bar-item__label-line'>$7,500</span>
-                </div>
-              </div><div class='bar__item--outlined bar__item' style='width: 10%; outline-color: #EB5E28'>
-                <div class='bar-item__label'>
-                  <span class='bar-item__label-line--strong bar-item__label-line'>Vandelay</span>
-                  <span class='bar-item__label-line'>$5,000</span>
-                </div>
-              </div><div class='bar__item--dashed bar__item' style='width: 10%; outline-color: #16547E'>
-                <div class='bar-item__label'>
-                  <span class='bar-item__label-line--strong bar-item__label-line'>Kramerica</span>
-                  <span class='bar-item__label-line'>$5,000</span>
-                </div>
-              </div><div class='bar__item--dashed bar__item' style='width: 5%; outline-color: #89CBE9'>
-                <div class='bar-item__label'>
-                  <span class='bar-item__label-line--strong bar-item__label-line'>JP</span>
-                  <span class='bar-item__label-line'>$2,500</span>
+              <div class='js-budget__bar bar'>
+                <div class='bar__item--solid bar__item' style='width: 55%; background-color: #6BBD2E'>
+                  <div class='bar-item__label' style='color: #fff'>
+                    <span class='bar-item__label-line--strong bar-item__label-line'>Paid</span>
+                    <span class='bar-item__label-line'>$25,000</span>
+                  </div>
+                </div><div class='bar__item--outlined bar__item' style='width: 25%; outline-color: #6BBD2E'>
+                  <div class='bar-item__label'>
+                    <span class='bar-item__label-line--strong bar-item__label-line'>Invoiced</span>
+                    <span class='bar-item__label-line'>$15,000</span>
+                  </div>
+                </div><div class='bar__item--dashed bar__item' style='width: 15%; outline-color: #6BBD2E'>
+                  <div class='bar-item__label'>
+                    <span class='bar-item__label-line--strong bar-item__label-line'>Estimated</span>
+                    <span class='bar-item__label-line'>+$7,500</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class='js-budget__bar bar'>
-              <div class='bar__item--solid bar__item' style='width: 55%; background-color: #6BBD2E'>
-                <div class='bar-item__label' style='color: #fff'>
-                  <span class='bar-item__label-line--strong bar-item__label-line'>Paid</span>
-                  <span class='bar-item__label-line'>$25,000</span>
-                </div>
-              </div><div class='bar__item--outlined bar__item' style='width: 25%; outline-color: #6BBD2E'>
-                <div class='bar-item__label'>
-                  <span class='bar-item__label-line--strong bar-item__label-line'>Invoiced</span>
-                  <span class='bar-item__label-line'>$15,000</span>
-                </div>
-              </div><div class='bar__item--dashed bar__item' style='width: 15%; outline-color: #6BBD2E'>
-                <div class='bar-item__label'>
-                  <span class='bar-item__label-line--strong bar-item__label-line'>Estimated</span>
-                  <span class='bar-item__label-line'>+$7,500</span>
-                </div>
+            <div class='graph__ticks--bottom graph__ticks'>
+              <div class='graph__tick--point graph__tick' style='left: 0'>
+                <span class='graph-tick__label'>$0</span>
               </div>
-            </div>
-          </div>
 
-          <div class='graph__ticks--bottom graph__ticks'>
-            <div class='graph__tick--point graph__tick' style='left: 0'>
-              <span class='graph-tick__label'>$0</span>
-            </div>
+              <div class='graph__tick--point graph__tick' style='left: 20%'>
+                <span class='graph-tick__label'>$10k</span>
+              </div>
 
-            <div class='graph__tick--point graph__tick' style='left: 20%'>
-              <span class='graph-tick__label'>$10k</span>
-            </div>
+              <div class='graph__tick--point graph__tick' style='left: 40%'>
+                <span class='graph-tick__label'>$20k</span>
+              </div>
 
-            <div class='graph__tick--point graph__tick' style='left: 40%'>
-              <span class='graph-tick__label'>$20k</span>
-            </div>
+              <div class='graph__tick--point graph__tick' style='left: 60%'>
+                <span class='graph-tick__label'>$30k</span>
+              </div>
 
-            <div class='graph__tick--point graph__tick' style='left: 60%'>
-              <span class='graph-tick__label'>$30k</span>
-            </div>
+              <div class='graph__tick--point graph__tick' style='left: 80%'>
+                <span class='graph-tick__label'>$40k</span>
+              </div>
 
-            <div class='graph__tick--point graph__tick' style='left: 80%'>
-              <span class='graph-tick__label'>$40k</span>
-            </div>
-
-            <div class='graph__tick--point graph__tick' style='left: 100%'>
-              <span class='graph-tick__label'>$50k</span>
+              <div class='graph__tick--point graph__tick' style='left: 100%'>
+                <span class='graph-tick__label'>$50k</span>
+              </div>
             </div>
           </div>
         </div>

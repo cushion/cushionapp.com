@@ -3,3 +3,4 @@
 config.ru
 .bundle
 node_modules/
+assets/webfonts/
