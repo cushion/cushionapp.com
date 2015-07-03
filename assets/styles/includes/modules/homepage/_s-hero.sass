@@ -5,6 +5,22 @@
 .hero
   text-align: center
 
+  &.theme--light-blue
+    @extend .background--light-blue
+    color: $light-blue--dark
+
+  &.theme--yellow
+    background-color: $yellow
+    color: $yellow--dark
+
+  &.theme--green
+    background-color: $green
+    color: $green--dark
+
+  &.theme--purple
+    background-color: $purple
+    color: $purple--light
+
 
 //
 // title
@@ -19,6 +35,8 @@
     font-size: em(56)
     font-weight: 500
 
+  color: $white
+
 
 //
 // tagline
@@ -26,6 +44,10 @@
 
 .hero__title p
   font-size: em(16)
+  color: inherit
+
+  +min-width($mini-tablet)
+    font-size: em(18)
 
   +min-width($tablet)
     font-size: em(21)
@@ -42,15 +64,10 @@
 
 
 //
-// nudge
+// screenshot
 //
 
-.hero__nudge
-  color: $purple--light
-  transition: 1s opacity
-
-  &:hover
-    color: $black
-
-  .is-scrolled &
-    opacity: 0
+.hero__screenshot
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center bottom

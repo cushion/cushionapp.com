@@ -1,0 +1,14 @@
+{% assign section = site.pages.home.pages.behind-the-scenes %}
+<section class='theme--{{ section.meta.theme }} homepage__feature-section--wide homepage__feature-section homepage__section'>
+  <div class='grid-container--wide'>
+    {% for feature in section.pages %}
+      <div class='theme--{{ feature.meta.color }} feature--secondary feature'>
+        <div class='feature__copy'>
+          <h4 class='icon--{{ feature.meta.color }} ss-{{ feature.meta.icon }} icon-title feature__title'>{{ feature.title }}</h4>
+          {{ feature.body }}
+          <a class='feature__more' href='/{{ feature.slug }}'>Learn more&hellip;</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

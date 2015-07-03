@@ -1,4 +1,56 @@
 //
+// section
+//
+
+.homepage__section
+  &.theme--black
+    background-color: $darkest-grey
+    color: $white
+
+
+//
+// text
+//
+
+.homepage__text-section
+  text-align: center
+
+  +min-width($mini-tablet)
+    font-size: em(21)
+
+  +min-width($tablet)
+    font-size: em(32)
+
+
+//
+// next
+//
+
+.homepage__next-section
+  p
+    margin-top: em(2)
+    line-height: 1em
+
+  .link
+    color: $white
+
+  .icon
+    font-size: em(12)
+
+  &.theme--green
+    background-color: $green
+
+    .icon
+      color: $yellow
+
+  &.theme--purple
+    background-color: $purple
+
+    .icon
+      color: $yellow
+
+
+//
 // outro
 //
 

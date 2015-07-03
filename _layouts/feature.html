@@ -1,0 +1,46 @@
+{% capture content %}
+  <section class='theme--{{ meta.theme }} hero'>
+    {% include 'includes/header' %}
+
+    <div class='hero__header grid-container--wide'>
+      <div class='hero__title'>
+        <h2>{{ title }}</h2>
+        {{ body }}
+      </div>
+    </div>
+
+    <div class='grid-container--wider'>
+      <div class='hero__screenshot' style='background-image: url({{ meta.hero-image }}); padding-bottom: {{ meta.hero-ratio }}'></div>
+    </div>
+  </section>
+
+  <section class='grid-container--wide homepage__text-section homepage__section'>
+    {{ pages.intro.body }}
+  </section>
+
+  {% assign features = pages | where:"meta.type","feature" %}
+  {% include 'includes/features' %}
+
+  {% if next %}
+  <section class='theme--{{ next.meta.theme }} homepage__next-section homepage__text-section homepage__section'>
+    <p>
+      <a class='link' href='{{ next.url }}'>Learn about {{ next.title | downcase }} in Cushion <span class='icon ss-right'></span></a>
+    </p>
+  </section>
+  {% endif %}
+
+  {% include 'includes/process' %}
+
+  <section class='homepage__section'>
+    {% assign section = site.pages.home.pages.outro %}
+    <div class='grid-container--wide homepage__outro'>
+      <div class='homepage__message'>{{ section.body }}</div>
+
+      {% include 'includes/newsletter' %}
+    </div>
+  </section>
+
+  <script src='/assets/scripts/newsletter.js'></script>
+{% endcapture %}
+
+{% include 'layouts/default' %}

@@ -3,16 +3,33 @@
 //
 
 .homepage__section
-  padding: em(20) em(15)
+  padding: em(30) 0
   overflow: hidden
 
   +min-width($tablet)
-    padding-top: em(60)
-    padding-bottom: em(60)
+    padding-top: rem(60)
+    padding-bottom: rem(60)
 
   +min-width($laptop)
-    padding-top: em(100)
-    padding-bottom: em(100)
+    padding-top: rem(80)
+    padding-bottom: rem(80)
+
+
+//
+// next
+//
+
+.homepage__next-section
+  +min-width($tablet)
+    padding-top: rem(30)
+    padding-bottom: rem(30)
+
+  +min-width($laptop)
+    padding-top: rem(30)
+    padding-bottom: rem(30)
+
+  .icon
+    margin-left: em(4)
 
 //
 // message
@@ -21,15 +38,3 @@
 .homepage__outro
   .homepage__message
     margin: em(20) 0 em(30)
-
-
-//
-// outro
-//
-
-.homepage__outro
-  .newsletter
-    margin-bottom: em(20)
-
-    +min-width($tablet)
-      margin-bottom: em(40)

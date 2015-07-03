@@ -1,0 +1,29 @@
+<style>
+{% for feature in features %}
+  #feature-{{ feature.slug }} .feature__background {
+    background-image: url({{ feature.meta.image }});
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    #feature-{{ feature.slug }} .feature__background {
+      background-image: url({{ feature.meta.image | replace:'.','@2x.' }});
+    }
+  }
+{% endfor %}
+</style>
+<section class='homepage__feature-section--primary homepage__feature-section homepage__section'>
+{% for feature in features %}
+  <div id='feature-{{ feature.slug }}' class='{% if feature.meta.color %}theme--{{ feature.meta.color }} {% endif %}feature--primary feature--{% cycle "odd", "even" %} feature'>
+    <a class='feature__background'{% if feature.meta.link %} href='{{ feature.meta.link }}'{% endif %}></a>
+    <div class='grid-container--wide'>
+      <div class='feature__copy'>
+        <h3 class='{% if feature.meta.icon %}icon--{{ feature.meta.color }} ss-{{ feature.meta.icon }} icon-title {% endif %}feature__title'>{% if feature.meta.link %}<a href='{{ feature.meta.link }}'>{% endif %}{{ feature.title }}{% if feature.meta.link %}</a>{% endif %}</h3>
+        {{ feature.body }}
+        {% if feature.meta.link %}
+          <a class='feature__more' href='{{ feature.meta.link }}'>Learn more&hellip;</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</section>

@@ -1,43 +1,87 @@
 //
-// column
+// section
 //
 
-.homepage__feature-column
+.homepage__feature-section--secondary
+  border-top: solid 1px $lighter-grey
+
+
+//
+// feature
+//
+
+.feature--primary
   +min-width($tablet)
-    font-size: 112.5%
+    border-top: solid 1px $lighter-grey
+
+    &:before
+      border-right: solid 1px $lighter-grey
 
 
 //
 // title
 //
 
-.homepage__feature-column h4
+.feature__title
   font-size: em(18)
-  line-height: 2em
-  font-weight: 700
 
+  +min-width($mini-tablet)
+    font-size: em(20)
 
-//
-// body
-//
+  +min-width($tablet)
+    font-size: em(24)
 
-.homepage__feature-column
-  p
-    font-size: em(16)
+.feature__copy p
+  +min-width($mini-tablet)
+    font-size: em(18)
 
-    a
-      @extend .link--border
+  +min-width($tablet)
+    font-size: em(20)
 
 
 //
 // image
 //
 
-.homepage__feature-image
-  border-radius: 4px
+.feature__background
   background-repeat: no-repeat
-  background-size: auto 100%
-  transition: 0.5s opacity
+  background-size: 638px 200px
+  border-top: solid 1px $lighter-grey
+  border-bottom: solid 1px $lighter-grey
 
-  &.is-hidden
-    opacity: 0
+  +min-width($mini-tablet)
+    background-size: 958px 300px
+
+  +min-width($tablet)
+    background-size: 1276px 400px
+    border: none
+
+  .feature--odd &
+    background-position: left center
+
+  .feature--even &
+    background-position: right center
+
+
+//
+// more
+//
+
+.feature__more
+  .theme--yellow &
+    color: $yellow
+
+  .theme--green &
+    color: $green
+
+  .theme--purple &
+    color: $purple
+
+  .theme--blue &
+    color: $blue
+
+  &:hover
+    color: $darkest-grey
+
+  .theme--black &:hover
+    color: $white

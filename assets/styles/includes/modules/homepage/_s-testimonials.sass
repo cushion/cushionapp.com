@@ -1,39 +1,74 @@
 //
-// testimonial
+// section
 //
 
-.testimonial
-  font: $copy-font
-  font-size: em(16)
+.homepage__testimonials-section
+  background-color: $blue
+  color: darken($blue, 25%)
+
+
+.testimonials__title
+  font-size: em(18)
+  text-align: center
+
+  +min-width($mini-tablet)
+    font-size: em(20)
 
   +min-width($tablet)
-    font-size: 112.5%
-
-
-//
-// avatar
-//
-
-.testimonial__avatar
-  border-radius: 50%
-  border: solid 3px
-
-
-//
-// avatar image
-//
-
-.testimonial__avatar-image
-  border-radius: 50%
-  background-repeat: no-repeat
-  background-size: contain
+    font-size: em(24)
 
 
 //
 // quote
 //
 
+.testimonial
+  +min-width($mini-tablet)
+    font-size: 125%
+
+  +min-width($tablet)
+    font-size: 200%
+    text-align: center
+
 .testimonial__quote
+  color: $white
+
   a
     @extend .link--hover-border
     font-style: italic
+
+.testimonial__quotation-mark
+  font-size: em(32)
+  line-height: 0
+  color: darken($blue, 20%)
+
+
+//
+// author
+//
+
+.testimonial__author
+  font-style: italic
+  text-align: right
+  color: inherit
+
+  &:before
+    content: '@'
+
+  +min-width($mini-tablet)
+    font-size: rem(16)
+
+  +min-width($tablet)
+    text-align: center
+
+
+.testimonial__avatar
+  border-radius: 50%
+
+  +min-width($mini-tablet)
+    font-size: em(12)
+
+.testimonial__avatar-image
+  border-radius: 50%
+  background-repeat: no-repeat
+  background-size: contain

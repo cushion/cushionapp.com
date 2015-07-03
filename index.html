@@ -1,198 +1,73 @@
-{% capture alert %}
-  {% if meta.alert %}
-    <div class='alert'>{{ meta.alert | md }}</div>
-  {% endif %}
+{% capture head %}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.min.css">
 {% endcapture %}
 
 {% capture content %}
-  <section class='grid-container--wide hero'>
-    {% assign section = pages.hero %}
+  <section class='theme--{{ meta.theme }} hero'>
+    {% include 'includes/header' %}
 
-    <div class='hero__title'>
-      {{ section.body }}
-    </div>
+    <div class='hero__header grid-container--wide'>
+      {% assign section = pages.hero %}
 
-    {% include 'includes/newsletter' %}
-
-    {{ alert }}
-
-    <a class='js-hero__nudge no-mobile hero__nudge ss-navigatedown' href='#budget'></a>
-  </section>
-
-  <section id='budget' class='background--light homepage__section'>
-    <div class='js-budget__graph'>
-      <div class='budget-graph-container'>
-        <div class='feature-column__graph-container'>
-          <div class='feature-column__graph graph'>
-            <div class='graph__ticks--top graph__ticks'>
-              <div class='graph__tick--point graph__tick' style='left: 70%'>
-                <span class='graph-tick__label'>minimum</span>
-              </div>
-
-              <div class='graph__tick--point graph__tick' style='left: 85%'>
-                <span class='graph-tick__label'>target</span>
-              </div>
-
-              <div class='graph__tick--point graph__tick' style='left: 100%'>
-                <span class='graph-tick__label'>stretch</span>
-              </div>
-            </div>
-
-            <div class='graph__boundary'>
-              <div class='js-budget__bar bar'>
-                <div class='bar__item--solid bar__item' style='width: 30%; background-color: #16547E'>
-                  <div class='bar-item__label' style='color: #fff'>
-                    <span class='bar-item__label-line--strong bar-item__label-line'>Kramerica</span>
-                    <span class='bar-item__label-line'>$15,000</span>
-                  </div>
-                </div><div class='bar__item--solid bar__item' style='width: 25%; background-color: #EB5E28'>
-                  <div class='bar-item__label' style='color: #fff'>
-                    <span class='bar-item__label-line--strong bar-item__label-line'>Vandelay Industries</span>
-                    <span class='bar-item__label-line'>$10,000</span>
-                  </div>
-                </div><div class='bar__item--outlined bar__item' style='width: 15%; outline-color: #89CBE9'>
-                  <div class='bar-item__label'>
-                    <span class='bar-item__label-line--strong bar-item__label-line'>J. Peterman</span>
-                    <span class='bar-item__label-line'>$7,500</span>
-                  </div>
-                </div><div class='bar__item--outlined bar__item' style='width: 10%; outline-color: #EB5E28'>
-                  <div class='bar-item__label'>
-                    <span class='bar-item__label-line--strong bar-item__label-line'>Vandelay</span>
-                    <span class='bar-item__label-line'>$5,000</span>
-                  </div>
-                </div><div class='bar__item--dashed bar__item' style='width: 10%; outline-color: #16547E'>
-                  <div class='bar-item__label'>
-                    <span class='bar-item__label-line--strong bar-item__label-line'>Kramerica</span>
-                    <span class='bar-item__label-line'>$5,000</span>
-                  </div>
-                </div><div class='bar__item--dashed bar__item' style='width: 5%; outline-color: #89CBE9'>
-                  <div class='bar-item__label'>
-                    <span class='bar-item__label-line--strong bar-item__label-line'>JP</span>
-                    <span class='bar-item__label-line'>$2,500</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class='js-budget__bar bar'>
-                <div class='bar__item--solid bar__item' style='width: 55%; background-color: #6BBD2E'>
-                  <div class='bar-item__label' style='color: #fff'>
-                    <span class='bar-item__label-line--strong bar-item__label-line'>Paid</span>
-                    <span class='bar-item__label-line'>$25,000</span>
-                  </div>
-                </div><div class='bar__item--outlined bar__item' style='width: 25%; outline-color: #6BBD2E'>
-                  <div class='bar-item__label'>
-                    <span class='bar-item__label-line--strong bar-item__label-line'>Invoiced</span>
-                    <span class='bar-item__label-line'>$15,000</span>
-                  </div>
-                </div><div class='bar__item--dashed bar__item' style='width: 15%; outline-color: #6BBD2E'>
-                  <div class='bar-item__label'>
-                    <span class='bar-item__label-line--strong bar-item__label-line'>Estimated</span>
-                    <span class='bar-item__label-line'>+$7,500</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class='graph__ticks--bottom graph__ticks'>
-              <div class='graph__tick--point graph__tick' style='left: 0'>
-                <span class='graph-tick__label'>$0</span>
-              </div>
-
-              <div class='graph__tick--point graph__tick' style='left: 20%'>
-                <span class='graph-tick__label'>$10k</span>
-              </div>
-
-              <div class='graph__tick--point graph__tick' style='left: 40%'>
-                <span class='graph-tick__label'>$20k</span>
-              </div>
-
-              <div class='graph__tick--point graph__tick' style='left: 60%'>
-                <span class='graph-tick__label'>$30k</span>
-              </div>
-
-              <div class='graph__tick--point graph__tick' style='left: 80%'>
-                <span class='graph-tick__label'>$40k</span>
-              </div>
-
-              <div class='graph__tick--point graph__tick' style='left: 100%'>
-                <span class='graph-tick__label'>$50k</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class='hero__title'>
+        {{ section.body }}
       </div>
 
-      <div class='homepage__feature-row'>
-        {% for feature in pages.budget.pages %}
-        <article class='js-budget__feature homepage__feature-column'>
+      {% include 'includes/newsletter' %}
+
+      <div class='hero__alert alert'>
+        <p>Cushion is currently in private beta.</p>
+      </div>
+    </div>
+
+    <div class='grid-container--wider'>
+      <div class='hero__screenshot' style='background-image: url({{ section.meta.image }}); padding-bottom: {{ section.meta.image-ratio }}'></div>
+    </div>
+  </section>
+
+  <section class='grid-container--wide homepage__text-section homepage__section'>
+    {{ pages.intro.body }}
+  </section>
+
+  {% assign features = pages.features.pages | where:"meta.type","primary" %}
+  {% include 'includes/features' %}
+
+  <section class='homepage__feature-section--secondary homepage__feature-section homepage__section'>
+    <div class='grid-container--wide'>
+    {% assign features = pages.features.pages | where:"meta.type","secondary" %}
+    {% for feature in features %}
+      <div class='feature--secondary feature'>
+        <div class='feature__copy'>
+          <h3 class='icon--{{ feature.meta.color }} ss-{{ feature.meta.icon }} icon-title feature__title'>{{ feature.title }}</h3>
           {{ feature.body }}
-        </article>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  <section id='schedule' class='homepage__section'>
-    <div class='js-schedule__graph homepage__feature-row'>
-      {% for feature in pages.schedule.pages %}
-      <article class='js-schedule__feature homepage__feature-column--schedule homepage__feature-column'>
-        <div class='timeline'>
-          <div class='timeline__rows'>
-            {{ feature.meta.timeline }}
-          </div>
-
-          {{ feature.meta.tooltip }}
         </div>
-
-        {{ feature.body }}
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section id='insights' class='background--light homepage__section'>
-    <div class='homepage__feature-row'>
-      <div class='homepage__feature-column--image homepage__feature-column'>
-        {% for asset in pages.insights.assets %}
-        <div class='js-insight__image homepage__feature-image' style='background-image: url({{ asset.url }});'></div>
-        {% endfor %}
       </div>
-
-      <article class='homepage__feature-column'>
-        {{ pages.insights.body }}
-      </article>
+    {% endfor %}
     </div>
   </section>
 
-  <section class='homepage__section'>
-    <div class='grid-container--wide testimonials__list'>
-      {% for testimonial in pages.testimonials.pages %}
-      <article class='testimonial'>
-        <div class='border--{{ testimonial.meta.color }} testimonial__avatar'>
-          <div class='testimonial__avatar-image' style='background-image: url({{ testimonial.assets.first }})'></div>
+  <section class='testimonials homepage__testimonials-section homepage__section'>
+    {% assign section = pages.testimonials %}
+    <h3 class='icon--yellow ss-{{ section.meta.icon }} icon-title testimonials__title'>{{ section.title }}</h3>
+
+    <div class='js-flickity' data-flickity-options='{ "cellAlign": "left", "contain": true, "watchCSS": true, "accessibility": false, "contain": false, "wrapAround": true, "pageDots": false, "draggable": false }'>
+    {% for testimonial in section.pages %}
+      <div class='{% if testimonial.meta.mobile %}mobile{% endif %} testimonial'>
+        <div class='grid-container--narrow'>
+          <blockquote class='testimonial__quote'>
+            <p><span class='testimonial__quotation-mark'>“</span>{{ testimonial.body_raw }}<span class='testimonial__quotation-mark'>”</span></p>
+          </blockquote>
+          <a class='testimonial__avatar' href='https://twitter.com/{{ testimonial.meta.author }}'>
+            <span class='testimonial__avatar-image' style='background-image: url({{ testimonial.assets.first.url }})'></span>
+          </a>
+          <a class='testimonial__author' href='https://twitter.com/{{ testimonial.meta.author }}'>{{ testimonial.meta.author }}</a>
         </div>
-
-        <div class='testimonial__quote'>
-          {{ testimonial.body }}
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class='background--light homepage__section'>
-    <div class='homepage__feature-row'>
-      <article class='homepage__feature-column--process homepage__feature-column'>
-        {{ pages.process.body }}
-      </article>
-
-      <div class='homepage__feature-column--image homepage__feature-column'>
-        {% for asset in pages.process.assets %}
-        <a class='homepage__feature-image' href='{{ site.pages.journal.url }}' style='background-image: url({{ asset.url }});'></a>
-        {% endfor %}
       </div>
+    {% endfor %}
     </div>
   </section>
+
+  {% include 'includes/process' %}
 
   <section class='homepage__section'>
     {% assign section = pages.outro %}
@@ -200,12 +75,10 @@
       <div class='homepage__message'>{{ section.body }}</div>
 
       {% include 'includes/newsletter' %}
-
-      {{ alert }}
     </div>
   </section>
 
-  <script src='/assets/scripts/homepage.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
   <script src='/assets/scripts/newsletter.js'></script>
 {% endcapture %}
 

@@ -1,18 +1,10 @@
 //
-// hero
+// header
 //
 
-.hero
-  margin-top: em(60)
-  margin-bottom: em(60)
-
-  +min-width($mini-tablet)
-    margin-top: em(92)
-    margin-bottom: em(92)
-
-  +min-height(721px)
-    margin-top: em(144)
-    margin-bottom: em(144)
+.hero__header
+  +min-height($laptop)
+    padding-top: em(30)
 
 //
 // tagline
@@ -28,18 +20,38 @@
 
 .hero
   .newsletter
-    margin: em(40) 0
+    margin-top: em(30)
+
+    +min-width($tablet)
+      margin-top: em(40)
+
 
 
 //
-// nudge
+// alert
 //
 
 .hero
-  position: relative
+  .hero__alert
+    margin-top: em(20)
 
-  .hero__nudge
-    position: absolute
-    bottom: em(-90)
-    left: 50%
-    transform: translateX(-50%)
+    +min-width($mini-tablet)
+      margin-top: em(30)
+
+    +min-width($tablet)
+      margin-top: em(40)
+
+
+//
+// screenshot
+//
+
+.hero__screenshot
+  height: 0
+
+.hero
+  .hero__screenshot
+    margin-top: em(30)
+
+    +min-width($tablet)
+      margin-top: em(80)

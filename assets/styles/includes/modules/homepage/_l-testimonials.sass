@@ -2,74 +2,108 @@
 // testimonial
 //
 
-.testimonial
-
-
-.testimonials__list
-  margin-top: 20px
-  margin-bottom: -20px
-
+.testimonials
   .testimonial
-    margin-bottom: 40px
-
-  +min-width($tablet)
-    margin-top: 0
-    margin-bottom: -40px
-
-    .testimonial
-      +span-columns(6 of 12)
-
-      &:nth-child(2n)
-        +omega
-
-
-//
-// avatar
-//
-
-.testimonial__avatar
-  width: 72px
-  height: 72px
-  overflow: hidden
-
-
-.testimonial
-  position: relative
-
-  .testimonial__avatar
-    margin: 0 auto em(15)
-
-  +min-width($mini-tablet)
-    padding-left: 72px + 16px
-
-    .testimonial__avatar
-      position: absolute
-      top: 0
-      left: 0
-
-      margin: 0
-
-
-//
-// avatar image
-//
-
-.testimonial__avatar
-  position: relative
-
-  .testimonial__avatar-image
-    position: absolute
-    left: 0
-    top: 0
-
+    display: none
     width: 100%
-    height: 100%
+    margin-top: rem(40)
 
+    &.mobile
+      display: block
+
+    +min-width($tablet)
+      display: block
+      margin-top: 0
+
+
+//
+// title
+//
+
+.testimonials
+  .testimonials__title
+    margin-bottom: rem(40)
 
 //
 // quote
 //
 
 .testimonial__quote
-  p:last-child
-    margin-top: em(4)
+  .testimonial__quotation-mark
+    position: relative
+    top: em(4)
+
+    &:first-child
+      left: em(-1)
+
+
+//
+// author
+//
+
+.testimonial__author
+  display: block
+
+.testimonial__avatar
+  display: inline-block
+  width: 72px
+  height: 72px
+  overflow: hidden
+
+
+.testimonial
+  .testimonial__avatar
+    display: none
+
+    +min-width($tablet)
+      display: inline-block
+      margin-top: em(20)
+
+
+.testimonial__avatar-image
+  display: block
+  height: 0
+  padding-bottom: 100%
+
+
+
+//
+// flickity
+//
+
+.testimonials
+  .js-flickity:after
+    display: none
+    content: ''
+
+    +min-width($tablet)
+      content: 'flickity'
+
+  .flickity-viewport
+    +clearfix
+    overflow: visible
+
+  .flickity-prev-next-button.previous
+    left: 50%
+    margin-left: -$narrow-container-width / 2
+    transform: translate(-100%, -50%)
+
+  .flickity-prev-next-button.next
+    left: 50%
+    right: auto
+    margin-left: $narrow-container-width/2
+
+  .flickity-prev-next-button,
+  .flickity-prev-next-button:hover
+    background: none
+
+  .flickity-prev-next-button .arrow
+    fill: $white
+
+  +min-width($tablet)
+    .testimonial
+      opacity: 0
+      transition: 1s opacity
+
+      &.is-selected
+        opacity: 1
