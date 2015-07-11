@@ -1,0 +1,96 @@
+//
+// plan
+//
+
+.plan
+  width: 100%
+  max-width: 300px
+  padding: 44px 0 48px
+
+  overflow: hidden
+  vertical-align: top
+
+  +min-width($mini-tablet)
+    width: 48.5%
+
+
+.plan-list
+  .plan
+    margin: em(20) auto 0
+
+    &:first-child
+      margin-top: 0
+
+    +min-width($mini-tablet)
+      display: inline-block
+      margin-top: 0
+      margin-left: 3%
+
+      &:first-child
+        margin-left: 0
+
+    +min-width($tablet)
+      margin-left: em(20)
+
+
+//
+// price
+//
+
+.plan__price
+  display: inline-block
+  position: relative
+
+.plan
+  .plan__price
+    margin-bottom: 22px
+
+
+//
+// price symbol
+//
+
+.plan__price
+  .plan__price-symbol
+    position: absolute
+    top: 6px
+    right: 100%
+    margin-right: -1px
+
+
+//
+// price cycle
+//
+
+.plan__price
+  .plan__price-cycle
+    position: absolute
+    left: 100%
+    bottom: 5px
+    margin-left: -1px
+
+
+//
+// name
+//
+
+.plan
+  .plan__name
+    margin-bottom: 7px
+
+
+//
+// note
+//
+
+.plan
+  .plan__note
+    margin-bottom: 26px
+
+
+//
+// button
+//
+
+.plan__button
+  min-width: 106px

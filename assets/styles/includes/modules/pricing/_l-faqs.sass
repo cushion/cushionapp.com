@@ -1,0 +1,52 @@
+//
+// faq list
+//
+
+.homepage__section
+  .faq-list
+    margin-top: em(20)
+
+    +min-width($tablet)
+      margin-top: em(30)
+
+
+//
+// faq
+//
+
+.faq-list
+  .faq
+    margin-top: em(30)
+
+    &:first-child
+      margin-top: 0
+
+    +min-width($mini-tablet)
+      +span-columns(6)
+
+      &:nth-child(2)
+        margin-top: 0
+
+    +min-max-width($mini-tablet, $laptop)
+      &:nth-child(2n)
+        +omega
+
+    +min-width($laptop)
+      +span-columns(4)
+
+      &:nth-child(3)
+        margin-top: 0
+
+      &:nth-child(3n)
+        +omega
+
+
+//
+// answer
+//
+
+.faq p
+  margin-top: em(6)
+
+  a
+    @extend .link--border

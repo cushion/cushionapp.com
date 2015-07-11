@@ -25,6 +25,10 @@
   @media only screen and (min-height: $media)
     @content
 
+=min-max-width($min, $max)
+  @media only screen and (min-width: $min) and (max-width: $max)
+    @content
+
 //============================================================
 //
 // Copyright (C) 2012 Matthew Wagerfield

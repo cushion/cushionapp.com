@@ -1,0 +1,55 @@
+{% capture content %}
+  <section class='theme--{{ meta.theme }} pricing-hero hero'>
+    {% include 'includes/header' %}
+
+    <div class='hero__header grid-container--wide'>
+      <div class='hero__title'>
+        <h2>{{ meta.title }}</h2>
+        {{ body }}
+      </div>
+
+      <div class='plan-list'>
+        {% for plan in pages.plans.pages %}<div class='plan'>
+          <h5 class='plan__price'>
+            <span class='plan__price-symbol'>$</span>
+
+            <span class='plan__price-number'>{{ plan.meta.price }}</span>
+            <span class='plan__price-cycle'>/mo</span>
+          </h5>
+
+          <h4 class='plan__name'>{{ plan.title }}</h4>
+
+          <div class='plan__note'>{{ plan.body }}</div>
+
+          <a class='plan__button primary-button button' href='{{ site.meta.app }}/signup'>{{ plan.meta.button }}</a>
+        </div>{% endfor %}
+      </div>
+
+      <div class='hero__alert alert'>
+        {{ meta.alert }}
+      </div>
+    </div>
+  </section>
+
+  <section class='pricing-faq-section homepage__section'>
+    <div class='grid-container--wide'>
+      <h3 class='icon--purple ss-help feature__title icon-title'>{{ pages.faqs.title }}</h3>
+
+      <div class='faq-list'>
+      {% for question in pages.faqs.pages %}
+        <div class='faq'>
+          <h4 class='faq__question'>{{ question.title }}</h4>
+          {{ question.body }}
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </section>
+
+
+  {% include 'includes/testimonials' %}
+  {% include 'includes/process' %}
+  {% include 'includes/outro' %}
+{% endcapture %}
+
+{% include 'layouts/default' %}

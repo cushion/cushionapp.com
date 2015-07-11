@@ -1,0 +1,10 @@
+<section class='homepage__section'>
+  {% assign section = site.pages.home.pages.outro %}
+  <div class='grid-container--wide homepage__outro'>
+    <div class='homepage__message'>{{ section.body }}</div>
+
+    {% include 'includes/newsletter' %}
+  </div>
+</section>
+
+<script src='/assets/scripts/newsletter.js'></script>

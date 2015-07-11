@@ -42,40 +42,9 @@
     </div>
   </section>
 
-  <section class='testimonials homepage__testimonials-section homepage__section'>
-    {% assign section = pages.testimonials %}
-    <h3 class='icon--yellow ss-{{ section.meta.icon }} icon-title testimonials__title'>{{ section.title }}</h3>
-
-    <div class='js-flickity' data-flickity-options='{ "cellAlign": "left", "contain": true, "watchCSS": true, "accessibility": false, "contain": false, "wrapAround": true, "pageDots": false, "draggable": false }'>
-    {% for testimonial in section.pages %}
-      <div class='{% if testimonial.meta.mobile %}mobile{% endif %} testimonial'>
-        <div class='grid-container--narrow'>
-          <blockquote class='testimonial__quote'>
-            <p><span class='testimonial__quotation-mark'>“</span>{{ testimonial.body_raw }}<span class='testimonial__quotation-mark'>”</span></p>
-          </blockquote>
-          <a class='testimonial__avatar' href='https://twitter.com/{{ testimonial.meta.author }}'>
-            <span class='testimonial__avatar-image' style='background-image: url({{ testimonial.assets.first.url }})'></span>
-          </a>
-          <a class='testimonial__author' href='https://twitter.com/{{ testimonial.meta.author }}'>{{ testimonial.meta.author }}</a>
-        </div>
-      </div>
-    {% endfor %}
-    </div>
-  </section>
-
+  {% include 'includes/testimonials' %}
   {% include 'includes/process' %}
-
-  <section class='homepage__section'>
-    {% assign section = pages.outro %}
-    <div class='grid-container--wide homepage__outro'>
-      <div class='homepage__message'>{{ section.body }}</div>
-
-      {% include 'includes/newsletter' %}
-    </div>
-  </section>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.0/flickity.pkgd.min.js"></script>
-  <script src='/assets/scripts/newsletter.js'></script>
+  {% include 'includes/outro' %}
 {% endcapture %}
 
 {% include 'layouts/default' %}
