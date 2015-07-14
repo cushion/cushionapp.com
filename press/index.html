@@ -9,6 +9,15 @@
   </section>
 
   <section class='thumbnail-section'>
+    {% assign section = pages.description %}
+    <h3 class='icon--{{ section.meta.color }} ss-{{ section.meta.icon }} icon-title section__title'>{{ section.title }}</h3>
+
+    <div class='press__body'>
+      {{ section.body }}
+    </div>
+  </section>
+
+  <section class='thumbnail-section'>
     {% assign section = pages.identity %}
     <h3 class='icon--{{ section.meta.color }} ss-{{ section.meta.icon }} icon-title section__title'>{{ section.title }}</h3>
 
