@@ -9,9 +9,17 @@
         {% endunless %}
       {% endunless %}
     {% endfor %}
-    <li class='no-mobile page-nav__item'>
-      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign In</a>
+
+    {% if home? or slug == 'pricing' %}
+    <li class='page-nav__item'>
+      <a class='page-nav__link' href='https://beta.cushionapp.com/login'>Sign in</a>
     </li>
+    {% elsif nav != 'bottom' %}
+    <li class='page-nav__item'>
+      <a class='page-nav__button button' href='/pricing'>Sign up</a>
+    </li>
+    {% endif %}
+
     <li class='page-nav__item'>
       <a class='ss-icon page-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
     </li>

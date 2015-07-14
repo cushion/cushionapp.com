@@ -66,14 +66,24 @@
   font-family: $base-font-family
 
   border-radius: em(4)
-  border: solid 1px $blue
+  border: solid 1px $green
   outline: none
-  background-color: $blue
+  background-color: $green
   color: $white
 
   .theme--light-blue &
+    border-color: $blue
+    background-color: $blue
+
+  .theme--green &,
+  &.signup-button,
+  &--purple
     border-color: $purple
     background-color: $purple
+
+  &--green
+    border-color: $green
+    background-color: $green
 
   &:hover
     background-color: $black
@@ -128,6 +138,9 @@
 
   a
     @extend .link--underline
+
+  strong
+    font-weight: 600
 
   &--positive
     background-color: $green--light

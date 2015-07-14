@@ -9,10 +9,12 @@
         {{ section.body }}
       </div>
 
-      {% include 'includes/newsletter' %}
+      <div class='hero__buttons'>
+        <a id='learn-more' class='hero__button button' href='#more'>Learn more</a><a class='signup-button hero__button button' href='/pricing'>Sign up free</a>
+      </div>
 
       <div class='hero__alert alert'>
-        <p>Cushion is currently in private beta.</p>
+        {{ section.meta.alert | markdown }}
       </div>
     </div>
 
@@ -21,7 +23,7 @@
     </div>
   </section>
 
-  <section class='grid-container--wide homepage__text-section homepage__section'>
+  <section id='more' class='grid-container--wide homepage__text-section homepage__section'>
     {{ pages.intro.body }}
   </section>
 
@@ -42,9 +44,37 @@
     </div>
   </section>
 
+  <section class='theme--green homepage__next-section homepage__text-section homepage__section'>
+    <p>
+      <a class='link' href='/pricing'>Try Cushion for <strong>free</strong> <a class='button' href='/pricing'>Sign up</a></span></a>
+    </p>
+  </section>
+
   {% include 'includes/testimonials' %}
   {% include 'includes/process' %}
-  {% include 'includes/outro' %}
+
+  <section class='homepage__section'>
+    {% assign section = site.pages.home.pages.outro %}
+    <div class='grid-container--wide homepage__outro'>
+      <div class='homepage__message'>{{ section.body }}</div>
+
+      <a class='button--green outro__button button' href='/pricing'>Sign up</a>
+    </div>
+  </section>
+{% endcapture %}
+
+{% capture foot %}
+  <script>
+    $(function() {
+      $('#learn-more').click(function(e) {
+        e.preventDefault();
+
+        $('html,body').animate({
+          scrollTop: $('#more').offset().top
+        }, 1000);
+      });
+    });
+  </script>
 {% endcapture %}
 
 {% include 'layouts/default' %}

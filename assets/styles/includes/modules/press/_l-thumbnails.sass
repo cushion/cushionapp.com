@@ -1,0 +1,83 @@
+//
+// body
+//
+
+.press
+  .press__body
+    margin-top: em(10)
+
+    +min-width($tablet)
+      margin-top: em(30)
+
+
+//
+// section
+//
+
+.thumbnail-section
+  padding: em(30) 0
+  overflow: hidden
+
+
+//
+// thumbnail
+//
+
+.thumbnail-list
+  margin-top: em(20)
+
+  .thumbnail
+    margin-top: em(30)
+
+    +max-width($mini-tablet)
+      &:first-child
+        margin-top: 0
+
+    +min-max-width($mini-tablet, $laptop)
+      +span-columns(6)
+      margin-top: em(30)
+
+      &:first-child,
+      &:nth-child(2)
+        margin-top: 0
+
+      &:nth-child(2n)
+        +omega
+
+    +min-width($laptop)
+      +span-columns(3)
+      margin-top: flex-gutter()
+
+      &:first-child,
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        margin-top: 0
+
+      &:nth-child(4n)
+        +omega
+
+//
+// image
+//
+
+.thumbnail__image
+  display: block
+  height: 0
+  padding-bottom: 50%
+
+  +min-width($tablet)
+    padding-bottom: 100%
+
+
+//
+// title
+//
+
+.thumbnail__title
+  display: block
+
+
+.thumbnail
+  .thumbnail__title
+    margin-top: em(10, 14)

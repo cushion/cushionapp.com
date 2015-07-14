@@ -37,6 +37,12 @@
   .icon
     font-size: em(12)
 
+  &.theme--yellow
+    background-color: $yellow
+
+    .icon
+      color: $purple
+
   &.theme--green
     background-color: $green
 
@@ -49,6 +55,12 @@
     .icon
       color: $yellow
 
+  &.theme--light-blue
+    background-color: $light-blue
+
+    .icon
+      color: $purple
+
 
 //
 // outro
@@ -57,8 +69,11 @@
 .homepage__outro
   text-align: center
 
+  +min-width($mini-tablet)
+    font-size: 125%
+
   +min-width($tablet)
-    font-size: 112.5%
+    font-size: 150%
 
 
 //
@@ -67,3 +82,17 @@
 
 .homepage__message
   font-size: em(18)
+
+
+//
+// title
+//
+
+.section__title
+  font-size: em(18)
+
+  +min-width($mini-tablet)
+    font-size: em(20)
+
+  +min-width($tablet)
+    font-size: em(24)

@@ -26,7 +26,7 @@
       </div>
 
       <div class='hero__alert alert'>
-        {{ meta.alert }}
+        {{ meta.alert | markdown }}
       </div>
     </div>
   </section>
@@ -46,10 +46,16 @@
     </div>
   </section>
 
-
   {% include 'includes/testimonials' %}
-  {% include 'includes/process' %}
-  {% include 'includes/outro' %}
+
+  <section class='homepage__section'>
+    {% assign section = site.pages.home.pages.outro %}
+    <div class='grid-container--wide homepage__outro'>
+      <div class='homepage__message'>{{ section.body }}</div>
+
+      <a class='button--green outro__button button' href='https://beta.cushionapp.com/signup'>Sign up</a>
+    </div>
+  </section>
 {% endcapture %}
 
 {% include 'layouts/default' %}

@@ -23,7 +23,12 @@ $ ->
       if data.result == 'success'
         newsletterAlert('positive', data.msg)
       else
-        newsletterAlert('negative', data.msg.replace(/(^\d \- )|( \(\#\d+\)$)/, ''))
+        message = data.msg.replace(/(^\d \- )|( \(\#\d+\)$)/, '')
+
+        if message == 'Please enter a value'
+          message = 'Please enter a valid email address'
+
+        newsletterAlert('negative', message)
     ).fail(->
       newsletterAlert('negative', 'Could not connect to the newsletter server. Please try again.')
     ).always(->

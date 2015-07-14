@@ -1,0 +1,51 @@
+//
+// press
+//
+
+.press__title
+  font-size: em(36)
+  line-height: 1.25em
+  font-weight: 700
+  text-align: center
+
+  +min-width($tablet)
+    font-size: em(56)
+    font-weight: 500
+
+
+//
+// section
+//
+
+.thumbnail-section--centered
+  text-align: center
+
+
+//
+// image
+//
+
+.thumbnail__image
+  background-repeat: no-repeat
+  background-position: 0 0
+  border: solid 1px $lighter-grey
+  border-radius: 4px
+
+  .identity-thumbnail &
+    background-position: center center
+    background-size: contain
+
+  .screenshot-thumbnail &
+    background-size: 150%
+
+    +min-width($laptop)
+      background-size: 250%
+
+
+//
+// title
+//
+
+.thumbnail__title
+  font: $base-font
+  font-size: em(14)

@@ -10,6 +10,42 @@
       {% include 'includes/nav' %}
     </footer>
 
+    <nav id='mobile-nav' class='is-hidden mobile-nav'>
+      <h1 class='mobile-nav__logo'>
+        <a class='logo__link' href='/'>{{ site.title }}</a>
+      </h1>
+
+      <a id='mobile-nav-close-button' class='ss-icon mobile-nav__close-button' href='#'>Close</a>
+
+      <ul class='mobile-nav__list'>
+        {% for page in site.pages %}
+          {% unless page.home? %}
+            {% if page.meta.nav != 'false' %}
+            <li class='mobile-nav__item'>
+              <a class='mobile-nav__link' href='{{ page.url }}'>{{ page.title }}</a>
+            </li>
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+        <li class='mobile-nav__item'>
+          <a class='mobile-nav__button button' href='/pricing'>Sign up</a>
+        </li>
+        <li class='mobile-nav__item'>
+          <a class='ss-icon mobile-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+        </li>
+      </ul>
+    </nav>
+
     {{ foot }}
+
+    <script>
+    $(function() {
+      $('#mobile-nav-button,#mobile-nav-close-button').click(function(e) {
+        e.preventDefault();
+
+        $('#mobile-nav').toggleClass('is-hidden')
+      });
+    });
+  </script>
   </body>
 </html>
