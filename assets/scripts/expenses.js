@@ -1,6 +1,6 @@
 $(function () {
   function unformatCurrency(num) {
-    return parseFloat(num.replace('$', ''));
+    return parseFloat(num.replace('$', '').replace(',', ''));
   }
 
   function numberWithCommas(num) {
