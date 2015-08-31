@@ -1,0 +1,66 @@
+<article class='post'>
+  <header class='grid-container--wide post__header'>
+    <h3 class='post__title'>
+      <a href='{{ post.url }}'>{{ post.title }}</a>
+    </h3>
+    <time class='post__date' datetime='{{ post.date }}'>
+      <a class='link--grey' href='{{ post.url }}'>{{ post.date | date:'%b %d, %Y' }}</a>
+    </time>
+  </header>
+
+  {% if post.meta.hero-image %}
+  <div class='post__image'>
+    <a href='{{ post.url }}'><img src='{{ post.meta.hero-image }}'></a>
+  </div>
+  {% endif %}
+
+  <div class='grid-container--narrow'>
+    <div class='post__meta'>
+      <div class='post__author'>
+        <a class='author__avatar' style='background-image: url(/assets/avatar-jonnie.jpg)' href='https://twitter.com/destroytoday'></a>
+        <div class='author__info'>
+          <h4 class='author__name'>
+            <a href='https://twitter.com/destroytoday' target='_blank'>Jonnie Hallman</a>
+          </h4>
+          <h5 class='author__handle'>
+            <a class='link--blue' href='https://twitter.com/destroytoday' target='_blank'>@destroytoday</a>
+          </h5>
+        </div>
+      </div>
+
+      {% assign category = post.taxonomy.categories.first %}
+      <a class='tag--{{ category }} post__tag tag' href='{{ category.url }}'>{{ category | capitalize }}</a>
+    </div>
+
+    <div class='post__body'>
+      {% if post == current %}
+        {{ post.body }}
+
+        <nav class='post__nav'>
+          {% if post.next %}<a class='ss-navigateleft post-nav__link' href='{{ post.next.url }}'>Newer</a>{% endif %}
+          <a class='ss-box post-nav__link' href='{{ post.parent.url }}'>Archive</a>
+          {% if post.previous %}<a class='ss-navigateright right post-nav__link' href='{{ post.previous.url }}'>Older</a>{% endif %}
+        </nav>
+      {% else %}
+        {{ post.excerpt }}
+        {% if post.body != post.excerpt %}
+          <p>
+            <a class='post__more' href='{{ post.url }}'>More&hellip;</a>
+          </p>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</article>
+
+{% if post == current %}
+<section class='post-outro'>
+  <div class='post-outro__block'>
+    <div class='post-outro__message'>
+      {{ site.pages.blog.meta.outro | md }}
+    </div>
+
+    <a class='button--green button' href='{{ site.meta.signup }}'>Sign up</a>
+  </div>
+</section>
+{% endif %}

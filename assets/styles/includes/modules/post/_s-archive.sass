@@ -1,0 +1,56 @@
+//
+// archive
+//
+
+.archive-section
+  +min-width($tablet-portrait)
+    font-size: 112.5%
+
+
+.page
+  .post + .archive-section
+    padding-top: em(40)
+    border-top: solid 1px $lighter-grey
+
+
+//
+// title
+//
+
+.post-item__title
+  @extend .link--hover-underline
+
+  font: $copy-font
+  line-height: 1.25em
+
+
+//
+// date
+//
+
+.post-item__date
+  font-size: 14px
+
+  .link
+    @extend .link--hover-underline
+    color: $grey
+
+
+//
+// tag
+//
+
+.post-item__tag
+  font-size: 14px
+
+
+//
+// cell
+//
+
+.post-item__cell
+  +min-width($tablet-portrait)
+    &--right
+      padding-left: em(36)
+      text-align: right
+      white-space: nowrap

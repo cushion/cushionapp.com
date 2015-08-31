@@ -15,17 +15,19 @@
   @extend .link--hover-border
   color: inherit
 
+  .theme--green &,
+  .theme--blue &,
+  .theme--purple &,
+  .theme--black &
+    &:hover
+      border: none
+      color: $white
+
   .theme--light-blue &:hover
     border-color: $light-blue--dark
 
   .theme--yellow &:hover
     border-color: $yellow--dark
-
-  .theme--green &:hover
-    border-color: $green--dark
-
-  .theme--purple &:hover
-    border-color: $purple--light
 
 
 //
@@ -43,6 +45,18 @@
 .page-nav__icon
   font-size: 16px
   color: #4099FF
+
+  .theme--blue &
+    color: $blue--light
+
+  .theme--green &
+    color: $green--light
+
+  .theme--blue &,
+  .theme--green &,
+  .theme--black &
+    &:hover
+      color: $white
 
   &:hover
     color: $black

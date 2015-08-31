@@ -5,6 +5,10 @@
 .hero
   text-align: center
 
+  &.theme--blue
+    background-color: $blue
+    color: $blue--light
+
   &.theme--light-blue
     background-color: $light-blue
     color: $light-blue--dark
@@ -15,11 +19,15 @@
 
   &.theme--green
     background-color: $green
-    color: $green--dark
+    color: $green--light
 
   &.theme--purple
     background-color: $purple
     color: $purple--light
+
+  &.theme--black
+    background-color: $black
+    color: $light-grey
 
 
 //
@@ -27,13 +35,11 @@
 //
 
 .hero__title h2
+  font: $header-font
   font-size: em(36)
-  line-height: 1.25em
-  font-weight: 700
 
   +min-width($tablet)
     font-size: em(56)
-    font-weight: 500
 
   color: $white
 

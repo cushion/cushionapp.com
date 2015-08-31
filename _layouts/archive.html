@@ -1,0 +1,15 @@
+{% capture content %}
+  <section class='theme--{{ blog.meta.theme }} hero'>
+    {% include 'includes/header' %}
+
+    <div class='grid-container--wider'>
+      <div class='hero__screenshot' style='background-image: url({{ blog.meta.hero-image }}); padding-bottom: {{ blog.meta.hero-ratio }}'></div>
+    </div>
+  </section>
+
+  <main class='page__main'>
+    {% include 'includes/archive' %}
+  </main>
+{% endcapture %}
+
+{% include 'layouts/default' %}

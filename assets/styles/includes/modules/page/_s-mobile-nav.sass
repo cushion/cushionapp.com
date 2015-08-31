@@ -1,39 +1,10 @@
 //
-// button
-//
-
-.mobile-nav__menu-button
-  font-family: $base-font-family
-
-  border-radius: em(4)
-  background-color: rgba(255, 255, 255, 0.5)
-  color: inherit
-  outline: none
-
-
-//
-// close button
-//
-
-.mobile-nav__close-button
-  color: $purple
-
-
-//
-// button
-//
-
-.mobile-nav__button
-  @extend .button--green
-
-
-//
 // nav
 //
 
 .mobile-nav
-  font-size: em(21)
-  background-color: $white
+  background-color: $black
+  color: $white
 
   transition: 0.5s opacity
 
@@ -44,14 +15,66 @@
   +min-width($mini-tablet)
     display: none
 
+//
+// menu button
+//
+
+.mobile-nav__menu-button
+  font-family: $base-font-family
+
+  border-radius: em(4)
+  outline: none
+
+  .theme--blue &
+    color: $blue
+    background-color: $blue--light
+
+  .theme--light-blue &
+    color: $white
+    background-color: $light-blue--dark
+
+  .theme--yellow &
+    color: $white
+    background-color: $yellow--dark
+
+  .theme--green &
+    color: $green
+    background-color: $green--light
+
+  .theme--purple &
+    color: $purple
+    background-color: $purple--light
+
+  .theme--black &
+    color: $black
+    background-color: $light-grey
+
+
+//
+// close button
+//
+
+.mobile-nav__close-button
+  font-size: em(21)
+  color: $purple
+
+
+//
+// button
+//
+
+.mobile-nav__button
+  @extend .button--green
+  text-align: center
+
 
 //
 // logo
 //
 
 .mobile-nav__logo
-  font-size: rem(36)
-  color: $black
+  padding: em(8, 32) em(12, 32)
+  color: $white
 
 
 //
@@ -59,7 +82,32 @@
 //
 
 .mobile-nav__link
-  color: $black
+  padding: em(8) em(12)
+  color: $white
+
+  .theme--blue &
+    background-color: $blue
+    color: $blue--light
+
+  .theme--light-blue &
+    background-color: $light-blue
+    color: $light-blue--dark
+
+  .theme--yellow &
+    background-color: $yellow
+    color: $yellow--dark
+
+  .theme--green &
+    background-color: $green
+    color: $green--light
+
+  .theme--purple &
+    background-color: $purple
+    color: $purple--light
+
+  .theme--black &
+    background-color: $black
+    color: $light-grey
 
 
 //

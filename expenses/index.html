@@ -1,5 +1,20 @@
 {% capture content %}
-<main class='grid-container--wide'>
+<section class='theme--{{ meta.theme }} hero'>
+  {% include 'includes/header' %}
+
+  <div class='hero__header grid-container--wide'>
+    <div class='hero__title'>
+      <h2>{{ meta.title }}</h2>
+      {{ body }}
+    </div>
+  </div>
+
+  <div class='grid-container--wider'>
+    <div class='hero__screenshot' style='background-image: url({{ meta.hero-image }}); padding-bottom: {{ meta.hero-ratio }}'></div>
+  </div>
+</section>
+
+<main class='grid-container--wide page__main'>
   <section class='graph-section'>
     <div class='expenses-graph' id='monthly-expenses'></div>
   </section>
@@ -26,4 +41,4 @@
   <script src='/assets/scripts/expenses.js'></script>
 {% endcapture %}
 
-{% include 'layouts/page' %}
+{% include 'layouts/default' %}

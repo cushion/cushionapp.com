@@ -5,7 +5,7 @@
     <link>{{ site.permalink }}</link>
     <description>{{ site.description | xml_escape }}</description>
     <pubDate>{{ site.date | date_to_rfc822 }}</pubDate>
-    {% for post in site.pages.journal.posts limit: 10 %}
+    {% for post in blog.posts limit: 10 %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
       <link>{{ post.permalink }}</link>

@@ -28,8 +28,9 @@ $wider-container-width: 1120px
 $serif-font: "FF Tisa Web Pro", Georgia, serif
 $system-font: "Helvetica Neue", Helvetica, sans-serif
 $base-font-family: "Facit", $system-font
+$header-font-family: "Effra", $system-font
 $base-font: 400 100%/1.65 $base-font-family
-$header-font: 700 150%/1.25 "Effra", $system-font
+$header-font: 700 150%/1.25 $header-font-family
 $copy-font: 400 100%/1.65 $serif-font
 $button-font: 400 .875rem/1.65 $base-font-family
 $code-font: 400 87.5%/1.65 $base-font-family
@@ -51,23 +52,30 @@ $transparent-white: rgba(255, 255, 255, 0.8)
 $transparent-black: rgba(0, 0, 0, 0.8)
 $transparent-grey: rgba(225, 225, 225, 0.8)
 
+$black--light: $lighter-grey
+$black--light--dark: $dark-grey
 $green: #6BBD2E
 $light-green: #e1f3cb
 $green--dark: darken($green, 30%)
 $green--light: #e1f3cb
+$green--light--dark: darken($green--light, 53%)
 $light-blue: #7EDBED
 $light-blue--dark: darken($light-blue, 53%)
 $blue: #3498DB
 $blue--light: #cff2ff
+$blue--light--dark: darken($blue--light, 55%)
 $pink: #ffc0cc
 $red: #c00
 $red--light: #ffc0cc
 $yellow: #FFC700
 $yellow--dark: darken($yellow, 38%)
+$yellow--light: #F8EAB8
+$yellow--light--dark: darken($yellow--light, 55%)
 $purple: #84487E
 $light-purple: lighten($purple, 8%)
 $dark-purple: darken($purple, 10%)
 $purple--light: lighten($purple, 45%)
+$purple--light--dark: $purple
 
 $smaller: 12
 $small: 14

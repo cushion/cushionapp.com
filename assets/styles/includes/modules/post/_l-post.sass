@@ -4,24 +4,99 @@
   +min-width($tablet-portrait)
     font-size: 112.5%
 
-.page
-  .post
-    margin-top: em(30)
-    margin-bottom: em(30)
 
-    +min-width($tablet-portrait)
-      margin-top: em(60, $medium)
-      margin-bottom: em(60, $medium)
+.post + .post
+  margin-top: em(40)
+
+  +min-width($tablet-portrait)
+    margin-top: em(80, $medium)
+
 
 .post__header
   margin-bottom: em(40)
 
 .post
   .post__title
-    margin-bottom: em(15)
+    margin-bottom: em(5)
 
 .post__date
   display: block
+
+
+//
+// image
+//
+
+.post__image
+  +outer-container($wide-container-width)
+
+.post
+  .post__image
+    margin-left: auto
+    margin-right: auto
+
+
+//
+// meta
+//
+
+.post__meta
+  +clearfix
+
+
+//
+// author
+//
+
+.post
+  .post__meta
+    margin-top: em(36)
+
+  .post__meta + .post__body
+    margin-top: em(32)
+
+.author__avatar
+  display: block
+  width: em(56)
+  height: em(56)
+
+.post__author
+  .author__avatar
+    float: left
+    margin-right: em(18)
+
+.post__author
+  .author__info
+    float: left
+    margin-top: em(3)
+
+
+//
+// tag
+//
+
+.tag
+  display: inline-block
+
+
+.post__tag
+  .link
+    display: inline-block
+
+
+.post__meta
+  .post__tag
+    display: none
+
+    +min-width($tablet-portrait)
+      display: block
+      float: right
+      margin-top: em(16)
+
+
+//
+// body
+//
 
 .post__body
   font: $copy-font
@@ -37,8 +112,11 @@
     margin: 1em 0
     word-wrap: break-word
 
+    &:last-child
+      margin-bottom: 0
+
   a
-    border-bottom: solid 2px $green
+    border-bottom: solid 2px $blue
     color: $black
 
     &:hover
@@ -131,3 +209,53 @@
 .post__header
   .post__service-icon
     margin: 1em auto
+
+
+//
+// nav
+//
+
+.post
+  .post__nav
+    margin-top: em(40)
+
+
+//
+// nav link
+//
+
+.post-nav__link
+  &:before
+    position: relative
+    top: em(2, 14)
+    margin-right: em(6, 14)
+
+  &:after
+    position: relative
+    top: em(2, 14)
+    margin-left: em(6, 14)
+
+
+.post__nav
+  .post-nav__link
+    margin-left: em(18, 14)
+
+    &:first-child
+      margin-left: 0
+
+
+//
+// outro
+//
+
+.page
+  .post-outro
+    margin-top: em(48)
+
+
+//
+// outro block
+//
+
+.post-outro__block
+  display: inline-block

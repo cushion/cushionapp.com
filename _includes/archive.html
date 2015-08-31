@@ -1,0 +1,19 @@
+<section class='grid-container--narrow archive-section'>
+  <h3 class='feature__title'>Archive</h3>
+
+  <ul class='posts__list'>
+  {% for post in posts %}
+    <li class='posts__item'>
+      <a class='post-item__title post-item__cell' href='{{ post.url }}'>{{ post.title }}</a>
+      <time class='post-item__date post-item__cell--right post-item__cell' datetime='{{ post.date }}'>
+        <a class='link' href='{{ post.url }}'>{{ post.date | date:'%b %d, %Y' }}</a>
+      </time>
+
+      {% assign category = post.taxonomy.categories.first %}
+      <div class='post-item__tag-cell post-item__cell--right post-item__cell'>
+        <a class='tag--{{ category }} post-item__tag tag' href='{{ category.url }}'>{{ category | capitalize }}</a>
+      </div>
+    </li>
+  {% endfor %}
+  </ul>
+</section>

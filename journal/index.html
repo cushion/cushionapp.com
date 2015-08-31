@@ -1,3 +1,15 @@
-{% assign post = posts.first %}
+{% assign blog = site.pages.journal %}
+{% assign hero = blog %}
 
-{% include 'layouts/post' %}
+{% capture content %}
+  {% include 'includes/hero-with-header' %}
+
+  <main class='page__main'>
+    {% assign post = blog.posts.first %}
+    {% include 'includes/blog-post' %}
+
+    {% include 'includes/archive' %}
+  </main>
+{% endcapture %}
+
+{% include 'layouts/default' %}

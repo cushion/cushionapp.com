@@ -1,0 +1,10 @@
+{% capture header %}
+  <div class='hero__header grid-container--wide'>
+    <div class='hero__title'>
+      <h2>{{ hero.meta.title | fallback:hero.title }}</h2>
+      {{ hero.body }}
+    </div>
+  </div>
+{% endcapture %}
+
+{% include 'includes/hero' %}

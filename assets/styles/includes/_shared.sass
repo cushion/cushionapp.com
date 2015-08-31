@@ -36,6 +36,21 @@
     color: $darkest-grey
 
 
+.link--hover-blue
+  &:hover
+    color: $blue
+
+
+.link--blue
+  color: $blue
+  @extend .link--hover-black
+
+
+.link--grey
+  color: $grey
+  @extend .link--hover-black
+
+
 .link--underline
   text-decoration: underline
 
@@ -44,9 +59,14 @@
     color: initial
 
 
+.link--hover-underline
+  &:hover
+    text-decoration: underline
+
+
 .link--border
   text-decoration: none
-  border-bottom: solid 2px $green
+  border-bottom: solid 2px $blue
 
   &:hover
     text-decoration: none

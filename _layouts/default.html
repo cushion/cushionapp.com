@@ -21,17 +21,14 @@
         {% for page in site.pages %}
           {% unless page.home? %}
             {% if page.meta.nav != 'false' %}
-            <li class='mobile-nav__item'>
+            <li class='theme--{{ page.meta.theme }} mobile-nav__item'>
               <a class='mobile-nav__link' href='{{ page.url }}'>{{ page.title }}</a>
             </li>
             {% endif %}
           {% endunless %}
         {% endfor %}
         <li class='mobile-nav__item'>
-          <a class='mobile-nav__button button' href='/pricing'>Sign up</a>
-        </li>
-        <li class='mobile-nav__item'>
-          <a class='ss-icon mobile-nav__icon' href='https://twitter.com/cushionapp'>twitter</a>
+          <a class='mobile-nav__button button' href='{{ site.meta.signup }}'>Sign up</a>
         </li>
       </ul>
     </nav>

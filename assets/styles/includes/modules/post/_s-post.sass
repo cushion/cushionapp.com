@@ -1,4 +1,16 @@
 //
+// post
+//
+
+.post + .post
+  padding-top: em(40)
+  border-top: solid 1px $lighter-grey
+
+  +min-width($tablet-portrait)
+    padding-top: em(80, $medium)
+
+
+//
 // title
 //
 
@@ -33,6 +45,85 @@
 
 
 //
+// author
+//
+
+.post__author
+  font: $base-font
+
+
+//
+// author avatar
+//
+
+.author__avatar
+  border-radius: 50%
+  background-repeat: no-repeat
+  background-size: contain
+
+
+//
+// author name
+//
+
+.author__name
+  font-weight: 600
+
+
+//
+// author name
+//
+
+.author__handle
+  font-weight: normal
+
+
+//
+// post__tag
+//
+
+.tag
+  padding: 1px 10px
+  font-size: 16px
+
+  &:hover
+    background-color: $black
+    color: $white
+
+  &--dev,
+  &--feature
+    background-color: $green--light
+    color: $green--light--dark
+
+  &--announcement
+    background-color: $yellow--light
+    color: $yellow--light--dark
+
+  &--design
+    background-color: $blue--light
+    color: $blue--light--dark
+
+  &--story
+    background-color: $purple--light
+    color: $purple--light--dark
+
+
+//
+// more
+//
+
+a.post__more
+  font: $base-font
+  font-size: em(16, 18)
+
+  color: $blue
+  border: none
+
+  &:hover
+    color: $black
+
+
+//
 // alert
 //
 
@@ -61,3 +152,72 @@
 .post__service-icon
   background-repeat: no-repeat
   background-size: contain
+
+
+//
+// nav
+//
+
+.post__nav
+  text-align: center
+
+
+//
+// nav link
+//
+
+a.post-nav__link
+  font: $base-font
+  font-size: 14px
+
+  border: none
+
+  &.ss-navigateleft:before,
+  &.ss-navigateright:after
+    color: $blue
+
+  &.ss-box:before
+    color: $orange
+
+  &:hover
+    &:before,
+    &:after
+      color: $black
+
+  +min-width($tablet-portrait)
+    font-size: 16px
+
+
+//
+// outro
+//
+
+.post-outro
+  text-align: center
+
+  +min-width($tablet-portrait)
+    font-size: 112.5%
+
+
+//
+// outro block
+//
+
+.post-outro__block
+  padding: em(18) em(28) em(28) em(28)
+
+  border-radius: em(4)
+  background-color: $green--light
+
+
+//
+// outro message
+//
+
+.post-outro__message
+  font-size: em(18)
+
+
+.post-outro
+  .post-outro__message
+    margin-bottom: em(28, 20)

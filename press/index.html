@@ -1,50 +1,60 @@
 {% capture content %}
-<main class='press grid-container--wide page__main'>
-  <header class='press__header'>
-    <h2 class='press__title'>{{ title }}</h2>
-  </header>
+  <section class='theme--{{ meta.theme }} hero'>
+    {% include 'includes/header' %}
 
-  <section class='thumbnail-section--centered thumbnail-section'>
-    <a class='button--purple button' href='{{ assets.first.url }}'>Download</a>
-  </section>
+    <div class='hero__header grid-container--wide'>
+      <div class='hero__title'>
+        <h2>{{ meta.title }}</h2>
 
-  <section class='thumbnail-section'>
-    {% assign section = pages.description %}
-    <h3 class='icon--{{ section.meta.color }} ss-{{ section.meta.icon }} icon-title section__title'>{{ section.title }}</h3>
-
-    <div class='press__body'>
-      {{ section.body }}
-    </div>
-  </section>
-
-  <section class='thumbnail-section'>
-    {% assign section = pages.identity %}
-    <h3 class='icon--{{ section.meta.color }} ss-{{ section.meta.icon }} icon-title section__title'>{{ section.title }}</h3>
-
-    <div class='thumbnail-list'>
-      {% for asset in section.assets %}
-      <div class='identity-thumbnail thumbnail'>
-        <a class='thumbnail__image' href='{{ asset.url }}' target='_blank' style='background-image: url({{ asset.url }})'></a>
-        <a class='thumbnail__title' href='{{ asset.url }}' target='_blank'>{{ asset.meta.name }}</a>
+        <div class='hero__buttons'>
+          <a class='hero__button button' href='{{ assets.first.url }}'>Download</a>
+        </div>
       </div>
-      {% endfor %}
+    </div>
+
+    <div class='grid-container--wider'>
+      <div class='hero__screenshot' style='background-image: url({{ meta.hero-image }}); padding-bottom: {{ meta.hero-ratio }}'></div>
     </div>
   </section>
 
-  <section class='thumbnail-section'>
-    {% assign section = pages.screenshots %}
-    <h3 class='icon--{{ section.meta.color }} ss-{{ section.meta.icon }} icon-title section__title'>{{ section.title }}</h3>
+  <main class='press grid-container--wide page__main'>
+    <section class='thumbnail-section'>
+      {% assign section = pages.description %}
+      <h3 class='icon--{{ section.meta.color }} ss-{{ section.meta.icon }} icon-title section__title'>{{ section.title }}</h3>
 
-    <div class='thumbnail-list'>
-      {% for asset in section.assets %}
-      <div class='screenshot-thumbnail thumbnail'>
-        <a class='thumbnail__image' href='{{ asset.url }}' target='_blank' style='background-image: url({{ asset.url }})'></a>
-        <a class='thumbnail__title' href='{{ asset.url }}' target='_blank'>{{ asset.meta.name }}</a>
+      <div class='press__body'>
+        {{ section.body }}
       </div>
-      {% endfor %}
-    </div>
-  </section>
-</main>
+    </section>
+
+    <section class='thumbnail-section'>
+      {% assign section = pages.identity %}
+      <h3 class='icon--{{ section.meta.color }} ss-{{ section.meta.icon }} icon-title section__title'>{{ section.title }}</h3>
+
+      <div class='thumbnail-list'>
+        {% for asset in section.assets %}
+        <div class='identity-thumbnail thumbnail'>
+          <a class='thumbnail__image' href='{{ asset.url }}' target='_blank' style='background-image: url({{ asset.url }})'></a>
+          <a class='thumbnail__title' href='{{ asset.url }}' target='_blank'>{{ asset.meta.name }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class='thumbnail-section'>
+      {% assign section = pages.screenshots %}
+      <h3 class='icon--{{ section.meta.color }} ss-{{ section.meta.icon }} icon-title section__title'>{{ section.title }}</h3>
+
+      <div class='thumbnail-list'>
+        {% for asset in section.assets %}
+        <div class='screenshot-thumbnail thumbnail'>
+          <a class='thumbnail__image' href='{{ asset.url }}' target='_blank' style='background-image: url({{ asset.url }})'></a>
+          <a class='thumbnail__title' href='{{ asset.url }}' target='_blank'>{{ asset.meta.name }}</a>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
 {% endcapture %}
 
-{% include 'layouts/page' %}
+{% include 'layouts/default' %}

@@ -1,0 +1,13 @@
+{% assign hero = current %}
+
+{% capture content %}
+  {% include 'includes/hero-with-header' %}
+
+  <main class='page__main'>
+    {% for post in posts %}
+      {% include 'includes/blog-post' %}
+    {% endfor %}
+  </main>
+{% endcapture %}
+
+{% include 'layouts/default' %}

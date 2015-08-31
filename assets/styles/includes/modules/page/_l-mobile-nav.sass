@@ -17,8 +17,8 @@
 .mobile-nav
   .mobile-nav__close-button
     position: absolute
-    top: em(16)
-    right: em(10)
+    top: 20px
+    right: 12px
 
 
 //
@@ -35,8 +35,6 @@
     width: 100%
     height: 100%
 
-    padding: em(8) em(10)
-
 
 //
 // item
@@ -44,10 +42,18 @@
 
 .mobile-nav__list
   .mobile-nav__item
-    margin-top: em(8)
+    margin-top: em(4)
 
     &:first-child
       margin-top: 0
+
+
+//
+// link
+//
+
+.mobile-nav__link
+  display: block
 
 
 //
@@ -56,5 +62,6 @@
 
 .mobile-nav__list
   .mobile-nav__button
-    display: inline-block
-    margin: em(4) 0
+    display: block
+    width: 96px
+    margin: 24px auto

@@ -1,0 +1,61 @@
+//
+// archive
+//
+
+.page
+  .post + .archive-section
+    margin-top: em(40)
+
+
+//
+// list
+//
+
+.posts__list
+  +min-width($tablet-portrait)
+    display: table
+    width: 100%
+
+
+//
+// item
+//
+
+.posts__item
+  +min-width($tablet-portrait)
+    display: table-row
+
+
+.posts__list
+  .posts__item
+    margin-top: em(20)
+
+    &:first-child
+      margin-top: 0
+
+
+//
+// cell
+//
+
+.post-item__cell
+  display: block
+
+  +min-width($tablet-portrait)
+    display: table-cell
+    padding: em(6) 0
+
+    &--right
+      min-width: 110px
+
+
+//
+// tag
+//
+
+.posts__item
+  .post-item__tag-cell
+    display: none
+
+    +min-width($tablet)
+      display: table-cell

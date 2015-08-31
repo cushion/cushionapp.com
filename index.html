@@ -10,7 +10,7 @@
       </div>
 
       <div class='hero__buttons'>
-        <a id='learn-more' class='hero__button button' href='#more'>Learn more</a><a class='signup-button hero__button button' href='/pricing'>Sign up free</a>
+        <a id='learn-more' class='hero__button button' href='#more'>Learn more</a><a class='signup-button hero__button button' href='{{ site.meta.signup }}'>Sign up free</a>
       </div>
 
       <div class='hero__alert alert'>
@@ -46,7 +46,7 @@
 
   <section class='theme--green homepage__next-section homepage__text-section homepage__section'>
     <p>
-      <a class='link' href='/pricing'>Try Cushion for <strong>free</strong> <a class='button' href='/pricing'>Sign up</a></span></a>
+      <a class='link' href='{{ site.meta.signup }}'>Try Cushion for <strong>free</strong> <a class='button' href='{{ site.meta.signup }}'>Sign up</a></span></a>
     </p>
   </section>
 
@@ -58,7 +58,7 @@
     <div class='grid-container--wide homepage__outro'>
       <div class='homepage__message'>{{ section.body }}</div>
 
-      <a class='button--green outro__button button' href='/pricing'>Sign up</a>
+      <a class='button--green outro__button button' href='{{ site.meta.signup }}'>Sign up</a>
     </div>
   </section>
 {% endcapture %}

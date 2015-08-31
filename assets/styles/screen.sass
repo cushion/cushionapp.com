@@ -26,9 +26,6 @@ h1, h2, h3, h4, h5, p, ul
   margin: 0
   font-weight: normal
 
-h1, h2, h3, h4, h5
-  font-family: "effra", $system-font
-
 p
   font-family: $serif-font
 
@@ -53,6 +50,7 @@ body
 
 img
   max-width: 100%
+  vertical-align: top
 
 a
   color: $black
@@ -311,6 +309,9 @@ hr
   font-size: 14px
   vertical-align: middle
 
+  a
+    @extend .link--underline
+
 .table__body-cell--color
   display: inline-block
 
@@ -555,6 +556,8 @@ hr
 @import 'modules/graph/s-bar'
 @import 'modules/post/l-post'
 @import 'modules/post/s-post'
+@import 'modules/post/l-archive'
+@import 'modules/post/s-archive'
 @import 'modules/changelog/l-changelog'
 @import 'modules/changelog/s-changelog'
 @import 'modules/pricing/l-pricing'

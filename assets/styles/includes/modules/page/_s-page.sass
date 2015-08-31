@@ -21,7 +21,15 @@
 
 
 .logo__link
+  font-family: $header-font-family
   color: inherit
+
+  .theme--black &,
+  .theme--purple &,
+  .theme--green &,
+  .theme--blue &
+    &:hover
+      color: $white
 
 
 //
@@ -29,5 +37,5 @@
 //
 
 .page__title
-  font-size: em(20)
-  font-weight: 700
+  font-family: $header-font-family
+  font-size: em(18)
