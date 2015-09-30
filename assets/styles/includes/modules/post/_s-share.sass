@@ -4,18 +4,29 @@
 
 .share
   background-color: $white
-  border: solid 1px $light-grey
-  border-radius: 4px
+  border-top: solid 1px $light-grey
+  border-bottom: solid 1px $light-grey
 
-  transition: 1s transform, 1s opacity
+  +min-width(330px)
+    border: solid 1px $light-grey
+    border-radius: 4px
 
-  &.is-hidden
-    transform: translateX(200%)
-    opacity: 0
+  +min-width($tablet)
+    transition: 1s transform, 1s opacity
 
-  +max-width($tablet)
-    transform: translateX(200%)
-    opacity: 0
+    &.is-hidden
+      transform: translateX(200%)
+      opacity: 0
+
+
+//
+// close
+//
+
+.share__close
+  @extend .link--hover-black
+  color: $purple
+  line-height: 1em
 
 
 //

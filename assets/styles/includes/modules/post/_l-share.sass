@@ -3,12 +3,30 @@
 //
 
 .share
-  width: 330px
-
   .page &
-    position: fixed
+    margin-top: em(48)
+
+    +min-width(330px)
+      width: 330px
+      margin-left: auto
+      margin-right: auto
+
+    +min-width($tablet)
+      position: fixed
+      right: 15px
+      bottom: 15px
+      margin: 0
+
+
+//
+// close
+//
+
+.share__close
+  .share &
+    position: absolute
+    top: 15px
     right: 15px
-    bottom: 15px
 
 
 //
