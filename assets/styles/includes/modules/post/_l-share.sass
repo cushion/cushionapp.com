@@ -24,9 +24,13 @@
 
 .share__close
   .share &
-    position: absolute
-    top: 15px
-    right: 15px
+    display: none
+
+    +min-width($tablet)
+      display: inline
+      position: absolute
+      top: 15px
+      right: 15px
 
 
 //

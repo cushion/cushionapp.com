@@ -1,5 +1,5 @@
 {% capture content %}
-<main class='grid-container--narrow main'>
+<main class='grid-container--narrow page__main' style='padding-top: 0'>
   <article class='post'>
     <header class='post__header'>
       {% if parent.parent.slug == 'integrations' %}
@@ -20,7 +20,7 @@
 
   {% if parent.parent.slug == 'integrations' %}
   {% if pages.size > 0 %}
-  <section>
+  <section class='archive-section'>
     <h3 class='page__title'>Troubleshooting</h3>
 
     <ul class='post-list'>
