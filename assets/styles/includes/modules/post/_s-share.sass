@@ -1,0 +1,55 @@
+//
+// share
+//
+
+.share
+  background-color: $white
+  border: solid 1px $light-grey
+  border-radius: 4px
+
+  transition: 1s transform, 1s opacity
+
+  &.is-hidden
+    transform: translateX(200%)
+    opacity: 0
+
+  +max-width($laptop)
+    transform: translateX(200%)
+    opacity: 0
+
+
+//
+// title
+//
+
+.share__title
+  font: $header-font
+  font-size: 18px
+  line-height: 1em
+
+
+//
+// body
+//
+
+.share__body
+  font-size: 16px
+
+  a
+    @extend .link--blue
+
+
+//
+// follow
+//
+
+.share__drawer
+  background-color: $blue--light
+
+
+//
+// twitter
+//
+
+.share__twitter
+  line-height: 1em

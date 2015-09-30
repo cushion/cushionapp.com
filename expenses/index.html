@@ -14,7 +14,7 @@
   </div>
 </section>
 
-<main class='grid-container--wide page__main'>
+<main id='post' class='grid-container--wide page__main'>
   <section class='graph-section'>
     <div class='expenses-graph' id='monthly-expenses'></div>
   </section>
@@ -22,6 +22,8 @@
   {% assign table_title = "Expenses" %}
   {% assign table_posts = posts | sort:'published_at' %}
   {% include 'includes/expenses-table' %}
+
+  {% include 'includes/share' %}
 </main>
 {% endcapture %}
 

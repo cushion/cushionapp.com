@@ -1,4 +1,6 @@
-<article class='post'>
+{% assign share_title = "Share this post on Twitter" %}
+{% capture share_message %}“{{ post.title }}” by <a href='https://twitter.com/cushionapp' target='_blank'>@cushionapp</a>{% endcapture %}
+<article id='post' class='post'>
   <header class='grid-container--wide post__header'>
     <h3 class='post__title'>
       <a href='{{ post.url }}'>{{ post.title }}</a>
@@ -63,4 +65,7 @@
     <a class='button--green button' href='{{ site.meta.signup }}'>Sign up</a>
   </div>
 </section>
+
+{% include 'includes/share' %}
 {% endif %}
+

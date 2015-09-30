@@ -1,0 +1,31 @@
+<div id='share' class='is-hidden share'>
+  <div class='share__info'>
+    <h4 class='share__title'>{{ share_title | fallback: site.meta.share-title }}</h4>
+    <p class='share__body'>{{ share_message | fallback: site.meta.share-message }}</p>
+  </div>
+  <div class='share__drawer share__twitter'>
+    <div class='share__button'>
+      <a href='https://twitter.com/cushionapp' class='twitter-follow-button' data-size='large' data-dnt='true' data-count='none'>Follow @cushionapp</a>
+    </div><div class='share__button'>
+      <a href='https://twitter.com/share' class='twitter-share-button' data-via='cushionapp' data-size='large' data-dnt='true'>Tweet</a>
+    </div>
+    <script>
+      var $window = $(window);
+
+      $(document).ready(function() {
+        var $post = $('#post'),
+            $share = $('#share');
+
+        $(document).scroll(function(e) {
+          var post_bottom = $post.offset().top + $post.outerHeight(true) - $window.height();
+
+          if ($window.scrollTop() > post_bottom && $share.hasClass('is-hidden')) {
+            $share.removeClass('is-hidden');
+          }
+        });
+      });
+
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+    </script>
+  </div>
+</div>
