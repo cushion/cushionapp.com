@@ -3,8 +3,28 @@
 //
 
 .newsletter
-  p
-    margin-bottom: em(32)
+  padding-top: rem(30)
+  padding-bottom: rem(30)
+
+  .newsletter__title
+    margin-bottom: em(16)
+
+  .newsletter__note
+    margin-top: em(20)
+
+  &.is-success
+    .newsletter__form,
+    .newsletter__note
+      display: none
+
+  .page__main &
+    @extend .grid-container--narrow
+    margin-top: rem(30)
+    margin-bottom: rem(30)
+
+    +max-width($narrow-container-width)
+      margin-left: 0
+      margin-right: 0
 
 
 //

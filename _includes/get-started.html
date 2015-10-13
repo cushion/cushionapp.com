@@ -1,0 +1,17 @@
+<form class='js-signup-form'>
+  <input name='email' class='js-signup-email hero__input input--text input' type='email' placeholder='you@yourwebsite.com'><button class='signup-button hero__button button' href='{{ site.meta.signup }}' type='submit'>Get started</button>
+</form>
+
+{% unless get_started %}
+<script>
+  $(function() {
+    $('.js-signup-form').submit(function(e) {
+      e.preventDefault();
+      var $email = $(e.currentTarget).find('.js-signup-email');
+
+      window.location = 'https://get.cushionapp.com?email=' + encodeURIComponent($email.val());
+    })
+  });
+</script>
+{% endunless %}
+{% assign get_started = true %}

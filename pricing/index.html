@@ -48,14 +48,7 @@
 
   {% include 'includes/testimonials' %}
 
-  <section class='homepage__section'>
-    {% assign section = site.pages.home.pages.outro %}
-    <div class='grid-container--wide homepage__outro'>
-      <div class='homepage__message'>{{ section.body }}</div>
-
-      <a class='button--green outro__button button' href='https://get.cushionapp.com'>Sign up</a>
-    </div>
-  </section>
+  {% include 'includes/outro' %}
 {% endcapture %}
 
 {% include 'layouts/default' %}

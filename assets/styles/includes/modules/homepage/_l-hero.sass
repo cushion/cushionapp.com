@@ -16,6 +16,16 @@
 
 
 //
+// input
+//
+
+.hero
+  .hero__input
+    +max-width($mini-tablet)
+      display: none
+
+
+//
 // buttons
 //
 
@@ -33,7 +43,6 @@
 .hero
   .hero__button
     display: inline-block
-    margin-left: em(10)
 
     &:first-child
       margin-left: 0
@@ -66,4 +75,4 @@
     margin-top: em(30)
 
     +min-width($tablet)
-      margin-top: em(80)
+      margin-top: em(68)

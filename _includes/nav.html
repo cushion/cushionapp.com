@@ -10,14 +10,16 @@
       {% endunless %}
     {% endfor %}
 
-    {% if home? or slug == 'pricing' %}
-    <li class='page-nav__item'>
-      <a class='page-nav__link' href='https://my.cushionapp.com'>Sign in</a>
-    </li>
-    {% elsif nav != 'bottom' %}
-    <li class='page-nav__item'>
-      <a class='page-nav__button button' href='{{ site.meta.signup }}'>Sign up</a>
-    </li>
+    {% if nav != 'bottom' %}
+      {% if home? or slug == 'pricing' %}
+      <li class='page-nav__item'>
+        <a class='page-nav__button button' href='{{ site.meta.app }}'>Sign in</a>
+      </li>
+      {% else %}
+      <li class='page-nav__item'>
+        <a class='page-nav__button button' href='{{ site.meta.signup }}'>Sign up</a>
+      </li>
+      {% endif %}
     {% endif %}
 
     <li class='page-nav__item'>

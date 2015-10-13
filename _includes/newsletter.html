@@ -1,9 +1,16 @@
-<div class='newsletter'>
+<section class='theme--blue newsletter page__section'>
+  <h3 class='newsletter__title'>Sign up for the newsletter</h3>
   <div class='is-hidden js-newsletter-alert alert'></div>
 
-  <form class='js-newsletter-form' action="//cushionapp.us9.list-manage.com/subscribe/post-json?u=313d794b00e529c8199ff32e2&amp;id=9f4ec10ac5" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+  <form class='js-newsletter-form newsletter__form' action="//cushionapp.us9.list-manage.com/subscribe/post-json?u=313d794b00e529c8199ff32e2&amp;id=9f4ec10ac5" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_313d794b00e529c8199ff32e2_9f4ec10ac5" tabindex="-1" value=""></div>
     <input name='EMAIL' class='js-newsletter-input newsletter__input input--text input' type='email' placeholder='you@yourwebsite.com'><button class='js-newsletter-button newsletter__button button' type='submit'>{{ section.meta.button | fallback: 'Subscribe' }}</button>
   </form>
-</div>
+
+  <p class='newsletter__note'>Delivered once a month. Unsubscribe&nbsp;anytime.</p>
+</section>
+{% unless newsletter %}
+<script src='/assets/scripts/newsletter.js'></script>
+{% endunless %}
+{% assign newsletter = true %}

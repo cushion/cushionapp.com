@@ -8,9 +8,12 @@
     {% assign post = blog.posts.first %}
     {% include 'includes/blog-post' %}
 
+    {% include 'includes/newsletter' %}
+
     {% include 'includes/archive' %}
-    {% include 'includes/share' %}
   </main>
+
+  {% include 'includes/newsletter' %}
 {% endcapture %}
 
 {% include 'layouts/default' %}

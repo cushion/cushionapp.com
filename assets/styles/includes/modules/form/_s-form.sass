@@ -63,20 +63,26 @@
 //
 
 .button
-  font-family: $base-font-family
+  font: $base-font
 
   border-radius: em(4)
-  border: solid 1px $green
+  border: solid 1px $blue
   outline: none
-  background-color: $green
+  background-color: $blue
   color: $white
+
+  .input + &
+    vertical-align: top
+
+  .theme--blue &
+    border-color: $green
+    background-color: $green
 
   .theme--light-blue &
     border-color: $blue
     background-color: $blue
 
   .theme--green &,
-  &.signup-button,
   &--purple
     border-color: $purple
     background-color: $purple
@@ -100,9 +106,9 @@
     content: ''
 
   .is-loading &
-    background-color: $white
-    border-color: $light-grey
-    color: $white
+    background-color: $blue--dark
+    border-color: $blue--dark
+    color: $blue--dark
 
     &:before
       opacity: 1
@@ -125,7 +131,8 @@
   &--text
     font-size: em($medium)
 
-  .theme--light-blue &
+  .theme--light-blue &,
+  .theme--blue &
     border-color: $white
 
 
@@ -147,10 +154,14 @@
     font-weight: 600
 
   &--positive
-    background-color: $green--light
+    background-color: $green
 
   &--negative
-    background-color: $purple--light
+    background-color: $purple
+
+  .theme--blue &
+    color: $white
+    background-color: $purple
 
   +min-width($tablet)
     font-size: 16px

@@ -58,16 +58,6 @@
 </article>
 
 {% if post == current %}
-<section class='post-outro'>
-  <div class='post-outro__block'>
-    <div class='post-outro__message'>
-      {{ site.pages.blog.meta.outro | md }}
-    </div>
-
-    <a class='button--green button' href='{{ site.meta.signup }}'>Sign up</a>
-  </div>
-</section>
-
 {% include 'includes/share' %}
 {% endif %}
 

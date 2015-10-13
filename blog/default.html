@@ -1,14 +1,4 @@
 {% assign blog = site.pages.blog %}
 {% assign hero = blog %}
 
-{% capture content %}
-  {% include 'includes/hero' %}
-
-  <main class='page__main'>
-    {% assign post = current %}
-
-    {% include 'includes/blog-post' %}
-  </main>
-{% endcapture %}
-
-{% include 'layouts/default' %}
+{% include 'layouts/post' %}

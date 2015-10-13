@@ -1,0 +1,12 @@
+{% capture content %}
+  {% include 'includes/hero' %}
+
+  <main class='page__main'>
+    {% assign post = current %}
+
+    {% include 'includes/blog-post' %}
+  </main>
+  {% include 'includes/newsletter' %}
+{% endcapture %}
+
+{% include 'layouts/default' %}

@@ -5,11 +5,13 @@
 .newsletter
   text-align: center
 
+  .page__main &
+    border-radius: 6px
 
-//
-// button
-//
+.newsletter__title
+  font: $header-font
+  font-size: em(20)
+  color: $white
 
-.newsletter
-  .newsletter__button
-    vertical-align: top
+  +min-width($tablet)
+    font-size: em(24)
