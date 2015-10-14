@@ -69,11 +69,8 @@
 .homepage__outro
   text-align: center
 
-  +min-width($mini-tablet)
-    font-size: 125%
-
-  // +min-width($tablet)
-  //   font-size: 150%
+  +min-width($tablet)
+    font-size: 112.5%
 
 
 //
@@ -81,7 +78,10 @@
 //
 
 .homepage__message
-  font-size: em(18)
+  font-size: em(21)
+
+  +min-width($mini-tablet)
+    font-size: em(24)
 
 
 //
