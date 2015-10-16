@@ -22,11 +22,9 @@
           <div class='plan__note'>{{ plan.body }}</div>
 
           <a class='plan__button primary-button button' href='{{ site.meta.signup }}'>{{ plan.meta.button }}</a>
-        </div>{% endfor %}
-      </div>
 
-      <div class='hero__alert alert'>
-        {{ meta.alert | markdown }}
+          {% if plan.meta.ribbon %}<div class='is-notice plan__ribbon'>{{ plan.meta.ribbon }}</div>{% endif %}
+        </div>{% endfor %}
       </div>
     </div>
   </section>

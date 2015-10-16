@@ -19,6 +19,11 @@
     </div>
   </section>
 
+  {% assign latest_feature = site.pages.blog.taxonomy.tags.banner.posts.first %}
+  <section class='theme--blue page__banner'>
+    <a href='{{ latest_feature.url }}'><strong>New!</strong> Introducing {{ latest_feature.meta.banner | fallback: latest_feature.title }} <span class='icon ss-navigateright'></span></a>
+  </section>
+
   <section class='grid-container--wide homepage__text-section homepage__section'>
     {{ pages.intro.body }}
   </section>
