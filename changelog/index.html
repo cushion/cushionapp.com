@@ -1,9 +1,15 @@
+{% assign hero = current %}
+
 {% capture content %}
-<main class='grid-container--narrow'>
-  {% for post in posts %}
-  {% include 'includes/changelog-post' %}
-  {% endfor %}
-</main>
+  {% include 'includes/hero-with-header' %}
+
+  <main class='grid-container--narrow page__main'>
+    {% for post in posts %}
+      {% include 'includes/changelog-post' %}
+    {% endfor %}
+  </main>
+
+  {% include 'includes/newsletter' %}
 {% endcapture %}
 
-{% include 'layouts/page' %}
+{% include 'layouts/default' %}
