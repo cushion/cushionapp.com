@@ -1,5 +1,4 @@
-<div id='share' class='is-hidden share'>
-  <a class='ss-icon share__close' href='#'>close</a>
+<div id='share' class='share'>
   <div class='share__info'>
     <h4 class='share__title'>{{ share_title | fallback: site.meta.share-title }}</h4>
     <p class='share__body'>{{ share_message | fallback: site.meta.share-message }}</p>
@@ -11,32 +10,6 @@
       <a href='https://twitter.com/share' class='twitter-share-button' data-size='large' data-dnt='true' data-text='{{ meta.tweet | fallback: share_message | strip_html }}'{% if meta.tweet %} data-via='{{ site.meta.twitter }}'{% endif %}>Tweet</a>
     </div>
     <script>
-      var $window = $(window),
-          $document = $(document);
-
-      $document.ready(function() {
-        var $post = $('#post'),
-            $share = $('#share'),
-            $share_close = $share.find('.share__close');
-
-        $share_close.click(function(e) {
-          e.preventDefault()
-
-          $share.addClass('is-hidden');
-          $document.off('scroll', document_scrolled);
-        });
-
-        var document_scrolled = function(e) {
-          var post_bottom = $post.offset().top + $post.outerHeight(true) - $window.height();
-
-          if ($window.scrollTop() > post_bottom && $share.hasClass('is-hidden')) {
-            $share.removeClass('is-hidden');
-          }
-        };
-
-        $document.on('scroll', document_scrolled);
-      });
-
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
     </script>
   </div>
