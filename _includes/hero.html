@@ -4,6 +4,6 @@
   {{ header }}
 
   <div class='grid-container--wider'>
-    <div class='hero__screenshot' style='background-image: url({{ hero.meta.hero-image }}); padding-bottom: {{ hero.meta.hero-ratio }}'></div>
+    <div class='hero__screenshot' style='background-image: url({{ hero.meta.hero-image | fallback:site.meta.hero-image }}); padding-bottom: {{ hero.meta.hero-ratio | fallback:site.meta.hero-ratio }}'></div>
   </div>
 </section>
