@@ -1,0 +1,28 @@
+{% capture header %}
+  <div class='hero__header grid-container--wide'>
+    <div class='hero__logo' style='background-image: url({{ meta.logo }})'></div>
+
+    <div class='hero__title'>
+      <h2>{{ meta.title | fallback:title }}</h2>
+      <p>{{ meta.subtitle }}</p>
+    </div>
+
+    <div class='hero__buttons'>
+      {% include 'includes/get-started' %}
+    </div>
+  </div>
+{% endcapture %}
+
+{% capture content %}
+  {% include 'includes/hero' %}
+
+  {{ main }}
+
+  <section class='theme--blue homepage__next-section homepage__text-section homepage__section'>
+    <p>
+      <a class='link' href='{{ site.meta.signup }}'>Try Cushion for <strong>free</strong> <a class='button' href='{{ site.meta.signup }}'>Sign up</a></span></a>
+    </p>
+  </section>
+{% endcapture %}
+
+{% include 'layouts/default' %}

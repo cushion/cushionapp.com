@@ -1,17 +1,32 @@
-{% capture content %}
-<main class='grid-container--narrow page__main'>
-  <article class='post'>
-    <header class='post__header'>
-      <h3 class='post__title'>
-        <a href='{{ url }}'>{{ title }}</a>
-      </h3>
-    </header>
+{% assign post = current %}
 
-    <div class='post__body'>
-      {{ body }}
-    </div>
-  </article>
-</main>
+{% capture content %}
+  {% include 'includes/hero' %}
+
+  <main class='page__main'>
+    <article class='post'>
+      <header class='grid-container--wide post__header'>
+        {% if post.parent %}
+        <h4 class='post__pretitle'>
+          <a href='{{ post.parent.url }}'>{{ post.parent.title }}</a>
+        </h4>
+        {% endif %}
+        <h3 class='post__title'>
+          <a href='{{ post.url }}'>{{ post.title }}</a>
+        </h3>
+      </header>
+
+      {% if post.meta.image %}
+      <div class='post__image'>
+        <a href='{{ post.url }}'><img src='{{ post.meta.image }}'></a>
+      </div>
+      {% endif %}
+
+      <div class='grid-container--narrow post__body'>
+        {{ post.body }}
+      </div>
+    </article>
+  </main>
 {% endcapture %}
 
-{% include 'layouts/page' %}
+{% include 'layouts/default' %}

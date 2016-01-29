@@ -1,3 +1,7 @@
+{% unless hero %}
+  {% assign hero = current %}
+{% endunless %}
+
 {% capture header %}
   <div class='hero__header grid-container--wide'>
     <div class='hero__title'>

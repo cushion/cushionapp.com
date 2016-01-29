@@ -1,0 +1,65 @@
+{% capture main %}
+  <section class='grid-container--wide marketing-text--centered marketing-text marketing-section'>
+    {{ pages.intro.body }}
+  </section>
+
+  <section class='marketing-section'>
+    <header class='marketing-header'>
+      <div class='marketing-title'>
+        {{ pages.cushion.body }}
+      </div>
+    </header>
+
+    <div class='grid-container--wide marketing-image'>
+      <div class='background-image' style='background-image: url({{ pages.cushion.meta.image }}); padding-bottom: {{ pages.cushion.meta.image-ratio }}'></div>
+    </div>
+
+    {% assign features = pages.features.pages %}
+    <div class='grid-container--wide marketing-columns'>
+    {% for feature in features %}
+      <div class='marketing-column'>
+        <div class='marketing-title'>
+          <h3 class='icon--{{ feature.meta.color }} ss-{{ feature.meta.icon }} icon-title'>{{ feature.title }}</h3>
+        </div>
+        <div class='marketing-text'>
+          {{ feature.body }}
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </section>
+
+  <section class='theme--xero-blue marketing-section background'>
+    <div class='marketing-logo' style='background-image: url({{ pages.xero.meta.logo }})'></div>
+
+    <div class='grid-container--wide marketing-text--centered marketing-text'>
+      {{ pages.xero.body }}
+    </div>
+  </section>
+
+  <section class='marketing-section'>
+    {% assign features = pages.xero.pages %}
+    <div class='grid-container--wide marketing-columns'>
+    {% for feature in features %}
+      <div class='marketing-column'>
+        <div class='marketing-title'>
+          <h3 class='icon--{{ feature.meta.color }} ss-{{ feature.meta.icon }} icon-title'>{{ feature.title }}</h3>
+        </div>
+        <div class='marketing-text'>
+          {{ feature.body }}
+        </div>
+      </div>
+    {% endfor %}
+    </div>
+  </section>
+
+  <section class='theme--xero marketing-section'>
+    <div class='marketing-logo' style='background-image: url({{ pages.outro.meta.logo }})'></div>
+
+    <div class='grid-container--wide marketing-text--centered marketing-text'>
+      {{ pages.outro.body }}
+    </div>
+  </section>
+{% endcapture %}
+
+{% include 'layouts/partner' %}

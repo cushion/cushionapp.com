@@ -1,0 +1,22 @@
+//
+// section
+//
+
+.marketing-section
+  @each $theme, $bg-color in $theme-backgrounds
+    &.theme--#{$theme}
+      background-color: $bg-color
+
+  @each $theme, $color in $theme-texts
+    &.theme--#{$theme}
+      color: $color
+
+  @each $theme, $color in $theme-links
+    &.theme--#{$theme}
+      a
+        color: $color
+
+  @each $theme, $color in $theme-link-hovers
+    &.theme--#{$theme}
+      a:hover
+        color: $color

@@ -1,4 +1,8 @@
-<section class='theme--{{ hero.meta.theme }} hero'>
+{% unless hero %}
+  {% assign hero = current %}
+{% endunless %}
+
+<section class='theme--{{ hero.meta.theme | fallback:"light-blue" }} hero'>
   {% include 'includes/header' %}
 
   {{ header }}

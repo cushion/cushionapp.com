@@ -32,17 +32,8 @@
   {% include 'includes/features' %}
 
   <section class='homepage__feature-section--secondary homepage__feature-section homepage__section'>
-    <div class='grid-container--wide'>
     {% assign features = pages.features.pages | where:"meta.type","secondary" %}
-    {% for feature in features %}
-      <div class='feature--secondary feature'>
-        <div class='feature__copy'>
-          <h3 class='icon--{{ feature.meta.color }} ss-{{ feature.meta.icon }} icon-title feature__title'>{{ feature.title }}</h3>
-          {{ feature.body }}
-        </div>
-      </div>
-    {% endfor %}
-    </div>
+    {% include 'includes/column-features' %}
   </section>
 
   <section class='theme--green homepage__next-section homepage__text-section homepage__section'>

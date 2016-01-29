@@ -1,0 +1,45 @@
+//
+// text
+//
+
+.marketing-text
+  &--centered
+    text-align: center
+
+
+//
+// big text
+//
+
+.marketing-text
+  h2
+    font-family: $serif-font
+    font-size: 1em
+
+    +min-width($mini-tablet)
+      font-size: em(21)
+
+    +min-width($tablet)
+      font-size: em(32)
+
+
+//
+// small text
+//
+
+.marketing-text
+  p
+    +min-width($mini-tablet)
+      font-size: em(18)
+
+    +min-width($tablet)
+      font-size: em(20)
+
+
+//
+// links
+//
+
+.marketing-text
+  a
+    text-decoration: underline

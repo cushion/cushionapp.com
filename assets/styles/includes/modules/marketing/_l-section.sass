@@ -1,0 +1,30 @@
+//
+// section
+//
+
+.marketing-section
+  padding: 2em 0
+  overflow: hidden
+
+  +min-width($tablet)
+    padding-top: 4em
+    padding-bottom: 4em
+
+  +min-width($laptop)
+    padding-top: 5em
+    padding-bottom: 5em
+
+
+//
+// layout
+//
+
+.marketing-section
+  .marketing-header + .marketing-image,
+  .marketing-header + .marketing-columns,
+  .marketing-image + .marketing-columns,
+  .marketing-logo + .marketing-text
+    margin-top: 1.5em
+
+    +min-width($tablet)
+      margin-top: 3em
