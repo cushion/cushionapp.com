@@ -21,13 +21,14 @@
   <div class='grid-container--narrow'>
     <div class='post__meta'>
       <div class='post__author'>
-        <a class='author__avatar' style='background-image: url(/assets/avatar-jonnie.jpg)' href='https://twitter.com/destroytoday'></a>
+        {% assign contributor = site.pages.team.pages | where:"title",author.name | first %}
+        <a class='author__avatar' style='background-image: url({{ contributor.assets.first.url }})' href='https://twitter.com/{{ contributor.meta.twitter }}'></a>
         <div class='author__info'>
           <h4 class='author__name'>
-            <a href='https://twitter.com/destroytoday' target='_blank'>Jonnie Hallman</a>
+            <a href='https://twitter.com/{{ contributor.meta.twitter }}' target='_blank'>{{ contributor.title }}</a>
           </h4>
           <h5 class='author__handle'>
-            <a class='link--blue' href='https://twitter.com/destroytoday' target='_blank'>@destroytoday</a>
+            <a class='link--blue' href='https://twitter.com/{{ contributor.meta.twitter }}' target='_blank'>@{{ contributor.meta.twitter }}</a>
           </h5>
         </div>
       </div>
