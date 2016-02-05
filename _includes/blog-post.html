@@ -21,7 +21,7 @@
   <div class='grid-container--narrow'>
     <div class='post__meta'>
       <div class='post__author'>
-        {% assign contributor = site.pages.team.pages | where:"title",author.name | first %}
+        {% assign contributor = site.pages.team.pages | where:"title",post.author.name | first %}
         <a class='author__avatar' style='background-image: url({{ contributor.assets.first.url }})' href='https://twitter.com/{{ contributor.meta.twitter }}'></a>
         <div class='author__info'>
           <h4 class='author__name'>
