@@ -8,16 +8,17 @@ GEM
       httparty (>= 0.7.3)
       mimemagic
       multipart-post
-    httparty (0.13.5)
+    httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
     json (1.8.3)
-    mimemagic (0.3.0)
+    mimemagic (0.3.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     neat (1.7.1)
       bourbon (>= 4.0)
       sass (>= 3.3)
+    psych (2.0.8)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -25,9 +26,10 @@ GEM
       rack (>= 1.0)
       rack-test (>= 0.5)
     sass (3.4.13)
-    siteleaf (0.9.23)
+    siteleaf (1.0.6)
       httmultiparty (>= 0.3.13)
       httparty (>= 0.13.3)
+      psych (= 2.0.8)
       rack
     thor (0.19.1)
 
@@ -41,3 +43,6 @@ DEPENDENCIES
   racksh
   sass
   siteleaf
+
+BUNDLED WITH
+   1.11.2

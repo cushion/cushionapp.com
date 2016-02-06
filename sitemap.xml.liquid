@@ -9,7 +9,12 @@
   {% if page.meta.sitemap? %}
   <url>
     <loc>{{ page.permalink }}</loc>
-    <lastmod>{{ page.updated_at | date:"%FT%T%:z" }}</lastmod>
+    {% if page.posts.length > 0 %}
+      {% assign updated_at = page.posts.first.updated_at %}
+    {% else %}
+      {% assign updated_at = page.updated_at %}
+    {% endif %}
+    <lastmod>{{ updated_at | date:"%FT%T%:z" }}</lastmod>
     <priority>1.0</priority>
   </url>
   {% endif %}
