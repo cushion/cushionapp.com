@@ -1,0 +1,21 @@
+{% capture content %}
+  {% include 'includes/hero-with-header' %}
+
+  <section class='marketing-section'>
+    <div class='grid-container--wide thumb-list'>
+      {% for subpage in pages %}{% if subpage.meta.thumb %}<article class='thumb'>
+        <h4 class='thumb__title'><a href='{{ subpage.url }}'>{{ subpage.title }}</a></h4>
+        <a class='thumb__image' href='{{ subpage.url }}' style='background-image: url({{ subpage.meta.thumb }})'></a>
+      </article>{% endif %}{% endfor %}
+    </div>
+  </section>
+
+  <section class='marketing-section post'>
+    <div class='grid-container--narrow post__body'>
+      <h4>Email Us</h4>
+      <p>Still have questions? Email us at <a href='mailto:support@cushionapp.com'>support@cushionapp.com</a>.</p>
+    </div>
+  </section>
+{% endcapture %}
+
+{% include 'layouts/default' %}

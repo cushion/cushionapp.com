@@ -1,0 +1,16 @@
+{% capture content %}
+  {% include 'includes/hero-with-header' %}
+
+  {% for subpage in pages %}
+    {% assign features = subpage.pages | where:"meta.type","feature" %}
+    {% include 'includes/features' %}
+  {% endfor %}
+
+  <section class='theme--blue homepage__next-section homepage__text-section homepage__section'>
+    <p>
+      <a class='link' href='{{ site.meta.signup }}'>Try Cushion for <strong>free</strong> <a class='button' href='{{ site.meta.signup }}'>Sign up</a></span></a>
+    </p>
+  </section>
+{% endcapture %}
+
+{% include 'layouts/default' %}

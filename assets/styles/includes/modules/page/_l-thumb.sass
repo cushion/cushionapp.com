@@ -1,0 +1,40 @@
+//
+// thumb
+//
+
+.thumb
+  max-width: 450px
+
+
+.thumb-list
+  .thumb
+    margin: 2em auto 0
+
+    &:first-child
+      margin-top: 0
+
+    +min-width($tablet)
+      display: inline-block
+      width: 48%
+
+      &:nth-child(2n)
+        margin-left: 4%
+
+
+//
+// title
+//
+
+.thumb
+  .thumb__title
+    margin-bottom: 0.5em
+
+
+//
+// image
+//
+
+.thumb__image
+  display: block
+  height: 0
+  padding-bottom: 66.6666667%
