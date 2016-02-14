@@ -1,6 +1,8 @@
 {% capture content %}
   {% include 'includes/hero-with-header' %}
 
+  {% include 'includes/latest-feature' %}
+
   {% for subpage in pages %}
     {% assign features = subpage.pages | where:"meta.type","feature" %}
     {% include 'includes/features' %}
