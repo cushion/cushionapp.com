@@ -1,9 +1,12 @@
 <div class='grid-container--wide'>
 {% for feature in features %}
-  <div class='feature--secondary feature'>
+  <div class='theme--{{ feature.meta.color }} feature--secondary feature'>
     <div class='feature__copy'>
       <h3 class='icon--{{ feature.meta.color }} ss-{{ feature.meta.icon }} icon-title feature__title'>{{ feature.title }}</h3>
       {{ feature.body }}
+      {% if feature.meta.link %}
+        <a class='feature__more' href='{{ feature.meta.link }}'>Learn more&hellip;</a>
+      {% endif %}
     </div>
   </div>
 {% endfor %}
