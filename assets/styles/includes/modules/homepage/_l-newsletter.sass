@@ -3,6 +3,7 @@
 //
 
 .newsletter
+  @extend .grid-container--narrow
   padding-top: rem(30)
   padding-bottom: rem(30)
 
@@ -17,14 +18,18 @@
     .newsletter__note
       display: none
 
-  .page__main &
-    @extend .grid-container--narrow
-    margin-top: rem(30)
-    margin-bottom: rem(30)
+  +max-width($narrow-container-width)
+    margin: 0
 
-    +max-width($narrow-container-width)
-      margin-left: 0
-      margin-right: 0
+  margin-top: em(40)
+  margin-bottom: em(40)
+
+  +min-width($tablet-portrait)
+    margin-top: em(80, $medium)
+    margin-bottom: em(80, $medium)
+
+  .page__main + &
+    margin-top: 0
 
 
 //

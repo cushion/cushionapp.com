@@ -1,9 +1,17 @@
+{% if post.parent.slug == 'blog' %}
+  {% assign is_blog = true %}
+{% endif %}
 {% if post == current %}
   {% assign share_title = "Share this post on Twitter" %}
-  {% capture share_message %}“{{ post.title }}” by <a href='https://twitter.com/cushionapp' target='_blank'>@cushionapp</a>{% endcapture %}
+  {% capture share_message %}{% if is_blog %}{{ post.taxonomy.categories.first }}: {% endif %}{{ post.title }} via <a href='https://twitter.com/cushionapp' target='_blank'>@cushionapp</a>{% endcapture %}
 {% endif %}
 <article {% if post == current %}id='post' {% endif %}class='post'>
   <header class='grid-container--wide post__header'>
+    {% if is_blog %}
+    <h4 class='post__pretitle'>
+      <a href='{{ parent.url }}'>{{ post.taxonomy.categories.first }}</a>
+    </h4>
+    {% endif %}
     <h3 class='post__title'>
       <a href='{{ post.url }}'>{{ post.title }}</a>
     </h3>
@@ -20,21 +28,40 @@
 
   <div class='grid-container--narrow'>
     <div class='post__meta'>
-      <div class='post__author'>
+      {% if post.taxonomy.contributors.length > 0 %}
+      <div class='post__contributor-list'>
+        {% for tag in post.taxonomy.contributors %}<div class='post__contributor'>
+          {% assign contributor = site.pages.team.pages | where:"title",tag.value | first %}
+          <a class='contributor__avatar' style='background-image: url({{ contributor.assets.first.url }})' href='https://twitter.com/{{ contributor.meta.twitter }}'></a>
+          <div class='contributor__info'>
+            <h4 class='contributor__name'>
+              {% if contributor.meta.byline %}<span class='contributor__byline'>{{ contributor.meta.byline }} by</span> {% endif %}<a href='https://twitter.com/{{ contributor.meta.twitter }}' target='_blank'>{{ contributor.title }}</a>
+            </h4>
+            <h5 class='contributor__handle'>
+              <a class='link--blue' href='https://twitter.com/{{ contributor.meta.twitter }}' target='_blank'>@{{ contributor.meta.twitter }}</a>
+            </h5>
+          </div>
+        </div>{% endfor %}
+      </div>
+      {% else %}
+      <div class='post__contributor'>
         {% assign contributor = site.pages.team.pages | where:"title",post.author.name | first %}
-        <a class='author__avatar' style='background-image: url({{ contributor.assets.first.url }})' href='https://twitter.com/{{ contributor.meta.twitter }}'></a>
-        <div class='author__info'>
-          <h4 class='author__name'>
+        <a class='contributor__avatar' style='background-image: url({{ contributor.assets.first.url }})' href='https://twitter.com/{{ contributor.meta.twitter }}'></a>
+        <div class='contributor__info'>
+          <h4 class='contributor__name'>
             <a href='https://twitter.com/{{ contributor.meta.twitter }}' target='_blank'>{{ contributor.title }}</a>
           </h4>
-          <h5 class='author__handle'>
+          <h5 class='contributor__handle'>
             <a class='link--blue' href='https://twitter.com/{{ contributor.meta.twitter }}' target='_blank'>@{{ contributor.meta.twitter }}</a>
           </h5>
         </div>
       </div>
+      {% endif %}
 
-      {% assign category = post.taxonomy.categories.first %}
-      <a class='tag--{{ category }} post__tag tag' href='{{ category.url }}'>{{ category | capitalize }}</a>
+      {% if post.taxonomy.contributors.length == 0 %}
+        {% assign category = post.taxonomy.categories.first %}
+        <a class='tag--{{ category }} post__tag tag' href='{{ category.url }}'>{{ category | capitalize }}</a>
+      {% endif %}
     </div>
 
     <div class='post__body'>
@@ -58,7 +85,8 @@
   </div>
 </article>
 
-{% if post == current %}
-{% include 'includes/share' %}
-{% endif %}
-
+{% unless is_blog %}
+  {% if post == current %}
+  {% include 'includes/share' %}
+  {% endif %}
+{% endunless %}

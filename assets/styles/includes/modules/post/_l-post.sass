@@ -46,11 +46,6 @@
 .post__meta
   +clearfix
 
-
-//
-// author
-//
-
 .post
   .post__meta
     margin-top: em(36)
@@ -58,20 +53,48 @@
   .post__meta + .post__body
     margin-top: em(32)
 
-.author__avatar
+
+//
+// contributor
+//
+
+.post__contributor-list
+  .post__contributor
+    margin-top: em(24)
+
+    &:first-child
+      margin-top: 0
+
+    +min-width($tablet)
+      display: inline-block
+      width: 50%
+      margin-top: 0
+      vertical-align: top
+
+      &:first-child
+        margin-left: 0
+
+
+//
+// contributor avatar
+//
+
+.contributor__avatar
   display: block
   width: em(56)
   height: em(56)
 
-.post__author
-  .author__avatar
-    float: left
+.post__contributor
+  .contributor__avatar
+    display: inline-block
     margin-right: em(18)
+    vertical-align: top
 
-.post__author
-  .author__info
-    float: left
+.post__contributor
+  .contributor__info
+    display: inline-block
     margin-top: em(3)
+    vertical-align: top
 
 
 //

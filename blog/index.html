@@ -4,6 +4,10 @@
   <main class='page__main'>
     {% for post in posts %}
       {% include 'includes/blog-post' %}
+
+      {% if forloop.first %}
+        {% include 'includes/newsletter' %}
+      {% endif %}
     {% endfor %}
   </main>
 
